@@ -1,0 +1,51 @@
+*** Begin Patch
+*** Update File: inc/html.php
+@@
+ function html_revisions($first=0, $media_id = false){
+     global $ID;
+     global $INFO;
+     global $conf;
+     global $lang;
++    $blankImg = '<img src="'.DOKU_BASE.'lib/images/blank.gif" width="15" height="11" alt="" />';
+     $id = $ID;
+     if ($media_id) {
+         $id = $media_id;
+         $changelog = new MediaChangeLog($id);
+@@
+     if($media_id) {
+         $exists = file_exists(mediaFN($id));
+         $display_name = $id;
+     }
+@@
+         $form->addElement(form_makeTag('input', array(
+                         'type' => 'checkbox',
+                         'name' => 'rev2[]',
+                         'value' => 'current')));
+@@
+         $form->addElement(form_makeCloseTag('span'));
+ 
+-        $form->addElement('<img src="'.DOKU_BASE.'lib/images/blank.gif" width="15" height="11" alt="" />');
++        $form->addElement($blankImg);
+@@
+         if ($exists){
+             if (!$media_id) {
+                 $href = wl($id,"rev=$rev,do=diff", false, '&');
+             } else {
+@@
+             $form->addElement(form_makeCloseTag('a'));
+ 
+             if (!$media_id) {
+                 $href = wl($id,"rev=$rev",false,'&');
+             } else {
+@@
+             $form->addElement(form_makeOpenTag('a', array(
+                             'class' => 'wikilink1',
+                             'href' => $href)));
+             $form->addElement($display_name);
+             $form->addElement(form_makeCloseTag('a'));
+         }else{
+-            $form->addElement('<img src="'.DOKU_BASE.'lib/images/blank.gif" width="15" height="11" alt="" />');
++            $form->addElement($blankImg);
+             $form->addElement($display_name);
+         }
+*** End Patch

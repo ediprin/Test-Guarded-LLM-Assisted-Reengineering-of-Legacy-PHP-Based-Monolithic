@@ -1,0 +1,25 @@
+*** Begin Patch
+*** Update File: app/Template/auth/index.php
+@@
+ <div class="form-login">
++    <?php $hideLoginForm = HIDE_LOGIN_FORM; ?>
++    <?php $showRememberMe = REMEMBER_ME_AUTH; ?>
++    <?php $enablePasswordReset = $this->app->config('password_reset') == 1; ?>
+ 
+     <?= $this->hook->render('template:auth:login-form:before') ?>
+@@
+-    <?php if (! HIDE_LOGIN_FORM): ?>
++    <?php if (! $hideLoginForm): ?>
+     <form method="post" action="<?= $this->url->href('AuthController', 'check') ?>">
+@@
+-        <?php if (REMEMBER_ME_AUTH): ?>
++        <?php if ($showRememberMe): ?>
+             <?= $this->form->checkbox('remember_me', t('Remember Me'), 1, true) ?><br>
+         <?php endif ?>
+@@
+-        <?php if ($this->app->config('password_reset') == 1): ?>
++        <?php if ($enablePasswordReset): ?>
+             <div class="reset-password">
+                 <?= $this->url->link(t('Forgot password?'), 'PasswordResetController', 'create') ?>
+             </div>
+*** End Patch

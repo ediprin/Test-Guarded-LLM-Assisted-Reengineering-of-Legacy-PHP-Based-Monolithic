@@ -1,0 +1,108 @@
+*** Begin Patch
+*** Update File: doku.php
+@@
+ if(!defined('DOKU_INC')) define('DOKU_INC', dirname(__FILE__).'/');
+ 
+ // define all DokuWiki globals here (needed within test requests but also helps to keep track)
+ global  $ACT,  $INPUT, $QUERY, $ID, $REV, $DATE_AT, $IDX,
+         $DATE, $RANGE, $HIGH, $TEXT, $PRE, $SUF, $SUM, $INFO, $JSINFO;
+ 
+-
+-if(isset($_SERVER['HTTP_X_DOKUWIKI_DO'])) {
+-    $ACT = trim(strtolower($_SERVER['HTTP_X_DOKUWIKI_DO']));
+-} elseif(!empty($_REQUEST['idx'])) {
+-    $ACT = 'index';
+-} elseif(isset($_REQUEST['do'])) {
+-    $ACT = $_REQUEST['do'];
+-} else {
+-    $ACT = 'show';
+-}
++resolveAct();
+@@
+-//parse DATE_AT
+-if($DATE_AT) {
+-    $date_parse = strtotime($DATE_AT);
+-    if($date_parse) {
+-        $DATE_AT = $date_parse;
+-    } else { // check for UNIX Timestamp
+-        $date_parse = @date('Ymd',$DATE_AT);
+-        if(!$date_parse || $date_parse === '19700101') {
+-            msg(sprintf($lang['unable_to_parse_date'], hsc($DATE_AT)));
+-            $DATE_AT = null;
+-        }
+-    }
+-}
+-
+-//check for existing $REV related to $DATE_AT
+-if($DATE_AT) {
+-    $pagelog = new PageChangeLog($ID);
+-    $rev_t = $pagelog->getLastRevisionAt($DATE_AT);
+-    if($rev_t === '') { //current revision
+-        $REV = null;
+-        $DATE_AT = null;
+-    } else if ($rev_t === false) { //page did not exist
+-        $rev_n = $pagelog->getRelativeRevision($DATE_AT,+1);
+-        msg(sprintf($lang['page_nonexist_rev'],
+-            strftime($conf['dformat'],$DATE_AT),
+-            wl($ID, array('rev' => $rev_n)),
+-            strftime($conf['dformat'],$rev_n)));
+-        $REV = $DATE_AT; //will result in a page not exists message
+-    } else {
+-        $REV = $rev_t;
+-    }
+-}
++resolveDateAtAndRevision();
+@@
+ //  xdebug_dump_function_profile(1);
++
++function resolveAct() {
++    global $ACT;
++
++    if(isset($_SERVER['HTTP_X_DOKUWIKI_DO'])) {
++        $ACT = trim(strtolower($_SERVER['HTTP_X_DOKUWIKI_DO']));
++    } elseif(!empty($_REQUEST['idx'])) {
++        $ACT = 'index';
++    } elseif(isset($_REQUEST['do'])) {
++        $ACT = $_REQUEST['do'];
++    } else {
++        $ACT = 'show';
++    }
++}
++
++function resolveDateAtAndRevision() {
++    global $DATE_AT, $REV, $ID, $lang, $conf;
++
++    //parse DATE_AT
++    if($DATE_AT) {
++        $date_parse = strtotime($DATE_AT);
++        if($date_parse) {
++            $DATE_AT = $date_parse;
++        } else { // check for UNIX Timestamp
++            $date_parse = @date('Ymd',$DATE_AT);
++            if(!$date_parse || $date_parse === '19700101') {
++                msg(sprintf($lang['unable_to_parse_date'], hsc($DATE_AT)));
++                $DATE_AT = null;
++            }
++        }
++    }
++
++    //check for existing $REV related to $DATE_AT
++    if($DATE_AT) {
++        $pagelog = new PageChangeLog($ID);
++        $rev_t = $pagelog->getLastRevisionAt($DATE_AT);
++        if($rev_t === '') { //current revision
++            $REV = null;
++            $DATE_AT = null;
++        } else if ($rev_t === false) { //page did not exist
++            $rev_n = $pagelog->getRelativeRevision($DATE_AT,+1);
++            msg(sprintf($lang['page_nonexist_rev'],
++                strftime($conf['dformat'],$DATE_AT),
++                wl($ID, array('rev' => $rev_n)),
++                strftime($conf['dformat'],$rev_n)));
++            $REV = $DATE_AT; //will result in a page not exists message
++        } else {
++            $REV = $rev_t;
++        }
++    }
++}
+*** End Patch

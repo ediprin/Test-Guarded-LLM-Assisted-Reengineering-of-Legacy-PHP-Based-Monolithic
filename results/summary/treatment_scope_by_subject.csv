@@ -1,0 +1,3 @@
+project,eligible_candidates,t1_model_executed,t3_model_executed,patches_gate_evaluated,treatment_status,paper_reporting_role
+dokuwiki,43,14,13,27,treated_pilot,report_in_treatment_results
+kanboard,8,7,6,13,partial_treatment_pending_rate_limit,report_only_as_partial_extension_until_all_prompts_complete

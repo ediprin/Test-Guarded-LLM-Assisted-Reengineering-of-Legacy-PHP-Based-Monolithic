@@ -1,0 +1,35 @@
+*** Begin Patch
+*** Update File: app/Template/dashboard/overview.php
+@@
++<?php
++$has_projects = ! $project_paginator->isEmpty();
++$has_overview = ! empty($overview_paginator);
++?>
++
+ <div class="filter-box margin-bottom">
+     <form method="get" action="<?= $this->url->dir() ?>" class="search">
+         <?= $this->form->hidden('controller', array('controller' => 'SearchController')) ?>
+         <?= $this->form->hidden('action', array('action' => 'index')) ?>
+@@
+     </form>
+ </div>
+ 
+-<?php if (! $project_paginator->isEmpty()): ?>
++<?php if ($has_projects): ?>
+     <div class="table-list">
+         <?= $this->render('project_list/header', array('paginator' => $project_paginator)) ?>
+         <?php foreach ($project_paginator->getCollection() as $project): ?>
+             <div class="table-list-row table-border-left">
+@@
+     </div>
+ 
+     <?= $project_paginator ?>
+ <?php endif ?>
+ 
+-<?php if (empty($overview_paginator)): ?>
++<?php if (! $has_overview): ?>
+     <p class="alert"><?= t('There is nothing assigned to you.') ?></p>
+ <?php else: ?>
+     <?php foreach ($overview_paginator as $result): ?>
+         <?php if (! $result['paginator']->isEmpty()): ?>
+*** End Patch

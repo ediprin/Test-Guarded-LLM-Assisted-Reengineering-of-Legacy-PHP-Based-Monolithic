@@ -1,0 +1,45 @@
+*** Begin Patch
+*** Update File: install.php
+@@
+ function print_form($d){
+     global $lang;
+     global $LC;
+ 
+     include(DOKU_CONF.'license.php');
+ 
+     if(!is_array($d)) $d = array();
+     $d = array_map('hsc',$d);
+ 
+     if(!isset($d['acl'])) $d['acl']=1;
+     if(!isset($d['pop'])) $d['pop']=1;
++    if(empty($d['license'])) $d['license'] = 'cc-by-sa';
++    $license[] = array('name' => $lang['i_license_none'], 'url'=>'');
+ 
+     ?>
+     <form action="" method="post">
+     <input type="hidden" name="l" value="<?php echo $LC ?>" />
+     <fieldset>
+@@
+         <fieldset>
+             <p><?php echo $lang['i_license']?></p>
+-            <?php
+-            array_push($license,array('name' => $lang['i_license_none'], 'url'=>''));
+-            if(empty($d['license'])) $d['license'] = 'cc-by-sa';
+-            foreach($license as $key => $lic){
+-                echo '<label for="lic_'.$key.'">';
+-                echo '<input type="radio" name="d[license]" value="'.hsc($key).'" id="lic_'.$key.'"'.
+-                     (($d['license'] === $key)?' checked="checked"':'').'>';
+-                echo hsc($lic['name']);
+-                if($lic['url']) echo ' <a href="'.$lic['url'].'" target="_blank"><sup>[?]</sup></a>';
+-                echo '</label>';
+-            }
+-            ?>
++            <?php foreach($license as $key => $lic){ ?>
++                <label for="lic_<?php echo $key; ?>">
++                    <input type="radio" name="d[license]" value="<?php echo hsc($key); ?>" id="lic_<?php echo $key; ?>"<?php echo(($d['license'] === $key)?' checked="checked"':''); ?>>
++                    <?php echo hsc($lic['name']); ?>
++                    <?php if($lic['url']) echo ' <a href="'.$lic['url'].'" target="_blank"><sup>[?]</sup></a>'; ?>
++                </label>
++            <?php } ?>
+         </fieldset>
+*** End Patch

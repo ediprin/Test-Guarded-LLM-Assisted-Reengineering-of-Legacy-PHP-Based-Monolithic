@@ -1,0 +1,68 @@
+{
+  "candidate_id": "kanboard-C0159",
+  "subject_id": "kanboard",
+  "file": "app/Template/project_user_overview/tasks.php",
+  "lines": [
+    1,
+    46
+  ],
+  "candidate_type": "mixed_php_html",
+  "issues": [
+    {
+      "type": "Mixed PHP/HTML",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 58
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      ".$task[",
+      ".alert",
+      ".color-<?=",
+      ".column-10",
+      ".column-15",
+      ".column-5",
+      ".table-scrolling",
+      ".table-small",
+      ".table-striped",
+      ".task-table"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      ".$task[",
+      ".alert",
+      ".color-<?=",
+      ".column-10",
+      ".column-15",
+      ".column-5",
+      ".table-scrolling",
+      ".table-small",
+      ".table-striped",
+      ".task-table"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Separate PHP Logic from Markup",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

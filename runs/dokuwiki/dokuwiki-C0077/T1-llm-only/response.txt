@@ -1,0 +1,86 @@
+*** Begin Patch
+*** Update File: inc/html.php
+@@
+ function html_recent($first = 0, $show_changes = 'both') {
+     global $conf;
+     global $lang;
+     global $ID;
+@@
+     $form->addElement(form_makeOpenTag('ul'));
+ 
+     foreach($recents as $recent) {
+         $date = dformat($recent['date']);
++        $isMedia = !empty($recent['media']);
++        $recentNS = $isMedia ? getNS($recent['id']) : '';
+ 
+         $class = '';
+         if($recent['type'] === DOKU_CHANGE_TYPE_MINOR_EDIT) {
+             $class = 'minor';
+         }
+@@
+         $form->addElement(form_makeOpenTag('div', array('class' => 'li')));
+ 
+-        if(!empty($recent['media'])) {
++        if($isMedia) {
+             $form->addElement(media_printicon($recent['id']));
+         } else {
+             $icon = DOKU_BASE . 'lib/images/fileicons/file.png';
+             $form->addElement('<img src="' . $icon . '" alt="' . $recent['id'] . '" class="icon" />');
+         }
+@@
+         $diff = false;
+         $href = '';
+ 
+-        if(!empty($recent['media'])) {
++        if($isMedia) {
+             $changelog = new MediaChangeLog($recent['id']);
+             $revs = $changelog->getRevisions(0, 1);
+             $diff = (count($revs) && file_exists(mediaFN($recent['id'])));
+             if($diff) {
+                 $href = media_managerURL(array(
+                                             'tab_details' => 'history',
+                                             'mediado' => 'diff',
+                                             'image' => $recent['id'],
+-                                            'ns' => getNS($recent['id'])
++                                            'ns' => $recentNS
+                                         ), '&');
+             }
+         } else {
+             $href = wl($recent['id'], "do=diff", false, '&');
+         }
+ 
+-        if(!empty($recent['media']) && !$diff) {
++        if($isMedia && !$diff) {
+             $form->addElement('<img src="' . DOKU_BASE . 'lib/images/blank.gif" width="15" height="11" alt="" />');
+         } else {
+             $form->addElement(form_makeOpenTag('a', array('class' => 'diff_link', 'href' => $href)));
+             $form->addElement(form_makeTag('img', array(
+                             'src'    => DOKU_BASE . 'lib/images/diff.png',
+@@
+             $form->addElement(form_makeCloseTag('a'));
+         }
+ 
+-        if(!empty($recent['media'])) {
+-            $href = media_managerURL(array('tab_details' => 'history', 'image' => $recent['id'], 'ns' => getNS($recent['id'])), '&');
++        if($isMedia) {
++            $href = media_managerURL(array('tab_details' => 'history', 'image' => $recent['id'], 'ns' => $recentNS), '&');
+         } else {
+             $href = wl($recent['id'], "do=revisions", false, '&');
+         }
+         $form->addElement(form_makeOpenTag('a', array(
+                         'class' => 'revisions_link',
+@@
+                         'alt'    => $lang['btn_revs']
+                     )));
+         $form->addElement(form_makeCloseTag('a'));
+ 
+-        if(!empty($recent['media'])) {
+-            $href = media_managerURL(array('tab_details' => 'view', 'image' => $recent['id'], 'ns' => getNS($recent['id'])), '&');
++        if($isMedia) {
++            $href = media_managerURL(array('tab_details' => 'view', 'image' => $recent['id'], 'ns' => $recentNS), '&');
+             $class = file_exists(mediaFN($recent['id'])) ? 'wikilink1' : 'wikilink2';
+             $form->addElement(form_makeOpenTag('a', array(
+                         'class' => $class,
+                         'href'  => $href)));
+             $form->addElement($recent['id']);
+*** End Patch

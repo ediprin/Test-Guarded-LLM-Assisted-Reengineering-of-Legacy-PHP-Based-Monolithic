@@ -1,0 +1,7 @@
+{
+  "status": "skipped_prompt_too_large",
+  "model": "gpt-5.4-mini",
+  "patch_generated": false,
+  "prompt_chars": 74602,
+  "max_prompt_chars": 28000
+}

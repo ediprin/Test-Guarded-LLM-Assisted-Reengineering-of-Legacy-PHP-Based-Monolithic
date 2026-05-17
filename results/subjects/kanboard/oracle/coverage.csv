@@ -1,0 +1,249 @@
+candidate_id,project,file,candidate_type,oracle_status,oracle_ids,coverage_reason
+kanboard-C0001,kanboard,config.default.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0002,kanboard,app/check_setup.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0003,kanboard,app/functions.php,session_dependent_logic,pending,,No passing route-level oracle mapped.
+kanboard-C0004,kanboard,libs/SimpleValidator/Validators/Email.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+kanboard-C0005,kanboard,libs/picodb/lib/PicoDb/Database.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0006,kanboard,libs/picodb/lib/PicoDb/StatementHandler.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0007,kanboard,libs/picodb/lib/PicoDb/Table.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0008,kanboard,libs/picodb/lib/PicoDb/Driver/Base.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0009,kanboard,libs/picodb/lib/PicoDb/Driver/Base.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0010,kanboard,libs/picodb/lib/PicoDb/Driver/Mysql.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0011,kanboard,libs/picodb/lib/PicoDb/Driver/Mysql.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0012,kanboard,libs/picodb/lib/PicoDb/Driver/Postgres.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0013,kanboard,libs/picodb/lib/PicoDb/Driver/Postgres.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0014,kanboard,libs/phpqrcode/lib/PHPQRCode/FrameFiller.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+kanboard-C0015,kanboard,libs/phpqrcode/lib/PHPQRCode/QRcode.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+kanboard-C0016,kanboard,libs/phpqrcode/lib/PHPQRCode/QRencode.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+kanboard-C0017,kanboard,libs/phpqrcode/lib/PHPQRCode/QRinput.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+kanboard-C0018,kanboard,libs/phpqrcode/lib/PHPQRCode/QRmask.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+kanboard-C0019,kanboard,libs/phpqrcode/lib/PHPQRCode/QRrsItem.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+kanboard-C0020,kanboard,libs/phpqrcode/lib/PHPQRCode/QRspec.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0021,kanboard,libs/phpqrcode/lib/PHPQRCode/QRspec.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0022,kanboard,libs/phpqrcode/lib/PHPQRCode/QRsplit.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+kanboard-C0023,kanboard,libs/phpqrcode/lib/PHPQRCode/QRtools.php,mixed_php_html,pending,,No passing route-level oracle mapped.
+kanboard-C0024,kanboard,libs/minify/src/CSS.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+kanboard-C0025,kanboard,libs/minify/src/CSS.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+kanboard-C0026,kanboard,libs/minify/src/CSS.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+kanboard-C0027,kanboard,libs/minify/src/CSS.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+kanboard-C0028,kanboard,libs/minify/src/CSS.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+kanboard-C0029,kanboard,libs/minify/src/CSS.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+kanboard-C0030,kanboard,libs/minify/src/JS.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+kanboard-C0031,kanboard,libs/minify/src/JS.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+kanboard-C0032,kanboard,libs/minify/src/JS.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+kanboard-C0033,kanboard,libs/minify/src/JS.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+kanboard-C0034,kanboard,libs/minify/src/Minify.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+kanboard-C0035,kanboard,libs/jsonrpc/src/JsonRPC/Response/ResponseBuilder.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+kanboard-C0036,kanboard,app/Controller/BoardAjaxController.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0037,kanboard,app/Controller/TaskBulkChangePropertyController.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+kanboard-C0038,kanboard,app/Controller/TaskModificationController.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0039,kanboard,app/Controller/UserModificationController.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+kanboard-C0040,kanboard,app/Core/Paginator.php,mixed_php_html_sql,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0041,kanboard,app/EventBuilder/TaskEventBuilder.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+kanboard-C0042,kanboard,app/EventBuilder/TaskEventBuilder.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+kanboard-C0043,kanboard,app/Helper/FileHelper.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+kanboard-C0044,kanboard,app/Helper/FormHelper.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0045,kanboard,app/Helper/ProjectRoleHelper.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0046,kanboard,app/Helper/SubtaskHelper.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0047,kanboard,app/Helper/TaskHelper.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0048,kanboard,app/Helper/UrlHelper.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0049,kanboard,app/Import/TaskImport.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+kanboard-C0050,kanboard,app/Model/ActionParameterModel.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+kanboard-C0051,kanboard,app/Model/CategoryModel.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0052,kanboard,app/Model/LinkModel.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0053,kanboard,app/Model/ProjectModel.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0054,kanboard,app/Model/SubtaskModel.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0055,kanboard,app/Model/SubtaskTimeTrackingModel.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0056,kanboard,app/Model/SwimlaneModel.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0057,kanboard,app/Model/TaskDuplicationModel.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+kanboard-C0058,kanboard,app/Model/TaskFinderModel.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0059,kanboard,app/Model/TaskFinderModel.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0060,kanboard,app/Schema/Migration.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0061,kanboard,app/Schema/Migration.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0062,kanboard,app/Schema/Mysql.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0063,kanboard,app/Schema/Mysql.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0064,kanboard,app/Schema/Mysql.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0065,kanboard,app/Schema/Mysql.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0066,kanboard,app/Schema/Mysql.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0067,kanboard,app/Schema/Mysql.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0068,kanboard,app/Schema/Mysql.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0069,kanboard,app/Schema/Postgres.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0070,kanboard,app/Schema/Postgres.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0071,kanboard,app/Schema/Postgres.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0072,kanboard,app/Schema/Postgres.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0073,kanboard,app/Schema/Postgres.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0074,kanboard,app/Schema/Sqlite.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0075,kanboard,app/Schema/Sqlite.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0076,kanboard,app/Schema/Sqlite.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0077,kanboard,app/Schema/Sqlite.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0078,kanboard,app/Schema/Sqlite.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0079,kanboard,app/ServiceProvider/RouteProvider.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+kanboard-C0080,kanboard,app/Template/header.php,mixed_php_html,stable,kanboard_login_http;kanboard_dashboard_auth_http,Candidate file is covered by a passing route-level characterization.
+kanboard-C0081,kanboard,app/Template/layout.php,mixed_php_html,stable,kanboard_login_http;kanboard_dashboard_auth_http,Candidate file is covered by a passing route-level characterization.
+kanboard-C0082,kanboard,app/User/Avatar/LetterAvatarProvider.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0083,kanboard,app/Template/action/index.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0084,kanboard,app/Template/action_creation/params.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0085,kanboard,app/Template/analytic/avg_time_columns.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0086,kanboard,app/Template/analytic/burndown.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0087,kanboard,app/Template/analytic/cfd.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0088,kanboard,app/Template/analytic/lead_cycle_time.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0089,kanboard,app/Template/analytic/task_distribution.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0090,kanboard,app/Template/analytic/time_comparison.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0091,kanboard,app/Template/analytic/user_distribution.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0092,kanboard,app/Template/auth/index.php,mixed_php_html,stable,kanboard_login_http,Candidate file is covered by a passing route-level characterization.
+kanboard-C0093,kanboard,app/Template/avatar_file/show.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0094,kanboard,app/Template/board/table_column.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0095,kanboard,app/Template/board/table_container.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0096,kanboard,app/Template/board/table_swimlane.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0097,kanboard,app/Template/board/table_tasks.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0098,kanboard,app/Template/board/task_avatar.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0099,kanboard,app/Template/board/task_footer.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0100,kanboard,app/Template/board/task_private.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0101,kanboard,app/Template/board/task_public.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0102,kanboard,app/Template/board/tooltip_external_links.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0103,kanboard,app/Template/board/tooltip_files.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0104,kanboard,app/Template/board/tooltip_subtasks.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0105,kanboard,app/Template/board/tooltip_tasklinks.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0106,kanboard,app/Template/category/index.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0107,kanboard,app/Template/column/index.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0108,kanboard,app/Template/comment/show.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0109,kanboard,app/Template/comment_list/show.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0110,kanboard,app/Template/comment_mail/create.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0111,kanboard,app/Template/config/about.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0112,kanboard,app/Template/config/email.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0113,kanboard,app/Template/currency/show.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0114,kanboard,app/Template/custom_filter/create.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0115,kanboard,app/Template/custom_filter/edit.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0116,kanboard,app/Template/custom_filter/index.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0117,kanboard,app/Template/dashboard/layout.php,mixed_php_html,stable,kanboard_dashboard_auth_http,Candidate file is covered by a passing route-level characterization.
+kanboard-C0118,kanboard,app/Template/dashboard/overview.php,mixed_php_html,stable,kanboard_dashboard_auth_http,Candidate file is covered by a passing route-level characterization.
+kanboard-C0119,kanboard,app/Template/dashboard/projects.php,mixed_php_html,stable,kanboard_dashboard_auth_http,Candidate file is covered by a passing route-level characterization.
+kanboard-C0120,kanboard,app/Template/dashboard/subtasks.php,mixed_php_html,stable,kanboard_dashboard_auth_http,Candidate file is covered by a passing route-level characterization.
+kanboard-C0121,kanboard,app/Template/dashboard/tasks.php,mixed_php_html,stable,kanboard_dashboard_auth_http,Candidate file is covered by a passing route-level characterization.
+kanboard-C0122,kanboard,app/Template/event/events.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0123,kanboard,app/Template/event/subtask_create.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0124,kanboard,app/Template/event/subtask_update.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0125,kanboard,app/Template/external_task_creation/step2.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0126,kanboard,app/Template/external_task_modification/show.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0127,kanboard,app/Template/group/associate.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0128,kanboard,app/Template/group/index.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0129,kanboard,app/Template/group/users.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0130,kanboard,app/Template/header/creation_dropdown.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0131,kanboard,app/Template/header/user_dropdown.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0132,kanboard,app/Template/link/show.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0133,kanboard,app/Template/notification/subtask_create.php,mixed_php_html,pending,,No passing route-level oracle mapped.
+kanboard-C0134,kanboard,app/Template/notification/subtask_update.php,mixed_php_html,pending,,No passing route-level oracle mapped.
+kanboard-C0135,kanboard,app/Template/notification/task_assignee_change.php,mixed_php_html,pending,,No passing route-level oracle mapped.
+kanboard-C0136,kanboard,app/Template/notification/task_create.php,mixed_php_html,pending,,No passing route-level oracle mapped.
+kanboard-C0137,kanboard,app/Template/notification/task_move_swimlane.php,mixed_php_html,pending,,No passing route-level oracle mapped.
+kanboard-C0138,kanboard,app/Template/notification/task_overdue.php,mixed_php_html,pending,,No passing route-level oracle mapped.
+kanboard-C0139,kanboard,app/Template/plugin/directory.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0140,kanboard,app/Template/plugin/show.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0141,kanboard,app/Template/project/dropdown.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0142,kanboard,app/Template/project/sidebar.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0143,kanboard,app/Template/project_creation/create.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0144,kanboard,app/Template/project_edit/show.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0145,kanboard,app/Template/project_header/dropdown.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0146,kanboard,app/Template/project_header/search.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0147,kanboard,app/Template/project_list/listing.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0148,kanboard,app/Template/project_list/project_icons.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0149,kanboard,app/Template/project_overview/files.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0150,kanboard,app/Template/project_overview/images.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0151,kanboard,app/Template/project_overview/information.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0152,kanboard,app/Template/project_permission/groups.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0153,kanboard,app/Template/project_permission/users.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0154,kanboard,app/Template/project_predefined_content/show.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0155,kanboard,app/Template/project_role/show.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0156,kanboard,app/Template/project_tag/index.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0157,kanboard,app/Template/project_user_overview/layout.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0158,kanboard,app/Template/project_user_overview/roles.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0159,kanboard,app/Template/project_user_overview/tasks.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0160,kanboard,app/Template/project_view/duplicate.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0161,kanboard,app/Template/project_view/notifications.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0162,kanboard,app/Template/project_view/share.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0163,kanboard,app/Template/project_view/show.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0164,kanboard,app/Template/search/activity.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0165,kanboard,app/Template/search/index.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0166,kanboard,app/Template/search/results.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0167,kanboard,app/Template/subtask/create.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0168,kanboard,app/Template/subtask/table.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0169,kanboard,app/Template/swimlane/index.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0170,kanboard,app/Template/swimlane/table.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0171,kanboard,app/Template/tag/index.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0172,kanboard,app/Template/task/analytics.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0173,kanboard,app/Template/task/changes.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0174,kanboard,app/Template/task/details.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0175,kanboard,app/Template/task/dropdown.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0176,kanboard,app/Template/task/sidebar.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0177,kanboard,app/Template/task/time_tracking_details.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0178,kanboard,app/Template/task/transitions.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0179,kanboard,app/Template/task_bulk/show.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0180,kanboard,app/Template/task_comments/show.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0181,kanboard,app/Template/task_creation/duplicate_projects.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0182,kanboard,app/Template/task_creation/show.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0183,kanboard,app/Template/task_duplication/copy.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0184,kanboard,app/Template/task_duplication/move.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0185,kanboard,app/Template/task_external_link/table.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0186,kanboard,app/Template/task_file/files.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0187,kanboard,app/Template/task_file/images.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0188,kanboard,app/Template/task_internal_link/table.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0189,kanboard,app/Template/task_list/header.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0190,kanboard,app/Template/task_list/listing.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0191,kanboard,app/Template/task_list/task_avatars.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0192,kanboard,app/Template/task_list/task_details.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0193,kanboard,app/Template/task_list/task_icons.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0194,kanboard,app/Template/task_list/task_subtasks.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0195,kanboard,app/Template/task_mail/create.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0196,kanboard,app/Template/task_recurrence/edit.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0197,kanboard,app/Template/task_recurrence/info.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0198,kanboard,app/Template/twofactor/show.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0199,kanboard,app/Template/user_list/dropdown.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0200,kanboard,app/Template/user_list/listing.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0201,kanboard,app/Template/user_list/user_icons.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0202,kanboard,app/Template/user_modification/show.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0203,kanboard,app/Template/user_view/last.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0204,kanboard,app/Template/user_view/layout.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0205,kanboard,app/Template/user_view/notifications.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0206,kanboard,app/Template/user_view/password_reset.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0207,kanboard,app/Template/user_view/sessions.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0208,kanboard,app/Template/user_view/show.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0209,kanboard,app/Template/user_view/sidebar.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0210,kanboard,app/Template/user_view/timesheet.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0211,kanboard,app/Template/web_notification/show.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+kanboard-C0212,kanboard,app/Locale/bs_BA/translations.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0213,kanboard,app/Locale/ca_ES/translations.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0214,kanboard,app/Locale/cs_CZ/translations.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0215,kanboard,app/Locale/da_DK/translations.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0216,kanboard,app/Locale/de_DE/translations.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0217,kanboard,app/Locale/el_GR/translations.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0218,kanboard,app/Locale/es_ES/translations.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0219,kanboard,app/Locale/es_VE/translations.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0220,kanboard,app/Locale/fa_IR/translations.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0221,kanboard,app/Locale/fi_FI/translations.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0222,kanboard,app/Locale/fr_FR/translations.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0223,kanboard,app/Locale/hr_HR/translations.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0224,kanboard,app/Locale/hu_HU/translations.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0225,kanboard,app/Locale/id_ID/translations.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0226,kanboard,app/Locale/it_IT/translations.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0227,kanboard,app/Locale/ja_JP/translations.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0228,kanboard,app/Locale/ko_KR/translations.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0229,kanboard,app/Locale/my_MY/translations.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0230,kanboard,app/Locale/nb_NO/translations.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0231,kanboard,app/Locale/nl_NL/translations.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0232,kanboard,app/Locale/pl_PL/translations.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0233,kanboard,app/Locale/pt_BR/translations.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0234,kanboard,app/Locale/pt_PT/translations.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0235,kanboard,app/Locale/ro_RO/translations.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0236,kanboard,app/Locale/ru_RU/translations.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0237,kanboard,app/Locale/sk_SK/translations.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0238,kanboard,app/Locale/sr_Latn_RS/translations.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0239,kanboard,app/Locale/sv_SE/translations.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0240,kanboard,app/Locale/th_TH/translations.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0241,kanboard,app/Locale/tr_TR/translations.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0242,kanboard,app/Locale/uk_UA/translations.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0243,kanboard,app/Locale/vi_VN/translations.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0244,kanboard,app/Locale/zh_CN/translations.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0245,kanboard,app/Locale/zh_TW/translations.php,sql_data_access,pending,,No passing route-level oracle mapped.
+kanboard-C0246,kanboard,app/Core/Http/Client.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+kanboard-C0247,kanboard,app/Core/Http/Request.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+kanboard-C0248,kanboard,app/Core/Plugin/Installer.php,sql_data_access,pending,,No passing route-level oracle mapped.

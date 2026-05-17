@@ -1,0 +1,28 @@
+candidate_id,project,treatment,patch_format,apply_status,workspace,message
+dokuwiki-C0001,dokuwiki,T1-llm-only,codex_apply_patch,applied,workspaces/pilot/dokuwiki/dokuwiki-C0001/T1-llm-only,
+dokuwiki-C0001,dokuwiki,T3-evidence-llm,codex_apply_patch,applied,workspaces/pilot/dokuwiki/dokuwiki-C0001/T3-evidence-llm,
+dokuwiki-C0002,dokuwiki,T1-llm-only,codex_apply_patch,applied,workspaces/pilot/dokuwiki/dokuwiki-C0002/T1-llm-only,
+dokuwiki-C0002,dokuwiki,T3-evidence-llm,codex_apply_patch,applied,workspaces/pilot/dokuwiki/dokuwiki-C0002/T3-evidence-llm,
+dokuwiki-C0003,dokuwiki,T1-llm-only,codex_apply_patch,applied,workspaces/pilot/dokuwiki/dokuwiki-C0003/T1-llm-only,
+dokuwiki-C0003,dokuwiki,T3-evidence-llm,codex_apply_patch,applied,workspaces/pilot/dokuwiki/dokuwiki-C0003/T3-evidence-llm,
+dokuwiki-C0004,dokuwiki,T1-llm-only,codex_apply_patch,applied,workspaces/pilot/dokuwiki/dokuwiki-C0004/T1-llm-only,
+dokuwiki-C0004,dokuwiki,T3-evidence-llm,codex_apply_patch,applied,workspaces/pilot/dokuwiki/dokuwiki-C0004/T3-evidence-llm,
+dokuwiki-C0005,dokuwiki,T1-llm-only,codex_apply_patch,applied,workspaces/pilot/dokuwiki/dokuwiki-C0005/T1-llm-only,
+dokuwiki-C0005,dokuwiki,T3-evidence-llm,codex_apply_patch,applied,workspaces/pilot/dokuwiki/dokuwiki-C0005/T3-evidence-llm,
+dokuwiki-C0006,dokuwiki,T1-llm-only,codex_apply_patch,applied,workspaces/pilot/dokuwiki/dokuwiki-C0006/T1-llm-only,
+dokuwiki-C0006,dokuwiki,T3-evidence-llm,codex_apply_patch,applied,workspaces/pilot/dokuwiki/dokuwiki-C0006/T3-evidence-llm,
+dokuwiki-C0007,dokuwiki,T1-llm-only,unified_diff,apply_failed,workspaces/pilot/dokuwiki/dokuwiki-C0007/T1-llm-only,error: corrupt patch at line 25
+dokuwiki-C0007,dokuwiki,T3-evidence-llm,codex_apply_patch,applied,workspaces/pilot/dokuwiki/dokuwiki-C0007/T3-evidence-llm,
+dokuwiki-C0008,dokuwiki,T1-llm-only,unified_diff,apply_failed,workspaces/pilot/dokuwiki/dokuwiki-C0008/T1-llm-only,error: corrupt patch at line 52
+dokuwiki-C0008,dokuwiki,T3-evidence-llm,codex_apply_patch,applied,workspaces/pilot/dokuwiki/dokuwiki-C0008/T3-evidence-llm,
+dokuwiki-C0009,dokuwiki,T1-llm-only,codex_apply_patch,applied,workspaces/pilot/dokuwiki/dokuwiki-C0009/T1-llm-only,
+dokuwiki-C0009,dokuwiki,T3-evidence-llm,codex_apply_patch,applied,workspaces/pilot/dokuwiki/dokuwiki-C0009/T3-evidence-llm,
+dokuwiki-C0010,dokuwiki,T1-llm-only,codex_apply_patch,applied,workspaces/pilot/dokuwiki/dokuwiki-C0010/T1-llm-only,
+dokuwiki-C0010,dokuwiki,T3-evidence-llm,unified_diff,apply_failed,workspaces/pilot/dokuwiki/dokuwiki-C0010/T3-evidence-llm,error: corrupt patch at line 62
+dokuwiki-C0075,dokuwiki,T1-llm-only,codex_apply_patch,apply_failed,workspaces/pilot/dokuwiki/dokuwiki-C0075/T1-llm-only,context_not_found
+dokuwiki-C0075,dokuwiki,T3-evidence-llm,codex_apply_patch,applied,workspaces/pilot/dokuwiki/dokuwiki-C0075/T3-evidence-llm,
+dokuwiki-C0076,dokuwiki,T1-llm-only,codex_apply_patch,apply_failed,workspaces/pilot/dokuwiki/dokuwiki-C0076/T1-llm-only,context_not_found
+dokuwiki-C0076,dokuwiki,T3-evidence-llm,codex_apply_patch,applied,workspaces/pilot/dokuwiki/dokuwiki-C0076/T3-evidence-llm,
+dokuwiki-C0077,dokuwiki,T1-llm-only,codex_apply_patch,applied,workspaces/pilot/dokuwiki/dokuwiki-C0077/T1-llm-only,
+dokuwiki-C0077,dokuwiki,T3-evidence-llm,codex_apply_patch,applied,workspaces/pilot/dokuwiki/dokuwiki-C0077/T3-evidence-llm,
+dokuwiki-C0078,dokuwiki,T1-llm-only,codex_apply_patch,applied,workspaces/pilot/dokuwiki/dokuwiki-C0078/T1-llm-only,

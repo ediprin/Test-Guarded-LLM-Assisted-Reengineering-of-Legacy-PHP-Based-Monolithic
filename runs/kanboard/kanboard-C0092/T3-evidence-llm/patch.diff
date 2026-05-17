@@ -1,0 +1,44 @@
+*** Begin Patch
+*** Update File: app/Template/auth/index.php
+@@
++<?php
++$show_login_error = isset($errors['login']);
++$show_login_form = ! HIDE_LOGIN_FORM;
++$show_captcha = isset($captcha) && $captcha;
++$show_remember_me = REMEMBER_ME_AUTH;
++$show_password_reset = $this->app->config('password_reset') == 1;
++?>
+ <div class="form-login">
+ 
+     <?= $this->hook->render('template:auth:login-form:before') ?>
+ 
+-    <?php if (isset($errors['login'])): ?>
++    <?php if ($show_login_error): ?>
+         <p class="alert alert-error"><?= $this->text->e($errors['login']) ?></p>
+     <?php endif ?>
+ 
+-    <?php if (! HIDE_LOGIN_FORM): ?>
++    <?php if ($show_login_form): ?>
+     <form method="post" action="<?= $this->url->href('AuthController', 'check') ?>">
+@@
+-        <?php if (isset($captcha) && $captcha): ?>
++        <?php if ($show_captcha): ?>
+             <?= $this->form->label(t('Enter the text below'), 'captcha') ?>
+             <img src="<?= $this->url->href('CaptchaController', 'image') ?>" alt="Captcha">
+             <?= $this->form->text('captcha', array(), $errors, array('required')) ?>
+         <?php endif ?>
+ 
+-        <?php if (REMEMBER_ME_AUTH): ?>
++        <?php if ($show_remember_me): ?>
+             <?= $this->form->checkbox('remember_me', t('Remember Me'), 1, true) ?><br>
+         <?php endif ?>
+ 
+         <div class="form-actions">
+             <button type="submit" class="btn btn-blue"><?= t('Sign in') ?></button>
+         </div>
+-        <?php if ($this->app->config('password_reset') == 1): ?>
++        <?php if ($show_password_reset): ?>
+             <div class="reset-password">
+                 <?= $this->url->link(t('Forgot password?'), 'PasswordResetController', 'create') ?>
+             </div>
+*** End Patch

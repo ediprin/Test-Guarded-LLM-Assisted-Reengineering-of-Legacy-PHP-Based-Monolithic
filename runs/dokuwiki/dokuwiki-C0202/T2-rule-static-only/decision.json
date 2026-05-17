@@ -1,0 +1,7 @@
+{
+  "treatment": "T2-rule-static-only",
+  "candidate_id": "dokuwiki-C0202",
+  "status": "not_applicable",
+  "reason": "No safe mechanical rule is implemented for candidate_type=mixed_php_html_sql.",
+  "patch_generated": false
+}

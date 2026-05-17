@@ -1,0 +1,10 @@
+{
+  "candidate_id": "dokuwiki-C0224",
+  "project": "dokuwiki",
+  "file": "lib/exe/css.php",
+  "candidate_type": "long_method_or_region",
+  "start_line": "537",
+  "end_line": "576",
+  "oracle_ids": "dokuwiki_css_http",
+  "eligibility_status": "ELIGIBLE_PRE_TREATMENT"
+}

@@ -1,0 +1,9 @@
+project,initial_candidates,needs_characterization,needs_manual_oracle_review,pending_target_php_syntax,eligible
+phpmyadmin,972,469,503,0,0
+dokuwiki,385,79,306,0,0
+opencart,926,25,901,0,0
+phpbb,1057,163,894,0,0
+phppgadmin,333,179,154,0,0
+roundcubemail,513,99,414,0,0
+kanboard,269,136,133,0,0
+dolibarr,4998,1743,3255,0,0

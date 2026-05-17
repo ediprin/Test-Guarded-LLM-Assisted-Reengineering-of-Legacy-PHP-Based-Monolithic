@@ -1,0 +1,51 @@
+--- install.php
++++ install.php
+@@ -263,37 +263,39 @@
+     }
+ 
+     //autolowercase the username
+     $d['superuser'] = isset($d['superuser']) ? strtolower($d['superuser']) : "";
+ 
+     $ok = false;
++    $submitted = isset($_REQUEST['submit']);
+ 
+-    if(isset($_REQUEST['submit'])) {
++    if($submitted) {
+         $ok = true;
+ 
+         // check input
+         if(empty($d['title'])){
+             $error[] = sprintf($lang['i_badval'],$lang['i_wikiname']);
+-            $ok      = false;
++            $ok = false;
+         }
+         if(isset($d['acl'])){
+             if(!preg_match('/^[a-z0-9_]+$/',$d['superuser'])){
+                 $error[] = sprintf($lang['i_badval'],$lang['i_superuser']);
+-                $ok      = false;
++                $ok = false;
+             }
+             if(empty($d['password'])){
+                 $error[] = sprintf($lang['i_badval'],$lang['pass']);
+-                $ok      = false;
++                $ok = false;
+             }
+             elseif(!isset($d['confirm']) || $d['confirm'] != $d['password']){
+                 $error[] = sprintf($lang['i_badval'],$lang['passchk']);
+-                $ok      = false;
++                $ok = false;
+             }
+             if(empty($d['fullname']) || strstr($d['fullname'],':')){
+                 $error[] = sprintf($lang['i_badval'],$lang['fullname']);
+-                $ok      = false;
++                $ok = false;
+             }
+             if(empty($d['email']) || strstr($d['email'],':') || !strstr($d['email'],'@')){
+                 $error[] = sprintf($lang['i_badval'],$lang['email']);
+-                $ok      = false;
++                $ok = false;
+             }
+         }
+     }
+     $d = array_merge($form_default, $d);
+     return $ok;

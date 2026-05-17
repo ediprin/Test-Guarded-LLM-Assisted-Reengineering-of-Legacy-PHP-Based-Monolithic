@@ -1,0 +1,24 @@
+*** Begin Patch
+*** Update File: app/Template/layout.php
+@@
+ <!DOCTYPE html>
+ <html lang="<?= $this->app->jsLang() ?>">
++<?php $asset_dir = $this->url->dir(); ?>
+     <head>
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, user-scalable=no">
+         <meta name="mobile-web-app-capable" content="yes">
+@@
+         <?= $this->hook->asset('js', 'template:layout:js') ?>
+ 
+-        <link rel="icon" type="image/png" href="<?= $this->url->dir() ?>assets/img/favicon.png">
+-        <link rel="apple-touch-icon" href="<?= $this->url->dir() ?>assets/img/touch-icon-iphone.png">
+-        <link rel="apple-touch-icon" sizes="72x72" href="<?= $this->url->dir() ?>assets/img/touch-icon-ipad.png">
+-        <link rel="apple-touch-icon" sizes="114x114" href="<?= $this->url->dir() ?>assets/img/touch-icon-iphone-retina.png">
+-        <link rel="apple-touch-icon" sizes="144x144" href="<?= $this->url->dir() ?>assets/img/touch-icon-ipad-retina.png">
++        <link rel="icon" type="image/png" href="<?= $asset_dir ?>assets/img/favicon.png">
++        <link rel="apple-touch-icon" href="<?= $asset_dir ?>assets/img/touch-icon-iphone.png">
++        <link rel="apple-touch-icon" sizes="72x72" href="<?= $asset_dir ?>assets/img/touch-icon-ipad.png">
++        <link rel="apple-touch-icon" sizes="114x114" href="<?= $asset_dir ?>assets/img/touch-icon-iphone-retina.png">
++        <link rel="apple-touch-icon" sizes="144x144" href="<?= $asset_dir ?>assets/img/touch-icon-ipad-retina.png">
+*** End Patch

@@ -1,0 +1,9 @@
+{
+  "status": "model_executed",
+  "model": "gpt-5.4-mini",
+  "patch_generated": true,
+  "patch_format": "codex_apply_patch",
+  "response_id": "resp_0a1ce5bb5ffbe000006a06ff628c408193b2ca9a7619d331ed",
+  "duration_seconds": 5.799,
+  "patch_starts_with": "*** Begin Patch"
+}

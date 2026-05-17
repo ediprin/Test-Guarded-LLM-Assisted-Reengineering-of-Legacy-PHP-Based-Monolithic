@@ -1,0 +1,38 @@
+*** Begin Patch
+*** Update File: app/Template/layout.php
+@@
++<?php
++$layout_title = isset($page_title) ? $page_title : (isset($title) ? $title : 'Kanboard');
++$layout_header = array(
++    'title' => $title,
++    'description' => isset($description) ? $description : '',
++    'board_selector' => isset($board_selector) ? $board_selector : array(),
++    'project' => isset($project) ? $project : array(),
++);
++?>
+ <!DOCTYPE html>
+ <html lang="<?= $this->app->jsLang() ?>">
+@@
+         <title>
+-            <?php if (isset($page_title)): ?>
+-                <?= $this->text->e($page_title) ?>
+-            <?php elseif (isset($title)): ?>
+-                <?= $this->text->e($title) ?>
+-            <?php else: ?>
+-                Kanboard
+-            <?php endif ?>
++            <?= $this->text->e($layout_title) ?>
+         </title>
+@@
+         <?= $this->hook->render('template:layout:top') ?>
+-        <?= $this->render('header', array(
+-            'title' => $title,
+-            'description' => isset($description) ? $description : '',
+-            'board_selector' => isset($board_selector) ? $board_selector : array(),
+-            'project' => isset($project) ? $project : array(),
+-        )) ?>
++        <?= $this->render('header', $layout_header) ?>
+         <section class="page">
+             <?= $this->app->flashMessage() ?>
+             <?= $content_for_layout ?>
+*** End Patch

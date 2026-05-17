@@ -1,0 +1,7 @@
+{
+  "treatment": "T2-rule-static-only",
+  "candidate_id": "dokuwiki-C0009",
+  "status": "not_applicable",
+  "reason": "No safe mechanical rule is implemented for candidate_type=long_method_or_region.",
+  "patch_generated": false
+}

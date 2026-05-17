@@ -1,0 +1,42 @@
+*** Begin Patch
+*** Update File: inc/html.php
+@@
++function html_btn_script_and_params($id, &$params){
++    global $conf;
++
++    //filter id (without urlencoding)
++    $id = idfilter($id,false);
++
++    //make nice URLs even for buttons
++    if($conf['userewrite'] == 2){
++        $script = DOKU_BASE.DOKU_SCRIPT.'/'.$id;
++    }elseif($conf['userewrite']){
++        $script = DOKU_BASE.$id;
++    }else{
++        $script = DOKU_BASE.DOKU_SCRIPT;
++        $params['id'] = $id;
++    }
++
++    return $script;
++}
++
+ function html_btn($name, $id, $akey, $params, $method='get', $tooltip='', $label=false, $svg=null){
+     global $conf;
+     global $lang;
+@@
+-    //filter id (without urlencoding)
+-    $id = idfilter($id,false);
+-
+-    //make nice URLs even for buttons
+-    if($conf['userewrite'] == 2){
+-        $script = DOKU_BASE.DOKU_SCRIPT.'/'.$id;
+-    }elseif($conf['userewrite']){
+-        $script = DOKU_BASE.$id;
+-    }else{
+-        $script = DOKU_BASE.DOKU_SCRIPT;
+-        $params['id'] = $id;
+-    }
++    $script = html_btn_script_and_params($id, $params);
+ 
+     $ret .= '<form class="button btn_'.$name.'" method="'.$method.'" action="'.$script.'"><div class="no">';
+*** End Patch

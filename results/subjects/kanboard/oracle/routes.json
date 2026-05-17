@@ -1,0 +1,24 @@
+{
+  "review_types": ["mixed_php_html", "form_handling", "mixed_php_html_sql"],
+  "routes": [
+    {
+      "oracle_id": "kanboard_login_http",
+      "characterization_csv": "results/subjects/kanboard/characterization/login.csv",
+      "stable_files": ["index.php", "app/Template/auth/index.php", "app/Template/layout.php", "app/Template/header.php"]
+    },
+    {
+      "oracle_id": "kanboard_dashboard_auth_http",
+      "characterization_csv": "results/subjects/kanboard/characterization/dashboard_auth.csv",
+      "stable_files": [
+        "index.php",
+        "app/Template/layout.php",
+        "app/Template/header.php",
+        "app/Template/dashboard/layout.php",
+        "app/Template/dashboard/overview.php",
+        "app/Template/dashboard/projects.php",
+        "app/Template/dashboard/subtasks.php",
+        "app/Template/dashboard/tasks.php"
+      ]
+    }
+  ]
+}

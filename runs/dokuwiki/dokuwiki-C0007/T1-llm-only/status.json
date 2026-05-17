@@ -1,0 +1,8 @@
+{
+  "status": "model_executed",
+  "model": "gpt-5.4-mini",
+  "patch_generated": true,
+  "response_id": "resp_030a97b5fa818d52006a06fc6e5b9c8196af7e8fff30bb67a9",
+  "duration_seconds": 3.981,
+  "patch_starts_with": "--- a/install.php"
+}

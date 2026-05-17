@@ -1,0 +1,10 @@
+{
+  "candidate_id": "kanboard-C0092",
+  "project": "kanboard",
+  "file": "app/Template/auth/index.php",
+  "candidate_type": "mixed_php_html",
+  "start_line": "1",
+  "end_line": "42",
+  "oracle_ids": "kanboard_login_http",
+  "eligibility_status": "ELIGIBLE_PRE_TREATMENT"
+}

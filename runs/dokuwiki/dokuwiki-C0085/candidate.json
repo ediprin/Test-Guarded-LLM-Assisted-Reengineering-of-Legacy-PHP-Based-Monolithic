@@ -1,0 +1,10 @@
+{
+  "candidate_id": "dokuwiki-C0085",
+  "project": "dokuwiki",
+  "file": "inc/html.php",
+  "candidate_type": "long_method_or_region",
+  "start_line": "2137",
+  "end_line": "2197",
+  "oracle_ids": "dokuwiki_home_http",
+  "eligibility_status": "ELIGIBLE_PRE_TREATMENT"
+}

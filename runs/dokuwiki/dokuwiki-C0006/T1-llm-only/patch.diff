@@ -1,0 +1,80 @@
+*** Begin Patch
+*** Update File: install.php
+@@
+ function print_form($d){
+     global $lang;
+     global $LC;
+ 
+     include(DOKU_CONF.'license.php');
+ 
+     if(!is_array($d)) $d = array();
+     $d = array_map('hsc',$d);
+ 
+     if(!isset($d['acl'])) $d['acl']=1;
+     if(!isset($d['pop'])) $d['pop']=1;
++
++    $aclChecked   = $d['acl'] ? ' checked="checked"' : '';
++    $allowregChecked = !empty($d['allowreg']) ? ' checked="checked"' : '';
++    $popChecked    = $d['pop'] ? ' checked="checked"' : '';
++    $policy        = isset($d['policy']) ? (int) $d['policy'] : 0;
++    $selectedPolicy = array(
++        0 => ($policy === 0) ? 'selected="selected"' : '',
++        1 => ($policy === 1) ? 'selected="selected"' : '',
++        2 => ($policy === 2) ? 'selected="selected"' : '',
++    );
++    if(empty($d['license'])) $d['license'] = 'cc-by-sa';
+ 
+     ?>
+     <form action="" method="post">
+     <input type="hidden" name="l" value="<?php echo $LC ?>" />
+     <fieldset>
+@@
+         <fieldset style="margin-top: 1em;">
+             <label for="acl">
+-            <input type="checkbox" name="d[acl]" id="acl" <?php echo(($d['acl'] ? ' checked="checked"' : ''));?> />
++            <input type="checkbox" name="d[acl]" id="acl" <?php echo $aclChecked; ?> />
+             <?php echo $lang['i_enableacl']?></label>
+ 
+             <fieldset id="acldep">
+                 <label for="superuser"><?php echo $lang['i_superuser']?></label>
+                 <input class="text" type="text" name="d[superuser]" id="superuser" value="<?php echo $d['superuser'] ?>" />
+@@
+ 
+                 <label for="policy"><?php echo $lang['i_policy']?></label>
+                 <select class="text" name="d[policy]" id="policy">
+-                    <option value="0" <?php echo ($d['policy'] == 0)?'selected="selected"':'' ?>><?php echo $lang['i_pol0']?></option>
+-                    <option value="1" <?php echo ($d['policy'] == 1)?'selected="selected"':'' ?>><?php echo $lang['i_pol1']?></option>
+-                    <option value="2" <?php echo ($d['policy'] == 2)?'selected="selected"':'' ?>><?php echo $lang['i_pol2']?></option>
++                    <option value="0" <?php echo $selectedPolicy[0]; ?>><?php echo $lang['i_pol0']?></option>
++                    <option value="1" <?php echo $selectedPolicy[1]; ?>><?php echo $lang['i_pol1']?></option>
++                    <option value="2" <?php echo $selectedPolicy[2]; ?>><?php echo $lang['i_pol2']?></option>
+                 </select>
+ 
+                 <label for="allowreg">
+-                    <input type="checkbox" name="d[allowreg]" id="allowreg" <?php echo(($d['allowreg'] ? ' checked="checked"' : ''));?> />
++                    <input type="checkbox" name="d[allowreg]" id="allowreg" <?php echo $allowregChecked; ?> />
+                     <?php echo $lang['i_allowreg']?>
+                 </label>
+             </fieldset>
+         </fieldset>
+ 
+         <fieldset>
+             <p><?php echo $lang['i_license']?></p>
+             <?php
+             array_push($license,array('name' => $lang['i_license_none'], 'url'=>''));
+-            if(empty($d['license'])) $d['license'] = 'cc-by-sa';
+             foreach($license as $key => $lic){
+                 echo '<label for="lic_'.$key.'">';
+                 echo '<input type="radio" name="d[license]" value="'.hsc($key).'" id="lic_'.$key.'"'.
+                      (($d['license'] === $key)?' checked="checked"':'').'>';
+                 echo hsc($lic['name']);
+@@
+         <fieldset>
+             <p><?php echo $lang['i_pop_field']?></p>
+             <label for="pop">
+-                <input type="checkbox" name="d[pop]" id="pop" <?php echo(($d['pop'] ? ' checked="checked"' : ''));?> />
++                <input type="checkbox" name="d[pop]" id="pop" <?php echo $popChecked; ?> />
+                 <?php echo $lang['i_pop_label']?> <a href="http://www.dokuwiki.org/popularity" target="_blank"><sup>[?]</sup></a>
+             </label>
+         </fieldset>
+*** End Patch

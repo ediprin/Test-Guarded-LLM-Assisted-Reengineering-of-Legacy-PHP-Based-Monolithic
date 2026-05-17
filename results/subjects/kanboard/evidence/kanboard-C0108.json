@@ -1,0 +1,80 @@
+{
+  "candidate_id": "kanboard-C0108",
+  "subject_id": "kanboard",
+  "file": "app/Template/comment/show.php",
+  "lines": [
+    1,
+    40
+  ],
+  "candidate_type": "mixed_php_html",
+  "issues": [
+    {
+      "type": "Mixed PHP/HTML",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 42
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#comment-<?= $comment[",
+      ".<?=",
+      ".comment",
+      ".comment-actions",
+      ".comment-content",
+      ".comment-date",
+      ".comment-title",
+      ".comment-username",
+      ".dropdown",
+      ".dropdown-menu",
+      ".dropdown-menu-link-icon",
+      ".fa",
+      ".fa-caret-down",
+      ".fa-cog",
+      ".isset($preview)",
+      ".markdown"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#comment-<?= $comment[",
+      ".<?=",
+      ".comment",
+      ".comment-actions",
+      ".comment-content",
+      ".comment-date",
+      ".comment-title",
+      ".comment-username",
+      ".dropdown",
+      ".dropdown-menu",
+      ".dropdown-menu-link-icon",
+      ".fa",
+      ".fa-caret-down",
+      ".fa-cog",
+      ".isset($preview)",
+      ".markdown"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Separate PHP Logic from Markup",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

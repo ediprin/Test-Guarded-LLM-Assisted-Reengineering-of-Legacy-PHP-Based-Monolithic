@@ -1,0 +1,103 @@
+{
+  "candidate_id": "dokuwiki-C0202",
+  "subject_id": "dokuwiki",
+  "file": "inc/template.php",
+  "lines": [
+    1,
+    1873
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 296
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [],
+    "database_tables": [
+      "html",
+      "local",
+      "metadata",
+      "the",
+      "this",
+      "web"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.rawurlencode($ID).\n        ",
+      "#media__content",
+      "#media__tree",
+      "#mediamanager__page",
+      ".\\\\dokuwiki\\\\Menu\\\\Item\\\\",
+      ".a11y",
+      ".action",
+      ".bchead",
+      ".bcsep",
+      ".breadcrumbs",
+      ".curid",
+      ".file",
+      ".filelist",
+      ".home",
+      ".level2",
+      ".li",
+      ".license",
+      ".mediafile",
+      ".mf_",
+      ".namespaces"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [
+      "html",
+      "local",
+      "metadata",
+      "the",
+      "this",
+      "web"
+    ],
+    "must_preserve_dom_selectors": [
+      "#.rawurlencode($ID).\n        ",
+      "#media__content",
+      "#media__tree",
+      "#mediamanager__page",
+      ".\\\\dokuwiki\\\\Menu\\\\Item\\\\",
+      ".a11y",
+      ".action",
+      ".bchead",
+      ".bcsep",
+      ".breadcrumbs",
+      ".curid",
+      ".file",
+      ".filelist",
+      ".home",
+      ".level2",
+      ".li",
+      ".license",
+      ".mediafile",
+      ".mf_",
+      ".namespaces"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

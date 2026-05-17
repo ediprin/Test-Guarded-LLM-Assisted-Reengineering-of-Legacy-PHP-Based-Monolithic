@@ -1,0 +1,41 @@
+*** Begin Patch
+*** Update File: install.php
+@@
+     <div style="float: left; width: 58%;">
+         <?php
++            $requestData = isset($_REQUEST['d']) ? $_REQUEST['d'] : array();
++
+             try {
+-                if(! (check_functions() && check_permissions()) ){
++                $hasSystemRequirements = check_functions() && check_permissions();
++                $configsAreValid = check_configs();
++                $dataIsValid = check_data($requestData);
++
++                if(!$hasSystemRequirements){
+                     echo '<p>'.$lang['i_problems'].'</p>';
+                     print_errors();
+                     print_retry();
+-                }elseif(!check_configs()){
++                }elseif(!$configsAreValid){
+                     echo '<p>'.$lang['i_modified'].'</p>';
+                     print_errors();
+-                }elseif(check_data($_REQUEST['d'])){
++                }elseif($dataIsValid){
+                     // check_data has sanitized all input parameters
+-                    if(!store_data($_REQUEST['d'])){
++                    if(!store_data($requestData)){
+                         echo '<p>'.$lang['i_failure'].'</p>';
+                         print_errors();
+                     }else{
+                         echo '<p>'.$lang['i_success'].'</p>';
+                     }
+                 }else{
+                     print_errors();
+-                    print_form($_REQUEST['d']);
++                    print_form($requestData);
+                 }
+             } catch (Exception $e) {
+                 echo 'Caught exception: ',  $e->getMessage(), "\n";
+             }
+         ?>
+*** End Patch

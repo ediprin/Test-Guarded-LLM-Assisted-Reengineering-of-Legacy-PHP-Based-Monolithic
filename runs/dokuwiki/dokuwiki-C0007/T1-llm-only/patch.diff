@@ -1,0 +1,29 @@
+--- a/install.php
++++ b/install.php
+@@ -233,14 +233,17 @@
+ function print_retry() {
+-    global $lang;
+-    global $LC;
++    global $lang, $LC;
++
++    $actionLabel = $lang['i_retry'];
++    $languageCode = $LC;
+     ?>
+     <form action="" method="get">
+       <fieldset>
+-        <input type="hidden" name="l" value="<?php echo $LC ?>" />
+-        <button type="submit"><?php echo $lang['i_retry'];?></button>
++        <input type="hidden" name="l" value="<?php echo $languageCode ?>" />
++        <button type="submit"><?php echo $actionLabel; ?></button>
+       </fieldset>
+     </form>
+     <?php
+ }
+ 
+ /**
+  * Check validity of data
+@@ -250,4 +253,4 @@
+  * @param array $d
+  * @return bool ok?
+  */
+ function check_data(&$d){

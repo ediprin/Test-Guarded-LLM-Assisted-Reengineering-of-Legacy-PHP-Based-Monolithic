@@ -1,0 +1,7 @@
+{
+  "treatment": "T2-rule-static-only",
+  "candidate_id": "dokuwiki-C0005",
+  "status": "not_applicable",
+  "reason": "No safe mechanical rule is implemented for candidate_type=form_handling.",
+  "patch_generated": false
+}

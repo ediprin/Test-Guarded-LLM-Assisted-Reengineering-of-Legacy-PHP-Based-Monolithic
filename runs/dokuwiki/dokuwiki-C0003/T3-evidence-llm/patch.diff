@@ -1,0 +1,224 @@
+*** Begin Patch
+*** Update File: feed.php
+@@
+ function rss_buildItems(&$rss, &$data, $opt) {
+     global $conf;
+     global $lang;
+@@
+             if($conf['rss_show_summary'] && !empty($ditem['sum'])) {
+                 $item->title .= ' - '.strip_tags($ditem['sum']);
+             }
+ 
+             // add item link
+@@
+                     }
+             }
+ 
+             // add item content
+-            switch($opt['item_content']) {
+-                case 'diff':
+-                case 'htmldiff':
+-                    if($ditem['media']) {
+-                        $medialog = new MediaChangeLog($id);
+-                        $revs  = $medialog->getRevisions(0, 1);
+-                        $rev   = $revs[0];
+-                        $src_r = '';
+-                        $src_l = '';
+-
+-                        if($size = media_image_preview_size($id, '', new JpegMeta(mediaFN($id)), 300)) {
+-                            $more  = 'w='.$size[0].'&h='.$size[1].'&t='.@filemtime(mediaFN($id));
+-                            $src_r = ml($id, $more, true, '&amp;', true);
+-                        }
+-                        if($rev && $size = media_image_preview_size($id, $rev, new JpegMeta(mediaFN($id, $rev)), 300)) {
+-                            $more  = 'rev='.$rev.'&w='.$size[0].'&h='.$size[1];
+-                            $src_l = ml($id, $more, true, '&amp;', true);
+-                        }
+-                        $content = '';
+-                        if($src_r) {
+-                            $content = '<table>';
+-                            $content .= '<tr><th width="50%">'.$rev.'</th>';
+-                            $content .= '<th width="50%">'.$lang['current'].'</th></tr>';
+-                            $content .= '<tr align="center"><td><img src="'.$src_l.'" alt="" /></td><td>';
+-                            $content .= '<img src="'.$src_r.'" alt="'.$id.'" /></td></tr>';
+-                            $content .= '</table>';
+-                        }
+-
+-                    } else {
+-                        require_once(DOKU_INC.'inc/DifferenceEngine.php');
+-                        $pagelog = new PageChangeLog($id);
+-                        $revs = $pagelog->getRevisions(0, 1);
+-                        $rev  = $revs[0];
+-
+-                        if($rev) {
+-                            $df = new Diff(explode("\n", rawWiki($id, $rev)),
+-                                           explode("\n", rawWiki($id, '')));
+-                        } else {
+-                            $df = new Diff(array(''),
+-                                           explode("\n", rawWiki($id, '')));
+-                        }
+-
+-                        if($opt['item_content'] == 'htmldiff') {
+-                            // note: no need to escape diff output, TableDiffFormatter provides 'safe' html
+-                            $tdf     = new TableDiffFormatter();
+-                            $content = '<table>';
+-                            $content .= '<tr><th colspan="2" width="50%">'.$rev.'</th>';
+-                            $content .= '<th colspan="2" width="50%">'.$lang['current'].'</th></tr>';
+-                            $content .= $tdf->format($df);
+-                            $content .= '</table>';
+-                        } else {
+-                            // note: diff output must be escaped, UnifiedDiffFormatter provides plain text
+-                            $udf     = new UnifiedDiffFormatter();
+-                            $content = "<pre>\n".hsc($udf->format($df))."\n</pre>";
+-                        }
+-                    }
+-                    break;
+-                case 'html':
+-                    if($ditem['media']) {
+-                        if($size = media_image_preview_size($id, '', new JpegMeta(mediaFN($id)))) {
+-                            $more    = 'w='.$size[0].'&h='.$size[1].'&t='.@filemtime(mediaFN($id));
+-                            $src     = ml($id, $more, true, '&amp;', true);
+-                            $content = '<img src="'.$src.'" alt="'.$id.'" />';
+-                        } else {
+-                            $content = '';
+-                        }
+-                    } else {
+-                        if (@filemtime(wikiFN($id)) === $date) {
+-                            $content = p_wiki_xhtml($id, '', false);
+-                        } else {
+-                            $content = p_wiki_xhtml($id, $date, false);
+-                        }
+-                        // no TOC in feeds
+-                        $content = preg_replace('/(<!-- TOC START -->).*(<!-- TOC END -->)/s', '', $content);
+-
+-                        // add alignment for images
+-                        $content = preg_replace('/(<img .*?class="medialeft")/s', '\\1 align="left"', $content);
+-                        $content = preg_replace('/(<img .*?class="mediaright")/s', '\\1 align="right"', $content);
+-
+-                        // make URLs work when canonical is not set, regexp instead of rerendering!
+-                        if(!$conf['canonical']) {
+-                            $base    = preg_quote(DOKU_REL, '/');
+-                            $content = preg_replace('/(<a href|<img src)="('.$base.')/s', '$1="'.DOKU_URL, $content);
+-                        }
+-                    }
+-
+-                    break;
+-                case 'abstract':
+-                default:
+-                    if($ditem['media']) {
+-                        if($size = media_image_preview_size($id, '', new JpegMeta(mediaFN($id)))) {
+-                            $more    = 'w='.$size[0].'&h='.$size[1].'&t='.@filemtime(mediaFN($id));
+-                            $src     = ml($id, $more, true, '&amp;', true);
+-                            $content = '<img src="'.$src.'" alt="'.$id.'" />';
+-                        } else {
+-                            $content = '';
+-                        }
+-                    } else {
+-                        $content = $meta['description']['abstract'];
+-                    }
+-            }
++            $content = rss_buildItemContent($id, $date, $ditem, $opt, $meta);
+             $item->description = $content; //FIXME a plugin hook here could be senseful
+@@
+ }
++
++function rss_buildItemContent($id, $date, &$ditem, $opt, &$meta) {
++    global $conf;
++    global $lang;
++
++    switch($opt['item_content']) {
++        case 'diff':
++        case 'htmldiff':
++            if($ditem['media']) {
++                $medialog = new MediaChangeLog($id);
++                $revs  = $medialog->getRevisions(0, 1);
++                $rev   = $revs[0];
++                $src_r = '';
++                $src_l = '';
++
++                if($size = media_image_preview_size($id, '', new JpegMeta(mediaFN($id)), 300)) {
++                    $more  = 'w='.$size[0].'&h='.$size[1].'&t='.@filemtime(mediaFN($id));
++                    $src_r = ml($id, $more, true, '&amp;', true);
++                }
++                if($rev && $size = media_image_preview_size($id, $rev, new JpegMeta(mediaFN($id, $rev)), 300)) {
++                    $more  = 'rev='.$rev.'&w='.$size[0].'&h='.$size[1];
++                    $src_l = ml($id, $more, true, '&amp;', true);
++                }
++                $content = '';
++                if($src_r) {
++                    $content = '<table>';
++                    $content .= '<tr><th width="50%">'.$rev.'</th>';
++                    $content .= '<th width="50%">'.$lang['current'].'</th></tr>';
++                    $content .= '<tr align="center"><td><img src="'.$src_l.'" alt="" /></td><td>';
++                    $content .= '<img src="'.$src_r.'" alt="'.$id.'" /></td></tr>';
++                    $content .= '</table>';
++                }
++            } else {
++                require_once(DOKU_INC.'inc/DifferenceEngine.php');
++                $pagelog = new PageChangeLog($id);
++                $revs = $pagelog->getRevisions(0, 1);
++                $rev  = $revs[0];
++
++                if($rev) {
++                    $df = new Diff(explode("\n", rawWiki($id, $rev)), explode("\n", rawWiki($id, '')));
++                } else {
++                    $df = new Diff(array(''), explode("\n", rawWiki($id, '')));
++                }
++
++                if($opt['item_content'] == 'htmldiff') {
++                    $tdf     = new TableDiffFormatter();
++                    $content = '<table>';
++                    $content .= '<tr><th colspan="2" width="50%">'.$rev.'</th>';
++                    $content .= '<th colspan="2" width="50%">'.$lang['current'].'</th></tr>';
++                    $content .= $tdf->format($df);
++                    $content .= '</table>';
++                } else {
++                    $udf     = new UnifiedDiffFormatter();
++                    $content = "<pre>\n".hsc($udf->format($df))."\n</pre>";
++                }
++            }
++            break;
++        case 'html':
++            if($ditem['media']) {
++                if($size = media_image_preview_size($id, '', new JpegMeta(mediaFN($id)))) {
++                    $more    = 'w='.$size[0].'&h='.$size[1].'&t='.@filemtime(mediaFN($id));
++                    $src     = ml($id, $more, true, '&amp;', true);
++                    $content = '<img src="'.$src.'" alt="'.$id.'" />';
++                } else {
++                    $content = '';
++                }
++            } else {
++                if (@filemtime(wikiFN($id)) === $date) {
++                    $content = p_wiki_xhtml($id, '', false);
++                } else {
++                    $content = p_wiki_xhtml($id, $date, false);
++                }
++                $content = preg_replace('/(<!-- TOC START -->).*(<!-- TOC END -->)/s', '', $content);
++                $content = preg_replace('/(<img .*?class="medialeft")/s', '\\1 align="left"', $content);
++                $content = preg_replace('/(<img .*?class="mediaright")/s', '\\1 align="right"', $content);
++                if(!$conf['canonical']) {
++                    $base    = preg_quote(DOKU_REL, '/');
++                    $content = preg_replace('/(<a href|<img src)="('.$base.')/s', '$1="'.DOKU_URL, $content);
++                }
++            }
++            break;
++        case 'abstract':
++        default:
++            if($ditem['media']) {
++                if($size = media_image_preview_size($id, '', new JpegMeta(mediaFN($id)))) {
++                    $more    = 'w='.$size[0].'&h='.$size[1].'&t='.@filemtime(mediaFN($id));
++                    $src     = ml($id, $more, true, '&amp;', true);
++                    $content = '<img src="'.$src.'" alt="'.$id.'" />';
++                } else {
++                    $content = '';
++                }
++            } else {
++                $content = $meta['description']['abstract'];
++            }
++    }
++
++    return $content;
++}
+ 
+ /**
+  * Add recent changed pages to the feed object
+  *

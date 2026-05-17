@@ -1,0 +1,76 @@
+*** Begin Patch
+*** Update File: feed.php
+@@
+                 case 'html':
+                     if($ditem['media']) {
+                         if($size = media_image_preview_size($id, '', new JpegMeta(mediaFN($id)))) {
+                             $more    = 'w='.$size[0].'&h='.$size[1].'&t='.@filemtime(mediaFN($id));
+                             $src     = ml($id, $more, true, '&amp;', true);
+                             $content = '<img src="'.$src.'" alt="'.$id.'" />';
+                         } else {
+                             $content = '';
+                         }
+                     } else {
+-                        if (@filemtime(wikiFN($id)) === $date) {
+-                            $content = p_wiki_xhtml($id, '', false);
+-                        } else {
+-                            $content = p_wiki_xhtml($id, $date, false);
+-                        }
+-                        // no TOC in feeds
+-                        $content = preg_replace('/(<!-- TOC START -->).*(<!-- TOC END -->)/s', '', $content);
+-
+-                        // add alignment for images
+-                        $content = preg_replace('/(<img .*?class="medialeft")/s', '\\1 align="left"', $content);
+-                        $content = preg_replace('/(<img .*?class="mediaright")/s', '\\1 align="right"', $content);
+-
+-                        // make URLs work when canonical is not set, regexp instead of rerendering!
+-                        if(!$conf['canonical']) {
+-                            $base    = preg_quote(DOKU_REL, '/');
+-                            $content = preg_replace('/(<a href|<img src)="('.$base.')/s', '$1="'.DOKU_URL, $content);
+-                        }
++                        $content = rss_renderWikiXhtml($id, $date);
+                     }
+ 
+                     break;
+@@
+ function rssSearch($opt) {
+     if(!$opt['search_query']) return array();
+ 
+     require_once(DOKU_INC.'inc/fulltext.php');
+     $data = ft_pageSearch($opt['search_query'], $poswords);
+     $data = array_keys($data);
+ 
+     return $data;
+ }
++
++/**
++ * Render wiki XHTML for feed output
++ *
++ * @author Andreas Gohr <andi@splitbrain.org>
++ */
++function rss_renderWikiXhtml($id, $date) {
++    global $conf;
++
++    if (@filemtime(wikiFN($id)) === $date) {
++        $content = p_wiki_xhtml($id, '', false);
++    } else {
++        $content = p_wiki_xhtml($id, $date, false);
++    }
++    // no TOC in feeds
++    $content = preg_replace('/(<!-- TOC START -->).*(<!-- TOC END -->)/s', '', $content);
++
++    // add alignment for images
++    $content = preg_replace('/(<img .*?class="medialeft")/s', '\\1 align="left"', $content);
++    $content = preg_replace('/(<img .*?class="mediaright")/s', '\\1 align="right"', $content);
++
++    // make URLs work when canonical is not set, regexp instead of rerendering!
++    if(!$conf['canonical']) {
++        $base    = preg_quote(DOKU_REL, '/');
++        $content = preg_replace('/(<a href|<img src)="('.$base.')/s', '$1="'.DOKU_URL, $content);
++    }
++
++    return $content;
++}
+ 
+ //Setup VIM: ex: et ts=4 :
+*** End Patch

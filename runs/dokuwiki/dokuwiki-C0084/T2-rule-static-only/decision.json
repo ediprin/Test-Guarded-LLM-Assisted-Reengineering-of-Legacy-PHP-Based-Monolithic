@@ -1,0 +1,7 @@
+{
+  "treatment": "T2-rule-static-only",
+  "candidate_id": "dokuwiki-C0084",
+  "status": "not_applicable",
+  "reason": "No safe mechanical rule is implemented for candidate_type=session_dependent_logic.",
+  "patch_generated": false
+}
