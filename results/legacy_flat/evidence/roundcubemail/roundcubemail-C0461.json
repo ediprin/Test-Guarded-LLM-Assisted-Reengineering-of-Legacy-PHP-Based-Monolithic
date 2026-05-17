@@ -1,0 +1,87 @@
+{
+  "candidate_id": "roundcubemail-C0461",
+  "subject_id": "roundcubemail",
+  "file": "plugins/managesieve/lib/Roundcube/rcube_sieve_engine.php",
+  "lines": [
+    1667,
+    2046
+  ],
+  "candidate_type": "long_method_or_region",
+  "issues": [
+    {
+      "type": "Long or Complex Region",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 68
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#rule_advanced",
+      "#rule_comp",
+      "#rule_date_header_div",
+      "#rule_duplicate_div",
+      "#rule_index_div",
+      "#rule_mime",
+      "#rule_mime_part",
+      "#rule_mod",
+      "#rule_mod_type",
+      "#rule_size",
+      "#rule_trans",
+      "#ruleadd%s",
+      "#ruleadv%s",
+      "#ruledel%s",
+      "#rulerow",
+      ".add",
+      ".adv",
+      ".advanced",
+      ".advbutton",
+      ".button"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#rule_advanced",
+      "#rule_comp",
+      "#rule_date_header_div",
+      "#rule_duplicate_div",
+      "#rule_index_div",
+      "#rule_mime",
+      "#rule_mime_part",
+      "#rule_mod",
+      "#rule_mod_type",
+      "#rule_size",
+      "#rule_trans",
+      "#ruleadd%s",
+      "#ruleadv%s",
+      "#ruledel%s",
+      "#rulerow",
+      ".add",
+      ".adv",
+      ".advanced",
+      ".advbutton",
+      ".button"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "candidate_id": "dolibarr-C0323",
+  "subject_id": "dolibarr",
+  "file": "htdocs/holiday/card.php",
+  "lines": [
+    1,
+    1466
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 232
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "date_debut_",
+      "date_fin_",
+      "detail_refuse",
+      "error_content",
+      "msg"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$object->id);\n\t\t\t\texit;\n\t\t\t}\n        }\n        else\n        {\n        \tsetEventMessages($langs->trans(",
+      "#.$object->id);\n\t        exit;\n\t    }\n\t    else\n\t\t{\n\t    \t$db->rollback();\n\t    }\n    }\n}\n\nif ($action == ",
+      "#.$object->id);\n           \texit;\n        }\n        else\n        {\n            $db->rollback();\n        \t$action=",
+      "#.$object->id);\n            \texit;\n            }\n        }\n        else\n        {\n        \tsetEventMessages($object->error, $object->errors, ",
+      "#.$object->id);\n            \texit;\n            }\n        }\n    }\n}\n\n\n\n/*\n * View\n */\n\n$form = new Form($db);\n$object = new Holiday($db);\n\n$listhalfday=array(",
+      "#.$object->id);\n                exit;\n            }\n\n            // From\n            $expediteur = new User($db);\n            $expediteur->fetch($object->fk_user);\n            $emailFrom = $expediteur->email;\n\n            // Subject\n\t\t\t$societeName = $conf->global->MAIN_INFO_SOCIETE_NOM;\n            if (! empty($conf->global->MAIN_APPLICATION_TITLE)) $societeName = $conf->global->MAIN_APPLICATION_TITLE;\n\n            $subject = $societeName.",
+      "#.$object->id);\n                exit;\n            }\n\n            // From\n            $expediteur = new User($db);\n            $expediteur->fetch($object->fk_user_cancel);\n            $emailFrom = $expediteur->email;\n\n            // Subject\n\t\t\t$societeName = $conf->global->MAIN_INFO_SOCIETE_NOM;\n            if (! empty($conf->global->MAIN_APPLICATION_TITLE)) $societeName = $conf->global->MAIN_APPLICATION_TITLE;\n\n            $subject = $societeName.",
+      "#.$object->id);\n                exit;\n            }\n            else\n            {\n                $db->rollback();\n                $action=",
+      "#.$object->id);\n            exit;\n        }\n    }\n\n    $action = ",
+      "#.$object->id);\n        exit;\n    }\n    else\n    {\n        $db->rollback();\n    }\n}\n\n// Si confirmation of cancellation\nif ($action == ",
+      "#.$object->id, $langs->trans(",
+      "#.$object->id.",
+      ".border",
+      ".butAction",
+      ".butActionDelete",
+      ".butActionRefused",
+      ".button",
+      ".center",
+      ".centpercent",
+      ".classfortooltip"
+    ],
+    "forms": [
+      "demandeCP"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "date_debut_",
+      "date_fin_",
+      "detail_refuse",
+      "error_content",
+      "msg"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#.$object->id);\n\t\t\t\texit;\n\t\t\t}\n        }\n        else\n        {\n        \tsetEventMessages($langs->trans(",
+      "#.$object->id);\n\t        exit;\n\t    }\n\t    else\n\t\t{\n\t    \t$db->rollback();\n\t    }\n    }\n}\n\nif ($action == ",
+      "#.$object->id);\n           \texit;\n        }\n        else\n        {\n            $db->rollback();\n        \t$action=",
+      "#.$object->id);\n            \texit;\n            }\n        }\n        else\n        {\n        \tsetEventMessages($object->error, $object->errors, ",
+      "#.$object->id);\n            \texit;\n            }\n        }\n    }\n}\n\n\n\n/*\n * View\n */\n\n$form = new Form($db);\n$object = new Holiday($db);\n\n$listhalfday=array(",
+      "#.$object->id);\n                exit;\n            }\n\n            // From\n            $expediteur = new User($db);\n            $expediteur->fetch($object->fk_user);\n            $emailFrom = $expediteur->email;\n\n            // Subject\n\t\t\t$societeName = $conf->global->MAIN_INFO_SOCIETE_NOM;\n            if (! empty($conf->global->MAIN_APPLICATION_TITLE)) $societeName = $conf->global->MAIN_APPLICATION_TITLE;\n\n            $subject = $societeName.",
+      "#.$object->id);\n                exit;\n            }\n\n            // From\n            $expediteur = new User($db);\n            $expediteur->fetch($object->fk_user_cancel);\n            $emailFrom = $expediteur->email;\n\n            // Subject\n\t\t\t$societeName = $conf->global->MAIN_INFO_SOCIETE_NOM;\n            if (! empty($conf->global->MAIN_APPLICATION_TITLE)) $societeName = $conf->global->MAIN_APPLICATION_TITLE;\n\n            $subject = $societeName.",
+      "#.$object->id);\n                exit;\n            }\n            else\n            {\n                $db->rollback();\n                $action=",
+      "#.$object->id);\n            exit;\n        }\n    }\n\n    $action = ",
+      "#.$object->id);\n        exit;\n    }\n    else\n    {\n        $db->rollback();\n    }\n}\n\n// Si confirmation of cancellation\nif ($action == ",
+      "#.$object->id, $langs->trans(",
+      "#.$object->id.",
+      ".border",
+      ".butAction",
+      ".butActionDelete",
+      ".butActionRefused",
+      ".button",
+      ".center",
+      ".centpercent",
+      ".classfortooltip"
+    ],
+    "must_preserve_forms": [
+      "demandeCP"
+    ]
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

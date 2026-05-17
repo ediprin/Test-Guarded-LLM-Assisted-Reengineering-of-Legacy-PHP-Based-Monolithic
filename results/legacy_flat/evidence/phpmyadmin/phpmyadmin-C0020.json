@@ -1,0 +1,125 @@
+{
+  "candidate_id": "phpmyadmin-C0020",
+  "subject_id": "phpmyadmin",
+  "file": "prefs_manage.php",
+  "lines": [
+    1,
+    380
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 81
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "export_type",
+      "fix_errors",
+      "import_merge",
+      "import_type",
+      "json",
+      "return_url",
+      "submit_clear",
+      "submit_export",
+      "submit_get_json",
+      "submit_import"
+    ],
+    "session_keys": [
+      "userprefs_autoload"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#export_local_storage",
+      "#export_php_file",
+      "#export_text_file",
+      "#import_local_storage",
+      "#import_merge",
+      "#import_text_file",
+      "#input_import_file",
+      "#main_pane_left",
+      "#main_pane_right",
+      "#maincontainer",
+      "#opts_export_local_storage",
+      "#opts_import_local_storage",
+      "#opts_import_text_file",
+      ".clearfloat",
+      ".click-hide-message",
+      ".config-form",
+      ".disableAjax",
+      ".disabled",
+      ".group",
+      ".group-cnt"
+    ],
+    "forms": [
+      "prefs_export",
+      "prefs_import",
+      "prefs_manage.php",
+      "prefs_reset"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "export_type",
+      "fix_errors",
+      "import_merge",
+      "import_type",
+      "json",
+      "return_url",
+      "submit_clear",
+      "submit_export",
+      "submit_get_json",
+      "submit_import"
+    ],
+    "must_preserve_session_keys": [
+      "userprefs_autoload"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#export_local_storage",
+      "#export_php_file",
+      "#export_text_file",
+      "#import_local_storage",
+      "#import_merge",
+      "#import_text_file",
+      "#input_import_file",
+      "#main_pane_left",
+      "#main_pane_right",
+      "#maincontainer",
+      "#opts_export_local_storage",
+      "#opts_import_local_storage",
+      "#opts_import_text_file",
+      ".clearfloat",
+      ".click-hide-message",
+      ".config-form",
+      ".disableAjax",
+      ".disabled",
+      ".group",
+      ".group-cnt"
+    ],
+    "must_preserve_forms": [
+      "prefs_export",
+      "prefs_import",
+      "prefs_manage.php",
+      "prefs_reset"
+    ]
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

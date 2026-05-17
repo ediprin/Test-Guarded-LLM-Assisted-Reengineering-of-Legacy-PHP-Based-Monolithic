@@ -1,0 +1,133 @@
+{
+  "candidate_id": "dolibarr-C0586",
+  "subject_id": "dolibarr",
+  "file": "htdocs/website/index.php",
+  "lines": [
+    1,
+    3114
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 526
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [
+      "dol_screenheight",
+      "newtoken"
+    ],
+    "database_tables": [
+      "a",
+      "action",
+      "actions_linkedfiles",
+      "all",
+      "config",
+      "container",
+      "css",
+      "database",
+      "file",
+      "files",
+      "header",
+      "link",
+      "name",
+      "page",
+      "pagetemplate",
+      "scratch",
+      "script",
+      "the"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$object->id);\n\t\texit;\n\t}\n\telse\n\t{\n\t\t$db->rollback();\n\t\tdol_print_error($db);\n\t}\n}\n\n// Delete page\nif ($action == ",
+      "#.$object->id, $langs->trans(",
+      "#.$object->id;\n\t$head[$h][1] = $langs->trans(",
+      "#WEBSITE_PAGENAME",
+      "#WEBSITE_TITLE",
+      "#bodywebsite",
+      "#divbodywebsite",
+      "#font-wasesome-css",
+      "#google-fonts-css",
+      "#pageid",
+      "#previewpage",
+      "#previewpageext",
+      "#previewpageurl",
+      "#savefile",
+      "#website",
+      "#websitecontentundertopmenu",
+      "#websiteinputpage",
+      "#websiteinputurl",
+      ".bodywebsite",
+      ".boostrap-iso"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [
+      "dol_screenheight",
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [
+      "a",
+      "action",
+      "actions_linkedfiles",
+      "all",
+      "config",
+      "container",
+      "css",
+      "database",
+      "file",
+      "files",
+      "header",
+      "link",
+      "name",
+      "page",
+      "pagetemplate",
+      "scratch",
+      "script",
+      "the"
+    ],
+    "must_preserve_dom_selectors": [
+      "#.$object->id);\n\t\texit;\n\t}\n\telse\n\t{\n\t\t$db->rollback();\n\t\tdol_print_error($db);\n\t}\n}\n\n// Delete page\nif ($action == ",
+      "#.$object->id, $langs->trans(",
+      "#.$object->id;\n\t$head[$h][1] = $langs->trans(",
+      "#WEBSITE_PAGENAME",
+      "#WEBSITE_TITLE",
+      "#bodywebsite",
+      "#divbodywebsite",
+      "#font-wasesome-css",
+      "#google-fonts-css",
+      "#pageid",
+      "#previewpage",
+      "#previewpageext",
+      "#previewpageurl",
+      "#savefile",
+      "#website",
+      "#websitecontentundertopmenu",
+      "#websiteinputpage",
+      "#websiteinputurl",
+      ".bodywebsite",
+      ".boostrap-iso"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "candidate_id": "phpmyadmin-C0298",
+  "subject_id": "phpmyadmin",
+  "file": "test/classes/Plugins/Transformations/TransformationPluginsTest.php",
+  "lines": [
+    75,
+    673
+  ],
+  "candidate_type": "long_method_or_region",
+  "issues": [
+    {
+      "type": "Long or Complex Region",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 32
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      ".image-upload"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      ".image-upload"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

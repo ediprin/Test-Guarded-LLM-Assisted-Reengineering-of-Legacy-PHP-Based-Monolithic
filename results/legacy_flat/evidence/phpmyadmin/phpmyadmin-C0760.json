@@ -1,0 +1,85 @@
+{
+  "candidate_id": "phpmyadmin-C0760",
+  "subject_id": "phpmyadmin",
+  "file": "libraries/classes/Rte/RteList.php",
+  "lines": [
+    1,
+    486
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 49
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "ajax_page_request"
+    ],
+    "session_keys": [],
+    "database_tables": [
+      "INFORMATION_SCHEMA",
+      "the"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#nothing2display",
+      "#rteListForm",
+      ".$class1",
+      ".$rowclass",
+      ".ajax",
+      ".checkall",
+      ".data$class2",
+      ".drop_sql",
+      ".edit_anchor",
+      ".exec_anchor",
+      ".export_anchor",
+      ".hide",
+      ".withSelected"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "ajax_page_request"
+    ],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [
+      "INFORMATION_SCHEMA",
+      "the"
+    ],
+    "must_preserve_dom_selectors": [
+      "#nothing2display",
+      "#rteListForm",
+      ".$class1",
+      ".$rowclass",
+      ".ajax",
+      ".checkall",
+      ".data$class2",
+      ".drop_sql",
+      ".edit_anchor",
+      ".exec_anchor",
+      ".export_anchor",
+      ".hide",
+      ".withSelected"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

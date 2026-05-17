@@ -1,0 +1,79 @@
+{
+  "candidate_id": "dolibarr-C0949",
+  "subject_id": "dolibarr",
+  "file": "htdocs/projet/tasks/note.php",
+  "lines": [
+    1,
+    254
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 42
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "mode"
+    ],
+    "session_keys": [],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$projectstatic->id.",
+      "#.$projectstatic->id.(empty($mode)?",
+      ".border",
+      ".clearboth",
+      ".ficheaddleft",
+      ".fichecenter",
+      ".fichehalfleft",
+      ".fichehalfright",
+      ".refidno",
+      ".tdtop",
+      ".titlefield",
+      ".underbanner",
+      ".valignmiddle"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "mode"
+    ],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#.$projectstatic->id.",
+      "#.$projectstatic->id.(empty($mode)?",
+      ".border",
+      ".clearboth",
+      ".ficheaddleft",
+      ".fichecenter",
+      ".fichehalfleft",
+      ".fichehalfright",
+      ".refidno",
+      ".tdtop",
+      ".titlefield",
+      ".underbanner",
+      ".valignmiddle"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

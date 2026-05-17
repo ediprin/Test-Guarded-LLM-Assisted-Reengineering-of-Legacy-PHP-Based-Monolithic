@@ -1,0 +1,76 @@
+{
+  "candidate_id": "phpmyadmin-C0680",
+  "subject_id": "phpmyadmin",
+  "file": "libraries/classes/Display/Results.php",
+  "lines": [
+    834,
+    994
+  ],
+  "candidate_type": "session_dependent_logic",
+  "issues": [
+    {
+      "type": "Session-Dependent Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 15
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [
+      "tmpval"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      ".filter_rows",
+      ".hide",
+      ".largescreenonly",
+      ".navigation",
+      ".navigation_goto",
+      ".navigation_separator",
+      ".nopadding",
+      ".nospacing",
+      ".restore_column",
+      ".save_edited"
+    ],
+    "forms": [
+      "sql.php"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [
+      "tmpval"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      ".filter_rows",
+      ".hide",
+      ".largescreenonly",
+      ".navigation",
+      ".navigation_goto",
+      ".navigation_separator",
+      ".nopadding",
+      ".nospacing",
+      ".restore_column",
+      ".save_edited"
+    ],
+    "must_preserve_forms": [
+      "sql.php"
+    ]
+  },
+  "allowed_transformations": [
+    "Extract Guard",
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

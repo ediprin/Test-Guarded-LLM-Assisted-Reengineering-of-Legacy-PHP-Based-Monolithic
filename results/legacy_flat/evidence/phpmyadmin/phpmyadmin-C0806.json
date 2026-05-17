@@ -1,0 +1,93 @@
+{
+  "candidate_id": "phpmyadmin-C0806",
+  "subject_id": "phpmyadmin",
+  "file": "libraries/classes/Server/UserGroups.php",
+  "lines": [
+    1,
+    379
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 38
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [],
+    "database_tables": [
+      "a",
+      "usergroup"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#addUsersForm_checkall",
+      "#fieldset_add_user_group",
+      "#fieldset_user_group_rights",
+      "#fieldset_user_group_rights_footer",
+      "#userGroupForm",
+      "#userGroupsForm",
+      "#userGroupsTable",
+      ".ajax",
+      ".checkall",
+      ".checkall_box",
+      ".clearfloat",
+      ".deleteUserGroup",
+      ".item",
+      ".tblFooters"
+    ],
+    "forms": [
+      "server_privileges.php",
+      "server_user_groups.php",
+      "userGroupForm",
+      "userGroupsForm"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [
+      "a",
+      "usergroup"
+    ],
+    "must_preserve_dom_selectors": [
+      "#addUsersForm_checkall",
+      "#fieldset_add_user_group",
+      "#fieldset_user_group_rights",
+      "#fieldset_user_group_rights_footer",
+      "#userGroupForm",
+      "#userGroupsForm",
+      "#userGroupsTable",
+      ".ajax",
+      ".checkall",
+      ".checkall_box",
+      ".clearfloat",
+      ".deleteUserGroup",
+      ".item",
+      ".tblFooters"
+    ],
+    "must_preserve_forms": [
+      "server_privileges.php",
+      "server_user_groups.php",
+      "userGroupForm",
+      "userGroupsForm"
+    ]
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "candidate_id": "phpmyadmin-C0143",
+  "subject_id": "phpmyadmin",
+  "file": "test/classes/TrackingTest.php",
+  "lines": [
+    574,
+    674
+  ],
+  "candidate_type": "sql_data_access",
+  "issues": [
+    {
+      "type": "SQL/Data Access Region",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 2
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "date_from",
+      "date_to",
+      "logtype",
+      "users",
+      "version"
+    ],
+    "session_keys": [],
+    "database_tables": [
+      "PMA"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "date_from",
+      "date_to",
+      "logtype",
+      "users",
+      "version"
+    ],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [
+      "PMA"
+    ],
+    "must_preserve_dom_selectors": [],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

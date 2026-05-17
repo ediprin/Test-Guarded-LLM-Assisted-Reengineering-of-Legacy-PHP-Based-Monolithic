@@ -1,0 +1,93 @@
+{
+  "candidate_id": "dolibarr-C4752",
+  "subject_id": "dolibarr",
+  "file": "htdocs/bom/tpl/objectline_create.tpl.php",
+  "lines": [
+    1,
+    174
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 74
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "qty"
+    ],
+    "session_keys": [],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#add",
+      "#addline",
+      "#efficiency",
+      "#qty",
+      "#title_units",
+      ".($nolinesbefore?",
+      ".button",
+      ".center",
+      ".echo",
+      ".flat",
+      ".hideonsmartphone",
+      ".left",
+      ".linecoldescription",
+      ".linecoledit",
+      ".linecollost",
+      ".linecolnum",
+      ".linecolqty",
+      ".linecoluseunit",
+      ".liste_titre<?php",
+      ".minwidth500imp"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "qty"
+    ],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#add",
+      "#addline",
+      "#efficiency",
+      "#qty",
+      "#title_units",
+      ".($nolinesbefore?",
+      ".button",
+      ".center",
+      ".echo",
+      ".flat",
+      ".hideonsmartphone",
+      ".left",
+      ".linecoldescription",
+      ".linecoledit",
+      ".linecollost",
+      ".linecolnum",
+      ".linecolqty",
+      ".linecoluseunit",
+      ".liste_titre<?php",
+      ".minwidth500imp"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

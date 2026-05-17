@@ -1,0 +1,119 @@
+{
+  "candidate_id": "phpmyadmin-C0741",
+  "subject_id": "phpmyadmin",
+  "file": "libraries/classes/Rte/Events.php",
+  "lines": [
+    1,
+    629
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 69
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "add_item",
+      "edit_item",
+      "editor_process_add",
+      "editor_process_edit",
+      "item_changetype",
+      "item_comment",
+      "item_definer",
+      "item_definition",
+      "item_ends",
+      "item_execute_at",
+      "item_interval_field",
+      "item_interval_value",
+      "item_name",
+      "item_original_name",
+      "item_preserve",
+      "item_starts",
+      "item_status",
+      "item_type"
+    ],
+    "session_keys": [],
+    "database_tables": [
+      "INFORMATION_SCHEMA",
+      "an"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      ".$isonetime_class",
+      ".$isrecurring_class",
+      ".datetimefield",
+      ".floatleft",
+      ".nowrap",
+      ".onetime_event_row",
+      ".recurring_event_row",
+      ".recurring_event_row$isrecurring_class",
+      ".rte_form",
+      ".rte_table",
+      ".tblFooters"
+    ],
+    "forms": [
+      "db_events.php"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "add_item",
+      "edit_item",
+      "editor_process_add",
+      "editor_process_edit",
+      "item_changetype",
+      "item_comment",
+      "item_definer",
+      "item_definition",
+      "item_ends",
+      "item_execute_at",
+      "item_interval_field",
+      "item_interval_value",
+      "item_name",
+      "item_original_name",
+      "item_preserve",
+      "item_starts",
+      "item_status",
+      "item_type"
+    ],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [
+      "INFORMATION_SCHEMA",
+      "an"
+    ],
+    "must_preserve_dom_selectors": [
+      ".$isonetime_class",
+      ".$isrecurring_class",
+      ".datetimefield",
+      ".floatleft",
+      ".nowrap",
+      ".onetime_event_row",
+      ".recurring_event_row",
+      ".recurring_event_row$isrecurring_class",
+      ".rte_form",
+      ".rte_table",
+      ".tblFooters"
+    ],
+    "must_preserve_forms": [
+      "db_events.php"
+    ]
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

@@ -1,0 +1,21 @@
+candidate_id,project,file,start_line,end_line,candidate_type,dominant_issue,complexity_proxy,request_parameters,session_keys,database_tables,dom_selectors,forms,allowed_transformations,oracle_status
+dokuwiki-C0001,dokuwiki,doku.php,1,125,long_method_or_region,Long or Complex Region,22,do;idx,,,,,Extract Method,pending
+dokuwiki-C0002,dokuwiki,feed.php,1,510,mixed_php_html,Mixed PHP/HTML,74,,,,.medialeft;.mediaright,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0003,dokuwiki,feed.php,189,461,long_method_or_region,Long or Complex Region,51,,,,.medialeft;.mediaright,,Extract Method,pending
+dokuwiki-C0004,dokuwiki,install.php,1,612,form_handling,Request Handling Mixed With Rendering,172,d;l;submit,,,#acl;#acldep;#allowreg;#confirm;#email;#fullname;#lic_;#password;#policy;#pop;#process;#superuser;#title;.cl;.text,,Extract Validation Helper;Extract Method;Extract View Helper,pending
+dokuwiki-C0005,dokuwiki,install.php,60,146,form_handling,Request Handling Mixed With Rendering,21,d,,,.cl,,Extract Validation Helper;Extract Method;Extract View Helper,pending
+dokuwiki-C0006,dokuwiki,install.php,146,233,mixed_php_html,Mixed PHP/HTML,85,,,,#acl;#acldep;#allowreg;#confirm;#email;#fullname;#lic_;#password;#policy;#pop;#process;#superuser;#title;.text,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0007,dokuwiki,install.php,233,254,mixed_php_html,Mixed PHP/HTML,8,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0008,dokuwiki,install.php,254,326,long_method_or_region,Long or Complex Region,13,submit,,,,,Extract Method,pending
+dokuwiki-C0009,dokuwiki,install.php,326,434,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+dokuwiki-C0010,dokuwiki,install.php,526,568,session_dependent_logic,Session-Dependent Logic,6,,,,,,Extract Guard;Extract Method,pending
+dokuwiki-C0011,dokuwiki,bin/dwpage.php,25,131,long_method_or_region,Long or Complex Region,6,,,,,,Extract Method,pending
+dokuwiki-C0012,dokuwiki,inc/Ajax.php,1,446,mixed_php_html,Mixed PHP/HTML,61,,,,.wikilink1,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0013,dokuwiki,inc/Ajax.php,264,319,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+dokuwiki-C0014,dokuwiki,inc/Ajax.php,342,447,long_method_or_region,Long or Complex Region,15,,,,.wikilink1,,Extract Method,pending
+dokuwiki-C0015,dokuwiki,inc/auth.php,1,1267,session_dependent_logic,Session-Dependent Logic,176,,,,,,Extract Guard;Extract Method,pending
+dokuwiki-C0016,dokuwiki,inc/auth.php,35,125,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+dokuwiki-C0017,dokuwiki,inc/auth.php,125,172,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+dokuwiki-C0018,dokuwiki,inc/auth.php,210,283,session_dependent_logic,Session-Dependent Logic,9,,,,,,Extract Guard;Extract Method,pending
+dokuwiki-C0019,dokuwiki,inc/auth.php,407,451,session_dependent_logic,Session-Dependent Logic,9,,,,,,Extract Guard;Extract Method,pending
+dokuwiki-C0020,dokuwiki,inc/auth.php,510,556,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending

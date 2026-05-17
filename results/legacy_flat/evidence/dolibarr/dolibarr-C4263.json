@@ -1,0 +1,77 @@
+{
+  "candidate_id": "dolibarr-C4263",
+  "subject_id": "dolibarr",
+  "file": "htdocs/compta/facture/contact.php",
+  "lines": [
+    1,
+    219
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 33
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "source",
+      "type"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "# . $object->fk_project . ",
+      "# . $object->id . ",
+      "# . $object->id, $object->socid, $object->fk_project, ",
+      "#.$object->id);\n\t\texit;\n\t}\n\telse\n\t{\n\t\tif ($object->error == ",
+      "#.$object->id);\n\t\texit;\n\t}\n\telse {\n\t\tdol_print_error($db);\n\t}\n}\n\n\n/*\n * View\n */\n\n$title = $langs->trans(",
+      "#.$object->id.",
+      ".button",
+      ".refidno",
+      ".valignmiddle"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "source",
+      "type"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "# . $object->fk_project . ",
+      "# . $object->id . ",
+      "# . $object->id, $object->socid, $object->fk_project, ",
+      "#.$object->id);\n\t\texit;\n\t}\n\telse\n\t{\n\t\tif ($object->error == ",
+      "#.$object->id);\n\t\texit;\n\t}\n\telse {\n\t\tdol_print_error($db);\n\t}\n}\n\n\n/*\n * View\n */\n\n$title = $langs->trans(",
+      "#.$object->id.",
+      ".button",
+      ".refidno",
+      ".valignmiddle"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

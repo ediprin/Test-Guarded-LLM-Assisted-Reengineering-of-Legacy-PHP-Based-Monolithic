@@ -1,0 +1,107 @@
+{
+  "candidate_id": "roundcubemail-C0004",
+  "subject_id": "roundcubemail",
+  "file": "installer/config.php",
+  "lines": [
+    1,
+    693
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 161
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "_dbhost",
+      "_dbname",
+      "_dbpass",
+      "_dbtype",
+      "_dbuser",
+      "_smtp_user_u",
+      "_spellcheck_engine",
+      "submit"
+    ],
+    "session_keys": [
+      "allowinstaller",
+      "config"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#cgfblockdb",
+      "#cgfblockdisplay",
+      "#cgfblockimap",
+      "#cgfblocksmtp",
+      "#defaulthostentry",
+      "#defaulthostlist",
+      "#getconfig_form",
+      ".addlink",
+      ".configblock",
+      ".hint",
+      ".loggingblock",
+      ".notice",
+      ".propname",
+      ".removelink",
+      ".userconf"
+    ],
+    "forms": [
+      "index.php"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "_dbhost",
+      "_dbname",
+      "_dbpass",
+      "_dbtype",
+      "_dbuser",
+      "_smtp_user_u",
+      "_spellcheck_engine",
+      "submit"
+    ],
+    "must_preserve_session_keys": [
+      "allowinstaller",
+      "config"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#cgfblockdb",
+      "#cgfblockdisplay",
+      "#cgfblockimap",
+      "#cgfblocksmtp",
+      "#defaulthostentry",
+      "#defaulthostlist",
+      "#getconfig_form",
+      ".addlink",
+      ".configblock",
+      ".hint",
+      ".loggingblock",
+      ".notice",
+      ".propname",
+      ".removelink",
+      ".userconf"
+    ],
+    "must_preserve_forms": [
+      "index.php"
+    ]
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

@@ -1,0 +1,4 @@
+project,initial_candidates,long_method_or_region,mixed_php_html,sql_data_access,session_dependent_logic,form_handling,mixed_php_html_sql
+dokuwiki,385,287,62,14,12,5,5
+kanboard,248,31,140,75,1,0,1
+TOTAL,633,318,202,89,13,5,6

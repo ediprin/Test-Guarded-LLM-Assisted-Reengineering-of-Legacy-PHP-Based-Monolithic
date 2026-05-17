@@ -1,0 +1,76 @@
+{
+  "candidate_id": "phpmyadmin-C0471",
+  "subject_id": "phpmyadmin",
+  "file": "libraries/classes/Operations.php",
+  "lines": [
+    193,
+    291
+  ],
+  "candidate_type": "session_dependent_logic",
+  "issues": [
+    {
+      "type": "Session-Dependent Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 13
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [
+      "pma_switch_to_new"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#checkbox_auto_increment",
+      "#checkbox_constraints",
+      "#checkbox_create_database_before_copying",
+      "#checkbox_drop",
+      "#checkbox_privileges",
+      "#checkbox_switch",
+      "#copy_db_form",
+      ".ajax",
+      ".tblFooters",
+      ".textfield"
+    ],
+    "forms": [
+      "db_operations.php"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [
+      "pma_switch_to_new"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#checkbox_auto_increment",
+      "#checkbox_constraints",
+      "#checkbox_create_database_before_copying",
+      "#checkbox_drop",
+      "#checkbox_privileges",
+      "#checkbox_switch",
+      "#copy_db_form",
+      ".ajax",
+      ".tblFooters",
+      ".textfield"
+    ],
+    "must_preserve_forms": [
+      "db_operations.php"
+    ]
+  },
+  "allowed_transformations": [
+    "Extract Guard",
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

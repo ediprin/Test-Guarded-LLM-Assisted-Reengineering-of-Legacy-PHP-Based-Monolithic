@@ -1,0 +1,73 @@
+{
+  "candidate_id": "phppgadmin-C0023",
+  "subject_id": "phppgadmin",
+  "file": "colproperties.php",
+  "lines": [
+    23,
+    177
+  ],
+  "candidate_type": "long_method_or_region",
+  "issues": [
+    {
+      "type": "Long or Complex Region",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 24
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "array",
+      "column",
+      "comment",
+      "default",
+      "field",
+      "length",
+      "notnull",
+      "olddefault",
+      "oldnotnull",
+      "oldtype",
+      "stage",
+      "table",
+      "type"
+    ],
+    "session_keys": [],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "array",
+      "column",
+      "comment",
+      "default",
+      "field",
+      "length",
+      "notnull",
+      "olddefault",
+      "oldnotnull",
+      "oldtype",
+      "stage",
+      "table",
+      "type"
+    ],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

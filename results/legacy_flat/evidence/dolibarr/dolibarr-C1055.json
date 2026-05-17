@@ -1,0 +1,101 @@
+{
+  "candidate_id": "dolibarr-C1055",
+  "subject_id": "dolibarr",
+  "file": "htdocs/product/stock/productlot_card.php",
+  "lines": [
+    1,
+    419
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 52
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "eatbyday",
+      "eatbymonth",
+      "eatbyyear",
+      "sellbyday",
+      "sellbymonth",
+      "sellbyyear"
+    ],
+    "session_keys": [],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "# . $object->id, $langs->trans(",
+      "#.$object->id.",
+      "#.$object->id;\n    $genallowed=$usercanread;\n    $delallowed=$usercancreate;\n\n    print $formfile->showdocuments(",
+      ".border",
+      ".butAction",
+      ".butActionDelete",
+      ".button",
+      ".center",
+      ".centpercent",
+      ".clearboth",
+      ".divButAction",
+      ".fichecenter",
+      ".fichehalfleft",
+      ".fieldrequired",
+      ".flat",
+      ".inline-block",
+      ".tabsAction",
+      ".titlefield",
+      ".underbanner"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "eatbyday",
+      "eatbymonth",
+      "eatbyyear",
+      "sellbyday",
+      "sellbymonth",
+      "sellbyyear"
+    ],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "# . $object->id, $langs->trans(",
+      "#.$object->id.",
+      "#.$object->id;\n    $genallowed=$usercanread;\n    $delallowed=$usercancreate;\n\n    print $formfile->showdocuments(",
+      ".border",
+      ".butAction",
+      ".butActionDelete",
+      ".button",
+      ".center",
+      ".centpercent",
+      ".clearboth",
+      ".divButAction",
+      ".fichecenter",
+      ".fichehalfleft",
+      ".fieldrequired",
+      ".flat",
+      ".inline-block",
+      ".tabsAction",
+      ".titlefield",
+      ".underbanner"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

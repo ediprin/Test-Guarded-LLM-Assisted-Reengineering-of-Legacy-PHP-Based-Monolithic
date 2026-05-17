@@ -1,0 +1,74 @@
+{
+  "candidate_id": "phpmyadmin-C0395",
+  "subject_id": "phpmyadmin",
+  "file": "libraries/classes/Export.php",
+  "lines": [
+    472,
+    552
+  ],
+  "candidate_type": "sql_data_access",
+  "issues": [
+    {
+      "type": "SQL/Data Access Region",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 13
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "structure_or_data_forced",
+      "table_data",
+      "table_structure"
+    ],
+    "session_keys": [],
+    "database_tables": [
+      "an"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#export_back_button",
+      "#export_refresh_form",
+      "#textSQLDUMP",
+      ".disableAjax"
+    ],
+    "forms": [
+      "export.php",
+      "nofunction"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "structure_or_data_forced",
+      "table_data",
+      "table_structure"
+    ],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [
+      "an"
+    ],
+    "must_preserve_dom_selectors": [
+      "#export_back_button",
+      "#export_refresh_form",
+      "#textSQLDUMP",
+      ".disableAjax"
+    ],
+    "must_preserve_forms": [
+      "export.php",
+      "nofunction"
+    ]
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

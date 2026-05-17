@@ -1,0 +1,95 @@
+{
+  "candidate_id": "dolibarr-C1050",
+  "subject_id": "dolibarr",
+  "file": "htdocs/product/stock/list.php",
+  "lines": [
+    1,
+    276
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 35
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": [
+      "when"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      ".butActionNew",
+      ".div-table-responsive",
+      ".divsearchfieldfilter",
+      ".fa",
+      ".fa-plus-circle",
+      ".flat",
+      ".left",
+      ".liste",
+      ".liste_titre",
+      ".liste_titre_filter",
+      ".liste_total",
+      ".maxwidthsearch",
+      ".oddeven",
+      ".right",
+      ".tagtable",
+      ".text-plus-circle",
+      ".valignmiddle"
+    ],
+    "forms": [
+      "formulaire"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [
+      "when"
+    ],
+    "must_preserve_dom_selectors": [
+      ".butActionNew",
+      ".div-table-responsive",
+      ".divsearchfieldfilter",
+      ".fa",
+      ".fa-plus-circle",
+      ".flat",
+      ".left",
+      ".liste",
+      ".liste_titre",
+      ".liste_titre_filter",
+      ".liste_total",
+      ".maxwidthsearch",
+      ".oddeven",
+      ".right",
+      ".tagtable",
+      ".text-plus-circle",
+      ".valignmiddle"
+    ],
+    "must_preserve_forms": [
+      "formulaire"
+    ]
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

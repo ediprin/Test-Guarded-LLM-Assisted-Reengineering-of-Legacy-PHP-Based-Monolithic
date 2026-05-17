@@ -1,0 +1,139 @@
+{
+  "candidate_id": "dolibarr-C0449",
+  "subject_id": "dolibarr",
+  "file": "htdocs/reception/card.php",
+  "lines": [
+    1,
+    2257
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 405
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "commande_id",
+      "lang_id",
+      "lineid",
+      "liv_day",
+      "liv_month",
+      "liv_year"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": [
+      "GETPOST",
+      "a",
+      "add",
+      "date_delivery",
+      "elseif",
+      "form",
+      "order",
+      "this",
+      "update"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "# . $object->id . ",
+      "# . $object->id);\n\t\t\texit();\n\t\t}\n\t\telse\n\t\t{\n\t\t\tsetEventMessages($line->error, $line->errors, ",
+      "# . $object->id);\n\t    \texit();\n\t    }\n\t}\n\n\t/*\n\t *  delete a line\n\t */\n\telseif ($action == ",
+      "# . $object->id);\n\t    \texit();\n\t    }\n\t}\n\n\telseif ($action == ",
+      "# . $object->id); // Pour reaffichage de la fiche en cours d",
+      "# . $object->id, $object->socid, $object->fk_project, ",
+      "# . $objectsrc->fk_project . ",
+      "#.$lines[$i]->origin_line_id.",
+      "#.$object->id);\n\t\t\t}\n\t        print ",
+      "#.$object->id);\n\t            exit;\n\t        }\n\t        setEventMessages($object->error, $object->errors, ",
+      "#.$object->id);\n\t        exit;\n\t    }\n\t    else\n\t    {\n\t        $db->rollback();\n\t        $_GET[",
+      "#.$object->id);\n            exit;\n        }\n\t}\n\n\tif ($action == ",
+      "#.$object->id, $langs->trans(",
+      "#.$object->id.",
+      "#.$object->id;\n\t\t// Init list of files\n\t\tif (GETPOST(",
+      "#.$object->id;\n\n\t\t$genallowed=$user->rights->reception->lire;\n\t\t$delallowed=$user->rights->reception->creer;\n\n\t\tprint $formfile->showdocuments(",
+      "#autofill",
+      "#autoreset",
+      "#batch",
+      "#cancellinebutton"
+    ],
+    "forms": [
+      "setdate_livraison",
+      "setshipping_method_id",
+      "settrueHeight",
+      "settrueweight",
+      "updateline"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "commande_id",
+      "lang_id",
+      "lineid",
+      "liv_day",
+      "liv_month",
+      "liv_year"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [
+      "GETPOST",
+      "a",
+      "add",
+      "date_delivery",
+      "elseif",
+      "form",
+      "order",
+      "this",
+      "update"
+    ],
+    "must_preserve_dom_selectors": [
+      "# . $object->id . ",
+      "# . $object->id);\n\t\t\texit();\n\t\t}\n\t\telse\n\t\t{\n\t\t\tsetEventMessages($line->error, $line->errors, ",
+      "# . $object->id);\n\t    \texit();\n\t    }\n\t}\n\n\t/*\n\t *  delete a line\n\t */\n\telseif ($action == ",
+      "# . $object->id);\n\t    \texit();\n\t    }\n\t}\n\n\telseif ($action == ",
+      "# . $object->id); // Pour reaffichage de la fiche en cours d",
+      "# . $object->id, $object->socid, $object->fk_project, ",
+      "# . $objectsrc->fk_project . ",
+      "#.$lines[$i]->origin_line_id.",
+      "#.$object->id);\n\t\t\t}\n\t        print ",
+      "#.$object->id);\n\t            exit;\n\t        }\n\t        setEventMessages($object->error, $object->errors, ",
+      "#.$object->id);\n\t        exit;\n\t    }\n\t    else\n\t    {\n\t        $db->rollback();\n\t        $_GET[",
+      "#.$object->id);\n            exit;\n        }\n\t}\n\n\tif ($action == ",
+      "#.$object->id, $langs->trans(",
+      "#.$object->id.",
+      "#.$object->id;\n\t\t// Init list of files\n\t\tif (GETPOST(",
+      "#.$object->id;\n\n\t\t$genallowed=$user->rights->reception->lire;\n\t\t$delallowed=$user->rights->reception->creer;\n\n\t\tprint $formfile->showdocuments(",
+      "#autofill",
+      "#autoreset",
+      "#batch",
+      "#cancellinebutton"
+    ],
+    "must_preserve_forms": [
+      "setdate_livraison",
+      "setshipping_method_id",
+      "settrueHeight",
+      "settrueweight",
+      "updateline"
+    ]
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

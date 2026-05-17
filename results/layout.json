@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "summary_dir": "results/summary",
+  "subject_root": "results/subjects",
+  "subject_layout": {
+    "audit": "audit/audit.csv",
+    "candidates": "candidates/candidates.csv",
+    "evidence": "evidence",
+    "syntax": "syntax",
+    "screening": "screening/screening.csv",
+    "characterization": "characterization",
+    "oracle": "oracle",
+    "notes": "notes"
+  }
+}

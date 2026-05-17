@@ -1,0 +1,64 @@
+{
+  "candidate_id": "phpmyadmin-C0539",
+  "subject_id": "phpmyadmin",
+  "file": "libraries/classes/Sql.php",
+  "lines": [
+    1896,
+    2103
+  ],
+  "candidate_type": "session_dependent_logic",
+  "issues": [
+    {
+      "type": "Session-Dependent Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 29
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "grid_edit",
+      "printview",
+      "table_maintenance"
+    ],
+    "session_keys": [
+      "tmpval"
+    ],
+    "database_tables": [
+      "or",
+      "the"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "grid_edit",
+      "printview",
+      "table_maintenance"
+    ],
+    "must_preserve_session_keys": [
+      "tmpval"
+    ],
+    "must_preserve_database_tables": [
+      "or",
+      "the"
+    ],
+    "must_preserve_dom_selectors": [],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Guard",
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

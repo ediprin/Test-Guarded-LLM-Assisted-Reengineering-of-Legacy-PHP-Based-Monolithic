@@ -1,0 +1,62 @@
+{
+  "candidate_id": "phpmyadmin-C0440",
+  "subject_id": "phpmyadmin",
+  "file": "libraries/classes/InsertEdit.php",
+  "lines": [
+    2852,
+    2916
+  ],
+  "candidate_type": "session_dependent_logic",
+  "issues": [
+    {
+      "type": "Session-Dependent Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 11
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "ShowFieldTypesInDataEditView",
+      "ShowFunctionFields",
+      "after_insert",
+      "default_action",
+      "where_clause"
+    ],
+    "session_keys": [
+      "edit_next"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "ShowFieldTypesInDataEditView",
+      "ShowFunctionFields",
+      "after_insert",
+      "default_action",
+      "where_clause"
+    ],
+    "must_preserve_session_keys": [
+      "edit_next"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Guard",
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

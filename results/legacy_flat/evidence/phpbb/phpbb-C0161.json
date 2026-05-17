@@ -1,0 +1,60 @@
+{
+  "candidate_id": "phpbb-C0161",
+  "subject_id": "phpbb",
+  "file": "phpBB/download/file.php",
+  "lines": [
+    1,
+    326
+  ],
+  "candidate_type": "sql_data_access",
+  "issues": [
+    {
+      "type": "SQL/Data Access Region",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 36
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "avatar"
+    ],
+    "session_keys": [],
+    "database_tables": [
+      "download",
+      "session"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "# . $attachment["
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "avatar"
+    ],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [
+      "download",
+      "session"
+    ],
+    "must_preserve_dom_selectors": [
+      "# . $attachment["
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

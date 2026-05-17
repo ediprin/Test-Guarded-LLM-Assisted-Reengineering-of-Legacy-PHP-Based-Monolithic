@@ -1,0 +1,96 @@
+{
+  "candidate_id": "dolibarr-C0466",
+  "subject_id": "dolibarr",
+  "file": "htdocs/societe/card.php",
+  "lines": [
+    1726,
+    2045
+  ],
+  "candidate_type": "session_dependent_logic",
+  "issues": [
+    {
+      "type": "Session-Dependent Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 46
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": [
+      "a"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#address",
+      "#barcode",
+      "#customer_code",
+      "#email",
+      "#facebook",
+      "#fax",
+      "#intra_vat",
+      "#linkedin",
+      "#name",
+      "#name_alias",
+      "#name_alias_input",
+      "#phone",
+      "#prefix",
+      "#skype",
+      "#supplier_code",
+      "#twitter",
+      "#url",
+      ".border",
+      ".cblt1",
+      ".cblt2"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [
+      "a"
+    ],
+    "must_preserve_dom_selectors": [
+      "#address",
+      "#barcode",
+      "#customer_code",
+      "#email",
+      "#facebook",
+      "#fax",
+      "#intra_vat",
+      "#linkedin",
+      "#name",
+      "#name_alias",
+      "#name_alias_input",
+      "#phone",
+      "#prefix",
+      "#skype",
+      "#supplier_code",
+      "#twitter",
+      "#url",
+      ".border",
+      ".cblt1",
+      ".cblt2"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Guard",
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

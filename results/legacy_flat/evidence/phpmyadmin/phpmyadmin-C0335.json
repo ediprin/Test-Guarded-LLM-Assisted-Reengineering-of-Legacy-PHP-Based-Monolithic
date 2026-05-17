@@ -1,0 +1,137 @@
+{
+  "candidate_id": "phpmyadmin-C0335",
+  "subject_id": "phpmyadmin",
+  "file": "libraries/classes/CentralColumns.php",
+  "lines": [
+    1,
+    1453
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 140
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "col_extra",
+      "db",
+      "field_attribute",
+      "field_collation",
+      "field_default_type",
+      "field_default_value",
+      "field_length",
+      "field_name",
+      "field_null",
+      "field_type",
+      "orig_col_name",
+      "table"
+    ],
+    "session_keys": [],
+    "database_tables": [
+      "CURRENT_TIMESTAMP",
+      "Multiple",
+      "a",
+      "above",
+      "central",
+      "for",
+      "given",
+      "starting"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#add_col_div",
+      "#add_column_save",
+      "#add_new",
+      "#checkbox_row_",
+      "#edit_",
+      "#f_",
+      "#multi_edit_central_columns",
+      "#save_",
+      "#table-select",
+      ".center",
+      ".checkall",
+      ".column_action",
+      ".del_row",
+      ".edit",
+      ".edit_cancel_form",
+      ".edit_save_form",
+      ".hide",
+      ".new_central_col",
+      ".nowrap",
+      ".responsivetable"
+    ],
+    "forms": [
+      "db_central_columns.php"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "col_extra",
+      "db",
+      "field_attribute",
+      "field_collation",
+      "field_default_type",
+      "field_default_value",
+      "field_length",
+      "field_name",
+      "field_null",
+      "field_type",
+      "orig_col_name",
+      "table"
+    ],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [
+      "CURRENT_TIMESTAMP",
+      "Multiple",
+      "a",
+      "above",
+      "central",
+      "for",
+      "given",
+      "starting"
+    ],
+    "must_preserve_dom_selectors": [
+      "#add_col_div",
+      "#add_column_save",
+      "#add_new",
+      "#checkbox_row_",
+      "#edit_",
+      "#f_",
+      "#multi_edit_central_columns",
+      "#save_",
+      "#table-select",
+      ".center",
+      ".checkall",
+      ".column_action",
+      ".del_row",
+      ".edit",
+      ".edit_cancel_form",
+      ".edit_save_form",
+      ".hide",
+      ".new_central_col",
+      ".nowrap",
+      ".responsivetable"
+    ],
+    "must_preserve_forms": [
+      "db_central_columns.php"
+    ]
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

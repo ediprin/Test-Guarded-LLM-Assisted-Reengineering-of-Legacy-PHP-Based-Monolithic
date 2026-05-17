@@ -1,0 +1,30 @@
+{
+  "review_types": ["mixed_php_html", "form_handling", "mixed_php_html_sql"],
+  "routes": [
+    {
+      "oracle_id": "dokuwiki_home_http",
+      "characterization_csv": "results/subjects/dokuwiki/characterization/home.csv",
+      "stable_files": ["doku.php", "inc/template.php", "inc/html.php"]
+    },
+    {
+      "oracle_id": "dokuwiki_feed_http",
+      "characterization_csv": "results/subjects/dokuwiki/characterization/feed.csv",
+      "stable_files": ["feed.php"]
+    },
+    {
+      "oracle_id": "dokuwiki_install_http",
+      "characterization_csv": "results/subjects/dokuwiki/characterization/install.csv",
+      "stable_files": ["install.php"]
+    },
+    {
+      "oracle_id": "dokuwiki_css_http",
+      "characterization_csv": "results/subjects/dokuwiki/characterization/css.csv",
+      "stable_files": ["lib/exe/css.php"]
+    },
+    {
+      "oracle_id": "dokuwiki_js_http",
+      "characterization_csv": "results/subjects/dokuwiki/characterization/js.csv",
+      "stable_files": ["lib/exe/js.php"]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+project,candidate_files,syntax_pass,syntax_fail,php_version,image
+phpmyadmin,344,344,0,5.6.40,php:5.6-cli
+dokuwiki,124,124,0,5.6.40,php:5.6-cli
+opencart,470,470,0,5.6.40,php:5.6-cli
+phpbb,389,389,0,5.6.40,php:5.6-cli
+phppgadmin,79,79,0,5.6.40,php:5.6-cli
+roundcubemail,159,159,0,5.6.40,php:5.6-cli
+kanboard,234,234,0,7.2.34,php:7.2-cli
+dolibarr,1822,1822,0,5.6.40,php:5.6-cli

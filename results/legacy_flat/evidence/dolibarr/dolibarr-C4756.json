@@ -1,0 +1,103 @@
+{
+  "candidate_id": "dolibarr-C4756",
+  "subject_id": "dolibarr",
+  "file": "htdocs/blockedlog/admin/blockedlog_list.php",
+  "lines": [
+    1,
+    608
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 97
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": [
+      "checkSignature",
+      "extra",
+      "signature",
+      "the"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#+fk_block\n\t\t\t,dataType:",
+      "#blockchainstatus",
+      "#formfilteraction",
+      "#monthtoexport",
+      "#searchFormList",
+      ".button",
+      ".center",
+      ".div-table-responsive",
+      ".flat",
+      ".hideonsmartphone",
+      ".liste_titre",
+      ".liste_titre_filter",
+      ".maxwidth50",
+      ".maxwidth50imp",
+      ".maxwidth75imp",
+      ".noborder",
+      ".nowrap",
+      ".nowraponall",
+      ".oddeven",
+      ".opacitymedium"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [
+      "checkSignature",
+      "extra",
+      "signature",
+      "the"
+    ],
+    "must_preserve_dom_selectors": [
+      "#+fk_block\n\t\t\t,dataType:",
+      "#blockchainstatus",
+      "#formfilteraction",
+      "#monthtoexport",
+      "#searchFormList",
+      ".button",
+      ".center",
+      ".div-table-responsive",
+      ".flat",
+      ".hideonsmartphone",
+      ".liste_titre",
+      ".liste_titre_filter",
+      ".maxwidth50",
+      ".maxwidth50imp",
+      ".maxwidth75imp",
+      ".noborder",
+      ".nowrap",
+      ".nowraponall",
+      ".oddeven",
+      ".opacitymedium"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

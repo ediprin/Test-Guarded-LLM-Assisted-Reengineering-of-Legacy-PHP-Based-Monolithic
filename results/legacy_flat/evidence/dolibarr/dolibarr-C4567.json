@@ -1,0 +1,55 @@
+{
+  "candidate_id": "dolibarr-C4567",
+  "subject_id": "dolibarr",
+  "file": "htdocs/commande/class/commande.class.php",
+  "lines": [
+    3534,
+    3611
+  ],
+  "candidate_type": "long_method_or_region",
+  "issues": [
+    {
+      "type": "Long or Complex Region",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 26
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$this->id;\n\t\telse $url = DOL_URL_ROOT.",
+      "#.$this->id;\n\n\t\tif (!$user->rights->commande->lire)\n\t\t\t$option = ",
+      ".classfortooltip",
+      ".paddingright"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#.$this->id;\n\t\telse $url = DOL_URL_ROOT.",
+      "#.$this->id;\n\n\t\tif (!$user->rights->commande->lire)\n\t\t\t$option = ",
+      ".classfortooltip",
+      ".paddingright"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

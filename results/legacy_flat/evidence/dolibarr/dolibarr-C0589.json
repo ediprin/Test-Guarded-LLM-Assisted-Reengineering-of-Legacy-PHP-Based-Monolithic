@@ -1,0 +1,89 @@
+{
+  "candidate_id": "dolibarr-C0589",
+  "subject_id": "dolibarr",
+  "file": "htdocs/website/class/website.class.php",
+  "lines": [
+    1,
+    1238
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 189
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [],
+    "database_tables": [
+      "combo",
+      "database",
+      "home",
+      "its",
+      "link",
+      "llx_website",
+      "llx_website_page",
+      "name",
+      "object",
+      "object_myobject",
+      "request",
+      "the",
+      "this",
+      "url"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$this->id.",
+      ".classfortooltip",
+      ".componentSelectLang",
+      ".fa",
+      ".fa-caret-down"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [
+      "combo",
+      "database",
+      "home",
+      "its",
+      "link",
+      "llx_website",
+      "llx_website_page",
+      "name",
+      "object",
+      "object_myobject",
+      "request",
+      "the",
+      "this",
+      "url"
+    ],
+    "must_preserve_dom_selectors": [
+      "#.$this->id.",
+      ".classfortooltip",
+      ".componentSelectLang",
+      ".fa",
+      ".fa-caret-down"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

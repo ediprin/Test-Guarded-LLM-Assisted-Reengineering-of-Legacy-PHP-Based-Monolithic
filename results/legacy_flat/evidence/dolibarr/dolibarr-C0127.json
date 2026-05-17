@@ -1,0 +1,75 @@
+{
+  "candidate_id": "dolibarr-C0127",
+  "subject_id": "dolibarr",
+  "file": "htdocs/admin/ldap_members.php",
+  "lines": [
+    1,
+    446
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 52
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "action"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      ".button",
+      ".center",
+      ".error",
+      ".fieldrequired",
+      ".liste_titre",
+      ".noborder",
+      ".oddeven",
+      ".ok",
+      ".right"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "action"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      ".button",
+      ".center",
+      ".error",
+      ".fieldrequired",
+      ".liste_titre",
+      ".noborder",
+      ".oddeven",
+      ".ok",
+      ".right"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

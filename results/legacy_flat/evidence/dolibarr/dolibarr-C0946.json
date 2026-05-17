@@ -1,0 +1,99 @@
+{
+  "candidate_id": "dolibarr-C0946",
+  "subject_id": "dolibarr",
+  "file": "htdocs/projet/tasks/contact.php",
+  "lines": [
+    1,
+    536
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 87
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "lineid",
+      "newcompany"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$id.",
+      "#.$object->id.",
+      "#.$object->id.($withproject?",
+      "#.$projectstatic->id.",
+      "#.$projectstatic->id.($withproject?",
+      "#add-customer-contact",
+      ".border",
+      ".button",
+      ".center",
+      ".clearboth",
+      ".ficheaddleft",
+      ".fichecenter",
+      ".fichehalfleft",
+      ".fichehalfright",
+      ".left",
+      ".liste_titre",
+      ".noborder",
+      ".nowrap",
+      ".oddeven",
+      ".refidno"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "lineid",
+      "newcompany"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#.$id.",
+      "#.$object->id.",
+      "#.$object->id.($withproject?",
+      "#.$projectstatic->id.",
+      "#.$projectstatic->id.($withproject?",
+      "#add-customer-contact",
+      ".border",
+      ".button",
+      ".center",
+      ".clearboth",
+      ".ficheaddleft",
+      ".fichecenter",
+      ".fichehalfleft",
+      ".fichehalfright",
+      ".left",
+      ".liste_titre",
+      ".noborder",
+      ".nowrap",
+      ".oddeven",
+      ".refidno"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

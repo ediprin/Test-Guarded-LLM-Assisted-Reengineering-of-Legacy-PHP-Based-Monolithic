@@ -1,0 +1,107 @@
+{
+  "candidate_id": "dolibarr-C4898",
+  "subject_id": "dolibarr",
+  "file": "htdocs/accountancy/admin/accountmodel.php",
+  "lines": [
+    1,
+    836
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 173
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "code",
+      "country",
+      "id",
+      "pcg_version",
+      "type"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": [
+      "a"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$id.",
+      "#.$id;\n\t\tif ($search_country_id > 0) $param.= ",
+      "#.urlencode($id), $langs->trans(",
+      "#rowid-",
+      ".button",
+      ".center",
+      ".div-table-responsive",
+      ".flat",
+      ".left",
+      ".liste_titre",
+      ".liste_titre_add",
+      ".noborder",
+      ".none",
+      ".nowrap",
+      ".oddeven",
+      ".pagination",
+      ".reposition",
+      ".right",
+      ".tddict"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "code",
+      "country",
+      "id",
+      "pcg_version",
+      "type"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [
+      "a"
+    ],
+    "must_preserve_dom_selectors": [
+      "#.$id.",
+      "#.$id;\n\t\tif ($search_country_id > 0) $param.= ",
+      "#.urlencode($id), $langs->trans(",
+      "#rowid-",
+      ".button",
+      ".center",
+      ".div-table-responsive",
+      ".flat",
+      ".left",
+      ".liste_titre",
+      ".liste_titre_add",
+      ".noborder",
+      ".none",
+      ".nowrap",
+      ".oddeven",
+      ".pagination",
+      ".reposition",
+      ".right",
+      ".tddict"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

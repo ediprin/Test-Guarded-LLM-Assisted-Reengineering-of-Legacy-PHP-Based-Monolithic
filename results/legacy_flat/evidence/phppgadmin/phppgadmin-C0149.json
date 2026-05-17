@@ -1,0 +1,73 @@
+{
+  "candidate_id": "phppgadmin-C0149",
+  "subject_id": "phppgadmin",
+  "file": "classes/Misc.php",
+  "lines": [
+    52,
+    198
+  ],
+  "candidate_type": "long_method_or_region",
+  "issues": [
+    {
+      "type": "Long or Complex Region",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 18
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "aggrname",
+      "aggrtype",
+      "column",
+      "database",
+      "ftscfg",
+      "function",
+      "function_oid",
+      "plugin",
+      "rolename",
+      "schema",
+      "server",
+      "table",
+      "view"
+    ],
+    "session_keys": [],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "aggrname",
+      "aggrtype",
+      "column",
+      "database",
+      "ftscfg",
+      "function",
+      "function_oid",
+      "plugin",
+      "rolename",
+      "schema",
+      "server",
+      "table",
+      "view"
+    ],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

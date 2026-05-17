@@ -1,0 +1,97 @@
+{
+  "candidate_id": "dolibarr-C3199",
+  "subject_id": "dolibarr",
+  "file": "htdocs/core/class/html.formfile.class.php",
+  "lines": [
+    1,
+    1923
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 437
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "section"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "# . $object->id : ",
+      "#.$obj->rowid;\n\t\t\t\t//print $formfile->getDocumentsLink($modulepart, $filename, $filedir);\n\n\t\t\t\tprint ",
+      "#.$object->id.",
+      "#.$object->id;\n\t\t\t$relativepathwihtoutslashend=preg_replace(",
+      "#.$this->id.",
+      "#downloadlink",
+      "#gen_pdf_",
+      "#label",
+      "#link",
+      "#row-",
+      "#show_files",
+      "#tablelines",
+      "#togglemassfilesarea",
+      ".ModelePDF",
+      ".actionbuttons",
+      ".aphoto",
+      ".button",
+      ".buttongen",
+      ".center",
+      ".centpercent"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "section"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "# . $object->id : ",
+      "#.$obj->rowid;\n\t\t\t\t//print $formfile->getDocumentsLink($modulepart, $filename, $filedir);\n\n\t\t\t\tprint ",
+      "#.$object->id.",
+      "#.$object->id;\n\t\t\t$relativepathwihtoutslashend=preg_replace(",
+      "#.$this->id.",
+      "#downloadlink",
+      "#gen_pdf_",
+      "#label",
+      "#link",
+      "#row-",
+      "#show_files",
+      "#tablelines",
+      "#togglemassfilesarea",
+      ".ModelePDF",
+      ".actionbuttons",
+      ".aphoto",
+      ".button",
+      ".buttongen",
+      ".center",
+      ".centpercent"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

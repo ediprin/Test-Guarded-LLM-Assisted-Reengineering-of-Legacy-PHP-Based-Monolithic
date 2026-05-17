@@ -1,0 +1,63 @@
+{
+  "candidate_id": "dolibarr-C1061",
+  "subject_id": "dolibarr",
+  "file": "htdocs/product/stock/valo.php",
+  "lines": [
+    1,
+    160
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 20
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "page"
+    ],
+    "session_keys": [],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$objp->rowid.",
+      ".liste_total",
+      ".noborder",
+      ".oddeven",
+      ".right"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "page"
+    ],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#.$objp->rowid.",
+      ".liste_total",
+      ".noborder",
+      ".oddeven",
+      ".right"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "candidate_id": "roundcubemail-C0113",
+  "subject_id": "roundcubemail",
+  "file": "program/steps/mail/func.inc",
+  "lines": [
+    153,
+    218
+  ],
+  "candidate_type": "session_dependent_logic",
+  "issues": [
+    {
+      "type": "Session-Dependent Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 15
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "_page",
+      "_threads"
+    ],
+    "session_keys": [
+      "mbox",
+      "page",
+      "sort_col",
+      "sort_order"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "_page",
+      "_threads"
+    ],
+    "must_preserve_session_keys": [
+      "mbox",
+      "page",
+      "sort_col",
+      "sort_order"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Guard",
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

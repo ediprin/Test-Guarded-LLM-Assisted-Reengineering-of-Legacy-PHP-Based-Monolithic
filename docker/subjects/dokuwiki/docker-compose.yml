@@ -1,0 +1,12 @@
+services:
+  dokuwiki:
+    build:
+      context: ../../..
+      dockerfile: docker/subjects/dokuwiki/Dockerfile
+    ports:
+      - "8102:80"
+    healthcheck:
+      test: ["CMD", "php", "-r", "exit(@file_get_contents('http://localhost/doku.php') === false ? 1 : 0);"]
+      interval: 10s
+      timeout: 5s
+      retries: 12

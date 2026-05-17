@@ -1,0 +1,111 @@
+{
+  "candidate_id": "dolibarr-C0093",
+  "subject_id": "dolibarr",
+  "file": "htdocs/admin/company.php",
+  "lines": [
+    1,
+    1187
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 204
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "file",
+      "lt1",
+      "lt2",
+      "optionlocaltax1",
+      "optionlocaltax2"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#MAIN_INFO_SOCIETE_ADDRESS",
+      "#MAIN_INFO_SOCIETE_TOWN",
+      "#MAIN_INFO_SOCIETE_ZIP",
+      "#barcode",
+      "#capital",
+      "#director",
+      "#email",
+      "#fax",
+      "#intra_vat",
+      "#logo",
+      "#name",
+      "#note",
+      "#object",
+      "#phone",
+      "#profid1",
+      "#profid2",
+      "#profid3",
+      "#profid4",
+      "#profid5",
+      "#profid6"
+    ],
+    "forms": [
+      "form_index",
+      "formsoc"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "file",
+      "lt1",
+      "lt2",
+      "optionlocaltax1",
+      "optionlocaltax2"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#MAIN_INFO_SOCIETE_ADDRESS",
+      "#MAIN_INFO_SOCIETE_TOWN",
+      "#MAIN_INFO_SOCIETE_ZIP",
+      "#barcode",
+      "#capital",
+      "#director",
+      "#email",
+      "#fax",
+      "#intra_vat",
+      "#logo",
+      "#name",
+      "#note",
+      "#object",
+      "#phone",
+      "#profid1",
+      "#profid2",
+      "#profid3",
+      "#profid4",
+      "#profid5",
+      "#profid6"
+    ],
+    "must_preserve_forms": [
+      "form_index",
+      "formsoc"
+    ]
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

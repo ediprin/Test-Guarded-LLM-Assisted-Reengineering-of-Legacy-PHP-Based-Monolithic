@@ -1,0 +1,60 @@
+{
+  "candidate_id": "phpmyadmin-C0711",
+  "subject_id": "phpmyadmin",
+  "file": "libraries/classes/Engines/Innodb.php",
+  "lines": [
+    1,
+    395
+  ],
+  "candidate_type": "mixed_php_html",
+  "issues": [
+    {
+      "type": "Mixed PHP/HTML",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 13
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#pre_innodb_status",
+      "#table_innodb_bufferpool_activity",
+      "#table_innodb_bufferpool_usage",
+      ".data",
+      ".tblHeaders",
+      ".value"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#pre_innodb_status",
+      "#table_innodb_bufferpool_activity",
+      "#table_innodb_bufferpool_usage",
+      ".data",
+      ".tblHeaders",
+      ".value"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Separate PHP Logic from Markup",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

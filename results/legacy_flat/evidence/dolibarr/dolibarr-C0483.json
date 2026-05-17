@@ -1,0 +1,70 @@
+{
+  "candidate_id": "dolibarr-C0483",
+  "subject_id": "dolibarr",
+  "file": "htdocs/stripe/payout.php",
+  "lines": [
+    1,
+    230
+  ],
+  "candidate_type": "mixed_php_html",
+  "issues": [
+    {
+      "type": "Mixed PHP/HTML",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 30
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$charge->metadata->dol_id.",
+      "#formfilteraction",
+      ".center",
+      ".div-table-responsive",
+      ".liste",
+      ".liste_titre",
+      ".oddeven",
+      ".right",
+      ".tagtable"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#.$charge->metadata->dol_id.",
+      "#formfilteraction",
+      ".center",
+      ".div-table-responsive",
+      ".liste",
+      ".liste_titre",
+      ".oddeven",
+      ".right",
+      ".tagtable"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Separate PHP Logic from Markup",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

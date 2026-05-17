@@ -1,0 +1,95 @@
+{
+  "candidate_id": "dolibarr-C0101",
+  "subject_id": "dolibarr",
+  "file": "htdocs/admin/defaultvalues.php",
+  "lines": [
+    1,
+    425
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 65
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": [
+      "GETPOST",
+      "delete",
+      "table"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#action",
+      "#formfilteraction",
+      "#mode",
+      "#value_",
+      ".button",
+      ".center",
+      ".div-table-responsive-no-min",
+      ".flat",
+      ".inputforupdate",
+      ".liste_titre",
+      ".maxwidth100onsmartphone",
+      ".maxwidthonsmartphone",
+      ".minwidth200",
+      ".noborder",
+      ".oddeven",
+      ".opacitymedium",
+      ".reposition"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [
+      "GETPOST",
+      "delete",
+      "table"
+    ],
+    "must_preserve_dom_selectors": [
+      "#action",
+      "#formfilteraction",
+      "#mode",
+      "#value_",
+      ".button",
+      ".center",
+      ".div-table-responsive-no-min",
+      ".flat",
+      ".inputforupdate",
+      ".liste_titre",
+      ".maxwidth100onsmartphone",
+      ".maxwidthonsmartphone",
+      ".minwidth200",
+      ".noborder",
+      ".oddeven",
+      ".opacitymedium",
+      ".reposition"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

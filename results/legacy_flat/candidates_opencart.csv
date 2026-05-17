@@ -1,0 +1,953 @@
+candidate_id,project,file,start_line,end_line,candidate_type,dominant_issue,complexity_proxy,request_parameters,session_keys,database_tables,dom_selectors,forms,allowed_transformations,oracle_status
+opencart-C0001,opencart,upload/install/cli_install.php,1,364,sql_data_access,SQL/Data Access Region,35,,,oc_,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0002,opencart,upload/install/cli_install.php,143,181,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+opencart-C0003,opencart,upload/install/cli_install.php,181,237,sql_data_access,SQL/Data Access Region,6,,,oc_,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0004,opencart,upload/system/helper/bbcode.php,1,70,mixed_php_html,Mixed PHP/HTML,24,,,,.img-responsive,,Separate PHP Logic from Markup;Extract View Helper,pending
+opencart-C0005,opencart,upload/system/helper/bbcode.php,3,70,long_method_or_region,Long or Complex Region,23,,,,.img-responsive,,Extract Method,pending
+opencart-C0006,opencart,upload/system/helper/utf8.php,53,289,long_method_or_region,Long or Complex Region,5,,,,,,Extract Method,pending
+opencart-C0007,opencart,upload/system/helper/utf8.php,289,525,long_method_or_region,Long or Complex Region,5,,,,,,Extract Method,pending
+opencart-C0008,opencart,upload/system/library/image.php,195,250,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0009,opencart,upload/system/library/openbay.php,1,452,sql_data_access,SQL/Data Access Region,47,,,information_schema,.\openbay\\,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0010,opencart,upload/system/library/openbay.php,181,308,sql_data_access,SQL/Data Access Region,14,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0011,opencart,upload/system/library/openbay.php,376,427,sql_data_access,SQL/Data Access Region,4,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0012,opencart,upload/system/library/pagination.php,1,106,mixed_php_html,Mixed PHP/HTML,18,,,,.active;.pagination,,Separate PHP Logic from Markup;Extract View Helper,pending
+opencart-C0013,opencart,upload/system/library/pagination.php,29,107,long_method_or_region,Long or Complex Region,17,,,,.active;.pagination,,Extract Method,pending
+opencart-C0014,opencart,upload/system/library/squareup.php,41,155,long_method_or_region,Long or Complex Region,19,,,,,,Extract Method,pending
+opencart-C0015,opencart,upload/system/library/cart/cart.php,1,407,sql_data_access,SQL/Data Access Region,64,,,the,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0016,opencart,upload/system/library/cart/cart.php,33,272,sql_data_access,SQL/Data Access Region,35,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0017,opencart,upload/system/library/cart/currency.php,1,115,sql_data_access,SQL/Data Access Region,15,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0018,opencart,upload/system/library/cart/tax.php,1,128,sql_data_access,SQL/Data Access Region,16,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0019,opencart,upload/system/library/db/mpdo.php,1,111,sql_data_access,SQL/Data Access Region,15,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0020,opencart,upload/system/library/googleshopping/googleshopping.php,1,1919,sql_data_access,SQL/Data Access Region,207,,,destination_statuses;has_issues;impressions;the,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0021,opencart,upload/system/library/googleshopping/googleshopping.php,246,306,sql_data_access,SQL/Data Access Region,15,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0022,opencart,upload/system/library/googleshopping/googleshopping.php,310,442,long_method_or_region,Long or Complex Region,30,,,,,,Extract Method,pending
+opencart-C0023,opencart,upload/system/library/googleshopping/googleshopping.php,502,548,sql_data_access,SQL/Data Access Region,6,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0024,opencart,upload/system/library/googleshopping/googleshopping.php,594,725,long_method_or_region,Long or Complex Region,19,,,,,,Extract Method,pending
+opencart-C0025,opencart,upload/system/library/googleshopping/googleshopping.php,780,871,sql_data_access,SQL/Data Access Region,16,,,destination_statuses;has_issues,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0026,opencart,upload/system/library/googleshopping/googleshopping.php,1196,1314,long_method_or_region,Long or Complex Region,20,,,,,,Extract Method,pending
+opencart-C0027,opencart,upload/system/library/googleshopping/googleshopping.php,1853,1920,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0028,opencart,upload/system/library/mail/mail.php,4,80,long_method_or_region,Long or Complex Region,28,,,,,,Extract Method,pending
+opencart-C0029,opencart,upload/system/library/mail/smtp.php,11,350,long_method_or_region,Long or Complex Region,76,,,,,,Extract Method,pending
+opencart-C0030,opencart,upload/system/library/openbay/amazon.php,1,534,sql_data_access,SQL/Data Access Region,56,,,admin;needed,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0031,opencart,upload/system/library/openbay/amazon.php,136,176,sql_data_access,SQL/Data Access Region,8,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0032,opencart,upload/system/library/openbay/amazon.php,229,288,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0033,opencart,upload/system/library/openbay/amazonus.php,1,509,sql_data_access,SQL/Data Access Region,56,,,admin;needed,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0034,opencart,upload/system/library/openbay/amazonus.php,136,176,sql_data_access,SQL/Data Access Region,8,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0035,opencart,upload/system/library/openbay/amazonus.php,229,287,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0036,opencart,upload/system/library/openbay/ebay.php,1,1514,sql_data_access,SQL/Data Access Region,221,,,API;an;eBay;ebay_setting_option;if;it;method;needed;order;status;the,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0037,opencart,upload/system/library/openbay/ebay.php,52,130,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+opencart-C0038,opencart,upload/system/library/openbay/ebay.php,462,542,long_method_or_region,Long or Complex Region,19,,,,,,Extract Method,pending
+opencart-C0039,opencart,upload/system/library/openbay/ebay.php,542,691,long_method_or_region,Long or Complex Region,39,,,,,,Extract Method,pending
+opencart-C0040,opencart,upload/system/library/openbay/ebay.php,705,823,sql_data_access,SQL/Data Access Region,19,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0041,opencart,upload/system/library/openbay/ebay.php,823,889,long_method_or_region,Long or Complex Region,22,,,,,,Extract Method,pending
+opencart-C0042,opencart,upload/system/library/openbay/ebay.php,943,982,sql_data_access,SQL/Data Access Region,7,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0043,opencart,upload/system/library/openbay/ebay.php,1180,1445,sql_data_access,SQL/Data Access Region,35,,,ebay_setting_option,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0044,opencart,upload/system/library/openbay/ebay.php,1445,1493,sql_data_access,SQL/Data Access Region,11,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0045,opencart,upload/system/library/openbay/etsy.php,1,459,sql_data_access,SQL/Data Access Region,46,,,stock,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0046,opencart,upload/system/library/openbay/fba.php,1,305,sql_data_access,SQL/Data Access Region,23,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0047,opencart,upload/system/library/template/Twig/Compiler.php,165,208,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0048,opencart,upload/system/library/template/Twig/Environment.php,1347,1414,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+opencart-C0049,opencart,upload/system/library/template/Twig/Error.php,167,208,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0050,opencart,upload/system/library/template/Twig/Error.php,208,273,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+opencart-C0051,opencart,upload/system/library/template/Twig/ExpressionParser.php,118,197,long_method_or_region,Long or Complex Region,20,,,,,,Extract Method,pending
+opencart-C0052,opencart,upload/system/library/template/Twig/ExpressionParser.php,314,357,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0053,opencart,upload/system/library/template/Twig/ExpressionParser.php,357,439,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+opencart-C0054,opencart,upload/system/library/template/Twig/ExpressionParser.php,482,537,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+opencart-C0055,opencart,upload/system/library/template/Twig/Lexer.php,78,142,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0056,opencart,upload/system/library/template/Twig/Lexer.php,142,198,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+opencart-C0057,opencart,upload/system/library/template/Twig/Lexer.php,220,288,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+opencart-C0058,opencart,upload/system/library/template/Twig/Parser.php,63,131,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+opencart-C0059,opencart,upload/system/library/template/Twig/Parser.php,131,205,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+opencart-C0060,opencart,upload/system/library/template/Twig/Template.php,145,203,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+opencart-C0061,opencart,upload/system/library/template/Twig/Template.php,462,621,long_method_or_region,Long or Complex Region,40,,,,,,Extract Method,pending
+opencart-C0062,opencart,upload/system/library/template/Twig/Token.php,127,183,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+opencart-C0063,opencart,upload/system/library/template/Twig/Token.php,183,217,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+opencart-C0064,opencart,upload/system/library/template/Twig/Extension/Core.php,373,433,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+opencart-C0065,opencart,upload/system/library/template/Twig/Extension/Core.php,486,538,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+opencart-C0066,opencart,upload/system/library/template/Twig/Extension/Core.php,719,758,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0067,opencart,upload/system/library/template/Twig/Extension/Core.php,831,864,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+opencart-C0068,opencart,upload/system/library/template/Twig/Extension/Core.php,988,1134,long_method_or_region,Long or Complex Region,34,,,,,,Extract Method,pending
+opencart-C0069,opencart,upload/system/library/template/Twig/Extension/Core.php,1205,1264,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0070,opencart,upload/system/library/template/Twig/Loader/Filesystem.php,168,218,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+opencart-C0071,opencart,upload/system/library/template/Twig/Node/CheckSecurity.php,30,79,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+opencart-C0072,opencart,upload/system/library/template/Twig/Node/For.php,33,107,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0073,opencart,upload/system/library/template/Twig/Node/Macro.php,32,124,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+opencart-C0074,opencart,upload/system/library/template/Twig/Node/Module.php,145,271,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+opencart-C0075,opencart,upload/system/library/template/Twig/Node/Module.php,324,368,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+opencart-C0076,opencart,upload/system/library/template/Twig/Node/Set.php,39,97,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+opencart-C0077,opencart,upload/system/library/template/Twig/NodeVisitor/Optimizer.php,176,243,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+opencart-C0078,opencart,upload/system/library/template/Twig/NodeVisitor/SafeAnalysis.php,71,130,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+opencart-C0079,opencart,upload/system/library/template/Twig/NodeVisitor/Sandbox.php,27,64,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0080,opencart,upload/system/library/template/Twig/Test/IntegrationTestCase.php,74,117,long_method_or_region,Long or Complex Region,34,,,,,,Extract Method,pending
+opencart-C0081,opencart,upload/system/library/template/Twig/Test/IntegrationTestCase.php,122,222,long_method_or_region,Long or Complex Region,22,,,,,,Extract Method,pending
+opencart-C0082,opencart,upload/system/library/template/Twig/Node/Expression/Call.php,37,91,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+opencart-C0083,opencart,upload/system/library/template/Twig/Node/Expression/Call.php,91,204,long_method_or_region,Long or Complex Region,34,,,,,,Extract Method,pending
+opencart-C0084,opencart,upload/system/library/template/Twig/Node/Expression/Call.php,209,254,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+opencart-C0085,opencart,upload/system/library/template/Twig/Node/Expression/Name.php,25,81,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0086,opencart,upload/install/model/install/install.php,3,61,sql_data_access,SQL/Data Access Region,6,,,oc_,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0087,opencart,upload/install/model/upgrade/1000.php,3,344,long_method_or_region,Long or Complex Region,67,,,,,,Extract Method,pending
+opencart-C0088,opencart,upload/install/model/upgrade/1001.php,1,266,sql_data_access,SQL/Data Access Region,46,,,information_schema;the,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0089,opencart,upload/install/model/upgrade/1001.php,3,266,sql_data_access,SQL/Data Access Region,45,,,information_schema;the,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0090,opencart,upload/install/model/upgrade/1002.php,1,111,sql_data_access,SQL/Data Access Region,18,,,information_schema,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0091,opencart,upload/install/model/upgrade/1002.php,3,88,sql_data_access,SQL/Data Access Region,14,,,information_schema,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0092,opencart,upload/install/model/upgrade/1003.php,1,128,sql_data_access,SQL/Data Access Region,28,,,information_schema,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0093,opencart,upload/install/model/upgrade/1003.php,3,128,sql_data_access,SQL/Data Access Region,27,,,information_schema,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0094,opencart,upload/install/model/upgrade/1004.php,1,246,sql_data_access,SQL/Data Access Region,55,,,information_schema;some,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0095,opencart,upload/install/model/upgrade/1004.php,3,246,sql_data_access,SQL/Data Access Region,54,,,information_schema;some,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0096,opencart,upload/install/model/upgrade/1005.php,1,227,sql_data_access,SQL/Data Access Region,34,,,information_schema,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0097,opencart,upload/install/model/upgrade/1005.php,3,227,sql_data_access,SQL/Data Access Region,33,,,information_schema,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0098,opencart,upload/install/model/upgrade/1006.php,3,175,long_method_or_region,Long or Complex Region,25,,,,,,Extract Method,pending
+opencart-C0099,opencart,upload/install/model/upgrade/1007.php,1,114,sql_data_access,SQL/Data Access Region,12,,,information_schema,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0100,opencart,upload/install/model/upgrade/1007.php,3,115,sql_data_access,SQL/Data Access Region,11,,,information_schema,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0101,opencart,upload/install/model/upgrade/1008.php,3,66,sql_data_access,SQL/Data Access Region,6,,,information_schema,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0102,opencart,upload/install/model/upgrade/1009.php,1,171,sql_data_access,SQL/Data Access Region,28,,,information_schema,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0103,opencart,upload/install/model/upgrade/1009.php,3,171,sql_data_access,SQL/Data Access Region,27,,,information_schema,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0104,opencart,upload/install/language/en-gb/install/step_1.php,1,570,mixed_php_html,Mixed PHP/HTML,101,,,,#section0;#section1;#section10;#section11;#section12;#section13;#section14;#section15;#section16;#section17;#section2;#section3;#section4;#section5;#section6;#section7;#section8;#section9,,Separate PHP Logic from Markup;Extract View Helper,pending
+opencart-C0105,opencart,upload/install/controller/install/step_2.php,5,172,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+opencart-C0106,opencart,upload/install/controller/install/step_2.php,172,267,long_method_or_region,Long or Complex Region,23,,,,,,Extract Method,pending
+opencart-C0107,opencart,upload/install/controller/install/step_3.php,5,251,long_method_or_region,Long or Complex Region,23,,,,,,Extract Method,pending
+opencart-C0108,opencart,upload/install/controller/install/step_3.php,251,317,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+opencart-C0109,opencart,upload/catalog/model/account/address.php,1,141,sql_data_access,SQL/Data Access Region,12,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0110,opencart,upload/catalog/model/account/address.php,27,81,sql_data_access,SQL/Data Access Region,4,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0111,opencart,upload/catalog/model/account/address.php,81,136,sql_data_access,SQL/Data Access Region,4,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0112,opencart,upload/catalog/model/account/order.php,3,103,sql_data_access,SQL/Data Access Region,6,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0113,opencart,upload/catalog/model/catalog/category.php,15,54,sql_data_access,SQL/Data Access Region,6,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0114,opencart,upload/catalog/model/catalog/manufacturer.php,9,59,sql_data_access,SQL/Data Access Region,8,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0115,opencart,upload/catalog/model/catalog/product.php,1,539,sql_data_access,SQL/Data Access Region,69,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0116,opencart,upload/catalog/model/catalog/product.php,7,59,sql_data_access,SQL/Data Access Region,4,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0117,opencart,upload/catalog/model/catalog/product.php,59,209,sql_data_access,SQL/Data Access Region,27,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0118,opencart,upload/catalog/model/catalog/product.php,209,259,sql_data_access,SQL/Data Access Region,8,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0119,opencart,upload/catalog/model/catalog/product.php,337,376,sql_data_access,SQL/Data Access Region,3,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0120,opencart,upload/catalog/model/catalog/product.php,416,518,sql_data_access,SQL/Data Access Region,19,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0121,opencart,upload/catalog/model/catalog/review.php,3,50,sql_data_access,SQL/Data Access Region,4,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0122,opencart,upload/catalog/model/checkout/order.php,1,385,sql_data_access,SQL/Data Access Region,49,,,the,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0123,opencart,upload/catalog/model/checkout/order.php,3,47,sql_data_access,SQL/Data Access Region,11,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0124,opencart,upload/catalog/model/checkout/order.php,47,99,sql_data_access,SQL/Data Access Region,8,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0125,opencart,upload/catalog/model/checkout/order.php,118,240,sql_data_access,SQL/Data Access Region,7,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0126,opencart,upload/catalog/model/checkout/order.php,264,385,sql_data_access,SQL/Data Access Region,25,,,the,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0127,opencart,upload/catalog/model/localisation/return_reason.php,3,45,sql_data_access,SQL/Data Access Region,7,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0128,opencart,upload/catalog/model/extension/advertise/google.php,1,141,sql_data_access,SQL/Data Access Region,23,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0129,opencart,upload/catalog/model/extension/advertise/google.php,98,130,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0130,opencart,upload/catalog/model/extension/fraud/fraudlabspro.php,1,163,sql_data_access,SQL/Data Access Region,21,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0131,opencart,upload/catalog/model/extension/fraud/fraudlabspro.php,3,155,sql_data_access,SQL/Data Access Region,19,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0132,opencart,upload/catalog/model/extension/fraud/maxmind.php,1,380,sql_data_access,SQL/Data Access Region,58,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0133,opencart,upload/catalog/model/extension/fraud/maxmind.php,3,381,sql_data_access,SQL/Data Access Region,57,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0134,opencart,upload/catalog/model/extension/openbay/amazonus_order.php,1,227,sql_data_access,SQL/Data Access Region,25,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0135,opencart,upload/catalog/model/extension/openbay/amazonus_product.php,1,114,sql_data_access,SQL/Data Access Region,13,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0136,opencart,upload/catalog/model/extension/openbay/amazon_order.php,1,227,sql_data_access,SQL/Data Access Region,25,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0137,opencart,upload/catalog/model/extension/openbay/amazon_product.php,1,128,sql_data_access,SQL/Data Access Region,14,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0138,opencart,upload/catalog/model/extension/openbay/ebay_order.php,1,912,sql_data_access,SQL/Data Access Region,110,,,ISO2;eBay;ebay;order;order_option;store;the;to,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0139,opencart,upload/catalog/model/extension/openbay/ebay_order.php,39,233,long_method_or_region,Long or Complex Region,34,,,,,,Extract Method,pending
+opencart-C0140,opencart,upload/catalog/model/extension/openbay/ebay_order.php,233,424,sql_data_access,SQL/Data Access Region,19,,,eBay;ebay;order_option;store,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0141,opencart,upload/catalog/model/extension/openbay/ebay_order.php,424,599,sql_data_access,SQL/Data Access Region,15,,,eBay;store;the,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0142,opencart,upload/catalog/model/extension/openbay/ebay_order.php,599,660,sql_data_access,SQL/Data Access Region,11,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0143,opencart,upload/catalog/model/extension/openbay/ebay_product.php,1,656,sql_data_access,SQL/Data Access Region,94,,,API;eBay;the,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0144,opencart,upload/catalog/model/extension/openbay/ebay_product.php,7,340,sql_data_access,SQL/Data Access Region,65,,,API;eBay;the,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0145,opencart,upload/catalog/model/extension/openbay/etsy_order.php,1,319,sql_data_access,SQL/Data Access Region,28,,,lock,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0146,opencart,upload/catalog/model/extension/openbay/etsy_order.php,3,77,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+opencart-C0147,opencart,upload/catalog/model/extension/openbay/etsy_order.php,135,304,sql_data_access,SQL/Data Access Region,8,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0148,opencart,upload/catalog/model/extension/payment/alipay.php,1,219,sql_data_access,SQL/Data Access Region,24,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0149,opencart,upload/catalog/model/extension/payment/alipay_cross.php,1,177,sql_data_access,SQL/Data Access Region,19,notify_id;sign,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0150,opencart,upload/catalog/model/extension/payment/amazon_login_pay.php,1,950,sql_data_access,SQL/Data Access Region,84,,,an,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0151,opencart,upload/catalog/model/extension/payment/amazon_login_pay.php,147,351,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+opencart-C0152,opencart,upload/catalog/model/extension/payment/cardconnect.php,1,171,sql_data_access,SQL/Data Access Region,13,,,CardConnect,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0153,opencart,upload/catalog/model/extension/payment/cardinity.php,1,122,sql_data_access,SQL/Data Access Region,14,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0154,opencart,upload/catalog/model/extension/payment/divido.php,1,322,sql_data_access,SQL/Data Access Region,46,,,Divido;an,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0155,opencart,upload/catalog/model/extension/payment/divido.php,77,114,sql_data_access,SQL/Data Access Region,8,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0156,opencart,upload/catalog/model/extension/payment/divido.php,255,323,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+opencart-C0157,opencart,upload/catalog/model/extension/payment/eway.php,1,181,sql_data_access,SQL/Data Access Region,16,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0158,opencart,upload/catalog/model/extension/payment/firstdata_remote.php,1,284,sql_data_access,SQL/Data Access Region,38,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0159,opencart,upload/catalog/model/extension/payment/firstdata_remote.php,32,196,long_method_or_region,Long or Complex Region,29,,,,,,Extract Method,pending
+opencart-C0160,opencart,upload/catalog/model/extension/payment/globalpay_remote.php,1,353,sql_data_access,SQL/Data Access Region,42,,,,#1,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0161,opencart,upload/catalog/model/extension/payment/globalpay_remote.php,125,327,long_method_or_region,Long or Complex Region,35,,,,#1,,Extract Method,pending
+opencart-C0162,opencart,upload/catalog/model/extension/payment/klarna_account.php,1,213,sql_data_access,SQL/Data Access Region,37,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0163,opencart,upload/catalog/model/extension/payment/klarna_account.php,3,185,sql_data_access,SQL/Data Access Region,30,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0164,opencart,upload/catalog/model/extension/payment/klarna_checkout.php,1,245,sql_data_access,SQL/Data Access Region,25,,,an,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0165,opencart,upload/catalog/model/extension/payment/klarna_checkout.php,62,98,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0166,opencart,upload/catalog/model/extension/payment/klarna_invoice.php,3,65,sql_data_access,SQL/Data Access Region,10,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0167,opencart,upload/catalog/model/extension/payment/laybuy.php,1,233,sql_data_access,SQL/Data Access Region,25,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0168,opencart,upload/catalog/model/extension/payment/laybuy.php,35,114,sql_data_access,SQL/Data Access Region,15,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0169,opencart,upload/catalog/model/extension/payment/paymate.php,3,44,sql_data_access,SQL/Data Access Region,6,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0170,opencart,upload/catalog/model/extension/payment/pp_braintree.php,1,191,sql_data_access,SQL/Data Access Region,26,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0171,opencart,upload/catalog/model/extension/payment/pp_express.php,1,354,sql_data_access,SQL/Data Access Region,34,,,an,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0172,opencart,upload/catalog/model/extension/payment/pp_express.php,70,237,long_method_or_region,Long or Complex Region,22,,,,,,Extract Method,pending
+opencart-C0173,opencart,upload/catalog/model/extension/payment/pp_standard.php,3,64,sql_data_access,SQL/Data Access Region,6,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0174,opencart,upload/catalog/model/extension/payment/realex_remote.php,1,353,sql_data_access,SQL/Data Access Region,42,,,,#1,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0175,opencart,upload/catalog/model/extension/payment/realex_remote.php,125,327,long_method_or_region,Long or Complex Region,35,,,,#1,,Extract Method,pending
+opencart-C0176,opencart,upload/catalog/model/extension/payment/sagepay_direct.php,1,438,sql_data_access,SQL/Data Access Region,44,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0177,opencart,upload/catalog/model/extension/payment/sagepay_direct.php,121,189,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0178,opencart,upload/catalog/model/extension/payment/sagepay_direct.php,189,258,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0179,opencart,upload/catalog/model/extension/payment/sagepay_server.php,1,445,sql_data_access,SQL/Data Access Region,45,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0180,opencart,upload/catalog/model/extension/payment/sagepay_server.php,196,265,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0181,opencart,upload/catalog/model/extension/payment/securetrading_pp.php,46,85,sql_data_access,SQL/Data Access Region,5,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0182,opencart,upload/catalog/model/extension/payment/securetrading_ws.php,1,161,sql_data_access,SQL/Data Access Region,16,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0183,opencart,upload/catalog/model/extension/payment/squareup.php,1,426,sql_data_access,SQL/Data Access Region,43,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0184,opencart,upload/catalog/model/extension/payment/squareup.php,22,63,sql_data_access,SQL/Data Access Region,6,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0185,opencart,upload/catalog/model/extension/payment/squareup.php,229,287,sql_data_access,SQL/Data Access Region,4,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0186,opencart,upload/catalog/model/extension/payment/worldpay.php,1,374,sql_data_access,SQL/Data Access Region,33,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0187,opencart,upload/catalog/model/extension/payment/worldpay.php,103,182,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0188,opencart,upload/catalog/model/extension/shipping/auspost.php,1,133,sql_data_access,SQL/Data Access Region,18,,,on,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0189,opencart,upload/catalog/model/extension/shipping/auspost.php,9,133,sql_data_access,SQL/Data Access Region,17,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0190,opencart,upload/catalog/model/extension/shipping/ec_ship.php,1,541,sql_data_access,SQL/Data Access Region,22,,,that,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0191,opencart,upload/catalog/model/extension/shipping/ec_ship.php,3,534,sql_data_access,SQL/Data Access Region,21,,,that,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0192,opencart,upload/catalog/model/extension/shipping/fedex.php,1,238,sql_data_access,SQL/Data Access Region,25,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0193,opencart,upload/catalog/model/extension/shipping/fedex.php,3,239,sql_data_access,SQL/Data Access Region,24,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0194,opencart,upload/catalog/model/extension/shipping/free.php,3,44,sql_data_access,SQL/Data Access Region,5,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0195,opencart,upload/catalog/model/extension/shipping/item.php,3,48,sql_data_access,SQL/Data Access Region,6,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0196,opencart,upload/catalog/model/extension/shipping/parcelforce_48.php,1,88,sql_data_access,SQL/Data Access Region,15,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0197,opencart,upload/catalog/model/extension/shipping/parcelforce_48.php,3,88,sql_data_access,SQL/Data Access Region,14,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0198,opencart,upload/catalog/model/extension/shipping/royal_mail.php,1,1328,sql_data_access,SQL/Data Access Region,94,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0199,opencart,upload/catalog/model/extension/shipping/royal_mail.php,244,1329,sql_data_access,SQL/Data Access Region,93,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0200,opencart,upload/catalog/model/extension/shipping/ups.php,1,299,sql_data_access,SQL/Data Access Region,25,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0201,opencart,upload/catalog/model/extension/shipping/ups.php,3,300,sql_data_access,SQL/Data Access Region,24,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0202,opencart,upload/catalog/model/extension/shipping/usps.php,1,483,sql_data_access,SQL/Data Access Region,34,,,USPS,#1,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0203,opencart,upload/catalog/model/extension/shipping/usps.php,3,484,sql_data_access,SQL/Data Access Region,33,,,USPS,#1,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0204,opencart,upload/catalog/model/extension/shipping/weight.php,3,68,sql_data_access,SQL/Data Access Region,10,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0205,opencart,upload/catalog/model/extension/total/coupon.php,1,242,sql_data_access,SQL/Data Access Region,44,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0206,opencart,upload/catalog/model/extension/total/coupon.php,3,98,sql_data_access,SQL/Data Access Region,16,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0207,opencart,upload/catalog/model/extension/total/coupon.php,98,186,long_method_or_region,Long or Complex Region,21,,,,,,Extract Method,pending
+opencart-C0208,opencart,upload/catalog/model/extension/total/coupon.php,186,227,sql_data_access,SQL/Data Access Region,8,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0209,opencart,upload/catalog/model/extension/total/klarna_fee.php,3,53,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+opencart-C0210,opencart,upload/catalog/model/extension/total/reward.php,1,78,sql_data_access,SQL/Data Access Region,13,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0211,opencart,upload/catalog/model/extension/total/reward.php,3,54,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0212,opencart,upload/catalog/model/extension/total/voucher.php,1,124,sql_data_access,SQL/Data Access Region,16,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0213,opencart,upload/catalog/model/extension/total/voucher.php,13,73,sql_data_access,SQL/Data Access Region,9,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0214,opencart,upload/catalog/model/extension/total/voucher_theme.php,9,49,sql_data_access,SQL/Data Access Region,7,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0215,opencart,upload/catalog/language/en-gb/extension/payment/globalpay.php,1,48,mixed_php_html_sql,SQL in Presentation Logic,2,,,ACS;Enrolment,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+opencart-C0216,opencart,upload/catalog/language/en-gb/extension/payment/realex.php,1,48,mixed_php_html_sql,SQL in Presentation Logic,2,,,ACS;Enrolment,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+opencart-C0217,opencart,upload/catalog/controller/account/address.php,221,428,long_method_or_region,Long or Complex Region,37,,,,,,Extract Method,pending
+opencart-C0218,opencart,upload/catalog/controller/account/address.php,428,479,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+opencart-C0219,opencart,upload/catalog/controller/account/affiliate.php,53,255,long_method_or_region,Long or Complex Region,36,,,,,,Extract Method,pending
+opencart-C0220,opencart,upload/catalog/controller/account/affiliate.php,255,300,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+opencart-C0221,opencart,upload/catalog/controller/account/edit.php,5,155,long_method_or_region,Long or Complex Region,22,,,,,,Extract Method,pending
+opencart-C0222,opencart,upload/catalog/controller/account/edit.php,155,193,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0223,opencart,upload/catalog/controller/account/login.php,5,158,long_method_or_region,Long or Complex Region,22,,,,,,Extract Method,pending
+opencart-C0224,opencart,upload/catalog/controller/account/order.php,88,341,long_method_or_region,Long or Complex Region,22,,,,,,Extract Method,pending
+opencart-C0225,opencart,upload/catalog/controller/account/order.php,341,401,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+opencart-C0226,opencart,upload/catalog/controller/account/recurring.php,88,219,long_method_or_region,Long or Complex Region,7,,,,,,Extract Method,pending
+opencart-C0227,opencart,upload/catalog/controller/account/register.php,5,220,long_method_or_region,Long or Complex Region,30,,,,,,Extract Method,pending
+opencart-C0228,opencart,upload/catalog/controller/account/register.php,220,294,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+opencart-C0229,opencart,upload/catalog/controller/account/return.php,86,218,long_method_or_region,Long or Complex Region,8,,,,,,Extract Method,pending
+opencart-C0230,opencart,upload/catalog/controller/account/return.php,218,451,long_method_or_region,Long or Complex Region,37,,,,,,Extract Method,pending
+opencart-C0231,opencart,upload/catalog/controller/account/return.php,451,505,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+opencart-C0232,opencart,upload/catalog/controller/account/voucher.php,5,158,long_method_or_region,Long or Complex Region,20,,,,,,Extract Method,pending
+opencart-C0233,opencart,upload/catalog/controller/account/wishlist.php,3,116,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+opencart-C0234,opencart,upload/catalog/controller/affiliate/login.php,5,94,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+opencart-C0235,opencart,upload/catalog/controller/affiliate/register.php,5,309,long_method_or_region,Long or Complex Region,43,,,,,,Extract Method,pending
+opencart-C0236,opencart,upload/catalog/controller/affiliate/register.php,309,393,long_method_or_region,Long or Complex Region,21,,,,,,Extract Method,pending
+opencart-C0237,opencart,upload/catalog/controller/api/cart.php,3,76,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+opencart-C0238,opencart,upload/catalog/controller/api/cart.php,127,260,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+opencart-C0239,opencart,upload/catalog/controller/api/customer.php,3,98,long_method_or_region,Long or Complex Region,19,,,,,,Extract Method,pending
+opencart-C0240,opencart,upload/catalog/controller/api/order.php,3,363,long_method_or_region,Long or Complex Region,45,,,,,,Extract Method,pending
+opencart-C0241,opencart,upload/catalog/controller/api/order.php,363,699,long_method_or_region,Long or Complex Region,41,,,,,,Extract Method,pending
+opencart-C0242,opencart,upload/catalog/controller/api/payment.php,3,141,long_method_or_region,Long or Complex Region,21,,,,,,Extract Method,pending
+opencart-C0243,opencart,upload/catalog/controller/api/payment.php,141,239,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+opencart-C0244,opencart,upload/catalog/controller/api/shipping.php,3,143,long_method_or_region,Long or Complex Region,22,,,,,,Extract Method,pending
+opencart-C0245,opencart,upload/catalog/controller/api/shipping.php,143,206,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+opencart-C0246,opencart,upload/catalog/controller/api/voucher.php,37,138,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+opencart-C0247,opencart,upload/catalog/controller/checkout/cart.php,3,262,long_method_or_region,Long or Complex Region,33,,,,,,Extract Method,pending
+opencart-C0248,opencart,upload/catalog/controller/checkout/cart.php,262,383,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+opencart-C0249,opencart,upload/catalog/controller/checkout/checkout.php,3,98,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0250,opencart,upload/catalog/controller/checkout/confirm.php,3,418,long_method_or_region,Long or Complex Region,53,,,,,,Extract Method,pending
+opencart-C0251,opencart,upload/catalog/controller/checkout/guest.php,3,143,long_method_or_region,Long or Complex Region,24,,,,,,Extract Method,pending
+opencart-C0252,opencart,upload/catalog/controller/checkout/guest.php,143,348,long_method_or_region,Long or Complex Region,32,,,,,,Extract Method,pending
+opencart-C0253,opencart,upload/catalog/controller/checkout/guest_shipping.php,3,84,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+opencart-C0254,opencart,upload/catalog/controller/checkout/guest_shipping.php,84,205,long_method_or_region,Long or Complex Region,22,,,,,,Extract Method,pending
+opencart-C0255,opencart,upload/catalog/controller/checkout/login.php,19,93,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+opencart-C0256,opencart,upload/catalog/controller/checkout/payment_address.php,54,173,long_method_or_region,Long or Complex Region,26,,,,,,Extract Method,pending
+opencart-C0257,opencart,upload/catalog/controller/checkout/payment_method.php,3,127,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+opencart-C0258,opencart,upload/catalog/controller/checkout/payment_method.php,127,187,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+opencart-C0259,opencart,upload/catalog/controller/checkout/register.php,3,77,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0260,opencart,upload/catalog/controller/checkout/register.php,77,249,long_method_or_region,Long or Complex Region,33,,,,,,Extract Method,pending
+opencart-C0261,opencart,upload/catalog/controller/checkout/shipping_address.php,60,184,long_method_or_region,Long or Complex Region,28,,,,,,Extract Method,pending
+opencart-C0262,opencart,upload/catalog/controller/checkout/shipping_method.php,3,69,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0263,opencart,upload/catalog/controller/checkout/shipping_method.php,69,127,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+opencart-C0264,opencart,upload/catalog/controller/common/cart.php,3,139,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+opencart-C0265,opencart,upload/catalog/controller/common/column_left.php,3,75,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+opencart-C0266,opencart,upload/catalog/controller/common/column_right.php,3,75,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+opencart-C0267,opencart,upload/catalog/controller/common/content_bottom.php,3,75,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+opencart-C0268,opencart,upload/catalog/controller/common/content_top.php,3,75,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+opencart-C0269,opencart,upload/catalog/controller/event/statistics.php,18,57,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+opencart-C0270,opencart,upload/catalog/controller/information/contact.php,5,144,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+opencart-C0271,opencart,upload/catalog/controller/mail/order.php,1,473,sql_data_access,SQL/Data Access Region,51,,,text,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0272,opencart,upload/catalog/controller/mail/order.php,44,278,sql_data_access,SQL/Data Access Region,23,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0273,opencart,upload/catalog/controller/mail/order.php,278,334,sql_data_access,SQL/Data Access Region,5,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0274,opencart,upload/catalog/controller/mail/order.php,334,474,sql_data_access,SQL/Data Access Region,17,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0275,opencart,upload/catalog/controller/product/category.php,3,412,long_method_or_region,Long or Complex Region,53,,,,,,Extract Method,pending
+opencart-C0276,opencart,upload/catalog/controller/product/compare.php,3,140,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+opencart-C0277,opencart,upload/catalog/controller/product/manufacturer.php,57,391,long_method_or_region,Long or Complex Region,39,,,,,,Extract Method,pending
+opencart-C0278,opencart,upload/catalog/controller/product/product.php,5,523,long_method_or_region,Long or Complex Region,81,,,,,,Extract Method,pending
+opencart-C0279,opencart,upload/catalog/controller/product/search.php,3,458,long_method_or_region,Long or Complex Region,64,,,,,,Extract Method,pending
+opencart-C0280,opencart,upload/catalog/controller/product/special.php,3,271,long_method_or_region,Long or Complex Region,32,,,,,,Extract Method,pending
+opencart-C0281,opencart,upload/catalog/controller/startup/error.php,9,43,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0282,opencart,upload/catalog/controller/startup/seo_url.php,1,127,sql_data_access,SQL/Data Access Region,32,,,trailing,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0283,opencart,upload/catalog/controller/startup/seo_url.php,3,68,sql_data_access,SQL/Data Access Region,17,,,trailing,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0284,opencart,upload/catalog/controller/startup/seo_url.php,68,128,sql_data_access,SQL/Data Access Region,15,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0285,opencart,upload/catalog/controller/startup/startup.php,1,194,sql_data_access,SQL/Data Access Region,35,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0286,opencart,upload/catalog/controller/startup/startup.php,3,195,sql_data_access,SQL/Data Access Region,34,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0287,opencart,upload/catalog/controller/tool/upload.php,3,78,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+opencart-C0288,opencart,upload/catalog/controller/extension/advertise/google.php,1,380,mixed_php_html,Mixed PHP/HTML,59,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+opencart-C0289,opencart,upload/catalog/controller/extension/advertise/google.php,41,122,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+opencart-C0290,opencart,upload/catalog/controller/extension/credit_card/sagepay_direct.php,83,197,long_method_or_region,Long or Complex Region,5,,,,,,Extract Method,pending
+opencart-C0291,opencart,upload/catalog/controller/extension/credit_card/sagepay_server.php,162,258,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0292,opencart,upload/catalog/controller/extension/feed/google_base.php,3,127,long_method_or_region,Long or Complex Region,19,,,,,,Extract Method,pending
+opencart-C0293,opencart,upload/catalog/controller/extension/module/featured.php,3,72,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+opencart-C0294,opencart,upload/catalog/controller/extension/module/filter.php,3,74,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+opencart-C0295,opencart,upload/catalog/controller/extension/module/klarna_checkout_module.php,3,67,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+opencart-C0296,opencart,upload/catalog/controller/extension/module/pp_login.php,1,202,mixed_php_html_sql,SQL in Presentation Logic,30,,,,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+opencart-C0297,opencart,upload/catalog/controller/extension/module/pp_login.php,55,142,sql_data_access,SQL/Data Access Region,12,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0298,opencart,upload/catalog/controller/extension/openbay/amazon.php,1,590,sql_data_access,SQL/Data Access Region,55,,,subscribed,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0299,opencart,upload/catalog/controller/extension/openbay/amazon.php,3,320,sql_data_access,SQL/Data Access Region,21,,,subscribed,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0300,opencart,upload/catalog/controller/extension/openbay/amazon.php,518,578,sql_data_access,SQL/Data Access Region,10,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0301,opencart,upload/catalog/controller/extension/openbay/amazonus.php,1,591,sql_data_access,SQL/Data Access Region,55,,,subscribed,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0302,opencart,upload/catalog/controller/extension/openbay/amazonus.php,3,321,sql_data_access,SQL/Data Access Region,21,,,subscribed,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0303,opencart,upload/catalog/controller/extension/openbay/amazonus.php,517,579,sql_data_access,SQL/Data Access Region,10,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0304,opencart,upload/catalog/controller/extension/openbay/ebay.php,1,201,sql_data_access,SQL/Data Access Region,21,,,notification;polling,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0305,opencart,upload/catalog/controller/extension/openbay/ebay.php,3,120,sql_data_access,SQL/Data Access Region,14,,,notification;polling,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0306,opencart,upload/catalog/controller/extension/openbay/fba.php,3,104,long_method_or_region,Long or Complex Region,20,,,,,,Extract Method,pending
+opencart-C0307,opencart,upload/catalog/controller/extension/payment/amazon_login_pay.php,93,169,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0308,opencart,upload/catalog/controller/extension/payment/amazon_login_pay.php,332,455,long_method_or_region,Long or Complex Region,6,,,,,,Extract Method,pending
+opencart-C0309,opencart,upload/catalog/controller/extension/payment/amazon_login_pay.php,455,599,long_method_or_region,Long or Complex Region,19,,,,,,Extract Method,pending
+opencart-C0310,opencart,upload/catalog/controller/extension/payment/amazon_login_pay.php,599,647,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0311,opencart,upload/catalog/controller/extension/payment/authorizenet_aim.php,29,176,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+opencart-C0312,opencart,upload/catalog/controller/extension/payment/cardconnect.php,1,347,long_method_or_region,Long or Complex Region,36,,,,,,Extract Method,pending
+opencart-C0313,opencart,upload/catalog/controller/extension/payment/cardconnect.php,31,231,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+opencart-C0314,opencart,upload/catalog/controller/extension/payment/cardconnect.php,304,347,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0315,opencart,upload/catalog/controller/extension/payment/cardinity.php,29,133,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0316,opencart,upload/catalog/controller/extension/payment/cardinity.php,239,294,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+opencart-C0317,opencart,upload/catalog/controller/extension/payment/divido.php,131,260,long_method_or_region,Long or Complex Region,8,,,,,,Extract Method,pending
+opencart-C0318,opencart,upload/catalog/controller/extension/payment/eway.php,3,170,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+opencart-C0319,opencart,upload/catalog/controller/extension/payment/eway.php,186,303,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+opencart-C0320,opencart,upload/catalog/controller/extension/payment/firstdata.php,84,232,long_method_or_region,Long or Complex Region,20,,,,,,Extract Method,pending
+opencart-C0321,opencart,upload/catalog/controller/extension/payment/firstdata_remote.php,40,138,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+opencart-C0322,opencart,upload/catalog/controller/extension/payment/g2apay.php,11,121,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+opencart-C0323,opencart,upload/catalog/controller/extension/payment/globalpay.php,3,82,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+opencart-C0324,opencart,upload/catalog/controller/extension/payment/globalpay.php,82,252,long_method_or_region,Long or Complex Region,29,,,,,,Extract Method,pending
+opencart-C0325,opencart,upload/catalog/controller/extension/payment/globalpay_remote.php,51,221,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+opencart-C0326,opencart,upload/catalog/controller/extension/payment/globalpay_remote.php,221,335,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+opencart-C0327,opencart,upload/catalog/controller/extension/payment/klarna_account.php,1,687,sql_data_access,SQL/Data Access Region,83,,,an,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0328,opencart,upload/catalog/controller/extension/payment/klarna_account.php,3,266,long_method_or_region,Long or Complex Region,33,,,,,,Extract Method,pending
+opencart-C0329,opencart,upload/catalog/controller/extension/payment/klarna_account.php,266,550,sql_data_access,SQL/Data Access Region,30,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0330,opencart,upload/catalog/controller/extension/payment/klarna_account.php,550,602,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0331,opencart,upload/catalog/controller/extension/payment/klarna_checkout.php,21,236,long_method_or_region,Long or Complex Region,35,,,,,,Extract Method,pending
+opencart-C0332,opencart,upload/catalog/controller/extension/payment/klarna_checkout.php,236,415,long_method_or_region,Long or Complex Region,27,,,,,,Extract Method,pending
+opencart-C0333,opencart,upload/catalog/controller/extension/payment/klarna_checkout.php,415,474,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0334,opencart,upload/catalog/controller/extension/payment/klarna_checkout.php,531,823,session_dependent_logic,Session-Dependent Logic,47,,,,,,Extract Guard;Extract Method,pending
+opencart-C0335,opencart,upload/catalog/controller/extension/payment/klarna_checkout.php,823,872,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0336,opencart,upload/catalog/controller/extension/payment/klarna_checkout.php,872,1081,session_dependent_logic,Session-Dependent Logic,44,,,,,,Extract Guard;Extract Method,pending
+opencart-C0337,opencart,upload/catalog/controller/extension/payment/klarna_checkout.php,1081,1187,long_method_or_region,Long or Complex Region,9,,,,,,Extract Method,pending
+opencart-C0338,opencart,upload/catalog/controller/extension/payment/klarna_checkout.php,1187,1294,long_method_or_region,Long or Complex Region,29,,,,,,Extract Method,pending
+opencart-C0339,opencart,upload/catalog/controller/extension/payment/klarna_checkout.php,1409,1656,long_method_or_region,Long or Complex Region,23,,,,,,Extract Method,pending
+opencart-C0340,opencart,upload/catalog/controller/extension/payment/klarna_checkout.php,1656,1964,long_method_or_region,Long or Complex Region,43,,,,,,Extract Method,pending
+opencart-C0341,opencart,upload/catalog/controller/extension/payment/klarna_invoice.php,1,527,sql_data_access,SQL/Data Access Region,60,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0342,opencart,upload/catalog/controller/extension/payment/klarna_invoice.php,3,136,sql_data_access,SQL/Data Access Region,16,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0343,opencart,upload/catalog/controller/extension/payment/klarna_invoice.php,136,416,sql_data_access,SQL/Data Access Region,29,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0344,opencart,upload/catalog/controller/extension/payment/klarna_invoice.php,416,472,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+opencart-C0345,opencart,upload/catalog/controller/extension/payment/laybuy.php,1,478,long_method_or_region,Long or Complex Region,39,,,,,,Extract Method,pending
+opencart-C0346,opencart,upload/catalog/controller/extension/payment/laybuy.php,174,313,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0347,opencart,upload/catalog/controller/extension/payment/laybuy.php,333,478,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+opencart-C0348,opencart,upload/catalog/controller/extension/payment/paypoint.php,69,161,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+opencart-C0349,opencart,upload/catalog/controller/extension/payment/pilibaba.php,66,364,long_method_or_region,Long or Complex Region,23,,,,,,Extract Method,pending
+opencart-C0350,opencart,upload/catalog/controller/extension/payment/pp_braintree.php,1,1635,sql_data_access,SQL/Data Access Region,220,,,an,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0351,opencart,upload/catalog/controller/extension/payment/pp_braintree.php,6,143,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+opencart-C0352,opencart,upload/catalog/controller/extension/payment/pp_braintree.php,143,418,long_method_or_region,Long or Complex Region,49,,,,,,Extract Method,pending
+opencart-C0353,opencart,upload/catalog/controller/extension/payment/pp_braintree.php,501,751,sql_data_access,SQL/Data Access Region,21,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0354,opencart,upload/catalog/controller/extension/payment/pp_braintree.php,751,1126,long_method_or_region,Long or Complex Region,48,,,,,,Extract Method,pending
+opencart-C0355,opencart,upload/catalog/controller/extension/payment/pp_braintree.php,1126,1540,long_method_or_region,Long or Complex Region,71,,,,,,Extract Method,pending
+opencart-C0356,opencart,upload/catalog/controller/extension/payment/pp_express.php,1,1963,mixed_php_html_sql,SQL in Presentation Logic,266,,,an;it,.warning,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+opencart-C0357,opencart,upload/catalog/controller/extension/payment/pp_express.php,56,149,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+opencart-C0358,opencart,upload/catalog/controller/extension/payment/pp_express.php,149,388,sql_data_access,SQL/Data Access Region,21,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0359,opencart,upload/catalog/controller/extension/payment/pp_express.php,388,770,long_method_or_region,Long or Complex Region,50,,,,,,Extract Method,pending
+opencart-C0360,opencart,upload/catalog/controller/extension/payment/pp_express.php,770,1294,long_method_or_region,Long or Complex Region,85,,,,,,Extract Method,pending
+opencart-C0361,opencart,upload/catalog/controller/extension/payment/pp_express.php,1386,1614,long_method_or_region,Long or Complex Region,28,,,,.warning,,Extract Method,pending
+opencart-C0362,opencart,upload/catalog/controller/extension/payment/pp_express.php,1614,1878,sql_data_access,SQL/Data Access Region,50,,,it,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0363,opencart,upload/catalog/controller/extension/payment/pp_payflow.php,81,191,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+opencart-C0364,opencart,upload/catalog/controller/extension/payment/pp_pro.php,70,182,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+opencart-C0365,opencart,upload/catalog/controller/extension/payment/pp_pro_iframe.php,69,193,long_method_or_region,Long or Complex Region,23,,,,,,Extract Method,pending
+opencart-C0366,opencart,upload/catalog/controller/extension/payment/pp_pro_iframe.php,193,302,long_method_or_region,Long or Complex Region,5,,,,,,Extract Method,pending
+opencart-C0367,opencart,upload/catalog/controller/extension/payment/pp_standard.php,3,103,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0368,opencart,upload/catalog/controller/extension/payment/pp_standard.php,103,203,long_method_or_region,Long or Complex Region,21,,,,,,Extract Method,pending
+opencart-C0369,opencart,upload/catalog/controller/extension/payment/realex.php,3,88,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+opencart-C0370,opencart,upload/catalog/controller/extension/payment/realex.php,88,258,long_method_or_region,Long or Complex Region,29,,,,,,Extract Method,pending
+opencart-C0371,opencart,upload/catalog/controller/extension/payment/realex_remote.php,64,235,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+opencart-C0372,opencart,upload/catalog/controller/extension/payment/realex_remote.php,235,350,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+opencart-C0373,opencart,upload/catalog/controller/extension/payment/sagepay_direct.php,3,104,long_method_or_region,Long or Complex Region,7,,,,,,Extract Method,pending
+opencart-C0374,opencart,upload/catalog/controller/extension/payment/sagepay_direct.php,104,340,long_method_or_region,Long or Complex Region,30,,,,,,Extract Method,pending
+opencart-C0375,opencart,upload/catalog/controller/extension/payment/sagepay_direct.php,340,425,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+opencart-C0376,opencart,upload/catalog/controller/extension/payment/sagepay_server.php,41,200,long_method_or_region,Long or Complex Region,19,,,,,,Extract Method,pending
+opencart-C0377,opencart,upload/catalog/controller/extension/payment/sagepay_server.php,200,428,long_method_or_region,Long or Complex Region,30,,,,,,Extract Method,pending
+opencart-C0378,opencart,upload/catalog/controller/extension/payment/securetrading_ws.php,1,359,long_method_or_region,Long or Complex Region,19,MD;PaRes,,,,,Extract Method,pending
+opencart-C0379,opencart,upload/catalog/controller/extension/payment/securetrading_ws.php,61,218,long_method_or_region,Long or Complex Region,7,,,,,,Extract Method,pending
+opencart-C0380,opencart,upload/catalog/controller/extension/payment/skrill.php,50,106,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+opencart-C0381,opencart,upload/catalog/controller/extension/payment/squareup.php,48,252,long_method_or_region,Long or Complex Region,25,,,,,,Extract Method,pending
+opencart-C0382,opencart,upload/catalog/controller/extension/payment/twocheckout.php,1,114,mixed_php_html,Mixed PHP/HTML,12,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+opencart-C0383,opencart,upload/catalog/controller/extension/payment/web_payment_software.php,29,134,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+opencart-C0384,opencart,upload/catalog/controller/extension/payment/worldpay.php,139,189,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+opencart-C0385,opencart,upload/catalog/controller/extension/recurring/squareup.php,66,170,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+opencart-C0386,opencart,upload/catalog/controller/extension/total/shipping.php,39,157,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+opencart-C0387,opencart,upload/catalog/controller/extension/total/voucher.php,48,104,sql_data_access,SQL/Data Access Region,5,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0388,opencart,upload/admin/model/catalog/attribute.php,1,105,sql_data_access,SQL/Data Access Region,12,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0389,opencart,upload/admin/model/catalog/attribute.php,36,82,sql_data_access,SQL/Data Access Region,8,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0390,opencart,upload/admin/model/catalog/category.php,1,344,sql_data_access,SQL/Data Access Region,51,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0391,opencart,upload/admin/model/catalog/category.php,3,63,sql_data_access,SQL/Data Access Region,15,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0392,opencart,upload/admin/model/catalog/category.php,63,167,sql_data_access,SQL/Data Access Region,21,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0393,opencart,upload/admin/model/catalog/category.php,218,261,sql_data_access,SQL/Data Access Region,7,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0394,opencart,upload/admin/model/catalog/download.php,36,77,sql_data_access,SQL/Data Access Region,7,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0395,opencart,upload/admin/model/catalog/filter.php,1,179,sql_data_access,SQL/Data Access Region,23,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0396,opencart,upload/admin/model/catalog/information.php,1,212,sql_data_access,SQL/Data Access Region,33,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0397,opencart,upload/admin/model/catalog/information.php,3,40,sql_data_access,SQL/Data Access Region,11,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0398,opencart,upload/admin/model/catalog/information.php,40,80,sql_data_access,SQL/Data Access Region,11,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0399,opencart,upload/admin/model/catalog/information.php,96,147,sql_data_access,SQL/Data Access Region,8,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0400,opencart,upload/admin/model/catalog/manufacturer.php,1,148,sql_data_access,SQL/Data Access Region,24,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0401,opencart,upload/admin/model/catalog/manufacturer.php,3,34,sql_data_access,SQL/Data Access Region,8,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0402,opencart,upload/admin/model/catalog/manufacturer.php,34,64,sql_data_access,SQL/Data Access Region,8,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0403,opencart,upload/admin/model/catalog/manufacturer.php,78,119,sql_data_access,SQL/Data Access Region,7,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0404,opencart,upload/admin/model/catalog/option.php,1,177,sql_data_access,SQL/Data Access Region,21,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0405,opencart,upload/admin/model/catalog/option.php,70,112,sql_data_access,SQL/Data Access Region,7,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0406,opencart,upload/admin/model/catalog/product.php,1,723,sql_data_access,SQL/Data Access Region,107,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0407,opencart,upload/admin/model/catalog/product.php,3,137,sql_data_access,SQL/Data Access Region,39,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0408,opencart,upload/admin/model/catalog/product.php,137,296,sql_data_access,SQL/Data Access Region,39,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0409,opencart,upload/admin/model/catalog/product.php,358,421,sql_data_access,SQL/Data Access Region,11,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0410,opencart,upload/admin/model/catalog/product.php,493,532,sql_data_access,SQL/Data Access Region,3,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0411,opencart,upload/admin/model/catalog/recurring.php,1,108,sql_data_access,SQL/Data Access Region,12,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0412,opencart,upload/admin/model/catalog/recurring.php,62,103,sql_data_access,SQL/Data Access Region,7,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0413,opencart,upload/admin/model/catalog/review.php,1,116,sql_data_access,SQL/Data Access Region,15,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0414,opencart,upload/admin/model/catalog/review.php,31,87,sql_data_access,SQL/Data Access Region,10,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0415,opencart,upload/admin/model/customer/customer.php,1,486,sql_data_access,SQL/Data Access Region,57,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0416,opencart,upload/admin/model/customer/customer.php,3,27,sql_data_access,SQL/Data Access Region,8,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0417,opencart,upload/admin/model/customer/customer.php,27,53,sql_data_access,SQL/Data Access Region,8,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0418,opencart,upload/admin/model/customer/customer.php,80,165,sql_data_access,SQL/Data Access Region,16,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0419,opencart,upload/admin/model/customer/customer.php,165,216,sql_data_access,SQL/Data Access Region,4,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0420,opencart,upload/admin/model/customer/customer.php,232,274,sql_data_access,SQL/Data Access Region,9,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0421,opencart,upload/admin/model/customer/customer_approval.php,1,102,sql_data_access,SQL/Data Access Region,16,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0422,opencart,upload/admin/model/customer/customer_approval.php,3,45,sql_data_access,SQL/Data Access Region,9,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0423,opencart,upload/admin/model/customer/custom_field.php,1,208,sql_data_access,SQL/Data Access Region,31,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0424,opencart,upload/admin/model/customer/custom_field.php,3,35,sql_data_access,SQL/Data Access Region,9,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0425,opencart,upload/admin/model/customer/custom_field.php,35,74,sql_data_access,SQL/Data Access Region,10,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0426,opencart,upload/admin/model/customer/custom_field.php,88,140,sql_data_access,SQL/Data Access Region,9,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0427,opencart,upload/admin/model/design/banner.php,1,103,sql_data_access,SQL/Data Access Region,14,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0428,opencart,upload/admin/model/design/layout.php,1,109,sql_data_access,SQL/Data Access Region,15,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0429,opencart,upload/admin/model/design/seo_url.php,1,123,sql_data_access,SQL/Data Access Region,17,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0430,opencart,upload/admin/model/design/seo_url.php,21,82,sql_data_access,SQL/Data Access Region,11,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0431,opencart,upload/admin/model/design/translation.php,21,61,sql_data_access,SQL/Data Access Region,6,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0432,opencart,upload/admin/model/localisation/country.php,29,81,sql_data_access,SQL/Data Access Region,8,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0433,opencart,upload/admin/model/localisation/currency.php,1,159,sql_data_access,SQL/Data Access Region,17,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0434,opencart,upload/admin/model/localisation/currency.php,41,108,sql_data_access,SQL/Data Access Region,9,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0435,opencart,upload/admin/model/localisation/currency.php,108,154,sql_data_access,SQL/Data Access Region,7,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0436,opencart,upload/admin/model/localisation/geo_zone.php,1,130,sql_data_access,SQL/Data Access Region,13,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0437,opencart,upload/admin/model/localisation/geo_zone.php,50,101,sql_data_access,SQL/Data Access Region,8,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0438,opencart,upload/admin/model/localisation/language.php,1,313,sql_data_access,SQL/Data Access Region,38,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0439,opencart,upload/admin/model/localisation/language.php,3,202,sql_data_access,SQL/Data Access Region,25,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0440,opencart,upload/admin/model/localisation/language.php,237,302,sql_data_access,SQL/Data Access Region,9,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0441,opencart,upload/admin/model/localisation/length_class.php,1,120,sql_data_access,SQL/Data Access Region,12,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0442,opencart,upload/admin/model/localisation/length_class.php,36,88,sql_data_access,SQL/Data Access Region,8,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0443,opencart,upload/admin/model/localisation/order_status.php,1,100,sql_data_access,SQL/Data Access Region,12,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0444,opencart,upload/admin/model/localisation/order_status.php,41,83,sql_data_access,SQL/Data Access Region,7,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0445,opencart,upload/admin/model/localisation/return_action.php,1,100,sql_data_access,SQL/Data Access Region,12,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0446,opencart,upload/admin/model/localisation/return_action.php,41,83,sql_data_access,SQL/Data Access Region,7,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0447,opencart,upload/admin/model/localisation/return_reason.php,1,100,sql_data_access,SQL/Data Access Region,12,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0448,opencart,upload/admin/model/localisation/return_reason.php,41,83,sql_data_access,SQL/Data Access Region,7,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0449,opencart,upload/admin/model/localisation/return_status.php,1,100,sql_data_access,SQL/Data Access Region,12,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0450,opencart,upload/admin/model/localisation/return_status.php,41,83,sql_data_access,SQL/Data Access Region,7,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0451,opencart,upload/admin/model/localisation/stock_status.php,1,100,sql_data_access,SQL/Data Access Region,12,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0452,opencart,upload/admin/model/localisation/stock_status.php,41,83,sql_data_access,SQL/Data Access Region,7,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0453,opencart,upload/admin/model/localisation/tax_class.php,1,105,sql_data_access,SQL/Data Access Region,12,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0454,opencart,upload/admin/model/localisation/tax_class.php,46,88,sql_data_access,SQL/Data Access Region,7,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0455,opencart,upload/admin/model/localisation/tax_rate.php,1,104,sql_data_access,SQL/Data Access Region,12,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0456,opencart,upload/admin/model/localisation/tax_rate.php,40,81,sql_data_access,SQL/Data Access Region,6,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0457,opencart,upload/admin/model/localisation/weight_class.php,1,120,sql_data_access,SQL/Data Access Region,12,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0458,opencart,upload/admin/model/localisation/weight_class.php,36,88,sql_data_access,SQL/Data Access Region,8,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0459,opencart,upload/admin/model/marketing/coupon.php,1,152,sql_data_access,SQL/Data Access Region,19,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0460,opencart,upload/admin/model/marketing/coupon.php,62,103,sql_data_access,SQL/Data Access Region,6,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0461,opencart,upload/admin/model/marketing/marketing.php,1,118,sql_data_access,SQL/Data Access Region,16,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0462,opencart,upload/admin/model/marketing/marketing.php,29,93,sql_data_access,SQL/Data Access Region,11,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0463,opencart,upload/admin/model/sale/order.php,1,478,sql_data_access,SQL/Data Access Region,52,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0464,opencart,upload/admin/model/sale/order.php,3,150,sql_data_access,SQL/Data Access Region,9,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0465,opencart,upload/admin/model/sale/order.php,150,229,sql_data_access,SQL/Data Access Region,15,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0466,opencart,upload/admin/model/sale/order.php,259,305,sql_data_access,SQL/Data Access Region,10,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0467,opencart,upload/admin/model/sale/order.php,365,411,sql_data_access,SQL/Data Access Region,10,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0468,opencart,upload/admin/model/sale/recurring.php,1,197,sql_data_access,SQL/Data Access Region,38,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0469,opencart,upload/admin/model/sale/recurring.php,3,74,sql_data_access,SQL/Data Access Region,13,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0470,opencart,upload/admin/model/sale/recurring.php,80,132,sql_data_access,SQL/Data Access Region,12,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0471,opencart,upload/admin/model/sale/recurring.php,160,198,sql_data_access,SQL/Data Access Region,8,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0472,opencart,upload/admin/model/sale/return.php,1,199,sql_data_access,SQL/Data Access Region,27,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0473,opencart,upload/admin/model/sale/return.php,24,105,sql_data_access,SQL/Data Access Region,15,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0474,opencart,upload/admin/model/sale/return.php,105,151,sql_data_access,SQL/Data Access Region,10,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0475,opencart,upload/admin/model/sale/voucher.php,30,72,sql_data_access,SQL/Data Access Region,6,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0476,opencart,upload/admin/model/sale/voucher_theme.php,42,82,sql_data_access,SQL/Data Access Region,7,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0477,opencart,upload/admin/model/setting/event.php,42,83,sql_data_access,SQL/Data Access Region,6,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0478,opencart,upload/admin/model/setting/modification.php,29,69,sql_data_access,SQL/Data Access Region,6,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0479,opencart,upload/admin/model/tool/backup.php,1,68,sql_data_access,SQL/Data Access Region,12,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0480,opencart,upload/admin/model/tool/backup.php,19,68,sql_data_access,SQL/Data Access Region,8,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0481,opencart,upload/admin/model/tool/upload.php,1,108,sql_data_access,SQL/Data Access Region,15,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0482,opencart,upload/admin/model/tool/upload.php,27,83,sql_data_access,SQL/Data Access Region,10,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0483,opencart,upload/admin/model/user/api.php,1,123,sql_data_access,SQL/Data Access Region,14,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0484,opencart,upload/admin/model/user/api.php,43,82,sql_data_access,SQL/Data Access Region,6,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0485,opencart,upload/admin/model/extension/advertise/google.php,1,697,sql_data_access,SQL/Data Access Region,49,,,category_id;google_product_category,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0486,opencart,upload/admin/model/extension/advertise/google.php,413,456,sql_data_access,SQL/Data Access Region,7,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0487,opencart,upload/admin/model/extension/advertise/google.php,462,515,sql_data_access,SQL/Data Access Region,10,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0488,opencart,upload/admin/model/extension/dashboard/chart.php,1,214,sql_data_access,SQL/Data Access Region,22,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0489,opencart,upload/admin/model/extension/dashboard/sale.php,1,438,sql_data_access,SQL/Data Access Region,72,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0490,opencart,upload/admin/model/extension/dashboard/sale.php,139,197,sql_data_access,SQL/Data Access Region,12,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0491,opencart,upload/admin/model/extension/dashboard/sale.php,197,239,sql_data_access,SQL/Data Access Region,9,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0492,opencart,upload/admin/model/extension/dashboard/sale.php,239,295,sql_data_access,SQL/Data Access Region,12,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0493,opencart,upload/admin/model/extension/dashboard/sale.php,295,339,sql_data_access,SQL/Data Access Region,9,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0494,opencart,upload/admin/model/extension/dashboard/sale.php,339,395,sql_data_access,SQL/Data Access Region,12,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0495,opencart,upload/admin/model/extension/dashboard/sale.php,395,438,sql_data_access,SQL/Data Access Region,9,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0496,opencart,upload/admin/model/extension/fraud/fraudlabspro.php,3,73,sql_data_access,SQL/Data Access Region,1,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0497,opencart,upload/admin/model/extension/openbay/amazon.php,1,741,sql_data_access,SQL/Data Access Region,75,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0498,opencart,upload/admin/model/extension/openbay/amazon.php,142,180,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0499,opencart,upload/admin/model/extension/openbay/amazon.php,234,301,sql_data_access,SQL/Data Access Region,8,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0500,opencart,upload/admin/model/extension/openbay/amazon.php,367,407,sql_data_access,SQL/Data Access Region,7,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0501,opencart,upload/admin/model/extension/openbay/amazon.php,407,451,sql_data_access,SQL/Data Access Region,7,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0502,opencart,upload/admin/model/extension/openbay/amazon.php,657,720,sql_data_access,SQL/Data Access Region,9,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0503,opencart,upload/admin/model/extension/openbay/amazonus.php,1,720,sql_data_access,SQL/Data Access Region,69,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0504,opencart,upload/admin/model/extension/openbay/amazonus.php,134,172,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0505,opencart,upload/admin/model/extension/openbay/amazonus.php,226,293,sql_data_access,SQL/Data Access Region,8,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0506,opencart,upload/admin/model/extension/openbay/amazonus.php,399,444,sql_data_access,SQL/Data Access Region,7,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0507,opencart,upload/admin/model/extension/openbay/amazonus.php,652,715,sql_data_access,SQL/Data Access Region,9,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0508,opencart,upload/admin/model/extension/openbay/amazonus_listing.php,1,197,sql_data_access,SQL/Data Access Region,23,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0509,opencart,upload/admin/model/extension/openbay/amazonus_listing.php,128,181,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+opencart-C0510,opencart,upload/admin/model/extension/openbay/amazon_listing.php,1,231,sql_data_access,SQL/Data Access Region,28,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0511,opencart,upload/admin/model/extension/openbay/amazon_listing.php,169,231,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+opencart-C0512,opencart,upload/admin/model/extension/openbay/ebay.php,1,832,sql_data_access,SQL/Data Access Region,62,,,ebay;needed;the,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0513,opencart,upload/admin/model/extension/openbay/ebay.php,3,220,long_method_or_region,Long or Complex Region,1,,,,,,Extract Method,pending
+opencart-C0514,opencart,upload/admin/model/extension/openbay/ebay.php,255,319,sql_data_access,SQL/Data Access Region,6,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0515,opencart,upload/admin/model/extension/openbay/ebay.php,404,443,sql_data_access,SQL/Data Access Region,8,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0516,opencart,upload/admin/model/extension/openbay/ebay.php,706,805,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+opencart-C0517,opencart,upload/admin/model/extension/openbay/ebay_product.php,13,56,sql_data_access,SQL/Data Access Region,5,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0518,opencart,upload/admin/model/extension/openbay/etsy_product.php,30,75,sql_data_access,SQL/Data Access Region,3,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0519,opencart,upload/admin/model/extension/openbay/openbay.php,1,761,sql_data_access,SQL/Data Access Region,113,,,files;script;test;version,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0520,opencart,upload/admin/model/extension/openbay/openbay.php,320,363,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+opencart-C0521,opencart,upload/admin/model/extension/openbay/openbay.php,425,523,sql_data_access,SQL/Data Access Region,24,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0522,opencart,upload/admin/model/extension/openbay/openbay.php,523,681,sql_data_access,SQL/Data Access Region,37,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0523,opencart,upload/admin/model/extension/openbay/openbay.php,705,762,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0524,opencart,upload/admin/model/extension/openbay/order.php,1,228,sql_data_access,SQL/Data Access Region,37,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0525,opencart,upload/admin/model/extension/openbay/order.php,3,57,sql_data_access,SQL/Data Access Region,10,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0526,opencart,upload/admin/model/extension/openbay/order.php,57,169,sql_data_access,SQL/Data Access Region,19,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0527,opencart,upload/admin/model/extension/openbay/order.php,169,228,sql_data_access,SQL/Data Access Region,9,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0528,opencart,upload/admin/model/extension/payment/amazon_login_pay.php,1,452,sql_data_access,SQL/Data Access Region,37,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0529,opencart,upload/admin/model/extension/payment/bluepay_hosted.php,1,235,sql_data_access,SQL/Data Access Region,20,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0530,opencart,upload/admin/model/extension/payment/bluepay_redirect.php,1,228,sql_data_access,SQL/Data Access Region,20,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0531,opencart,upload/admin/model/extension/payment/cardconnect.php,1,328,sql_data_access,SQL/Data Access Region,16,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0532,opencart,upload/admin/model/extension/payment/eway.php,1,227,sql_data_access,SQL/Data Access Region,13,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0533,opencart,upload/admin/model/extension/payment/firstdata_remote.php,1,278,sql_data_access,SQL/Data Access Region,21,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0534,opencart,upload/admin/model/extension/payment/klarna_checkout.php,1,226,sql_data_access,SQL/Data Access Region,24,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0535,opencart,upload/admin/model/extension/payment/klarna_checkout.php,158,194,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0536,opencart,upload/admin/model/extension/payment/laybuy.php,1,362,sql_data_access,SQL/Data Access Region,33,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0537,opencart,upload/admin/model/extension/payment/laybuy.php,100,179,sql_data_access,SQL/Data Access Region,14,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0538,opencart,upload/admin/model/extension/payment/laybuy.php,179,217,sql_data_access,SQL/Data Access Region,8,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0539,opencart,upload/admin/model/extension/payment/pilibaba.php,1,165,sql_data_access,SQL/Data Access Region,13,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0540,opencart,upload/admin/model/extension/payment/pp_express.php,1,376,sql_data_access,SQL/Data Access Region,14,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0541,opencart,upload/admin/model/extension/payment/pp_pro_iframe.php,1,261,sql_data_access,SQL/Data Access Region,12,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0542,opencart,upload/admin/model/extension/payment/sagepay_direct.php,1,265,sql_data_access,SQL/Data Access Region,23,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0543,opencart,upload/admin/model/extension/payment/sagepay_server.php,1,266,sql_data_access,SQL/Data Access Region,23,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0544,opencart,upload/admin/model/extension/payment/securetrading_ws.php,1,351,sql_data_access,SQL/Data Access Region,21,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0545,opencart,upload/admin/model/extension/payment/securetrading_ws.php,172,298,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+opencart-C0546,opencart,upload/admin/model/extension/report/customer.php,1,380,sql_data_access,SQL/Data Access Region,59,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0547,opencart,upload/admin/model/extension/report/customer.php,97,139,sql_data_access,SQL/Data Access Region,8,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0548,opencart,upload/admin/model/extension/report/customer.php,225,269,sql_data_access,SQL/Data Access Region,9,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0549,opencart,upload/admin/model/extension/report/customer.php,299,347,sql_data_access,SQL/Data Access Region,10,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0550,opencart,upload/admin/model/extension/report/customer_transaction.php,1,62,sql_data_access,SQL/Data Access Region,12,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0551,opencart,upload/admin/model/extension/report/marketing.php,3,55,sql_data_access,SQL/Data Access Region,10,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0552,opencart,upload/admin/model/extension/report/product.php,1,96,sql_data_access,SQL/Data Access Region,14,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0553,opencart,upload/admin/model/extension/report/return.php,1,100,sql_data_access,SQL/Data Access Region,21,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0554,opencart,upload/admin/model/extension/report/return.php,3,59,sql_data_access,SQL/Data Access Region,12,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0555,opencart,upload/admin/model/extension/report/return.php,59,100,sql_data_access,SQL/Data Access Region,9,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0556,opencart,upload/admin/model/extension/report/sale.php,1,438,sql_data_access,SQL/Data Access Region,72,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0557,opencart,upload/admin/model/extension/report/sale.php,139,197,sql_data_access,SQL/Data Access Region,12,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0558,opencart,upload/admin/model/extension/report/sale.php,197,239,sql_data_access,SQL/Data Access Region,9,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0559,opencart,upload/admin/model/extension/report/sale.php,239,295,sql_data_access,SQL/Data Access Region,12,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0560,opencart,upload/admin/model/extension/report/sale.php,295,339,sql_data_access,SQL/Data Access Region,9,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0561,opencart,upload/admin/model/extension/report/sale.php,339,395,sql_data_access,SQL/Data Access Region,12,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0562,opencart,upload/admin/model/extension/report/sale.php,395,438,sql_data_access,SQL/Data Access Region,9,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0563,opencart,upload/admin/language/en-gb/setting/setting.php,1,205,sql_data_access,SQL/Data Access Region,25,,,Currency;browsing;currencies,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0564,opencart,upload/admin/language/en-gb/extension/advertise/google.php,1,323,mixed_php_html_sql,SQL in Presentation Logic,48,,,manufacturer;potential;the;this;your,#deselect_all_pages;#select_all_pages;.label;.label-default,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+opencart-C0565,opencart,upload/admin/language/en-gb/extension/fraud/maxmind.php,1,122,mixed_php_html,Mixed PHP/HTML,12,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+opencart-C0566,opencart,upload/admin/language/en-gb/extension/openbay/ebay_new.php,1,201,sql_data_access,SQL/Data Access Region,16,,,your,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0567,opencart,upload/admin/language/en-gb/extension/payment/divido.php,1,42,mixed_php_html_sql,SQL in Presentation Logic,3,,,Divido,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+opencart-C0568,opencart,upload/admin/language/en-gb/extension/payment/eway.php,1,173,mixed_php_html,Mixed PHP/HTML,14,,,,.img-fluid,,Separate PHP Logic from Markup;Extract View Helper,pending
+opencart-C0569,opencart,upload/admin/language/en-gb/extension/payment/pilibaba.php,1,79,mixed_php_html_sql,SQL in Presentation Logic,7,,,Chinese;Tracking;the;your,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+opencart-C0570,opencart,upload/admin/language/en-gb/extension/payment/squareup.php,1,200,mixed_php_html_sql,SQL in Presentation Logic,14,,,the,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+opencart-C0571,opencart,upload/admin/controller/catalog/attribute.php,113,250,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+opencart-C0572,opencart,upload/admin/controller/catalog/attribute.php,250,348,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+opencart-C0573,opencart,upload/admin/controller/catalog/attribute_group.php,113,248,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+opencart-C0574,opencart,upload/admin/controller/catalog/attribute_group.php,248,328,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+opencart-C0575,opencart,upload/admin/controller/catalog/category.php,145,282,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+opencart-C0576,opencart,upload/admin/controller/catalog/category.php,282,511,long_method_or_region,Long or Complex Region,41,,,,,,Extract Method,pending
+opencart-C0577,opencart,upload/admin/controller/catalog/category.php,511,569,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+opencart-C0578,opencart,upload/admin/controller/catalog/download.php,113,248,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+opencart-C0579,opencart,upload/admin/controller/catalog/download.php,248,356,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+opencart-C0580,opencart,upload/admin/controller/catalog/download.php,400,481,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+opencart-C0581,opencart,upload/admin/controller/catalog/filter.php,113,248,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+opencart-C0582,opencart,upload/admin/controller/catalog/filter.php,248,344,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+opencart-C0583,opencart,upload/admin/controller/catalog/information.php,113,248,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+opencart-C0584,opencart,upload/admin/controller/catalog/information.php,248,410,long_method_or_region,Long or Complex Region,27,,,,,,Extract Method,pending
+opencart-C0585,opencart,upload/admin/controller/catalog/information.php,410,458,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+opencart-C0586,opencart,upload/admin/controller/catalog/manufacturer.php,113,248,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+opencart-C0587,opencart,upload/admin/controller/catalog/manufacturer.php,248,390,long_method_or_region,Long or Complex Region,23,,,,,,Extract Method,pending
+opencart-C0588,opencart,upload/admin/controller/catalog/manufacturer.php,390,424,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0589,opencart,upload/admin/controller/catalog/option.php,113,248,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+opencart-C0590,opencart,upload/admin/controller/catalog/option.php,248,376,long_method_or_region,Long or Complex Region,20,,,,,,Extract Method,pending
+opencart-C0591,opencart,upload/admin/controller/catalog/option.php,422,508,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+opencart-C0592,opencart,upload/admin/controller/catalog/product.php,15,67,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0593,opencart,upload/admin/controller/catalog/product.php,67,119,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0594,opencart,upload/admin/controller/catalog/product.php,119,173,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+opencart-C0595,opencart,upload/admin/controller/catalog/product.php,173,227,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+opencart-C0596,opencart,upload/admin/controller/catalog/product.php,227,491,long_method_or_region,Long or Complex Region,40,,,,,,Extract Method,pending
+opencart-C0597,opencart,upload/admin/controller/catalog/product.php,491,1174,long_method_or_region,Long or Complex Region,134,,,,,,Extract Method,pending
+opencart-C0598,opencart,upload/admin/controller/catalog/product.php,1174,1224,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+opencart-C0599,opencart,upload/admin/controller/catalog/product.php,1240,1325,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+opencart-C0600,opencart,upload/admin/controller/catalog/recurring.php,147,283,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+opencart-C0601,opencart,upload/admin/controller/catalog/recurring.php,283,471,long_method_or_region,Long or Complex Region,33,,,,,,Extract Method,pending
+opencart-C0602,opencart,upload/admin/controller/catalog/review.php,111,161,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0603,opencart,upload/admin/controller/catalog/review.php,161,385,long_method_or_region,Long or Complex Region,34,,,,,,Extract Method,pending
+opencart-C0604,opencart,upload/admin/controller/catalog/review.php,385,539,long_method_or_region,Long or Complex Region,31,,,,,,Extract Method,pending
+opencart-C0605,opencart,upload/admin/controller/common/column_left.php,3,698,long_method_or_region,Long or Complex Region,77,,,,,,Extract Method,pending
+opencart-C0606,opencart,upload/admin/controller/common/dashboard.php,3,98,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+opencart-C0607,opencart,upload/admin/controller/common/filemanager.php,3,191,long_method_or_region,Long or Complex Region,30,,,,,,Extract Method,pending
+opencart-C0608,opencart,upload/admin/controller/common/filemanager.php,191,286,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+opencart-C0609,opencart,upload/admin/controller/common/filemanager.php,336,415,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+opencart-C0610,opencart,upload/admin/controller/common/login.php,5,85,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+opencart-C0611,opencart,upload/admin/controller/common/profile.php,5,166,long_method_or_region,Long or Complex Region,25,,,,,,Extract Method,pending
+opencart-C0612,opencart,upload/admin/controller/common/profile.php,166,211,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+opencart-C0613,opencart,upload/admin/controller/common/reset.php,5,90,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0614,opencart,upload/admin/controller/common/security.php,31,144,long_method_or_region,Long or Complex Region,20,,,,,,Extract Method,pending
+opencart-C0615,opencart,upload/admin/controller/customer/customer.php,15,71,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+opencart-C0616,opencart,upload/admin/controller/customer/customer.php,71,127,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+opencart-C0617,opencart,upload/admin/controller/customer/customer.php,127,185,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+opencart-C0618,opencart,upload/admin/controller/customer/customer.php,185,241,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+opencart-C0619,opencart,upload/admin/controller/customer/customer.php,241,539,long_method_or_region,Long or Complex Region,44,,,,,,Extract Method,pending
+opencart-C0620,opencart,upload/admin/controller/customer/customer.php,539,954,long_method_or_region,Long or Complex Region,83,,,,,,Extract Method,pending
+opencart-C0621,opencart,upload/admin/controller/customer/customer.php,954,1105,long_method_or_region,Long or Complex Region,43,,,,,,Extract Method,pending
+opencart-C0622,opencart,upload/admin/controller/customer/customer_approval.php,3,95,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+opencart-C0623,opencart,upload/admin/controller/customer/customer_approval.php,95,201,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+opencart-C0624,opencart,upload/admin/controller/customer/customer_group.php,113,248,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+opencart-C0625,opencart,upload/admin/controller/customer/customer_group.php,248,336,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+opencart-C0626,opencart,upload/admin/controller/customer/custom_field.php,113,289,long_method_or_region,Long or Complex Region,27,,,,,,Extract Method,pending
+opencart-C0627,opencart,upload/admin/controller/customer/custom_field.php,289,461,long_method_or_region,Long or Complex Region,32,,,,,,Extract Method,pending
+opencart-C0628,opencart,upload/admin/controller/customer/custom_field.php,461,491,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0629,opencart,upload/admin/controller/design/banner.php,113,248,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+opencart-C0630,opencart,upload/admin/controller/design/banner.php,248,370,long_method_or_region,Long or Complex Region,19,,,,,,Extract Method,pending
+opencart-C0631,opencart,upload/admin/controller/design/layout.php,113,246,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+opencart-C0632,opencart,upload/admin/controller/design/layout.php,246,401,long_method_or_region,Long or Complex Region,23,,,,,,Extract Method,pending
+opencart-C0633,opencart,upload/admin/controller/design/seo_url.php,111,161,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0634,opencart,upload/admin/controller/design/seo_url.php,161,391,long_method_or_region,Long or Complex Region,34,,,,,,Extract Method,pending
+opencart-C0635,opencart,upload/admin/controller/design/seo_url.php,391,511,long_method_or_region,Long or Complex Region,19,,,,,,Extract Method,pending
+opencart-C0636,opencart,upload/admin/controller/design/theme.php,93,159,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+opencart-C0637,opencart,upload/admin/controller/design/translation.php,113,248,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+opencart-C0638,opencart,upload/admin/controller/design/translation.php,248,407,long_method_or_region,Long or Complex Region,30,,,,,,Extract Method,pending
+opencart-C0639,opencart,upload/admin/controller/localisation/country.php,113,250,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+opencart-C0640,opencart,upload/admin/controller/localisation/country.php,250,358,long_method_or_region,Long or Complex Region,21,,,,,,Extract Method,pending
+opencart-C0641,opencart,upload/admin/controller/localisation/currency.php,145,285,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+opencart-C0642,opencart,upload/admin/controller/localisation/currency.php,285,407,long_method_or_region,Long or Complex Region,24,,,,,,Extract Method,pending
+opencart-C0643,opencart,upload/admin/controller/localisation/geo_zone.php,113,248,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+opencart-C0644,opencart,upload/admin/controller/localisation/geo_zone.php,248,344,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+opencart-C0645,opencart,upload/admin/controller/localisation/language.php,113,250,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+opencart-C0646,opencart,upload/admin/controller/localisation/language.php,250,370,long_method_or_region,Long or Complex Region,22,,,,,,Extract Method,pending
+opencart-C0647,opencart,upload/admin/controller/localisation/length_class.php,113,250,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+opencart-C0648,opencart,upload/admin/controller/localisation/length_class.php,250,336,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+opencart-C0649,opencart,upload/admin/controller/localisation/location.php,113,248,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+opencart-C0650,opencart,upload/admin/controller/localisation/location.php,248,400,long_method_or_region,Long or Complex Region,29,,,,,,Extract Method,pending
+opencart-C0651,opencart,upload/admin/controller/localisation/order_status.php,113,246,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+opencart-C0652,opencart,upload/admin/controller/localisation/order_status.php,246,314,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0653,opencart,upload/admin/controller/localisation/return_action.php,113,246,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+opencart-C0654,opencart,upload/admin/controller/localisation/return_action.php,246,314,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0655,opencart,upload/admin/controller/localisation/return_reason.php,113,246,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+opencart-C0656,opencart,upload/admin/controller/localisation/return_reason.php,246,314,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0657,opencart,upload/admin/controller/localisation/return_status.php,113,246,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+opencart-C0658,opencart,upload/admin/controller/localisation/return_status.php,246,314,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0659,opencart,upload/admin/controller/localisation/stock_status.php,113,246,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+opencart-C0660,opencart,upload/admin/controller/localisation/stock_status.php,246,314,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0661,opencart,upload/admin/controller/localisation/tax_class.php,113,246,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+opencart-C0662,opencart,upload/admin/controller/localisation/tax_class.php,246,340,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+opencart-C0663,opencart,upload/admin/controller/localisation/tax_rate.php,113,256,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+opencart-C0664,opencart,upload/admin/controller/localisation/tax_rate.php,256,370,long_method_or_region,Long or Complex Region,20,,,,,,Extract Method,pending
+opencart-C0665,opencart,upload/admin/controller/localisation/weight_class.php,113,250,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+opencart-C0666,opencart,upload/admin/controller/localisation/weight_class.php,250,336,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+opencart-C0667,opencart,upload/admin/controller/localisation/zone.php,113,250,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+opencart-C0668,opencart,upload/admin/controller/localisation/zone.php,250,346,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+opencart-C0669,opencart,upload/admin/controller/marketing/contact.php,1,234,mixed_php_html,Mixed PHP/HTML,33,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+opencart-C0670,opencart,upload/admin/controller/marketing/contact.php,41,235,long_method_or_region,Long or Complex Region,32,,,,,,Extract Method,pending
+opencart-C0671,opencart,upload/admin/controller/marketing/coupon.php,113,256,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+opencart-C0672,opencart,upload/admin/controller/marketing/coupon.php,256,484,long_method_or_region,Long or Complex Region,48,,,,,,Extract Method,pending
+opencart-C0673,opencart,upload/admin/controller/marketing/marketing.php,149,355,long_method_or_region,Long or Complex Region,30,,,,,,Extract Method,pending
+opencart-C0674,opencart,upload/admin/controller/marketing/marketing.php,355,461,long_method_or_region,Long or Complex Region,19,,,,,,Extract Method,pending
+opencart-C0675,opencart,upload/admin/controller/marketplace/event.php,113,253,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+opencart-C0676,opencart,upload/admin/controller/marketplace/install.php,82,237,long_method_or_region,Long or Complex Region,31,,,,,,Extract Method,pending
+opencart-C0677,opencart,upload/admin/controller/marketplace/install.php,237,352,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+opencart-C0678,opencart,upload/admin/controller/marketplace/install.php,352,417,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+opencart-C0679,opencart,upload/admin/controller/marketplace/install.php,417,521,long_method_or_region,Long or Complex Region,20,,,,,,Extract Method,pending
+opencart-C0680,opencart,upload/admin/controller/marketplace/installer.php,67,172,long_method_or_region,Long or Complex Region,21,,,,,,Extract Method,pending
+opencart-C0681,opencart,upload/admin/controller/marketplace/marketplace.php,3,511,long_method_or_region,Long or Complex Region,65,,,,,,Extract Method,pending
+opencart-C0682,opencart,upload/admin/controller/marketplace/marketplace.php,511,679,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+opencart-C0683,opencart,upload/admin/controller/marketplace/marketplace.php,750,900,long_method_or_region,Long or Complex Region,23,,,,,,Extract Method,pending
+opencart-C0684,opencart,upload/admin/controller/marketplace/modification.php,54,447,long_method_or_region,Long or Complex Region,78,,,,,,Extract Method,pending
+opencart-C0685,opencart,upload/admin/controller/marketplace/modification.php,447,514,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+opencart-C0686,opencart,upload/admin/controller/marketplace/modification.php,612,770,long_method_or_region,Long or Complex Region,19,,,,,,Extract Method,pending
+opencart-C0687,opencart,upload/admin/controller/marketplace/openbay.php,239,323,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0688,opencart,upload/admin/controller/marketplace/openbay.php,413,463,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+opencart-C0689,opencart,upload/admin/controller/marketplace/openbay.php,463,514,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+opencart-C0690,opencart,upload/admin/controller/marketplace/openbay.php,514,601,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+opencart-C0691,opencart,upload/admin/controller/marketplace/openbay.php,601,943,long_method_or_region,Long or Complex Region,49,,,,,,Extract Method,pending
+opencart-C0692,opencart,upload/admin/controller/marketplace/openbay.php,943,1117,long_method_or_region,Long or Complex Region,24,,,,,,Extract Method,pending
+opencart-C0693,opencart,upload/admin/controller/marketplace/openbay.php,1117,1289,long_method_or_region,Long or Complex Region,27,,,,,,Extract Method,pending
+opencart-C0694,opencart,upload/admin/controller/marketplace/openbay.php,1289,1962,long_method_or_region,Long or Complex Region,98,,,,,,Extract Method,pending
+opencart-C0695,opencart,upload/admin/controller/marketplace/openbay.php,2002,2208,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+opencart-C0696,opencart,upload/admin/controller/report/online.php,3,121,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+opencart-C0697,opencart,upload/admin/controller/sale/order.php,35,87,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+opencart-C0698,opencart,upload/admin/controller/sale/order.php,87,404,long_method_or_region,Long or Complex Region,48,,,,,,Extract Method,pending
+opencart-C0699,opencart,upload/admin/controller/sale/order.php,404,711,long_method_or_region,Long or Complex Region,23,,,,,,Extract Method,pending
+opencart-C0700,opencart,upload/admin/controller/sale/order.php,711,1257,long_method_or_region,Long or Complex Region,68,,,,,,Extract Method,pending
+opencart-C0701,opencart,upload/admin/controller/sale/order.php,1465,1674,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+opencart-C0702,opencart,upload/admin/controller/sale/order.php,1674,1845,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+opencart-C0703,opencart,upload/admin/controller/sale/recurring.php,15,293,long_method_or_region,Long or Complex Region,42,,,,,,Extract Method,pending
+opencart-C0704,opencart,upload/admin/controller/sale/recurring.php,293,432,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+opencart-C0705,opencart,upload/admin/controller/sale/return.php,15,79,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+opencart-C0706,opencart,upload/admin/controller/sale/return.php,79,143,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+opencart-C0707,opencart,upload/admin/controller/sale/return.php,143,209,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+opencart-C0708,opencart,upload/admin/controller/sale/return.php,209,526,long_method_or_region,Long or Complex Region,50,,,,,,Extract Method,pending
+opencart-C0709,opencart,upload/admin/controller/sale/return.php,526,810,long_method_or_region,Long or Complex Region,59,,,,,,Extract Method,pending
+opencart-C0710,opencart,upload/admin/controller/sale/return.php,810,854,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+opencart-C0711,opencart,upload/admin/controller/sale/voucher.php,113,267,long_method_or_region,Long or Complex Region,19,,,,,,Extract Method,pending
+opencart-C0712,opencart,upload/admin/controller/sale/voucher.php,267,441,long_method_or_region,Long or Complex Region,33,,,,,,Extract Method,pending
+opencart-C0713,opencart,upload/admin/controller/sale/voucher.php,441,483,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+opencart-C0714,opencart,upload/admin/controller/sale/voucher.php,549,679,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+opencart-C0715,opencart,upload/admin/controller/sale/voucher_theme.php,113,246,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+opencart-C0716,opencart,upload/admin/controller/sale/voucher_theme.php,246,346,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+opencart-C0717,opencart,upload/admin/controller/setting/setting.php,5,886,long_method_or_region,Long or Complex Region,133,,,,,,Extract Method,pending
+opencart-C0718,opencart,upload/admin/controller/setting/setting.php,886,962,long_method_or_region,Long or Complex Region,21,,,,,,Extract Method,pending
+opencart-C0719,opencart,upload/admin/controller/setting/store.php,156,652,long_method_or_region,Long or Complex Region,98,,,,,,Extract Method,pending
+opencart-C0720,opencart,upload/admin/controller/setting/store.php,652,696,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+opencart-C0721,opencart,upload/admin/controller/startup/error.php,9,44,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0722,opencart,upload/admin/controller/startup/startup.php,3,64,sql_data_access,SQL/Data Access Region,6,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0723,opencart,upload/admin/controller/tool/backup.php,1,160,sql_data_access,SQL/Data Access Region,17,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0724,opencart,upload/admin/controller/tool/backup.php,43,136,sql_data_access,SQL/Data Access Region,13,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0725,opencart,upload/admin/controller/tool/upload.php,64,243,long_method_or_region,Long or Complex Region,25,,,,,,Extract Method,pending
+opencart-C0726,opencart,upload/admin/controller/tool/upload.php,310,391,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+opencart-C0727,opencart,upload/admin/controller/user/api.php,113,252,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+opencart-C0728,opencart,upload/admin/controller/user/api.php,252,371,long_method_or_region,Long or Complex Region,20,,,,,,Extract Method,pending
+opencart-C0729,opencart,upload/admin/controller/user/user.php,113,250,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+opencart-C0730,opencart,upload/admin/controller/user/user.php,250,424,long_method_or_region,Long or Complex Region,32,,,,,,Extract Method,pending
+opencart-C0731,opencart,upload/admin/controller/user/user.php,424,482,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+opencart-C0732,opencart,upload/admin/controller/user/user_permission.php,113,246,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+opencart-C0733,opencart,upload/admin/controller/user/user_permission.php,246,380,long_method_or_region,Long or Complex Region,21,,,,,,Extract Method,pending
+opencart-C0734,opencart,upload/admin/controller/extension/advertise/google.php,1,2089,sql_data_access,SQL/Data Access Region,251,,,the,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0735,opencart,upload/admin/controller/extension/advertise/google.php,25,226,long_method_or_region,Long or Complex Region,34,,,,,,Extract Method,pending
+opencart-C0736,opencart,upload/admin/controller/extension/advertise/google.php,245,304,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+opencart-C0737,opencart,upload/admin/controller/extension/advertise/google.php,431,590,long_method_or_region,Long or Complex Region,20,,,,,,Extract Method,pending
+opencart-C0738,opencart,upload/admin/controller/extension/advertise/google.php,590,716,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+opencart-C0739,opencart,upload/admin/controller/extension/advertise/google.php,762,873,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+opencart-C0740,opencart,upload/admin/controller/extension/advertise/google.php,873,936,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+opencart-C0741,opencart,upload/admin/controller/extension/advertise/google.php,936,998,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+opencart-C0742,opencart,upload/admin/controller/extension/advertise/google.php,1187,1298,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0743,opencart,upload/admin/controller/extension/advertise/google.php,1388,1655,long_method_or_region,Long or Complex Region,29,,,,,,Extract Method,pending
+opencart-C0744,opencart,upload/admin/controller/extension/advertise/google.php,1909,1954,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+opencart-C0745,opencart,upload/admin/controller/extension/advertise/google.php,2036,2089,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+opencart-C0746,opencart,upload/admin/controller/extension/dashboard/chart.php,94,197,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+opencart-C0747,opencart,upload/admin/controller/extension/extension/advertise.php,56,127,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+opencart-C0748,opencart,upload/admin/controller/extension/extension/analytics.php,56,129,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+opencart-C0749,opencart,upload/admin/controller/extension/extension/captcha.php,56,108,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0750,opencart,upload/admin/controller/extension/extension/dashboard.php,52,107,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0751,opencart,upload/admin/controller/extension/extension/menu.php,52,114,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0752,opencart,upload/admin/controller/extension/extension/module.php,96,184,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+opencart-C0753,opencart,upload/admin/controller/extension/extension/payment.php,52,116,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0754,opencart,upload/admin/controller/extension/extension/theme.php,52,124,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+opencart-C0755,opencart,upload/admin/controller/extension/fraud/fraudlabspro.php,1,331,form_handling,Request Handling Mixed With Rendering,45,flp_id;new_status,,,# . $_POST[,,Extract Validation Helper;Extract Method;Extract View Helper,pending
+opencart-C0756,opencart,upload/admin/controller/extension/fraud/fraudlabspro.php,5,112,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+opencart-C0757,opencart,upload/admin/controller/extension/fraud/fraudlabspro.php,136,326,long_method_or_region,Long or Complex Region,31,flp_id;new_status,,,# . $_POST[,,Extract Method,pending
+opencart-C0758,opencart,upload/admin/controller/extension/fraud/maxmind.php,112,429,long_method_or_region,Long or Complex Region,30,,,,,,Extract Method,pending
+opencart-C0759,opencart,upload/admin/controller/extension/module/amazon_login.php,6,95,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0760,opencart,upload/admin/controller/extension/module/amazon_pay.php,6,97,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0761,opencart,upload/admin/controller/extension/module/banner.php,5,135,long_method_or_region,Long or Complex Region,20,,,,,,Extract Method,pending
+opencart-C0762,opencart,upload/admin/controller/extension/module/bestseller.php,5,133,long_method_or_region,Long or Complex Region,20,,,,,,Extract Method,pending
+opencart-C0763,opencart,upload/admin/controller/extension/module/carousel.php,5,139,long_method_or_region,Long or Complex Region,20,,,,,,Extract Method,pending
+opencart-C0764,opencart,upload/admin/controller/extension/module/ebay_listing.php,5,193,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+opencart-C0765,opencart,upload/admin/controller/extension/module/featured.php,5,156,long_method_or_region,Long or Complex Region,24,,,,,,Extract Method,pending
+opencart-C0766,opencart,upload/admin/controller/extension/module/html.php,5,107,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+opencart-C0767,opencart,upload/admin/controller/extension/module/latest.php,5,133,long_method_or_region,Long or Complex Region,20,,,,,,Extract Method,pending
+opencart-C0768,opencart,upload/admin/controller/extension/module/pp_login.php,5,268,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+opencart-C0769,opencart,upload/admin/controller/extension/module/slideshow.php,5,135,long_method_or_region,Long or Complex Region,20,,,,,,Extract Method,pending
+opencart-C0770,opencart,upload/admin/controller/extension/module/special.php,5,133,long_method_or_region,Long or Complex Region,20,,,,,,Extract Method,pending
+opencart-C0771,opencart,upload/admin/controller/extension/openbay/amazon.php,1,1129,sql_data_access,SQL/Data Access Region,105,,,as;of;the,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0772,opencart,upload/admin/controller/extension/openbay/amazon.php,246,401,long_method_or_region,Long or Complex Region,27,,,,,,Extract Method,pending
+opencart-C0773,opencart,upload/admin/controller/extension/openbay/amazon.php,734,891,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+opencart-C0774,opencart,upload/admin/controller/extension/openbay/amazon.php,891,1047,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+opencart-C0775,opencart,upload/admin/controller/extension/openbay/amazonus.php,1,1040,sql_data_access,SQL/Data Access Region,99,,,as;of;the,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0776,opencart,upload/admin/controller/extension/openbay/amazonus.php,239,379,long_method_or_region,Long or Complex Region,24,,,,,,Extract Method,pending
+opencart-C0777,opencart,upload/admin/controller/extension/openbay/amazonus.php,709,850,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+opencart-C0778,opencart,upload/admin/controller/extension/openbay/amazonus.php,850,962,long_method_or_region,Long or Complex Region,9,,,,,,Extract Method,pending
+opencart-C0779,opencart,upload/admin/controller/extension/openbay/amazonus_listing.php,3,215,long_method_or_region,Long or Complex Region,24,,,,,,Extract Method,pending
+opencart-C0780,opencart,upload/admin/controller/extension/openbay/amazonus_listing.php,215,354,long_method_or_region,Long or Complex Region,19,,,,,,Extract Method,pending
+opencart-C0781,opencart,upload/admin/controller/extension/openbay/amazonus_listing.php,354,423,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+opencart-C0782,opencart,upload/admin/controller/extension/openbay/amazonus_listing.php,423,502,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+opencart-C0783,opencart,upload/admin/controller/extension/openbay/amazonus_product.php,1,559,mixed_php_html,Mixed PHP/HTML,84,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+opencart-C0784,opencart,upload/admin/controller/extension/openbay/amazonus_product.php,3,211,long_method_or_region,Long or Complex Region,29,,,,,,Extract Method,pending
+opencart-C0785,opencart,upload/admin/controller/extension/openbay/amazonus_product.php,211,282,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+opencart-C0786,opencart,upload/admin/controller/extension/openbay/amazonus_product.php,352,405,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+opencart-C0787,opencart,upload/admin/controller/extension/openbay/amazonus_product.php,405,513,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+opencart-C0788,opencart,upload/admin/controller/extension/openbay/amazon_listing.php,3,224,long_method_or_region,Long or Complex Region,24,,,,,,Extract Method,pending
+opencart-C0789,opencart,upload/admin/controller/extension/openbay/amazon_listing.php,224,361,long_method_or_region,Long or Complex Region,19,,,,,,Extract Method,pending
+opencart-C0790,opencart,upload/admin/controller/extension/openbay/amazon_listing.php,361,430,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+opencart-C0791,opencart,upload/admin/controller/extension/openbay/amazon_listing.php,430,508,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+opencart-C0792,opencart,upload/admin/controller/extension/openbay/amazon_product.php,1,585,mixed_php_html,Mixed PHP/HTML,87,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+opencart-C0793,opencart,upload/admin/controller/extension/openbay/amazon_product.php,3,235,long_method_or_region,Long or Complex Region,31,,,,,,Extract Method,pending
+opencart-C0794,opencart,upload/admin/controller/extension/openbay/amazon_product.php,235,305,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+opencart-C0795,opencart,upload/admin/controller/extension/openbay/amazon_product.php,375,429,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+opencart-C0796,opencart,upload/admin/controller/extension/openbay/amazon_product.php,429,537,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+opencart-C0797,opencart,upload/admin/controller/extension/openbay/ebay.php,1,2421,sql_data_access,SQL/Data Access Region,240,,,eBay;opencart,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0798,opencart,upload/admin/controller/extension/openbay/ebay.php,82,363,long_method_or_region,Long or Complex Region,40,,,,,,Extract Method,pending
+opencart-C0799,opencart,upload/admin/controller/extension/openbay/ebay.php,423,505,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+opencart-C0800,opencart,upload/admin/controller/extension/openbay/ebay.php,1143,1258,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+opencart-C0801,opencart,upload/admin/controller/extension/openbay/ebay.php,1272,1502,long_method_or_region,Long or Complex Region,19,,,,,,Extract Method,pending
+opencart-C0802,opencart,upload/admin/controller/extension/openbay/ebay.php,1502,1699,long_method_or_region,Long or Complex Region,23,,,,,,Extract Method,pending
+opencart-C0803,opencart,upload/admin/controller/extension/openbay/ebay.php,1699,1779,sql_data_access,SQL/Data Access Region,11,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0804,opencart,upload/admin/controller/extension/openbay/ebay.php,1779,2022,sql_data_access,SQL/Data Access Region,42,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0805,opencart,upload/admin/controller/extension/openbay/ebay.php,2022,2091,sql_data_access,SQL/Data Access Region,9,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0806,opencart,upload/admin/controller/extension/openbay/ebay.php,2091,2332,sql_data_access,SQL/Data Access Region,42,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0807,opencart,upload/admin/controller/extension/openbay/ebay_profile.php,120,291,long_method_or_region,Long or Complex Region,27,,,,,,Extract Method,pending
+opencart-C0808,opencart,upload/admin/controller/extension/openbay/etsy.php,82,210,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+opencart-C0809,opencart,upload/admin/controller/extension/openbay/etsy_product.php,5,125,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+opencart-C0810,opencart,upload/admin/controller/extension/openbay/etsy_product.php,125,200,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+opencart-C0811,opencart,upload/admin/controller/extension/openbay/etsy_product.php,398,458,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0812,opencart,upload/admin/controller/extension/openbay/etsy_product.php,542,686,long_method_or_region,Long or Complex Region,20,,,,,,Extract Method,pending
+opencart-C0813,opencart,upload/admin/controller/extension/openbay/fba.php,73,227,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+opencart-C0814,opencart,upload/admin/controller/extension/openbay/fba.php,514,624,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+opencart-C0815,opencart,upload/admin/controller/extension/openbay/fba.php,624,734,long_method_or_region,Long or Complex Region,8,,,,,,Extract Method,pending
+opencart-C0816,opencart,upload/admin/controller/extension/openbay/fba.php,734,924,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+opencart-C0817,opencart,upload/admin/controller/extension/payment/alipay.php,5,134,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+opencart-C0818,opencart,upload/admin/controller/extension/payment/alipay_cross.php,6,148,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+opencart-C0819,opencart,upload/admin/controller/extension/payment/amazon_login_pay.php,6,329,long_method_or_region,Long or Complex Region,58,,,,,,Extract Method,pending
+opencart-C0820,opencart,upload/admin/controller/extension/payment/amazon_login_pay.php,536,591,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+opencart-C0821,opencart,upload/admin/controller/extension/payment/authorizenet_aim.php,5,139,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+opencart-C0822,opencart,upload/admin/controller/extension/payment/authorizenet_sim.php,5,130,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+opencart-C0823,opencart,upload/admin/controller/extension/payment/bank_transfer.php,5,114,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+opencart-C0824,opencart,upload/admin/controller/extension/payment/bluepay_hosted.php,5,160,long_method_or_region,Long or Complex Region,20,,,,,,Extract Method,pending
+opencart-C0825,opencart,upload/admin/controller/extension/payment/bluepay_redirect.php,5,143,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+opencart-C0826,opencart,upload/admin/controller/extension/payment/cardconnect.php,5,216,long_method_or_region,Long or Complex Region,31,,,,,,Extract Method,pending
+opencart-C0827,opencart,upload/admin/controller/extension/payment/cardconnect.php,232,297,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+opencart-C0828,opencart,upload/admin/controller/extension/payment/cardinity.php,5,122,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+opencart-C0829,opencart,upload/admin/controller/extension/payment/cheque.php,5,104,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0830,opencart,upload/admin/controller/extension/payment/divido.php,5,170,long_method_or_region,Long or Complex Region,21,,,,,,Extract Method,pending
+opencart-C0831,opencart,upload/admin/controller/extension/payment/eway.php,6,170,long_method_or_region,Long or Complex Region,21,,,,,,Extract Method,pending
+opencart-C0832,opencart,upload/admin/controller/extension/payment/firstdata.php,5,194,long_method_or_region,Long or Complex Region,27,,,,,,Extract Method,pending
+opencart-C0833,opencart,upload/admin/controller/extension/payment/firstdata_remote.php,5,266,long_method_or_region,Long or Complex Region,34,,,,,,Extract Method,pending
+opencart-C0834,opencart,upload/admin/controller/extension/payment/g2apay.php,7,197,long_method_or_region,Long or Complex Region,26,,,,,,Extract Method,pending
+opencart-C0835,opencart,upload/admin/controller/extension/payment/globalpay.php,5,222,long_method_or_region,Long or Complex Region,31,,,,,,Extract Method,pending
+opencart-C0836,opencart,upload/admin/controller/extension/payment/globalpay_remote.php,5,194,long_method_or_region,Long or Complex Region,25,,,,,,Extract Method,pending
+opencart-C0837,opencart,upload/admin/controller/extension/payment/klarna_account.php,6,134,long_method_or_region,Long or Complex Region,8,,,,,,Extract Method,pending
+opencart-C0838,opencart,upload/admin/controller/extension/payment/klarna_account.php,134,273,long_method_or_region,Long or Complex Region,9,,,,,,Extract Method,pending
+opencart-C0839,opencart,upload/admin/controller/extension/payment/klarna_account.php,273,316,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+opencart-C0840,opencart,upload/admin/controller/extension/payment/klarna_checkout.php,5,305,long_method_or_region,Long or Complex Region,43,,,,,,Extract Method,pending
+opencart-C0841,opencart,upload/admin/controller/extension/payment/klarna_checkout.php,315,561,long_method_or_region,Long or Complex Region,22,,,,,,Extract Method,pending
+opencart-C0842,opencart,upload/admin/controller/extension/payment/klarna_checkout.php,571,694,long_method_or_region,Long or Complex Region,26,,,,,,Extract Method,pending
+opencart-C0843,opencart,upload/admin/controller/extension/payment/klarna_checkout.php,694,809,long_method_or_region,Long or Complex Region,21,,,,,,Extract Method,pending
+opencart-C0844,opencart,upload/admin/controller/extension/payment/klarna_checkout.php,809,859,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+opencart-C0845,opencart,upload/admin/controller/extension/payment/klarna_invoice.php,5,133,long_method_or_region,Long or Complex Region,8,,,,,,Extract Method,pending
+opencart-C0846,opencart,upload/admin/controller/extension/payment/klarna_invoice.php,141,188,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+opencart-C0847,opencart,upload/admin/controller/extension/payment/laybuy.php,1,1121,long_method_or_region,Long or Complex Region,130,,,,"# . $id, true)
+		);
+
+		$data[;# . $id, true);
+				}
+
+				$this->response->setOutput(json_encode($json));
+			} else {
+				$this->model_extension_payment_laybuy->log(;# . $id, true);
+			}
+
+			$this->response->setOutput(json_encode($json));
+		} else {
+			$this->model_extension_payment_laybuy->log(;# . (int)$result[",,Extract Method,pending
+opencart-C0848,opencart,upload/admin/controller/extension/payment/laybuy.php,5,481,long_method_or_region,Long or Complex Region,74,,,,# . (int)$result[,,Extract Method,pending
+opencart-C0849,opencart,upload/admin/controller/extension/payment/laybuy.php,481,642,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+opencart-C0850,opencart,upload/admin/controller/extension/payment/laybuy.php,658,787,long_method_or_region,Long or Complex Region,7,,,,"# . $id, true)
+		);
+
+		$data[",,Extract Method,pending
+opencart-C0851,opencart,upload/admin/controller/extension/payment/laybuy.php,787,882,long_method_or_region,Long or Complex Region,10,,,,"# . $id, true);
+			}
+
+			$this->response->setOutput(json_encode($json));
+		} else {
+			$this->model_extension_payment_laybuy->log(",,Extract Method,pending
+opencart-C0852,opencart,upload/admin/controller/extension/payment/laybuy.php,882,1038,long_method_or_region,Long or Complex Region,15,,,,"# . $id, true);
+				}
+
+				$this->response->setOutput(json_encode($json));
+			} else {
+				$this->model_extension_payment_laybuy->log(",,Extract Method,pending
+opencart-C0853,opencart,upload/admin/controller/extension/payment/liqpay.php,5,128,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+opencart-C0854,opencart,upload/admin/controller/extension/payment/nochex.php,5,134,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+opencart-C0855,opencart,upload/admin/controller/extension/payment/paymate.php,5,124,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+opencart-C0856,opencart,upload/admin/controller/extension/payment/paypoint.php,5,116,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+opencart-C0857,opencart,upload/admin/controller/extension/payment/payza.php,5,118,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+opencart-C0858,opencart,upload/admin/controller/extension/payment/perpetual_payments.php,5,122,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+opencart-C0859,opencart,upload/admin/controller/extension/payment/pilibaba.php,5,180,long_method_or_region,Long or Complex Region,22,,,,,,Extract Method,pending
+opencart-C0860,opencart,upload/admin/controller/extension/payment/pilibaba.php,196,243,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0861,opencart,upload/admin/controller/extension/payment/pp_braintree.php,8,501,long_method_or_region,Long or Complex Region,64,,,,,,Extract Method,pending
+opencart-C0862,opencart,upload/admin/controller/extension/payment/pp_braintree.php,559,723,long_method_or_region,Long or Complex Region,22,,,,,,Extract Method,pending
+opencart-C0863,opencart,upload/admin/controller/extension/payment/pp_braintree.php,764,982,long_method_or_region,Long or Complex Region,39,,,,,,Extract Method,pending
+opencart-C0864,opencart,upload/admin/controller/extension/payment/pp_braintree.php,1051,1120,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+opencart-C0865,opencart,upload/admin/controller/extension/payment/pp_express.php,7,452,long_method_or_region,Long or Complex Region,55,,,,,,Extract Method,pending
+opencart-C0866,opencart,upload/admin/controller/extension/payment/pp_express.php,572,655,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0867,opencart,upload/admin/controller/extension/payment/pp_express.php,715,806,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+opencart-C0868,opencart,upload/admin/controller/extension/payment/pp_express.php,943,1014,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0869,opencart,upload/admin/controller/extension/payment/pp_express.php,1092,1189,long_method_or_region,Long or Complex Region,20,,,,,,Extract Method,pending
+opencart-C0870,opencart,upload/admin/controller/extension/payment/pp_payflow.php,5,154,long_method_or_region,Long or Complex Region,19,,,,,,Extract Method,pending
+opencart-C0871,opencart,upload/admin/controller/extension/payment/pp_payflow_iframe.php,5,169,long_method_or_region,Long or Complex Region,24,,,,,,Extract Method,pending
+opencart-C0872,opencart,upload/admin/controller/extension/payment/pp_pro.php,5,140,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+opencart-C0873,opencart,upload/admin/controller/extension/payment/pp_pro_iframe.php,5,191,long_method_or_region,Long or Complex Region,25,,,,,,Extract Method,pending
+opencart-C0874,opencart,upload/admin/controller/extension/payment/pp_pro_iframe.php,344,437,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+opencart-C0875,opencart,upload/admin/controller/extension/payment/pp_pro_iframe.php,535,654,long_method_or_region,Long or Complex Region,9,,,,,,Extract Method,pending
+opencart-C0876,opencart,upload/admin/controller/extension/payment/pp_pro_iframe.php,706,771,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0877,opencart,upload/admin/controller/extension/payment/pp_standard.php,5,176,long_method_or_region,Long or Complex Region,22,,,,,,Extract Method,pending
+opencart-C0878,opencart,upload/admin/controller/extension/payment/realex.php,5,222,long_method_or_region,Long or Complex Region,31,,,,,,Extract Method,pending
+opencart-C0879,opencart,upload/admin/controller/extension/payment/realex_remote.php,5,193,long_method_or_region,Long or Complex Region,25,,,,,,Extract Method,pending
+opencart-C0880,opencart,upload/admin/controller/extension/payment/sagepay_direct.php,5,150,long_method_or_region,Long or Complex Region,19,,,,,,Extract Method,pending
+opencart-C0881,opencart,upload/admin/controller/extension/payment/sagepay_server.php,5,151,long_method_or_region,Long or Complex Region,19,,,,,,Extract Method,pending
+opencart-C0882,opencart,upload/admin/controller/extension/payment/sagepay_us.php,5,116,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+opencart-C0883,opencart,upload/admin/controller/extension/payment/securetrading_pp.php,5,235,long_method_or_region,Long or Complex Region,32,,,,,,Extract Method,pending
+opencart-C0884,opencart,upload/admin/controller/extension/payment/securetrading_ws.php,5,247,long_method_or_region,Long or Complex Region,33,,,,,,Extract Method,pending
+opencart-C0885,opencart,upload/admin/controller/extension/payment/skrill.php,5,146,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+opencart-C0886,opencart,upload/admin/controller/extension/payment/squareup.php,6,297,long_method_or_region,Long or Complex Region,28,,,,,,Extract Method,pending
+opencart-C0887,opencart,upload/admin/controller/extension/payment/squareup.php,297,452,long_method_or_region,Long or Complex Region,7,,,,,,Extract Method,pending
+opencart-C0888,opencart,upload/admin/controller/extension/payment/squareup.php,573,681,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+opencart-C0889,opencart,upload/admin/controller/extension/payment/squareup.php,925,985,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+opencart-C0890,opencart,upload/admin/controller/extension/payment/twocheckout.php,5,128,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+opencart-C0891,opencart,upload/admin/controller/extension/payment/web_payment_software.php,5,127,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+opencart-C0892,opencart,upload/admin/controller/extension/payment/wechat_pay.php,13,154,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+opencart-C0893,opencart,upload/admin/controller/extension/payment/worldpay.php,5,194,long_method_or_region,Long or Complex Region,27,,,,,,Extract Method,pending
+opencart-C0894,opencart,upload/admin/controller/extension/report/customer_activity.php,72,179,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+opencart-C0895,opencart,upload/admin/controller/extension/report/customer_order.php,72,176,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+opencart-C0896,opencart,upload/admin/controller/extension/report/customer_reward.php,72,160,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+opencart-C0897,opencart,upload/admin/controller/extension/report/customer_search.php,72,201,long_method_or_region,Long or Complex Region,19,,,,,,Extract Method,pending
+opencart-C0898,opencart,upload/admin/controller/extension/report/customer_transaction.php,72,158,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+opencart-C0899,opencart,upload/admin/controller/extension/report/marketing.php,72,162,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+opencart-C0900,opencart,upload/admin/controller/extension/report/product_purchased.php,72,160,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+opencart-C0901,opencart,upload/admin/controller/extension/report/sale_order.php,72,196,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+opencart-C0902,opencart,upload/admin/controller/extension/report/sale_return.php,72,193,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+opencart-C0903,opencart,upload/admin/controller/extension/report/sale_shipping.php,72,195,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+opencart-C0904,opencart,upload/admin/controller/extension/report/sale_tax.php,72,197,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+opencart-C0905,opencart,upload/admin/controller/extension/shipping/auspost.php,5,120,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+opencart-C0906,opencart,upload/admin/controller/extension/shipping/ec_ship.php,5,210,long_method_or_region,Long or Complex Region,27,,,,,,Extract Method,pending
+opencart-C0907,opencart,upload/admin/controller/extension/shipping/fedex.php,5,347,long_method_or_region,Long or Complex Region,32,,,,,,Extract Method,pending
+opencart-C0908,opencart,upload/admin/controller/extension/shipping/parcelforce_48.php,5,120,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+opencart-C0909,opencart,upload/admin/controller/extension/shipping/royal_mail.php,5,396,long_method_or_region,Long or Complex Region,70,,,,,,Extract Method,pending
+opencart-C0910,opencart,upload/admin/controller/extension/shipping/ups.php,5,701,long_method_or_region,Long or Complex Region,85,,,,,,Extract Method,pending
+opencart-C0911,opencart,upload/admin/controller/extension/shipping/ups.php,701,744,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+opencart-C0912,opencart,upload/admin/controller/extension/shipping/usps.php,5,437,long_method_or_region,Long or Complex Region,60,,,,,,Extract Method,pending
+opencart-C0913,opencart,upload/admin/controller/extension/theme/default.php,5,330,long_method_or_region,Long or Complex Region,65,,,,,,Extract Method,pending
+opencart-C0914,opencart,upload/admin/controller/extension/theme/default.php,330,386,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+opencart-C0915,opencart,upload/admin/controller/extension/total/klarna_fee.php,5,106,long_method_or_region,Long or Complex Region,6,,,,,,Extract Method,pending
+opencart-C0916,opencart,tests/setup/install.php,1,136,sql_data_access,SQL/Data Access Region,16,,,completed;config;settings,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0917,opencart,tests/phpunit/selenium/catalog/AccountTest.php,1,320,sql_data_access,SQL/Data Access Region,24,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0918,opencart,tests/phpunit/selenium/catalog/AccountTest.php,40,160,long_method_or_region,Long or Complex Region,6,,,,,,Extract Method,pending
+opencart-C0919,opencart,tests/phpunit/selenium/catalog/PayPalExpressTest.php,15,139,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+opencart-C0920,opencart,tests/phpunit/selenium/catalog/SagePayDirectTest.php,15,119,long_method_or_region,Long or Complex Region,8,,,,,,Extract Method,pending
+opencart-C0921,opencart,tests/phpunit/opencart/catalog/model/account/AddressTest.php,67,113,sql_data_access,SQL/Data Access Region,2,,,,,,Light Data-Access Isolation;Extract Method,pending
+opencart-C0922,opencart,tests/phpunit/opencart/catalog/model/account/DownloadTest.php,60,172,long_method_or_region,Long or Complex Region,1,,,,,,Extract Method,pending
+opencart-C0923,opencart,tests/phpunit/opencart/catalog/model/account/OrderTest.php,50,162,long_method_or_region,Long or Complex Region,1,,,,,,Extract Method,pending
+opencart-C0924,opencart,tests/phpunit/opencart/catalog/model/checkout/OrderTest.php,36,147,long_method_or_region,Long or Complex Region,1,,,,,,Extract Method,pending
+opencart-C0925,opencart,tests/phpcs/OpenCart/Sniffs/Variables/ValidVariableNameSniff.php,66,132,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+opencart-C0926,opencart,tests/phpcs/OpenCart/Sniffs/Variables/ValidVariableNameSniff.php,167,209,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending

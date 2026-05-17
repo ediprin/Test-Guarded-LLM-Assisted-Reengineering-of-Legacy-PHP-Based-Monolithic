@@ -1,0 +1,117 @@
+{
+  "candidate_id": "phpmyadmin-C0186",
+  "subject_id": "phpmyadmin",
+  "file": "test/classes/Display/ResultsTest.php",
+  "lines": [
+    1,
+    1706
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 111
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [
+      " PMA_token ",
+      "relation",
+      "tmpval"
+    ],
+    "database_tables": [
+      "Data",
+      "data",
+      "db_name",
+      "pma",
+      "pma_bookmark",
+      "the",
+      "user"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#id_rows_to_",
+      "#id_rows_to_delete0[%_PMA_CHECKBOX_DIR_%]",
+      "#id_rows_to_delete0_",
+      "#id_rows_to_delete0_right",
+      "#showAll_0",
+      "..",
+      ".center",
+      ".checkall",
+      ".condition_",
+      ".condition_array",
+      ".delete",
+      ".delete_row",
+      ".disableAjax",
+      ".edit_row_anchor",
+      ".grid_edit",
+      ".hex",
+      ".hide",
+      ".ic_b_drop",
+      ".ic_b_edit",
+      ".ic_b_insrow"
+    ],
+    "forms": [
+      "sql.php"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [
+      " PMA_token ",
+      "relation",
+      "tmpval"
+    ],
+    "must_preserve_database_tables": [
+      "Data",
+      "data",
+      "db_name",
+      "pma",
+      "pma_bookmark",
+      "the",
+      "user"
+    ],
+    "must_preserve_dom_selectors": [
+      "#id_rows_to_",
+      "#id_rows_to_delete0[%_PMA_CHECKBOX_DIR_%]",
+      "#id_rows_to_delete0_",
+      "#id_rows_to_delete0_right",
+      "#showAll_0",
+      "..",
+      ".center",
+      ".checkall",
+      ".condition_",
+      ".condition_array",
+      ".delete",
+      ".delete_row",
+      ".disableAjax",
+      ".edit_row_anchor",
+      ".grid_edit",
+      ".hex",
+      ".hide",
+      ".ic_b_drop",
+      ".ic_b_edit",
+      ".ic_b_insrow"
+    ],
+    "must_preserve_forms": [
+      "sql.php"
+    ]
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

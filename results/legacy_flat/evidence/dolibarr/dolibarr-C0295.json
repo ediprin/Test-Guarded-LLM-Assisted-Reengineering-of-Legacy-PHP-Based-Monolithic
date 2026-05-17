@@ -1,0 +1,149 @@
+{
+  "candidate_id": "dolibarr-C0295",
+  "subject_id": "dolibarr",
+  "file": "htdocs/expedition/card.php",
+  "lines": [
+    1,
+    2623
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 469
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "commande_id",
+      "lineid",
+      "liv_day",
+      "liv_month",
+      "liv_year"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": [
+      "GETPOST",
+      "a",
+      "add",
+      "date_delivery",
+      "elseif",
+      "form",
+      "line",
+      "llx_product_batch",
+      "multiple",
+      "order",
+      "preselected",
+      "src",
+      "sub_qty",
+      "this",
+      "update"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "# . $object->id . ",
+      "# . $object->id);\n\t\t\texit();\n\t\t}\n\t\telse\n\t\t{\n\t\t\tsetEventMessages($line->error, $line->errors, ",
+      "# . $object->id);\n\t    \texit();\n\t    }\n\t\tsetEventMessages($object->error, $object->errors, ",
+      "# . $object->id); // To redisplay the form being edited\n\t\t\texit();\n\t\t}\n\t} elseif ($action == ",
+      "# . $object->id); // To redisplay the form being edited\n\t\texit();\n\t}\n\n\tinclude DOL_DOCUMENT_ROOT.",
+      "# . $object->id, $object->socid, $object->fk_project, ",
+      "# . $objectsrc->fk_project . ",
+      "#.$lines[$i]->origin_line_id.",
+      "#.$object->id);\n\t\t\t}\n\t        print ",
+      "#.$object->id);\n\t            exit;\n\t        }\n\t        setEventMessages($object->error, $object->errors, ",
+      "#.$object->id);\n\t        exit;\n\t    }\n\t    else\n\t    {\n\t        $db->rollback();\n\t        $_GET[",
+      "#.$object->id);\n            exit;\n        }\n\t}\n\n\tif ($action == ",
+      "#.$object->id,\n                $langs->trans(",
+      "#.$object->id, $langs->trans(",
+      "#.$object->id.",
+      "#.$object->id;\n\n\t\t$genallowed=$user->rights->expedition->lire;\n\t\t$delallowed=$user->rights->expedition->creer;\n\n\t\tprint $formfile->showdocuments(",
+      "#.$result);\n\t        exit;\n\t    }\n\t    else\n\t    {\n\t        setEventMessages($object->error, $object->errors, ",
+      "#.$value[",
+      "#autofill",
+      "#autoreset"
+    ],
+    "forms": [
+      "setdate_livraison",
+      "setshipping_method_id",
+      "settrueHeight",
+      "settrueweight",
+      "updateline"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "commande_id",
+      "lineid",
+      "liv_day",
+      "liv_month",
+      "liv_year"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [
+      "GETPOST",
+      "a",
+      "add",
+      "date_delivery",
+      "elseif",
+      "form",
+      "line",
+      "llx_product_batch",
+      "multiple",
+      "order",
+      "preselected",
+      "src",
+      "sub_qty",
+      "this",
+      "update"
+    ],
+    "must_preserve_dom_selectors": [
+      "# . $object->id . ",
+      "# . $object->id);\n\t\t\texit();\n\t\t}\n\t\telse\n\t\t{\n\t\t\tsetEventMessages($line->error, $line->errors, ",
+      "# . $object->id);\n\t    \texit();\n\t    }\n\t\tsetEventMessages($object->error, $object->errors, ",
+      "# . $object->id); // To redisplay the form being edited\n\t\t\texit();\n\t\t}\n\t} elseif ($action == ",
+      "# . $object->id); // To redisplay the form being edited\n\t\texit();\n\t}\n\n\tinclude DOL_DOCUMENT_ROOT.",
+      "# . $object->id, $object->socid, $object->fk_project, ",
+      "# . $objectsrc->fk_project . ",
+      "#.$lines[$i]->origin_line_id.",
+      "#.$object->id);\n\t\t\t}\n\t        print ",
+      "#.$object->id);\n\t            exit;\n\t        }\n\t        setEventMessages($object->error, $object->errors, ",
+      "#.$object->id);\n\t        exit;\n\t    }\n\t    else\n\t    {\n\t        $db->rollback();\n\t        $_GET[",
+      "#.$object->id);\n            exit;\n        }\n\t}\n\n\tif ($action == ",
+      "#.$object->id,\n                $langs->trans(",
+      "#.$object->id, $langs->trans(",
+      "#.$object->id.",
+      "#.$object->id;\n\n\t\t$genallowed=$user->rights->expedition->lire;\n\t\t$delallowed=$user->rights->expedition->creer;\n\n\t\tprint $formfile->showdocuments(",
+      "#.$result);\n\t        exit;\n\t    }\n\t    else\n\t    {\n\t        setEventMessages($object->error, $object->errors, ",
+      "#.$value[",
+      "#autofill",
+      "#autoreset"
+    ],
+    "must_preserve_forms": [
+      "setdate_livraison",
+      "setshipping_method_id",
+      "settrueHeight",
+      "settrueweight",
+      "updateline"
+    ]
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "candidate_id": "dolibarr-C1159",
+  "subject_id": "dolibarr",
+  "file": "htdocs/opensurvey/wizard/choix_autre.php",
+  "lines": [
+    1,
+    166
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 19
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "choix",
+      "confirmecreation",
+      "typecolonne"
+    ],
+    "session_keys": [
+      "choix$i",
+      "formatsondage",
+      "nbrecases",
+      "titre",
+      "toutchoix",
+      "typecolonne$i"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#choix",
+      ".button"
+    ],
+    "forms": [
+      "#bas",
+      "formulaire"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "choix",
+      "confirmecreation",
+      "typecolonne"
+    ],
+    "must_preserve_session_keys": [
+      "choix$i",
+      "formatsondage",
+      "nbrecases",
+      "titre",
+      "toutchoix",
+      "typecolonne$i"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#choix",
+      ".button"
+    ],
+    "must_preserve_forms": [
+      "#bas",
+      "formulaire"
+    ]
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

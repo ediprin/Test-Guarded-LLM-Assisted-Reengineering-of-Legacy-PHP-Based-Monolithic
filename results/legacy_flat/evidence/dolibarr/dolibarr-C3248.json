@@ -1,0 +1,102 @@
+{
+  "candidate_id": "dolibarr-C3248",
+  "subject_id": "dolibarr",
+  "file": "htdocs/core/class/html.formticket.class.php",
+  "lines": [
+    129,
+    448
+  ],
+  "candidate_type": "session_dependent_logic",
+  "issues": [
+    {
+      "type": "Session-Dependent Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 57
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [
+      "listofmimes",
+      "listofnames",
+      "listofpaths",
+      "newtoken"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#addedfile",
+      "#addfile",
+      "#attachfile_",
+      "#email",
+      "#form_create_ticket",
+      "#notify_tiers_at_create",
+      "#removedfile_",
+      "#subject",
+      ".border",
+      ".button",
+      ".center",
+      ".centpercent",
+      ".fieldrequired",
+      ".flat",
+      ".minwidth200",
+      ".removedfile",
+      ".removedfilehidden",
+      ".text",
+      ".titlefield",
+      ".titlefieldcreate"
+    ],
+    "forms": [
+      "ticket"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [
+      "listofmimes",
+      "listofnames",
+      "listofpaths",
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#addedfile",
+      "#addfile",
+      "#attachfile_",
+      "#email",
+      "#form_create_ticket",
+      "#notify_tiers_at_create",
+      "#removedfile_",
+      "#subject",
+      ".border",
+      ".button",
+      ".center",
+      ".centpercent",
+      ".fieldrequired",
+      ".flat",
+      ".minwidth200",
+      ".removedfile",
+      ".removedfilehidden",
+      ".text",
+      ".titlefield",
+      ".titlefieldcreate"
+    ],
+    "must_preserve_forms": [
+      "ticket"
+    ]
+  },
+  "allowed_transformations": [
+    "Extract Guard",
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

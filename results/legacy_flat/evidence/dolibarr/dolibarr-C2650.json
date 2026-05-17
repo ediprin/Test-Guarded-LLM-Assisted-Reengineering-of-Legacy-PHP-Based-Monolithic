@@ -1,0 +1,207 @@
+{
+  "candidate_id": "dolibarr-C2650",
+  "subject_id": "dolibarr",
+  "file": "htdocs/fourn/commande/card.php",
+  "lines": [
+    1,
+    2876
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 546
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "comment",
+      "cond_reglement_id",
+      "date_end",
+      "date_endday",
+      "date_endhour",
+      "date_endmin",
+      "date_endmonth",
+      "date_endsec",
+      "date_endyear",
+      "date_start",
+      "date_startday",
+      "date_starthour",
+      "date_startmin",
+      "date_startmonth",
+      "date_startsec",
+      "date_startyear",
+      "datecommande",
+      "dp_desc",
+      "fourn_ref",
+      "idprodfournprice",
+      "label",
+      "lineid",
+      "methode",
+      "methodecommande",
+      "mode_reglement_id",
+      "multicurrency_price_ht",
+      "np_desc",
+      "np_marginRate",
+      "np_markRate",
+      "price_ht",
+      "price_ttc",
+      "prod_entry_mode",
+      "product_desc",
+      "pu",
+      "qty",
+      "remise_percent",
+      "remmise_percent",
+      "socid",
+      "source",
+      "tva_tx",
+      "type",
+      "units"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": [
+      "add",
+      "another",
+      "card",
+      "constant",
+      "its",
+      "order",
+      "supplier"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "# . $object->fk_project . ",
+      "# . $object->id . ",
+      "# . $object->id);\n\tinclude DOL_DOCUMENT_ROOT.",
+      "# . $object->id, $object->multicurrency_code, ",
+      "# . $object->id, $object->multicurrency_tx, ",
+      "# . $object->id, $object->socid, $object->fk_project, ",
+      "#.$id);\n\t\t\t\texit;\n\t\t\t}\n\t\t}\n\t}\n\n\tif ($action == ",
+      "#.$object->id);\n\t\t\t\texit;\n\t\t\t}\n\t\t\telse\n\t\t\t{\n\t\t\t\t$db->rollback();\n\n\t\t\t\tsetEventMessages($object->error, $object->errors, ",
+      "#.$object->id);\n\t\t\t\texit;\n\t\t\t}\n\t\t\telse\n\t\t\t{\n\t\t\t\tif ($object->error == ",
+      "#.$object->id);\n\t\t\t\texit;\n\t\t\t}\n\t\t\telse\n\t\t\t{\n\t\t\t\tsetEventMessages($object->error, $object->errors, ",
+      "#.$object->id);\n\t\t\t\texit;\n\t\t\t}\n\t\t\telse {\n\t\t\t\tdol_print_error($db);\n\t\t\t}\n\t\t}\n\t}\n}\n\n\n/*\n * View\n */\n\n$form =\tnew\tForm($db);\n$formfile = new FormFile($db);\n$formorder = new FormOrder($db);\n$productstatic = new Product($db);\nif (! empty($conf->projet->enabled)) { $formproject = new FormProjets($db); }\n\n$help_url=",
+      "#.$object->id);\n\t\t\texit;\n\t\t}\n\t\telse\n\t\t{\n\t\t\tsetEventMessages($object->error, $object->errors, ",
+      "#.$object->id);\n\t\t}\n\t\tprint ",
+      "#.$object->id);\n        exit;\n    }\n\n\tif ($action == ",
+      "#.$object->id, $langs->trans(",
+      "#.$object->id, $object->cond_reglement_id, ",
+      "#.$object->id, $object->fk_account, ",
+      "#.$object->id, $object->mode_reglement_id, ",
+      "#.$object->id.",
+      "#.$object->id.(($action != "
+    ],
+    "forms": [
+      "add",
+      "addproduct",
+      "card.php?id=",
+      "commande",
+      "setdate_livraison"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "comment",
+      "cond_reglement_id",
+      "date_end",
+      "date_endday",
+      "date_endhour",
+      "date_endmin",
+      "date_endmonth",
+      "date_endsec",
+      "date_endyear",
+      "date_start",
+      "date_startday",
+      "date_starthour",
+      "date_startmin",
+      "date_startmonth",
+      "date_startsec",
+      "date_startyear",
+      "datecommande",
+      "dp_desc",
+      "fourn_ref",
+      "idprodfournprice",
+      "label",
+      "lineid",
+      "methode",
+      "methodecommande",
+      "mode_reglement_id",
+      "multicurrency_price_ht",
+      "np_desc",
+      "np_marginRate",
+      "np_markRate",
+      "price_ht",
+      "price_ttc",
+      "prod_entry_mode",
+      "product_desc",
+      "pu",
+      "qty",
+      "remise_percent",
+      "remmise_percent",
+      "socid",
+      "source",
+      "tva_tx",
+      "type",
+      "units"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [
+      "add",
+      "another",
+      "card",
+      "constant",
+      "its",
+      "order",
+      "supplier"
+    ],
+    "must_preserve_dom_selectors": [
+      "# . $object->fk_project . ",
+      "# . $object->id . ",
+      "# . $object->id);\n\tinclude DOL_DOCUMENT_ROOT.",
+      "# . $object->id, $object->multicurrency_code, ",
+      "# . $object->id, $object->multicurrency_tx, ",
+      "# . $object->id, $object->socid, $object->fk_project, ",
+      "#.$id);\n\t\t\t\texit;\n\t\t\t}\n\t\t}\n\t}\n\n\tif ($action == ",
+      "#.$object->id);\n\t\t\t\texit;\n\t\t\t}\n\t\t\telse\n\t\t\t{\n\t\t\t\t$db->rollback();\n\n\t\t\t\tsetEventMessages($object->error, $object->errors, ",
+      "#.$object->id);\n\t\t\t\texit;\n\t\t\t}\n\t\t\telse\n\t\t\t{\n\t\t\t\tif ($object->error == ",
+      "#.$object->id);\n\t\t\t\texit;\n\t\t\t}\n\t\t\telse\n\t\t\t{\n\t\t\t\tsetEventMessages($object->error, $object->errors, ",
+      "#.$object->id);\n\t\t\t\texit;\n\t\t\t}\n\t\t\telse {\n\t\t\t\tdol_print_error($db);\n\t\t\t}\n\t\t}\n\t}\n}\n\n\n/*\n * View\n */\n\n$form =\tnew\tForm($db);\n$formfile = new FormFile($db);\n$formorder = new FormOrder($db);\n$productstatic = new Product($db);\nif (! empty($conf->projet->enabled)) { $formproject = new FormProjets($db); }\n\n$help_url=",
+      "#.$object->id);\n\t\t\texit;\n\t\t}\n\t\telse\n\t\t{\n\t\t\tsetEventMessages($object->error, $object->errors, ",
+      "#.$object->id);\n\t\t}\n\t\tprint ",
+      "#.$object->id);\n        exit;\n    }\n\n\tif ($action == ",
+      "#.$object->id, $langs->trans(",
+      "#.$object->id, $object->cond_reglement_id, ",
+      "#.$object->id, $object->fk_account, ",
+      "#.$object->id, $object->mode_reglement_id, ",
+      "#.$object->id.",
+      "#.$object->id.(($action != "
+    ],
+    "must_preserve_forms": [
+      "add",
+      "addproduct",
+      "card.php?id=",
+      "commande",
+      "setdate_livraison"
+    ]
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

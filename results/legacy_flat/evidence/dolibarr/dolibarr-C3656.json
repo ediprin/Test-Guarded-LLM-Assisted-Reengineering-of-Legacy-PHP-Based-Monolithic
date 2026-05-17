@@ -1,0 +1,88 @@
+{
+  "candidate_id": "dolibarr-C3656",
+  "subject_id": "dolibarr",
+  "file": "htdocs/core/modules/DolibarrModules.class.php",
+  "lines": [
+    1,
+    2278
+  ],
+  "candidate_type": "sql_data_access",
+  "issues": [
+    {
+      "type": "SQL/Data Access Region",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 361
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [],
+    "database_tables": [
+      "Dolibarr",
+      "README",
+      "admin",
+      "database",
+      "function",
+      "language",
+      "list",
+      "llx_boxes",
+      "llx_boxes_def",
+      "llx_const",
+      "llx_rights_def",
+      "module",
+      "property",
+      "table",
+      "the",
+      "unActivateModule",
+      "your"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$obj2->rowid);\n\n                                  $tmpuser=new User($this->db);\n                                  $result = $tmpuser->fetch($obj2->rowid);\n                                if ($result > 0) {\n                                    $tmpuser->addrights($r_id, ",
+      "#.$r_id."
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [
+      "Dolibarr",
+      "README",
+      "admin",
+      "database",
+      "function",
+      "language",
+      "list",
+      "llx_boxes",
+      "llx_boxes_def",
+      "llx_const",
+      "llx_rights_def",
+      "module",
+      "property",
+      "table",
+      "the",
+      "unActivateModule",
+      "your"
+    ],
+    "must_preserve_dom_selectors": [
+      "#.$obj2->rowid);\n\n                                  $tmpuser=new User($this->db);\n                                  $result = $tmpuser->fetch($obj2->rowid);\n                                if ($result > 0) {\n                                    $tmpuser->addrights($r_id, ",
+      "#.$r_id."
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

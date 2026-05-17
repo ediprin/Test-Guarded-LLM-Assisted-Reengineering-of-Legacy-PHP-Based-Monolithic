@@ -1,0 +1,84 @@
+{
+  "candidate_id": "dolibarr-C0206",
+  "subject_id": "dolibarr",
+  "file": "htdocs/bookmarks/bookmarks.lib.php",
+  "lines": [
+    31,
+    154
+  ],
+  "candidate_type": "session_dependent_logic",
+  "issues": [
+    {
+      "type": "Session-Dependent Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 31
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": [
+      "the"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#actionbookmark",
+      "#boxbookmark",
+      ".boxcombo",
+      ".fa",
+      ".fa-print",
+      ".fa-star-o",
+      ".flat",
+      ".menu_end",
+      ".menu_top",
+      ".optionblue",
+      ".optiongrey",
+      ".vmenusearchselectcombo"
+    ],
+    "forms": [
+      "actionbookmark"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [
+      "the"
+    ],
+    "must_preserve_dom_selectors": [
+      "#actionbookmark",
+      "#boxbookmark",
+      ".boxcombo",
+      ".fa",
+      ".fa-print",
+      ".fa-star-o",
+      ".flat",
+      ".menu_end",
+      ".menu_top",
+      ".optionblue",
+      ".optiongrey",
+      ".vmenusearchselectcombo"
+    ],
+    "must_preserve_forms": [
+      "actionbookmark"
+    ]
+  },
+  "allowed_transformations": [
+    "Extract Guard",
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

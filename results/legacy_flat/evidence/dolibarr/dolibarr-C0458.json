@@ -1,0 +1,94 @@
+{
+  "candidate_id": "dolibarr-C0458",
+  "subject_id": "dolibarr",
+  "file": "htdocs/resource/element_resource.php",
+  "lines": [
+    1,
+    508
+  ],
+  "candidate_type": "mixed_php_html",
+  "issues": [
+    {
+      "type": "Mixed PHP/HTML",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 82
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [
+      "assignedtouser",
+      "newtoken"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "# . $act->fk_project . ",
+      "# . $fichinter->fk_project . ",
+      "# . $fichinter->id . ",
+      "# . $fichinter->id, $fichinter->socid, $fichinter->fk_project, ",
+      "#.$fichinter->id.",
+      "#.$id.",
+      ".assignedtouser",
+      ".border",
+      ".button",
+      ".clearboth",
+      ".fichecenter",
+      ".hideonsmartphone",
+      ".litext",
+      ".myavailability",
+      ".noborder",
+      ".nowrap",
+      ".pictoactionview",
+      ".refidno",
+      ".tableforfield",
+      ".titlefield"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [
+      "assignedtouser",
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "# . $act->fk_project . ",
+      "# . $fichinter->fk_project . ",
+      "# . $fichinter->id . ",
+      "# . $fichinter->id, $fichinter->socid, $fichinter->fk_project, ",
+      "#.$fichinter->id.",
+      "#.$id.",
+      ".assignedtouser",
+      ".border",
+      ".button",
+      ".clearboth",
+      ".fichecenter",
+      ".hideonsmartphone",
+      ".litext",
+      ".myavailability",
+      ".noborder",
+      ".nowrap",
+      ".pictoactionview",
+      ".refidno",
+      ".tableforfield",
+      ".titlefield"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Separate PHP Logic from Markup",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

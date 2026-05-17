@@ -1,0 +1,79 @@
+{
+  "candidate_id": "phpmyadmin-C0404",
+  "subject_id": "phpmyadmin",
+  "file": "libraries/classes/Footer.php",
+  "lines": [
+    1,
+    371
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 30
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "checkprivsdb",
+      "checkprivstable",
+      "no_debug",
+      "no_history",
+      "single_table",
+      "target",
+      "viewing_mode"
+    ],
+    "session_keys": [
+      "debug"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#pma_demo",
+      "#pma_errors",
+      "#selflink",
+      ".clearfloat",
+      ".print_ignore"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "checkprivsdb",
+      "checkprivstable",
+      "no_debug",
+      "no_history",
+      "single_table",
+      "target",
+      "viewing_mode"
+    ],
+    "must_preserve_session_keys": [
+      "debug"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#pma_demo",
+      "#pma_errors",
+      "#selflink",
+      ".clearfloat",
+      ".print_ignore"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

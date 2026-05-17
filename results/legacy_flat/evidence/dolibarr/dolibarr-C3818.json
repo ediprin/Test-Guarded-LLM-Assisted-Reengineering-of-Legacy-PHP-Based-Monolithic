@@ -1,0 +1,58 @@
+{
+  "candidate_id": "dolibarr-C3818",
+  "subject_id": "dolibarr",
+  "file": "htdocs/core/triggers/interface_80_modStripe_Stripe.class.php",
+  "lines": [
+    115,
+    327
+  ],
+  "candidate_type": "sql_data_access",
+  "issues": [
+    {
+      "type": "SQL/Data Access Region",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 70
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [],
+    "database_tables": [
+      "Customer",
+      "Tax"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "# . $object->id);\n\n\t\t\t$stripeacc = $stripe->getStripeAccount($service);\t// No need of network access for this. May return ",
+      "# . $object->id);\n\n\t\t\tif (! empty($object->stripe_card_ref))\n\t\t\t{\n\t\t\t\t$stripeacc = $stripe->getStripeAccount($service);\t\t\t\t// No need of network access for this. May return "
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [
+      "Customer",
+      "Tax"
+    ],
+    "must_preserve_dom_selectors": [
+      "# . $object->id);\n\n\t\t\t$stripeacc = $stripe->getStripeAccount($service);\t// No need of network access for this. May return ",
+      "# . $object->id);\n\n\t\t\tif (! empty($object->stripe_card_ref))\n\t\t\t{\n\t\t\t\t$stripeacc = $stripe->getStripeAccount($service);\t\t\t\t// No need of network access for this. May return "
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

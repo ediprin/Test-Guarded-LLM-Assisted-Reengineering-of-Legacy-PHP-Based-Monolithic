@@ -1,0 +1,137 @@
+{
+  "candidate_id": "roundcubemail-C0454",
+  "subject_id": "roundcubemail",
+  "file": "plugins/managesieve/lib/Roundcube/rcube_sieve_engine.php",
+  "lines": [
+    1,
+    3085
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 533
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "_disabled",
+      "_framed",
+      "_header",
+      "_name",
+      "_newset",
+      "_set",
+      "_seteditraw",
+      "rawsetcontent"
+    ],
+    "session_keys": [
+      "imap_delimiter",
+      "managesieve-compact-form",
+      "managesieve_current",
+      "managesieve_user_script",
+      "password",
+      "username"
+    ],
+    "database_tables": [
+      "config",
+      "file",
+      "internal",
+      "the"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#action_addheader",
+      "#action_deleteheader",
+      "#action_notify",
+      "#action_notifyoption_div",
+      "#action_set",
+      "#action_vacation",
+      "#actionadd%s",
+      "#actiondel%s",
+      "#actionrow",
+      "#actions",
+      "#disabled",
+      "#redirect_target",
+      "#rule_advanced",
+      "#rule_comp",
+      "#rule_date_header_div",
+      "#rule_duplicate_div",
+      "#rule_index_div",
+      "#rule_mime",
+      "#rule_mime_part",
+      "#rule_mod"
+    ],
+    "forms": [
+      "./",
+      "filtersetform"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "_disabled",
+      "_framed",
+      "_header",
+      "_name",
+      "_newset",
+      "_set",
+      "_seteditraw",
+      "rawsetcontent"
+    ],
+    "must_preserve_session_keys": [
+      "imap_delimiter",
+      "managesieve-compact-form",
+      "managesieve_current",
+      "managesieve_user_script",
+      "password",
+      "username"
+    ],
+    "must_preserve_database_tables": [
+      "config",
+      "file",
+      "internal",
+      "the"
+    ],
+    "must_preserve_dom_selectors": [
+      "#action_addheader",
+      "#action_deleteheader",
+      "#action_notify",
+      "#action_notifyoption_div",
+      "#action_set",
+      "#action_vacation",
+      "#actionadd%s",
+      "#actiondel%s",
+      "#actionrow",
+      "#actions",
+      "#disabled",
+      "#redirect_target",
+      "#rule_advanced",
+      "#rule_comp",
+      "#rule_date_header_div",
+      "#rule_duplicate_div",
+      "#rule_index_div",
+      "#rule_mime",
+      "#rule_mime_part",
+      "#rule_mod"
+    ],
+    "must_preserve_forms": [
+      "./",
+      "filtersetform"
+    ]
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

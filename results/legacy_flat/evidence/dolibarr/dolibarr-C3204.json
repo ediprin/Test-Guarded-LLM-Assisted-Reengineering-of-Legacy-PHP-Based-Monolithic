@@ -1,0 +1,73 @@
+{
+  "candidate_id": "dolibarr-C3204",
+  "subject_id": "dolibarr",
+  "file": "htdocs/core/class/html.formfile.class.php",
+  "lines": [
+    1473,
+    1722
+  ],
+  "candidate_type": "long_method_or_region",
+  "issues": [
+    {
+      "type": "Long or Complex Region",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 56
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "section"
+    ],
+    "session_keys": [],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$obj->rowid;\n\t\t\t\t//print $formfile->getDocumentsLink($modulepart, $filename, $filedir);\n\n\t\t\t\tprint ",
+      "#.$object->id.",
+      ".center",
+      ".div-table-responsive-no-min",
+      ".liste_titre",
+      ".maxwidth100onsmartphone",
+      ".noborder",
+      ".nodrag",
+      ".nodrop",
+      ".oddeven",
+      ".right"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "section"
+    ],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#.$obj->rowid;\n\t\t\t\t//print $formfile->getDocumentsLink($modulepart, $filename, $filedir);\n\n\t\t\t\tprint ",
+      "#.$object->id.",
+      ".center",
+      ".div-table-responsive-no-min",
+      ".liste_titre",
+      ".maxwidth100onsmartphone",
+      ".noborder",
+      ".nodrag",
+      ".nodrop",
+      ".oddeven",
+      ".right"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

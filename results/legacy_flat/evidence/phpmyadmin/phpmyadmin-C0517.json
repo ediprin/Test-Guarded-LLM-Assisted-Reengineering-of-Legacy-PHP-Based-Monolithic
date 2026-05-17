@@ -1,0 +1,60 @@
+{
+  "candidate_id": "phpmyadmin-C0517",
+  "subject_id": "phpmyadmin",
+  "file": "libraries/classes/ReplicationGui.php",
+  "lines": [
+    969,
+    1040
+  ],
+  "candidate_type": "session_dependent_logic",
+  "issues": [
+    {
+      "type": "Session-Dependent Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 5
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "hostname",
+      "pma_pw",
+      "text_port",
+      "username"
+    ],
+    "session_keys": [
+      "replication"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "hostname",
+      "pma_pw",
+      "text_port",
+      "username"
+    ],
+    "must_preserve_session_keys": [
+      "replication"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Guard",
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

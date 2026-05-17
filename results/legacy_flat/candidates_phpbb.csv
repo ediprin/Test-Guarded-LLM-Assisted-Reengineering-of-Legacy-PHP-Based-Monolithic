@@ -1,0 +1,1085 @@
+candidate_id,project,file,start_line,end_line,candidate_type,dominant_issue,complexity_proxy,request_parameters,session_keys,database_tables,dom_selectors,forms,allowed_transformations,oracle_status
+phpbb-C0001,phpbb,build/build_helper.php,142,327,long_method_or_region,Long or Complex Region,29,,,,,,Extract Method,pending
+phpbb-C0002,phpbb,phpBB/index.php,1,246,mixed_php_html_sql,SQL in Presentation Logic,28,,,,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0003,phpbb,phpBB/mcp.php,1,326,sql_data_access,SQL/Data Access Region,57,quickmod,,the,#logs,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0004,phpbb,phpBB/memberlist.php,1,1633,sql_data_access,SQL/Data Access Region,273,submit,,clause;here;profile;the;users,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0005,phpbb,phpBB/posting.php,1,1984,mixed_php_html_sql,SQL in Presentation Logic,385,add_file;attach_sig;cancel;cancel_unglobalise;delete_file;disable_bbcode;disable_magic_url;disable_smilies;draft_loaded;load;lock_post;lock_topic;notify;poll_delete;poll_vote_change;preview;save;soft_delete,,database;event;post;the,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0006,phpbb,phpBB/search.php,1,1552,mixed_php_html_sql,SQL in Presentation Logic,261,,,URL;active;optimized;string;the,.posthilit,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0007,phpbb,phpBB/ucp.php,1,400,mixed_php_html_sql,SQL in Presentation Logic,48,not_agreed;p,,deletion,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0008,phpbb,phpBB/viewforum.php,1,1030,mixed_php_html_sql,SQL in Presentation Logic,169,e;sort,,sticky;the,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0009,phpbb,phpBB/viewonline.php,1,517,mixed_php_html_sql,SQL in Presentation Logic,74,,,,.username-coloured,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0010,phpbb,phpBB/viewtopic.php,1,2306,mixed_php_html_sql,SQL in Presentation Logic,373,e;f;sort,,account;forum;template;the;topic;user;users;where,.display_post;.posthilit,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0011,phpbb,tests/avatar/manager_test.php,1,441,sql_data_access,SQL/Data Access Region,15,,,,"# . $id;
+		$result = $this->db->sql_query_limit($sql, 1);
+
+		$row = $this->manager->clean_row($this->db->sql_fetchrow($result), substr($prefix, 0, -1));
+		$this->db->sql_freeresult($result);
+
+		foreach ($expected as $key => $value)
+		{
+			$this->assertEquals($value, $row[$key]);
+		}
+	}
+
+	/**
+	 * @dependsOn test_handle_avatar_delete
+	 */
+	public function test_user_group_avatar_deleted()
+	{
+		$sql = ",,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0012,phpbb,tests/bbcode/parser_test.php,19,245,long_method_or_region,Long or Complex Region,4,,,,,,Extract Method,pending
+phpbb-C0013,phpbb,tests/content_visibility/delete_post_test.php,25,288,long_method_or_region,Long or Complex Region,1,,,,,,Extract Method,pending
+phpbb-C0014,phpbb,tests/content_visibility/delete_post_test.php,288,355,sql_data_access,SQL/Data Access Region,2,,,phpbb_forums;phpbb_posts;phpbb_topics,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0015,phpbb,tests/content_visibility/get_forums_visibility_sql_test.php,21,124,long_method_or_region,Long or Complex Region,1,,,,,,Extract Method,pending
+phpbb-C0016,phpbb,tests/content_visibility/get_global_visibility_sql_test.php,21,124,long_method_or_region,Long or Complex Region,1,,,,,,Extract Method,pending
+phpbb-C0017,phpbb,tests/controller/common_helper_route.php,149,185,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+phpbb-C0018,phpbb,tests/controller/common_helper_route.php,193,229,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+phpbb-C0019,phpbb,tests/controller/common_helper_route.php,237,273,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+phpbb-C0020,phpbb,tests/controller/common_helper_route.php,281,317,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+phpbb-C0021,phpbb,tests/controller/common_helper_route.php,325,361,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+phpbb-C0022,phpbb,tests/controller/common_helper_route.php,369,405,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+phpbb-C0023,phpbb,tests/controller/common_helper_route.php,413,446,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+phpbb-C0024,phpbb,tests/controller/common_helper_route.php,454,490,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+phpbb-C0025,phpbb,tests/dbal/auto_increment_test.php,62,103,sql_data_access,SQL/Data Access Region,1,,,prefix_table_name,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0026,phpbb,tests/dbal/migrator_test.php,1,358,sql_data_access,SQL/Data Access Region,19,,,phpbb_config;phpbb_migrations,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0027,phpbb,tests/dbal/migrator_test.php,88,131,sql_data_access,SQL/Data Access Region,1,,,phpbb_config;phpbb_migrations,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0028,phpbb,tests/dbal/migrator_test.php,199,254,sql_data_access,SQL/Data Access Region,4,,,phpbb_config;phpbb_migrations,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0029,phpbb,tests/dbal/migrator_tool_permission_test.php,193,222,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+phpbb-C0030,phpbb,tests/dbal/order_lower_test.php,21,75,sql_data_access,SQL/Data Access Region,3,,,phpbb_styles,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0031,phpbb,tests/dbal/select_test.php,1,474,sql_data_access,SQL/Data Access Region,20,,,phpbb_users,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0032,phpbb,tests/download/http_user_agent_test.php,18,130,long_method_or_region,Long or Complex Region,1,,,,,,Extract Method,pending
+phpbb-C0033,phpbb,tests/extension/modules_test.php,57,177,long_method_or_region,Long or Complex Region,3,,,,,,Extract Method,pending
+phpbb-C0034,phpbb,tests/functional/download_test.php,1,293,sql_data_access,SQL/Data Access Region,27,,,phpbb_attachments;phpbb_forums;phpbb_posts;phpbb_topics,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0035,phpbb,tests/functional/download_test.php,226,294,sql_data_access,SQL/Data Access Region,12,,,phpbb_attachments;phpbb_forums;phpbb_posts;phpbb_topics,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0036,phpbb,tests/functional/extension_acp_test.php,1,237,sql_data_access,SQL/Data Access Region,25,,,phpbb_ext,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0037,phpbb,tests/functional/extension_acp_test.php,40,84,sql_data_access,SQL/Data Access Region,1,,,phpbb_ext,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0038,phpbb,tests/functional/extension_module_test.php,43,115,sql_data_access,SQL/Data Access Region,1,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0039,phpbb,tests/functional/feed_test.php,1,1510,sql_data_access,SQL/Data Access Region,67,,,phpbb_attachments;phpbb_forums;phpbb_posts;phpbb_topics,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0040,phpbb,tests/functional/feed_test.php,1013,1112,long_method_or_region,Long or Complex Region,1,,,,,,Extract Method,pending
+phpbb-C0041,phpbb,tests/functional/feed_test.php,1112,1211,long_method_or_region,Long or Complex Region,1,,,,,,Extract Method,pending
+phpbb-C0042,phpbb,tests/functional/feed_test.php,1311,1368,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+phpbb-C0043,phpbb,tests/functional/feed_test.php,1368,1443,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+phpbb-C0044,phpbb,tests/functional/feed_test.php,1443,1511,sql_data_access,SQL/Data Access Region,12,,,phpbb_attachments;phpbb_forums;phpbb_posts;phpbb_topics,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0045,phpbb,tests/functional/posting_test.php,1,308,mixed_php_html,Mixed PHP/HTML,25,,,,.postlink;.text-strong,,Separate PHP Logic from Markup;Extract View Helper,pending
+phpbb-C0046,phpbb,tests/functional/prune_shadow_topic_test.php,1,211,sql_data_access,SQL/Data Access Region,17,,,phpbb_forums;phpbb_posts;phpbb_topics,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0047,phpbb,tests/functional/prune_shadow_topic_test.php,159,212,sql_data_access,SQL/Data Access Region,10,,,phpbb_forums;phpbb_posts;phpbb_topics,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0048,phpbb,tests/functional/user_password_reset_test.php,1,169,sql_data_access,SQL/Data Access Region,12,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0049,phpbb,tests/functional/viewforum_paging_test.php,1,256,sql_data_access,SQL/Data Access Region,18,,,phpbb_forums;phpbb_posts;phpbb_topics,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0050,phpbb,tests/functional/viewforum_paging_test.php,204,257,sql_data_access,SQL/Data Access Region,10,,,phpbb_forums;phpbb_posts;phpbb_topics,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0051,phpbb,tests/functional/visibility_disapprove_test.php,1,323,sql_data_access,SQL/Data Access Region,22,,,phpbb_forums;phpbb_posts;phpbb_topics,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0052,phpbb,tests/functional/visibility_disapprove_test.php,271,324,sql_data_access,SQL/Data Access Region,10,,,phpbb_forums;phpbb_posts;phpbb_topics,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0053,phpbb,tests/functional/visibility_reapprove_test.php,1,419,sql_data_access,SQL/Data Access Region,27,,,phpbb_forums;phpbb_posts;phpbb_topics,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0054,phpbb,tests/functional/visibility_reapprove_test.php,367,420,sql_data_access,SQL/Data Access Region,10,,,phpbb_forums;phpbb_posts;phpbb_topics,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0055,phpbb,tests/functional/visibility_softdelete_test.php,1,841,sql_data_access,SQL/Data Access Region,31,,,phpbb_forums;phpbb_posts;phpbb_topics,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0056,phpbb,tests/functional/visibility_softdelete_test.php,789,842,sql_data_access,SQL/Data Access Region,10,,,phpbb_forums;phpbb_posts;phpbb_topics,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0057,phpbb,tests/functions/build_url_test.php,37,81,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+phpbb-C0058,phpbb,tests/functions/make_clickable_email_test.php,29,150,long_method_or_region,Long or Complex Region,5,,,,,,Extract Method,pending
+phpbb-C0059,phpbb,tests/functions/make_clickable_test.php,1,190,mixed_php_html,Mixed PHP/HTML,33,,,,.postlink;.postlink-local,,Separate PHP Logic from Markup;Extract View Helper,pending
+phpbb-C0060,phpbb,tests/functions/make_clickable_test.php,28,85,long_method_or_region,Long or Complex Region,15,,,,.postlink;.postlink-local,,Extract Method,pending
+phpbb-C0061,phpbb,tests/functions/obtain_online_test.php,1,229,mixed_php_html_sql,SQL in Presentation Logic,2,,,phpbb_sessions,.username,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0062,phpbb,tests/functions_acp/insert_config_array_test.php,30,137,long_method_or_region,Long or Complex Region,1,,,,,,Extract Method,pending
+phpbb-C0063,phpbb,tests/functions_user/delete_user_test.php,51,184,long_method_or_region,Long or Complex Region,1,,,,,,Extract Method,pending
+phpbb-C0064,phpbb,tests/functions_user/delete_user_test.php,333,380,sql_data_access,SQL/Data Access Region,1,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0065,phpbb,tests/functions_user/group_user_attributes_test.php,23,128,long_method_or_region,Long or Complex Region,7,,,,,,Extract Method,pending
+phpbb-C0066,phpbb,tests/groupposition/teampage_test.php,328,472,long_method_or_region,Long or Complex Region,1,,,,,,Extract Method,pending
+phpbb-C0067,phpbb,tests/groupposition/teampage_test.php,493,637,long_method_or_region,Long or Complex Region,1,,,,,,Extract Method,pending
+phpbb-C0068,phpbb,tests/log/add_test.php,52,104,sql_data_access,SQL/Data Access Region,7,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0069,phpbb,tests/log/delete_test.php,40,139,long_method_or_region,Long or Complex Region,1,,,,,,Extract Method,pending
+phpbb-C0070,phpbb,tests/log/function_add_log_test.php,21,145,long_method_or_region,Long or Complex Region,1,,,,,,Extract Method,pending
+phpbb-C0071,phpbb,tests/log/function_add_log_test.php,145,199,sql_data_access,SQL/Data Access Region,8,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0072,phpbb,tests/log/function_view_log_test.php,25,372,long_method_or_region,Long or Complex Region,6,,,,.username,,Extract Method,pending
+phpbb-C0073,phpbb,tests/migrator/get_schema_steps_test.php,23,200,long_method_or_region,Long or Complex Region,1,,,,,,Extract Method,pending
+phpbb-C0074,phpbb,tests/mock/cache.php,42,63,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+phpbb-C0075,phpbb,tests/notification/base.php,53,151,sql_data_access,SQL/Data Access Region,3,,,phpbb_notification_types;phpbb_notifications;phpbb_user_notifications,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0076,phpbb,tests/notification/notification_test.php,104,331,sql_data_access,SQL/Data Access Region,2,,,phpbb_notification_types,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0077,phpbb,tests/notification/submit_post_base.php,50,158,long_method_or_region,Long or Complex Region,2,,,,,,Extract Method,pending
+phpbb-C0078,phpbb,tests/notification/submit_post_type_topic_test.php,98,154,sql_data_access,SQL/Data Access Region,2,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0079,phpbb,tests/pagination/pagination_test.php,66,169,long_method_or_region,Long or Complex Region,19,,,,,,Extract Method,pending
+phpbb-C0080,phpbb,tests/passwords/drivers_test.php,287,417,long_method_or_region,Long or Complex Region,1,,,,,,Extract Method,pending
+phpbb-C0081,phpbb,tests/path_helper/path_helper_test.php,268,327,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phpbb-C0082,phpbb,tests/profilefields/type_date_test.php,103,178,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+phpbb-C0083,phpbb,tests/profilefields/type_string_test.php,59,237,long_method_or_region,Long or Complex Region,6,,,,,,Extract Method,pending
+phpbb-C0084,phpbb,tests/request/request_var_test.php,1,275,form_handling,Request Handling Mixed With Rendering,19,var,,,,,Extract Validation Helper;Extract Method;Extract View Helper,pending
+phpbb-C0085,phpbb,tests/request/request_var_test.php,127,276,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+phpbb-C0086,phpbb,tests/search/common_test_case.php,18,197,long_method_or_region,Long or Complex Region,1,,,,,,Extract Method,pending
+phpbb-C0087,phpbb,tests/search/native_test.php,44,250,long_method_or_region,Long or Complex Region,1,,,,,,Extract Method,pending
+phpbb-C0088,phpbb,tests/session/append_sid_test.php,17,48,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+phpbb-C0089,phpbb,tests/session/extract_page_test.php,23,159,long_method_or_region,Long or Complex Region,6,,,,,,Extract Method,pending
+phpbb-C0090,phpbb,tests/template/template_includejs_test.php,1,109,mixed_php_html,Mixed PHP/HTML,17,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+phpbb-C0091,phpbb,tests/template/template_includejs_test.php,18,99,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+phpbb-C0092,phpbb,tests/template/template_test.php,21,517,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phpbb-C0093,phpbb,tests/template/template_test.php,649,854,long_method_or_region,Long or Complex Region,1,,,,,,Extract Method,pending
+phpbb-C0094,phpbb,tests/test_framework/phpbb_database_test_case.php,1,320,sql_data_access,SQL/Data Access Region,26,,,INFORMATION_SCHEMA;database;this,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0095,phpbb,tests/test_framework/phpbb_database_test_case.php,151,228,sql_data_access,SQL/Data Access Region,11,,,INFORMATION_SCHEMA,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0096,phpbb,tests/test_framework/phpbb_database_test_connection_manager.php,1,652,sql_data_access,SQL/Data Access Region,79,,,USER_DEPENDENCIES;USER_SEQUENCES;USER_TABLES;USER_TRIGGERS;USER_TRIGGER_COLS;a;effect;information_schema;one;pg_stat_user_tables;sqlite_master;sqlite_sequence;sysobjects;the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0097,phpbb,tests/test_framework/phpbb_database_test_connection_manager.php,52,177,sql_data_access,SQL/Data Access Region,22,,,the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0098,phpbb,tests/test_framework/phpbb_database_test_connection_manager.php,191,267,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+phpbb-C0099,phpbb,tests/test_framework/phpbb_database_test_connection_manager.php,267,318,sql_data_access,SQL/Data Access Region,11,,,USER_TABLES;pg_stat_user_tables;sqlite_master;sysobjects,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0100,phpbb,tests/test_framework/phpbb_database_test_connection_manager.php,330,419,sql_data_access,SQL/Data Access Region,10,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0101,phpbb,tests/test_framework/phpbb_database_test_connection_manager.php,419,479,sql_data_access,SQL/Data Access Region,3,,,a,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0102,phpbb,tests/test_framework/phpbb_database_test_connection_manager.php,479,524,sql_data_access,SQL/Data Access Region,6,,,USER_SEQUENCES;information_schema,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0103,phpbb,tests/test_framework/phpbb_database_test_connection_manager.php,545,653,sql_data_access,SQL/Data Access Region,14,,,USER_DEPENDENCIES;USER_SEQUENCES;USER_TRIGGERS;USER_TRIGGER_COLS;effect;information_schema;one;sqlite_sequence;the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0104,phpbb,tests/test_framework/phpbb_functional_test_case.php,1,1307,sql_data_access,SQL/Data Access Region,103,,,a;phpBB;query,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0105,phpbb,tests/test_framework/phpbb_functional_test_case.php,78,117,sql_data_access,SQL/Data Access Region,4,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0106,phpbb,tests/test_framework/phpbb_functional_test_case.php,272,411,long_method_or_region,Long or Complex Region,9,,,,,,Extract Method,pending
+phpbb-C0107,phpbb,tests/test_framework/phpbb_functional_test_case.php,455,529,sql_data_access,SQL/Data Access Region,3,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0108,phpbb,tests/test_framework/phpbb_functional_test_case.php,617,659,sql_data_access,SQL/Data Access Region,3,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0109,phpbb,tests/test_framework/phpbb_functional_test_case.php,659,704,sql_data_access,SQL/Data Access Region,3,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0110,phpbb,tests/test_framework/phpbb_test_case_helpers.php,109,213,long_method_or_region,Long or Complex Region,21,,,,,,Extract Method,pending
+phpbb-C0111,phpbb,tests/test_framework/phpbb_test_case_helpers.php,213,268,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phpbb-C0112,phpbb,tests/test_framework/phpbb_test_case_helpers.php,304,579,long_method_or_region,Long or Complex Region,27,,,,,,Extract Method,pending
+phpbb-C0113,phpbb,tests/test_framework/phpbb_ui_test_case.php,1,593,sql_data_access,SQL/Data Access Region,47,,,the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0114,phpbb,tests/test_framework/phpbb_ui_test_case.php,51,98,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phpbb-C0115,phpbb,tests/test_framework/phpbb_ui_test_case.php,173,302,long_method_or_region,Long or Complex Region,8,,,,,,Extract Method,pending
+phpbb-C0116,phpbb,tests/text_processing/generate_text_for_storage_test.php,52,179,long_method_or_region,Long or Complex Region,1,,,,,,Extract Method,pending
+phpbb-C0117,phpbb,tests/text_processing/make_clickable_test.php,1,150,mixed_php_html,Mixed PHP/HTML,25,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+phpbb-C0118,phpbb,tests/text_processing/make_clickable_test.php,16,96,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+phpbb-C0119,phpbb,tests/text_processing/message_parser_test.php,208,508,long_method_or_region,Long or Complex Region,1,,,,,,Extract Method,pending
+phpbb-C0120,phpbb,tests/tree/nestedset_forum_base.php,67,127,sql_data_access,SQL/Data Access Region,4,,,a;phpbb_forums,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0121,phpbb,tests/tree/nestedset_forum_move_test.php,18,125,long_method_or_region,Long or Complex Region,1,,,,,,Extract Method,pending
+phpbb-C0122,phpbb,tests/tree/nestedset_forum_move_test.php,229,369,long_method_or_region,Long or Complex Region,1,,,,,,Extract Method,pending
+phpbb-C0123,phpbb,tests/tree/nestedset_forum_move_test.php,418,525,long_method_or_region,Long or Complex Region,1,,,,,,Extract Method,pending
+phpbb-C0124,phpbb,tests/tree/nestedset_forum_test.php,50,115,sql_data_access,SQL/Data Access Region,1,,,phpbb_forums,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0125,phpbb,tests/version/version_helper_remote_test.php,51,198,long_method_or_region,Long or Complex Region,1,,,,,,Extract Method,pending
+phpbb-C0126,phpbb,tests/version/version_test.php,87,199,long_method_or_region,Long or Complex Region,1,,,,,,Extract Method,pending
+phpbb-C0127,phpbb,tests/version/version_test.php,345,520,long_method_or_region,Long or Complex Region,1,,,,,,Extract Method,pending
+phpbb-C0128,phpbb,tests/version/version_test.php,550,815,long_method_or_region,Long or Complex Region,5,,,,,,Extract Method,pending
+phpbb-C0129,phpbb,tests/text_formatter/s9e/bbcode_merger_test.php,1,280,mixed_php_html,Mixed PHP/HTML,25,,,,.prime_bbcode_note;.prime_bbcode_note_spur;.prime_bbcode_note_text;.spoiler,,Separate PHP Logic from Markup;Extract View Helper,pending
+phpbb-C0130,phpbb,tests/text_formatter/s9e/bbcode_merger_test.php,37,281,long_method_or_region,Long or Complex Region,24,,,,.prime_bbcode_note;.prime_bbcode_note_spur;.prime_bbcode_note_text;.spoiler,,Extract Method,pending
+phpbb-C0131,phpbb,tests/text_formatter/s9e/default_formatting_test.php,1,313,mixed_php_html_sql,SQL in Presentation Logic,17,,,make_clickable_test;phpbb_textformatter_s9e_utils_test;textual,#123;.codebox;.emoji;.inline-attachment;.postimage;.postlink;.responsive-hide;.smilies;.uncited,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0132,phpbb,tests/text_formatter/s9e/default_formatting_test.php,48,314,sql_data_access,SQL/Data Access Region,15,,,make_clickable_test;phpbb_textformatter_s9e_utils_test;textual,#123;.codebox;.emoji;.inline-attachment;.postimage;.postlink;.responsive-hide;.smilies;.uncited,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0133,phpbb,tests/text_formatter/s9e/renderer_test.php,146,271,long_method_or_region,Long or Complex Region,2,,,,.postimage;.postlink;.smilies,,Extract Method,pending
+phpbb-C0134,phpbb,tests/text_formatter/s9e/utils_test.php,123,235,long_method_or_region,Long or Complex Region,1,,,,,,Extract Method,pending
+phpbb-C0135,phpbb,phpBB/develop/add_permissions.php,1,415,sql_data_access,SQL/Data Access Region,44,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0136,phpbb,phpBB/develop/add_permissions.php,242,416,sql_data_access,SQL/Data Access Region,33,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0137,phpbb,phpBB/develop/adjust_avatars.php,1,145,sql_data_access,SQL/Data Access Region,13,,,your,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0138,phpbb,phpBB/develop/adjust_bbcodes.php,1,172,sql_data_access,SQL/Data Access Region,13,,,pms;posts;your,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0139,phpbb,phpBB/develop/adjust_magic_urls.php,1,124,mixed_php_html_sql,SQL in Presentation Logic,13,,,your,.postlink;.postlink-local,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0140,phpbb,phpBB/develop/adjust_sizes.php,1,130,sql_data_access,SQL/Data Access Region,17,,,pc;your,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0141,phpbb,phpBB/develop/adjust_sizes.php,27,131,sql_data_access,SQL/Data Access Region,13,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0142,phpbb,phpBB/develop/adjust_smilies.php,1,128,sql_data_access,SQL/Data Access Region,12,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0143,phpbb,phpBB/develop/adjust_uids.php,1,128,sql_data_access,SQL/Data Access Region,16,,,your,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0144,phpbb,phpBB/develop/benchmark.php,1,452,mixed_php_html_sql,SQL in Presentation Logic,40,,,groups;posts;topics;user_group;users,,<?php echo $PHP_SELF?>,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0145,phpbb,phpBB/develop/benchmark.php,251,332,sql_data_access,SQL/Data Access Region,8,,,posts,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0146,phpbb,phpBB/develop/benchmark.php,363,453,sql_data_access,SQL/Data Access Region,6,,,groups;user_group;users,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0147,phpbb,phpBB/develop/check_flash_bbcodes.php,1,170,sql_data_access,SQL/Data Access Region,22,,,php;support,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0148,phpbb,phpBB/develop/create_search_index.php,1,140,sql_data_access,SQL/Data Access Region,21,,,the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0149,phpbb,phpBB/develop/create_variable_overview.php,1,545,mixed_php_html,Mixed PHP/HTML,73,,,,.copyright;.gen;.maintitle,,Separate PHP Logic from Markup;Extract View Helper,pending
+phpbb-C0150,phpbb,phpBB/develop/export_events_for_wiki.php,53,139,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+phpbb-C0151,phpbb,phpBB/develop/fill.php,1,189,mixed_php_html_sql,SQL in Presentation Logic,26,explain,,,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0152,phpbb,phpBB/develop/generate_utf_confusables.php,53,179,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+phpbb-C0153,phpbb,phpBB/develop/imageset_to_css.php,1,374,form_handling,Request Handling Mixed With Rendering,57,download,,,#code-,,Extract Validation Helper;Extract Method;Extract View Helper,pending
+phpbb-C0154,phpbb,phpBB/develop/imageset_to_css.php,154,216,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+phpbb-C0155,phpbb,phpBB/develop/imageset_to_css.php,296,375,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+phpbb-C0156,phpbb,phpBB/develop/lang_duplicates.php,1,141,mixed_php_html,Mixed PHP/HTML,25,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+phpbb-C0157,phpbb,phpBB/develop/merge_post_tables.php,1,199,sql_data_access,SQL/Data Access Region,27,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0158,phpbb,phpBB/develop/namespacify.php,28,195,long_method_or_region,Long or Complex Region,36,,,,,,Extract Method,pending
+phpbb-C0159,phpbb,phpBB/develop/repair_bots.php,95,150,sql_data_access,SQL/Data Access Region,4,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0160,phpbb,phpBB/develop/search_fill.php,1,127,mixed_php_html_sql,SQL in Presentation Logic,13,,,posting,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0161,phpbb,phpBB/download/file.php,1,326,sql_data_access,SQL/Data Access Region,36,avatar,,download;session,# . $attachment[,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0162,phpbb,phpBB/includes/bbcode.php,1,698,mixed_php_html_sql,SQL in Presentation Logic,113,,,HTML;PHP;bbcode_match;tags;their,.postimage;.syntaxdefault,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0163,phpbb,phpBB/includes/bbcode.php,52,141,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+phpbb-C0164,phpbb,phpBB/includes/bbcode.php,141,461,sql_data_access,SQL/Data Access Region,61,,,bbcode_match,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0165,phpbb,phpBB/includes/bbcode.php,461,526,long_method_or_region,Long or Complex Region,20,,,,.postimage,,Extract Method,pending
+phpbb-C0166,phpbb,phpBB/includes/functions.php,1,4834,mixed_php_html_sql,SQL in Presentation Logic,1032,cancel,,HTML;HTTP_VERSION;POST;a;an;array;cookie;custom;db;error;for;hidden;obtain_users_online;of;path;the;topic,#acp;#content;#errorpage;#page-footer;#page-header;#wrap;.[\w-]+;.avatar;.errorbox;.panel,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0167,phpbb,phpBB/includes/functions.php,149,231,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phpbb-C0168,phpbb,phpBB/includes/functions.php,380,438,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+phpbb-C0169,phpbb,phpBB/includes/functions.php,469,563,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+phpbb-C0170,phpbb,phpBB/includes/functions.php,563,941,sql_data_access,SQL/Data Access Region,48,,,the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0171,phpbb,phpBB/includes/functions.php,985,1100,sql_data_access,SQL/Data Access Region,21,,,the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0172,phpbb,phpBB/includes/functions.php,1100,1246,sql_data_access,SQL/Data Access Region,22,,,topic,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0173,phpbb,phpBB/includes/functions.php,1246,1354,sql_data_access,SQL/Data Access Region,20,,,a;cookie;for;of,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0174,phpbb,phpBB/includes/functions.php,1374,1495,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+phpbb-C0175,phpbb,phpBB/includes/functions.php,1547,1645,long_method_or_region,Long or Complex Region,34,,,,,,Extract Method,pending
+phpbb-C0176,phpbb,phpBB/includes/functions.php,1645,1710,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+phpbb-C0177,phpbb,phpBB/includes/functions.php,1710,1843,long_method_or_region,Long or Complex Region,22,,,,,,Extract Method,pending
+phpbb-C0178,phpbb,phpBB/includes/functions.php,1843,1871,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phpbb-C0179,phpbb,phpBB/includes/functions.php,2076,2122,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+phpbb-C0180,phpbb,phpBB/includes/functions.php,2122,2233,long_method_or_region,Long or Complex Region,20,cancel,,,,,Extract Method,pending
+phpbb-C0181,phpbb,phpBB/includes/functions.php,2233,2498,long_method_or_region,Long or Complex Region,47,,,,,,Extract Method,pending
+phpbb-C0182,phpbb,phpBB/includes/functions.php,2498,2593,sql_data_access,SQL/Data Access Region,8,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0183,phpbb,phpBB/includes/functions.php,2712,2748,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+phpbb-C0184,phpbb,phpBB/includes/functions.php,2748,2842,long_method_or_region,Long or Complex Region,307,,,,.[\w-]+,,Extract Method,pending
+phpbb-C0185,phpbb,phpBB/includes/functions.php,2930,2999,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+phpbb-C0186,phpbb,phpBB/includes/functions.php,2999,3078,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+phpbb-C0187,phpbb,phpBB/includes/functions.php,3078,3234,long_method_or_region,Long or Complex Region,33,,,,,,Extract Method,pending
+phpbb-C0188,phpbb,phpBB/includes/functions.php,3234,3492,long_method_or_region,Long or Complex Region,44,,,,#acp;#content;#errorpage;#page-footer;#page-header;#wrap;.errorbox;.panel,,Extract Method,pending
+phpbb-C0189,phpbb,phpBB/includes/functions.php,3520,3568,sql_data_access,SQL/Data Access Region,3,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0190,phpbb,phpBB/includes/functions.php,3568,3632,sql_data_access,SQL/Data Access Region,10,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0191,phpbb,phpBB/includes/functions.php,3632,3786,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+phpbb-C0192,phpbb,phpBB/includes/functions.php,3821,3930,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+phpbb-C0193,phpbb,phpBB/includes/functions.php,4054,4134,long_method_or_region,Long or Complex Region,12,,,,.avatar,,Extract Method,pending
+phpbb-C0194,phpbb,phpBB/includes/functions.php,4134,4530,sql_data_access,SQL/Data Access Region,73,,,a,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0195,phpbb,phpBB/includes/functions.php,4608,4712,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+phpbb-C0196,phpbb,phpBB/includes/functions_acp.php,1,719,mixed_php_html,Mixed PHP/HTML,141,,,,.radio,,Separate PHP Logic from Markup;Extract View Helper,pending
+phpbb-C0197,phpbb,phpBB/includes/functions_acp.php,25,146,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+phpbb-C0198,phpbb,phpBB/includes/functions_acp.php,238,420,long_method_or_region,Long or Complex Region,60,,,,.radio,,Extract Method,pending
+phpbb-C0199,phpbb,phpBB/includes/functions_acp.php,420,639,long_method_or_region,Long or Complex Region,44,,,,,,Extract Method,pending
+phpbb-C0200,phpbb,phpBB/includes/functions_acp.php,639,706,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+phpbb-C0201,phpbb,phpBB/includes/functions_admin.php,1,3105,sql_data_access,SQL/Data Access Region,384,,,a;chunks;clause;extensions;foe;foes;forum;one;pg_database;pg_proc;posted;sys;sysfiles;the;their;user_segments;where;which,.disabled-option;.sep,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0202,phpbb,phpBB/includes/functions_admin.php,66,161,sql_data_access,SQL/Data Access Region,19,,,,.disabled-option,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0203,phpbb,phpBB/includes/functions_admin.php,188,221,sql_data_access,SQL/Data Access Region,9,,,,.sep,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0204,phpbb,phpBB/includes/functions_admin.php,221,294,sql_data_access,SQL/Data Access Region,13,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0205,phpbb,phpBB/includes/functions_admin.php,294,346,sql_data_access,SQL/Data Access Region,8,,,one,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0206,phpbb,phpBB/includes/functions_admin.php,346,482,sql_data_access,SQL/Data Access Region,17,,,clause;the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0207,phpbb,phpBB/includes/functions_admin.php,482,530,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+phpbb-C0208,phpbb,phpBB/includes/functions_admin.php,530,606,sql_data_access,SQL/Data Access Region,8,,,where;which,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0209,phpbb,phpBB/includes/functions_admin.php,606,735,sql_data_access,SQL/Data Access Region,5,,,posted,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0210,phpbb,phpBB/includes/functions_admin.php,735,875,sql_data_access,SQL/Data Access Region,13,,,the;which,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0211,phpbb,phpBB/includes/functions_admin.php,875,1172,sql_data_access,SQL/Data Access Region,29,,,chunks;the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0212,phpbb,phpBB/includes/functions_admin.php,1194,1248,sql_data_access,SQL/Data Access Region,8,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0213,phpbb,phpBB/includes/functions_admin.php,1248,1301,sql_data_access,SQL/Data Access Region,7,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0214,phpbb,phpBB/includes/functions_admin.php,1334,2272,sql_data_access,SQL/Data Access Region,136,,,a;the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0215,phpbb,phpBB/includes/functions_admin.php,2272,2388,sql_data_access,SQL/Data Access Region,11,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0216,phpbb,phpBB/includes/functions_admin.php,2388,2430,sql_data_access,SQL/Data Access Region,4,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0217,phpbb,phpBB/includes/functions_admin.php,2430,2619,sql_data_access,SQL/Data Access Region,22,,,which,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0218,phpbb,phpBB/includes/functions_admin.php,2640,2753,sql_data_access,SQL/Data Access Region,16,,,foes,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0219,phpbb,phpBB/includes/functions_admin.php,2753,2815,sql_data_access,SQL/Data Access Region,11,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0220,phpbb,phpBB/includes/functions_admin.php,2843,2985,sql_data_access,SQL/Data Access Region,26,,,pg_database;pg_proc;sys;sysfiles;the;user_segments,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0221,phpbb,phpBB/includes/functions_admin.php,2985,3027,sql_data_access,SQL/Data Access Region,5,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0222,phpbb,phpBB/includes/functions_compatibility.php,1,513,sql_data_access,SQL/Data Access Region,55,,,common;foe;remotely;specified;the;which,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0223,phpbb,phpBB/includes/functions_compatibility.php,315,357,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+phpbb-C0224,phpbb,phpBB/includes/functions_compress.php,37,107,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+phpbb-C0225,phpbb,phpBB/includes/functions_compress.php,246,409,long_method_or_region,Long or Complex Region,34,,,,,,Extract Method,pending
+phpbb-C0226,phpbb,phpBB/includes/functions_compress.php,591,709,long_method_or_region,Long or Complex Region,25,,,,,,Extract Method,pending
+phpbb-C0227,phpbb,phpBB/includes/functions_content.php,1,1760,mixed_php_html_sql,SQL in Presentation Logic,252,,,a;account;download;it;its;relative;templates;the;their;which,# . $attachment[;.postlink;.smilies;.username;.username-coloured,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0228,phpbb,phpBB/includes/functions_content.php,48,151,long_method_or_region,Long or Complex Region,9,,,,,,Extract Method,pending
+phpbb-C0229,phpbb,phpBB/includes/functions_content.php,151,290,sql_data_access,SQL/Data Access Region,24,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0230,phpbb,phpBB/includes/functions_content.php,328,450,long_method_or_region,Long or Complex Region,25,,,,,,Extract Method,pending
+phpbb-C0231,phpbb,phpBB/includes/functions_content.php,557,676,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+phpbb-C0232,phpbb,phpBB/includes/functions_content.php,676,759,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phpbb-C0233,phpbb,phpBB/includes/functions_content.php,801,930,long_method_or_region,Long or Complex Region,30,,,,,,Extract Method,pending
+phpbb-C0234,phpbb,phpBB/includes/functions_content.php,930,998,long_method_or_region,Long or Complex Region,10,,,,.postlink,,Extract Method,pending
+phpbb-C0235,phpbb,phpBB/includes/functions_content.php,1046,1080,long_method_or_region,Long or Complex Region,12,,,,.smilies,,Extract Method,pending
+phpbb-C0236,phpbb,phpBB/includes/functions_content.php,1080,1408,sql_data_access,SQL/Data Access Region,44,,,download;the,# . $attachment[,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0237,phpbb,phpBB/includes/functions_content.php,1432,1494,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+phpbb-C0238,phpbb,phpBB/includes/functions_content.php,1499,1627,long_method_or_region,Long or Complex Region,26,,,,.username;.username-coloured,,Extract Method,pending
+phpbb-C0239,phpbb,phpBB/includes/functions_convert.php,1,2514,sql_data_access,SQL/Data Access Region,372,,,a;any;days;execute_last;minutes;php;related;the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0240,phpbb,phpBB/includes/functions_convert.php,330,396,long_method_or_region,Long or Complex Region,50,,,,,,Extract Method,pending
+phpbb-C0241,phpbb,phpBB/includes/functions_convert.php,424,493,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+phpbb-C0242,phpbb,phpBB/includes/functions_convert.php,796,846,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+phpbb-C0243,phpbb,phpBB/includes/functions_convert.php,846,894,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phpbb-C0244,phpbb,phpBB/includes/functions_convert.php,940,1017,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+phpbb-C0245,phpbb,phpBB/includes/functions_convert.php,1141,1189,sql_data_access,SQL/Data Access Region,6,,,the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0246,phpbb,phpBB/includes/functions_convert.php,1189,1276,sql_data_access,SQL/Data Access Region,15,,,the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0247,phpbb,phpBB/includes/functions_convert.php,1276,1321,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+phpbb-C0248,phpbb,phpBB/includes/functions_convert.php,1380,1459,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+phpbb-C0249,phpbb,phpBB/includes/functions_convert.php,1491,1694,sql_data_access,SQL/Data Access Region,40,,,the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0250,phpbb,phpBB/includes/functions_convert.php,1716,1763,sql_data_access,SQL/Data Access Region,4,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0251,phpbb,phpBB/includes/functions_convert.php,1823,1945,sql_data_access,SQL/Data Access Region,6,,,any,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0252,phpbb,phpBB/includes/functions_convert.php,1945,2036,sql_data_access,SQL/Data Access Region,5,,,the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0253,phpbb,phpBB/includes/functions_convert.php,2036,2114,sql_data_access,SQL/Data Access Region,9,,,related,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0254,phpbb,phpBB/includes/functions_convert.php,2114,2176,sql_data_access,SQL/Data Access Region,7,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0255,phpbb,phpBB/includes/functions_convert.php,2199,2312,long_method_or_region,Long or Complex Region,20,,,,,,Extract Method,pending
+phpbb-C0256,phpbb,phpBB/includes/functions_convert.php,2369,2481,long_method_or_region,Long or Complex Region,20,,,,,,Extract Method,pending
+phpbb-C0257,phpbb,phpBB/includes/functions_database_helper.php,1,210,sql_data_access,SQL/Data Access Region,22,,,a,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0258,phpbb,phpBB/includes/functions_database_helper.php,36,121,sql_data_access,SQL/Data Access Region,9,,,a,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0259,phpbb,phpBB/includes/functions_database_helper.php,121,211,sql_data_access,SQL/Data Access Region,12,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0260,phpbb,phpBB/includes/functions_display.php,1,1730,mixed_php_html_sql,SQL in Presentation Logic,264,unwatch;watch,,forum_data;it;the;this,.subforum,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0261,phpbb,phpBB/includes/functions_display.php,25,730,long_method_or_region,Long or Complex Region,119,,,,.subforum,,Extract Method,pending
+phpbb-C0262,phpbb,phpBB/includes/functions_display.php,755,848,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+phpbb-C0263,phpbb,phpBB/includes/functions_display.php,848,890,sql_data_access,SQL/Data Access Region,4,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0264,phpbb,phpBB/includes/functions_display.php,890,975,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+phpbb-C0265,phpbb,phpBB/includes/functions_display.php,1004,1077,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+phpbb-C0266,phpbb,phpBB/includes/functions_display.php,1166,1297,sql_data_access,SQL/Data Access Region,13,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0267,phpbb,phpBB/includes/functions_display.php,1297,1496,sql_data_access,SQL/Data Access Region,33,unwatch;watch,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0268,phpbb,phpBB/includes/functions_display.php,1496,1573,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+phpbb-C0269,phpbb,phpBB/includes/functions_display.php,1573,1712,long_method_or_region,Long or Complex Region,31,,,,,,Extract Method,pending
+phpbb-C0270,phpbb,phpBB/includes/functions_download.php,1,790,mixed_php_html_sql,SQL in Presentation Logic,117,,,PMs;a;database;domain;that,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0271,phpbb,phpBB/includes/functions_download.php,26,105,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+phpbb-C0272,phpbb,phpBB/includes/functions_download.php,125,309,long_method_or_region,Long or Complex Region,32,,,,,,Extract Method,pending
+phpbb-C0273,phpbb,phpBB/includes/functions_download.php,329,441,sql_data_access,SQL/Data Access Region,32,,,domain,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0274,phpbb,phpBB/includes/functions_download.php,560,641,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+phpbb-C0275,phpbb,phpBB/includes/functions_jabber.php,1,904,mixed_php_html,Mixed PHP/HTML,123,,,,#bind_1;#reg_1;#reg_2;#sess_1,,Separate PHP Logic from Markup;Extract View Helper,pending
+phpbb-C0276,phpbb,phpBB/includes/functions_jabber.php,401,710,long_method_or_region,Long or Complex Region,54,,,,#bind_1;#reg_2;#sess_1,,Extract Method,pending
+phpbb-C0277,phpbb,phpBB/includes/functions_jabber.php,852,905,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+phpbb-C0278,phpbb,phpBB/includes/functions_mcp.php,1,743,sql_data_access,SQL/Data Access Region,115,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0279,phpbb,phpBB/includes/functions_mcp.php,109,198,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phpbb-C0280,phpbb,phpBB/includes/functions_mcp.php,274,328,sql_data_access,SQL/Data Access Region,6,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0281,phpbb,phpBB/includes/functions_mcp.php,372,674,sql_data_access,SQL/Data Access Region,61,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0282,phpbb,phpBB/includes/functions_mcp.php,674,744,sql_data_access,SQL/Data Access Region,14,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0283,phpbb,phpBB/includes/functions_messenger.php,207,293,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+phpbb-C0284,phpbb,phpBB/includes/functions_messenger.php,316,404,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+phpbb-C0285,phpbb,phpBB/includes/functions_messenger.php,517,615,long_method_or_region,Long or Complex Region,19,,,,,,Extract Method,pending
+phpbb-C0286,phpbb,phpBB/includes/functions_messenger.php,615,687,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phpbb-C0287,phpbb,phpBB/includes/functions_messenger.php,783,966,long_method_or_region,Long or Complex Region,33,,,,,,Extract Method,pending
+phpbb-C0288,phpbb,phpBB/includes/functions_messenger.php,966,1022,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+phpbb-C0289,phpbb,phpBB/includes/functions_messenger.php,1022,1266,long_method_or_region,Long or Complex Region,48,,,,,,Extract Method,pending
+phpbb-C0290,phpbb,phpBB/includes/functions_messenger.php,1345,1482,long_method_or_region,Long or Complex Region,27,,,,,,Extract Method,pending
+phpbb-C0291,phpbb,phpBB/includes/functions_messenger.php,1660,1778,long_method_or_region,Long or Complex Region,20,,,,,,Extract Method,pending
+phpbb-C0292,phpbb,phpBB/includes/functions_messenger.php,1778,1823,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phpbb-C0293,phpbb,phpBB/includes/functions_module.php,1,1145,sql_data_access,SQL/Data Access Region,199,,,being;given;old;the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0294,phpbb,phpBB/includes/functions_module.php,83,331,sql_data_access,SQL/Data Access Region,53,,,the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0295,phpbb,phpBB/includes/functions_module.php,331,377,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+phpbb-C0296,phpbb,phpBB/includes/functions_module.php,388,481,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+phpbb-C0297,phpbb,phpBB/includes/functions_module.php,481,556,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phpbb-C0298,phpbb,phpBB/includes/functions_module.php,556,691,long_method_or_region,Long or Complex Region,27,,,,,,Extract Method,pending
+phpbb-C0299,phpbb,phpBB/includes/functions_module.php,814,954,long_method_or_region,Long or Complex Region,34,,,,,,Extract Method,pending
+phpbb-C0300,phpbb,phpBB/includes/functions_module.php,1049,1103,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phpbb-C0301,phpbb,phpBB/includes/functions_posting.php,1,2744,mixed_php_html_sql,SQL in Presentation Logic,430,,,Poll;bumper;db;edit;entry;forum;forums;getimagesize;if;last;now;the;total,# . (int) $attach_row[,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0302,phpbb,phpBB/includes/functions_posting.php,25,177,sql_data_access,SQL/Data Access Region,17,,,last,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0303,phpbb,phpBB/includes/functions_posting.php,177,301,sql_data_access,SQL/Data Access Region,18,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0304,phpbb,phpBB/includes/functions_posting.php,455,520,long_method_or_region,Long or Complex Region,20,,,,,,Extract Method,pending
+phpbb-C0305,phpbb,phpBB/includes/functions_posting.php,520,689,long_method_or_region,Long or Complex Region,31,,,,,,Extract Method,pending
+phpbb-C0306,phpbb,phpBB/includes/functions_posting.php,781,910,sql_data_access,SQL/Data Access Region,17,,,the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0307,phpbb,phpBB/includes/functions_posting.php,910,1180,sql_data_access,SQL/Data Access Region,39,,,now,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0308,phpbb,phpBB/includes/functions_posting.php,1180,1468,sql_data_access,SQL/Data Access Region,42,,,forums;last,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0309,phpbb,phpBB/includes/functions_posting.php,1468,2469,sql_data_access,SQL/Data Access Region,202,,,Poll;db;edit;entry;forum;if;the;total,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0310,phpbb,phpBB/includes/functions_posting.php,2469,2564,sql_data_access,SQL/Data Access Region,5,,,bumper;forum;the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0311,phpbb,phpBB/includes/functions_posting.php,2598,2745,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+phpbb-C0312,phpbb,phpBB/includes/functions_privmsgs.php,1,2264,mixed_php_html_sql,SQL in Presentation Logic,288,,,OUTBOX;Outbox;PM;PRIVMSGS_TABLE;Sentbox;a;any;appropriate;arrays;db;entry;folder;foreach;new;one;outbox;pm;the;their;unread;user;users,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0313,phpbb,phpBB/includes/functions_privmsgs.php,120,227,sql_data_access,SQL/Data Access Region,18,,,Sentbox,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0314,phpbb,phpBB/includes/functions_privmsgs.php,256,368,sql_data_access,SQL/Data Access Region,23,,,user,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0315,phpbb,phpBB/includes/functions_privmsgs.php,368,412,sql_data_access,SQL/Data Access Region,2,,,appropriate;new;unread,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0316,phpbb,phpBB/includes/functions_privmsgs.php,412,776,sql_data_access,SQL/Data Access Region,50,,,OUTBOX;a;any;arrays;folder;foreach;new;one;the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0317,phpbb,phpBB/includes/functions_privmsgs.php,776,874,sql_data_access,SQL/Data Access Region,11,,,pm;unread,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0318,phpbb,phpBB/includes/functions_privmsgs.php,1014,1184,sql_data_access,SQL/Data Access Region,25,,,Outbox;PM;unread,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0319,phpbb,phpBB/includes/functions_privmsgs.php,1203,1401,sql_data_access,SQL/Data Access Region,20,,,the;their;users,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0320,phpbb,phpBB/includes/functions_privmsgs.php,1435,1580,sql_data_access,SQL/Data Access Region,25,,,users,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0321,phpbb,phpBB/includes/functions_privmsgs.php,1613,1967,sql_data_access,SQL/Data Access Region,49,,,db;entry;outbox,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0322,phpbb,phpBB/includes/functions_privmsgs.php,1967,2133,sql_data_access,SQL/Data Access Region,21,,,the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0323,phpbb,phpBB/includes/functions_privmsgs.php,2183,2265,sql_data_access,SQL/Data Access Region,17,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0324,phpbb,phpBB/includes/functions_transfer.php,723,783,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phpbb-C0325,phpbb,phpBB/includes/functions_user.php,1,3719,sql_data_access,SQL/Data Access Region,490,,,a;active;any;appropriate;banning;database;latest;legend;log;newly;reading;the;their;user;usernames;which,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0326,phpbb,phpBB/includes/functions_user.php,30,90,sql_data_access,SQL/Data Access Region,12,,,database,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0327,phpbb,phpBB/includes/functions_user.php,117,177,sql_data_access,SQL/Data Access Region,5,,,a,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0328,phpbb,phpBB/includes/functions_user.php,177,426,sql_data_access,SQL/Data Access Region,22,,,appropriate,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0329,phpbb,phpBB/includes/functions_user.php,426,771,sql_data_access,SQL/Data Access Region,45,,,active;the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0330,phpbb,phpBB/includes/functions_user.php,771,894,sql_data_access,SQL/Data Access Region,17,,,banning;latest,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0331,phpbb,phpBB/includes/functions_user.php,894,1317,sql_data_access,SQL/Data Access Region,71,,,log,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0332,phpbb,phpBB/includes/functions_user.php,1317,1423,sql_data_access,SQL/Data Access Region,13,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0333,phpbb,phpBB/includes/functions_user.php,1423,1503,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+phpbb-C0334,phpbb,phpBB/includes/functions_user.php,1503,1547,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phpbb-C0335,phpbb,phpBB/includes/functions_user.php,1705,1798,sql_data_access,SQL/Data Access Region,17,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0336,phpbb,phpBB/includes/functions_user.php,1798,1852,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+phpbb-C0337,phpbb,phpBB/includes/functions_user.php,1889,1936,sql_data_access,SQL/Data Access Region,8,,,the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0338,phpbb,phpBB/includes/functions_user.php,1936,2141,long_method_or_region,Long or Complex Region,20,,,,,,Extract Method,pending
+phpbb-C0339,phpbb,phpBB/includes/functions_user.php,2252,2521,sql_data_access,SQL/Data Access Region,43,,,the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0340,phpbb,phpBB/includes/functions_user.php,2560,2672,sql_data_access,SQL/Data Access Region,12,,,legend;the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0341,phpbb,phpBB/includes/functions_user.php,2672,2808,sql_data_access,SQL/Data Access Region,19,,,a;their,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0342,phpbb,phpBB/includes/functions_user.php,2808,2973,sql_data_access,SQL/Data Access Region,18,,,a;the;which,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0343,phpbb,phpBB/includes/functions_user.php,2973,3014,sql_data_access,SQL/Data Access Region,4,,,the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0344,phpbb,phpBB/includes/functions_user.php,3052,3221,sql_data_access,SQL/Data Access Region,19,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0345,phpbb,phpBB/includes/functions_user.php,3221,3269,sql_data_access,SQL/Data Access Region,5,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0346,phpbb,phpBB/includes/functions_user.php,3269,3418,sql_data_access,SQL/Data Access Region,21,,,any;the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0347,phpbb,phpBB/includes/functions_user.php,3446,3512,sql_data_access,SQL/Data Access Region,15,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0348,phpbb,phpBB/includes/functions_user.php,3512,3582,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+phpbb-C0349,phpbb,phpBB/includes/functions_user.php,3582,3658,sql_data_access,SQL/Data Access Region,10,,,newly,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0350,phpbb,phpBB/includes/functions_user.php,3658,3704,sql_data_access,SQL/Data Access Region,7,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0351,phpbb,phpBB/includes/message_parser.php,1,2039,mixed_php_html_sql,SQL in Presentation Logic,348,add_file;delete_file,,code;form;relative;the,# . $new_entry[;.$1;.([a-z]+);.[a-z]+;.[a-z_]+;.syntax;.syntaxdefault,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0352,phpbb,phpBB/includes/message_parser.php,53,106,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phpbb-C0353,phpbb,phpBB/includes/message_parser.php,127,267,sql_data_access,SQL/Data Access Region,36,,,the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0354,phpbb,phpBB/includes/message_parser.php,509,578,mixed_php_html,Mixed PHP/HTML,20,,,,.$1;.([a-z]+);.[a-z]+;.[a-z_]+;.syntax;.syntaxdefault,,Separate PHP Logic from Markup;Extract View Helper,pending
+phpbb-C0355,phpbb,phpBB/includes/message_parser.php,578,671,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+phpbb-C0356,phpbb,phpBB/includes/message_parser.php,671,799,long_method_or_region,Long or Complex Region,23,,,,,,Extract Method,pending
+phpbb-C0357,phpbb,phpBB/includes/message_parser.php,799,968,long_method_or_region,Long or Complex Region,36,,,,,,Extract Method,pending
+phpbb-C0358,phpbb,phpBB/includes/message_parser.php,1008,1069,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+phpbb-C0359,phpbb,phpBB/includes/message_parser.php,1069,1142,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+phpbb-C0360,phpbb,phpBB/includes/message_parser.php,1152,1331,long_method_or_region,Long or Complex Region,38,,,,,,Extract Method,pending
+phpbb-C0361,phpbb,phpBB/includes/message_parser.php,1457,1530,sql_data_access,SQL/Data Access Region,20,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0362,phpbb,phpBB/includes/message_parser.php,1530,1794,sql_data_access,SQL/Data Access Region,37,add_file;delete_file,,the,# . $new_entry[,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0363,phpbb,phpBB/includes/message_parser.php,1794,1882,sql_data_access,SQL/Data Access Region,11,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0364,phpbb,phpBB/includes/message_parser.php,1882,1945,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+phpbb-C0365,phpbb,phpBB/includes/message_parser.php,1945,2003,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+phpbb-C0366,phpbb,phpBB/includes/sphinxapi.php,1,1711,sql_data_access,SQL/Data Access Region,205,,,PHP;RunQueries;a;an;given;high;result;results;searchd;string,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0367,phpbb,phpBB/includes/sphinxapi.php,234,300,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+phpbb-C0368,phpbb,phpBB/includes/sphinxapi.php,300,369,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+phpbb-C0369,phpbb,phpBB/includes/sphinxapi.php,561,632,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phpbb-C0370,phpbb,phpBB/includes/sphinxapi.php,632,704,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+phpbb-C0371,phpbb,phpBB/includes/sphinxapi.php,984,1100,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+phpbb-C0372,phpbb,phpBB/includes/sphinxapi.php,1138,1309,long_method_or_region,Long or Complex Region,21,,,,,,Extract Method,pending
+phpbb-C0373,phpbb,phpBB/includes/sphinxapi.php,1309,1434,long_method_or_region,Long or Complex Region,38,,,,,,Extract Method,pending
+phpbb-C0374,phpbb,phpBB/includes/sphinxapi.php,1525,1608,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+phpbb-C0375,phpbb,phpBB/install/startup.php,50,144,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+phpbb-C0376,phpbb,phpBB/phpbb/content_visibility.php,1,885,sql_data_access,SQL/Data Access Region,111,,,all;forum;on;the;topic;users,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0377,phpbb,phpBB/phpbb/content_visibility.php,362,689,sql_data_access,SQL/Data Access Region,47,,,all;the;users,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0378,phpbb,phpBB/phpbb/content_visibility.php,689,810,sql_data_access,SQL/Data Access Region,15,,,on;the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0379,phpbb,phpBB/phpbb/content_visibility.php,831,864,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+phpbb-C0380,phpbb,phpBB/phpbb/datetime.php,60,134,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phpbb-C0381,phpbb,phpBB/phpbb/file_downloader.php,39,106,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phpbb-C0382,phpbb,phpBB/phpbb/finder.php,423,548,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+phpbb-C0383,phpbb,phpBB/phpbb/pagination.php,59,137,long_method_or_region,Long or Complex Region,21,,,,,,Extract Method,pending
+phpbb-C0384,phpbb,phpBB/phpbb/pagination.php,137,290,long_method_or_region,Long or Complex Region,28,,,,,,Extract Method,pending
+phpbb-C0385,phpbb,phpBB/phpbb/path_helper.php,152,251,long_method_or_region,Long or Complex Region,8,,,,,,Extract Method,pending
+phpbb-C0386,phpbb,phpBB/phpbb/path_helper.php,251,316,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phpbb-C0387,phpbb,phpBB/phpbb/path_helper.php,364,420,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phpbb-C0388,phpbb,phpBB/phpbb/permissions.php,190,365,long_method_or_region,Long or Complex Region,2,,,,,,Extract Method,pending
+phpbb-C0389,phpbb,phpBB/phpbb/session.php,1,1643,mixed_php_html_sql,SQL in Presentation Logic,293,sid,,CRON;a;against;correctly;gc;if;last;or;phpBB;session;the;user;what,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0390,phpbb,phpBB/phpbb/session.php,39,164,long_method_or_region,Long or Complex Region,29,,,,,,Extract Method,pending
+phpbb-C0391,phpbb,phpBB/phpbb/session.php,164,228,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+phpbb-C0392,phpbb,phpBB/phpbb/session.php,228,517,sql_data_access,SQL/Data Access Region,62,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0393,phpbb,phpBB/phpbb/session.php,517,894,session_dependent_logic,Session-Dependent Logic,68,sid,,against;correctly;or;session;the,,,Extract Guard;Extract Method,pending
+phpbb-C0394,phpbb,phpBB/phpbb/session.php,894,986,sql_data_access,SQL/Data Access Region,8,,,last;user,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0395,phpbb,phpBB/phpbb/session.php,986,1078,sql_data_access,SQL/Data Access Region,8,,,CRON;gc,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0396,phpbb,phpBB/phpbb/session.php,1107,1310,sql_data_access,SQL/Data Access Region,46,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0397,phpbb,phpBB/phpbb/session.php,1339,1399,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+phpbb-C0398,phpbb,phpBB/phpbb/session.php,1436,1483,sql_data_access,SQL/Data Access Region,9,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0399,phpbb,phpBB/phpbb/session.php,1483,1532,sql_data_access,SQL/Data Access Region,7,,,last;the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0400,phpbb,phpBB/phpbb/user.php,1,811,mixed_php_html_sql,SQL in Presentation Logic,102,,,an;the;user,.imageset,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0401,phpbb,phpBB/phpbb/user.php,110,430,sql_data_access,SQL/Data Access Region,45,,,the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0402,phpbb,phpBB/phpbb/user_loader.php,1,236,sql_data_access,SQL/Data Access Region,32,,,our;the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0403,phpbb,phpBB/phpbb/user_loader.php,131,165,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+phpbb-C0404,phpbb,phpBB/phpbb/version_helper.php,429,510,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+phpbb-C0405,phpbb,phpBB/phpbb/attachment/delete.php,1,432,sql_data_access,SQL/Data Access Region,59,,,database;filesystem;message;post;the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0406,phpbb,phpBB/phpbb/attachment/delete.php,98,195,long_method_or_region,Long or Complex Region,20,,,,,,Extract Method,pending
+phpbb-C0407,phpbb,phpBB/phpbb/attachment/delete.php,251,291,sql_data_access,SQL/Data Access Region,8,,,database,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0408,phpbb,phpBB/phpbb/attachment/delete.php,291,332,sql_data_access,SQL/Data Access Region,6,,,filesystem,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0409,phpbb,phpBB/phpbb/attachment/delete.php,332,398,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+phpbb-C0410,phpbb,phpBB/phpbb/attachment/upload.php,109,211,long_method_or_region,Long or Complex Region,19,,,,,,Extract Method,pending
+phpbb-C0411,phpbb,phpBB/phpbb/auth/auth.php,1,1122,sql_data_access,SQL/Data Access Region,175,,,permission;the;user_permissions,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0412,phpbb,phpBB/phpbb/auth/auth.php,29,109,sql_data_access,SQL/Data Access Region,13,,,the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0413,phpbb,phpBB/phpbb/auth/auth.php,169,218,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+phpbb-C0414,phpbb,phpBB/phpbb/auth/auth.php,218,299,sql_data_access,SQL/Data Access Region,18,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0415,phpbb,phpBB/phpbb/auth/auth.php,299,343,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+phpbb-C0416,phpbb,phpBB/phpbb/auth/auth.php,454,515,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+phpbb-C0417,phpbb,phpBB/phpbb/auth/auth.php,515,572,sql_data_access,SQL/Data Access Region,5,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0418,phpbb,phpBB/phpbb/auth/auth.php,572,605,sql_data_access,SQL/Data Access Region,8,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0419,phpbb,phpBB/phpbb/auth/auth.php,605,721,sql_data_access,SQL/Data Access Region,24,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0420,phpbb,phpBB/phpbb/auth/auth.php,721,773,sql_data_access,SQL/Data Access Region,10,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0421,phpbb,phpBB/phpbb/auth/auth.php,773,826,sql_data_access,SQL/Data Access Region,11,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0422,phpbb,phpBB/phpbb/auth/auth.php,826,909,sql_data_access,SQL/Data Access Region,13,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0423,phpbb,phpBB/phpbb/auth/auth.php,938,1071,sql_data_access,SQL/Data Access Region,16,,,the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0424,phpbb,phpBB/phpbb/captcha/char_cube3d.php,32,118,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+phpbb-C0425,phpbb,phpBB/phpbb/captcha/colour_manager.php,130,229,long_method_or_region,Long or Complex Region,22,,,,,,Extract Method,pending
+phpbb-C0426,phpbb,phpBB/phpbb/captcha/colour_manager.php,296,352,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+phpbb-C0427,phpbb,phpBB/phpbb/captcha/gd.php,24,151,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+phpbb-C0428,phpbb,phpBB/phpbb/captcha/gd.php,289,1845,long_method_or_region,Long or Complex Region,1,,,,,,Extract Method,pending
+phpbb-C0429,phpbb,phpBB/phpbb/captcha/gd_wave.php,24,259,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+phpbb-C0430,phpbb,phpBB/phpbb/captcha/gd_wave.php,272,843,long_method_or_region,Long or Complex Region,1,,,,,,Extract Method,pending
+phpbb-C0431,phpbb,phpBB/phpbb/captcha/non_gd.php,237,387,long_method_or_region,Long or Complex Region,1,,,,,,Extract Method,pending
+phpbb-C0432,phpbb,phpBB/phpbb/config/db.php,1,204,sql_data_access,SQL/Data Access Region,21,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0433,phpbb,phpBB/phpbb/config/db.php,46,98,sql_data_access,SQL/Data Access Region,6,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0434,phpbb,phpBB/phpbb/config/db.php,137,184,sql_data_access,SQL/Data Access Region,7,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0435,phpbb,phpBB/phpbb/db/migrator.php,1,1037,sql_data_access,SQL/Data Access Region,123,,,a;last;migration;migrations;step;the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0436,phpbb,phpBB/phpbb/db/migrator.php,311,485,long_method_or_region,Long or Complex Region,24,,,,,,Extract Method,pending
+phpbb-C0437,phpbb,phpBB/phpbb/db/migrator.php,526,633,sql_data_access,SQL/Data Access Region,18,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0438,phpbb,phpBB/phpbb/db/migrator.php,633,702,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+phpbb-C0439,phpbb,phpBB/phpbb/db/migrator.php,726,834,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+phpbb-C0440,phpbb,phpBB/phpbb/di/container_builder.php,136,243,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+phpbb-C0441,phpbb,phpBB/phpbb/event/md_exporter.php,125,231,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+phpbb-C0442,phpbb,phpBB/phpbb/event/md_exporter.php,370,432,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+phpbb-C0443,phpbb,phpBB/phpbb/event/md_exporter.php,462,522,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phpbb-C0444,phpbb,phpBB/phpbb/event/php_exporter.php,192,298,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+phpbb-C0445,phpbb,phpBB/phpbb/event/php_exporter.php,312,348,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+phpbb-C0446,phpbb,phpBB/phpbb/event/php_exporter.php,444,505,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+phpbb-C0447,phpbb,phpBB/phpbb/event/php_exporter.php,557,603,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+phpbb-C0448,phpbb,phpBB/phpbb/extension/manager.php,1,633,sql_data_access,SQL/Data Access Region,67,,,database;the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0449,phpbb,phpBB/phpbb/extension/manager.php,75,117,sql_data_access,SQL/Data Access Region,5,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0450,phpbb,phpBB/phpbb/extension/manager.php,173,247,sql_data_access,SQL/Data Access Region,7,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0451,phpbb,phpBB/phpbb/extension/manager.php,342,405,sql_data_access,SQL/Data Access Region,9,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0452,phpbb,phpBB/phpbb/feed/base.php,1,337,mixed_php_html_sql,SQL in Presentation Logic,24,,,the,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0453,phpbb,phpBB/phpbb/feed/forum.php,1,178,sql_data_access,SQL/Data Access Region,15,,,feed,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0454,phpbb,phpBB/phpbb/feed/forum.php,47,115,sql_data_access,SQL/Data Access Region,10,,,feed,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0455,phpbb,phpBB/phpbb/feed/forum.php,115,163,sql_data_access,SQL/Data Access Region,3,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0456,phpbb,phpBB/phpbb/feed/helper.php,1,186,mixed_php_html_sql,SQL in Presentation Logic,20,,,inline;quotes,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0457,phpbb,phpBB/phpbb/feed/helper.php,111,187,sql_data_access,SQL/Data Access Region,16,,,inline;quotes,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0458,phpbb,phpBB/phpbb/feed/news.php,58,117,sql_data_access,SQL/Data Access Region,5,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0459,phpbb,phpBB/phpbb/feed/overall.php,27,88,sql_data_access,SQL/Data Access Region,4,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0460,phpbb,phpBB/phpbb/feed/topic.php,1,164,sql_data_access,SQL/Data Access Region,13,,,feed,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0461,phpbb,phpBB/phpbb/feed/topic.php,48,127,sql_data_access,SQL/Data Access Region,10,,,feed,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0462,phpbb,phpBB/phpbb/feed/topics.php,27,88,sql_data_access,SQL/Data Access Region,5,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0463,phpbb,phpBB/phpbb/feed/topics_active.php,41,110,sql_data_access,SQL/Data Access Region,7,,,the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0464,phpbb,phpBB/phpbb/files/filespec.php,367,404,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phpbb-C0465,phpbb,phpBB/phpbb/files/filespec.php,404,552,long_method_or_region,Long or Complex Region,28,,,,,,Extract Method,pending
+phpbb-C0466,phpbb,phpBB/phpbb/files/upload.php,209,264,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+phpbb-C0467,phpbb,phpBB/phpbb/files/upload.php,264,300,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phpbb-C0468,phpbb,phpBB/phpbb/filesystem/filesystem.php,77,143,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+phpbb-C0469,phpbb,phpBB/phpbb/filesystem/filesystem.php,260,306,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phpbb-C0470,phpbb,phpBB/phpbb/filesystem/filesystem.php,350,487,long_method_or_region,Long or Complex Region,25,,,,,,Extract Method,pending
+phpbb-C0471,phpbb,phpBB/phpbb/filesystem/filesystem.php,645,754,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+phpbb-C0472,phpbb,phpBB/phpbb/filesystem/filesystem.php,775,917,long_method_or_region,Long or Complex Region,25,,,,,,Extract Method,pending
+phpbb-C0473,phpbb,phpBB/phpbb/groupposition/legend.php,1,243,sql_data_access,SQL/Data Access Region,26,,,it;the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0474,phpbb,phpBB/phpbb/groupposition/legend.php,173,227,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+phpbb-C0475,phpbb,phpBB/phpbb/groupposition/teampage.php,1,597,sql_data_access,SQL/Data Access Region,66,,,is;it;the;this,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0476,phpbb,phpBB/phpbb/groupposition/teampage.php,202,266,sql_data_access,SQL/Data Access Region,5,,,this,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0477,phpbb,phpBB/phpbb/groupposition/teampage.php,393,481,sql_data_access,SQL/Data Access Region,16,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0478,phpbb,phpBB/phpbb/groupposition/teampage.php,481,581,sql_data_access,SQL/Data Access Region,19,,,the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0479,phpbb,phpBB/phpbb/install/installer.php,128,345,long_method_or_region,Long or Complex Region,25,,,,,,Extract Method,pending
+phpbb-C0480,phpbb,phpBB/phpbb/install/installer_configuration.php,27,148,long_method_or_region,Long or Complex Region,1,,,,,,Extract Method,pending
+phpbb-C0481,phpbb,phpBB/phpbb/install/module_base.php,105,190,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+phpbb-C0482,phpbb,phpBB/phpbb/language/language.php,1,673,sql_data_access,SQL/Data Access Region,109,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0483,phpbb,phpBB/phpbb/language/language.php,295,378,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+phpbb-C0484,phpbb,phpBB/phpbb/language/language.php,404,576,long_method_or_region,Long or Complex Region,55,,,,,,Extract Method,pending
+phpbb-C0485,phpbb,phpBB/phpbb/lock/flock.php,65,116,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phpbb-C0486,phpbb,phpBB/phpbb/log/log.php,1,1001,sql_data_access,SQL/Data Access Region,120,,,SQL;account;the;within,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0487,phpbb,phpBB/phpbb/log/log.php,219,325,sql_data_access,SQL/Data Access Region,19,,,the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0488,phpbb,phpBB/phpbb/log/log.php,325,418,sql_data_access,SQL/Data Access Region,14,,,the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0489,phpbb,phpBB/phpbb/log/log.php,418,827,long_method_or_region,Long or Complex Region,58,,,,,,Extract Method,pending
+phpbb-C0490,phpbb,phpBB/phpbb/log/log.php,827,896,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+phpbb-C0491,phpbb,phpBB/phpbb/message/topic_form.php,1,166,mixed_php_html_sql,SQL in Presentation Logic,12,,,,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0492,phpbb,phpBB/phpbb/mimetype/guesser.php,46,90,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+phpbb-C0493,phpbb,phpBB/phpbb/module/module_manager.php,1,564,sql_data_access,SQL/Data Access Region,34,,,a;does;module;the;tree,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0494,phpbb,phpBB/phpbb/module/module_manager.php,111,184,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phpbb-C0495,phpbb,phpBB/phpbb/module/module_manager.php,184,233,sql_data_access,SQL/Data Access Region,5,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0496,phpbb,phpBB/phpbb/module/module_manager.php,248,346,sql_data_access,SQL/Data Access Region,7,,,a;does,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0497,phpbb,phpBB/phpbb/module/module_manager.php,346,438,sql_data_access,SQL/Data Access Region,5,,,tree,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0498,phpbb,phpBB/phpbb/module/module_manager.php,438,487,sql_data_access,SQL/Data Access Region,2,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0499,phpbb,phpBB/phpbb/module/module_manager.php,487,565,sql_data_access,SQL/Data Access Region,5,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0500,phpbb,phpBB/phpbb/notification/manager.php,1,991,sql_data_access,SQL/Data Access Region,133,,,a;notification;the;this;where,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0501,phpbb,phpBB/phpbb/notification/manager.php,252,307,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phpbb-C0502,phpbb,phpBB/phpbb/notification/manager.php,307,394,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+phpbb-C0503,phpbb,phpBB/phpbb/notification/manager.php,600,654,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+phpbb-C0504,phpbb,phpBB/phpbb/notification/manager.php,654,710,sql_data_access,SQL/Data Access Region,8,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0505,phpbb,phpBB/phpbb/notification/manager.php,710,755,sql_data_access,SQL/Data Access Region,5,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0506,phpbb,phpBB/phpbb/notification/manager.php,900,953,sql_data_access,SQL/Data Access Region,5,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0507,phpbb,phpBB/phpbb/passwords/manager.php,160,214,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+phpbb-C0508,phpbb,phpBB/phpbb/passwords/manager.php,214,260,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phpbb-C0509,phpbb,phpBB/phpbb/passwords/manager.php,260,337,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+phpbb-C0510,phpbb,phpBB/phpbb/plupload/plupload.php,318,365,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phpbb-C0511,phpbb,phpBB/phpbb/profilefields/lang_helper.php,1,140,sql_data_access,SQL/Data Access Region,14,,,DB;language,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0512,phpbb,phpBB/phpbb/profilefields/manager.php,1,502,sql_data_access,SQL/Data Access Region,46,,,custom;profile;the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0513,phpbb,phpBB/phpbb/profilefields/manager.php,104,156,sql_data_access,SQL/Data Access Region,7,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0514,phpbb,phpBB/phpbb/profilefields/manager.php,181,231,sql_data_access,SQL/Data Access Region,6,,,profile,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0515,phpbb,phpBB/phpbb/profilefields/manager.php,314,386,sql_data_access,SQL/Data Access Region,10,,,the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0516,phpbb,phpBB/phpbb/report/report_handler_pm.php,27,97,sql_data_access,SQL/Data Access Region,2,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0517,phpbb,phpBB/phpbb/report/report_handler_pm.php,97,138,sql_data_access,SQL/Data Access Region,8,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0518,phpbb,phpBB/phpbb/report/report_handler_post.php,1,175,sql_data_access,SQL/Data Access Region,13,,,the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0519,phpbb,phpBB/phpbb/report/report_handler_post.php,33,94,sql_data_access,SQL/Data Access Region,3,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0520,phpbb,phpBB/phpbb/report/report_handler_post.php,94,176,sql_data_access,SQL/Data Access Region,10,,,the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0521,phpbb,phpBB/phpbb/request/request.php,1,456,long_method_or_region,Long or Complex Region,53,,,,,,Extract Method,pending
+phpbb-C0522,phpbb,phpBB/phpbb/request/request.php,224,277,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+phpbb-C0523,phpbb,phpBB/phpbb/request/request_interface.php,1,177,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+phpbb-C0524,phpbb,phpBB/phpbb/request/type_cast_helper.php,95,151,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phpbb-C0525,phpbb,phpBB/phpbb/routing/helper.php,95,163,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+phpbb-C0526,phpbb,phpBB/phpbb/search/base.php,1,292,sql_data_access,SQL/Data Access Region,47,,,all;the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0527,phpbb,phpBB/phpbb/search/base.php,51,132,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+phpbb-C0528,phpbb,phpBB/phpbb/search/base.php,132,241,sql_data_access,SQL/Data Access Region,17,,,the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0529,phpbb,phpBB/phpbb/search/base.php,241,293,sql_data_access,SQL/Data Access Region,10,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0530,phpbb,phpBB/phpbb/search/fulltext_mysql.php,1,1156,mixed_php_html_sql,SQL in Presentation Logic,163,,,all;an;cache;start;the,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0531,phpbb,phpBB/phpbb/search/fulltext_mysql.php,215,354,long_method_or_region,Long or Complex Region,27,,,,,,Extract Method,pending
+phpbb-C0532,phpbb,phpBB/phpbb/search/fulltext_mysql.php,354,396,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+phpbb-C0533,phpbb,phpBB/phpbb/search/fulltext_mysql.php,396,660,sql_data_access,SQL/Data Access Region,45,,,all;cache;start;the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0534,phpbb,phpBB/phpbb/search/fulltext_mysql.php,660,913,sql_data_access,SQL/Data Access Region,39,,,all;cache;the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0535,phpbb,phpBB/phpbb/search/fulltext_mysql.php,954,1023,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phpbb-C0536,phpbb,phpBB/phpbb/search/fulltext_native.php,1,1987,mixed_php_html_sql,SQL in Presentation Logic,271,,,account;all;blocks;cache;fulltext_native;it;start;the;words,#fulltext_native_common_thres;#fulltext_native_load_upd;#fulltext_native_max_chars;#fulltext_native_min_chars;#w$w_num.word_id;.radio,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0537,phpbb,phpBB/phpbb/search/fulltext_native.php,191,510,sql_data_access,SQL/Data Access Region,63,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0538,phpbb,phpBB/phpbb/search/fulltext_native.php,510,1010,sql_data_access,SQL/Data Access Region,78,,,account;all;cache;start;the,#w$w_num.word_id,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0539,phpbb,phpBB/phpbb/search/fulltext_native.php,1010,1313,sql_data_access,SQL/Data Access Region,47,,,all;cache;the;words,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0540,phpbb,phpBB/phpbb/search/fulltext_native.php,1313,1387,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+phpbb-C0541,phpbb,phpBB/phpbb/search/fulltext_native.php,1387,1544,sql_data_access,SQL/Data Access Region,19,,,the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0542,phpbb,phpBB/phpbb/search/fulltext_native.php,1544,1602,sql_data_access,SQL/Data Access Region,6,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0543,phpbb,phpBB/phpbb/search/fulltext_native.php,1602,1665,sql_data_access,SQL/Data Access Region,8,,,it;the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0544,phpbb,phpBB/phpbb/search/fulltext_native.php,1730,1956,long_method_or_region,Long or Complex Region,22,,,,,,Extract Method,pending
+phpbb-C0545,phpbb,phpBB/phpbb/search/fulltext_postgres.php,1,1104,mixed_php_html_sql,SQL in Presentation Logic,148,,,all;an;cache;pg_catalog;pg_ts_config;start;the,#fulltext_postgres_max_word_len;#fulltext_postgres_min_word_len,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0546,phpbb,phpBB/phpbb/search/fulltext_postgres.php,196,287,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+phpbb-C0547,phpbb,phpBB/phpbb/search/fulltext_postgres.php,287,329,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+phpbb-C0548,phpbb,phpBB/phpbb/search/fulltext_postgres.php,329,609,sql_data_access,SQL/Data Access Region,45,,,all;cache;start;the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0549,phpbb,phpBB/phpbb/search/fulltext_postgres.php,609,884,sql_data_access,SQL/Data Access Region,40,,,all;cache;the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0550,phpbb,phpBB/phpbb/search/fulltext_postgres.php,1017,1058,sql_data_access,SQL/Data Access Region,7,,,pg_catalog;the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0551,phpbb,phpBB/phpbb/search/fulltext_postgres.php,1058,1105,sql_data_access,SQL/Data Access Region,7,,,pg_ts_config,#fulltext_postgres_max_word_len;#fulltext_postgres_min_word_len,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0552,phpbb,phpBB/phpbb/search/fulltext_sphinx.php,1,974,mixed_php_html_sql,SQL in Presentation Logic,114,,,an;object;the;topic_last_post_time,#fulltext_sphinx_data_path;#fulltext_sphinx_host;#fulltext_sphinx_indexer_mem_limit;#fulltext_sphinx_port;#sphinx_config_data;.error,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0553,phpbb,phpBB/phpbb/search/fulltext_sphinx.php,233,434,sql_data_access,SQL/Data Access Region,20,,,an,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0554,phpbb,phpBB/phpbb/search/fulltext_sphinx.php,481,739,long_method_or_region,Long or Complex Region,53,,,,,,Extract Method,pending
+phpbb-C0555,phpbb,phpBB/phpbb/template/asset.php,64,122,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+phpbb-C0556,phpbb,phpBB/phpbb/template/context.php,264,334,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+phpbb-C0557,phpbb,phpBB/phpbb/template/context.php,334,417,long_method_or_region,Long or Complex Region,20,,,,,,Extract Method,pending
+phpbb-C0558,phpbb,phpBB/phpbb/template/context.php,417,594,long_method_or_region,Long or Complex Region,31,,,,,,Extract Method,pending
+phpbb-C0559,phpbb,phpBB/phpbb/textformatter/data_access.php,1,252,sql_data_access,SQL/Data Access Region,16,,,the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0560,phpbb,phpBB/phpbb/tree/nestedset.php,1,875,sql_data_access,SQL/Data Access Region,67,,,parent;the;their,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0561,phpbb,phpBB/phpbb/tree/nestedset.php,220,338,sql_data_access,SQL/Data Access Region,8,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0562,phpbb,phpBB/phpbb/tree/nestedset.php,354,459,sql_data_access,SQL/Data Access Region,9,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0563,phpbb,phpBB/phpbb/tree/nestedset.php,459,557,sql_data_access,SQL/Data Access Region,8,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0564,phpbb,phpBB/phpbb/tree/nestedset.php,632,676,sql_data_access,SQL/Data Access Region,4,,,the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0565,phpbb,phpBB/phpbb/tree/nestedset.php,805,876,sql_data_access,SQL/Data Access Region,10,,,the;their,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0566,phpbb,phpBB/phpbb/textformatter/s9e/bbcode_merger.php,1,180,sql_data_access,SQL/Data Access Region,15,,,the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0567,phpbb,phpBB/phpbb/textformatter/s9e/factory.php,1,651,mixed_php_html,Mixed PHP/HTML,80,,,,.emoji;.postimage;.smilies,,Separate PHP Logic from Markup;Extract View Helper,pending
+phpbb-C0568,phpbb,phpBB/phpbb/textformatter/s9e/factory.php,192,380,long_method_or_region,Long or Complex Region,19,,,,.emoji;.smilies,,Extract Method,pending
+phpbb-C0569,phpbb,phpBB/phpbb/textformatter/s9e/factory.php,481,536,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+phpbb-C0570,phpbb,phpBB/phpbb/textformatter/s9e/factory.php,536,617,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+phpbb-C0571,phpbb,phpBB/phpbb/textformatter/s9e/parser.php,196,247,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+phpbb-C0572,phpbb,phpBB/phpbb/template/twig/lexer.php,23,150,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+phpbb-C0573,phpbb,phpBB/phpbb/template/twig/lexer.php,206,279,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+phpbb-C0574,phpbb,phpBB/phpbb/template/twig/lexer.php,279,311,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+phpbb-C0575,phpbb,phpBB/phpbb/template/twig/twig.php,230,309,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+phpbb-C0576,phpbb,phpBB/phpbb/search/sphinx/config.php,80,274,long_method_or_region,Long or Complex Region,30,,,,,,Extract Method,pending
+phpbb-C0577,phpbb,phpBB/phpbb/report/controller/report.php,1,319,mixed_php_html,Mixed PHP/HTML,39,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+phpbb-C0578,phpbb,phpBB/phpbb/report/controller/report.php,97,253,long_method_or_region,Long or Complex Region,26,,,,,,Extract Method,pending
+phpbb-C0579,phpbb,phpBB/phpbb/profilefields/type/type_bool.php,1,415,mixed_php_html,Mixed PHP/HTML,48,,,,.radio,,Separate PHP Logic from Markup;Extract View Helper,pending
+phpbb-C0580,phpbb,phpBB/phpbb/profilefields/type/type_bool.php,201,249,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+phpbb-C0581,phpbb,phpBB/phpbb/profilefields/type/type_bool.php,324,368,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+phpbb-C0582,phpbb,phpBB/phpbb/profilefields/type/type_date.php,1,374,mixed_php_html,Mixed PHP/HTML,46,,,,.radio,,Separate PHP Logic from Markup;Extract View Helper,pending
+phpbb-C0583,phpbb,phpBB/phpbb/profilefields/type/type_date.php,224,279,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+phpbb-C0584,phpbb,phpBB/phpbb/profilefields/type/type_int.php,1,249,mixed_php_html,Mixed PHP/HTML,18,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+phpbb-C0585,phpbb,phpBB/phpbb/notification/method/board.php,1,399,sql_data_access,SQL/Data Access Region,52,,,if,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0586,phpbb,phpBB/phpbb/notification/method/board.php,128,265,sql_data_access,SQL/Data Access Region,14,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0587,phpbb,phpBB/phpbb/notification/method/messenger_base.php,68,135,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phpbb-C0588,phpbb,phpBB/phpbb/notification/method/method_interface.php,1,149,sql_data_access,SQL/Data Access Region,21,,,a,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0589,phpbb,phpBB/phpbb/notification/type/base.php,1,577,sql_data_access,SQL/Data Access Region,44,,,all;in;notification;the;this,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0590,phpbb,phpBB/phpbb/notification/type/base.php,423,522,sql_data_access,SQL/Data Access Region,16,,,this,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0591,phpbb,phpBB/phpbb/notification/type/bookmark.php,67,124,sql_data_access,SQL/Data Access Region,5,,,their,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0592,phpbb,phpBB/phpbb/notification/type/post.php,1,467,sql_data_access,SQL/Data Access Region,44,,,find_users_for_notification;post;submit_post;the;their;this,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0593,phpbb,phpBB/phpbb/notification/type/post.php,112,180,sql_data_access,SQL/Data Access Region,6,,,their,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0594,phpbb,phpBB/phpbb/notification/type/post.php,414,468,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+phpbb-C0595,phpbb,phpBB/phpbb/notification/type/quote.php,72,111,sql_data_access,SQL/Data Access Region,4,,,a,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0596,phpbb,phpBB/phpbb/notification/type/topic.php,1,307,sql_data_access,SQL/Data Access Region,20,,,find_users_for_notification;submit_post;the;this;topic,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0597,phpbb,phpBB/phpbb/install/helper/container_factory.php,122,192,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phpbb-C0598,phpbb,phpBB/phpbb/install/helper/database.php,1,439,sql_data_access,SQL/Data Access Region,52,,,NLS_DATABASE_PARAMETERS;single,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0599,phpbb,phpBB/phpbb/install/helper/database.php,244,311,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+phpbb-C0600,phpbb,phpBB/phpbb/install/helper/database.php,311,440,sql_data_access,SQL/Data Access Region,20,,,NLS_DATABASE_PARAMETERS,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0601,phpbb,phpBB/phpbb/install/module/update_filesystem/task/diff_files.php,96,241,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+phpbb-C0602,phpbb,phpBB/phpbb/install/module/update_filesystem/task/file_check.php,84,236,long_method_or_region,Long or Complex Region,22,,,,,,Extract Method,pending
+phpbb-C0603,phpbb,phpBB/phpbb/install/module/update_filesystem/task/show_file_status.php,85,158,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phpbb-C0604,phpbb,phpBB/phpbb/install/module/update_filesystem/task/update_files.php,101,243,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+phpbb-C0605,phpbb,phpBB/phpbb/install/module/update_database/task/update.php,114,222,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+phpbb-C0606,phpbb,phpBB/phpbb/install/module/update_database/task/update_extensions.php,1,263,sql_data_access,SQL/Data Access Region,19,,,and;available;database;extensions;the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0607,phpbb,phpBB/phpbb/install/module/update_database/task/update_extensions.php,125,225,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+phpbb-C0608,phpbb,phpBB/phpbb/install/module/requirements/task/check_filesystem.php,140,201,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+phpbb-C0609,phpbb,phpBB/phpbb/install/module/requirements/task/check_filesystem.php,201,267,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+phpbb-C0610,phpbb,phpBB/phpbb/install/module/requirements/task/check_update.php,114,183,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+phpbb-C0611,phpbb,phpBB/phpbb/install/module/obtain_data/task/obtain_database_data.php,207,258,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+phpbb-C0612,phpbb,phpBB/phpbb/install/module/obtain_data/task/obtain_email_data.php,48,161,long_method_or_region,Long or Complex Region,4,,,,,,Extract Method,pending
+phpbb-C0613,phpbb,phpBB/phpbb/install/module/obtain_data/task/obtain_server_data.php,50,190,long_method_or_region,Long or Complex Region,9,,,,,,Extract Method,pending
+phpbb-C0614,phpbb,phpBB/phpbb/install/module/install_finish/task/install_extensions.php,1,207,sql_data_access,SQL/Data Access Region,12,,,database;the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0615,phpbb,phpBB/phpbb/install/module/install_database/task/add_config_settings.php,1,372,sql_data_access,SQL/Data Access Region,13,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0616,phpbb,phpBB/phpbb/install/module/install_database/task/add_config_settings.php,127,360,sql_data_access,SQL/Data Access Region,12,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0617,phpbb,phpBB/phpbb/install/module/install_database/task/create_schema.php,109,222,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+phpbb-C0618,phpbb,phpBB/phpbb/install/module/install_data/task/add_bots.php,167,251,sql_data_access,SQL/Data Access Region,8,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0619,phpbb,phpBB/phpbb/install/module/install_data/task/add_languages.php,54,109,sql_data_access,SQL/Data Access Region,5,,,field,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0620,phpbb,phpBB/phpbb/install/module/install_data/task/add_modules.php,1,568,sql_data_access,SQL/Data Access Region,44,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0621,phpbb,phpBB/phpbb/install/module/install_data/task/add_modules.php,167,369,long_method_or_region,Long or Complex Region,36,,,,,,Extract Method,pending
+phpbb-C0622,phpbb,phpBB/phpbb/install/module/install_data/task/add_modules.php,369,507,sql_data_access,SQL/Data Access Region,4,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0623,phpbb,phpBB/phpbb/install/module/install_data/task/add_modules.php,507,556,sql_data_access,SQL/Data Access Region,5,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0624,phpbb,phpBB/phpbb/install/helper/iohandler/ajax_iohandler.php,166,244,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+phpbb-C0625,phpbb,phpBB/phpbb/install/helper/iohandler/ajax_iohandler.php,268,365,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+phpbb-C0626,phpbb,phpBB/phpbb/help/controller/faq.php,24,166,long_method_or_region,Long or Complex Region,1,,,,,,Extract Method,pending
+phpbb-C0627,phpbb,phpBB/phpbb/files/types/form.php,79,139,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phpbb-C0628,phpbb,phpBB/phpbb/files/types/remote.php,83,178,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+phpbb-C0629,phpbb,phpBB/phpbb/feed/controller/feed.php,1,411,sql_data_access,SQL/Data Access Region,39,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0630,phpbb,phpBB/phpbb/feed/controller/feed.php,294,407,long_method_or_region,Long or Complex Region,21,,,,,,Extract Method,pending
+phpbb-C0631,phpbb,phpBB/phpbb/db/driver/driver.php,1,1219,mixed_php_html_sql,SQL in Presentation Logic,151,,,all;cache;match;statement;the,#acp;#content;#errorpage;#page-body;#page-footer;#page-header;#wrap;.corners-bottom;.corners-top;.panel;.row1;.row3,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0632,phpbb,phpBB/phpbb/db/driver/driver.php,423,490,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+phpbb-C0633,phpbb,phpBB/phpbb/db/driver/driver.php,490,538,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+phpbb-C0634,phpbb,phpBB/phpbb/db/driver/driver.php,630,683,sql_data_access,SQL/Data Access Region,10,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0635,phpbb,phpBB/phpbb/db/driver/driver.php,702,814,long_method_or_region,Long or Complex Region,24,,,,,,Extract Method,pending
+phpbb-C0636,phpbb,phpBB/phpbb/db/driver/driver.php,826,940,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+phpbb-C0637,phpbb,phpBB/phpbb/db/driver/driver.php,940,1010,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+phpbb-C0638,phpbb,phpBB/phpbb/db/driver/driver.php,1010,1201,long_method_or_region,Long or Complex Region,21,,,,#acp;#content;#errorpage;#page-body;#page-footer;#page-header;#wrap;.corners-bottom;.corners-top;.panel;.row1;.row3,,Extract Method,pending
+phpbb-C0639,phpbb,phpBB/phpbb/db/driver/driver_interface.php,1,453,sql_data_access,SQL/Data Access Region,40,,,Array;Table;an;array;entries;the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0640,phpbb,phpBB/phpbb/db/driver/mssqlnative.php,1,451,mixed_php_html_sql,SQL in Presentation Logic,59,,,LIMIT;account,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0641,phpbb,phpBB/phpbb/db/driver/mssqlnative.php,120,188,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+phpbb-C0642,phpbb,phpBB/phpbb/db/driver/mssqlnative.php,188,229,sql_data_access,SQL/Data Access Region,7,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0643,phpbb,phpBB/phpbb/db/driver/mssql_odbc.php,33,90,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+phpbb-C0644,phpbb,phpBB/phpbb/db/driver/mssql_odbc.php,148,215,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+phpbb-C0645,phpbb,phpBB/phpbb/db/driver/mysql.php,1,503,mixed_php_html_sql,SQL in Presentation Logic,75,,,account,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0646,phpbb,phpBB/phpbb/db/driver/mysql.php,32,117,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+phpbb-C0647,phpbb,phpBB/phpbb/db/driver/mysql.php,168,234,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+phpbb-C0648,phpbb,phpBB/phpbb/db/driver/mysql.php,389,504,sql_data_access,SQL/Data Access Region,23,,,account,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0649,phpbb,phpBB/phpbb/db/driver/mysqli.php,1,490,mixed_php_html_sql,SQL in Presentation Logic,72,,,account,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0650,phpbb,phpBB/phpbb/db/driver/mysqli.php,29,115,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+phpbb-C0651,phpbb,phpBB/phpbb/db/driver/mysqli.php,170,231,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+phpbb-C0652,phpbb,phpBB/phpbb/db/driver/mysqli.php,372,491,sql_data_access,SQL/Data Access Region,24,,,account,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0653,phpbb,phpBB/phpbb/db/driver/oracle.php,1,822,mixed_php_html_sql,SQL in Presentation Logic,169,,,DUAL;USER_TABLES;a;account;other;our;plan_table;the;v,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0654,phpbb,phpBB/phpbb/db/driver/oracle.php,27,80,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+phpbb-C0655,phpbb,phpBB/phpbb/db/driver/oracle.php,161,243,long_method_or_region,Long or Complex Region,29,,,,,,Extract Method,pending
+phpbb-C0656,phpbb,phpBB/phpbb/db/driver/oracle.php,243,471,sql_data_access,SQL/Data Access Region,81,,,other;our,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0657,phpbb,phpBB/phpbb/db/driver/oracle.php,726,823,sql_data_access,SQL/Data Access Region,9,,,USER_TABLES;account;plan_table;the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0658,phpbb,phpBB/phpbb/db/driver/postgres.php,1,501,mixed_php_html_sql,SQL in Presentation Logic,70,,,account,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0659,phpbb,phpBB/phpbb/db/driver/postgres.php,29,119,sql_data_access,SQL/Data Access Region,20,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0660,phpbb,phpBB/phpbb/db/driver/postgres.php,170,238,sql_data_access,SQL/Data Access Region,13,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0661,phpbb,phpBB/phpbb/db/driver/postgres.php,442,502,sql_data_access,SQL/Data Access Region,13,,,account,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0662,phpbb,phpBB/phpbb/db/driver/sqlite3.php,1,431,mixed_php_html_sql,SQL in Presentation Logic,69,,,account;query,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0663,phpbb,phpBB/phpbb/db/driver/sqlite3.php,115,201,sql_data_access,SQL/Data Access Region,16,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0664,phpbb,phpBB/phpbb/db/driver/sqlite3.php,374,432,sql_data_access,SQL/Data Access Region,13,,,account,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0665,phpbb,phpBB/phpbb/db/extractor/base_extractor.php,104,183,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phpbb-C0666,phpbb,phpBB/phpbb/db/extractor/mssql_extractor.php,1,415,sql_data_access,SQL/Data Access Region,47,,,INFORMATION_SCHEMA;a;current;database,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0667,phpbb,phpBB/phpbb/db/extractor/mssql_extractor.php,60,176,sql_data_access,SQL/Data Access Region,16,,,INFORMATION_SCHEMA,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0668,phpbb,phpBB/phpbb/db/extractor/mssql_extractor.php,200,316,sql_data_access,SQL/Data Access Region,14,,,INFORMATION_SCHEMA;a;current;database,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0669,phpbb,phpBB/phpbb/db/extractor/mssql_extractor.php,316,416,sql_data_access,SQL/Data Access Region,12,,,INFORMATION_SCHEMA;a;current,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0670,phpbb,phpBB/phpbb/db/extractor/mysql_extractor.php,1,403,sql_data_access,SQL/Data Access Region,49,,,database,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0671,phpbb,phpBB/phpbb/db/extractor/mysql_extractor.php,99,189,sql_data_access,SQL/Data Access Region,12,,,database,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0672,phpbb,phpBB/phpbb/db/extractor/mysql_extractor.php,189,284,sql_data_access,SQL/Data Access Region,13,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0673,phpbb,phpBB/phpbb/db/extractor/mysql_extractor.php,309,404,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+phpbb-C0674,phpbb,phpBB/phpbb/db/extractor/oracle_extractor.php,1,263,sql_data_access,SQL/Data Access Region,27,,,ALL_TAB_COLS;USER_CONS_COLUMNS;USER_DEPENDENCIES;USER_INDEXES;USER_TRIGGERS;a;current,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0675,phpbb,phpBB/phpbb/db/extractor/oracle_extractor.php,23,173,sql_data_access,SQL/Data Access Region,16,,,ALL_TAB_COLS;USER_CONS_COLUMNS;USER_DEPENDENCIES;USER_INDEXES;USER_TRIGGERS,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0676,phpbb,phpBB/phpbb/db/extractor/oracle_extractor.php,173,249,sql_data_access,SQL/Data Access Region,9,,,a;current,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0677,phpbb,phpBB/phpbb/db/extractor/postgres_extractor.php,1,339,sql_data_access,SQL/Data Access Region,41,,,INFORMATION_SCHEMA;a;current;pg_attrdef;pg_class;pg_constraint;stdin;the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0678,phpbb,phpBB/phpbb/db/extractor/postgres_extractor.php,42,248,sql_data_access,SQL/Data Access Region,27,,,INFORMATION_SCHEMA;pg_attrdef;pg_class;pg_constraint;the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0679,phpbb,phpBB/phpbb/db/extractor/postgres_extractor.php,248,329,sql_data_access,SQL/Data Access Region,11,,,a;current;pg_attrdef;stdin,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0680,phpbb,phpBB/phpbb/db/extractor/sqlite3_extractor.php,1,151,sql_data_access,SQL/Data Access Region,17,,,sqlite_master,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0681,phpbb,phpBB/phpbb/db/extractor/sqlite3_extractor.php,42,92,sql_data_access,SQL/Data Access Region,6,,,sqlite_master,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0682,phpbb,phpBB/phpbb/db/extractor/sqlite3_extractor.php,92,141,sql_data_access,SQL/Data Access Region,8,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0683,phpbb,phpBB/phpbb/db/migration/profilefield_base_migration.php,1,248,sql_data_access,SQL/Data Access Region,12,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0684,phpbb,phpBB/phpbb/db/migration/profilefield_base_migration.php,85,125,sql_data_access,SQL/Data Access Region,3,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0685,phpbb,phpBB/phpbb/db/migration/profilefield_base_migration.php,189,235,sql_data_access,SQL/Data Access Region,5,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0686,phpbb,phpBB/phpbb/db/migration/schema_generator.php,67,229,long_method_or_region,Long or Complex Region,35,,,,,,Extract Method,pending
+phpbb-C0687,phpbb,phpBB/phpbb/db/tools/mssql.php,1,880,sql_data_access,SQL/Data Access Region,85,,,INFORMATION_SCHEMA;sys;syscolumns;sysconstraints;sysindexes;sysindexkeys;sysobjects;the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0688,phpbb,phpBB/phpbb/db/tools/mssql.php,149,270,long_method_or_region,Long or Complex Region,23,,,,,,Extract Method,pending
+phpbb-C0689,phpbb,phpBB/phpbb/db/tools/mssql.php,342,410,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phpbb-C0690,phpbb,phpBB/phpbb/db/tools/mssql.php,667,713,sql_data_access,SQL/Data Access Region,3,,,sys;syscolumns;sysconstraints;sysobjects,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0691,phpbb,phpBB/phpbb/db/tools/mssql.php,774,866,sql_data_access,SQL/Data Access Region,10,,,sys;syscolumns;sysindexes;sysindexkeys,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0692,phpbb,phpBB/phpbb/db/tools/postgres.php,1,614,sql_data_access,SQL/Data Access Region,63,,,pg_class;pg_constraint;pg_stat_user_tables,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0693,phpbb,phpBB/phpbb/db/tools/postgres.php,102,213,long_method_or_region,Long or Complex Region,23,,,,,,Extract Method,pending
+phpbb-C0694,phpbb,phpBB/phpbb/db/tools/postgres.php,302,370,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phpbb-C0695,phpbb,phpBB/phpbb/db/tools/postgres.php,532,609,sql_data_access,SQL/Data Access Region,11,,,pg_constraint,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0696,phpbb,phpBB/phpbb/db/tools/tools.php,1,1956,sql_data_access,SQL/Data Access Region,306,,,USER_DEPENDENCIES;USER_TABLES;all;all_ind_columns;column;sqlite_master;table;the;user_indexes;user_tab_columns,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0697,phpbb,phpBB/phpbb/db/tools/tools.php,43,190,long_method_or_region,Long or Complex Region,5,,,,,,Extract Method,pending
+phpbb-C0698,phpbb,phpBB/phpbb/db/tools/tools.php,239,278,sql_data_access,SQL/Data Access Region,7,,,USER_TABLES;sqlite_master,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0699,phpbb,phpBB/phpbb/db/tools/tools.php,296,450,long_method_or_region,Long or Complex Region,31,,,,,,Extract Method,pending
+phpbb-C0700,phpbb,phpBB/phpbb/db/tools/tools.php,450,831,sql_data_access,SQL/Data Access Region,87,,,column;sqlite_master;table,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0701,phpbb,phpBB/phpbb/db/tools/tools.php,831,900,sql_data_access,SQL/Data Access Region,10,,,sqlite_master;user_tab_columns,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0702,phpbb,phpBB/phpbb/db/tools/tools.php,910,970,sql_data_access,SQL/Data Access Region,10,,,user_indexes,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0703,phpbb,phpBB/phpbb/db/tools/tools.php,970,1044,sql_data_access,SQL/Data Access Region,14,,,user_indexes,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0704,phpbb,phpBB/phpbb/db/tools/tools.php,1075,1188,long_method_or_region,Long or Complex Region,24,,,,,,Extract Method,pending
+phpbb-C0705,phpbb,phpBB/phpbb/db/tools/tools.php,1278,1357,sql_data_access,SQL/Data Access Region,14,,,the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0706,phpbb,phpBB/phpbb/db/tools/tools.php,1419,1491,sql_data_access,SQL/Data Access Region,12,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0707,phpbb,phpBB/phpbb/db/tools/tools.php,1606,1664,sql_data_access,SQL/Data Access Region,10,,,the;user_indexes,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0708,phpbb,phpBB/phpbb/db/tools/tools.php,1672,1825,sql_data_access,SQL/Data Access Region,21,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0709,phpbb,phpBB/phpbb/db/tools/tools.php,1825,1895,sql_data_access,SQL/Data Access Region,10,,,all;all_ind_columns,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0710,phpbb,phpBB/phpbb/db/tools/tools.php,1895,1957,sql_data_access,SQL/Data Access Region,8,,,sqlite_master;the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0711,phpbb,phpBB/phpbb/db/migration/tool/config.php,1,165,sql_data_access,SQL/Data Access Region,16,,,a;an,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0712,phpbb,phpBB/phpbb/db/migration/tool/module.php,1,557,sql_data_access,SQL/Data Access Region,79,,,phpBB;the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0713,phpbb,phpBB/phpbb/db/migration/tool/module.php,91,178,sql_data_access,SQL/Data Access Region,13,,,the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0714,phpbb,phpBB/phpbb/db/migration/tool/module.php,178,355,sql_data_access,SQL/Data Access Region,30,,,phpBB,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0715,phpbb,phpBB/phpbb/db/migration/tool/module.php,355,430,sql_data_access,SQL/Data Access Region,12,,,the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0716,phpbb,phpBB/phpbb/db/migration/tool/permission.php,1,652,sql_data_access,SQL/Data Access Region,76,,,that;the;which,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0717,phpbb,phpBB/phpbb/db/migration/tool/permission.php,72,111,sql_data_access,SQL/Data Access Region,5,,,which,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0718,phpbb,phpBB/phpbb/db/migration/tool/permission.php,111,194,sql_data_access,SQL/Data Access Region,15,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0719,phpbb,phpBB/phpbb/db/migration/tool/permission.php,194,252,sql_data_access,SQL/Data Access Region,6,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0720,phpbb,phpBB/phpbb/db/migration/tool/permission.php,252,291,sql_data_access,SQL/Data Access Region,3,,,the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0721,phpbb,phpBB/phpbb/db/migration/tool/permission.php,354,514,sql_data_access,SQL/Data Access Region,21,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0722,phpbb,phpBB/phpbb/db/migration/tool/permission.php,514,601,sql_data_access,SQL/Data Access Region,10,,,that,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0723,phpbb,phpBB/phpbb/db/migration/tool/permission.php,601,653,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+phpbb-C0724,phpbb,phpBB/phpbb/db/migration/data/v30x/release_3_0_0.php,23,1112,session_dependent_logic,Session-Dependent Logic,2,,,,,,Extract Guard;Extract Method,pending
+phpbb-C0725,phpbb,phpBB/phpbb/db/migration/data/v30x/release_3_0_11_rc1.php,62,102,sql_data_access,SQL/Data Access Region,3,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0726,phpbb,phpBB/phpbb/db/migration/data/v30x/release_3_0_4_rc1.php,89,130,sql_data_access,SQL/Data Access Region,6,,,the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0727,phpbb,phpBB/phpbb/db/migration/data/v30x/release_3_0_5_rc1.php,91,136,sql_data_access,SQL/Data Access Region,5,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0728,phpbb,phpBB/phpbb/db/migration/data/v30x/release_3_0_6_rc1.php,1,364,sql_data_access,SQL/Data Access Region,14,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0729,phpbb,phpBB/phpbb/db/migration/data/v30x/release_3_0_6_rc1.php,113,232,long_method_or_region,Long or Complex Region,4,,,,,,Extract Method,pending
+phpbb-C0730,phpbb,phpBB/phpbb/db/migration/data/v30x/release_3_0_6_rc1.php,239,365,sql_data_access,SQL/Data Access Region,10,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0731,phpbb,phpBB/phpbb/db/migration/data/v30x/release_3_0_7_rc2.php,37,80,sql_data_access,SQL/Data Access Region,4,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0732,phpbb,phpBB/phpbb/db/migration/data/v30x/release_3_0_8_rc1.php,53,109,sql_data_access,SQL/Data Access Region,7,,,file;package,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0733,phpbb,phpBB/phpbb/db/migration/data/v30x/release_3_0_8_rc1.php,119,166,sql_data_access,SQL/Data Access Region,3,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0734,phpbb,phpBB/phpbb/db/migration/data/v310/bot_update.php,31,95,sql_data_access,SQL/Data Access Region,4,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0735,phpbb,phpBB/phpbb/db/migration/data/v310/bot_update.php,95,151,sql_data_access,SQL/Data Access Region,5,,,bots,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0736,phpbb,phpBB/phpbb/db/migration/data/v310/dev.php,1,427,sql_data_access,SQL/Data Access Region,19,,,is;some;the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0737,phpbb,phpBB/phpbb/db/migration/data/v310/dev.php,89,208,long_method_or_region,Long or Complex Region,2,,,,,,Extract Method,pending
+phpbb-C0738,phpbb,phpBB/phpbb/db/migration/data/v310/dev.php,343,428,sql_data_access,SQL/Data Access Region,9,,,some;the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0739,phpbb,phpBB/phpbb/db/migration/data/v310/notifications_use_full_name.php,86,138,sql_data_access,SQL/Data Access Region,3,,,the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0740,phpbb,phpBB/phpbb/db/migration/data/v310/notifications_use_full_name.php,138,185,sql_data_access,SQL/Data Access Region,3,,,the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0741,phpbb,phpBB/phpbb/db/migration/data/v310/notification_options_reconvert.php,1,142,sql_data_access,SQL/Data Access Region,14,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0742,phpbb,phpBB/phpbb/db/migration/data/v310/notification_options_reconvert.php,51,127,sql_data_access,SQL/Data Access Region,10,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0743,phpbb,phpBB/phpbb/db/migration/data/v310/passwords_convert_p1.php,30,82,sql_data_access,SQL/Data Access Region,9,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0744,phpbb,phpBB/phpbb/db/migration/data/v310/softdelete_p1.php,150,212,sql_data_access,SQL/Data Access Region,8,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0745,phpbb,phpBB/phpbb/db/migration/data/v310/style_update_p1.php,1,191,sql_data_access,SQL/Data Access Region,14,,,styles,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0746,phpbb,phpBB/phpbb/db/migration/data/v310/style_update_p1.php,63,192,sql_data_access,SQL/Data Access Region,13,,,styles,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0747,phpbb,phpBB/phpbb/db/migration/data/v310/teampage.php,72,111,sql_data_access,SQL/Data Access Region,4,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0748,phpbb,phpBB/phpbb/db/migration/data/v310/timezone.php,1,194,sql_data_access,SQL/Data Access Region,49,,,blocks;board,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0749,phpbb,phpBB/phpbb/db/migration/data/v310/timezone.php,46,104,sql_data_access,SQL/Data Access Region,7,,,blocks;board,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0750,phpbb,phpBB/phpbb/db/migration/data/v310/timezone.php,104,195,long_method_or_region,Long or Complex Region,42,,,,,,Extract Method,pending
+phpbb-C0751,phpbb,phpBB/phpbb/db/migration/data/v31x/remove_duplicate_migrations.php,31,78,sql_data_access,SQL/Data Access Region,9,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0752,phpbb,phpBB/phpbb/db/migration/data/v31x/style_update.php,1,136,sql_data_access,SQL/Data Access Region,15,,,acp_styles,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0753,phpbb,phpBB/phpbb/db/migration/data/v31x/style_update.php,30,110,sql_data_access,SQL/Data Access Region,10,,,acp_styles,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0754,phpbb,phpBB/phpbb/db/migration/data/v320/default_data_type_ids.php,26,194,long_method_or_region,Long or Complex Region,1,,,,,,Extract Method,pending
+phpbb-C0755,phpbb,phpBB/phpbb/db/migration/data/v320/default_data_type_ids.php,194,362,long_method_or_region,Long or Complex Region,1,,,,,,Extract Method,pending
+phpbb-C0756,phpbb,phpBB/phpbb/db/migration/data/v320/remove_outdated_media.php,45,98,sql_data_access,SQL/Data Access Region,4,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0757,phpbb,phpBB/phpbb/db/migration/data/v320/remove_profilefield_wlm.php,94,153,sql_data_access,SQL/Data Access Region,2,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0758,phpbb,phpBB/phpbb/console/command/cron/run.php,112,153,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phpbb-C0759,phpbb,phpBB/phpbb/console/command/fixup/fix_left_right_ids.php,1,137,sql_data_access,SQL/Data Access Region,13,,,Support;the;their,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0760,phpbb,phpBB/phpbb/console/command/fixup/fix_left_right_ids.php,104,138,sql_data_access,SQL/Data Access Region,8,,,the;their,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0761,phpbb,phpBB/phpbb/console/command/fixup/update_hashes.php,79,118,sql_data_access,SQL/Data Access Region,2,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0762,phpbb,phpBB/phpbb/console/command/thumbnail/delete.php,70,146,sql_data_access,SQL/Data Access Region,6,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0763,phpbb,phpBB/phpbb/console/command/thumbnail/generate.php,87,172,sql_data_access,SQL/Data Access Region,8,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0764,phpbb,phpBB/phpbb/console/command/user/activate.php,133,196,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phpbb-C0765,phpbb,phpBB/phpbb/console/command/user/add.php,1,334,sql_data_access,SQL/Data Access Region,21,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0766,phpbb,phpBB/phpbb/captcha/plugins/captcha_abstract.php,1,390,mixed_php_html_sql,SQL in Presentation Logic,27,,,,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0767,phpbb,phpBB/phpbb/captcha/plugins/qa.php,1,1041,sql_data_access,SQL/Data Access Region,74,strict,,a;acp_get_question_input;array;input;one,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0768,phpbb,phpBB/phpbb/captcha/plugins/qa.php,59,136,sql_data_access,SQL/Data Access Region,10,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0769,phpbb,phpBB/phpbb/captcha/plugins/qa.php,641,779,long_method_or_region,Long or Complex Region,18,strict,,,,,Extract Method,pending
+phpbb-C0770,phpbb,phpBB/phpbb/captcha/plugins/qa.php,809,849,sql_data_access,SQL/Data Access Region,4,,,a;input,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0771,phpbb,phpBB/phpbb/captcha/plugins/recaptcha.php,1,225,form_handling,Request Handling Mixed With Rendering,20,,,,,,Extract Validation Helper;Extract Method;Extract View Helper,pending
+phpbb-C0772,phpbb,phpBB/phpbb/avatar/driver/gravatar.php,66,161,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+phpbb-C0773,phpbb,phpBB/phpbb/avatar/driver/local.php,159,208,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phpbb-C0774,phpbb,phpBB/phpbb/avatar/driver/remote.php,50,212,long_method_or_region,Long or Complex Region,92,,,,,,Extract Method,pending
+phpbb-C0775,phpbb,phpBB/phpbb/avatar/driver/upload.php,95,255,long_method_or_region,Long or Complex Region,78,,,,,,Extract Method,pending
+phpbb-C0776,phpbb,phpBB/phpbb/auth/provider/apache.php,1,264,sql_data_access,SQL/Data Access Region,25,,,apache,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0777,phpbb,phpBB/phpbb/auth/provider/apache.php,65,155,sql_data_access,SQL/Data Access Region,8,,,apache,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0778,phpbb,phpBB/phpbb/auth/provider/apache.php,155,215,sql_data_access,SQL/Data Access Region,8,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0779,phpbb,phpBB/phpbb/auth/provider/db.php,1,240,sql_data_access,SQL/Data Access Region,20,,,the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0780,phpbb,phpBB/phpbb/auth/provider/db.php,63,241,sql_data_access,SQL/Data Access Region,17,,,the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0781,phpbb,phpBB/phpbb/auth/provider/ldap.php,1,348,sql_data_access,SQL/Data Access Region,33,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0782,phpbb,phpBB/phpbb/auth/provider/ldap.php,48,118,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phpbb-C0783,phpbb,phpBB/phpbb/auth/provider/ldap.php,118,292,sql_data_access,SQL/Data Access Region,16,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0784,phpbb,phpBB/phpbb/auth/provider/oauth/oauth.php,1,699,sql_data_access,SQL/Data Access Region,54,,,table;token,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0785,phpbb,phpBB/phpbb/auth/provider/oauth/oauth.php,185,304,sql_data_access,SQL/Data Access Region,12,,,token,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0786,phpbb,phpBB/phpbb/auth/provider/oauth/oauth.php,455,502,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+phpbb-C0787,phpbb,phpBB/phpbb/auth/provider/oauth/oauth.php,502,545,sql_data_access,SQL/Data Access Region,6,,,table;token,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0788,phpbb,phpBB/phpbb/auth/provider/oauth/oauth.php,545,588,sql_data_access,SQL/Data Access Region,3,,,table,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0789,phpbb,phpBB/phpbb/auth/provider/oauth/oauth.php,622,678,sql_data_access,SQL/Data Access Region,8,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0790,phpbb,phpBB/phpbb/auth/provider/oauth/token_storage.php,1,592,sql_data_access,SQL/Data Access Region,44,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0791,phpbb,phpBB/language/en/common.php,1,1429,mixed_php_html_sql,SQL in Presentation Logic,51,,,a;lists;previous;problems;the;this;your,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0792,phpbb,phpBB/language/en/install.php,1,575,mixed_php_html_sql,SQL in Presentation Logic,66,,,Package;Release;a;any;bots;choosing;database;directory;file;files;filesystem;from;here;is;itself;of;other;package;past;permission;phpBB;process;the;these;to;tool;user_group;users;was;with;you;your,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0793,phpbb,phpBB/language/en/mcp.php,1,434,sql_data_access,SQL/Data Access Region,73,,,a;another;any;previous;selected;the;this,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0794,phpbb,phpBB/language/en/memberlist.php,1,154,sql_data_access,SQL/Data Access Region,13,,,IP;user,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0795,phpbb,phpBB/language/en/posting.php,1,286,sql_data_access,SQL/Data Access Region,23,,,being;comment;message;posting,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0796,phpbb,phpBB/language/en/ucp.php,1,659,mixed_php_html_sql,SQL in Presentation Logic,51,,,a;another;foe;foes;folder;friend;here;other;previous;removed;selected;the;your,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0797,phpbb,phpBB/language/en/acp/ban.php,1,84,mixed_php_html_sql,SQL in Presentation Logic,12,,,all;banning,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0798,phpbb,phpBB/language/en/acp/board.php,1,629,mixed_php_html_sql,SQL in Presentation Logic,119,,,Google;a;address;all;another;being;email;external;operating;password;system;the;these;using,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0799,phpbb,phpBB/language/en/acp/common.php,1,831,mixed_php_html_sql,SQL in Presentation Logic,55,,,Administration;ban;consideration;download;group;previous;the;topic;user;usergroup;version;where,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0800,phpbb,phpBB/language/en/acp/groups.php,1,157,sql_data_access,SQL/Data Access Region,20,,,group;here;or;permissions;the;this,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0801,phpbb,phpBB/language/en/acp/permissions.php,1,287,mixed_php_html_sql,SQL in Presentation Logic,52,,,Forum;User;four;one;the,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0802,phpbb,phpBB/language/en/acp/posting.php,1,291,mixed_php_html_sql,SQL in Presentation Logic,22,,,the;this;word,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0803,phpbb,phpBB/language/en/help/bbcode.php,1,66,mixed_php_html,Mixed PHP/HTML,19,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+phpbb-C0804,phpbb,phpBB/language/en/help/faq.php,1,186,mixed_php_html_sql,SQL in Presentation Logic,118,,,a;being;by;day;going;it;manageable;minors;one;sending;signing;someone;the;these;to;you;your,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0805,phpbb,phpBB/install/convert/convertor.php,1,1614,sql_data_access,SQL/Data Access Region,241,,,account;forum_prune;table;the;vote_desc,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0806,phpbb,phpBB/install/convert/convertor.php,62,919,sql_data_access,SQL/Data Access Region,146,,,account;vote_desc,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0807,phpbb,phpBB/install/convert/convertor.php,919,1000,sql_data_access,SQL/Data Access Region,7,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0808,phpbb,phpBB/install/convert/convertor.php,1102,1255,sql_data_access,SQL/Data Access Region,15,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0809,phpbb,phpBB/install/convert/convertor.php,1255,1410,sql_data_access,SQL/Data Access Region,40,,,forum_prune;table;the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0810,phpbb,phpBB/install/convert/convertor.php,1410,1564,long_method_or_region,Long or Complex Region,30,,,,,,Extract Method,pending
+phpbb-C0811,phpbb,phpBB/install/convertors/convert_phpbb20.php,1,974,mixed_php_html_sql,SQL in Presentation Logic,43,,,posts;target;the;to;topics;vote_desc,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0812,phpbb,phpBB/install/convertors/convert_phpbb20.php,107,975,sql_data_access,SQL/Data Access Region,37,,,posts;target;the;to;topics;vote_desc,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0813,phpbb,phpBB/install/convertors/functions_phpbb20.php,1,1971,mixed_php_html_sql,SQL in Presentation Logic,233,,,Birthday;file;niels;old;the,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0814,phpbb,phpBB/install/convertors/functions_phpbb20.php,55,323,sql_data_access,SQL/Data Access Region,28,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0815,phpbb,phpBB/install/convertors/functions_phpbb20.php,323,428,sql_data_access,SQL/Data Access Region,12,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0816,phpbb,phpBB/install/convertors/functions_phpbb20.php,475,545,sql_data_access,SQL/Data Access Region,11,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0817,phpbb,phpBB/install/convertors/functions_phpbb20.php,560,1114,sql_data_access,SQL/Data Access Region,77,,,old,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0818,phpbb,phpBB/install/convertors/functions_phpbb20.php,1217,1287,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+phpbb-C0819,phpbb,phpBB/install/convertors/functions_phpbb20.php,1314,1358,sql_data_access,SQL/Data Access Region,6,,,the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0820,phpbb,phpBB/install/convertors/functions_phpbb20.php,1415,1463,sql_data_access,SQL/Data Access Region,5,,,file,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0821,phpbb,phpBB/install/convertors/functions_phpbb20.php,1650,1703,sql_data_access,SQL/Data Access Region,7,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0822,phpbb,phpBB/install/convertors/functions_phpbb20.php,1756,1844,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+phpbb-C0823,phpbb,phpBB/install/convertors/functions_phpbb20.php,1844,1913,sql_data_access,SQL/Data Access Region,8,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0824,phpbb,phpBB/install/data/confusables.php,62,645,long_method_or_region,Long or Complex Region,3,,,,,,Extract Method,pending
+phpbb-C0825,phpbb,phpBB/install/convert/controller/convertor.php,1,865,sql_data_access,SQL/Data Access Region,57,,,old;the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0826,phpbb,phpBB/install/convert/controller/convertor.php,185,260,sql_data_access,SQL/Data Access Region,7,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0827,phpbb,phpBB/install/convert/controller/convertor.php,378,432,sql_data_access,SQL/Data Access Region,4,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0828,phpbb,phpBB/install/convert/controller/convertor.php,432,607,sql_data_access,SQL/Data Access Region,23,,,old;the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0829,phpbb,phpBB/install/convert/controller/convertor.php,607,706,long_method_or_region,Long or Complex Region,4,,,,,,Extract Method,pending
+phpbb-C0830,phpbb,phpBB/includes/acp/acp_attachments.php,1,1806,mixed_php_html_sql,SQL in Presentation Logic,270,add;add_extension_check;allow_group;allow_in_pm;config;delete;securesubmit;sort;submit;unsecuresubmit,,log;the,# . $row[;.disabled;.sep,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0831,phpbb,phpBB/includes/acp/acp_attachments.php,49,1325,sql_data_access,SQL/Data Access Region,196,add;add_extension_check;allow_group;allow_in_pm;config;delete;sort;submit,,the,# . $row[;.disabled;.sep,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0832,phpbb,phpBB/includes/acp/acp_attachments.php,1414,1456,sql_data_access,SQL/Data Access Region,6,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0833,phpbb,phpBB/includes/acp/acp_attachments.php,1456,1501,sql_data_access,SQL/Data Access Region,8,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0834,phpbb,phpBB/includes/acp/acp_attachments.php,1586,1775,sql_data_access,SQL/Data Access Region,41,securesubmit;unsecuresubmit,,log,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0835,phpbb,phpBB/includes/acp/acp_ban.php,1,298,sql_data_access,SQL/Data Access Region,28,,,another,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0836,phpbb,phpBB/includes/acp/acp_ban.php,26,180,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+phpbb-C0837,phpbb,phpBB/includes/acp/acp_ban.php,180,299,sql_data_access,SQL/Data Access Region,14,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0838,phpbb,phpBB/includes/acp/acp_bbcodes.php,1,586,mixed_php_html_sql,SQL in Presentation Logic,78,,,tokens,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0839,phpbb,phpBB/includes/acp/acp_bbcodes.php,26,417,sql_data_access,SQL/Data Access Region,37,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0840,phpbb,phpBB/includes/acp/acp_bbcodes.php,417,587,long_method_or_region,Long or Complex Region,40,,,,,,Extract Method,pending
+phpbb-C0841,phpbb,phpBB/includes/acp/acp_board.php,1,1173,mixed_php_html_sql,SQL in Presentation Logic,119,allow_quick_reply_enable;config;submit,,URLs;password,.button2;.disabled-option,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0842,phpbb,phpBB/includes/acp/acp_board.php,31,769,long_method_or_region,Long or Complex Region,71,allow_quick_reply_enable;config;submit,,,,,Extract Method,pending
+phpbb-C0843,phpbb,phpBB/includes/acp/acp_board.php,1130,1167,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phpbb-C0844,phpbb,phpBB/includes/acp/acp_bots.php,1,427,sql_data_access,SQL/Data Access Region,56,add;submit,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0845,phpbb,phpBB/includes/acp/acp_bots.php,26,408,sql_data_access,SQL/Data Access Region,51,add;submit,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0846,phpbb,phpBB/includes/acp/acp_captcha.php,1,190,long_method_or_region,Long or Complex Region,22,captcha_demo,,,.disabled-option,,Extract Method,pending
+phpbb-C0847,phpbb,phpBB/includes/acp/acp_captcha.php,26,179,long_method_or_region,Long or Complex Region,20,captcha_demo,,,.disabled-option,,Extract Method,pending
+phpbb-C0848,phpbb,phpBB/includes/acp/acp_contact.php,29,139,long_method_or_region,Long or Complex Region,7,,,,,,Extract Method,pending
+phpbb-C0849,phpbb,phpBB/includes/acp/acp_database.php,1,614,sql_data_access,SQL/Data Access Region,100,,,PHP;information_schema,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0850,phpbb,phpBB/includes/acp/acp_database.php,27,441,sql_data_access,SQL/Data Access Region,71,,,information_schema,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0851,phpbb,phpBB/includes/acp/acp_database.php,441,485,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+phpbb-C0852,phpbb,phpBB/includes/acp/acp_disallow.php,1,115,sql_data_access,SQL/Data Access Region,12,allow;disallow,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0853,phpbb,phpBB/includes/acp/acp_disallow.php,26,116,sql_data_access,SQL/Data Access Region,10,allow;disallow,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0854,phpbb,phpBB/includes/acp/acp_email.php,1,351,mixed_php_html_sql,SQL in Presentation Logic,38,mail_banned_flag;send_immediately;submit,,group,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0855,phpbb,phpBB/includes/acp/acp_email.php,26,352,sql_data_access,SQL/Data Access Region,36,mail_banned_flag;send_immediately;submit,,group,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0856,phpbb,phpBB/includes/acp/acp_extensions.php,39,398,long_method_or_region,Long or Complex Region,48,,,,,,Extract Method,pending
+phpbb-C0857,phpbb,phpBB/includes/acp/acp_extensions.php,631,662,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+phpbb-C0858,phpbb,phpBB/includes/acp/acp_forums.php,1,2165,mixed_php_html_sql,SQL in Presentation Logic,270,update,,Do;a;extension;forum;forum_data_sql;one;the;which,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0859,phpbb,phpBB/includes/acp/acp_forums.php,27,941,sql_data_access,SQL/Data Access Region,153,update,,Do;the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0860,phpbb,phpBB/includes/acp/acp_forums.php,963,1396,sql_data_access,SQL/Data Access Region,53,,,a;extension;forum_data_sql;one;the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0861,phpbb,phpBB/includes/acp/acp_forums.php,1396,1511,sql_data_access,SQL/Data Access Region,9,,,one,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0862,phpbb,phpBB/includes/acp/acp_forums.php,1511,1571,sql_data_access,SQL/Data Access Region,6,,,one,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0863,phpbb,phpBB/includes/acp/acp_forums.php,1571,1812,sql_data_access,SQL/Data Access Region,26,,,extension,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0864,phpbb,phpBB/includes/acp/acp_forums.php,1812,2042,sql_data_access,SQL/Data Access Region,18,,,the;which,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0865,phpbb,phpBB/includes/acp/acp_forums.php,2042,2123,sql_data_access,SQL/Data Access Region,6,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0866,phpbb,phpBB/includes/acp/acp_groups.php,1,1212,sql_data_access,SQL/Data Access Region,182,add;addusers;group_founder_manage;group_legend;group_receive_pm;group_teampage;update,,Do;clause;non;the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0867,phpbb,phpBB/includes/acp/acp_groups.php,26,995,sql_data_access,SQL/Data Access Region,150,add;addusers;group_founder_manage;group_legend;group_receive_pm;group_teampage;update,,Do;clause;non;the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0868,phpbb,phpBB/includes/acp/acp_groups.php,995,1213,sql_data_access,SQL/Data Access Region,31,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0869,phpbb,phpBB/includes/acp/acp_help_phpbb.php,26,144,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+phpbb-C0870,phpbb,phpBB/includes/acp/acp_icons.php,1,999,mixed_php_html_sql,SQL in Presentation Logic,167,add;add_img;display_on_posting;edit;height;id;image;import;order;width,,the,# . $row[$fields . ,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0871,phpbb,phpBB/includes/acp/acp_icons.php,29,987,sql_data_access,SQL/Data Access Region,164,add;add_img;display_on_posting;edit;height;id;image;import;order;width,,the,# . $row[$fields . ,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0872,phpbb,phpBB/includes/acp/acp_inactive.php,1,322,sql_data_access,SQL/Data Access Region,38,mark;submit,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0873,phpbb,phpBB/includes/acp/acp_inactive.php,32,323,sql_data_access,SQL/Data Access Region,36,mark;submit,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0874,phpbb,phpBB/includes/acp/acp_jabber.php,1,144,form_handling,Request Handling Mixed With Rendering,16,submit,,,,,Extract Validation Helper;Extract Method;Extract View Helper,pending
+phpbb-C0875,phpbb,phpBB/includes/acp/acp_jabber.php,30,145,long_method_or_region,Long or Complex Region,14,submit,,,,,Extract Method,pending
+phpbb-C0876,phpbb,phpBB/includes/acp/acp_language.php,1,461,sql_data_access,SQL/Data Access Region,48,remove_store;test_connection;update;update_details,,clause;the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0877,phpbb,phpBB/includes/acp/acp_language.php,32,437,sql_data_access,SQL/Data Access Region,45,remove_store;test_connection;update;update_details,,clause;the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0878,phpbb,phpBB/includes/acp/acp_logs.php,1,176,mixed_php_html,Mixed PHP/HTML,20,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+phpbb-C0879,phpbb,phpBB/includes/acp/acp_logs.php,26,177,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+phpbb-C0880,phpbb,phpBB/includes/acp/acp_main.php,1,706,mixed_php_html_sql,SQL in Presentation Logic,92,,,the,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0881,phpbb,phpBB/includes/acp/acp_main.php,26,707,session_dependent_logic,Session-Dependent Logic,90,,,the,,,Extract Guard;Extract Method,pending
+phpbb-C0882,phpbb,phpBB/includes/acp/acp_modules.php,1,666,mixed_php_html_sql,SQL in Presentation Logic,96,submit,,,.disabled,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0883,phpbb,phpBB/includes/acp/acp_modules.php,40,598,sql_data_access,SQL/Data Access Region,77,submit,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0884,phpbb,phpBB/includes/acp/acp_modules.php,598,667,sql_data_access,SQL/Data Access Region,16,,,,.disabled,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0885,phpbb,phpBB/includes/acp/acp_permissions.php,1,1346,mixed_php_html_sql,SQL in Presentation Logic,262,all_groups;all_users;cancel;psubmit;setting;submit,,account;auth_settings;everyones;one;role;the,.disabled-option;.sep,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0886,phpbb,phpBB/includes/acp/acp_permissions.php,32,566,sql_data_access,SQL/Data Access Region,114,all_groups;all_users;cancel;psubmit;setting,,,.disabled-option,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0887,phpbb,phpBB/includes/acp/acp_permissions.php,633,679,sql_data_access,SQL/Data Access Region,7,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0888,phpbb,phpBB/includes/acp/acp_permissions.php,679,768,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+phpbb-C0889,phpbb,phpBB/includes/acp/acp_permissions.php,768,847,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+phpbb-C0890,phpbb,phpBB/includes/acp/acp_permissions.php,884,923,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+phpbb-C0891,phpbb,phpBB/includes/acp/acp_permissions.php,923,981,sql_data_access,SQL/Data Access Region,13,,,,.sep,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0892,phpbb,phpBB/includes/acp/acp_permissions.php,981,1203,sql_data_access,SQL/Data Access Region,56,,,account;one,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0893,phpbb,phpBB/includes/acp/acp_permissions.php,1254,1347,sql_data_access,SQL/Data Access Region,12,,,,.sep,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0894,phpbb,phpBB/includes/acp/acp_permission_roles.php,1,596,sql_data_access,SQL/Data Access Region,73,add;submit,,users,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0895,phpbb,phpBB/includes/acp/acp_permission_roles.php,27,483,sql_data_access,SQL/Data Access Region,58,add;submit,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0896,phpbb,phpBB/includes/acp/acp_permission_roles.php,529,597,sql_data_access,SQL/Data Access Region,6,,,users,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0897,phpbb,phpBB/includes/acp/acp_php_info.php,1,89,mixed_php_html,Mixed PHP/HTML,12,,,,.center;.e;.h;.row1;.row2;.type2;.v,,Separate PHP Logic from Markup;Extract View Helper,pending
+phpbb-C0898,phpbb,phpBB/includes/acp/acp_php_info.php,26,85,long_method_or_region,Long or Complex Region,10,,,,.center;.e;.h;.row1;.row2;.type2;.v,,Extract Method,pending
+phpbb-C0899,phpbb,phpBB/includes/acp/acp_profile.php,1,1292,mixed_php_html_sql,SQL in Presentation Logic,173,create;next;prev;save,,,.medium,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0900,phpbb,phpBB/includes/acp/acp_profile.php,34,848,sql_data_access,SQL/Data Access Region,107,create;next;prev;save,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0901,phpbb,phpBB/includes/acp/acp_profile.php,848,945,sql_data_access,SQL/Data Access Region,23,,,,.medium,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0902,phpbb,phpBB/includes/acp/acp_profile.php,945,1248,sql_data_access,SQL/Data Access Region,36,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0903,phpbb,phpBB/includes/acp/acp_profile.php,1248,1293,sql_data_access,SQL/Data Access Region,8,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0904,phpbb,phpBB/includes/acp/acp_prune.php,1,587,mixed_php_html_sql,SQL in Presentation Logic,83,prune;submit,,the;this;those;time,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0905,phpbb,phpBB/includes/acp/acp_prune.php,56,257,sql_data_access,SQL/Data Access Region,27,submit,,the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0906,phpbb,phpBB/includes/acp/acp_prune.php,257,398,sql_data_access,SQL/Data Access Region,19,prune,,those,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0907,phpbb,phpBB/includes/acp/acp_prune.php,398,588,sql_data_access,SQL/Data Access Region,34,,,this;time,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0908,phpbb,phpBB/includes/acp/acp_ranks.php,1,285,sql_data_access,SQL/Data Access Region,35,add;save,,,"# . $rank_id,
+
+					;# . $row[",,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0909,phpbb,phpBB/includes/acp/acp_ranks.php,26,286,sql_data_access,SQL/Data Access Region,33,add;save,,,"# . $rank_id,
+
+					;# . $row[",,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0910,phpbb,phpBB/includes/acp/acp_reasons.php,1,394,sql_data_access,SQL/Data Access Region,61,submit,,,# . $row[,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0911,phpbb,phpBB/includes/acp/acp_reasons.php,26,395,sql_data_access,SQL/Data Access Region,59,submit,,,# . $row[,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0912,phpbb,phpBB/includes/acp/acp_search.php,1,623,mixed_php_html_sql,SQL in Presentation Logic,77,cancel;config;submit,,,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0913,phpbb,phpBB/includes/acp/acp_search.php,51,238,long_method_or_region,Long or Complex Region,27,config;submit,,,,,Extract Method,pending
+phpbb-C0914,phpbb,phpBB/includes/acp/acp_search.php,238,534,sql_data_access,SQL/Data Access Region,43,cancel,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0915,phpbb,phpBB/includes/acp/acp_styles.php,1,1372,mixed_php_html_sql,SQL in Presentation Logic,165,,,data;default;posted;styles;template,"# . $id;
+
+			// Check style name
+			if ($update[;# . $style[",,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0916,phpbb,phpBB/includes/acp/acp_styles.php,68,170,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+phpbb-C0917,phpbb,phpBB/includes/acp/acp_styles.php,288,364,sql_data_access,SQL/Data Access Region,11,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0918,phpbb,phpBB/includes/acp/acp_styles.php,421,613,long_method_or_region,Long or Complex Region,25,,,,"# . $id;
+
+			// Check style name
+			if ($update[",,Extract Method,pending
+phpbb-C0919,phpbb,phpBB/includes/acp/acp_styles.php,678,747,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+phpbb-C0920,phpbb,phpBB/includes/acp/acp_styles.php,747,836,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+phpbb-C0921,phpbb,phpBB/includes/acp/acp_styles.php,939,1061,long_method_or_region,Long or Complex Region,14,,,,# . $style[,,Extract Method,pending
+phpbb-C0922,phpbb,phpBB/includes/acp/acp_styles.php,1231,1270,sql_data_access,SQL/Data Access Region,4,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0923,phpbb,phpBB/includes/acp/acp_styles.php,1270,1319,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phpbb-C0924,phpbb,phpBB/includes/acp/acp_users.php,1,2670,mixed_php_html_sql,SQL in Presentation Logic,375,cancel;confirm;delall;delmarked;update,,Custom;it;post_ids;the;this;user,# . $row[;.sep,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0925,phpbb,phpBB/includes/acp/acp_users.php,32,2627,sql_data_access,SQL/Data Access Region,367,cancel;confirm;delall;delmarked;update,,Custom;it;post_ids;the;this,# . $row[;.sep,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0926,phpbb,phpBB/includes/acp/acp_words.php,1,191,mixed_php_html_sql,SQL in Presentation Logic,21,add;save,,,# . $row[,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0927,phpbb,phpBB/includes/acp/acp_words.php,29,192,sql_data_access,SQL/Data Access Region,18,add;save,,,# . $row[,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0928,phpbb,phpBB/includes/acp/auth.php,1,1323,sql_data_access,SQL/Data Access Region,220,,,another;auth;existing;one;permission,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0929,phpbb,phpBB/includes/acp/auth.php,30,76,sql_data_access,SQL/Data Access Region,11,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0930,phpbb,phpBB/includes/acp/auth.php,76,229,sql_data_access,SQL/Data Access Region,35,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0931,phpbb,phpBB/includes/acp/auth.php,267,635,sql_data_access,SQL/Data Access Region,73,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0932,phpbb,phpBB/includes/acp/auth.php,635,720,sql_data_access,SQL/Data Access Region,10,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0933,phpbb,phpBB/includes/acp/auth.php,720,830,sql_data_access,SQL/Data Access Region,18,,,existing,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0934,phpbb,phpBB/includes/acp/auth.php,830,963,sql_data_access,SQL/Data Access Region,19,,,auth,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0935,phpbb,phpBB/includes/acp/auth.php,963,1026,sql_data_access,SQL/Data Access Region,7,,,auth,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0936,phpbb,phpBB/includes/acp/auth.php,1026,1134,sql_data_access,SQL/Data Access Region,17,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0937,phpbb,phpBB/includes/acp/auth.php,1134,1223,long_method_or_region,Long or Complex Region,19,,,,,,Extract Method,pending
+phpbb-C0938,phpbb,phpBB/includes/acp/auth.php,1223,1283,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+phpbb-C0939,phpbb,phpBB/includes/diff/diff.php,657,757,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+phpbb-C0940,phpbb,phpBB/includes/diff/diff.php,803,843,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+phpbb-C0941,phpbb,phpBB/includes/diff/diff.php,892,1069,long_method_or_region,Long or Complex Region,24,,,,,,Extract Method,pending
+phpbb-C0942,phpbb,phpBB/includes/diff/engine.php,60,232,long_method_or_region,Long or Complex Region,26,,,,,,Extract Method,pending
+phpbb-C0943,phpbb,phpBB/includes/diff/engine.php,232,331,long_method_or_region,Long or Complex Region,21,,,,,,Extract Method,pending
+phpbb-C0944,phpbb,phpBB/includes/diff/engine.php,442,556,long_method_or_region,Long or Complex Region,19,,,,,,Extract Method,pending
+phpbb-C0945,phpbb,phpBB/includes/diff/renderer.php,1,861,mixed_php_html,Mixed PHP/HTML,89,,,,.added;.added_empty;.context;.del;.diff;.file;.full;.hrdiff;.info;.ins;.modified;.removed;.removed_empty;.unmodified,,Separate PHP Logic from Markup;Extract View Helper,pending
+phpbb-C0946,phpbb,phpBB/includes/diff/renderer.php,97,184,long_method_or_region,Long or Complex Region,19,,,,,,Extract Method,pending
+phpbb-C0947,phpbb,phpBB/includes/diff/renderer.php,602,736,long_method_or_region,Long or Complex Region,26,,,,.added;.added_empty;.hrdiff;.modified;.removed;.removed_empty;.unmodified,,Extract Method,pending
+phpbb-C0948,phpbb,phpBB/includes/hooks/index.php,68,109,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+phpbb-C0949,phpbb,phpBB/includes/hooks/index.php,109,162,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+phpbb-C0950,phpbb,phpBB/includes/mcp/mcp_ban.php,1,298,mixed_php_html_sql,SQL in Presentation Logic,33,,,another;the,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0951,phpbb,phpBB/includes/mcp/mcp_ban.php,26,299,sql_data_access,SQL/Data Access Region,31,,,another;the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0952,phpbb,phpBB/includes/mcp/mcp_forum.php,1,548,mixed_php_html_sql,SQL in Presentation Logic,73,,,all;selected;the;topic;which,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0953,phpbb,phpBB/includes/mcp/mcp_forum.php,25,357,sql_data_access,SQL/Data Access Region,54,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0954,phpbb,phpBB/includes/mcp/mcp_forum.php,357,405,sql_data_access,SQL/Data Access Region,5,,,selected,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0955,phpbb,phpBB/includes/mcp/mcp_forum.php,405,549,sql_data_access,SQL/Data Access Region,14,,,all;the;topic;which,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0956,phpbb,phpBB/includes/mcp/mcp_front.php,1,391,sql_data_access,SQL/Data Access Region,35,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0957,phpbb,phpBB/includes/mcp/mcp_front.php,25,392,sql_data_access,SQL/Data Access Region,33,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0958,phpbb,phpBB/includes/mcp/mcp_logs.php,1,230,mixed_php_html_sql,SQL in Presentation Logic,27,,,,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0959,phpbb,phpBB/includes/mcp/mcp_logs.php,36,231,sql_data_access,SQL/Data Access Region,25,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0960,phpbb,phpBB/includes/mcp/mcp_main.php,1,1637,mixed_php_html_sql,SQL in Presentation Logic,220,confirm;move_leave_shadow,,the,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0961,phpbb,phpBB/includes/mcp/mcp_main.php,36,263,long_method_or_region,Long or Complex Region,59,,,,,,Extract Method,pending
+phpbb-C0962,phpbb,phpBB/includes/mcp/mcp_main.php,263,367,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+phpbb-C0963,phpbb,phpBB/includes/mcp/mcp_main.php,367,471,sql_data_access,SQL/Data Access Region,16,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0964,phpbb,phpBB/includes/mcp/mcp_main.php,471,743,sql_data_access,SQL/Data Access Region,32,confirm;move_leave_shadow,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0965,phpbb,phpBB/includes/mcp/mcp_main.php,743,822,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phpbb-C0966,phpbb,phpBB/includes/mcp/mcp_main.php,822,979,sql_data_access,SQL/Data Access Region,17,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0967,phpbb,phpBB/includes/mcp/mcp_main.php,979,1223,sql_data_access,SQL/Data Access Region,29,,,the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0968,phpbb,phpBB/includes/mcp/mcp_main.php,1223,1638,sql_data_access,SQL/Data Access Region,47,confirm,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0969,phpbb,phpBB/includes/mcp/mcp_notes.php,1,258,mixed_php_html_sql,SQL in Presentation Logic,30,,,,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0970,phpbb,phpBB/includes/mcp/mcp_notes.php,75,259,sql_data_access,SQL/Data Access Region,25,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0971,phpbb,phpBB/includes/mcp/mcp_pm_reports.php,1,326,mixed_php_html_sql,SQL in Presentation Logic,42,,,,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0972,phpbb,phpBB/includes/mcp/mcp_pm_reports.php,36,327,sql_data_access,SQL/Data Access Region,40,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0973,phpbb,phpBB/includes/mcp/mcp_post.php,1,675,mixed_php_html_sql,SQL in Presentation Logic,85,,,being,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0974,phpbb,phpBB/includes/mcp/mcp_post.php,25,520,sql_data_access,SQL/Data Access Region,67,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0975,phpbb,phpBB/includes/mcp/mcp_post.php,554,676,sql_data_access,SQL/Data Access Region,15,,,being,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0976,phpbb,phpBB/includes/mcp/mcp_queue.php,1,1489,mixed_php_html_sql,SQL in Presentation Logic,206,notify_poster,,the;viewtopic,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0977,phpbb,phpBB/includes/mcp/mcp_queue.php,36,646,sql_data_access,SQL/Data Access Region,81,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0978,phpbb,phpBB/includes/mcp/mcp_queue.php,646,902,long_method_or_region,Long or Complex Region,38,notify_poster,,,,,Extract Method,pending
+phpbb-C0979,phpbb,phpBB/includes/mcp/mcp_queue.php,902,1100,sql_data_access,SQL/Data Access Region,24,notify_poster,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0980,phpbb,phpBB/includes/mcp/mcp_queue.php,1100,1490,sql_data_access,SQL/Data Access Region,64,,,the;viewtopic,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0981,phpbb,phpBB/includes/mcp/mcp_reports.php,1,800,mixed_php_html_sql,SQL in Presentation Logic,105,,,the,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0982,phpbb,phpBB/includes/mcp/mcp_reports.php,36,518,sql_data_access,SQL/Data Access Region,63,,,the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0983,phpbb,phpBB/includes/mcp/mcp_reports.php,518,801,sql_data_access,SQL/Data Access Region,41,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0984,phpbb,phpBB/includes/mcp/mcp_topic.php,1,808,mixed_php_html_sql,SQL in Presentation Logic,108,sort,,forum;selected;the;which,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0985,phpbb,phpBB/includes/mcp/mcp_topic.php,25,403,sql_data_access,SQL/Data Access Region,68,sort,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0986,phpbb,phpBB/includes/mcp/mcp_topic.php,403,679,sql_data_access,SQL/Data Access Region,28,,,forum;selected,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0987,phpbb,phpBB/includes/mcp/mcp_topic.php,679,809,sql_data_access,SQL/Data Access Region,12,,,the;which,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0988,phpbb,phpBB/includes/mcp/mcp_warn.php,1,610,mixed_php_html_sql,SQL in Presentation Logic,76,notify_user,,MCP;issuer;the;warning,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0989,phpbb,phpBB/includes/mcp/mcp_warn.php,78,131,sql_data_access,SQL/Data Access Region,3,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0990,phpbb,phpBB/includes/mcp/mcp_warn.php,190,370,sql_data_access,SQL/Data Access Region,34,notify_user,,warning,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0991,phpbb,phpBB/includes/mcp/mcp_warn.php,370,523,sql_data_access,SQL/Data Access Region,23,notify_user,,MCP;the;warning,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0992,phpbb,phpBB/includes/mcp/mcp_warn.php,523,611,sql_data_access,SQL/Data Access Region,6,,,issuer,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0993,phpbb,phpBB/includes/questionnaire/questionnaire.php,257,503,long_method_or_region,Long or Complex Region,7,,,,,,Extract Method,pending
+phpbb-C0994,phpbb,phpBB/includes/ucp/ucp_activate.php,1,168,sql_data_access,SQL/Data Access Region,15,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0995,phpbb,phpBB/includes/ucp/ucp_activate.php,30,169,sql_data_access,SQL/Data Access Region,13,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0996,phpbb,phpBB/includes/ucp/ucp_attachments.php,1,205,mixed_php_html_sql,SQL in Presentation Logic,30,delete,,,# . $row[,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C0997,phpbb,phpBB/includes/ucp/ucp_attachments.php,30,206,sql_data_access,SQL/Data Access Region,28,delete,,,# . $row[,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C0998,phpbb,phpBB/includes/ucp/ucp_auth_link.php,35,149,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+phpbb-C0999,phpbb,phpBB/includes/ucp/ucp_groups.php,1,1117,mixed_php_html_sql,SQL in Presentation Logic,160,addusers;change_default;group_receive_pm;update,,default;the,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C1000,phpbb,phpBB/includes/ucp/ucp_groups.php,29,1118,sql_data_access,SQL/Data Access Region,158,addusers;change_default;group_receive_pm;update,,default;the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C1001,phpbb,phpBB/includes/ucp/ucp_login_link.php,1,247,mixed_php_html,Mixed PHP/HTML,25,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+phpbb-C1002,phpbb,phpBB/includes/ucp/ucp_login_link.php,40,138,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phpbb-C1003,phpbb,phpBB/includes/ucp/ucp_login_link.php,183,241,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+phpbb-C1004,phpbb,phpBB/includes/ucp/ucp_main.php,1,964,mixed_php_html_sql,SQL in Presentation Logic,123,delete;edit;submit;t;unbookmark;unwatch,,,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C1005,phpbb,phpBB/includes/ucp/ucp_main.php,36,693,sql_data_access,SQL/Data Access Region,97,delete;edit;submit;t;unbookmark;unwatch,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C1006,phpbb,phpBB/includes/ucp/ucp_main.php,693,965,long_method_or_region,Long or Complex Region,25,,,,,,Extract Method,pending
+phpbb-C1007,phpbb,phpBB/includes/ucp/ucp_notifications.php,1,233,mixed_php_html,Mixed PHP/HTML,25,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+phpbb-C1008,phpbb,phpBB/includes/ucp/ucp_notifications.php,26,173,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+phpbb-C1009,phpbb,phpBB/includes/ucp/ucp_pm.php,1,412,mixed_php_html_sql,SQL in Presentation Logic,60,folder;marked_msg_id;move_pm;submit_mark,,the;unread,.sep,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C1010,phpbb,phpBB/includes/ucp/ucp_pm.php,46,413,sql_data_access,SQL/Data Access Region,57,marked_msg_id;move_pm;submit_mark,,the;unread,.sep,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C1011,phpbb,phpBB/includes/ucp/ucp_pm_compose.php,1,1497,mixed_php_html_sql,SQL in Presentation Logic,273,add_bcc;add_file;add_to;attach_sig;cancel;delete;delete_file;disable_bbcode;disable_magic_url;disable_smilies;draft_loaded;load;preview;remove_g;remove_u;save,,first;the;ucp_pm,.sep,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C1012,phpbb,phpBB/includes/ucp/ucp_pm_compose.php,26,1262,sql_data_access,SQL/Data Access Region,227,add_bcc;add_file;add_to;attach_sig;cancel;delete;delete_file;disable_bbcode;disable_magic_url;disable_smilies;draft_loaded;load;preview;remove_g;remove_u;save,,the,.sep,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C1013,phpbb,phpBB/includes/ucp/ucp_pm_compose.php,1262,1447,sql_data_access,SQL/Data Access Region,37,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C1014,phpbb,phpBB/includes/ucp/ucp_pm_options.php,1,874,mixed_php_html_sql,SQL in Presentation Logic,119,add_rule;addfolder;back;cancel;delete_rule;fullfolder;remove_folder;rename_folder,,flooding,.sep,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C1015,phpbb,phpBB/includes/ucp/ucp_pm_options.php,25,586,sql_data_access,SQL/Data Access Region,78,add_rule;addfolder;back;cancel;delete_rule;fullfolder;remove_folder;rename_folder,,flooding,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C1016,phpbb,phpBB/includes/ucp/ucp_pm_options.php,611,658,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phpbb-C1017,phpbb,phpBB/includes/ucp/ucp_pm_options.php,700,850,sql_data_access,SQL/Data Access Region,15,,,,.sep,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C1018,phpbb,phpBB/includes/ucp/ucp_pm_viewfolder.php,1,604,sql_data_access,SQL/Data Access Region,94,sort;submit_export,,folder;post;the;ucp_pm,.sep,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C1019,phpbb,phpBB/includes/ucp/ucp_pm_viewfolder.php,26,395,sql_data_access,SQL/Data Access Region,72,submit_export,,folder,.sep,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C1020,phpbb,phpBB/includes/ucp/ucp_pm_viewfolder.php,395,605,sql_data_access,SQL/Data Access Region,21,sort,,post;the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C1021,phpbb,phpBB/includes/ucp/ucp_pm_viewmessage.php,1,446,mixed_php_html_sql,SQL in Presentation Logic,70,view,,event;the,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C1022,phpbb,phpBB/includes/ucp/ucp_pm_viewmessage.php,25,386,sql_data_access,SQL/Data Access Region,57,view,,event;the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C1023,phpbb,phpBB/includes/ucp/ucp_pm_viewmessage.php,386,447,sql_data_access,SQL/Data Access Region,12,,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C1024,phpbb,phpBB/includes/ucp/ucp_prefs.php,1,537,mixed_php_html_sql,SQL in Presentation Logic,50,submit,,UCP;the,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C1025,phpbb,phpBB/includes/ucp/ucp_prefs.php,30,538,sql_data_access,SQL/Data Access Region,48,submit,,UCP;the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C1026,phpbb,phpBB/includes/ucp/ucp_profile.php,1,840,mixed_php_html_sql,SQL in Presentation Logic,114,,,Custom;config,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C1027,phpbb,phpBB/includes/ucp/ucp_profile.php,32,841,sql_data_access,SQL/Data Access Region,111,,,Custom;config,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C1028,phpbb,phpBB/includes/ucp/ucp_register.php,1,659,mixed_php_html_sql,SQL in Presentation Logic,62,,,the,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C1029,phpbb,phpBB/includes/ucp/ucp_register.php,30,621,sql_data_access,SQL/Data Access Region,56,,,the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C1030,phpbb,phpBB/includes/ucp/ucp_remind.php,1,164,form_handling,Request Handling Mixed With Rendering,15,submit,,,,,Extract Validation Helper;Extract Method;Extract View Helper,pending
+phpbb-C1031,phpbb,phpBB/includes/ucp/ucp_remind.php,30,165,long_method_or_region,Long or Complex Region,13,submit,,,,,Extract Method,pending
+phpbb-C1032,phpbb,phpBB/includes/ucp/ucp_resend.php,1,163,mixed_php_html_sql,SQL in Presentation Logic,21,submit,,,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C1033,phpbb,phpBB/includes/ucp/ucp_resend.php,30,164,sql_data_access,SQL/Data Access Region,19,submit,,,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C1034,phpbb,phpBB/includes/ucp/ucp_zebra.php,1,296,mixed_php_html_sql,SQL in Presentation Logic,36,add;remove;submit,,foe;friends;the,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phpbb-C1035,phpbb,phpBB/includes/ucp/ucp_zebra.php,26,297,sql_data_access,SQL/Data Access Region,34,add;remove;submit,,foe;friends;the,,,Light Data-Access Isolation;Extract Method,pending
+phpbb-C1036,phpbb,phpBB/includes/utf/utf_tools.php,205,426,long_method_or_region,Long or Complex Region,78,,,,,,Extract Method,pending
+phpbb-C1037,phpbb,phpBB/includes/utf/utf_tools.php,539,587,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phpbb-C1038,phpbb,phpBB/includes/utf/utf_tools.php,587,1177,long_method_or_region,Long or Complex Region,5,,,,,,Extract Method,pending
+phpbb-C1039,phpbb,phpBB/includes/utf/utf_tools.php,1264,1321,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+phpbb-C1040,phpbb,phpBB/includes/utf/data/recode_basic.php,7,142,long_method_or_region,Long or Complex Region,1,,,,,,Extract Method,pending
+phpbb-C1041,phpbb,phpBB/includes/utf/data/recode_basic.php,142,277,long_method_or_region,Long or Complex Region,1,,,,,,Extract Method,pending
+phpbb-C1042,phpbb,phpBB/includes/utf/data/recode_basic.php,277,409,long_method_or_region,Long or Complex Region,1,,,,,,Extract Method,pending
+phpbb-C1043,phpbb,phpBB/includes/utf/data/recode_basic.php,477,603,long_method_or_region,Long or Complex Region,1,,,,,,Extract Method,pending
+phpbb-C1044,phpbb,phpBB/includes/utf/data/recode_basic.php,603,707,long_method_or_region,Long or Complex Region,1,,,,,,Extract Method,pending
+phpbb-C1045,phpbb,phpBB/includes/utf/data/recode_basic.php,707,837,long_method_or_region,Long or Complex Region,1,,,,,,Extract Method,pending
+phpbb-C1046,phpbb,phpBB/includes/utf/data/recode_basic.php,837,971,long_method_or_region,Long or Complex Region,1,,,,,,Extract Method,pending
+phpbb-C1047,phpbb,phpBB/includes/utf/data/recode_basic.php,1043,1155,long_method_or_region,Long or Complex Region,1,,,,,,Extract Method,pending
+phpbb-C1048,phpbb,phpBB/includes/utf/data/recode_basic.php,1155,1290,long_method_or_region,Long or Complex Region,1,,,,,,Extract Method,pending
+phpbb-C1049,phpbb,phpBB/includes/utf/data/recode_basic.php,1290,1413,long_method_or_region,Long or Complex Region,1,,,,,,Extract Method,pending
+phpbb-C1050,phpbb,phpBB/includes/utf/data/recode_basic.php,1413,1542,long_method_or_region,Long or Complex Region,1,,,,,,Extract Method,pending
+phpbb-C1051,phpbb,phpBB/includes/utf/data/recode_cjk.php,4,7456,long_method_or_region,Long or Complex Region,1,,,,,,Extract Method,pending
+phpbb-C1052,phpbb,phpBB/includes/utf/data/recode_cjk.php,7456,14408,long_method_or_region,Long or Complex Region,2,,,,,,Extract Method,pending
+phpbb-C1053,phpbb,phpBB/includes/utf/data/recode_cjk.php,14408,31462,long_method_or_region,Long or Complex Region,1,,,,,,Extract Method,pending
+phpbb-C1054,phpbb,phpBB/includes/utf/data/recode_cjk.php,31462,45178,long_method_or_region,Long or Complex Region,1,,,,,,Extract Method,pending
+phpbb-C1055,phpbb,build/code_sniffer/phpbb/Sniffs/Commenting/FileCommentSniff.php,42,122,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+phpbb-C1056,phpbb,build/code_sniffer/phpbb/Sniffs/ControlStructures/OpeningBraceBsdAllmanSniff.php,45,144,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+phpbb-C1057,phpbb,build/code_sniffer/phpbb/Sniffs/Namespaces/UnusedUseSniff.php,47,188,long_method_or_region,Long or Complex Region,26,,,,,,Extract Method,pending

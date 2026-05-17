@@ -1,0 +1,125 @@
+{
+  "candidate_id": "dolibarr-C3795",
+  "subject_id": "dolibarr",
+  "file": "htdocs/core/tpl/objectline_create.tpl.php",
+  "lines": [
+    1,
+    846
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 331
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "buying_price",
+      "fourn_ref",
+      "multicurrency_price_ht",
+      "np_marginRate",
+      "np_markRate",
+      "price_ht",
+      "price_ttc",
+      "qty",
+      "remise_percent",
+      "tva_tx",
+      "type"
+    ],
+    "session_keys": [],
+    "database_tables": [
+      "choice",
+      "combo",
+      "function",
+      "list",
+      "var"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#+pbq+",
+      "#+this.id+",
+      "#add",
+      "#addline",
+      "#attributes_box",
+      "#buying_price",
+      "#fourn_ref",
+      "#fournprice_predef",
+      "#multicurrency_price_ht",
+      "#np_marginRate",
+      "#np_markRate",
+      "#pbq",
+      "#price_ht",
+      "#price_ttc",
+      "#prod_entry_mode_free",
+      "#prod_entry_mode_predef",
+      "#qty",
+      "#remise_percent",
+      "#title_fourn_ref",
+      "#title_units"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "buying_price",
+      "fourn_ref",
+      "multicurrency_price_ht",
+      "np_marginRate",
+      "np_markRate",
+      "price_ht",
+      "price_ttc",
+      "qty",
+      "remise_percent",
+      "tva_tx",
+      "type"
+    ],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [
+      "choice",
+      "combo",
+      "function",
+      "list",
+      "var"
+    ],
+    "must_preserve_dom_selectors": [
+      "#+pbq+",
+      "#+this.id+",
+      "#add",
+      "#addline",
+      "#attributes_box",
+      "#buying_price",
+      "#fourn_ref",
+      "#fournprice_predef",
+      "#multicurrency_price_ht",
+      "#np_marginRate",
+      "#np_markRate",
+      "#pbq",
+      "#price_ht",
+      "#price_ttc",
+      "#prod_entry_mode_free",
+      "#prod_entry_mode_predef",
+      "#qty",
+      "#remise_percent",
+      "#title_fourn_ref",
+      "#title_units"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

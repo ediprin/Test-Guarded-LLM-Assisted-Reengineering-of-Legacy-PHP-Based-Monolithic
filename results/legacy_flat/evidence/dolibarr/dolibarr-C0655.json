@@ -1,0 +1,99 @@
+{
+  "candidate_id": "dolibarr-C0655",
+  "subject_id": "dolibarr",
+  "file": "htdocs/user/group/card.php",
+  "lines": [
+    1,
+    597
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 68
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "entity",
+      "nom"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "# . $object->id;\n\t        $genallowed = $user->rights->user->user->creer;\n\t        $delallowed = $user->rights->user->user->supprimer;\n\n\t        $somethingshown = $formfile->showdocuments(",
+      "#.$object->id);\n\t\t\t\t\texit;\n\t\t\t\t}\n\t\t\t\telse\n\t\t\t\t{\n\t\t\t\t\t$db->rollback();\n\n\t\t\t\t\t$langs->load(",
+      "#.$object->id);\n\t\t\t\t\texit;\n\t\t\t\t}\n\t\t\t\telse\n\t\t\t\t{\n\t\t\t\t\tsetEventMessages($edituser->error, $edituser->errors, ",
+      "#.$object->id, $langs->trans(",
+      "#.$object->id.",
+      "#nom",
+      ".border",
+      ".butAction",
+      ".butActionDelete",
+      ".button",
+      ".center",
+      ".centpercent",
+      ".clearboth",
+      ".ficheaddleft",
+      ".fichecenter",
+      ".fichehalfleft",
+      ".fichehalfright",
+      ".fieldrequired",
+      ".liste_titre",
+      ".minwidth300"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "entity",
+      "nom"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "# . $object->id;\n\t        $genallowed = $user->rights->user->user->creer;\n\t        $delallowed = $user->rights->user->user->supprimer;\n\n\t        $somethingshown = $formfile->showdocuments(",
+      "#.$object->id);\n\t\t\t\t\texit;\n\t\t\t\t}\n\t\t\t\telse\n\t\t\t\t{\n\t\t\t\t\t$db->rollback();\n\n\t\t\t\t\t$langs->load(",
+      "#.$object->id);\n\t\t\t\t\texit;\n\t\t\t\t}\n\t\t\t\telse\n\t\t\t\t{\n\t\t\t\t\tsetEventMessages($edituser->error, $edituser->errors, ",
+      "#.$object->id, $langs->trans(",
+      "#.$object->id.",
+      "#nom",
+      ".border",
+      ".butAction",
+      ".butActionDelete",
+      ".button",
+      ".center",
+      ".centpercent",
+      ".clearboth",
+      ".ficheaddleft",
+      ".fichecenter",
+      ".fichehalfleft",
+      ".fichehalfright",
+      ".fieldrequired",
+      ".liste_titre",
+      ".minwidth300"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "candidate_id": "dolibarr-C3796",
+  "subject_id": "dolibarr",
+  "file": "htdocs/core/tpl/objectline_create.tpl.php",
+  "lines": [
+    47,
+    550
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 245
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "buying_price",
+      "fourn_ref",
+      "multicurrency_price_ht",
+      "np_marginRate",
+      "np_markRate",
+      "price_ht",
+      "price_ttc",
+      "qty",
+      "remise_percent",
+      "tva_tx",
+      "type"
+    ],
+    "session_keys": [],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#add",
+      "#addline",
+      "#attributes_box",
+      "#buying_price",
+      "#fourn_ref",
+      "#fournprice_predef",
+      "#multicurrency_price_ht",
+      "#np_marginRate",
+      "#np_markRate",
+      "#pbq",
+      "#price_ht",
+      "#price_ttc",
+      "#prod_entry_mode_free",
+      "#prod_entry_mode_predef",
+      "#qty",
+      "#remise_percent",
+      "#title_fourn_ref",
+      "#title_units",
+      "#title_up_ht",
+      "#title_up_ht_currency"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "buying_price",
+      "fourn_ref",
+      "multicurrency_price_ht",
+      "np_marginRate",
+      "np_markRate",
+      "price_ht",
+      "price_ttc",
+      "qty",
+      "remise_percent",
+      "tva_tx",
+      "type"
+    ],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#add",
+      "#addline",
+      "#attributes_box",
+      "#buying_price",
+      "#fourn_ref",
+      "#fournprice_predef",
+      "#multicurrency_price_ht",
+      "#np_marginRate",
+      "#np_markRate",
+      "#pbq",
+      "#price_ht",
+      "#price_ttc",
+      "#prod_entry_mode_free",
+      "#prod_entry_mode_predef",
+      "#qty",
+      "#remise_percent",
+      "#title_fourn_ref",
+      "#title_units",
+      "#title_up_ht",
+      "#title_up_ht_currency"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

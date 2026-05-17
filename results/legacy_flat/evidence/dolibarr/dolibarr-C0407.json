@@ -1,0 +1,113 @@
+{
+  "candidate_id": "dolibarr-C0407",
+  "subject_id": "dolibarr",
+  "file": "htdocs/modulebuilder/index.php",
+  "lines": [
+    1,
+    3182
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 550
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": [
+      "Reflection",
+      "head",
+      "main",
+      "module",
+      "the"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$moduleobj->numero.",
+      "#savefile",
+      ".border",
+      ".button",
+      ".buttonDelete",
+      ".buttonforacesave",
+      ".center",
+      ".centpercent",
+      ".clearboth",
+      ".div-table-responsive",
+      ".fa",
+      ".fa-file-image-o",
+      ".fa-file-o",
+      ".fa-plus-circle",
+      ".fichecenter",
+      ".fichehalfleft",
+      ".liste_titre",
+      ".maxwidth100",
+      ".maxwidth50",
+      ".maxwidth75"
+    ],
+    "forms": [
+      "delete",
+      "generatedoc",
+      "generatepackage"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [
+      "Reflection",
+      "head",
+      "main",
+      "module",
+      "the"
+    ],
+    "must_preserve_dom_selectors": [
+      "#.$moduleobj->numero.",
+      "#savefile",
+      ".border",
+      ".button",
+      ".buttonDelete",
+      ".buttonforacesave",
+      ".center",
+      ".centpercent",
+      ".clearboth",
+      ".div-table-responsive",
+      ".fa",
+      ".fa-file-image-o",
+      ".fa-file-o",
+      ".fa-plus-circle",
+      ".fichecenter",
+      ".fichehalfleft",
+      ".liste_titre",
+      ".maxwidth100",
+      ".maxwidth50",
+      ".maxwidth75"
+    ],
+    "must_preserve_forms": [
+      "delete",
+      "generatedoc",
+      "generatepackage"
+    ]
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

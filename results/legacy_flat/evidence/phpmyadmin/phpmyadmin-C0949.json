@@ -1,0 +1,64 @@
+{
+  "candidate_id": "phpmyadmin-C0949",
+  "subject_id": "phpmyadmin",
+  "file": "libraries/classes/Controllers/Table/TableGisVisualizationController.php",
+  "lines": [
+    1,
+    222
+  ],
+  "candidate_type": "session_dependent_logic",
+  "issues": [
+    {
+      "type": "Session-Dependent Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 21
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "displayVisualization",
+      "fileFormat",
+      "pos",
+      "saveToFile",
+      "session_max_rows",
+      "visualizationSettings"
+    ],
+    "session_keys": [
+      "tmpval"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "displayVisualization",
+      "fileFormat",
+      "pos",
+      "saveToFile",
+      "session_max_rows",
+      "visualizationSettings"
+    ],
+    "must_preserve_session_keys": [
+      "tmpval"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Guard",
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

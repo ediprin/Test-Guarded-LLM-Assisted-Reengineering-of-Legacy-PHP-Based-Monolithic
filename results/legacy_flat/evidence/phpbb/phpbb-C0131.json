@@ -1,0 +1,75 @@
+{
+  "candidate_id": "phpbb-C0131",
+  "subject_id": "phpbb",
+  "file": "tests/text_formatter/s9e/default_formatting_test.php",
+  "lines": [
+    1,
+    313
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 17
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [],
+    "database_tables": [
+      "make_clickable_test",
+      "phpbb_textformatter_s9e_utils_test",
+      "textual"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#123",
+      ".codebox",
+      ".emoji",
+      ".inline-attachment",
+      ".postimage",
+      ".postlink",
+      ".responsive-hide",
+      ".smilies",
+      ".uncited"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [
+      "make_clickable_test",
+      "phpbb_textformatter_s9e_utils_test",
+      "textual"
+    ],
+    "must_preserve_dom_selectors": [
+      "#123",
+      ".codebox",
+      ".emoji",
+      ".inline-attachment",
+      ".postimage",
+      ".postlink",
+      ".responsive-hide",
+      ".smilies",
+      ".uncited"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

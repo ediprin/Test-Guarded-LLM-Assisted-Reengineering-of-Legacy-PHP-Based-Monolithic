@@ -1,0 +1,130 @@
+{
+  "candidate_id": "dolibarr-C0009",
+  "subject_id": "dolibarr",
+  "file": "htdocs/main.inc.php",
+  "lines": [
+    252,
+    1100
+  ],
+  "candidate_type": "session_dependent_logic",
+  "issues": [
+    {
+      "type": "Session-Dependent Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 205
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "code",
+      "confirm",
+      "dst_first",
+      "dst_second",
+      "save_lastsearch_values",
+      "tz",
+      "tz_string"
+    ],
+    "session_keys": [
+      "disablemodules",
+      "dol_authmode",
+      "dol_company",
+      "dol_dst",
+      "dol_dst_first",
+      "dol_dst_observed",
+      "dol_dst_second",
+      "dol_entity",
+      "dol_hide_leftmenu",
+      "dol_hide_topmenu",
+      "dol_login",
+      "dol_loginmesg",
+      "dol_no_mouse_hover",
+      "dol_optimize_smallscreen",
+      "dol_screenheight",
+      "dol_screenwidth",
+      "dol_tz",
+      "dol_tz_string",
+      "dol_use_jmobile",
+      "newtoken",
+      "token"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.session_id());\n\n\t\t$db->begin();\n\n\t\t$user->update_last_login_date();\n\n\t\t$loginfo = ",
+      ".drag",
+      ".drop",
+      ".impair",
+      ".nodrag",
+      ".nodrop",
+      ".nohover",
+      ".nohoverpair",
+      ".oddeven",
+      ".pair",
+      ".tagtr"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "code",
+      "confirm",
+      "dst_first",
+      "dst_second",
+      "save_lastsearch_values",
+      "tz",
+      "tz_string"
+    ],
+    "must_preserve_session_keys": [
+      "disablemodules",
+      "dol_authmode",
+      "dol_company",
+      "dol_dst",
+      "dol_dst_first",
+      "dol_dst_observed",
+      "dol_dst_second",
+      "dol_entity",
+      "dol_hide_leftmenu",
+      "dol_hide_topmenu",
+      "dol_login",
+      "dol_loginmesg",
+      "dol_no_mouse_hover",
+      "dol_optimize_smallscreen",
+      "dol_screenheight",
+      "dol_screenwidth",
+      "dol_tz",
+      "dol_tz_string",
+      "dol_use_jmobile",
+      "newtoken",
+      "token"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#.session_id());\n\n\t\t$db->begin();\n\n\t\t$user->update_last_login_date();\n\n\t\t$loginfo = ",
+      ".drag",
+      ".drop",
+      ".impair",
+      ".nodrag",
+      ".nodrop",
+      ".nohover",
+      ".nohoverpair",
+      ".oddeven",
+      ".pair",
+      ".tagtr"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Guard",
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

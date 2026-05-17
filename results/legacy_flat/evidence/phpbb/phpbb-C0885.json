@@ -1,0 +1,81 @@
+{
+  "candidate_id": "phpbb-C0885",
+  "subject_id": "phpbb",
+  "file": "phpBB/includes/acp/acp_permissions.php",
+  "lines": [
+    1,
+    1346
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 262
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "all_groups",
+      "all_users",
+      "cancel",
+      "psubmit",
+      "setting",
+      "submit"
+    ],
+    "session_keys": [],
+    "database_tables": [
+      "account",
+      "auth_settings",
+      "everyones",
+      "one",
+      "role",
+      "the"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      ".disabled-option",
+      ".sep"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "all_groups",
+      "all_users",
+      "cancel",
+      "psubmit",
+      "setting",
+      "submit"
+    ],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [
+      "account",
+      "auth_settings",
+      "everyones",
+      "one",
+      "role",
+      "the"
+    ],
+    "must_preserve_dom_selectors": [
+      ".disabled-option",
+      ".sep"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

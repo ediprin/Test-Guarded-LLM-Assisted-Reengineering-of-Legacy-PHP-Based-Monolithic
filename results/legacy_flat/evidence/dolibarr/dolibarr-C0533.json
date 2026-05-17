@@ -1,0 +1,93 @@
+{
+  "candidate_id": "dolibarr-C0533",
+  "subject_id": "dolibarr",
+  "file": "htdocs/variants/card.php",
+  "lines": [
+    1,
+    303
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 119
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$id, 2));\n\t\t\texit();\n\t\t}\n\t} elseif ($action == ",
+      "#.$object->id,\n\t\t\t$langs->trans(",
+      "#.$object->id, 2));\n\t\t\texit();\n\t\t}\n\t}\n}\n\n\n/*\n * View\n */\n\n$langs->load(",
+      "#.$object->id, 2));\n\t\texit();\n\t}\n}\n\nif ($confirm == ",
+      "#.$object->id, 2));\n\t\t} else {\n\t\t\t$db->commit();\n\t\t\tsetEventMessages($langs->trans(",
+      "#.$object->id.",
+      "#.$object->id;\n$head[$h][1] = $langs->trans(",
+      ".border",
+      ".butAction",
+      ".button",
+      ".clearboth",
+      ".divButAction",
+      ".fichecenter",
+      ".fieldrequired",
+      ".inline-block",
+      ".liste",
+      ".liste_titre",
+      ".oddeven",
+      ".right",
+      ".tabsAction"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#.$id, 2));\n\t\t\texit();\n\t\t}\n\t} elseif ($action == ",
+      "#.$object->id,\n\t\t\t$langs->trans(",
+      "#.$object->id, 2));\n\t\t\texit();\n\t\t}\n\t}\n}\n\n\n/*\n * View\n */\n\n$langs->load(",
+      "#.$object->id, 2));\n\t\texit();\n\t}\n}\n\nif ($confirm == ",
+      "#.$object->id, 2));\n\t\t} else {\n\t\t\t$db->commit();\n\t\t\tsetEventMessages($langs->trans(",
+      "#.$object->id.",
+      "#.$object->id;\n$head[$h][1] = $langs->trans(",
+      ".border",
+      ".butAction",
+      ".button",
+      ".clearboth",
+      ".divButAction",
+      ".fichecenter",
+      ".fieldrequired",
+      ".inline-block",
+      ".liste",
+      ".liste_titre",
+      ".oddeven",
+      ".right",
+      ".tabsAction"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

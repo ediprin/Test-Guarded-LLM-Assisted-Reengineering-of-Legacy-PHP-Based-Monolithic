@@ -1,0 +1,110 @@
+{
+  "candidate_id": "dolibarr-C4262",
+  "subject_id": "dolibarr",
+  "file": "htdocs/compta/facture/card.php",
+  "lines": [
+    4113,
+    4986
+  ],
+  "candidate_type": "session_dependent_logic",
+  "issues": [
+    {
+      "type": "Session-Dependent Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 172
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": [
+      "accountancy",
+      "cycle",
+      "discount",
+      "linked",
+      "payment"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "# . $object->id . ",
+      "# . $object->id . (($action != ",
+      "#.$object->id.",
+      "#addproduct",
+      "#butSituationOut",
+      "#butSituationOutRefused",
+      "#tablelines",
+      "#tablelines_all_progress",
+      "#updatealllines",
+      ".amountcard",
+      ".butAction",
+      ".butActionDelete",
+      ".butActionRefused",
+      ".button",
+      ".classfortooltip",
+      ".clearboth",
+      ".div-table-responsive",
+      ".div-table-responsive-no-min",
+      ".divButAction",
+      ".ficheaddleft"
+    ],
+    "forms": [
+      "addproduct",
+      "updatealllines"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [
+      "accountancy",
+      "cycle",
+      "discount",
+      "linked",
+      "payment"
+    ],
+    "must_preserve_dom_selectors": [
+      "# . $object->id . ",
+      "# . $object->id . (($action != ",
+      "#.$object->id.",
+      "#addproduct",
+      "#butSituationOut",
+      "#butSituationOutRefused",
+      "#tablelines",
+      "#tablelines_all_progress",
+      "#updatealllines",
+      ".amountcard",
+      ".butAction",
+      ".butActionDelete",
+      ".butActionRefused",
+      ".button",
+      ".classfortooltip",
+      ".clearboth",
+      ".div-table-responsive",
+      ".div-table-responsive-no-min",
+      ".divButAction",
+      ".ficheaddleft"
+    ],
+    "must_preserve_forms": [
+      "addproduct",
+      "updatealllines"
+    ]
+  },
+  "allowed_transformations": [
+    "Extract Guard",
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

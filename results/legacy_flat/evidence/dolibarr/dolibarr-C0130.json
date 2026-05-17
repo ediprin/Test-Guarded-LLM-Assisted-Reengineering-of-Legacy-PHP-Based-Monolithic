@@ -1,0 +1,81 @@
+{
+  "candidate_id": "dolibarr-C0130",
+  "subject_id": "dolibarr",
+  "file": "htdocs/admin/limits.php",
+  "lines": [
+    1,
+    310
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 27
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "MAIN_MAX_DECIMALS_SHOWN",
+      "MAIN_MAX_DECIMALS_TOT",
+      "MAIN_MAX_DECIMALS_UNIT",
+      "MAIN_ROUNDING_RULE_TOT"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      ".butAction",
+      ".button",
+      ".center",
+      ".flat",
+      ".liste_titre",
+      ".noborder",
+      ".oddeven",
+      ".right",
+      ".tabsAction"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "MAIN_MAX_DECIMALS_SHOWN",
+      "MAIN_MAX_DECIMALS_TOT",
+      "MAIN_MAX_DECIMALS_UNIT",
+      "MAIN_ROUNDING_RULE_TOT"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      ".butAction",
+      ".button",
+      ".center",
+      ".flat",
+      ".liste_titre",
+      ".noborder",
+      ".oddeven",
+      ".right",
+      ".tabsAction"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

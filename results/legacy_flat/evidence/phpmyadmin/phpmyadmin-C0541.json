@@ -1,0 +1,94 @@
+{
+  "candidate_id": "phpmyadmin-C0541",
+  "subject_id": "phpmyadmin",
+  "file": "libraries/classes/SqlQueryForm.php",
+  "lines": [
+    1,
+    446
+  ],
+  "candidate_type": "mixed_php_html",
+  "issues": [
+    {
+      "type": "Mixed PHP/HTML",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 57
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#bkm_label",
+      "#bookmark_variables",
+      "#bookmarkoptions",
+      "#button_submit_bookmark",
+      "#button_submit_query",
+      "#checkbox_show_query",
+      "#clear",
+      "#delete",
+      "#fieldsetBookmarkOptions",
+      "#fieldsetBookmarkOptionsFooter",
+      "#format",
+      "#id_bkm_all_users",
+      "#id_bkm_replace",
+      "#id_bookmark",
+      "#id_sql_delimiter",
+      "#insert",
+      "#parameterized",
+      "#parametersDiv",
+      "#querybox",
+      "#queryboxcontainer"
+    ],
+    "forms": [
+      "import.php",
+      "sqlform"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#bkm_label",
+      "#bookmark_variables",
+      "#bookmarkoptions",
+      "#button_submit_bookmark",
+      "#button_submit_query",
+      "#checkbox_show_query",
+      "#clear",
+      "#delete",
+      "#fieldsetBookmarkOptions",
+      "#fieldsetBookmarkOptionsFooter",
+      "#format",
+      "#id_bkm_all_users",
+      "#id_bkm_replace",
+      "#id_bookmark",
+      "#id_sql_delimiter",
+      "#insert",
+      "#parameterized",
+      "#parametersDiv",
+      "#querybox",
+      "#queryboxcontainer"
+    ],
+    "must_preserve_forms": [
+      "import.php",
+      "sqlform"
+    ]
+  },
+  "allowed_transformations": [
+    "Separate PHP Logic from Markup",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

@@ -1,0 +1,9 @@
+project,selected_tag,commit,php_version,db_required,install_status,test_command,static_tools_status,candidate_count
+phpmyadmin,RELEASE_4_9_1,a00f23711e33a09dd8a472bfc6f938e5ab51ced4,>=5.5.0,true,CLONED,vendor/bin/phpunit,"phpcs,phpunit,php_codesniffer",784
+dokuwiki,release-2018-04-22b,4e34491f07933bfb7e59e6cab0c029799dd381ab,>=5.6,false,CLONED,vendor/bin/phpunit -c _test/phpunit.xml,phpunit,292
+opencart,3.0.3.2,4ba536198a4638b6d3902a7c720ce8503b0dc394,>=5.4.0,true,CLONED,manual: tests directory exists,NO_LOCAL_CONFIG,874
+phpbb,release-3.2.2,77b275181aeddf43e1077d06abce11a9722bb85a,,true,CLONED,vendor/bin/phpunit,phpunit,988
+phppgadmin,REL_7-12-0,2acc9154c720f7f3d7e9f36b9f153ca02c69bb37,>=5.0,true,CLONED,manual: tests directory exists,NO_LOCAL_CONFIG,292
+roundcubemail,1.4.1,0b1d6841f923be19cfb53de97c1a593d5752475e,,true,CLONED,manual: tests directory exists,NO_LOCAL_CONFIG,445
+kanboard,v1.2.13,d983c113da13aad4c022a8832365d04d77adf3a7,>=5.6.0,true,CLONED,manual: tests directory exists,phpunit,500
+dolibarr,10.0.5,07b40f043e3992cab80e545d9cc0afdd3a0df1b4,>=5.3.0,true,CLONED,,"phpstan,php_codesniffer,phpunit",3434

@@ -1,0 +1,54 @@
+{
+  "candidate_id": "dolibarr-C3653",
+  "subject_id": "dolibarr",
+  "file": "htdocs/core/login/functions_ldap.php",
+  "lines": [
+    35,
+    248
+  ],
+  "candidate_type": "session_dependent_logic",
+  "issues": [
+    {
+      "type": "Session-Dependent Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 41
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [
+      "dol_loginmesg"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$usertmp->id);\n\t\t\t\t\t\t\t// On verifie si le login a change et on met a jour les attributs dolibarr\n\n\t\t\t\t\t\t\tif ($usertmp->login != $ldap->login && $ldap->login)\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t$usertmp->login = $ldap->login;\n\t\t\t\t\t\t\t\t$usertmp->update($usertmp);\n\t\t\t\t\t\t\t\t// TODO Que faire si update echoue car on update avec un login deja existant.\n\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t//$resultUpdate = $usertmp->update_ldap2dolibarr($ldap);\n\t\t\t\t\t\t}\n\t\t\t\t\t\tunset($usertmp);\n\t\t\t\t}\n\n\t\t\t\tif (! empty($conf->multicompany->enabled))\t// We must check entity (even if sync is not active)\n\t\t\t\t{\n\t\t\t\t\tglobal $mc;\n\n\t\t\t\t\t$usertmp=new User($db);\n\t\t\t\t\t$usertmp->fetch("
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [
+      "dol_loginmesg"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#.$usertmp->id);\n\t\t\t\t\t\t\t// On verifie si le login a change et on met a jour les attributs dolibarr\n\n\t\t\t\t\t\t\tif ($usertmp->login != $ldap->login && $ldap->login)\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t$usertmp->login = $ldap->login;\n\t\t\t\t\t\t\t\t$usertmp->update($usertmp);\n\t\t\t\t\t\t\t\t// TODO Que faire si update echoue car on update avec un login deja existant.\n\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t//$resultUpdate = $usertmp->update_ldap2dolibarr($ldap);\n\t\t\t\t\t\t}\n\t\t\t\t\t\tunset($usertmp);\n\t\t\t\t}\n\n\t\t\t\tif (! empty($conf->multicompany->enabled))\t// We must check entity (even if sync is not active)\n\t\t\t\t{\n\t\t\t\t\tglobal $mc;\n\n\t\t\t\t\t$usertmp=new User($db);\n\t\t\t\t\t$usertmp->fetch("
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Guard",
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

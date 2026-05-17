@@ -1,0 +1,70 @@
+{
+  "candidate_id": "dolibarr-C0215",
+  "subject_id": "dolibarr",
+  "file": "htdocs/cashdesk/index_verif.php",
+  "lines": [
+    1,
+    132
+  ],
+  "candidate_type": "session_dependent_logic",
+  "issues": [
+    {
+      "type": "Session-Dependent Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 28
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [
+      "CASHDESK_ID_BANKACCOUNT_CASH",
+      "CASHDESK_ID_BANKACCOUNT_CB",
+      "CASHDESK_ID_BANKACCOUNT_CHEQUE",
+      "CASHDESK_ID_THIRDPARTY",
+      "CASHDESK_ID_WAREHOUSE",
+      "firstname",
+      "lastname",
+      "uid",
+      "uname"
+    ],
+    "database_tables": [
+      "session"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [
+      "CASHDESK_ID_BANKACCOUNT_CASH",
+      "CASHDESK_ID_BANKACCOUNT_CB",
+      "CASHDESK_ID_BANKACCOUNT_CHEQUE",
+      "CASHDESK_ID_THIRDPARTY",
+      "CASHDESK_ID_WAREHOUSE",
+      "firstname",
+      "lastname",
+      "uid",
+      "uname"
+    ],
+    "must_preserve_database_tables": [
+      "session"
+    ],
+    "must_preserve_dom_selectors": [],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Guard",
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

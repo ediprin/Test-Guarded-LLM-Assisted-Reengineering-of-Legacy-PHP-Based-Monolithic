@@ -1,0 +1,83 @@
+{
+  "candidate_id": "dolibarr-C4352",
+  "subject_id": "dolibarr",
+  "file": "htdocs/compta/prelevement/class/bonprelevement.class.php",
+  "lines": [
+    1,
+    2042
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 210
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [],
+    "database_tables": [
+      "Bons",
+      "Orders",
+      "bank",
+      "caller",
+      "char_length",
+      "database",
+      "disk",
+      "invoice",
+      "lines",
+      "link",
+      "object_myobject",
+      "total",
+      "withdrawal"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$this->id;\n\n\t\tif ($option != ",
+      ".classfortooltip",
+      ".paddingright"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [
+      "Bons",
+      "Orders",
+      "bank",
+      "caller",
+      "char_length",
+      "database",
+      "disk",
+      "invoice",
+      "lines",
+      "link",
+      "object_myobject",
+      "total",
+      "withdrawal"
+    ],
+    "must_preserve_dom_selectors": [
+      "#.$this->id;\n\n\t\tif ($option != ",
+      ".classfortooltip",
+      ".paddingright"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

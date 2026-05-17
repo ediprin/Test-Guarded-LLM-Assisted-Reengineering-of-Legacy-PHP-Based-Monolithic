@@ -1,0 +1,334 @@
+candidate_id,project,file,candidate_type,syntax_status,oracle_status,screening_status,screening_reason
+phppgadmin-C0001,phppgadmin,admin.php,form_handling,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0002,phppgadmin,admin.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0003,phppgadmin,admin.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0004,phppgadmin,admin.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0005,phppgadmin,admin.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0006,phppgadmin,admin.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0007,phppgadmin,admin.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0008,phppgadmin,admin.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0009,phppgadmin,admin.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0010,phppgadmin,aggregates.php,form_handling,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0011,phppgadmin,aggregates.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0012,phppgadmin,ajax-ac-insert.php,mixed_php_html_sql,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0013,phppgadmin,all_db.php,mixed_php_html_sql,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0014,phppgadmin,all_db.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0015,phppgadmin,all_db.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0016,phppgadmin,all_db.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0017,phppgadmin,all_db.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0018,phppgadmin,all_db.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0019,phppgadmin,all_db.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0020,phppgadmin,all_db.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0021,phppgadmin,browser.php,mixed_php_html,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0022,phppgadmin,colproperties.php,mixed_php_html_sql,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0023,phppgadmin,colproperties.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0024,phppgadmin,colproperties.php,sql_data_access,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0025,phppgadmin,constraints.php,mixed_php_html_sql,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0026,phppgadmin,constraints.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0027,phppgadmin,constraints.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0028,phppgadmin,constraints.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0029,phppgadmin,constraints.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0030,phppgadmin,database.php,mixed_php_html_sql,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0031,phppgadmin,database.php,sql_data_access,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0032,phppgadmin,database.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0033,phppgadmin,database.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0034,phppgadmin,database.php,session_dependent_logic,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0035,phppgadmin,database.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0036,phppgadmin,dataexport.php,mixed_php_html_sql,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0037,phppgadmin,dataimport.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0038,phppgadmin,dataimport.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0039,phppgadmin,dataimport.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0040,phppgadmin,dataimport.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0041,phppgadmin,dbexport.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0042,phppgadmin,display.php,mixed_php_html_sql,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0043,phppgadmin,display.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0044,phppgadmin,display.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0045,phppgadmin,display.php,session_dependent_logic,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0046,phppgadmin,domains.php,form_handling,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0047,phppgadmin,domains.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0048,phppgadmin,domains.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0049,phppgadmin,domains.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0050,phppgadmin,fulltext.php,form_handling,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0051,phppgadmin,fulltext.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0052,phppgadmin,fulltext.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0053,phppgadmin,fulltext.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0054,phppgadmin,fulltext.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0055,phppgadmin,functions.php,form_handling,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0056,phppgadmin,functions.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0057,phppgadmin,functions.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0058,phppgadmin,functions.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0059,phppgadmin,functions.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0060,phppgadmin,functions.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0061,phppgadmin,functions.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0062,phppgadmin,functions.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0063,phppgadmin,groups.php,form_handling,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0064,phppgadmin,groups.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0065,phppgadmin,help.php,form_handling,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0066,phppgadmin,history.php,form_handling,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0067,phppgadmin,history.php,session_dependent_logic,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0068,phppgadmin,history.php,session_dependent_logic,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0069,phppgadmin,index.php,mixed_php_html,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0070,phppgadmin,indexes.php,form_handling,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0071,phppgadmin,indexes.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0072,phppgadmin,indexes.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0073,phppgadmin,indexes.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0074,phppgadmin,info.php,form_handling,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0075,phppgadmin,info.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0076,phppgadmin,intro.php,form_handling,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0077,phppgadmin,login.php,form_handling,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0078,phppgadmin,operators.php,form_handling,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0079,phppgadmin,operators.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0080,phppgadmin,privileges.php,form_handling,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0081,phppgadmin,privileges.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0082,phppgadmin,privileges.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0083,phppgadmin,roles.php,mixed_php_html_sql,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0084,phppgadmin,roles.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0085,phppgadmin,roles.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0086,phppgadmin,roles.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0087,phppgadmin,roles.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0088,phppgadmin,rules.php,form_handling,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0089,phppgadmin,rules.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0090,phppgadmin,rules.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0091,phppgadmin,schemas.php,form_handling,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0092,phppgadmin,schemas.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0093,phppgadmin,schemas.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0094,phppgadmin,schemas.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0095,phppgadmin,sequences.php,form_handling,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0096,phppgadmin,sequences.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0097,phppgadmin,sequences.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0098,phppgadmin,sequences.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0099,phppgadmin,sequences.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0100,phppgadmin,servers.php,session_dependent_logic,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0101,phppgadmin,servers.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0102,phppgadmin,sql.php,form_handling,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0103,phppgadmin,sql.php,session_dependent_logic,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0104,phppgadmin,sqledit.php,form_handling,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0105,phppgadmin,sqledit.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0106,phppgadmin,sqledit.php,session_dependent_logic,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0107,phppgadmin,tables.php,mixed_php_html_sql,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0108,phppgadmin,tables.php,sql_data_access,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0109,phppgadmin,tables.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0110,phppgadmin,tables.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0111,phppgadmin,tables.php,session_dependent_logic,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0112,phppgadmin,tables.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0113,phppgadmin,tables.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0114,phppgadmin,tables.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0115,phppgadmin,tables.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0116,phppgadmin,tablespaces.php,form_handling,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0117,phppgadmin,tablespaces.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0118,phppgadmin,tblproperties.php,mixed_php_html_sql,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0119,phppgadmin,tblproperties.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0120,phppgadmin,tblproperties.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0121,phppgadmin,tblproperties.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0122,phppgadmin,tblproperties.php,sql_data_access,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0123,phppgadmin,tblproperties.php,sql_data_access,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0124,phppgadmin,tblproperties.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0125,phppgadmin,triggers.php,form_handling,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0126,phppgadmin,triggers.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0127,phppgadmin,triggers.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0128,phppgadmin,types.php,form_handling,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0129,phppgadmin,types.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0130,phppgadmin,types.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0131,phppgadmin,types.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0132,phppgadmin,types.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0133,phppgadmin,types.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0134,phppgadmin,users.php,form_handling,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0135,phppgadmin,users.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0136,phppgadmin,users.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0137,phppgadmin,viewproperties.php,mixed_php_html_sql,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0138,phppgadmin,viewproperties.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0139,phppgadmin,viewproperties.php,sql_data_access,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0140,phppgadmin,viewproperties.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0141,phppgadmin,views.php,mixed_php_html_sql,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0142,phppgadmin,views.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0143,phppgadmin,views.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0144,phppgadmin,views.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0145,phppgadmin,views.php,sql_data_access,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0146,phppgadmin,views.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0147,phppgadmin,views.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0148,phppgadmin,classes/Misc.php,mixed_php_html_sql,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0149,phppgadmin,classes/Misc.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0150,phppgadmin,classes/Misc.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0151,phppgadmin,classes/Misc.php,session_dependent_logic,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0152,phppgadmin,classes/Misc.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0153,phppgadmin,classes/Misc.php,session_dependent_logic,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0154,phppgadmin,classes/Misc.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0155,phppgadmin,classes/Misc.php,session_dependent_logic,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0156,phppgadmin,classes/Misc.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0157,phppgadmin,classes/Misc.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0158,phppgadmin,classes/Misc.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0159,phppgadmin,classes/Misc.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0160,phppgadmin,classes/Misc.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0161,phppgadmin,classes/Misc.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0162,phppgadmin,classes/Misc.php,session_dependent_logic,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0163,phppgadmin,classes/Misc.php,session_dependent_logic,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0164,phppgadmin,classes/Misc.php,sql_data_access,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0165,phppgadmin,classes/Misc.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0166,phppgadmin,lang/english.php,sql_data_access,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0167,phppgadmin,libraries/errorhandler.inc.php,form_handling,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0168,phppgadmin,libraries/errorhandler.inc.php,session_dependent_logic,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0169,phppgadmin,libraries/highlight.php,mixed_php_html,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0170,phppgadmin,libraries/highlight.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0171,phppgadmin,libraries/highlight.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0172,phppgadmin,libraries/lib.inc.php,session_dependent_logic,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0173,phppgadmin,tests/selenium/testBuilder.class.php,mixed_php_html_sql,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0174,phppgadmin,tests/selenium/TestSuite.php,mixed_php_html,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0175,phppgadmin,tests/selenium/TestSuite.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0176,phppgadmin,tests/simpletests/testcase/Databases/FindObjectsTest.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0177,phppgadmin,tests/simpletests/testcase/Databases/SqlTest.php,sql_data_access,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0178,phppgadmin,tests/simpletests/testcase/Schemas/TableTest.php,sql_data_access,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0179,phppgadmin,tests/simpletests/testcase/Schemas/ViewTest.php,sql_data_access,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0180,phppgadmin,tests/simpletests/testcase/Tables/DeadlockTest.php,sql_data_access,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0181,phppgadmin,tests/selenium/src/01-roles.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0182,phppgadmin,tests/selenium/src/04-database.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0183,phppgadmin,tests/selenium/src/08-domaine.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0184,phppgadmin,tests/selenium/src/10-table.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0185,phppgadmin,tests/selenium/src/12-admin.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0186,phppgadmin,tests/selenium/src/30-view.php,sql_data_access,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0187,phppgadmin,plugins/Report/plugin.php,mixed_php_html_sql,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0188,phppgadmin,plugins/Report/plugin.php,session_dependent_logic,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0189,phppgadmin,plugins/Report/plugin.php,session_dependent_logic,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0190,phppgadmin,plugins/Report/plugin.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0191,phppgadmin,libraries/adodb/adodb-csvlib.inc.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0192,phppgadmin,libraries/adodb/adodb-csvlib.inc.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0193,phppgadmin,libraries/adodb/adodb-csvlib.inc.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0194,phppgadmin,libraries/adodb/adodb-datadict.inc.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0195,phppgadmin,libraries/adodb/adodb-datadict.inc.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0196,phppgadmin,libraries/adodb/adodb-datadict.inc.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0197,phppgadmin,libraries/adodb/adodb-datadict.inc.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0198,phppgadmin,libraries/adodb/adodb-error.inc.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0199,phppgadmin,libraries/adodb/adodb-lib.inc.php,mixed_php_html_sql,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0200,phppgadmin,libraries/adodb/adodb-lib.inc.php,sql_data_access,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0201,phppgadmin,libraries/adodb/adodb-lib.inc.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0202,phppgadmin,libraries/adodb/adodb-lib.inc.php,sql_data_access,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0203,phppgadmin,libraries/adodb/adodb-lib.inc.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0204,phppgadmin,libraries/adodb/adodb-lib.inc.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0205,phppgadmin,libraries/adodb/adodb-lib.inc.php,sql_data_access,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0206,phppgadmin,libraries/adodb/adodb-lib.inc.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0207,phppgadmin,libraries/adodb/adodb-lib.inc.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0208,phppgadmin,libraries/adodb/adodb-lib.inc.php,sql_data_access,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0209,phppgadmin,libraries/adodb/adodb-lib.inc.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0210,phppgadmin,libraries/adodb/adodb-lib.inc.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0211,phppgadmin,libraries/adodb/adodb-lib.inc.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0212,phppgadmin,libraries/adodb/adodb-lib.inc.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0213,phppgadmin,libraries/adodb/adodb-time.inc.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0214,phppgadmin,libraries/adodb/adodb-time.inc.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0215,phppgadmin,libraries/adodb/adodb-time.inc.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0216,phppgadmin,libraries/adodb/adodb-time.inc.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0217,phppgadmin,libraries/adodb/adodb-time.inc.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0218,phppgadmin,libraries/adodb/adodb-time.inc.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0219,phppgadmin,libraries/adodb/adodb-time.inc.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0220,phppgadmin,libraries/adodb/adodb-time.inc.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0221,phppgadmin,libraries/adodb/adodb.inc.php,sql_data_access,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0222,phppgadmin,libraries/adodb/adodb.inc.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0223,phppgadmin,libraries/adodb/adodb.inc.php,sql_data_access,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0224,phppgadmin,libraries/adodb/adodb.inc.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0225,phppgadmin,libraries/adodb/adodb.inc.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0226,phppgadmin,libraries/adodb/adodb.inc.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0227,phppgadmin,libraries/adodb/adodb.inc.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0228,phppgadmin,libraries/adodb/adodb.inc.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0229,phppgadmin,libraries/adodb/adodb.inc.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0230,phppgadmin,libraries/adodb/adodb.inc.php,sql_data_access,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0231,phppgadmin,libraries/adodb/adodb.inc.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0232,phppgadmin,libraries/adodb/adodb.inc.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0233,phppgadmin,libraries/adodb/adodb.inc.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0234,phppgadmin,libraries/adodb/adodb.inc.php,sql_data_access,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0235,phppgadmin,libraries/adodb/adodb.inc.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0236,phppgadmin,libraries/adodb/adodb.inc.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0237,phppgadmin,libraries/adodb/adodb.inc.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0238,phppgadmin,libraries/adodb/adodb.inc.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0239,phppgadmin,libraries/adodb/adodb.inc.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0240,phppgadmin,libraries/adodb/adodb.inc.php,long_method_or_region,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0241,phppgadmin,libraries/adodb/adodb.inc.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0242,phppgadmin,libraries/adodb/adodb.inc.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0243,phppgadmin,libraries/adodb/toexport.inc.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0244,phppgadmin,libraries/adodb/tohtml.inc.php,mixed_php_html_sql,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0245,phppgadmin,libraries/adodb/tohtml.inc.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0246,phppgadmin,libraries/adodb/tohtml.inc.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0247,phppgadmin,libraries/adodb/tohtml.inc.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0248,phppgadmin,libraries/adodb/drivers/adodb-postgres64.inc.php,sql_data_access,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0249,phppgadmin,libraries/adodb/drivers/adodb-postgres64.inc.php,sql_data_access,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0250,phppgadmin,libraries/adodb/drivers/adodb-postgres64.inc.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0251,phppgadmin,libraries/adodb/drivers/adodb-postgres64.inc.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0252,phppgadmin,libraries/adodb/drivers/adodb-postgres64.inc.php,sql_data_access,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0253,phppgadmin,libraries/adodb/drivers/adodb-postgres64.inc.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0254,phppgadmin,libraries/adodb/drivers/adodb-postgres64.inc.php,sql_data_access,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0255,phppgadmin,libraries/adodb/drivers/adodb-postgres64.inc.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0256,phppgadmin,libraries/adodb/drivers/adodb-postgres7.inc.php,sql_data_access,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0257,phppgadmin,libraries/adodb/drivers/adodb-postgres7.inc.php,sql_data_access,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0258,phppgadmin,libraries/adodb/drivers/adodb-postgres7.inc.php,sql_data_access,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0259,phppgadmin,classes/database/ADODB_base.php,sql_data_access,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0260,phppgadmin,classes/database/ADODB_base.php,sql_data_access,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0261,phppgadmin,classes/database/ADODB_base.php,sql_data_access,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0262,phppgadmin,classes/database/ADODB_base.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0263,phppgadmin,classes/database/Connection.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0264,phppgadmin,classes/database/Postgres.php,mixed_php_html_sql,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0265,phppgadmin,classes/database/Postgres.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0266,phppgadmin,classes/database/Postgres.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0267,phppgadmin,classes/database/Postgres.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0268,phppgadmin,classes/database/Postgres.php,sql_data_access,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0269,phppgadmin,classes/database/Postgres.php,sql_data_access,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0270,phppgadmin,classes/database/Postgres.php,sql_data_access,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0271,phppgadmin,classes/database/Postgres.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0272,phppgadmin,classes/database/Postgres.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0273,phppgadmin,classes/database/Postgres.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0274,phppgadmin,classes/database/Postgres.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0275,phppgadmin,classes/database/Postgres.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0276,phppgadmin,classes/database/Postgres.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0277,phppgadmin,classes/database/Postgres.php,sql_data_access,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0278,phppgadmin,classes/database/Postgres.php,sql_data_access,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0279,phppgadmin,classes/database/Postgres.php,sql_data_access,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0280,phppgadmin,classes/database/Postgres.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0281,phppgadmin,classes/database/Postgres.php,sql_data_access,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0282,phppgadmin,classes/database/Postgres.php,sql_data_access,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0283,phppgadmin,classes/database/Postgres.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0284,phppgadmin,classes/database/Postgres.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0285,phppgadmin,classes/database/Postgres.php,sql_data_access,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0286,phppgadmin,classes/database/Postgres.php,sql_data_access,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0287,phppgadmin,classes/database/Postgres.php,sql_data_access,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0288,phppgadmin,classes/database/Postgres.php,sql_data_access,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0289,phppgadmin,classes/database/Postgres.php,sql_data_access,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0290,phppgadmin,classes/database/Postgres.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0291,phppgadmin,classes/database/Postgres.php,sql_data_access,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0292,phppgadmin,classes/database/Postgres.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0293,phppgadmin,classes/database/Postgres.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0294,phppgadmin,classes/database/Postgres.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0295,phppgadmin,classes/database/Postgres.php,sql_data_access,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0296,phppgadmin,classes/database/Postgres.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0297,phppgadmin,classes/database/Postgres.php,sql_data_access,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0298,phppgadmin,classes/database/Postgres.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0299,phppgadmin,classes/database/Postgres.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0300,phppgadmin,classes/database/Postgres.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0301,phppgadmin,classes/database/Postgres.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0302,phppgadmin,classes/database/Postgres.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0303,phppgadmin,classes/database/Postgres.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0304,phppgadmin,classes/database/Postgres.php,sql_data_access,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0305,phppgadmin,classes/database/Postgres.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0306,phppgadmin,classes/database/Postgres.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0307,phppgadmin,classes/database/Postgres.php,sql_data_access,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0308,phppgadmin,classes/database/Postgres.php,sql_data_access,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0309,phppgadmin,classes/database/Postgres.php,sql_data_access,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0310,phppgadmin,classes/database/Postgres10.php,sql_data_access,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0311,phppgadmin,classes/database/Postgres10.php,sql_data_access,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0312,phppgadmin,classes/database/Postgres10.php,sql_data_access,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0313,phppgadmin,classes/database/Postgres74.php,sql_data_access,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0314,phppgadmin,classes/database/Postgres74.php,sql_data_access,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0315,phppgadmin,classes/database/Postgres74.php,sql_data_access,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0316,phppgadmin,classes/database/Postgres74.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0317,phppgadmin,classes/database/Postgres74.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0318,phppgadmin,classes/database/Postgres74.php,sql_data_access,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0319,phppgadmin,classes/database/Postgres74.php,sql_data_access,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0320,phppgadmin,classes/database/Postgres80.php,sql_data_access,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0321,phppgadmin,classes/database/Postgres80.php,sql_data_access,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0322,phppgadmin,classes/database/Postgres81.php,sql_data_access,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0323,phppgadmin,classes/database/Postgres81.php,sql_data_access,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0324,phppgadmin,classes/database/Postgres81.php,sql_data_access,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0325,phppgadmin,classes/database/Postgres82.php,sql_data_access,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0326,phppgadmin,classes/database/Postgres82.php,sql_data_access,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0327,phppgadmin,classes/database/Postgres82.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0328,phppgadmin,classes/database/Postgres83.php,sql_data_access,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0329,phppgadmin,classes/database/Postgres83.php,sql_data_access,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0330,phppgadmin,classes/database/Postgres83.php,sql_data_access,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0331,phppgadmin,classes/database/Postgres83.php,sql_data_access,PASS,pending,NEEDS_CHARACTERIZATION,Candidate has observable request/output contract but no stable oracle yet.
+phppgadmin-C0332,phppgadmin,classes/database/Postgres83.php,long_method_or_region,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.
+phppgadmin-C0333,phppgadmin,classes/database/Postgres84.php,sql_data_access,PASS,pending,NEEDS_MANUAL_ORACLE_REVIEW,No obvious web contract was extracted; existing tests or manual characterization must be mapped.

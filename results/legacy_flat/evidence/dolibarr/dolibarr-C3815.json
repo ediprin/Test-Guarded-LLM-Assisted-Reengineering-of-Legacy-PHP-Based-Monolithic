@@ -1,0 +1,56 @@
+{
+  "candidate_id": "dolibarr-C3815",
+  "subject_id": "dolibarr",
+  "file": "htdocs/core/triggers/interface_50_modTicket_TicketEmail.class.php",
+  "lines": [
+    1,
+    346
+  ],
+  "candidate_type": "mixed_php_html",
+  "issues": [
+    {
+      "type": "Mixed PHP/HTML",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 58
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "# . $object->id);\n\n\t            $langs->load(",
+      "# . $object->id);\n\n\t            if ($object->fk_user_assign > 0 && $object->fk_user_assign != $user->id)\n\t            {\n\t                $userstat = new User($this->db);\n\t                $res = $userstat->fetch($object->fk_user_assign);\n\t                if ($res > 0)\n\t                {\n\t                    // Send email to notification email\n\n\t                \tif (empty($conf->global->TICKET_DISABLE_ALL_MAILS))\n\t                \t{\n\t                \t\t// Init to avoid errors\n\t                \t\t$filepath = array();\n\t                \t\t$filename = array();\n\t                \t\t$mimetype = array();\n\n\t                \t\t// Send email to assigned user\n\t\t                    $subject = ",
+      "# . $object->id);\n           \t\tbreak;\n\n           \tcase ",
+      "# . $object->id);\n            \tbreak;\n\n           \tcase "
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "# . $object->id);\n\n\t            $langs->load(",
+      "# . $object->id);\n\n\t            if ($object->fk_user_assign > 0 && $object->fk_user_assign != $user->id)\n\t            {\n\t                $userstat = new User($this->db);\n\t                $res = $userstat->fetch($object->fk_user_assign);\n\t                if ($res > 0)\n\t                {\n\t                    // Send email to notification email\n\n\t                \tif (empty($conf->global->TICKET_DISABLE_ALL_MAILS))\n\t                \t{\n\t                \t\t// Init to avoid errors\n\t                \t\t$filepath = array();\n\t                \t\t$filename = array();\n\t                \t\t$mimetype = array();\n\n\t                \t\t// Send email to assigned user\n\t\t                    $subject = ",
+      "# . $object->id);\n           \t\tbreak;\n\n           \tcase ",
+      "# . $object->id);\n            \tbreak;\n\n           \tcase "
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Separate PHP Logic from Markup",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

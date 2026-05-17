@@ -1,0 +1,165 @@
+{
+  "candidate_id": "dolibarr-C0860",
+  "subject_id": "dolibarr",
+  "file": "htdocs/public/members/new.php",
+  "lines": [
+    1,
+    747
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 116
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "address",
+      "birthday",
+      "birthhour",
+      "birthmin",
+      "birthmonth",
+      "birthsec",
+      "birthyear",
+      "civility_id",
+      "country_id",
+      "email",
+      "entity",
+      "firstname",
+      "gender",
+      "lastname",
+      "login",
+      "morphy",
+      "note_private",
+      "pass1",
+      "pass2",
+      "photo",
+      "societe",
+      "state_id",
+      "town",
+      "type",
+      "zipcode"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": [
+      "add",
+      "conf",
+      "external",
+      "html",
+      "object",
+      "template",
+      "url"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#address",
+      "#amount",
+      "#amounthidden",
+      "#divsubscribe",
+      "#logosubscribe",
+      "#mainbody",
+      "#morphy",
+      "#note_private",
+      "#submitcancel",
+      "#submitsave",
+      "#tablesubscribe",
+      "#trbirth",
+      "#trbudget",
+      "#trcompany",
+      "#type",
+      ".amount",
+      ".border",
+      ".button",
+      ".center",
+      ".divmainbodylarge"
+    ],
+    "forms": [
+      "newmember"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "address",
+      "birthday",
+      "birthhour",
+      "birthmin",
+      "birthmonth",
+      "birthsec",
+      "birthyear",
+      "civility_id",
+      "country_id",
+      "email",
+      "entity",
+      "firstname",
+      "gender",
+      "lastname",
+      "login",
+      "morphy",
+      "note_private",
+      "pass1",
+      "pass2",
+      "photo",
+      "societe",
+      "state_id",
+      "town",
+      "type",
+      "zipcode"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [
+      "add",
+      "conf",
+      "external",
+      "html",
+      "object",
+      "template",
+      "url"
+    ],
+    "must_preserve_dom_selectors": [
+      "#address",
+      "#amount",
+      "#amounthidden",
+      "#divsubscribe",
+      "#logosubscribe",
+      "#mainbody",
+      "#morphy",
+      "#note_private",
+      "#submitcancel",
+      "#submitsave",
+      "#tablesubscribe",
+      "#trbirth",
+      "#trbudget",
+      "#trcompany",
+      "#type",
+      ".amount",
+      ".border",
+      ".button",
+      ".center",
+      ".divmainbodylarge"
+    ],
+    "must_preserve_forms": [
+      "newmember"
+    ]
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

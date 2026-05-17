@@ -1,0 +1,61 @@
+{
+  "candidate_id": "dolibarr-C3419",
+  "subject_id": "dolibarr",
+  "file": "htdocs/core/lib/doleditor.lib.php",
+  "lines": [
+    34,
+    134
+  ],
+  "candidate_type": "long_method_or_region",
+  "issues": [
+    {
+      "type": "Long or Complex Region",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 15
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      ".center",
+      ".inline-block",
+      ".liste_titre",
+      ".noborder",
+      ".nobordernopadding",
+      ".oddeven",
+      ".right"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      ".center",
+      ".inline-block",
+      ".liste_titre",
+      ".noborder",
+      ".nobordernopadding",
+      ".oddeven",
+      ".right"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

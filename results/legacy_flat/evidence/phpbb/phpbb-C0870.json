@@ -1,0 +1,77 @@
+{
+  "candidate_id": "phpbb-C0870",
+  "subject_id": "phpbb",
+  "file": "phpBB/includes/acp/acp_icons.php",
+  "lines": [
+    1,
+    999
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 167
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "add",
+      "add_img",
+      "display_on_posting",
+      "edit",
+      "height",
+      "id",
+      "image",
+      "import",
+      "order",
+      "width"
+    ],
+    "session_keys": [],
+    "database_tables": [
+      "the"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "# . $row[$fields . "
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "add",
+      "add_img",
+      "display_on_posting",
+      "edit",
+      "height",
+      "id",
+      "image",
+      "import",
+      "order",
+      "width"
+    ],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [
+      "the"
+    ],
+    "must_preserve_dom_selectors": [
+      "# . $row[$fields . "
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

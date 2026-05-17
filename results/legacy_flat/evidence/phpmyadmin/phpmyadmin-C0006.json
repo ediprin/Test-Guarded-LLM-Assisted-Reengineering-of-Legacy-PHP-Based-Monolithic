@@ -1,0 +1,69 @@
+{
+  "candidate_id": "phpmyadmin-C0006",
+  "subject_id": "phpmyadmin",
+  "file": "db_operations.php",
+  "lines": [
+    1,
+    308
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 43
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "adjust_privileges",
+      "comment",
+      "create_database_before_copying",
+      "db",
+      "db_copy",
+      "db_rename",
+      "newname",
+      "switch_to_new"
+    ],
+    "session_keys": [
+      "pma_switch_to_new"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "adjust_privileges",
+      "comment",
+      "create_database_before_copying",
+      "db",
+      "db_copy",
+      "db_rename",
+      "newname",
+      "switch_to_new"
+    ],
+    "must_preserve_session_keys": [
+      "pma_switch_to_new"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

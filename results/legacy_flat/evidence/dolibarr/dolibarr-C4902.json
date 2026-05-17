@@ -1,0 +1,117 @@
+{
+  "candidate_id": "dolibarr-C4902",
+  "subject_id": "dolibarr",
+  "file": "htdocs/accountancy/admin/categories_list.php",
+  "lines": [
+    1,
+    926
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 203
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "accountancy_code",
+      "accountancy_code_buy",
+      "accountancy_code_sell",
+      "code",
+      "country",
+      "formula",
+      "id",
+      "range_account"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": [
+      "a",
+      "modules"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$id.",
+      "#.$id.($search_country_id>0?",
+      "#.$id;\n        if ($search_country_id > 0) $param.= ",
+      "#rowid-",
+      ".button",
+      ".center",
+      ".div-table-responsive",
+      ".flat",
+      ".left",
+      ".liste_titre",
+      ".liste_titre_add",
+      ".liste_titre_filter",
+      ".maxwidth100",
+      ".maxwidth50",
+      ".minwidth100",
+      ".noborder",
+      ".nodrag",
+      ".nodrop",
+      ".none",
+      ".nowrap"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "accountancy_code",
+      "accountancy_code_buy",
+      "accountancy_code_sell",
+      "code",
+      "country",
+      "formula",
+      "id",
+      "range_account"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [
+      "a",
+      "modules"
+    ],
+    "must_preserve_dom_selectors": [
+      "#.$id.",
+      "#.$id.($search_country_id>0?",
+      "#.$id;\n        if ($search_country_id > 0) $param.= ",
+      "#rowid-",
+      ".button",
+      ".center",
+      ".div-table-responsive",
+      ".flat",
+      ".left",
+      ".liste_titre",
+      ".liste_titre_add",
+      ".liste_titre_filter",
+      ".maxwidth100",
+      ".maxwidth50",
+      ".minwidth100",
+      ".noborder",
+      ".nodrag",
+      ".nodrop",
+      ".none",
+      ".nowrap"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

@@ -1,0 +1,3 @@
+treatment,generated_patches,applied,apply_failed,syntax_pass,syntax_fail,improved_proxy,non_worsening_complexity,unchanged_proxy,worsened_proxy,rejected_apply
+T1-llm-only,21,17,4,17,0,1,13,0,3,4
+T3-evidence-llm,19,18,1,18,0,5,11,0,2,1

@@ -1,0 +1,129 @@
+{
+  "candidate_id": "dolibarr-C4849",
+  "subject_id": "dolibarr",
+  "file": "htdocs/adherents/class/adherent.class.php",
+  "lines": [
+    1,
+    2945
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 492
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "other_linked_objects"
+    ],
+    "session_keys": [],
+    "database_tables": [
+      "Dolibarr",
+      "a",
+      "bank",
+      "country",
+      "data",
+      "database",
+      "denormalized",
+      "email",
+      "existing",
+      "external",
+      "fk_bank",
+      "if",
+      "information",
+      "its",
+      "link",
+      "member",
+      "minor",
+      "note",
+      "notrigger",
+      "password",
+      "subscription",
+      "table",
+      "text",
+      "the",
+      "thirdparty",
+      "this",
+      "update",
+      "user",
+      "users"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      ".centpercent",
+      ".classfortooltip",
+      ".hideonsmartphone",
+      ".inline-block",
+      ".nopadding",
+      ".nowrap",
+      ".photointooltip",
+      ".valignmiddle"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "other_linked_objects"
+    ],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [
+      "Dolibarr",
+      "a",
+      "bank",
+      "country",
+      "data",
+      "database",
+      "denormalized",
+      "email",
+      "existing",
+      "external",
+      "fk_bank",
+      "if",
+      "information",
+      "its",
+      "link",
+      "member",
+      "minor",
+      "note",
+      "notrigger",
+      "password",
+      "subscription",
+      "table",
+      "text",
+      "the",
+      "thirdparty",
+      "this",
+      "update",
+      "user",
+      "users"
+    ],
+    "must_preserve_dom_selectors": [
+      ".centpercent",
+      ".classfortooltip",
+      ".hideonsmartphone",
+      ".inline-block",
+      ".nopadding",
+      ".nowrap",
+      ".photointooltip",
+      ".valignmiddle"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

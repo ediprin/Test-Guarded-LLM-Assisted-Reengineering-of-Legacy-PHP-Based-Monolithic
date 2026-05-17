@@ -1,0 +1,129 @@
+{
+  "candidate_id": "phpmyadmin-C0573",
+  "subject_id": "phpmyadmin",
+  "file": "libraries/classes/Tracking.php",
+  "lines": [
+    1,
+    1274
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 104
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "alter_table",
+      "alter_view",
+      "create_index",
+      "create_table",
+      "create_view",
+      "date_from",
+      "date_to",
+      "db",
+      "delete",
+      "delete_ddlog",
+      "delete_dmlog",
+      "drop_index",
+      "drop_table",
+      "drop_view",
+      "insert",
+      "logtype",
+      "rename_table",
+      "table",
+      "truncate",
+      "update",
+      "users",
+      "version"
+    ],
+    "session_keys": [],
+    "database_tables": [
+      "a",
+      "date",
+      "report",
+      "the"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#versions",
+      "#versionsForm",
+      ".ajax",
+      ".center",
+      ".checkall",
+      ".data",
+      ".delete_version_anchor",
+      ".disableAjax",
+      ".floatright"
+    ],
+    "forms": [
+      "tbl_tracking.php",
+      "versionsForm"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "alter_table",
+      "alter_view",
+      "create_index",
+      "create_table",
+      "create_view",
+      "date_from",
+      "date_to",
+      "db",
+      "delete",
+      "delete_ddlog",
+      "delete_dmlog",
+      "drop_index",
+      "drop_table",
+      "drop_view",
+      "insert",
+      "logtype",
+      "rename_table",
+      "table",
+      "truncate",
+      "update",
+      "users",
+      "version"
+    ],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [
+      "a",
+      "date",
+      "report",
+      "the"
+    ],
+    "must_preserve_dom_selectors": [
+      "#versions",
+      "#versionsForm",
+      ".ajax",
+      ".center",
+      ".checkall",
+      ".data",
+      ".delete_version_anchor",
+      ".disableAjax",
+      ".floatright"
+    ],
+    "must_preserve_forms": [
+      "tbl_tracking.php",
+      "versionsForm"
+    ]
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

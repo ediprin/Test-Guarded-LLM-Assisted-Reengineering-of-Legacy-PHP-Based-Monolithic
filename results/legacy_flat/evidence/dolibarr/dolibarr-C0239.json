@@ -1,0 +1,167 @@
+{
+  "candidate_id": "dolibarr-C0239",
+  "subject_id": "dolibarr",
+  "file": "htdocs/commande/orderstoinvoice.php",
+  "lines": [
+    1,
+    743
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 87
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "amount",
+      "cond_reglement_id",
+      "date_end_delyday",
+      "date_end_delymonth",
+      "date_end_delyyear",
+      "date_endday",
+      "date_endmonth",
+      "date_endyear",
+      "date_start_delyday",
+      "date_start_delymonth",
+      "date_start_delyyear",
+      "date_startday",
+      "date_startmonth",
+      "date_startyear",
+      "mode_reglement_id",
+      "model",
+      "note",
+      "note_public",
+      "orders_to_invoice",
+      "origin",
+      "originid",
+      "projectid",
+      "reday",
+      "ref",
+      "ref_client",
+      "ref_int",
+      "remise_absolue",
+      "remise_percent",
+      "remonth",
+      "reyear",
+      "socid",
+      "type"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$objp->rowid;\n\t\t\tprint $formfile->getDocumentsLink($generic_commande->element, $filename, $filedir);\n\t\t\tprint ",
+      "#checkall",
+      "#checknone",
+      ".border",
+      ".butAction",
+      ".button",
+      ".center",
+      ".checkformerge",
+      ".div-table-responsive-no-min",
+      ".fieldrequired",
+      ".flat",
+      ".hideonsmartphone",
+      ".liste_titre",
+      ".noborder",
+      ".nobordernopadding",
+      ".nocellnopadd",
+      ".nowrap",
+      ".nowraponall",
+      ".oddeven",
+      ".quatrevingtpercent"
+    ],
+    "forms": [
+      "add",
+      "orders2invoice",
+      "orderstoinvoice.php"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "amount",
+      "cond_reglement_id",
+      "date_end_delyday",
+      "date_end_delymonth",
+      "date_end_delyyear",
+      "date_endday",
+      "date_endmonth",
+      "date_endyear",
+      "date_start_delyday",
+      "date_start_delymonth",
+      "date_start_delyyear",
+      "date_startday",
+      "date_startmonth",
+      "date_startyear",
+      "mode_reglement_id",
+      "model",
+      "note",
+      "note_public",
+      "orders_to_invoice",
+      "origin",
+      "originid",
+      "projectid",
+      "reday",
+      "ref",
+      "ref_client",
+      "ref_int",
+      "remise_absolue",
+      "remise_percent",
+      "remonth",
+      "reyear",
+      "socid",
+      "type"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#.$objp->rowid;\n\t\t\tprint $formfile->getDocumentsLink($generic_commande->element, $filename, $filedir);\n\t\t\tprint ",
+      "#checkall",
+      "#checknone",
+      ".border",
+      ".butAction",
+      ".button",
+      ".center",
+      ".checkformerge",
+      ".div-table-responsive-no-min",
+      ".fieldrequired",
+      ".flat",
+      ".hideonsmartphone",
+      ".liste_titre",
+      ".noborder",
+      ".nobordernopadding",
+      ".nocellnopadd",
+      ".nowrap",
+      ".nowraponall",
+      ".oddeven",
+      ".quatrevingtpercent"
+    ],
+    "must_preserve_forms": [
+      "add",
+      "orders2invoice",
+      "orderstoinvoice.php"
+    ]
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

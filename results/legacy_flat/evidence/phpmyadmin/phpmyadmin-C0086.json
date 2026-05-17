@@ -1,0 +1,73 @@
+{
+  "candidate_id": "phpmyadmin-C0086",
+  "subject_id": "phpmyadmin",
+  "file": "test/classes/FooterTest.php",
+  "lines": [
+    1,
+    269
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 18
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "reload_left_frame"
+    ],
+    "session_keys": [
+      "debug"
+    ],
+    "database_tables": [
+      "db",
+      "pma_bookmark",
+      "the"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#selflink",
+      ".ic_window-new",
+      ".icon",
+      ".print_ignore"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "reload_left_frame"
+    ],
+    "must_preserve_session_keys": [
+      "debug"
+    ],
+    "must_preserve_database_tables": [
+      "db",
+      "pma_bookmark",
+      "the"
+    ],
+    "must_preserve_dom_selectors": [
+      "#selflink",
+      ".ic_window-new",
+      ".icon",
+      ".print_ignore"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

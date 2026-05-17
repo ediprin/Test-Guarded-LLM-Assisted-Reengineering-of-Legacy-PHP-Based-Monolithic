@@ -1,0 +1,135 @@
+{
+  "candidate_id": "phpmyadmin-C0210",
+  "subject_id": "phpmyadmin",
+  "file": "test/classes/Server/PrivilegesTest.php",
+  "lines": [
+    1,
+    2657
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 68
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "Grant_priv",
+      "adduser_submit",
+      "authentication_plugin",
+      "change_copy",
+      "createdb-3",
+      "dbname",
+      "edit_user_group_dialog",
+      "hostname",
+      "initial",
+      "log",
+      "max_connections",
+      "max_questions",
+      "max_updates",
+      "max_user_connections",
+      "mode",
+      "old_hostname",
+      "old_username",
+      "pma_pw",
+      "pos",
+      "pred_dbname",
+      "pred_hostname",
+      "pred_password",
+      "pred_tablename",
+      "pred_username",
+      "tablename",
+      "update_privs",
+      "userGroup",
+      "username",
+      "validate_username"
+    ],
+    "session_keys": [
+      "relation"
+    ],
+    "database_tables": [
+      "MySQL",
+      "mysql"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#changeUserGroupForm",
+      "#fieldset_user_global_rights",
+      "#fieldset_user_privtable_footer",
+      "#select_authentication_plugin",
+      "#select_authentication_plugin_cp",
+      ".ajax",
+      ".checkall",
+      ".export"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "Grant_priv",
+      "adduser_submit",
+      "authentication_plugin",
+      "change_copy",
+      "createdb-3",
+      "dbname",
+      "edit_user_group_dialog",
+      "hostname",
+      "initial",
+      "log",
+      "max_connections",
+      "max_questions",
+      "max_updates",
+      "max_user_connections",
+      "mode",
+      "old_hostname",
+      "old_username",
+      "pma_pw",
+      "pos",
+      "pred_dbname",
+      "pred_hostname",
+      "pred_password",
+      "pred_tablename",
+      "pred_username",
+      "tablename",
+      "update_privs",
+      "userGroup",
+      "username",
+      "validate_username"
+    ],
+    "must_preserve_session_keys": [
+      "relation"
+    ],
+    "must_preserve_database_tables": [
+      "MySQL",
+      "mysql"
+    ],
+    "must_preserve_dom_selectors": [
+      "#changeUserGroupForm",
+      "#fieldset_user_global_rights",
+      "#fieldset_user_privtable_footer",
+      "#select_authentication_plugin",
+      "#select_authentication_plugin_cp",
+      ".ajax",
+      ".checkall",
+      ".export"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "candidate_id": "phpmyadmin-C0410",
+  "subject_id": "phpmyadmin",
+  "file": "libraries/classes/Import.php",
+  "lines": [
+    1,
+    1700
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 217
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "rollback_query",
+      "sql_delimiter"
+    ],
+    "session_keys": [
+      "Import_message"
+    ],
+    "database_tables": [
+      "SELECT",
+      "a",
+      "and",
+      "back",
+      "buffer",
+      "existing",
+      "go_sql",
+      "information_schema",
+      "int",
+      "parser",
+      "query",
+      "the",
+      "varchar"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "rollback_query",
+      "sql_delimiter"
+    ],
+    "must_preserve_session_keys": [
+      "Import_message"
+    ],
+    "must_preserve_database_tables": [
+      "SELECT",
+      "a",
+      "and",
+      "back",
+      "buffer",
+      "existing",
+      "go_sql",
+      "information_schema",
+      "int",
+      "parser",
+      "query",
+      "the",
+      "varchar"
+    ],
+    "must_preserve_dom_selectors": [],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

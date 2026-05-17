@@ -1,0 +1,117 @@
+{
+  "candidate_id": "phpmyadmin-C0814",
+  "subject_id": "phpmyadmin",
+  "file": "libraries/classes/Server/Status/Monitor.php",
+  "lines": [
+    1,
+    829
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 84
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "database",
+      "limitTypes",
+      "query",
+      "removeVariables",
+      "requiredData",
+      "varName",
+      "varValue"
+    ],
+    "session_keys": [],
+    "database_tables": [
+      "INFORMATION_SCHEMA",
+      "and",
+      "mysql",
+      "the",
+      "which"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#addChartDialog",
+      "#chartGrid",
+      "#chartPreset",
+      "#chartSeries",
+      "#chartStatusVar",
+      "#chartVariableSettings",
+      "#clearSeriesLink",
+      "#differentialValue",
+      "#explain_docu",
+      "#js_data",
+      "#limitTypes",
+      "#logAnalyseDialog",
+      "#logTable",
+      "#monitorInstructionsDialog",
+      "#profiling_docu",
+      "#queryAnalyzerDialog",
+      "#removeVariables",
+      "#seriesPreview",
+      "#sqlquery",
+      "#tabGridVariables"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "database",
+      "limitTypes",
+      "query",
+      "removeVariables",
+      "requiredData",
+      "varName",
+      "varValue"
+    ],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [
+      "INFORMATION_SCHEMA",
+      "and",
+      "mysql",
+      "the",
+      "which"
+    ],
+    "must_preserve_dom_selectors": [
+      "#addChartDialog",
+      "#chartGrid",
+      "#chartPreset",
+      "#chartSeries",
+      "#chartStatusVar",
+      "#chartVariableSettings",
+      "#clearSeriesLink",
+      "#differentialValue",
+      "#explain_docu",
+      "#js_data",
+      "#limitTypes",
+      "#logAnalyseDialog",
+      "#logTable",
+      "#monitorInstructionsDialog",
+      "#profiling_docu",
+      "#queryAnalyzerDialog",
+      "#removeVariables",
+      "#seriesPreview",
+      "#sqlquery",
+      "#tabGridVariables"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

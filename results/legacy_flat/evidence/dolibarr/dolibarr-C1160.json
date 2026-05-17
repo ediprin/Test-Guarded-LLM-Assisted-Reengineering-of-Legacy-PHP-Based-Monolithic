@@ -1,0 +1,115 @@
+{
+  "candidate_id": "dolibarr-C1160",
+  "subject_id": "dolibarr",
+  "file": "htdocs/opensurvey/wizard/choix_date.php",
+  "lines": [
+    1,
+    570
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 108
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "choixjourajout",
+      "choixjourretrait",
+      "horaires$i",
+      "horaires0"
+    ],
+    "session_keys": [
+      "annee",
+      "commentaires",
+      "formatsondage",
+      "horaires$cle",
+      "horaires$i",
+      "horaires$j",
+      "horaires$k",
+      "horaires0",
+      "jour",
+      "mail",
+      "mois",
+      "nbrecaseshoraires",
+      "totalchoixjour",
+      "toutchoix"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      ".OFF",
+      ".ON",
+      ".avant",
+      ".bodydate",
+      ".bouton",
+      ".button",
+      ".center",
+      ".choisi",
+      ".corps",
+      ".joursemaine",
+      ".libre"
+    ],
+    "forms": [
+      "formulaire"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "choixjourajout",
+      "choixjourretrait",
+      "horaires$i",
+      "horaires0"
+    ],
+    "must_preserve_session_keys": [
+      "annee",
+      "commentaires",
+      "formatsondage",
+      "horaires$cle",
+      "horaires$i",
+      "horaires$j",
+      "horaires$k",
+      "horaires0",
+      "jour",
+      "mail",
+      "mois",
+      "nbrecaseshoraires",
+      "totalchoixjour",
+      "toutchoix"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      ".OFF",
+      ".ON",
+      ".avant",
+      ".bodydate",
+      ".bouton",
+      ".button",
+      ".center",
+      ".choisi",
+      ".corps",
+      ".joursemaine",
+      ".libre"
+    ],
+    "must_preserve_forms": [
+      "formulaire"
+    ]
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

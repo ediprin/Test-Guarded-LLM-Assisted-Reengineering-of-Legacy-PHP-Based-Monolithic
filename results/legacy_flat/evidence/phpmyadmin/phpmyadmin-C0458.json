@@ -1,0 +1,107 @@
+{
+  "candidate_id": "phpmyadmin-C0458",
+  "subject_id": "phpmyadmin",
+  "file": "libraries/classes/MultSubmits.php",
+  "lines": [
+    1,
+    628
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 103
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "add_prefix",
+      "adjust_privileges",
+      "pos",
+      "target_db",
+      "what"
+    ],
+    "session_keys": [],
+    "database_tables": [
+      "Selected",
+      "prefix"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#ajax_form",
+      "#buttonNo",
+      "#buttonYes",
+      "#checkbox_adjust_privileges",
+      "#checkbox_auto_increment_cp",
+      "#checkbox_constraints",
+      "#checkbox_drop",
+      "#db_name_dropdown",
+      "#foreignkeychk",
+      "#initialPrefix",
+      "#newPrefix",
+      "#txtPrefix",
+      "#what_data",
+      "#what_dataonly",
+      "#what_structure",
+      ".confirmation",
+      ".halfWidth",
+      ".ic_b_help",
+      ".icon",
+      ".input"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "add_prefix",
+      "adjust_privileges",
+      "pos",
+      "target_db",
+      "what"
+    ],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [
+      "Selected",
+      "prefix"
+    ],
+    "must_preserve_dom_selectors": [
+      "#ajax_form",
+      "#buttonNo",
+      "#buttonYes",
+      "#checkbox_adjust_privileges",
+      "#checkbox_auto_increment_cp",
+      "#checkbox_constraints",
+      "#checkbox_drop",
+      "#db_name_dropdown",
+      "#foreignkeychk",
+      "#initialPrefix",
+      "#newPrefix",
+      "#txtPrefix",
+      "#what_data",
+      "#what_dataonly",
+      "#what_structure",
+      ".confirmation",
+      ".halfWidth",
+      ".ic_b_help",
+      ".icon",
+      ".input"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

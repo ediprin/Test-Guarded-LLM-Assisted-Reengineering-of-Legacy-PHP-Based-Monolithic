@@ -1,0 +1,2 @@
+project,repo_url,selected_tag,commit,php_version,db_required,install_status,test_command,test_status,static_tools_status,candidate_count,oracle_status,usable_for_experiment,notes
+dokuwiki,https://github.com/dokuwiki/dokuwiki.git,release-2018-04-22b,4e34491f07933bfb7e59e6cab0c029799dd381ab,>=5.6,false,CLONED,vendor/bin/phpunit -c _test/phpunit.xml,DISCOVERED_NOT_RUN,phpunit,292,PENDING,false,Audit only; Docker restoration and oracle validation still required.

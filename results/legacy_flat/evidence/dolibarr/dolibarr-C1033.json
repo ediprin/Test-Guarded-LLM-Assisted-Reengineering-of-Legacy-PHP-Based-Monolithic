@@ -1,0 +1,107 @@
+{
+  "candidate_id": "dolibarr-C1033",
+  "subject_id": "dolibarr",
+  "file": "htdocs/product/composition/card.php",
+  "lines": [
+    1,
+    647
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 97
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "max_prod"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": [
+      "nb",
+      "package"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$id.",
+      "#.$object->id);\n\t\texit;\n\t}\n}\nelseif($action===",
+      "#sub-",
+      ".border",
+      ".button",
+      ".center",
+      ".centpercent",
+      ".clearboth",
+      ".fichecenter",
+      ".inline-block",
+      ".liste",
+      ".liste_titre",
+      ".liste_total",
+      ".noborder",
+      ".oddeven",
+      ".opacitymedium",
+      ".right",
+      ".tableforfield",
+      ".titlefield",
+      ".underbanner"
+    ],
+    "forms": [
+      "formComposedProduct"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "max_prod"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [
+      "nb",
+      "package"
+    ],
+    "must_preserve_dom_selectors": [
+      "#.$id.",
+      "#.$object->id);\n\t\texit;\n\t}\n}\nelseif($action===",
+      "#sub-",
+      ".border",
+      ".button",
+      ".center",
+      ".centpercent",
+      ".clearboth",
+      ".fichecenter",
+      ".inline-block",
+      ".liste",
+      ".liste_titre",
+      ".liste_total",
+      ".noborder",
+      ".oddeven",
+      ".opacitymedium",
+      ".right",
+      ".tableforfield",
+      ".titlefield",
+      ".underbanner"
+    ],
+    "must_preserve_forms": [
+      "formComposedProduct"
+    ]
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "candidate_id": "phppgadmin-C0045",
+  "subject_id": "phppgadmin",
+  "file": "display.php",
+  "lines": [
+    427,
+    880
+  ],
+  "candidate_type": "session_dependent_logic",
+  "issues": [
+    {
+      "type": "Session-Dependent Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 77
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "count",
+      "database",
+      "fkey",
+      "nohistory",
+      "page",
+      "query",
+      "return",
+      "save",
+      "schema",
+      "search_path",
+      "server",
+      "sortdir",
+      "sortkey",
+      "strings",
+      "subject",
+      "table",
+      "view",
+      "yes"
+    ],
+    "session_keys": [
+      "sqlquery"
+    ],
+    "database_tables": [
+      "query",
+      "sql"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "count",
+      "database",
+      "fkey",
+      "nohistory",
+      "page",
+      "query",
+      "return",
+      "save",
+      "schema",
+      "search_path",
+      "server",
+      "sortdir",
+      "sortkey",
+      "strings",
+      "subject",
+      "table",
+      "view",
+      "yes"
+    ],
+    "must_preserve_session_keys": [
+      "sqlquery"
+    ],
+    "must_preserve_database_tables": [
+      "query",
+      "sql"
+    ],
+    "must_preserve_dom_selectors": [],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Guard",
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

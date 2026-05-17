@@ -1,0 +1,121 @@
+{
+  "candidate_id": "phpmyadmin-C0002",
+  "subject_id": "phpmyadmin",
+  "file": "db_central_columns.php",
+  "lines": [
+    1,
+    181
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 21
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "add_column",
+      "add_new_column",
+      "col_attribute",
+      "col_default",
+      "col_default_sel",
+      "col_extra",
+      "col_isNull",
+      "col_length",
+      "col_name",
+      "col_type",
+      "collation",
+      "column-select",
+      "cur_table",
+      "db",
+      "delete_save",
+      "edit_central_columns_page",
+      "edit_save",
+      "getColumnList",
+      "multi_edit_central_column_save",
+      "orig_col_name",
+      "populateColumns",
+      "pos",
+      "selectedTable",
+      "selected_fld",
+      "table-select",
+      "total_rows"
+    ],
+    "session_keys": [],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#del_col_name",
+      "#del_form",
+      "#table_columns",
+      "#tableslistcontainer",
+      ".data",
+      ".tablesorter"
+    ],
+    "forms": [
+      "db_central_columns.php",
+      "tableslistcontainer"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "add_column",
+      "add_new_column",
+      "col_attribute",
+      "col_default",
+      "col_default_sel",
+      "col_extra",
+      "col_isNull",
+      "col_length",
+      "col_name",
+      "col_type",
+      "collation",
+      "column-select",
+      "cur_table",
+      "db",
+      "delete_save",
+      "edit_central_columns_page",
+      "edit_save",
+      "getColumnList",
+      "multi_edit_central_column_save",
+      "orig_col_name",
+      "populateColumns",
+      "pos",
+      "selectedTable",
+      "selected_fld",
+      "table-select",
+      "total_rows"
+    ],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#del_col_name",
+      "#del_form",
+      "#table_columns",
+      "#tableslistcontainer",
+      ".data",
+      ".tablesorter"
+    ],
+    "must_preserve_forms": [
+      "db_central_columns.php",
+      "tableslistcontainer"
+    ]
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

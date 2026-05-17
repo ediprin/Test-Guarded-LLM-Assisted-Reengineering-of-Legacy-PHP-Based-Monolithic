@@ -1,0 +1,81 @@
+{
+  "candidate_id": "roundcubemail-C0103",
+  "subject_id": "roundcubemail",
+  "file": "program/steps/mail/compose.inc",
+  "lines": [
+    1,
+    1412
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 233
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "_is_html",
+      "_message",
+      "_search"
+    ],
+    "session_keys": [
+      "language",
+      "last_compose_session",
+      "msg_formats",
+      "search"
+    ],
+    "database_tables": [
+      "a",
+      "data",
+      "the"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#reply-intro",
+      ".attachment-name",
+      ".attachment-size"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "_is_html",
+      "_message",
+      "_search"
+    ],
+    "must_preserve_session_keys": [
+      "language",
+      "last_compose_session",
+      "msg_formats",
+      "search"
+    ],
+    "must_preserve_database_tables": [
+      "a",
+      "data",
+      "the"
+    ],
+    "must_preserve_dom_selectors": [
+      "#reply-intro",
+      ".attachment-name",
+      ".attachment-size"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

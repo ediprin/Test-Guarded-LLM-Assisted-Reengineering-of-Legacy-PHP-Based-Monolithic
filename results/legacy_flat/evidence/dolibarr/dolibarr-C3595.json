@@ -1,0 +1,67 @@
+{
+  "candidate_id": "dolibarr-C3595",
+  "subject_id": "dolibarr",
+  "file": "htdocs/core/lib/project.lib.php",
+  "lines": [
+    699,
+    928
+  ],
+  "candidate_type": "long_method_or_region",
+  "issues": [
+    {
+      "type": "Long or Complex Region",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 46
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$lines[$i]->fk_project);\n\n\t\t\t\t// Break on a new project\n\t\t\t\tif ($parent == 0 && $lines[$i]->fk_project != $lastprojectid)\n\t\t\t\t{\n\t\t\t\t\t$lastprojectid=$lines[$i]->fk_project;\n\t\t\t\t\tif ($preselectedday)\n\t\t\t\t\t{\n\t\t\t\t\t\t$projectstatic->id = $lines[$i]->fk_project;\n\t\t\t\t\t}\n\t\t\t\t}\n\n\t\t\t\tif (empty($workloadforid[$projectstatic->id]))\n\t\t\t\t{\n\t\t\t\t\tif ($preselectedday)\n\t\t\t\t\t{\n\t\t\t\t\t\t$projectstatic->loadTimeSpent($preselectedday, 0, $fuser->id);\t// Load time spent from table projet_task_time for the project into this->weekWorkLoad and this->weekWorkLoadPerTask for all days of a week\n\t\t\t\t\t\t$workloadforid[$projectstatic->id]=1;\n\t\t\t\t\t}\n\t\t\t\t}\n\n\t\t\t\t$projectstatic->id=$lines[$i]->fk_project;\n\t\t\t\t$projectstatic->ref=$lines[$i]->project_ref;\n\t\t\t\t$projectstatic->title=$lines[$i]->project_label;\n\t\t\t\t$projectstatic->public=$lines[$i]->public;\n\n\t\t\t\t$taskstatic->id=$lines[$i]->task_id;\n\t\t\t\t$taskstatic->ref=($lines[$i]->task_ref?$lines[$i]->task_ref:$lines[$i]->task_id);\n\t\t\t\t$taskstatic->label=$lines[$i]->task_label;\n\t\t\t\t$taskstatic->date_start=$lines[$i]->date_start;\n\t\t\t\t$taskstatic->date_end=$lines[$i]->date_end;\n\n\t\t\t\t$thirdpartystatic->id=$lines[$i]->socid;\n\t\t\t\t$thirdpartystatic->name=$lines[$i]->thirdparty_name;\n\t\t\t\t$thirdpartystatic->email=$lines[$i]->thirdparty_email;\n\n\t\t\t\tif (empty($oldprojectforbreak) || ($oldprojectforbreak != -1 && $oldprojectforbreak != $projectstatic->id))\n\t\t\t\t{\n\t\t\t\t\tprint ",
+      "#.$lines[$i]->id.",
+      "#.$parent.",
+      ".center",
+      ".duration",
+      ".nowrap",
+      ".oddeven",
+      ".right",
+      ".tdoverflowmax100",
+      ".trforbreak"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#.$lines[$i]->fk_project);\n\n\t\t\t\t// Break on a new project\n\t\t\t\tif ($parent == 0 && $lines[$i]->fk_project != $lastprojectid)\n\t\t\t\t{\n\t\t\t\t\t$lastprojectid=$lines[$i]->fk_project;\n\t\t\t\t\tif ($preselectedday)\n\t\t\t\t\t{\n\t\t\t\t\t\t$projectstatic->id = $lines[$i]->fk_project;\n\t\t\t\t\t}\n\t\t\t\t}\n\n\t\t\t\tif (empty($workloadforid[$projectstatic->id]))\n\t\t\t\t{\n\t\t\t\t\tif ($preselectedday)\n\t\t\t\t\t{\n\t\t\t\t\t\t$projectstatic->loadTimeSpent($preselectedday, 0, $fuser->id);\t// Load time spent from table projet_task_time for the project into this->weekWorkLoad and this->weekWorkLoadPerTask for all days of a week\n\t\t\t\t\t\t$workloadforid[$projectstatic->id]=1;\n\t\t\t\t\t}\n\t\t\t\t}\n\n\t\t\t\t$projectstatic->id=$lines[$i]->fk_project;\n\t\t\t\t$projectstatic->ref=$lines[$i]->project_ref;\n\t\t\t\t$projectstatic->title=$lines[$i]->project_label;\n\t\t\t\t$projectstatic->public=$lines[$i]->public;\n\n\t\t\t\t$taskstatic->id=$lines[$i]->task_id;\n\t\t\t\t$taskstatic->ref=($lines[$i]->task_ref?$lines[$i]->task_ref:$lines[$i]->task_id);\n\t\t\t\t$taskstatic->label=$lines[$i]->task_label;\n\t\t\t\t$taskstatic->date_start=$lines[$i]->date_start;\n\t\t\t\t$taskstatic->date_end=$lines[$i]->date_end;\n\n\t\t\t\t$thirdpartystatic->id=$lines[$i]->socid;\n\t\t\t\t$thirdpartystatic->name=$lines[$i]->thirdparty_name;\n\t\t\t\t$thirdpartystatic->email=$lines[$i]->thirdparty_email;\n\n\t\t\t\tif (empty($oldprojectforbreak) || ($oldprojectforbreak != -1 && $oldprojectforbreak != $projectstatic->id))\n\t\t\t\t{\n\t\t\t\t\tprint ",
+      "#.$lines[$i]->id.",
+      "#.$parent.",
+      ".center",
+      ".duration",
+      ".nowrap",
+      ".oddeven",
+      ".right",
+      ".tdoverflowmax100",
+      ".trforbreak"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

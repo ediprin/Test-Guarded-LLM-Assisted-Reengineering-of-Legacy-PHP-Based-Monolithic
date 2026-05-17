@@ -1,0 +1,119 @@
+{
+  "candidate_id": "dolibarr-C1054",
+  "subject_id": "dolibarr",
+  "file": "htdocs/product/stock/product.php",
+  "lines": [
+    1,
+    1091
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 194
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "eatbyday",
+      "eatbymonth",
+      "eatbyyear",
+      "ref",
+      "sellbyday",
+      "sellbymonth",
+      "sellbyyear"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": [
+      "a",
+      "batch",
+      "customer",
+      "supplier"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "# . $id . ",
+      "# . $object->id . ",
+      "#.$currcomb->fk_product_child, 2) ?>",
+      "#.$id);\n\texit;\n}\n\nif($action == ",
+      "#.$id);\n    exit;\n}\n\n\n\n/*\n * View\n */\n\n$form = new Form($db);\n$formproduct=new FormProduct($db);\nif (! empty($conf->projet->enabled)) $formproject=new FormProjets($db);\n\nif ($id > 0 || $ref)\n{\n\t$object = new Product($db);\n\t$result = $object->fetch($id, $ref);\n\n\t$variants = $object->hasVariants();\n\n\t$object->load_stock();\n\n\t$title = $langs->trans(",
+      "#.$id.",
+      "#.$object->id);\n\t\t\t\t\texit;\n\t\t\t\t}\n\t\t\t}\n\t\t\telse\n\t\t\t{\n\t\t\t\tsetEventMessages($object->error, $object->errors, ",
+      "#.$object->id);\n\t\t\t\t\texit;\n\t\t\t\t}\n\t\t\t}\n\t\t\telse\n\t\t\t{\n\t\t\t    setEventMessages($object->error, $object->errors, ",
+      "#cancellinebutton",
+      "#savelinebutton",
+      ".border",
+      ".butAction",
+      ".butActionRefused",
+      ".button",
+      ".center",
+      ".centpercent",
+      ".classfortooltip",
+      ".clearboth",
+      ".div-table-responsive",
+      ".fichecenter"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "eatbyday",
+      "eatbymonth",
+      "eatbyyear",
+      "ref",
+      "sellbyday",
+      "sellbymonth",
+      "sellbyyear"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [
+      "a",
+      "batch",
+      "customer",
+      "supplier"
+    ],
+    "must_preserve_dom_selectors": [
+      "# . $id . ",
+      "# . $object->id . ",
+      "#.$currcomb->fk_product_child, 2) ?>",
+      "#.$id);\n\texit;\n}\n\nif($action == ",
+      "#.$id);\n    exit;\n}\n\n\n\n/*\n * View\n */\n\n$form = new Form($db);\n$formproduct=new FormProduct($db);\nif (! empty($conf->projet->enabled)) $formproject=new FormProjets($db);\n\nif ($id > 0 || $ref)\n{\n\t$object = new Product($db);\n\t$result = $object->fetch($id, $ref);\n\n\t$variants = $object->hasVariants();\n\n\t$object->load_stock();\n\n\t$title = $langs->trans(",
+      "#.$id.",
+      "#.$object->id);\n\t\t\t\t\texit;\n\t\t\t\t}\n\t\t\t}\n\t\t\telse\n\t\t\t{\n\t\t\t\tsetEventMessages($object->error, $object->errors, ",
+      "#.$object->id);\n\t\t\t\t\texit;\n\t\t\t\t}\n\t\t\t}\n\t\t\telse\n\t\t\t{\n\t\t\t    setEventMessages($object->error, $object->errors, ",
+      "#cancellinebutton",
+      "#savelinebutton",
+      ".border",
+      ".butAction",
+      ".butActionRefused",
+      ".button",
+      ".center",
+      ".centpercent",
+      ".classfortooltip",
+      ".clearboth",
+      ".div-table-responsive",
+      ".fichecenter"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "candidate_id": "phpmyadmin-C0364",
+  "subject_id": "phpmyadmin",
+  "file": "libraries/classes/CreateAddField.php",
+  "lines": [
+    1,
+    556
+  ],
+  "candidate_type": "long_method_or_region",
+  "issues": [
+    {
+      "type": "Long or Complex Region",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 78
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "added_fields",
+      "after_field",
+      "comment",
+      "connection",
+      "field_attribute",
+      "field_collation",
+      "field_comments",
+      "field_default_type",
+      "field_default_value",
+      "field_expression",
+      "field_extra",
+      "field_length",
+      "field_name",
+      "field_null",
+      "field_type",
+      "field_virtuality",
+      "field_where",
+      "fulltext_indexes",
+      "indexes",
+      "num_fields",
+      "orig_num_fields",
+      "partition_by",
+      "partition_count",
+      "partition_expr",
+      "partitions",
+      "preview_sql",
+      "primary_indexes",
+      "spatial_indexes",
+      "submit_num_fields",
+      "subpartition_by",
+      "subpartition_count",
+      "subpartition_expr",
+      "tbl_collation",
+      "tbl_storage_engine",
+      "unique_indexes"
+    ],
+    "session_keys": [],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "added_fields",
+      "after_field",
+      "comment",
+      "connection",
+      "field_attribute",
+      "field_collation",
+      "field_comments",
+      "field_default_type",
+      "field_default_value",
+      "field_expression",
+      "field_extra",
+      "field_length",
+      "field_name",
+      "field_null",
+      "field_type",
+      "field_virtuality",
+      "field_where",
+      "fulltext_indexes",
+      "indexes",
+      "num_fields",
+      "orig_num_fields",
+      "partition_by",
+      "partition_count",
+      "partition_expr",
+      "partitions",
+      "preview_sql",
+      "primary_indexes",
+      "spatial_indexes",
+      "submit_num_fields",
+      "subpartition_by",
+      "subpartition_count",
+      "subpartition_expr",
+      "tbl_collation",
+      "tbl_storage_engine",
+      "unique_indexes"
+    ],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

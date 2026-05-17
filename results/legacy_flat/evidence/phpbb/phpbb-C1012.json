@@ -1,0 +1,88 @@
+{
+  "candidate_id": "phpbb-C1012",
+  "subject_id": "phpbb",
+  "file": "phpBB/includes/ucp/ucp_pm_compose.php",
+  "lines": [
+    26,
+    1262
+  ],
+  "candidate_type": "sql_data_access",
+  "issues": [
+    {
+      "type": "SQL/Data Access Region",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 227
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "add_bcc",
+      "add_file",
+      "add_to",
+      "attach_sig",
+      "cancel",
+      "delete",
+      "delete_file",
+      "disable_bbcode",
+      "disable_magic_url",
+      "disable_smilies",
+      "draft_loaded",
+      "load",
+      "preview",
+      "remove_g",
+      "remove_u",
+      "save"
+    ],
+    "session_keys": [],
+    "database_tables": [
+      "the"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      ".sep"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "add_bcc",
+      "add_file",
+      "add_to",
+      "attach_sig",
+      "cancel",
+      "delete",
+      "delete_file",
+      "disable_bbcode",
+      "disable_magic_url",
+      "disable_smilies",
+      "draft_loaded",
+      "load",
+      "preview",
+      "remove_g",
+      "remove_u",
+      "save"
+    ],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [
+      "the"
+    ],
+    "must_preserve_dom_selectors": [
+      ".sep"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

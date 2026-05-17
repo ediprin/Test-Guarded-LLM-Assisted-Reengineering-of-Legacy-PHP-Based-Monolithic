@@ -1,0 +1,2 @@
+project,login_url,target_url,status,content_sha256,assertions_passed,assertions_failed,message
+kanboard,http://localhost:8107/,http://localhost:8107/?controller=DashboardController&action=show,PASS,1ee1cfbb85475b566997e0bebce5a62677d93a0bc9dd6117f9a261309bebab5d,3,0,

@@ -1,0 +1,120 @@
+{
+  "candidate_id": "dolibarr-C3211",
+  "subject_id": "dolibarr",
+  "file": "htdocs/core/class/html.formmail.class.php",
+  "lines": [
+    288,
+    1016
+  ],
+  "candidate_type": "session_dependent_logic",
+  "issues": [
+    {
+      "type": "Session-Dependent Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 143
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "message",
+      "modelselected",
+      "sendto"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": [
+      "__ONLINE_PAYMENT_URL__",
+      "c_email_templates",
+      "each",
+      "file",
+      "if",
+      "options",
+      "the"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#addedfile",
+      "#attachfile_",
+      "#cancel",
+      "#formmail",
+      "#frommail",
+      "#fromname",
+      "#mailform",
+      "#mailformdiv",
+      "#message",
+      "#modelselected",
+      "#removedfile_",
+      "#replymail",
+      "#replyname",
+      "#sendmail",
+      "#sendto",
+      "#sendtocc",
+      "#tomail",
+      "#toname",
+      ".boxtablenotop",
+      ".button"
+    ],
+    "forms": [
+      "mailform"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "message",
+      "modelselected",
+      "sendto"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [
+      "__ONLINE_PAYMENT_URL__",
+      "c_email_templates",
+      "each",
+      "file",
+      "if",
+      "options",
+      "the"
+    ],
+    "must_preserve_dom_selectors": [
+      "#addedfile",
+      "#attachfile_",
+      "#cancel",
+      "#formmail",
+      "#frommail",
+      "#fromname",
+      "#mailform",
+      "#mailformdiv",
+      "#message",
+      "#modelselected",
+      "#removedfile_",
+      "#replymail",
+      "#replyname",
+      "#sendmail",
+      "#sendto",
+      "#sendtocc",
+      "#tomail",
+      "#toname",
+      ".boxtablenotop",
+      ".button"
+    ],
+    "must_preserve_forms": [
+      "mailform"
+    ]
+  },
+  "allowed_transformations": [
+    "Extract Guard",
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

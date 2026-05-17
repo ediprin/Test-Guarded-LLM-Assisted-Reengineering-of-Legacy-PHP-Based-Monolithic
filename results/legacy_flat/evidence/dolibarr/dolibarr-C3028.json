@@ -1,0 +1,51 @@
+{
+  "candidate_id": "dolibarr-C3028",
+  "subject_id": "dolibarr",
+  "file": "htdocs/core/class/CSMSFile.class.php",
+  "lines": [
+    97,
+    205
+  ],
+  "candidate_type": "long_method_or_region",
+  "issues": [
+    {
+      "type": "Long or Complex Region",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 13
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$res, LOG_DEBUG);\n\t\t\t\t\t//var_dump($res);        // 1973128\n\t\t\t\t\tif (! empty($conf->global->MAIN_SMS_DEBUG)) $this->dump_sms_result($res);\n\t\t\t\t}\n\t\t\t}\n\t\t    elseif (! empty($conf->global->MAIN_SMS_SENDMODE))    // $conf->global->MAIN_SMS_SENDMODE looks like a value ",
+      "#.$res, LOG_DEBUG);\n    \t\t\t\t\t//var_dump($res);        // 1973128\n    \t\t\t\t\tif (! empty($conf->global->MAIN_SMS_DEBUG)) $this->dump_sms_result($res);\n    \t\t\t\t}\n\t\t        }\n\t\t        catch(Exception $e)\n\t\t        {\n\t\t            dol_print_error("
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#.$res, LOG_DEBUG);\n\t\t\t\t\t//var_dump($res);        // 1973128\n\t\t\t\t\tif (! empty($conf->global->MAIN_SMS_DEBUG)) $this->dump_sms_result($res);\n\t\t\t\t}\n\t\t\t}\n\t\t    elseif (! empty($conf->global->MAIN_SMS_SENDMODE))    // $conf->global->MAIN_SMS_SENDMODE looks like a value ",
+      "#.$res, LOG_DEBUG);\n    \t\t\t\t\t//var_dump($res);        // 1973128\n    \t\t\t\t\tif (! empty($conf->global->MAIN_SMS_DEBUG)) $this->dump_sms_result($res);\n    \t\t\t\t}\n\t\t        }\n\t\t        catch(Exception $e)\n\t\t        {\n\t\t            dol_print_error("
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

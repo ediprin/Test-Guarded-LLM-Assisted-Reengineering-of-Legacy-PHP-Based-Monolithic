@@ -1,0 +1,94 @@
+{
+  "candidate_id": "dolibarr-C4724",
+  "subject_id": "dolibarr",
+  "file": "htdocs/cashdesk/tpl/menu.tpl.php",
+  "lines": [
+    1,
+    96
+  ],
+  "candidate_type": "mixed_php_html",
+  "issues": [
+    {
+      "type": "Mixed PHP/HTML",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 12
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [
+      "CASHDESK_ID_BANKACCOUNT_CASH",
+      "CASHDESK_ID_BANKACCOUNT_CB",
+      "CASHDESK_ID_BANKACCOUNT_CHEQUE",
+      "CASHDESK_ID_THIRDPARTY",
+      "CASHDESK_ID_WAREHOUSE",
+      "firstname",
+      "lastname"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#bouton_change_thirdparty",
+      "#frmThirdparty",
+      ".bouton_change_thirdparty",
+      ".button",
+      ".clearboth",
+      ".formulaire1",
+      ".hideonsmartphone",
+      ".inline-block",
+      ".menu",
+      ".menu_bloc",
+      ".menu_choix0",
+      ".menu_choix1",
+      ".menu_choix2"
+    ],
+    "forms": [
+      "facturation_verif.php?action=change_thirdparty"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [
+      "CASHDESK_ID_BANKACCOUNT_CASH",
+      "CASHDESK_ID_BANKACCOUNT_CB",
+      "CASHDESK_ID_BANKACCOUNT_CHEQUE",
+      "CASHDESK_ID_THIRDPARTY",
+      "CASHDESK_ID_WAREHOUSE",
+      "firstname",
+      "lastname"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#bouton_change_thirdparty",
+      "#frmThirdparty",
+      ".bouton_change_thirdparty",
+      ".button",
+      ".clearboth",
+      ".formulaire1",
+      ".hideonsmartphone",
+      ".inline-block",
+      ".menu",
+      ".menu_bloc",
+      ".menu_choix0",
+      ".menu_choix1",
+      ".menu_choix2"
+    ],
+    "must_preserve_forms": [
+      "facturation_verif.php?action=change_thirdparty"
+    ]
+  },
+  "allowed_transformations": [
+    "Separate PHP Logic from Markup",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

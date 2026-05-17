@@ -1,0 +1,193 @@
+{
+  "candidate_id": "dolibarr-C0256",
+  "subject_id": "dolibarr",
+  "file": "htdocs/contrat/card.php",
+  "lines": [
+    1,
+    2297
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 407
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "buying_price",
+      "cancel",
+      "comment",
+      "date_endday",
+      "date_endhour",
+      "date_endmin",
+      "date_endmonth",
+      "date_endsec",
+      "date_endyear",
+      "date_startday",
+      "date_starthour",
+      "date_startmin",
+      "date_startmonth",
+      "date_startsec",
+      "date_startyear",
+      "dp_desc",
+      "fournprice",
+      "idprod",
+      "multicurrency_price_ht",
+      "np_marginRate",
+      "np_markRate",
+      "other_linked_objects",
+      "price_ht",
+      "price_ttc",
+      "prod_entry_mode",
+      "product_desc",
+      "product_label",
+      "product_ref",
+      "qty",
+      "remise_percent",
+      "rowid",
+      "tva_tx",
+      "type"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": [
+      "add",
+      "another",
+      "else",
+      "et",
+      "form",
+      "if",
+      "main",
+      "update",
+      "vatrate"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "# . $id);\n\t\t\texit;\n\t\t}\n\t}\n\telseif ($action==",
+      "# . $id);\n\t\t\texit;\n\t\t}\n\t}\n\n\n\t// Actions to build doc\n\t$upload_dir = $conf->contrat->dir_output;\n\t$permissioncreate = $user->rights->contrat->creer;\n\tinclude DOL_DOCUMENT_ROOT.",
+      "# . $id);\n\t        exit;\n\t    }\n\t}\n\telseif ($action==",
+      "# . $object->fk_project . ",
+      "# . $object->id . ",
+      "# . $object->id);\n\t\t\t\texit;\n\t\t\t}\n\t\t}\n\t\telse {\n\t\t\theader(",
+      "# . $object->id);\n\t            exit;\n\t        }\n\t    }\n\t    else {\n\t        header(",
+      "# . $object->id, $langs->trans(",
+      "# . $object->id, $object->socid, $object->fk_project, ",
+      "# . $object->id, $object->thirdparty->id, $object->fk_project, ",
+      "# . $object->id;\n\t\t\t$genallowed = $user->rights->contrat->lire;\n\t\t\t$delallowed = $user->rights->contrat->creer;\n\n\n\t\t\tprint $formfile->showdocuments(",
+      "# . $result);\n\t\t\t\t\texit();\n\t\t\t\t} else {\n\t\t\t\t\tif (count($object->errors) > 0) setEventMessages($object->error, $object->errors, ",
+      "#.$id);\n\t\t\t\treturn;\n\t\t\t}\n\t\t\telse\n\t\t\t{\n\t\t\t\tsetEventMessages($object->error, $object->errors, ",
+      "#.$object->id);\n\t\t\t\t\texit;\n\t\t\t\t}\n\t\t\t\telse {\n\t\t\t\t\tsetEventMessages($object->error, $object->errors, ",
+      "#.$object->id);\n\t\t\t\texit;\n\t\t\t}\n\t\t\telse\n\t\t\t{\n\t\t\t\tif ($object->error == ",
+      "#.$object->id);\n\t\t\t\texit;\n\t\t\t}\n\t\t\telse\n\t\t\t{\n\t\t\t\tsetEventMessages($object->error, $object->errors, ",
+      "#.$object->id);\n\t\t\t\texit;\n\t\t\t}\n\t\t\telse {\n\t\t\t\tsetEventMessages($object->error, $object->errors, ",
+      "#.$object->id);\n\t\t\t\texit;\n\t\t\t}\n\t\t}\n\t\telse {\n\t\t\theader(",
+      "#.$object->id);\n\t\t\texit;\n\t\t}\n\t\telse\n\t\t{\n\t\t\tsetEventMessages($object->error, $object->errors, ",
+      "#.$object->id);\n\t\t\texit;\n\t\t}\n\t\telse {\n\t\t\tsetEventMessages($object->error, $object->errors, "
+    ],
+    "forms": [
+      "active",
+      "addproduct",
+      "closeline",
+      "form_contract",
+      "update"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "buying_price",
+      "cancel",
+      "comment",
+      "date_endday",
+      "date_endhour",
+      "date_endmin",
+      "date_endmonth",
+      "date_endsec",
+      "date_endyear",
+      "date_startday",
+      "date_starthour",
+      "date_startmin",
+      "date_startmonth",
+      "date_startsec",
+      "date_startyear",
+      "dp_desc",
+      "fournprice",
+      "idprod",
+      "multicurrency_price_ht",
+      "np_marginRate",
+      "np_markRate",
+      "other_linked_objects",
+      "price_ht",
+      "price_ttc",
+      "prod_entry_mode",
+      "product_desc",
+      "product_label",
+      "product_ref",
+      "qty",
+      "remise_percent",
+      "rowid",
+      "tva_tx",
+      "type"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [
+      "add",
+      "another",
+      "else",
+      "et",
+      "form",
+      "if",
+      "main",
+      "update",
+      "vatrate"
+    ],
+    "must_preserve_dom_selectors": [
+      "# . $id);\n\t\t\texit;\n\t\t}\n\t}\n\telseif ($action==",
+      "# . $id);\n\t\t\texit;\n\t\t}\n\t}\n\n\n\t// Actions to build doc\n\t$upload_dir = $conf->contrat->dir_output;\n\t$permissioncreate = $user->rights->contrat->creer;\n\tinclude DOL_DOCUMENT_ROOT.",
+      "# . $id);\n\t        exit;\n\t    }\n\t}\n\telseif ($action==",
+      "# . $object->fk_project . ",
+      "# . $object->id . ",
+      "# . $object->id);\n\t\t\t\texit;\n\t\t\t}\n\t\t}\n\t\telse {\n\t\t\theader(",
+      "# . $object->id);\n\t            exit;\n\t        }\n\t    }\n\t    else {\n\t        header(",
+      "# . $object->id, $langs->trans(",
+      "# . $object->id, $object->socid, $object->fk_project, ",
+      "# . $object->id, $object->thirdparty->id, $object->fk_project, ",
+      "# . $object->id;\n\t\t\t$genallowed = $user->rights->contrat->lire;\n\t\t\t$delallowed = $user->rights->contrat->creer;\n\n\n\t\t\tprint $formfile->showdocuments(",
+      "# . $result);\n\t\t\t\t\texit();\n\t\t\t\t} else {\n\t\t\t\t\tif (count($object->errors) > 0) setEventMessages($object->error, $object->errors, ",
+      "#.$id);\n\t\t\t\treturn;\n\t\t\t}\n\t\t\telse\n\t\t\t{\n\t\t\t\tsetEventMessages($object->error, $object->errors, ",
+      "#.$object->id);\n\t\t\t\t\texit;\n\t\t\t\t}\n\t\t\t\telse {\n\t\t\t\t\tsetEventMessages($object->error, $object->errors, ",
+      "#.$object->id);\n\t\t\t\texit;\n\t\t\t}\n\t\t\telse\n\t\t\t{\n\t\t\t\tif ($object->error == ",
+      "#.$object->id);\n\t\t\t\texit;\n\t\t\t}\n\t\t\telse\n\t\t\t{\n\t\t\t\tsetEventMessages($object->error, $object->errors, ",
+      "#.$object->id);\n\t\t\t\texit;\n\t\t\t}\n\t\t\telse {\n\t\t\t\tsetEventMessages($object->error, $object->errors, ",
+      "#.$object->id);\n\t\t\t\texit;\n\t\t\t}\n\t\t}\n\t\telse {\n\t\t\theader(",
+      "#.$object->id);\n\t\t\texit;\n\t\t}\n\t\telse\n\t\t{\n\t\t\tsetEventMessages($object->error, $object->errors, ",
+      "#.$object->id);\n\t\t\texit;\n\t\t}\n\t\telse {\n\t\t\tsetEventMessages($object->error, $object->errors, "
+    ],
+    "must_preserve_forms": [
+      "active",
+      "addproduct",
+      "closeline",
+      "form_contract",
+      "update"
+    ]
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

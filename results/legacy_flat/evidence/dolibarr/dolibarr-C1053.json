@@ -1,0 +1,109 @@
+{
+  "candidate_id": "dolibarr-C1053",
+  "subject_id": "dolibarr",
+  "file": "htdocs/product/stock/movement_list.php",
+  "lines": [
+    1,
+    1163
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 201
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "nbpiece"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": [
+      "a",
+      "extra",
+      "extrafields",
+      "hook",
+      "hooks"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$id);\n            exit;\n        }\n        else\n        {\n            $error++;\n            setEventMessages($product->error, $product->errors, ",
+      "#.$id.",
+      "#.$id;\n    if ($search_movement)        $param.=",
+      "#.$object->id);\n                    exit;\n                }\n            }\n            else\n            {\n                setEventMessages($product->error, $product->errors, ",
+      "#.$objp->entrepot_id\n\t\t\t\t\t\t\t\t.",
+      "#cb",
+      "#formfilteraction",
+      "#search_type_mouvement",
+      ".border",
+      ".butAction",
+      ".center",
+      ".centpercent",
+      ".checkforselect",
+      ".clearboth",
+      ".div-table-responsive",
+      ".divsearchfieldfilter",
+      ".fa",
+      ".fa-trash",
+      ".ficheaddleft",
+      ".fichecenter"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "nbpiece"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [
+      "a",
+      "extra",
+      "extrafields",
+      "hook",
+      "hooks"
+    ],
+    "must_preserve_dom_selectors": [
+      "#.$id);\n            exit;\n        }\n        else\n        {\n            $error++;\n            setEventMessages($product->error, $product->errors, ",
+      "#.$id.",
+      "#.$id;\n    if ($search_movement)        $param.=",
+      "#.$object->id);\n                    exit;\n                }\n            }\n            else\n            {\n                setEventMessages($product->error, $product->errors, ",
+      "#.$objp->entrepot_id\n\t\t\t\t\t\t\t\t.",
+      "#cb",
+      "#formfilteraction",
+      "#search_type_mouvement",
+      ".border",
+      ".butAction",
+      ".center",
+      ".centpercent",
+      ".checkforselect",
+      ".clearboth",
+      ".div-table-responsive",
+      ".divsearchfieldfilter",
+      ".fa",
+      ".fa-trash",
+      ".ficheaddleft",
+      ".fichecenter"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

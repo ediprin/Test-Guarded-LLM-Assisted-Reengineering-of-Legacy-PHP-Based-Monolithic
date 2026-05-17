@@ -1,0 +1,2 @@
+project,url,status,content_sha256,assertions_passed,assertions_failed,message
+kanboard,http://localhost:8107/,PASS,b908eb398d57174115d6d7a79f7573186167cd3a307dc065b3955190ac56d630,4,0,

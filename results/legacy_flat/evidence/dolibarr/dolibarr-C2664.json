@@ -1,0 +1,115 @@
+{
+  "candidate_id": "dolibarr-C2664",
+  "subject_id": "dolibarr",
+  "file": "htdocs/fourn/facture/list.php",
+  "lines": [
+    1,
+    1167
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 261
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "action"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": [
+      "extra",
+      "extrafields",
+      "hook",
+      "hooks",
+      "or",
+      "when"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#cancel",
+      "#cb",
+      "#createbills",
+      "#formfilteraction",
+      ".border",
+      ".button",
+      ".center",
+      ".centpercent",
+      ".checkforselect",
+      ".div-table-responsive",
+      ".divsearchfield",
+      ".divsearchfieldfilter",
+      ".fa",
+      ".fa-trash",
+      ".flat",
+      ".hideonsmartphone",
+      ".left",
+      ".liste",
+      ".liste_titre",
+      ".liste_titre_bydiv"
+    ],
+    "forms": [
+      "searchFormList"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "action"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [
+      "extra",
+      "extrafields",
+      "hook",
+      "hooks",
+      "or",
+      "when"
+    ],
+    "must_preserve_dom_selectors": [
+      "#cancel",
+      "#cb",
+      "#createbills",
+      "#formfilteraction",
+      ".border",
+      ".button",
+      ".center",
+      ".centpercent",
+      ".checkforselect",
+      ".div-table-responsive",
+      ".divsearchfield",
+      ".divsearchfieldfilter",
+      ".fa",
+      ".fa-trash",
+      ".flat",
+      ".hideonsmartphone",
+      ".left",
+      ".liste",
+      ".liste_titre",
+      ".liste_titre_bydiv"
+    ],
+    "must_preserve_forms": [
+      "searchFormList"
+    ]
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "candidate_id": "dolibarr-C0415",
+  "subject_id": "dolibarr",
+  "file": "htdocs/opensurvey/results.php",
+  "lines": [
+    1,
+    1101
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 209
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "ajoutercolonne",
+      "boutonp",
+      "choix$i",
+      "id",
+      "nom",
+      "nouveaujour",
+      "nouveaumois",
+      "nouvelleannee",
+      "nouvellecolonne",
+      "nouvelleheuredebut",
+      "nouvelleheurefin",
+      "nouvelleminutedebut",
+      "nouvelleminutefin",
+      "typecolonne"
+    ],
+    "session_keys": [],
+    "database_tables": [
+      "config",
+      "database",
+      "vote",
+      "with"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "# . $numsondage . ",
+      "#.$_GET[",
+      "#.$numsondage.",
+      "#.$object->id_sondage);\n\t\t\t}\n\t\t}\n\n\t\t$adresseadmin = $object->mail_admin;\n\t}\n\telse\n\t{\n\t\t$erreur_ajout_date=",
+      "#.$object->id_sondage);\n\t}\n}\n\n// Add column (with format date)\nif (isset($_POST[",
+      "#.$object->id_sondage.",
+      "#opensurveyurl",
+      ".affichageresultats",
+      ".annee",
+      ".border",
+      ".butAction",
+      ".button",
+      ".cadre",
+      ".casevide",
+      ".center",
+      ".centpercent",
+      ".clearboth",
+      ".fichecenter",
+      ".heure",
+      ".jour"
+    ],
+    "forms": [
+      "#",
+      "formulaire",
+      "formulaire4"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "ajoutercolonne",
+      "boutonp",
+      "choix$i",
+      "id",
+      "nom",
+      "nouveaujour",
+      "nouveaumois",
+      "nouvelleannee",
+      "nouvellecolonne",
+      "nouvelleheuredebut",
+      "nouvelleheurefin",
+      "nouvelleminutedebut",
+      "nouvelleminutefin",
+      "typecolonne"
+    ],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [
+      "config",
+      "database",
+      "vote",
+      "with"
+    ],
+    "must_preserve_dom_selectors": [
+      "# . $numsondage . ",
+      "#.$_GET[",
+      "#.$numsondage.",
+      "#.$object->id_sondage);\n\t\t\t}\n\t\t}\n\n\t\t$adresseadmin = $object->mail_admin;\n\t}\n\telse\n\t{\n\t\t$erreur_ajout_date=",
+      "#.$object->id_sondage);\n\t}\n}\n\n// Add column (with format date)\nif (isset($_POST[",
+      "#.$object->id_sondage.",
+      "#opensurveyurl",
+      ".affichageresultats",
+      ".annee",
+      ".border",
+      ".butAction",
+      ".button",
+      ".cadre",
+      ".casevide",
+      ".center",
+      ".centpercent",
+      ".clearboth",
+      ".fichecenter",
+      ".heure",
+      ".jour"
+    ],
+    "must_preserve_forms": [
+      "#",
+      "formulaire",
+      "formulaire4"
+    ]
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

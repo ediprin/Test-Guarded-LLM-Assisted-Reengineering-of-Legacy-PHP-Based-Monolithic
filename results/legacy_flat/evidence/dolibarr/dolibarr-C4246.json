@@ -1,0 +1,119 @@
+{
+  "candidate_id": "dolibarr-C4246",
+  "subject_id": "dolibarr",
+  "file": "htdocs/compta/bank/ligne.php",
+  "lines": [
+    1,
+    702
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 125
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "amount",
+      "banque",
+      "dateoday",
+      "dateomonth",
+      "dateoyear",
+      "datevday",
+      "datevmonth",
+      "datevyear",
+      "emetteur",
+      "label",
+      "num_chq",
+      "num_rel",
+      "reconciled",
+      "rowid",
+      "value"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$id.",
+      "#.$links[$key][",
+      ".border",
+      ".button",
+      ".center",
+      ".clearboth",
+      ".fichecenter",
+      ".flat",
+      ".maxwidth100",
+      ".minwidth200",
+      ".minwidth300",
+      ".tdtop",
+      ".titlefield",
+      ".toptd",
+      ".underbanner"
+    ],
+    "forms": [
+      "update"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "amount",
+      "banque",
+      "dateoday",
+      "dateomonth",
+      "dateoyear",
+      "datevday",
+      "datevmonth",
+      "datevyear",
+      "emetteur",
+      "label",
+      "num_chq",
+      "num_rel",
+      "reconciled",
+      "rowid",
+      "value"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#.$id.",
+      "#.$links[$key][",
+      ".border",
+      ".button",
+      ".center",
+      ".clearboth",
+      ".fichecenter",
+      ".flat",
+      ".maxwidth100",
+      ".minwidth200",
+      ".minwidth300",
+      ".tdtop",
+      ".titlefield",
+      ".toptd",
+      ".underbanner"
+    ],
+    "must_preserve_forms": [
+      "update"
+    ]
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

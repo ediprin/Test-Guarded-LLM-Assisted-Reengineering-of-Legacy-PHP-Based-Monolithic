@@ -1,0 +1,115 @@
+{
+  "candidate_id": "phpmyadmin-C0016",
+  "subject_id": "phpmyadmin",
+  "file": "index.php",
+  "lines": [
+    1,
+    691
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 78
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "access_time",
+      "ajax_request",
+      "collation_connection",
+      "db",
+      "git_revision",
+      "recent_table",
+      "set_fontsize",
+      "set_theme",
+      "table",
+      "target"
+    ],
+    "session_keys": [
+      "encryption_key",
+      "partial_logout"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#is_git_revision",
+      "#li_select_fontsize",
+      "#li_select_lang",
+      "#li_select_mysql_charset",
+      "#li_select_mysql_collation",
+      "#li_select_server",
+      "#li_select_theme",
+      "#main_pane_left",
+      "#main_pane_right",
+      "#maincontainer",
+      ".cfg_dbg_demo",
+      ".disableAjax",
+      ".group",
+      ".jsversioncheck",
+      ".no_bullets",
+      ".pmagroup",
+      ".version"
+    ],
+    "forms": [
+      "index.php"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "access_time",
+      "ajax_request",
+      "collation_connection",
+      "db",
+      "git_revision",
+      "recent_table",
+      "set_fontsize",
+      "set_theme",
+      "table",
+      "target"
+    ],
+    "must_preserve_session_keys": [
+      "encryption_key",
+      "partial_logout"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#is_git_revision",
+      "#li_select_fontsize",
+      "#li_select_lang",
+      "#li_select_mysql_charset",
+      "#li_select_mysql_collation",
+      "#li_select_server",
+      "#li_select_theme",
+      "#main_pane_left",
+      "#main_pane_right",
+      "#maincontainer",
+      ".cfg_dbg_demo",
+      ".disableAjax",
+      ".group",
+      ".jsversioncheck",
+      ".no_bullets",
+      ".pmagroup",
+      ".version"
+    ],
+    "must_preserve_forms": [
+      "index.php"
+    ]
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

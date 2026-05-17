@@ -1,0 +1,171 @@
+{
+  "candidate_id": "dolibarr-C0069",
+  "subject_id": "dolibarr",
+  "file": "htdocs/adherents/card.php",
+  "lines": [
+    1,
+    1982
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 328
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "address",
+      "birthday",
+      "birthmonth",
+      "birthyear",
+      "civility_id",
+      "country_id",
+      "facebook",
+      "firstname",
+      "gender",
+      "lastname",
+      "linkedin",
+      "login",
+      "member_email",
+      "member_login",
+      "morphy",
+      "pass",
+      "phone",
+      "phone_mobile",
+      "phone_perso",
+      "public",
+      "reday",
+      "remonth",
+      "reyear",
+      "skype",
+      "societe",
+      "town",
+      "twitter",
+      "zipcode"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": [
+      "a",
+      "add",
+      "card",
+      "currently",
+      "spip",
+      "template"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "# . $object->id . ",
+      "# . $object->id;\n\t\t\t$genallowed = $user->rights->adherent->lire;\n\t\t\t$delallowed = $user->rights->adherent->creer;\n\n\t\t\tprint $formfile->showdocuments(",
+      "#.$object->id.",
+      "#photodelete",
+      "#photoinput",
+      "#tdcompany",
+      "#tdfirstname",
+      "#tdlastname",
+      ".border",
+      ".butAction",
+      ".butActionDelete",
+      ".butActionRefused",
+      ".button",
+      ".center",
+      ".centpercent",
+      ".classfortooltip",
+      ".clearboth",
+      ".divButAction",
+      ".error",
+      ".ficheaddleft"
+    ],
+    "forms": [
+      "form",
+      "formsoc"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "address",
+      "birthday",
+      "birthmonth",
+      "birthyear",
+      "civility_id",
+      "country_id",
+      "facebook",
+      "firstname",
+      "gender",
+      "lastname",
+      "linkedin",
+      "login",
+      "member_email",
+      "member_login",
+      "morphy",
+      "pass",
+      "phone",
+      "phone_mobile",
+      "phone_perso",
+      "public",
+      "reday",
+      "remonth",
+      "reyear",
+      "skype",
+      "societe",
+      "town",
+      "twitter",
+      "zipcode"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [
+      "a",
+      "add",
+      "card",
+      "currently",
+      "spip",
+      "template"
+    ],
+    "must_preserve_dom_selectors": [
+      "# . $object->id . ",
+      "# . $object->id;\n\t\t\t$genallowed = $user->rights->adherent->lire;\n\t\t\t$delallowed = $user->rights->adherent->creer;\n\n\t\t\tprint $formfile->showdocuments(",
+      "#.$object->id.",
+      "#photodelete",
+      "#photoinput",
+      "#tdcompany",
+      "#tdfirstname",
+      "#tdlastname",
+      ".border",
+      ".butAction",
+      ".butActionDelete",
+      ".butActionRefused",
+      ".button",
+      ".center",
+      ".centpercent",
+      ".classfortooltip",
+      ".clearboth",
+      ".divButAction",
+      ".error",
+      ".ficheaddleft"
+    ],
+    "must_preserve_forms": [
+      "form",
+      "formsoc"
+    ]
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

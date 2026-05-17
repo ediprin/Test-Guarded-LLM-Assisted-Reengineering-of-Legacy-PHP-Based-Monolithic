@@ -1,0 +1,123 @@
+{
+  "candidate_id": "dolibarr-C0152",
+  "subject_id": "dolibarr",
+  "file": "htdocs/admin/pdf.php",
+  "lines": [
+    1,
+    582
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 69
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "MAIN_GENERATE_DOCUMENTS_HIDE_DESC",
+      "MAIN_GENERATE_DOCUMENTS_HIDE_DETAILS",
+      "MAIN_GENERATE_DOCUMENTS_HIDE_REF",
+      "MAIN_GENERATE_DOCUMENTS_SHOW_FOOT_DETAILS",
+      "MAIN_GENERATE_DOCUMENTS_WITHOUT_VAT",
+      "MAIN_INVERT_SENDER_RECIPIENT",
+      "MAIN_PDF_FORMAT",
+      "MAIN_PDF_MAIN_HIDE_SECOND_TAX",
+      "MAIN_PDF_MAIN_HIDE_THIRD_TAX",
+      "MAIN_PDF_MARGIN_BOTTOM",
+      "MAIN_PDF_MARGIN_LEFT",
+      "MAIN_PDF_MARGIN_RIGHT",
+      "MAIN_PDF_MARGIN_TOP",
+      "MAIN_PDF_USE_ISO_LOCATION",
+      "MAIN_PROFID1_IN_ADDRESS",
+      "MAIN_PROFID2_IN_ADDRESS",
+      "MAIN_PROFID3_IN_ADDRESS",
+      "MAIN_PROFID4_IN_ADDRESS",
+      "MAIN_PROFID5_IN_ADDRESS",
+      "MAIN_PROFID6_IN_ADDRESS",
+      "MAIN_TVAINTRA_NOT_IN_ADDRESS"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": [
+      "pdf"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      ".butAction",
+      ".button",
+      ".center",
+      ".div-table-responsive-no-min",
+      ".error",
+      ".liste_titre",
+      ".maxwidth50",
+      ".noborder",
+      ".oddeven",
+      ".opacitymedium",
+      ".tabsAction"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "MAIN_GENERATE_DOCUMENTS_HIDE_DESC",
+      "MAIN_GENERATE_DOCUMENTS_HIDE_DETAILS",
+      "MAIN_GENERATE_DOCUMENTS_HIDE_REF",
+      "MAIN_GENERATE_DOCUMENTS_SHOW_FOOT_DETAILS",
+      "MAIN_GENERATE_DOCUMENTS_WITHOUT_VAT",
+      "MAIN_INVERT_SENDER_RECIPIENT",
+      "MAIN_PDF_FORMAT",
+      "MAIN_PDF_MAIN_HIDE_SECOND_TAX",
+      "MAIN_PDF_MAIN_HIDE_THIRD_TAX",
+      "MAIN_PDF_MARGIN_BOTTOM",
+      "MAIN_PDF_MARGIN_LEFT",
+      "MAIN_PDF_MARGIN_RIGHT",
+      "MAIN_PDF_MARGIN_TOP",
+      "MAIN_PDF_USE_ISO_LOCATION",
+      "MAIN_PROFID1_IN_ADDRESS",
+      "MAIN_PROFID2_IN_ADDRESS",
+      "MAIN_PROFID3_IN_ADDRESS",
+      "MAIN_PROFID4_IN_ADDRESS",
+      "MAIN_PROFID5_IN_ADDRESS",
+      "MAIN_PROFID6_IN_ADDRESS",
+      "MAIN_TVAINTRA_NOT_IN_ADDRESS"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [
+      "pdf"
+    ],
+    "must_preserve_dom_selectors": [
+      ".butAction",
+      ".button",
+      ".center",
+      ".div-table-responsive-no-min",
+      ".error",
+      ".liste_titre",
+      ".maxwidth50",
+      ".noborder",
+      ".oddeven",
+      ".opacitymedium",
+      ".tabsAction"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

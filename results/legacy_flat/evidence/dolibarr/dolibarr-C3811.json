@@ -1,0 +1,61 @@
+{
+  "candidate_id": "dolibarr-C3811",
+  "subject_id": "dolibarr",
+  "file": "htdocs/core/triggers/interface_50_modLdap_Ldapsynchro.class.php",
+  "lines": [
+    59,
+    837
+  ],
+  "candidate_type": "long_method_or_region",
+  "issues": [
+    {
+      "type": "Long or Complex Region",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 162
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$object->id);\n\t\t\tif (! empty($conf->global->LDAP_CONTACT_ACTIVE))\n\t\t\t{\n\t\t\t\t$ldap=new Ldap();\n\t\t\t\t$result=$ldap->connect_bind();\n\n\t\t\t\tif ($result > 0)\n\t\t\t\t{\n\t\t\t\t\t$info=$object->_load_ldap_info();\n\t\t\t\t\t$dn=$object->_load_ldap_dn($info);\n\n\t\t\t\t\t$result=$ldap->add($dn, $info, $user);\n\t\t\t\t}\n\n\t\t\t\tif ($result < 0) $this->error=",
+      "#.$object->id);\n\t\t\tif (! empty($conf->global->LDAP_CONTACT_ACTIVE))\n\t\t\t{\n\t\t\t\t$ldap=new Ldap();\n\t\t\t\t$result=$ldap->connect_bind();\n\n\t\t\t\tif ($result > 0)\n\t\t\t\t{\n\t\t\t\t\t$info=$object->_load_ldap_info();\n\t\t\t\t\t$dn=$object->_load_ldap_dn($info);\n\n\t\t\t\t\t$result=$ldap->delete($dn);\n\t\t\t\t}\n\n\t\t\t\tif ($result < 0) $this->error=",
+      "#.$object->id);\n\t\t\tif (! empty($conf->global->LDAP_CONTACT_ACTIVE))\n\t\t\t{\n\t\t\t\t$ldap=new Ldap();\n\t\t\t\t$result=$ldap->connect_bind();\n\n\t\t\t\tif ($result > 0)\n\t\t\t\t{\n\t\t\t\t\tif (empty($object->oldcopy) || ! is_object($object->oldcopy))\n\t\t\t\t\t{\n\t\t\t\t\t\tdol_syslog(",
+      "#.$object->id);\n\t\t\tif (! empty($conf->global->LDAP_MEMBER_ACTIVE) && (string) $conf->global->LDAP_MEMBER_ACTIVE == ",
+      "#.$object->id);\n\t\t\tif (! empty($conf->global->LDAP_MEMBER_TYPE_ACTIVE) && (string) $conf->global->LDAP_MEMBER_TYPE_ACTIVE == ",
+      "#.$object->id);\n\t\t\tif (! empty($conf->global->LDAP_SYNCHRO_ACTIVE) && $conf->global->LDAP_SYNCHRO_ACTIVE === ",
+      "#.$object->id);\n\t\t}\n\t\telseif ($action == "
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#.$object->id);\n\t\t\tif (! empty($conf->global->LDAP_CONTACT_ACTIVE))\n\t\t\t{\n\t\t\t\t$ldap=new Ldap();\n\t\t\t\t$result=$ldap->connect_bind();\n\n\t\t\t\tif ($result > 0)\n\t\t\t\t{\n\t\t\t\t\t$info=$object->_load_ldap_info();\n\t\t\t\t\t$dn=$object->_load_ldap_dn($info);\n\n\t\t\t\t\t$result=$ldap->add($dn, $info, $user);\n\t\t\t\t}\n\n\t\t\t\tif ($result < 0) $this->error=",
+      "#.$object->id);\n\t\t\tif (! empty($conf->global->LDAP_CONTACT_ACTIVE))\n\t\t\t{\n\t\t\t\t$ldap=new Ldap();\n\t\t\t\t$result=$ldap->connect_bind();\n\n\t\t\t\tif ($result > 0)\n\t\t\t\t{\n\t\t\t\t\t$info=$object->_load_ldap_info();\n\t\t\t\t\t$dn=$object->_load_ldap_dn($info);\n\n\t\t\t\t\t$result=$ldap->delete($dn);\n\t\t\t\t}\n\n\t\t\t\tif ($result < 0) $this->error=",
+      "#.$object->id);\n\t\t\tif (! empty($conf->global->LDAP_CONTACT_ACTIVE))\n\t\t\t{\n\t\t\t\t$ldap=new Ldap();\n\t\t\t\t$result=$ldap->connect_bind();\n\n\t\t\t\tif ($result > 0)\n\t\t\t\t{\n\t\t\t\t\tif (empty($object->oldcopy) || ! is_object($object->oldcopy))\n\t\t\t\t\t{\n\t\t\t\t\t\tdol_syslog(",
+      "#.$object->id);\n\t\t\tif (! empty($conf->global->LDAP_MEMBER_ACTIVE) && (string) $conf->global->LDAP_MEMBER_ACTIVE == ",
+      "#.$object->id);\n\t\t\tif (! empty($conf->global->LDAP_MEMBER_TYPE_ACTIVE) && (string) $conf->global->LDAP_MEMBER_TYPE_ACTIVE == ",
+      "#.$object->id);\n\t\t\tif (! empty($conf->global->LDAP_SYNCHRO_ACTIVE) && $conf->global->LDAP_SYNCHRO_ACTIVE === ",
+      "#.$object->id);\n\t\t}\n\t\telseif ($action == "
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

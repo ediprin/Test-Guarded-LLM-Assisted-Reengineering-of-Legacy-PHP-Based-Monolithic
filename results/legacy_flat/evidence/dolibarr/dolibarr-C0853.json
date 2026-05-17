@@ -1,0 +1,97 @@
+{
+  "candidate_id": "dolibarr-C0853",
+  "subject_id": "dolibarr",
+  "file": "htdocs/public/demo/index.php",
+  "lines": [
+    1,
+    484
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 81
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$val->numero.",
+      "#a1",
+      "#div",
+      "#form",
+      "#id",
+      "#tr1",
+      ".CTable",
+      ".button",
+      ".center",
+      ".checkbox",
+      ".clearboth",
+      ".csscolumns",
+      ".demobackground",
+      ".demobackgrounddiv",
+      ".demoban",
+      ".demobanbox",
+      ".demobantext",
+      ".demobody",
+      ".demobox",
+      ".demologo"
+    ],
+    "forms": [
+      "form"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#.$val->numero.",
+      "#a1",
+      "#div",
+      "#form",
+      "#id",
+      "#tr1",
+      ".CTable",
+      ".button",
+      ".center",
+      ".checkbox",
+      ".clearboth",
+      ".csscolumns",
+      ".demobackground",
+      ".demobackgrounddiv",
+      ".demoban",
+      ".demobanbox",
+      ".demobantext",
+      ".demobody",
+      ".demobox",
+      ".demologo"
+    ],
+    "must_preserve_forms": [
+      "form"
+    ]
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

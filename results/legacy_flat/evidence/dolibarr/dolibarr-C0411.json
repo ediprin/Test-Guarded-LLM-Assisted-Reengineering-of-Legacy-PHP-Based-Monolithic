@@ -1,0 +1,87 @@
+{
+  "candidate_id": "dolibarr-C0411",
+  "subject_id": "dolibarr",
+  "file": "htdocs/opensurvey/fonctions.php",
+  "lines": [
+    1,
+    242
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 26
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [
+      "adresse",
+      "allow_comments",
+      "allow_spy",
+      "champdatefin",
+      "commentaires",
+      "formatsondage",
+      "mailsonde",
+      "nom",
+      "titre",
+      "totalchoixjour",
+      "toutchoix"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$id;\n\t} else {\n\t\t$url = get_server_name().",
+      "#.$object->id_sondage;\n\t$head[0][1] = $langs->trans(",
+      "#.$object->id_sondage;\n\t$head[1][1] = $langs->trans(",
+      "#.$sondage;\n\n\theader(",
+      "#logosubscribe",
+      "#mainbody",
+      ".publicnewmemberform"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [
+      "adresse",
+      "allow_comments",
+      "allow_spy",
+      "champdatefin",
+      "commentaires",
+      "formatsondage",
+      "mailsonde",
+      "nom",
+      "titre",
+      "totalchoixjour",
+      "toutchoix"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#.$id;\n\t} else {\n\t\t$url = get_server_name().",
+      "#.$object->id_sondage;\n\t$head[0][1] = $langs->trans(",
+      "#.$object->id_sondage;\n\t$head[1][1] = $langs->trans(",
+      "#.$sondage;\n\n\theader(",
+      "#logosubscribe",
+      "#mainbody",
+      ".publicnewmemberform"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

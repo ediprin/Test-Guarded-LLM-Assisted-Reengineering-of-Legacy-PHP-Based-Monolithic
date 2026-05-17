@@ -1,0 +1,135 @@
+{
+  "candidate_id": "dolibarr-C0249",
+  "subject_id": "dolibarr",
+  "file": "htdocs/contact/card.php",
+  "lines": [
+    1,
+    1422
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 286
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "address",
+      "cancel",
+      "country_id",
+      "email",
+      "fax",
+      "firstname",
+      "lastname",
+      "phone_mobile",
+      "phone_perso",
+      "phone_pro",
+      "poste",
+      "town",
+      "zipcode"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": [
+      "add",
+      "mass",
+      "select2",
+      "table"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$id);\n\t\t\texit;\n\t\t}\n\t}\n\n\t// Add contact\n\tif ($action == ",
+      "#.$id);\n\t\t\texit;\n\t\t}\n\t}\n\n\t// Confirmation activation\n\tif ($action == ",
+      "#.$id.",
+      "#.$id.($backtopage?",
+      "#.$id;\n            header(",
+      "#.$object->id, $langs->trans(",
+      "#.$object->id.",
+      "#address",
+      "#birthday_alert",
+      "#copyaddressfromsoc",
+      "#email",
+      "#facebook",
+      "#fax",
+      "#firstname",
+      "#jabberid",
+      "#lastname",
+      "#linkedin",
+      "#phone_mobile",
+      "#phone_perso",
+      "#phone_pro"
+    ],
+    "forms": [
+      "formsoc"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "address",
+      "cancel",
+      "country_id",
+      "email",
+      "fax",
+      "firstname",
+      "lastname",
+      "phone_mobile",
+      "phone_perso",
+      "phone_pro",
+      "poste",
+      "town",
+      "zipcode"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [
+      "add",
+      "mass",
+      "select2",
+      "table"
+    ],
+    "must_preserve_dom_selectors": [
+      "#.$id);\n\t\t\texit;\n\t\t}\n\t}\n\n\t// Add contact\n\tif ($action == ",
+      "#.$id);\n\t\t\texit;\n\t\t}\n\t}\n\n\t// Confirmation activation\n\tif ($action == ",
+      "#.$id.",
+      "#.$id.($backtopage?",
+      "#.$id;\n            header(",
+      "#.$object->id, $langs->trans(",
+      "#.$object->id.",
+      "#address",
+      "#birthday_alert",
+      "#copyaddressfromsoc",
+      "#email",
+      "#facebook",
+      "#fax",
+      "#firstname",
+      "#jabberid",
+      "#lastname",
+      "#linkedin",
+      "#phone_mobile",
+      "#phone_perso",
+      "#phone_pro"
+    ],
+    "must_preserve_forms": [
+      "formsoc"
+    ]
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

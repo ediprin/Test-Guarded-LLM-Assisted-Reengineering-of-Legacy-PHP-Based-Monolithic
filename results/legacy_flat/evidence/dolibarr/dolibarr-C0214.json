@@ -1,0 +1,99 @@
+{
+  "candidate_id": "dolibarr-C0214",
+  "subject_id": "dolibarr",
+  "file": "htdocs/cashdesk/index.php",
+  "lines": [
+    1,
+    225
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 57
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "err"
+    ],
+    "session_keys": [
+      "newtoken",
+      "uid"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#frmLogin",
+      ".bouton_login",
+      ".button",
+      ".cadre_facturation",
+      ".conteneur",
+      ".conteneur_img_droite",
+      ".conteneur_img_gauche",
+      ".contenu",
+      ".hideonsmartphone",
+      ".inline-block",
+      ".label1",
+      ".logo",
+      ".logopos",
+      ".maxwidth150onsmartphoneimp",
+      ".menu_principal",
+      ".principal_login",
+      ".texte_login",
+      ".titre1"
+    ],
+    "forms": [
+      "index_verif.php"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "err"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken",
+      "uid"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#frmLogin",
+      ".bouton_login",
+      ".button",
+      ".cadre_facturation",
+      ".conteneur",
+      ".conteneur_img_droite",
+      ".conteneur_img_gauche",
+      ".contenu",
+      ".hideonsmartphone",
+      ".inline-block",
+      ".label1",
+      ".logo",
+      ".logopos",
+      ".maxwidth150onsmartphoneimp",
+      ".menu_principal",
+      ".principal_login",
+      ".texte_login",
+      ".titre1"
+    ],
+    "must_preserve_forms": [
+      "index_verif.php"
+    ]
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

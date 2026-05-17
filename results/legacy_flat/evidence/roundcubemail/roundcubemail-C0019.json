@@ -1,0 +1,110 @@
+{
+  "candidate_id": "roundcubemail-C0019",
+  "subject_id": "roundcubemail",
+  "file": "program/include/rcmail.php",
+  "lines": [
+    1,
+    2577
+  ],
+  "candidate_type": "session_dependent_logic",
+  "issues": [
+    {
+      "type": "Session-Dependent Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 416
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "_framed",
+      "_remote",
+      "_thumbnail"
+    ],
+    "session_keys": [
+      "language",
+      "login_time",
+      "password",
+      "preferences",
+      "quota_display",
+      "search",
+      "storage_host",
+      "storage_port",
+      "storage_ssl",
+      "task",
+      "temp",
+      "timezone",
+      "user_id",
+      "username"
+    ],
+    "database_tables": [
+      "GET",
+      "config",
+      "everywhere",
+      "last",
+      "list",
+      "plain",
+      "the",
+      "unintentional",
+      "user",
+      "virtuser"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#0"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "_framed",
+      "_remote",
+      "_thumbnail"
+    ],
+    "must_preserve_session_keys": [
+      "language",
+      "login_time",
+      "password",
+      "preferences",
+      "quota_display",
+      "search",
+      "storage_host",
+      "storage_port",
+      "storage_ssl",
+      "task",
+      "temp",
+      "timezone",
+      "user_id",
+      "username"
+    ],
+    "must_preserve_database_tables": [
+      "GET",
+      "config",
+      "everywhere",
+      "last",
+      "list",
+      "plain",
+      "the",
+      "unintentional",
+      "user",
+      "virtuser"
+    ],
+    "must_preserve_dom_selectors": [
+      "#0"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Guard",
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

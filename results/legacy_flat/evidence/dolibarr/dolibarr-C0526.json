@@ -1,0 +1,105 @@
+{
+  "candidate_id": "dolibarr-C0526",
+  "subject_id": "dolibarr",
+  "file": "htdocs/user/list.php",
+  "lines": [
+    1,
+    696
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 164
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": [
+      "extra",
+      "extrafields",
+      "hook",
+      "hooks",
+      "when"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$id);\n\texit;\n}\n\nllxHeader(",
+      "#formfilteraction",
+      "#searchFormList",
+      "#ways",
+      ".button",
+      ".center",
+      ".centpercent",
+      ".div-table-responsive",
+      ".divsearchfield",
+      ".divsearchfieldfilter",
+      ".liste",
+      ".liste_titre",
+      ".liste_titre_bydiv",
+      ".liste_titre_filter",
+      ".maxwidth50",
+      ".maxwidth75",
+      ".maxwidthsearch",
+      ".nowrap",
+      ".paddingleft",
+      ".tagtable"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [
+      "extra",
+      "extrafields",
+      "hook",
+      "hooks",
+      "when"
+    ],
+    "must_preserve_dom_selectors": [
+      "#.$id);\n\texit;\n}\n\nllxHeader(",
+      "#formfilteraction",
+      "#searchFormList",
+      "#ways",
+      ".button",
+      ".center",
+      ".centpercent",
+      ".div-table-responsive",
+      ".divsearchfield",
+      ".divsearchfieldfilter",
+      ".liste",
+      ".liste_titre",
+      ".liste_titre_bydiv",
+      ".liste_titre_filter",
+      ".maxwidth50",
+      ".maxwidth75",
+      ".maxwidthsearch",
+      ".nowrap",
+      ".paddingleft",
+      ".tagtable"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

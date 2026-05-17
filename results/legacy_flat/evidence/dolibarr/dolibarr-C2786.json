@@ -1,0 +1,63 @@
+{
+  "candidate_id": "dolibarr-C2786",
+  "subject_id": "dolibarr",
+  "file": "htdocs/emailcollector/class/emailcollector.class.php",
+  "lines": [
+    1029,
+    1874
+  ],
+  "candidate_type": "long_method_or_region",
+  "issues": [
+    {
+      "type": "Long or Complex Region",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 165
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$contactstatic->id.",
+      "#.$projectstatic->id);\n\n                    $actioncode = ",
+      "#.$projecttocreate->socid.",
+      "#.$savesocid.",
+      "#.$thirdpartystatic->id.",
+      "#.$thirdpartystatic->id;\n                            }\n                            else\n                            {\n                                // Create project\n                                $result = $projecttocreate->create($user);\n                                if ($result <= 0)\n                                {\n                                    $errorforactions++;\n                                    $this->error = ",
+      "#.$thirdpartystatic->id;\n                            }\n                            else\n                            {\n                                // Create project\n                                $result = $tickettocreate->create($user);\n                                if ($result <= 0)\n                                {\n                                    $errorforactions++;\n                                    $this->error = ",
+      "#.$tickettocreate->socid."
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#.$contactstatic->id.",
+      "#.$projectstatic->id);\n\n                    $actioncode = ",
+      "#.$projecttocreate->socid.",
+      "#.$savesocid.",
+      "#.$thirdpartystatic->id.",
+      "#.$thirdpartystatic->id;\n                            }\n                            else\n                            {\n                                // Create project\n                                $result = $projecttocreate->create($user);\n                                if ($result <= 0)\n                                {\n                                    $errorforactions++;\n                                    $this->error = ",
+      "#.$thirdpartystatic->id;\n                            }\n                            else\n                            {\n                                // Create project\n                                $result = $tickettocreate->create($user);\n                                if ($result <= 0)\n                                {\n                                    $errorforactions++;\n                                    $this->error = ",
+      "#.$tickettocreate->socid."
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

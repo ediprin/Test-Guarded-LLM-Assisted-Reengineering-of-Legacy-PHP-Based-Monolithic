@@ -1,0 +1,93 @@
+{
+  "candidate_id": "dolibarr-C0102",
+  "subject_id": "dolibarr",
+  "file": "htdocs/admin/delais.php",
+  "lines": [
+    1,
+    427
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 47
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "MAIN_DISABLE_METEO"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#MAIN_USE_METEO_WITH_PERCENTAGE",
+      "#change_mode",
+      "#percentage",
+      "#standard",
+      ".butAction",
+      ".button",
+      ".center",
+      ".error",
+      ".inline-block",
+      ".liste_titre",
+      ".maxwidth75",
+      ".noborder",
+      ".oddeven",
+      ".right",
+      ".tabsAction",
+      ".valignmiddle"
+    ],
+    "forms": [
+      "form_index"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "MAIN_DISABLE_METEO"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#MAIN_USE_METEO_WITH_PERCENTAGE",
+      "#change_mode",
+      "#percentage",
+      "#standard",
+      ".butAction",
+      ".button",
+      ".center",
+      ".error",
+      ".inline-block",
+      ".liste_titre",
+      ".maxwidth75",
+      ".noborder",
+      ".oddeven",
+      ".right",
+      ".tabsAction",
+      ".valignmiddle"
+    ],
+    "must_preserve_forms": [
+      "form_index"
+    ]
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

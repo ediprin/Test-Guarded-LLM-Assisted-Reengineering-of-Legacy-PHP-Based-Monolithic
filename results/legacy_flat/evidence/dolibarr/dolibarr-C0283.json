@@ -1,0 +1,115 @@
+{
+  "candidate_id": "dolibarr-C0283",
+  "subject_id": "dolibarr",
+  "file": "htdocs/don/card.php",
+  "lines": [
+    1,
+    883
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 117
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "id",
+      "lang_id",
+      "public",
+      "town",
+      "zipcode"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": [
+      "add"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "# . $object->fk_project . ",
+      "# . $object->id . ",
+      "# . $object->id, $object->socid, $object->fk_project, ",
+      "#.$id);\n\t\texit;\n\t}\n\n\t$error=0;\n\n    if (empty($donation_date))\n    {\n    \tsetEventMessages($langs->trans(",
+      "#.$id);\n\t\texit;\n\t}\n    else {\n\t    setEventMessages($object->error, $object->errors, ",
+      "#.$id);\n        exit;\n    }\n    else {\n\t    setEventMessages($object->error, $object->errors, ",
+      "#.$object->id);\n\t\t\texit;\n\t\t}\n\t}\n}\n\nif ($action == ",
+      "#.$object->id, $langs->trans(",
+      "#.$object->id.",
+      "#.$objp->rowid.",
+      "#.$res);\n\t\t\texit;\n\t\t}\n\t\telse\n\t\t{\n\t\t\tsetEventMessages($object->error, $object->errors, ",
+      ".border",
+      ".butAction",
+      ".butActionDelete",
+      ".butActionRefused",
+      ".button",
+      ".center",
+      ".classfortooltip",
+      ".clearboth",
+      ".divButAction"
+    ],
+    "forms": [
+      "add",
+      "update"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "id",
+      "lang_id",
+      "public",
+      "town",
+      "zipcode"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [
+      "add"
+    ],
+    "must_preserve_dom_selectors": [
+      "# . $object->fk_project . ",
+      "# . $object->id . ",
+      "# . $object->id, $object->socid, $object->fk_project, ",
+      "#.$id);\n\t\texit;\n\t}\n\n\t$error=0;\n\n    if (empty($donation_date))\n    {\n    \tsetEventMessages($langs->trans(",
+      "#.$id);\n\t\texit;\n\t}\n    else {\n\t    setEventMessages($object->error, $object->errors, ",
+      "#.$id);\n        exit;\n    }\n    else {\n\t    setEventMessages($object->error, $object->errors, ",
+      "#.$object->id);\n\t\t\texit;\n\t\t}\n\t}\n}\n\nif ($action == ",
+      "#.$object->id, $langs->trans(",
+      "#.$object->id.",
+      "#.$objp->rowid.",
+      "#.$res);\n\t\t\texit;\n\t\t}\n\t\telse\n\t\t{\n\t\t\tsetEventMessages($object->error, $object->errors, ",
+      ".border",
+      ".butAction",
+      ".butActionDelete",
+      ".butActionRefused",
+      ".button",
+      ".center",
+      ".classfortooltip",
+      ".clearboth",
+      ".divButAction"
+    ],
+    "must_preserve_forms": [
+      "add",
+      "update"
+    ]
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

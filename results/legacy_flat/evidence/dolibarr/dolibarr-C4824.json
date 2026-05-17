@@ -1,0 +1,83 @@
+{
+  "candidate_id": "dolibarr-C4824",
+  "subject_id": "dolibarr",
+  "file": "htdocs/admin/tools/eaccelerator.php",
+  "lines": [
+    1,
+    338
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 74
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "caching",
+      "clean",
+      "clear",
+      "optimizer",
+      "purge"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      ".butAction",
+      ".center",
+      ".liste_titre",
+      ".noborder",
+      ".nowrap",
+      ".oddeven",
+      ".right"
+    ],
+    "forms": [
+      "ea_control"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "caching",
+      "clean",
+      "clear",
+      "optimizer",
+      "purge"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      ".butAction",
+      ".center",
+      ".liste_titre",
+      ".noborder",
+      ".nowrap",
+      ".oddeven",
+      ".right"
+    ],
+    "must_preserve_forms": [
+      "ea_control"
+    ]
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

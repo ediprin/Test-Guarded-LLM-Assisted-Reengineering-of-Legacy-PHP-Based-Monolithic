@@ -1,0 +1,131 @@
+{
+  "candidate_id": "dolibarr-C0122",
+  "subject_id": "dolibarr",
+  "file": "htdocs/admin/ihm.php",
+  "lines": [
+    1,
+    593
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 70
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "MAIN_BUGTRACK_ENABLELINK",
+      "MAIN_BUTTON_HIDE_UNAUTHORIZED",
+      "MAIN_DEFAULT_WORKING_DAYS",
+      "MAIN_DEFAULT_WORKING_HOURS",
+      "MAIN_DISABLE_JAVASCRIPT",
+      "MAIN_FIRSTNAME_NAME_POSITION",
+      "MAIN_HELPCENTER_DISABLELINK",
+      "MAIN_HELP_DISABLELINK",
+      "MAIN_LANG_DEFAULT",
+      "MAIN_MULTILANGS",
+      "MAIN_SHOW_LOGO",
+      "MAIN_START_WEEK",
+      "main_home",
+      "main_motd",
+      "main_size_liste_limit",
+      "main_size_shortliste_limit",
+      "main_theme"
+    ],
+    "session_keys": [
+      "mainmenu",
+      "newtoken"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#imagebackground",
+      ".butAction",
+      ".button",
+      ".center",
+      ".centpercent",
+      ".class=minwidth200",
+      ".div-table-responsive",
+      ".fa",
+      ".fa-question-circle",
+      ".flat",
+      ".img_logo",
+      ".inline-block",
+      ".liste_titre",
+      ".noborder",
+      ".oddeven",
+      ".opacitymedium",
+      ".paddingleft",
+      ".tabsAction",
+      ".tabsActionNoBottom",
+      ".titlefield"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "MAIN_BUGTRACK_ENABLELINK",
+      "MAIN_BUTTON_HIDE_UNAUTHORIZED",
+      "MAIN_DEFAULT_WORKING_DAYS",
+      "MAIN_DEFAULT_WORKING_HOURS",
+      "MAIN_DISABLE_JAVASCRIPT",
+      "MAIN_FIRSTNAME_NAME_POSITION",
+      "MAIN_HELPCENTER_DISABLELINK",
+      "MAIN_HELP_DISABLELINK",
+      "MAIN_LANG_DEFAULT",
+      "MAIN_MULTILANGS",
+      "MAIN_SHOW_LOGO",
+      "MAIN_START_WEEK",
+      "main_home",
+      "main_motd",
+      "main_size_liste_limit",
+      "main_size_shortliste_limit",
+      "main_theme"
+    ],
+    "must_preserve_session_keys": [
+      "mainmenu",
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#imagebackground",
+      ".butAction",
+      ".button",
+      ".center",
+      ".centpercent",
+      ".class=minwidth200",
+      ".div-table-responsive",
+      ".fa",
+      ".fa-question-circle",
+      ".flat",
+      ".img_logo",
+      ".inline-block",
+      ".liste_titre",
+      ".noborder",
+      ".oddeven",
+      ".opacitymedium",
+      ".paddingleft",
+      ".tabsAction",
+      ".tabsActionNoBottom",
+      ".titlefield"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

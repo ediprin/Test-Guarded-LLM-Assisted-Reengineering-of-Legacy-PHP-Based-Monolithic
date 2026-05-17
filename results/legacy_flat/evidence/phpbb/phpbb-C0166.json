@@ -1,0 +1,109 @@
+{
+  "candidate_id": "phpbb-C0166",
+  "subject_id": "phpbb",
+  "file": "phpBB/includes/functions.php",
+  "lines": [
+    1,
+    4834
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 1032
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "cancel"
+    ],
+    "session_keys": [],
+    "database_tables": [
+      "HTML",
+      "HTTP_VERSION",
+      "POST",
+      "a",
+      "an",
+      "array",
+      "cookie",
+      "custom",
+      "db",
+      "error",
+      "for",
+      "hidden",
+      "obtain_users_online",
+      "of",
+      "path",
+      "the",
+      "topic"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#acp",
+      "#content",
+      "#errorpage",
+      "#page-footer",
+      "#page-header",
+      "#wrap",
+      ".[\\w-]+",
+      ".avatar",
+      ".errorbox",
+      ".panel"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "cancel"
+    ],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [
+      "HTML",
+      "HTTP_VERSION",
+      "POST",
+      "a",
+      "an",
+      "array",
+      "cookie",
+      "custom",
+      "db",
+      "error",
+      "for",
+      "hidden",
+      "obtain_users_online",
+      "of",
+      "path",
+      "the",
+      "topic"
+    ],
+    "must_preserve_dom_selectors": [
+      "#acp",
+      "#content",
+      "#errorpage",
+      "#page-footer",
+      "#page-header",
+      "#wrap",
+      ".[\\w-]+",
+      ".avatar",
+      ".errorbox",
+      ".panel"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

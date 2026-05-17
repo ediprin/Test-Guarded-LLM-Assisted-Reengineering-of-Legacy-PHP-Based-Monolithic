@@ -1,0 +1,77 @@
+{
+  "candidate_id": "dolibarr-C4313",
+  "subject_id": "dolibarr",
+  "file": "htdocs/compta/tva/clients.php",
+  "lines": [
+    1,
+    754
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 121
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "extra_report"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#min",
+      ".left",
+      ".liste_titre",
+      ".liste_titre_topborder",
+      ".liste_total",
+      ".noborder",
+      ".nowrap",
+      ".oddeven",
+      ".right",
+      ".tax_rate"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "extra_report"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#min",
+      ".left",
+      ".liste_titre",
+      ".liste_titre_topborder",
+      ".liste_total",
+      ".noborder",
+      ".nowrap",
+      ".oddeven",
+      ".right",
+      ".tax_rate"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

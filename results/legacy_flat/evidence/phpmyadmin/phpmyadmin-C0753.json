@@ -1,0 +1,71 @@
+{
+  "candidate_id": "phpmyadmin-C0753",
+  "subject_id": "phpmyadmin",
+  "file": "libraries/classes/Rte/Routines.php",
+  "lines": [
+    472,
+    587
+  ],
+  "candidate_type": "long_method_or_region",
+  "issues": [
+    {
+      "type": "Long or Complex Region",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 17
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "item_isdeterministic",
+      "item_original_type",
+      "item_param_dir",
+      "item_param_length",
+      "item_param_name",
+      "item_param_opts_num",
+      "item_param_opts_text",
+      "item_param_type",
+      "item_returntype",
+      "item_securitytype",
+      "item_sqldataaccess",
+      "item_type"
+    ],
+    "session_keys": [],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "item_isdeterministic",
+      "item_original_type",
+      "item_param_dir",
+      "item_param_length",
+      "item_param_name",
+      "item_param_opts_num",
+      "item_param_opts_text",
+      "item_param_type",
+      "item_returntype",
+      "item_securitytype",
+      "item_sqldataaccess",
+      "item_type"
+    ],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "candidate_id": "dolibarr-C4242",
+  "subject_id": "dolibarr",
+  "file": "htdocs/compta/bank/card.php",
+  "lines": [
+    1,
+    1054
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 140
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "account_country_id",
+      "account_currency_code",
+      "account_min_allowed",
+      "account_min_desired",
+      "account_state_id",
+      "bank",
+      "bic",
+      "cle_rib",
+      "clos",
+      "code_banque",
+      "code_guichet",
+      "confirm",
+      "domiciliation",
+      "iban",
+      "id",
+      "label",
+      "norappro",
+      "number",
+      "owner_address",
+      "proprio",
+      "reday",
+      "ref",
+      "remonth",
+      "reyear",
+      "solde",
+      "type",
+      "url"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$object->id, $langs->trans(",
+      "#.$object->id.",
+      ".border",
+      ".butAction",
+      ".butActionDelete",
+      ".button",
+      ".center",
+      ".centpercent",
+      ".clearboth",
+      ".ficheaddleft",
+      ".fichecenter",
+      ".fichehalfleft",
+      ".fichehalfright",
+      ".fieldrequired",
+      ".flat",
+      ".liste_titre",
+      ".liste_titre_add",
+      ".maxwidth200",
+      ".maxwidth200onsmartphone",
+      ".minwidth150"
+    ],
+    "forms": [
+      "formsoc"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "account_country_id",
+      "account_currency_code",
+      "account_min_allowed",
+      "account_min_desired",
+      "account_state_id",
+      "bank",
+      "bic",
+      "cle_rib",
+      "clos",
+      "code_banque",
+      "code_guichet",
+      "confirm",
+      "domiciliation",
+      "iban",
+      "id",
+      "label",
+      "norappro",
+      "number",
+      "owner_address",
+      "proprio",
+      "reday",
+      "ref",
+      "remonth",
+      "reyear",
+      "solde",
+      "type",
+      "url"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#.$object->id, $langs->trans(",
+      "#.$object->id.",
+      ".border",
+      ".butAction",
+      ".butActionDelete",
+      ".button",
+      ".center",
+      ".centpercent",
+      ".clearboth",
+      ".ficheaddleft",
+      ".fichecenter",
+      ".fichehalfleft",
+      ".fichehalfright",
+      ".fieldrequired",
+      ".flat",
+      ".liste_titre",
+      ".liste_titre_add",
+      ".maxwidth200",
+      ".maxwidth200onsmartphone",
+      ".minwidth150"
+    ],
+    "must_preserve_forms": [
+      "formsoc"
+    ]
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

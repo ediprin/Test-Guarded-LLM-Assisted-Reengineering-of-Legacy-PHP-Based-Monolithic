@@ -1,0 +1,64 @@
+{
+  "candidate_id": "phpmyadmin-C0789",
+  "subject_id": "phpmyadmin",
+  "file": "libraries/classes/Server/Privileges.php",
+  "lines": [
+    3607,
+    3746
+  ],
+  "candidate_type": "sql_data_access",
+  "issues": [
+    {
+      "type": "SQL/Data Access Region",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 21
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "initial"
+    ],
+    "session_keys": [],
+    "database_tables": [
+      "mysql"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#checkbox_sel_users_",
+      ".center",
+      ".checkall",
+      ".usrGroup"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "initial"
+    ],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [
+      "mysql"
+    ],
+    "must_preserve_dom_selectors": [
+      "#checkbox_sel_users_",
+      ".center",
+      ".checkall",
+      ".usrGroup"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "candidate_id": "dolibarr-C3952",
+  "subject_id": "dolibarr",
+  "file": "htdocs/core/modules/societe/mod_codecompta_aquarium.php",
+  "lines": [
+    1,
+    231
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 36
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": [
+      "parenthesis",
+      "this"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      ".button",
+      ".flat",
+      ".left",
+      ".nobordernopadding"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [
+      "parenthesis",
+      "this"
+    ],
+    "must_preserve_dom_selectors": [
+      ".button",
+      ".flat",
+      ".left",
+      ".nobordernopadding"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

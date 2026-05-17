@@ -1,0 +1,62 @@
+{
+  "candidate_id": "dolibarr-C0733",
+  "subject_id": "dolibarr",
+  "file": "htdocs/stripe/class/stripe.class.php",
+  "lines": [
+    307,
+    506
+  ],
+  "candidate_type": "session_dependent_logic",
+  "issues": [
+    {
+      "type": "Session-Dependent Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 36
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [
+      "stripe_payment_intent"
+    ],
+    "database_tables": [
+      "database",
+      "the"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$object->id, LOG_DEBUG);\n    \t\t$resql = $this->db->query($sql);\n    \t\tif ($resql) {\n    \t\t\t$num = $this->db->num_rows($resql);\n    \t\t\tif ($num)\n    \t\t\t{\n    \t\t\t\t$obj = $this->db->fetch_object($resql);\n    \t\t\t\t$intent = $obj->ext_payment_id;\n\n    \t\t\t\tdol_syslog(get_class($this) . ",
+      "#.$paymentintent->id."
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [
+      "stripe_payment_intent"
+    ],
+    "must_preserve_database_tables": [
+      "database",
+      "the"
+    ],
+    "must_preserve_dom_selectors": [
+      "#.$object->id, LOG_DEBUG);\n    \t\t$resql = $this->db->query($sql);\n    \t\tif ($resql) {\n    \t\t\t$num = $this->db->num_rows($resql);\n    \t\t\tif ($num)\n    \t\t\t{\n    \t\t\t\t$obj = $this->db->fetch_object($resql);\n    \t\t\t\t$intent = $obj->ext_payment_id;\n\n    \t\t\t\tdol_syslog(get_class($this) . ",
+      "#.$paymentintent->id."
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Guard",
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

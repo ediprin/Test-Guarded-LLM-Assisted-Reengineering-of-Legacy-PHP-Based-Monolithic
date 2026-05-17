@@ -1,0 +1,89 @@
+{
+  "candidate_id": "dolibarr-C0430",
+  "subject_id": "dolibarr",
+  "file": "htdocs/product/reassortlot.php",
+  "lines": [
+    1,
+    433
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 79
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": [
+      "for"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#ways",
+      ".center",
+      ".centpercent",
+      ".div-table-responsive",
+      ".divsearchfield",
+      ".flat",
+      ".liste",
+      ".liste_titre",
+      ".liste_titre_bydiv",
+      ".liste_titre_filter",
+      ".maxwidthsearch",
+      ".nowrap",
+      ".right",
+      ".tagtable"
+    ],
+    "forms": [
+      "formulaire"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [
+      "for"
+    ],
+    "must_preserve_dom_selectors": [
+      "#ways",
+      ".center",
+      ".centpercent",
+      ".div-table-responsive",
+      ".divsearchfield",
+      ".flat",
+      ".liste",
+      ".liste_titre",
+      ".liste_titre_bydiv",
+      ".liste_titre_filter",
+      ".maxwidthsearch",
+      ".nowrap",
+      ".right",
+      ".tagtable"
+    ],
+    "must_preserve_forms": [
+      "formulaire"
+    ]
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

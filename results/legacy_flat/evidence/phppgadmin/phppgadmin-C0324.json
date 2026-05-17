@@ -1,0 +1,66 @@
+{
+  "candidate_id": "phppgadmin-C0324",
+  "subject_id": "phppgadmin",
+  "file": "classes/database/Postgres81.php",
+  "lines": [
+    143,
+    234
+  ],
+  "candidate_type": "sql_data_access",
+  "issues": [
+    {
+      "type": "SQL/Data Access Region",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 11
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "autovacuum_analyze_scale_factor",
+      "autovacuum_analyze_threshold",
+      "autovacuum_enabled",
+      "autovacuum_vacuum_cost_delay",
+      "autovacuum_vacuum_cost_limit",
+      "autovacuum_vacuum_scale_factor",
+      "autovacuum_vacuum_threshold"
+    ],
+    "session_keys": [],
+    "database_tables": [
+      "pg_catalog"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "autovacuum_analyze_scale_factor",
+      "autovacuum_analyze_threshold",
+      "autovacuum_enabled",
+      "autovacuum_vacuum_cost_delay",
+      "autovacuum_vacuum_cost_limit",
+      "autovacuum_vacuum_scale_factor",
+      "autovacuum_vacuum_threshold"
+    ],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [
+      "pg_catalog"
+    ],
+    "must_preserve_dom_selectors": [],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

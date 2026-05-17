@@ -1,0 +1,101 @@
+{
+  "candidate_id": "dolibarr-C0702",
+  "subject_id": "dolibarr",
+  "file": "htdocs/supplier_proposal/class/supplier_proposal.class.php",
+  "lines": [
+    1,
+    3314
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 425
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [],
+    "database_tables": [
+      "DB",
+      "SUPPLIER_PROPOSAL_ADDON",
+      "a",
+      "an",
+      "array",
+      "copy",
+      "database",
+      "index",
+      "its",
+      "line",
+      "lines",
+      "link",
+      "llx_product",
+      "llx_supplier_proposaldet",
+      "price",
+      "propal",
+      "supplier",
+      "user",
+      "vatrate"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$this->id);\n                return $this->id;\n            }\n            else\n            {\n                $this->db->rollback();\n                return -2;\n            }\n        }\n        else\n        {\n            $this->error=$this->db->lasterror();\n            $this->db->rollback();\n            return -1;\n        }\n    }\n\n\n    // phpcs:disable PEAR.NamingConventions.ValidFunctionName.ScopeNotCamelCaps\n    /**\n     *\tInsert into DB a supplier_proposal object completely defined by its data members (ex, results from copy).\n     *\n     *\t@param \t\tUser\t$user\tUser that create\n     *\t@return    \tint\t\t\t\tId of the new object if ok, <0 if ko\n     *\t@see       \tcreate()\n     */\n    public function create_from($user)\n    {\n        // phpcs:enable\n        $this->products=$this->lines;\n\n        return $this->create($user);\n    }\n\n    /**\n     *\t\tLoad an object from its id and create a new one in database\n     *\n\t *      @param\t    User\t$user\t\t    User making the clone\n     *\t\t@param\t\tint\t\t$fromid\t\t\tId of thirdparty\n     * \t \t@return\t\tint\t\t\t\t\t\tNew id of clone\n     */\n    public function createFromClone(User $user, $fromid = 0)\n    {\n        global $conf,$hookmanager;\n\n        $error=0;\n        $now=dol_now();\n\n        $this->db->begin();\n\n        // get extrafields so they will be clone\n        foreach($this->lines as $line)\n            $line->fetch_optionals();\n\n        // Load source object\n        $objFrom = clone $this;\n\n        $objsoc=new Societe($this->db);\n\n        // Change socid if needed\n        if (! empty($fromid) && $fromid != $this->socid)\n        {\n            if ($objsoc->fetch($fromid) > 0)\n            {\n                $this->socid \t\t\t\t= $objsoc->id;\n                $this->cond_reglement_id\t= (! empty($objsoc->cond_reglement_id) ? $objsoc->cond_reglement_id : 0);\n                $this->mode_reglement_id\t= (! empty($objsoc->mode_reglement_id) ? $objsoc->mode_reglement_id : 0);\n                $this->fk_project\t\t\t= ",
+      "#.$this->id. $get_params;\n        }\n\n        if ($option !== ",
+      "#.$this->id. $get_params;\n        }\n        if ($option == ",
+      ".classfortooltip",
+      ".hideonsmartphone",
+      ".paddingright"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [
+      "DB",
+      "SUPPLIER_PROPOSAL_ADDON",
+      "a",
+      "an",
+      "array",
+      "copy",
+      "database",
+      "index",
+      "its",
+      "line",
+      "lines",
+      "link",
+      "llx_product",
+      "llx_supplier_proposaldet",
+      "price",
+      "propal",
+      "supplier",
+      "user",
+      "vatrate"
+    ],
+    "must_preserve_dom_selectors": [
+      "#.$this->id);\n                return $this->id;\n            }\n            else\n            {\n                $this->db->rollback();\n                return -2;\n            }\n        }\n        else\n        {\n            $this->error=$this->db->lasterror();\n            $this->db->rollback();\n            return -1;\n        }\n    }\n\n\n    // phpcs:disable PEAR.NamingConventions.ValidFunctionName.ScopeNotCamelCaps\n    /**\n     *\tInsert into DB a supplier_proposal object completely defined by its data members (ex, results from copy).\n     *\n     *\t@param \t\tUser\t$user\tUser that create\n     *\t@return    \tint\t\t\t\tId of the new object if ok, <0 if ko\n     *\t@see       \tcreate()\n     */\n    public function create_from($user)\n    {\n        // phpcs:enable\n        $this->products=$this->lines;\n\n        return $this->create($user);\n    }\n\n    /**\n     *\t\tLoad an object from its id and create a new one in database\n     *\n\t *      @param\t    User\t$user\t\t    User making the clone\n     *\t\t@param\t\tint\t\t$fromid\t\t\tId of thirdparty\n     * \t \t@return\t\tint\t\t\t\t\t\tNew id of clone\n     */\n    public function createFromClone(User $user, $fromid = 0)\n    {\n        global $conf,$hookmanager;\n\n        $error=0;\n        $now=dol_now();\n\n        $this->db->begin();\n\n        // get extrafields so they will be clone\n        foreach($this->lines as $line)\n            $line->fetch_optionals();\n\n        // Load source object\n        $objFrom = clone $this;\n\n        $objsoc=new Societe($this->db);\n\n        // Change socid if needed\n        if (! empty($fromid) && $fromid != $this->socid)\n        {\n            if ($objsoc->fetch($fromid) > 0)\n            {\n                $this->socid \t\t\t\t= $objsoc->id;\n                $this->cond_reglement_id\t= (! empty($objsoc->cond_reglement_id) ? $objsoc->cond_reglement_id : 0);\n                $this->mode_reglement_id\t= (! empty($objsoc->mode_reglement_id) ? $objsoc->mode_reglement_id : 0);\n                $this->fk_project\t\t\t= ",
+      "#.$this->id. $get_params;\n        }\n\n        if ($option !== ",
+      "#.$this->id. $get_params;\n        }\n        if ($option == ",
+      ".classfortooltip",
+      ".hideonsmartphone",
+      ".paddingright"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

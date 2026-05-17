@@ -1,0 +1,153 @@
+{
+  "candidate_id": "phpmyadmin-C0425",
+  "subject_id": "phpmyadmin",
+  "file": "libraries/classes/InsertEdit.php",
+  "lines": [
+    1,
+    3480
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 358
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "ShowFieldTypesInDataEditView",
+      "ShowFunctionFields",
+      "after_insert",
+      "clause_is_unique",
+      "default_action",
+      "err_url",
+      "fields",
+      "insert_rows",
+      "sql_query",
+      "submit_type",
+      "where_clause"
+    ],
+    "session_keys": [
+      "edit_next",
+      "tmpval"
+    ],
+    "database_tables": [
+      "PHP",
+      "a",
+      "buildSqlQuery",
+      "foreign",
+      "in",
+      "it",
+      "mode",
+      "privileges",
+      "text",
+      "the",
+      "using",
+      "value",
+      "where"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#actions_panel",
+      "#buttonYes",
+      "#field_",
+      "#gis_editor",
+      "#insertForm",
+      "#insert_ignore_",
+      "#popup_background",
+      ".ajax",
+      ".browse_foreign",
+      ".center",
+      ".checkbox_null",
+      ".clearfloat",
+      ".column_type",
+      ".control_at_footer",
+      ".default_value",
+      ".hashed_field",
+      ".hide",
+      ".insertRowTable",
+      ".lock-page",
+      ".multi_edit"
+    ],
+    "forms": [
+      "insertForm",
+      "tbl_replace.php"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "ShowFieldTypesInDataEditView",
+      "ShowFunctionFields",
+      "after_insert",
+      "clause_is_unique",
+      "default_action",
+      "err_url",
+      "fields",
+      "insert_rows",
+      "sql_query",
+      "submit_type",
+      "where_clause"
+    ],
+    "must_preserve_session_keys": [
+      "edit_next",
+      "tmpval"
+    ],
+    "must_preserve_database_tables": [
+      "PHP",
+      "a",
+      "buildSqlQuery",
+      "foreign",
+      "in",
+      "it",
+      "mode",
+      "privileges",
+      "text",
+      "the",
+      "using",
+      "value",
+      "where"
+    ],
+    "must_preserve_dom_selectors": [
+      "#actions_panel",
+      "#buttonYes",
+      "#field_",
+      "#gis_editor",
+      "#insertForm",
+      "#insert_ignore_",
+      "#popup_background",
+      ".ajax",
+      ".browse_foreign",
+      ".center",
+      ".checkbox_null",
+      ".clearfloat",
+      ".column_type",
+      ".control_at_footer",
+      ".default_value",
+      ".hashed_field",
+      ".hide",
+      ".insertRowTable",
+      ".lock-page",
+      ".multi_edit"
+    ],
+    "must_preserve_forms": [
+      "insertForm",
+      "tbl_replace.php"
+    ]
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

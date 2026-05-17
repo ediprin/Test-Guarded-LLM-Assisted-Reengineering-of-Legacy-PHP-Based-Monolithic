@@ -1,0 +1,97 @@
+{
+  "candidate_id": "phpmyadmin-C0422",
+  "subject_id": "phpmyadmin",
+  "file": "libraries/classes/Index.php",
+  "lines": [
+    1,
+    905
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 97
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [],
+    "database_tables": [
+      "SHOW",
+      "form",
+      "stack",
+      "the"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#index_div",
+      "#index_header",
+      "#select_index_choice",
+      "#table_index",
+      ".add_index",
+      ".ajax",
+      ".drop_primary_key_index_msg",
+      ".edit_index",
+      ".index_info",
+      ".jsresponsive",
+      ".no_indexes_defined$no_indexes_class",
+      ".noclick",
+      ".print_ignore",
+      ".responsivetable",
+      ".row_span",
+      ".tblFooters",
+      ".width100"
+    ],
+    "forms": [
+      "tbl_indexes.php"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [
+      "SHOW",
+      "form",
+      "stack",
+      "the"
+    ],
+    "must_preserve_dom_selectors": [
+      "#index_div",
+      "#index_header",
+      "#select_index_choice",
+      "#table_index",
+      ".add_index",
+      ".ajax",
+      ".drop_primary_key_index_msg",
+      ".edit_index",
+      ".index_info",
+      ".jsresponsive",
+      ".no_indexes_defined$no_indexes_class",
+      ".noclick",
+      ".print_ignore",
+      ".responsivetable",
+      ".row_span",
+      ".tblFooters",
+      ".width100"
+    ],
+    "must_preserve_forms": [
+      "tbl_indexes.php"
+    ]
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

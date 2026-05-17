@@ -1,0 +1,76 @@
+{
+  "candidate_id": "phpbb-C0925",
+  "subject_id": "phpbb",
+  "file": "phpBB/includes/acp/acp_users.php",
+  "lines": [
+    32,
+    2627
+  ],
+  "candidate_type": "sql_data_access",
+  "issues": [
+    {
+      "type": "SQL/Data Access Region",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 367
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "cancel",
+      "confirm",
+      "delall",
+      "delmarked",
+      "update"
+    ],
+    "session_keys": [],
+    "database_tables": [
+      "Custom",
+      "it",
+      "post_ids",
+      "the",
+      "this"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "# . $row[",
+      ".sep"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "cancel",
+      "confirm",
+      "delall",
+      "delmarked",
+      "update"
+    ],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [
+      "Custom",
+      "it",
+      "post_ids",
+      "the",
+      "this"
+    ],
+    "must_preserve_dom_selectors": [
+      "# . $row[",
+      ".sep"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

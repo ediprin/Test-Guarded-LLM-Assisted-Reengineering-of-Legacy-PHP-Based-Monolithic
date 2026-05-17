@@ -1,0 +1,146 @@
+{
+  "candidate_id": "roundcubemail-C0155",
+  "subject_id": "roundcubemail",
+  "file": "program/steps/settings/save_prefs.inc",
+  "lines": [
+    1,
+    246
+  ],
+  "candidate_type": "session_dependent_logic",
+  "issues": [
+    {
+      "type": "Session-Dependent Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 35
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "_addressbook_name_listing",
+      "_addressbook_pagesize",
+      "_autocomplete_single",
+      "_autoexpand_threads",
+      "_check_all_folders",
+      "_compose_extwin",
+      "_compose_save_localstorage",
+      "_date_format",
+      "_delete_junk",
+      "_display_next",
+      "_draft_autosave",
+      "_dsn_default",
+      "_flag_for_deletion",
+      "_force_7bit",
+      "_forward_attachment",
+      "_htmleditor",
+      "_inline_images",
+      "_language",
+      "_logout_expunge",
+      "_logout_purge",
+      "_mail_pagesize",
+      "_mail_read_time",
+      "_mdn_default",
+      "_mdn_requests",
+      "_message_extwin",
+      "_message_show_email",
+      "_mime_param_folding",
+      "_prefer_html",
+      "_pretty_date",
+      "_read_when_deleted",
+      "_refresh_interval",
+      "_reply_all_mode",
+      "_reply_mode",
+      "_reply_same_folder",
+      "_show_images",
+      "_show_real_foldernames",
+      "_show_sig",
+      "_sig_below",
+      "_sig_separator",
+      "_skip_deleted",
+      "_spellcheck_before_send",
+      "_spellcheck_ignore_caps",
+      "_spellcheck_ignore_nums",
+      "_spellcheck_ignore_syms",
+      "_standard_windows",
+      "_strip_existing_sig",
+      "_time_format"
+    ],
+    "session_keys": [
+      "language"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "_addressbook_name_listing",
+      "_addressbook_pagesize",
+      "_autocomplete_single",
+      "_autoexpand_threads",
+      "_check_all_folders",
+      "_compose_extwin",
+      "_compose_save_localstorage",
+      "_date_format",
+      "_delete_junk",
+      "_display_next",
+      "_draft_autosave",
+      "_dsn_default",
+      "_flag_for_deletion",
+      "_force_7bit",
+      "_forward_attachment",
+      "_htmleditor",
+      "_inline_images",
+      "_language",
+      "_logout_expunge",
+      "_logout_purge",
+      "_mail_pagesize",
+      "_mail_read_time",
+      "_mdn_default",
+      "_mdn_requests",
+      "_message_extwin",
+      "_message_show_email",
+      "_mime_param_folding",
+      "_prefer_html",
+      "_pretty_date",
+      "_read_when_deleted",
+      "_refresh_interval",
+      "_reply_all_mode",
+      "_reply_mode",
+      "_reply_same_folder",
+      "_show_images",
+      "_show_real_foldernames",
+      "_show_sig",
+      "_sig_below",
+      "_sig_separator",
+      "_skip_deleted",
+      "_spellcheck_before_send",
+      "_spellcheck_ignore_caps",
+      "_spellcheck_ignore_nums",
+      "_spellcheck_ignore_syms",
+      "_standard_windows",
+      "_strip_existing_sig",
+      "_time_format"
+    ],
+    "must_preserve_session_keys": [
+      "language"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Guard",
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

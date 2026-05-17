@@ -1,0 +1,79 @@
+{
+  "candidate_id": "phpmyadmin-C0046",
+  "subject_id": "phpmyadmin",
+  "file": "examples/signon.php",
+  "lines": [
+    1,
+    75
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 15
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "host",
+      "password",
+      "port",
+      "user"
+    ],
+    "session_keys": [
+      "PMA_single_signon_cfgupdate",
+      "PMA_single_signon_error_message",
+      "PMA_single_signon_host",
+      "PMA_single_signon_password",
+      "PMA_single_signon_port",
+      "PMA_single_signon_user"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      ".error"
+    ],
+    "forms": [
+      "signon.php"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "host",
+      "password",
+      "port",
+      "user"
+    ],
+    "must_preserve_session_keys": [
+      "PMA_single_signon_cfgupdate",
+      "PMA_single_signon_error_message",
+      "PMA_single_signon_host",
+      "PMA_single_signon_password",
+      "PMA_single_signon_port",
+      "PMA_single_signon_user"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      ".error"
+    ],
+    "must_preserve_forms": [
+      "signon.php"
+    ]
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

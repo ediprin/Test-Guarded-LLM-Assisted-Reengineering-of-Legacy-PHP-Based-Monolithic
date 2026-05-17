@@ -1,0 +1,96 @@
+{
+  "candidate_id": "dolibarr-C0464",
+  "subject_id": "dolibarr",
+  "file": "htdocs/societe/card.php",
+  "lines": [
+    1097,
+    1381
+  ],
+  "candidate_type": "session_dependent_logic",
+  "issues": [
+    {
+      "type": "Session-Dependent Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 49
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#TypeName",
+      "#address",
+      "#barcode",
+      "#customer_code",
+      "#email",
+      "#facebook",
+      "#fax",
+      "#firstname",
+      "#intra_vat",
+      "#linkedin",
+      "#name",
+      "#name_alias",
+      "#name_alias_input",
+      "#phone",
+      "#radiocompany",
+      "#radioprivate",
+      "#selectthirdpartytype",
+      "#skype",
+      "#supplier_code",
+      "#twitter"
+    ],
+    "forms": [
+      "formsoc"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#TypeName",
+      "#address",
+      "#barcode",
+      "#customer_code",
+      "#email",
+      "#facebook",
+      "#fax",
+      "#firstname",
+      "#intra_vat",
+      "#linkedin",
+      "#name",
+      "#name_alias",
+      "#name_alias_input",
+      "#phone",
+      "#radiocompany",
+      "#radioprivate",
+      "#selectthirdpartytype",
+      "#skype",
+      "#supplier_code",
+      "#twitter"
+    ],
+    "must_preserve_forms": [
+      "formsoc"
+    ]
+  },
+  "allowed_transformations": [
+    "Extract Guard",
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

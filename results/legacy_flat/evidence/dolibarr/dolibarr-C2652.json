@@ -1,0 +1,103 @@
+{
+  "candidate_id": "dolibarr-C2652",
+  "subject_id": "dolibarr",
+  "file": "htdocs/fourn/commande/dispatch.php",
+  "lines": [
+    1,
+    1006
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 165
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "comment",
+      "projectid"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "# . $id . ",
+      "# . $id);\n\t\texit();\n\t} else {\n\t\t$db->rollback();\n\t}\n}\n\n\n/*\n * View\n */\n\n$now = dol_now();\n\n$form = new Form($db);\n$formproduct = new FormProduct($db);\n$warehouse_static = new Entrepot($db);\n$supplierorderdispatch = new CommandeFournisseurDispatch($db);\n\n$help_url=",
+      "# . $object->fk_project . ",
+      "# . $object->id . ",
+      "# . $object->id, $object->socid, $object->fk_project, ",
+      "# . $objp->fk_product . ",
+      "#.$object->id.",
+      "#dispatch_received_products",
+      "#lot_number",
+      "#qty",
+      "#qty_dispatched",
+      "#qty_ordered",
+      ".border",
+      ".button",
+      ".buttonRefused",
+      ".center",
+      ".clearboth",
+      ".dispatch_batch_number",
+      ".dispatch_batch_number_title",
+      ".dispatch_dlc"
+    ],
+    "forms": [
+      "dispatch.php?id="
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "comment",
+      "projectid"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "# . $id . ",
+      "# . $id);\n\t\texit();\n\t} else {\n\t\t$db->rollback();\n\t}\n}\n\n\n/*\n * View\n */\n\n$now = dol_now();\n\n$form = new Form($db);\n$formproduct = new FormProduct($db);\n$warehouse_static = new Entrepot($db);\n$supplierorderdispatch = new CommandeFournisseurDispatch($db);\n\n$help_url=",
+      "# . $object->fk_project . ",
+      "# . $object->id . ",
+      "# . $object->id, $object->socid, $object->fk_project, ",
+      "# . $objp->fk_product . ",
+      "#.$object->id.",
+      "#dispatch_received_products",
+      "#lot_number",
+      "#qty",
+      "#qty_dispatched",
+      "#qty_ordered",
+      ".border",
+      ".button",
+      ".buttonRefused",
+      ".center",
+      ".clearboth",
+      ".dispatch_batch_number",
+      ".dispatch_batch_number_title",
+      ".dispatch_dlc"
+    ],
+    "must_preserve_forms": [
+      "dispatch.php?id="
+    ]
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

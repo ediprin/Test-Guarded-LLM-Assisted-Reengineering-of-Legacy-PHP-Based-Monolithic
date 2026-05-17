@@ -1,0 +1,63 @@
+{
+  "candidate_id": "dolibarr-C3807",
+  "subject_id": "dolibarr",
+  "file": "htdocs/core/triggers/interface_20_modWorkflow_WorkflowManager.class.php",
+  "lines": [
+    60,
+    360
+  ],
+  "candidate_type": "long_method_or_region",
+  "issues": [
+    {
+      "type": "Long or Complex Region",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 80
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$object->id);\n\n        \t// First classify billed the order to allow the proposal classify process\n        \tif (! empty($conf->fournisseur->enabled) && ! empty($conf->global->WORKFLOW_INVOICE_AMOUNT_CLASSIFY_BILLED_SUPPLIER_ORDER))\n        \t{\n        \t\t$object->fetchObjectLinked(",
+      "#.$object->id);\n\n        \tif (! empty($conf->commande->enabled) && ! empty($conf->expedition->enabled) && ! empty($conf->workflow->enabled) && ! empty($conf->global->WORKFLOW_ORDER_CLASSIFY_SHIPPED_SHIPPING))\n        \t{\n        \t\t$qtyshipped=array();\n        \t\t$qtyordred=array();\n        \t\trequire_once DOL_DOCUMENT_ROOT.",
+      "#.$object->id);\n\n            if (! empty($conf->commande->enabled) && ! empty($conf->global->WORKFLOW_INVOICE_CLASSIFY_BILLED_ORDER))\n            {\n                $object->fetchObjectLinked(",
+      "#.$object->id);\n        \t$ret = 0;\n        \t\n\t\t\t// First classify billed the order to allow the proposal classify process\n\t\t\tif (! empty($conf->commande->enabled) && ! empty($conf->workflow->enabled) && ! empty($conf->global->WORKFLOW_INVOICE_AMOUNT_CLASSIFY_BILLED_ORDER))\n        \t{\n        \t\t$object->fetchObjectLinked(",
+      "#.$object->id);\n        \tif (! empty($conf->propal->enabled) && ! empty($conf->workflow->enabled) && ! empty($conf->global->WORKFLOW_ORDER_CLASSIFY_BILLED_PROPAL))\n        \t{\n        \t\t$object->fetchObjectLinked(",
+      "#.$object->id);\n            if (! empty($conf->commande->enabled) && ! empty($conf->global->WORKFLOW_PROPAL_AUTOCREATE_ORDER))\n            {\n                include_once DOL_DOCUMENT_ROOT.",
+      "#.$object->id);\n            if (! empty($conf->facture->enabled) && ! empty($conf->global->WORKFLOW_ORDER_AUTOCREATE_INVOICE))\n            {\n                include_once DOL_DOCUMENT_ROOT.",
+      "#.$object->id, LOG_DEBUG);\n\n        \tif (! empty($conf->reception->enabled) && ! empty($conf->global->WORKFLOW_BILL_ON_RECEPTION))\n        \t{\n        \t\t$object->fetchObjectLinked("
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#.$object->id);\n\n        \t// First classify billed the order to allow the proposal classify process\n        \tif (! empty($conf->fournisseur->enabled) && ! empty($conf->global->WORKFLOW_INVOICE_AMOUNT_CLASSIFY_BILLED_SUPPLIER_ORDER))\n        \t{\n        \t\t$object->fetchObjectLinked(",
+      "#.$object->id);\n\n        \tif (! empty($conf->commande->enabled) && ! empty($conf->expedition->enabled) && ! empty($conf->workflow->enabled) && ! empty($conf->global->WORKFLOW_ORDER_CLASSIFY_SHIPPED_SHIPPING))\n        \t{\n        \t\t$qtyshipped=array();\n        \t\t$qtyordred=array();\n        \t\trequire_once DOL_DOCUMENT_ROOT.",
+      "#.$object->id);\n\n            if (! empty($conf->commande->enabled) && ! empty($conf->global->WORKFLOW_INVOICE_CLASSIFY_BILLED_ORDER))\n            {\n                $object->fetchObjectLinked(",
+      "#.$object->id);\n        \t$ret = 0;\n        \t\n\t\t\t// First classify billed the order to allow the proposal classify process\n\t\t\tif (! empty($conf->commande->enabled) && ! empty($conf->workflow->enabled) && ! empty($conf->global->WORKFLOW_INVOICE_AMOUNT_CLASSIFY_BILLED_ORDER))\n        \t{\n        \t\t$object->fetchObjectLinked(",
+      "#.$object->id);\n        \tif (! empty($conf->propal->enabled) && ! empty($conf->workflow->enabled) && ! empty($conf->global->WORKFLOW_ORDER_CLASSIFY_BILLED_PROPAL))\n        \t{\n        \t\t$object->fetchObjectLinked(",
+      "#.$object->id);\n            if (! empty($conf->commande->enabled) && ! empty($conf->global->WORKFLOW_PROPAL_AUTOCREATE_ORDER))\n            {\n                include_once DOL_DOCUMENT_ROOT.",
+      "#.$object->id);\n            if (! empty($conf->facture->enabled) && ! empty($conf->global->WORKFLOW_ORDER_AUTOCREATE_INVOICE))\n            {\n                include_once DOL_DOCUMENT_ROOT.",
+      "#.$object->id, LOG_DEBUG);\n\n        \tif (! empty($conf->reception->enabled) && ! empty($conf->global->WORKFLOW_BILL_ON_RECEPTION))\n        \t{\n        \t\t$object->fetchObjectLinked("
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

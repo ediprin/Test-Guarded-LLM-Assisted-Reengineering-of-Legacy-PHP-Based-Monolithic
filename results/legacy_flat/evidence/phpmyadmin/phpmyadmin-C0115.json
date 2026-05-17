@@ -1,0 +1,67 @@
+{
+  "candidate_id": "phpmyadmin-C0115",
+  "subject_id": "phpmyadmin",
+  "file": "test/classes/ReplicationGuiTest.php",
+  "lines": [
+    1,
+    298
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 9
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "mr_adduser"
+    ],
+    "session_keys": [],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#master_addslaveuser_gui",
+      "#replication_master_section",
+      "#replication_slave_section",
+      "#slave_configuration_gui",
+      ".value"
+    ],
+    "forms": [
+      "server_replication.php"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "mr_adduser"
+    ],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#master_addslaveuser_gui",
+      "#replication_master_section",
+      "#replication_slave_section",
+      "#slave_configuration_gui",
+      ".value"
+    ],
+    "must_preserve_forms": [
+      "server_replication.php"
+    ]
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

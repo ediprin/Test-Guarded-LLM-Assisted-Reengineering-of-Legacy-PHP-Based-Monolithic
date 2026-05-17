@@ -1,0 +1,139 @@
+{
+  "candidate_id": "phppgadmin-C0107",
+  "subject_id": "phppgadmin",
+  "file": "tables.php",
+  "lines": [
+    1,
+    1052
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 169
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "action",
+      "array",
+      "cancel",
+      "cascade",
+      "colcomment",
+      "database",
+      "default",
+      "drop",
+      "empty",
+      "field",
+      "fields",
+      "format",
+      "insert",
+      "length",
+      "like",
+      "ma",
+      "name",
+      "notnull",
+      "nulls",
+      "ops",
+      "primarykey",
+      "protection_counter",
+      "query",
+      "return",
+      "schema",
+      "server",
+      "show",
+      "spcname",
+      "stage",
+      "table",
+      "tablespace",
+      "tblcomment",
+      "type",
+      "types",
+      "uniquekey",
+      "values",
+      "withconstraints",
+      "withdefaults",
+      "withindexes",
+      "withoutoids"
+    ],
+    "session_keys": [
+      "counter"
+    ],
+    "database_tables": [
+      "an",
+      "the"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "action",
+      "array",
+      "cancel",
+      "cascade",
+      "colcomment",
+      "database",
+      "default",
+      "drop",
+      "empty",
+      "field",
+      "fields",
+      "format",
+      "insert",
+      "length",
+      "like",
+      "ma",
+      "name",
+      "notnull",
+      "nulls",
+      "ops",
+      "primarykey",
+      "protection_counter",
+      "query",
+      "return",
+      "schema",
+      "server",
+      "show",
+      "spcname",
+      "stage",
+      "table",
+      "tablespace",
+      "tblcomment",
+      "type",
+      "types",
+      "uniquekey",
+      "values",
+      "withconstraints",
+      "withdefaults",
+      "withindexes",
+      "withoutoids"
+    ],
+    "must_preserve_session_keys": [
+      "counter"
+    ],
+    "must_preserve_database_tables": [
+      "an",
+      "the"
+    ],
+    "must_preserve_dom_selectors": [],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

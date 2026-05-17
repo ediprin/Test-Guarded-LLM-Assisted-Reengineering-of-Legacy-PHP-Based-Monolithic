@@ -1,0 +1,101 @@
+{
+  "candidate_id": "dolibarr-C0321",
+  "subject_id": "dolibarr",
+  "file": "htdocs/ftp/index.php",
+  "lines": [
+    1,
+    813
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 120
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "confirm",
+      "const",
+      "delete",
+      "desc",
+      "file",
+      "label",
+      "ref",
+      "section",
+      "type"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#check_",
+      "#checkall",
+      "#checknone",
+      "#delconst",
+      ".button",
+      ".center",
+      ".checkboxfordelete",
+      ".flat",
+      ".left",
+      ".liste_titre",
+      ".noborder",
+      ".nowrap",
+      ".oddeven",
+      ".right"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "confirm",
+      "const",
+      "delete",
+      "desc",
+      "file",
+      "label",
+      "ref",
+      "section",
+      "type"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#check_",
+      "#checkall",
+      "#checknone",
+      "#delconst",
+      ".button",
+      ".center",
+      ".checkboxfordelete",
+      ".flat",
+      ".left",
+      ".liste_titre",
+      ".noborder",
+      ".nowrap",
+      ".oddeven",
+      ".right"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

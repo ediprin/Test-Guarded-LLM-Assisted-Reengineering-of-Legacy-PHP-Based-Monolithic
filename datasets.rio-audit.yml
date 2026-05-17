@@ -1,0 +1,150 @@
+# Primary audit input for the reproducible PHP reengineering experiment.
+# These subjects follow the PHP web-application sample reported by Rio et al.
+# Do not run transformation treatments until install_status, test_status, and
+# oracle_status are known and stable.
+
+source_basis:
+  paper_pdf: s10664-024-10478-0.pdf
+  replication_package:
+    github: https://github.com/studywebcs/data
+    zenodo: https://zenodo.org/doi/10.5281/zenodo.10838018
+  note: >
+    The replication package provides release-level smell, metric, issue, and bug data.
+    This experiment must construct a new candidate-level transformation dataset from
+    restored subject systems.
+
+selection_rules:
+  include:
+    - open-source PHP web application
+    - PHP as server-side language
+    - self-contained application
+    - server-side and client-side code in the same codebase
+    - object-oriented PHP present in selected release
+  exclude:
+    - library-only project
+    - framework or framework-builder project
+    - framework-based application where framework code dominates the subject
+    - release that cannot be restored in a controlled environment
+    - candidate without stable pre-transformation oracle
+
+primary_subjects:
+  - id: phpmyadmin
+    priority: 1
+    domain: database_admin
+    repo_url: https://github.com/phpmyadmin/phpmyadmin.git
+    rio_version_range: "3.0.0-4.9.1"
+    selected_tag: RELEASE_4_9_1
+    commit: a00f23711e33a09dd8a472bfc6f938e5ab51ced4
+    db_required: true
+    audit_status: pending
+
+  - id: dokuwiki
+    priority: 2
+    domain: wiki
+    repo_url: https://github.com/dokuwiki/dokuwiki.git
+    rio_version_range: "2005-07-01-2018-04-22b"
+    selected_tag: release-2018-04-22b
+    commit: 4e34491f07933bfb7e59e6cab0c029799dd381ab
+    db_required: false
+    audit_status: pending
+
+  - id: opencart
+    priority: 3
+    domain: ecommerce
+    repo_url: https://github.com/opencart/opencart.git
+    rio_version_range: "1.5.5.1-3.0.3.2"
+    selected_tag: 3.0.3.2
+    commit: 4ba536198a4638b6d3902a7c720ce8503b0dc394
+    db_required: true
+    audit_status: pending
+
+  - id: phpbb
+    priority: 4
+    domain: forum
+    repo_url: https://github.com/phpbb/phpbb.git
+    rio_version_range: "2.0.0-3.2.2"
+    selected_tag: release-3.2.2
+    commit: 77b275181aeddf43e1077d06abce11a9722bb85a
+    db_required: true
+    audit_status: pending
+
+  - id: phppgadmin
+    priority: 5
+    domain: database_admin
+    repo_url: https://github.com/phppgadmin/phppgadmin.git
+    rio_version_range: "0.1.0-7.12.0"
+    selected_tag: REL_7-12-0
+    commit: 2acc9154c720f7f3d7e9f36b9f153ca02c69bb37
+    db_required: true
+    audit_status: pending
+
+  - id: roundcubemail
+    priority: 6
+    domain: webmail
+    repo_url: https://github.com/roundcube/roundcubemail.git
+    rio_version_range: "1.0.0-1.4.1"
+    selected_tag: 1.4.1
+    commit: 0b1d6841f923be19cfb53de97c1a593d5752475e
+    db_required: true
+    audit_status: pending
+
+  - id: kanboard
+    priority: 7
+    domain: project_management
+    repo_url: https://github.com/kanboard/kanboard.git
+    rio_version_range: "1.0.0-1.2.13"
+    selected_tag: v1.2.13
+    commit: d983c113da13aad4c022a8832365d04d77adf3a7
+    db_required: true
+    audit_status: pending
+
+  - id: dolibarr
+    priority: 8
+    domain: erp_crm
+    repo_url: https://github.com/dolibarr/dolibarr.git
+    rio_version_range: "2.0.1-10.0.5"
+    selected_tag: 10.0.5
+    commit: 07b40f043e3992cab80e545d9cc0afdd3a0df1b4
+    db_required: true
+    audit_status: pending
+
+backup_subjects:
+  - id: prestashop
+    domain: ecommerce
+    repo_url: https://github.com/PrestaShop/PrestaShop.git
+    rio_version_range: "1.5.0.0-1.7.6.1"
+    reason: Heavy restoration, but strong subject if one primary fails.
+
+  - id: vanilla
+    domain: forum
+    repo_url: https://github.com/vanilla/vanilla.git
+    rio_version_range: "2.0-3.3"
+    reason: Useful forum backup; OSS version availability must be checked.
+
+  - id: mediawiki
+    domain: wiki
+    repo_url: https://github.com/wikimedia/mediawiki.git
+    rio_version_range: "1.1.0-1.33.1"
+    reason: Strong but large subject; avoid in the first pass unless needed.
+
+  - id: openemr
+    domain: medical_records
+    repo_url: https://github.com/openemr/openemr.git
+    rio_version_range: "2.7.2-5.0.2.1"
+    reason: Strong but domain-heavy; use only if environment/test pipeline is robust.
+
+audit_matrix_columns:
+  - project
+  - repo_url
+  - selected_tag
+  - commit
+  - php_version
+  - db_required
+  - install_status
+  - test_command
+  - test_status
+  - static_tools_status
+  - candidate_count
+  - oracle_status
+  - usable_for_experiment
+

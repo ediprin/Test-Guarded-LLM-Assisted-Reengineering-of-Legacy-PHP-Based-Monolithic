@@ -1,0 +1,125 @@
+{
+  "candidate_id": "dolibarr-C4891",
+  "subject_id": "dolibarr",
+  "file": "htdocs/adherents/subscription/card.php",
+  "lines": [
+    1,
+    438
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 45
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "amount",
+      "datesubday",
+      "datesubendday",
+      "datesubendhour",
+      "datesubendmin",
+      "datesubendmonth",
+      "datesubendyear",
+      "datesubhour",
+      "datesubmin",
+      "datesubmonth",
+      "datesubyear",
+      "note",
+      "typeid"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      ".border",
+      ".butAction",
+      ".butActionDelete",
+      ".butActionRefused",
+      ".button",
+      ".center",
+      ".classfortooltip",
+      ".clearboth",
+      ".divButAction",
+      ".ficheaddleft",
+      ".fichecenter",
+      ".fichehalfleft",
+      ".fichehalfright",
+      ".flat",
+      ".inline-block",
+      ".tabsAction",
+      ".titlefield",
+      ".titlefieldcreate",
+      ".underbanner",
+      ".valeur"
+    ],
+    "forms": [
+      "update"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "amount",
+      "datesubday",
+      "datesubendday",
+      "datesubendhour",
+      "datesubendmin",
+      "datesubendmonth",
+      "datesubendyear",
+      "datesubhour",
+      "datesubmin",
+      "datesubmonth",
+      "datesubyear",
+      "note",
+      "typeid"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      ".border",
+      ".butAction",
+      ".butActionDelete",
+      ".butActionRefused",
+      ".button",
+      ".center",
+      ".classfortooltip",
+      ".clearboth",
+      ".divButAction",
+      ".ficheaddleft",
+      ".fichecenter",
+      ".fichehalfleft",
+      ".fichehalfright",
+      ".flat",
+      ".inline-block",
+      ".tabsAction",
+      ".titlefield",
+      ".titlefieldcreate",
+      ".underbanner",
+      ".valeur"
+    ],
+    "must_preserve_forms": [
+      "update"
+    ]
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

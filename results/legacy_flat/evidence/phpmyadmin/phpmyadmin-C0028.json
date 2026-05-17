@@ -1,0 +1,77 @@
+{
+  "candidate_id": "phpmyadmin-C0028",
+  "subject_id": "phpmyadmin",
+  "file": "tbl_addfield.php",
+  "lines": [
+    1,
+    133
+  ],
+  "candidate_type": "long_method_or_region",
+  "issues": [
+    {
+      "type": "Long or Complex Region",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 14
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "added_fields",
+      "after_field",
+      "do_save_data",
+      "field_input_transformation",
+      "field_input_transformation_options",
+      "field_mimetype",
+      "field_name",
+      "field_transformation",
+      "field_transformation_options",
+      "field_where",
+      "num_fields",
+      "orig_after_field",
+      "orig_field_where",
+      "orig_num_fields",
+      "submit_num_fields"
+    ],
+    "session_keys": [],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "added_fields",
+      "after_field",
+      "do_save_data",
+      "field_input_transformation",
+      "field_input_transformation_options",
+      "field_mimetype",
+      "field_name",
+      "field_transformation",
+      "field_transformation_options",
+      "field_where",
+      "num_fields",
+      "orig_after_field",
+      "orig_field_where",
+      "orig_num_fields",
+      "submit_num_fields"
+    ],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

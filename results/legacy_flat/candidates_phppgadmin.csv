@@ -1,0 +1,334 @@
+candidate_id,project,file,start_line,end_line,candidate_type,dominant_issue,complexity_proxy,request_parameters,session_keys,database_tables,dom_selectors,forms,allowed_transformations,oracle_status
+phppgadmin-C0001,phppgadmin,admin.php,1,753,form_handling,Request Handling Mixed With Rendering,119,analyze;autovacuum_analyze_scale_factor;autovacuum_analyze_threshold;autovacuum_enabled;autovacuum_vacuum_cost_delay;autovacuum_vacuum_cost_limit;autovacuum_vacuum_scale_factor;autovacuum_vacuum_threshold;cluster;database;ma;object;reindex;reindex_force;save;schema;table;vacuum;vacuum_analyze;vacuum_freeze;vacuum_full,,,,,Extract Validation Helper;Extract Method;Extract View Helper,pending
+phppgadmin-C0002,phppgadmin,admin.php,8,91,long_method_or_region,Long or Complex Region,13,ma;object;table,,,,,Extract Method,pending
+phppgadmin-C0003,phppgadmin,admin.php,91,169,long_method_or_region,Long or Complex Region,13,ma;object;reindex_force;table,,,,,Extract Method,pending
+phppgadmin-C0004,phppgadmin,admin.php,169,244,long_method_or_region,Long or Complex Region,11,ma;object;table,,,,,Extract Method,pending
+phppgadmin-C0005,phppgadmin,admin.php,244,321,long_method_or_region,Long or Complex Region,14,ma;object;table;vacuum_analyze;vacuum_freeze;vacuum_full,,,,,Extract Method,pending
+phppgadmin-C0006,phppgadmin,admin.php,321,415,long_method_or_region,Long or Complex Region,16,autovacuum_analyze_scale_factor;autovacuum_analyze_threshold;autovacuum_enabled;autovacuum_vacuum_cost_delay;autovacuum_vacuum_cost_limit;autovacuum_vacuum_scale_factor;autovacuum_vacuum_threshold;table,,,,,Extract Method,pending
+phppgadmin-C0007,phppgadmin,admin.php,465,570,long_method_or_region,Long or Complex Region,14,object;table,,,,,Extract Method,pending
+phppgadmin-C0008,phppgadmin,admin.php,570,678,long_method_or_region,Long or Complex Region,8,table,,,,,Extract Method,pending
+phppgadmin-C0009,phppgadmin,admin.php,678,754,long_method_or_region,Long or Complex Region,32,analyze;cluster;database;object;reindex;save;table;vacuum,,,,,Extract Method,pending
+phppgadmin-C0010,phppgadmin,aggregates.php,1,462,form_handling,Request Handling Mixed With Rendering,42,action;aggrcomment;aggrname;aggrowner;aggrschema;aggrtype;alter;basetype;cancel;cascade;database;drop;ffunc;initcond;name;newaggrcomment;newaggrname;newaggrowner;newaggrschema;schema;server;sfunc;sortop;stype,,,,,Extract Validation Helper;Extract Method;Extract View Helper,pending
+phppgadmin-C0011,phppgadmin,aggregates.php,399,463,long_method_or_region,Long or Complex Region,13,alter;cancel;drop,,,,,Extract Method,pending
+phppgadmin-C0012,phppgadmin,ajax-ac-insert.php,1,92,mixed_php_html_sql,SQL in Presentation Logic,14,f_schema;f_table;fattpos;fkeynames;fvalue;keys;offset,,,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phppgadmin-C0013,phppgadmin,all_db.php,1,532,mixed_php_html_sql,SQL in Presentation Logic,86,action;alterdatabase;cancel;dbcomment;drop;dropdatabase;formCType;formCollate;formComment;formEncoding;formName;formSpc;formTemplate;ma;newname;oldname;owner;server,,the,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phppgadmin-C0014,phppgadmin,all_db.php,18,82,long_method_or_region,Long or Complex Region,11,alterdatabase;dbcomment;newname;oldname;owner,,,,,Extract Method,pending
+phppgadmin-C0015,phppgadmin,all_db.php,82,148,long_method_or_region,Long or Complex Region,10,dropdatabase;ma,,,,,Extract Method,pending
+phppgadmin-C0016,phppgadmin,all_db.php,148,262,long_method_or_region,Long or Complex Region,25,formCType;formCollate;formComment;formEncoding;formName;formSpc;formTemplate,,,,,Extract Method,pending
+phppgadmin-C0017,phppgadmin,all_db.php,262,294,long_method_or_region,Long or Complex Region,12,formCType;formCollate;formComment;formEncoding;formName;formSpc;formTemplate,,,,,Extract Method,pending
+phppgadmin-C0018,phppgadmin,all_db.php,294,343,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phppgadmin-C0019,phppgadmin,all_db.php,343,467,long_method_or_region,Long or Complex Region,7,server,,,,,Extract Method,pending
+phppgadmin-C0020,phppgadmin,all_db.php,467,533,long_method_or_region,Long or Complex Region,13,cancel;drop;newname;oldname,,,,,Extract Method,pending
+phppgadmin-C0021,phppgadmin,browser.php,1,84,mixed_php_html,Mixed PHP/HTML,49,,,,.logo;.refreshTree,,Separate PHP Logic from Markup;Extract View Helper,pending
+phppgadmin-C0022,phppgadmin,colproperties.php,1,346,mixed_php_html_sql,SQL in Presentation Logic,38,action;array;cancel;column;comment;database;default;field;length;notnull;olddefault;oldnotnull;oldtype;schema;server;stage;table;type;view,,the,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phppgadmin-C0023,phppgadmin,colproperties.php,23,177,long_method_or_region,Long or Complex Region,24,array;column;comment;default;field;length;notnull;olddefault;oldnotnull;oldtype;stage;table;type,,,,,Extract Method,pending
+phppgadmin-C0024,phppgadmin,colproperties.php,181,347,sql_data_access,SQL/Data Access Region,11,cancel;column;database;schema;server;view,,,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0025,phppgadmin,constraints.php,1,640,mixed_php_html_sql,SQL in Presentation Logic,89,IndexColumnList;SourceColumnList;action;cancel;cascade;constraint;database;deferrable;definition;del_action;drop;initially;match;name;schema;server;stage;table;tablespace;target;type;upd_action,,stage;the,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phppgadmin-C0026,phppgadmin,constraints.php,18,218,long_method_or_region,Long or Complex Region,31,IndexColumnList;SourceColumnList;deferrable;del_action;initially;match;name;schema;table;target;upd_action,,,,,Extract Method,pending
+phppgadmin-C0027,phppgadmin,constraints.php,218,344,long_method_or_region,Long or Complex Region,23,IndexColumnList;name;table;tablespace;type,,,,,Extract Method,pending
+phppgadmin-C0028,phppgadmin,constraints.php,430,549,long_method_or_region,Long or Complex Region,3,database;schema;server;table,,,,,Extract Method,pending
+phppgadmin-C0029,phppgadmin,constraints.php,556,641,long_method_or_region,Long or Complex Region,25,cancel;drop;stage;table,,,,,Extract Method,pending
+phppgadmin-C0030,phppgadmin,database.php,1,698,mixed_php_html_sql,SQL in Presentation Logic,166,action;database;filter;new;paginate;pid;server;signal;term,sqlquery,table;the,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phppgadmin-C0031,phppgadmin,database.php,36,304,sql_data_access,SQL/Data Access Region,119,filter;term,,table,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0032,phppgadmin,database.php,304,357,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+phppgadmin-C0033,phppgadmin,database.php,403,508,long_method_or_region,Long or Complex Region,8,database,,,,,Extract Method,pending
+phppgadmin-C0034,phppgadmin,database.php,574,611,session_dependent_logic,Session-Dependent Logic,8,new;paginate,sqlquery,,,,Extract Guard;Extract Method,pending
+phppgadmin-C0035,phppgadmin,database.php,611,699,long_method_or_region,Long or Complex Region,15,database;server;term,,,,,Extract Method,pending
+phppgadmin-C0036,phppgadmin,dataexport.php,1,345,mixed_php_html_sql,SQL in Presentation Logic,88,d_format;d_oids;output;query;s_clean;sd_clean;sd_format;sd_oids;search_path;subject;table;what,sqlquery,stdin;the,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phppgadmin-C0037,phppgadmin,dataimport.php,1,298,long_method_or_region,Long or Complex Region,51,allowednulls;format;table,,,,,Extract Method,pending
+phppgadmin-C0038,phppgadmin,dataimport.php,25,88,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+phppgadmin-C0039,phppgadmin,dataimport.php,88,149,long_method_or_region,Long or Complex Region,12,table,,,,,Extract Method,pending
+phppgadmin-C0040,phppgadmin,dataimport.php,167,299,long_method_or_region,Long or Complex Region,21,format;table,,,,,Extract Method,pending
+phppgadmin-C0041,phppgadmin,dbexport.php,1,139,long_method_or_region,Long or Complex Region,42,d_format;d_oids;database;output;s_clean;schema;sd_clean;sd_format;sd_oids;subject;what,,,,,Extract Method,pending
+phppgadmin-C0042,phppgadmin,display.php,1,879,mixed_php_html_sql,SQL in Presentation Logic,148,action;count;database;fkey;format;key;nohistory;nulls;page;query;return;save;schema;search_path;server;sortdir;sortkey;strings;subject;table;types;values;view;yes,sqlquery,query;sql;the,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phppgadmin-C0043,phppgadmin,display.php,27,185,long_method_or_region,Long or Complex Region,32,action;count;format;key;nulls;page;query;return;sortdir;sortkey;strings;subject;table;types;values,,,,,Extract Method,pending
+phppgadmin-C0044,phppgadmin,display.php,185,297,long_method_or_region,Long or Complex Region,19,count;key;page;query;return;sortdir;sortkey;strings;subject;table,,,,,Extract Method,pending
+phppgadmin-C0045,phppgadmin,display.php,427,880,session_dependent_logic,Session-Dependent Logic,77,count;database;fkey;nohistory;page;query;return;save;schema;search_path;server;sortdir;sortkey;strings;subject;table;view;yes,sqlquery,query;sql,,,Extract Guard;Extract Method,pending
+phppgadmin-C0046,phppgadmin,domains.php,1,587,form_handling,Request Handling Mixed With Rendering,67,action;alter;cancel;cascade;constraint;database;definition;domain;domarray;domcheck;domdefault;domlength;domname;domnotnull;domowner;domtype;drop;name;schema;server,,,,,Extract Validation Helper;Extract Method;Extract View Helper,pending
+phppgadmin-C0047,phppgadmin,domains.php,172,299,long_method_or_region,Long or Complex Region,7,database;domain;schema;server,,,,,Extract Method,pending
+phppgadmin-C0048,phppgadmin,domains.php,330,395,long_method_or_region,Long or Complex Region,14,domarray;domcheck;domdefault;domlength;domname;domnotnull;domtype,,,,,Extract Method,pending
+phppgadmin-C0049,phppgadmin,domains.php,512,588,long_method_or_region,Long or Complex Region,19,alter;cancel;drop,,,,,Extract Method,pending
+phppgadmin-C0050,phppgadmin,fulltext.php,1,1120,form_handling,Request Handling Mixed With Rendering,117,action;add;alter;cancel;cascade;create;database;drop;formComment;formDictionary;formInit;formIsTemplate;formLexize;formMapping;formName;formOption;formParser;formTemplate;formWithMap;ftscfg;ftsdict;ma;mapping;prev_action;schema;server;what,,,,,Extract Validation Helper;Extract Method;Extract View Helper,pending
+phppgadmin-C0051,phppgadmin,fulltext.php,164,257,long_method_or_region,Long or Complex Region,10,database;formComment;formName;formParser;formTemplate;formWithMap,,,,,Extract Method,pending
+phppgadmin-C0052,phppgadmin,fulltext.php,558,644,long_method_or_region,Long or Complex Region,15,database;formComment;formInit;formIsTemplate;formLexize;formName;formOption;formTemplate,,,,,Extract Method,pending
+phppgadmin-C0053,phppgadmin,fulltext.php,900,962,long_method_or_region,Long or Complex Region,10,formDictionary;formMapping;ftscfg,,,,,Extract Method,pending
+phppgadmin-C0054,phppgadmin,fulltext.php,1005,1121,long_method_or_region,Long or Complex Region,30,add;alter;cancel;create;drop;ftscfg;prev_action;what,,,,,Extract Method,pending
+phppgadmin-C0055,phppgadmin,functions.php,1,1038,form_handling,Request Handling Mixed With Rendering,156,action;cancel;cascade;database;drop;formArgName;formArguments;formArray;formComment;formCost;formDefinition;formFuncOwn;formFuncSchema;formFunction;formLanguage;formLinkSymbol;formObjectFile;formProperties;formReturns;formRows;formSetOf;function;function_oid;language;ma;nojs;original_arguments;original_function;original_lang;original_owner;original_returns;original_schema;original_setof;schema;server,,,,,Extract Validation Helper;Extract Method;Extract View Helper,pending
+phppgadmin-C0056,phppgadmin,functions.php,57,245,long_method_or_region,Long or Complex Region,40,formComment;formCost;formDefinition;formFuncOwn;formFuncSchema;formFunction;formLinkSymbol;formObjectFile;formProperties;formRows;function;function_oid,,,,,Extract Method,pending
+phppgadmin-C0057,phppgadmin,functions.php,245,410,long_method_or_region,Long or Complex Region,24,database;function;function_oid;schema;server,,,,,Extract Method,pending
+phppgadmin-C0058,phppgadmin,functions.php,410,488,long_method_or_region,Long or Complex Region,12,cascade;function;function_oid;ma,,,,,Extract Method,pending
+phppgadmin-C0059,phppgadmin,functions.php,488,714,long_method_or_region,Long or Complex Region,39,formArguments;formArray;formComment;formCost;formDefinition;formFunction;formLanguage;formLinkSymbol;formObjectFile;formProperties;formReturns;formRows;formSetOf;language,,,,,Extract Method,pending
+phppgadmin-C0060,phppgadmin,functions.php,714,767,long_method_or_region,Long or Complex Region,13,formArgName;formArguments;formArray;formComment;formCost;formDefinition;formFunction;formLanguage;formLinkSymbol;formObjectFile;formProperties;formReturns;formRows;formSetOf;nojs,,,,,Extract Method,pending
+phppgadmin-C0061,phppgadmin,functions.php,834,974,long_method_or_region,Long or Complex Region,3,database;schema;server,,,,,Extract Method,pending
+phppgadmin-C0062,phppgadmin,functions.php,974,1039,long_method_or_region,Long or Complex Region,13,cancel;drop,,,,,Extract Method,pending
+phppgadmin-C0063,phppgadmin,groups.php,1,330,form_handling,Request Handling Mixed With Rendering,38,action;cancel;drop;group;members;name;server;user,,,,,Extract Validation Helper;Extract Method;Extract View Helper,pending
+phppgadmin-C0064,phppgadmin,groups.php,232,331,long_method_or_region,Long or Complex Region,16,cancel;drop;server,,,,,Extract Method,pending
+phppgadmin-C0065,phppgadmin,help.php,1,88,form_handling,Request Handling Mixed With Rendering,12,action;help,,,,,Extract Validation Helper;Extract Method;Extract View Helper,pending
+phppgadmin-C0066,phppgadmin,history.php,1,226,form_handling,Request Handling Mixed With Rendering,19,action;database;queryid;server;yes,history,,,,Extract Validation Helper;Extract Method;Extract View Helper,pending
+phppgadmin-C0067,phppgadmin,history.php,14,136,session_dependent_logic,Session-Dependent Logic,5,database;server,history,,,,Extract Guard;Extract Method,pending
+phppgadmin-C0068,phppgadmin,history.php,184,227,session_dependent_logic,Session-Dependent Logic,11,database;queryid;server;yes,history,,,,Extract Guard;Extract Method,pending
+phppgadmin-C0069,phppgadmin,index.php,1,38,mixed_php_html,Mixed PHP/HTML,18,,,,#browser;#detail,,Separate PHP Logic from Markup;Extract View Helper,pending
+phppgadmin-C0070,phppgadmin,indexes.php,1,423,form_handling,Request Handling Mixed With Rendering,56,IndexColumnList;action;analyze;cancel;cascade;cluster;database;drop;formCols;formConcur;formIndexName;formIndexType;formSpc;formUnique;formWhere;index;schema;server;table,,,,,Extract Validation Helper;Extract Method;Extract View Helper,pending
+phppgadmin-C0071,phppgadmin,indexes.php,71,183,long_method_or_region,Long or Complex Region,21,formCols;formConcur;formIndexName;formIndexType;formSpc;formUnique;formWhere;table,,,,,Extract Method,pending
+phppgadmin-C0072,phppgadmin,indexes.php,243,358,long_method_or_region,Long or Complex Region,3,database;schema;server;table,,,,,Extract Method,pending
+phppgadmin-C0073,phppgadmin,indexes.php,365,424,long_method_or_region,Long or Complex Region,16,cancel;cluster;drop,,,,,Extract Method,pending
+phppgadmin-C0074,phppgadmin,info.php,1,339,form_handling,Request Handling Mixed With Rendering,26,action;table,,,,,Extract Validation Helper;Extract Method;Extract View Helper,pending
+phppgadmin-C0075,phppgadmin,info.php,17,340,long_method_or_region,Long or Complex Region,24,table,,,,,Extract Method,pending
+phppgadmin-C0076,phppgadmin,intro.php,1,71,form_handling,Request Handling Mixed With Rendering,39,language,webdbLanguage,,.data;.data1;.data2;.intro,intro.php,Extract Validation Helper;Extract Method;Extract View Helper,pending
+phppgadmin-C0077,phppgadmin,login.php,1,70,form_handling,Request Handling Mixed With Rendering,44,loginShared;loginUsername;server,webdbLanguage,,#loginPassword;#loginShared;#login_form;.navbar,login_form;redirect.php,Extract Validation Helper;Extract Method;Extract View Helper,pending
+phppgadmin-C0078,phppgadmin,operators.php,1,246,form_handling,Request Handling Mixed With Rendering,25,action;cancel;cascade;database;operator;operator_oid;schema;server,,,,,Extract Validation Helper;Extract Method;Extract View Helper,pending
+phppgadmin-C0079,phppgadmin,operators.php,188,247,long_method_or_region,Long or Complex Region,10,cancel,,,,,Extract Method,pending
+phppgadmin-C0080,phppgadmin,privileges.php,1,354,form_handling,Request Handling Mixed With Rendering,82,action;cancel;cascade;database;grantoption;groupname;mode;privilege;public;schema;server;subject;table;username;view,,,,,Extract Validation Helper;Extract Method;Extract View Helper,pending
+phppgadmin-C0081,phppgadmin,privileges.php,21,143,long_method_or_region,Long or Complex Region,36,cascade;grantoption;groupname;mode;privilege;public;subject;table;username,,,,,Extract Method,pending
+phppgadmin-C0082,phppgadmin,privileges.php,143,355,long_method_or_region,Long or Complex Region,44,cancel;database;mode;schema;server;subject;table;view,,,,,Extract Method,pending
+phppgadmin-C0083,phppgadmin,roles.php,1,743,mixed_php_html_sql,SQL in Presentation Logic,127,action;adminmembers;adminmembersold;alter;confirm;create;drop;formCanLogin;formConfirm;formConnLimit;formCreateDB;formCreateRole;formExpires;formInherits;formNewRoleName;formPassword;formRolename;formSuper;memberof;memberofold;members;membersold;ok;password;rolename;server,,,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phppgadmin-C0084,phppgadmin,roles.php,18,115,long_method_or_region,Long or Complex Region,26,adminmembers;formCanLogin;formConfirm;formConnLimit;formCreateDB;formCreateRole;formExpires;formInherits;formPassword;formRolename;formSuper;memberof;members,,,,,Extract Method,pending
+phppgadmin-C0085,phppgadmin,roles.php,142,302,long_method_or_region,Long or Complex Region,41,adminmembers;adminmembersold;formCanLogin;formConnLimit;formCreateDB;formCreateRole;formExpires;formInherits;formNewRoleName;formPassword;formSuper;memberof;memberofold;members;membersold;rolename,,,,,Extract Method,pending
+phppgadmin-C0086,phppgadmin,roles.php,357,477,long_method_or_region,Long or Complex Region,16,rolename;server,,,,,Extract Method,pending
+phppgadmin-C0087,phppgadmin,roles.php,593,744,long_method_or_region,Long or Complex Region,18,alter;create;drop;ok;server,,,,,Extract Method,pending
+phppgadmin-C0088,phppgadmin,rules.php,1,232,form_handling,Request Handling Mixed With Rendering,30,action;cancel;cascade;database;event;instead;name;raction;reltype;rule;schema;server;subject;type;where;yes,,,,,Extract Validation Helper;Extract Method;Extract View Helper,pending
+phppgadmin-C0089,phppgadmin,rules.php,17,87,long_method_or_region,Long or Complex Region,16,event;instead;name;raction;subject;type;where,,,,,Extract Method,pending
+phppgadmin-C0090,phppgadmin,rules.php,188,233,long_method_or_region,Long or Complex Region,10,cancel;subject;yes,,,,,Extract Method,pending
+phppgadmin-C0091,phppgadmin,schemas.php,1,480,form_handling,Request Handling Mixed With Rendering,58,action;alter;cancel;cascade;comment;create;database;drop;formAuth;formComment;formName;formSpc;ma;name;nsp;owner;schema;server,,,,,Extract Validation Helper;Extract Method;Extract View Helper,pending
+phppgadmin-C0092,phppgadmin,schemas.php,260,333,long_method_or_region,Long or Complex Region,13,cascade;database;ma;nsp,,,,,Extract Method,pending
+phppgadmin-C0093,phppgadmin,schemas.php,333,390,long_method_or_region,Long or Complex Region,13,database;schema,,,,,Extract Method,pending
+phppgadmin-C0094,phppgadmin,schemas.php,422,481,long_method_or_region,Long or Complex Region,12,alter;cancel;create;drop,,,,,Extract Method,pending
+phppgadmin-C0095,phppgadmin,sequences.php,1,728,form_handling,Request Handling Mixed With Rendering,85,action;alter;cascade;comment;create;database;drop;formCacheValue;formCycledValue;formIncrement;formMaxValue;formMinValue;formRestartValue;formSequenceName;formStartValue;ma;name;newschema;nextvalue;owner;schema;sequence;server;setval,,,,,Extract Validation Helper;Extract Method;Extract View Helper,pending
+phppgadmin-C0096,phppgadmin,sequences.php,142,292,long_method_or_region,Long or Complex Region,9,database;schema;sequence;server,,,,,Extract Method,pending
+phppgadmin-C0097,phppgadmin,sequences.php,292,365,long_method_or_region,Long or Complex Region,12,cascade;ma;sequence,,,,,Extract Method,pending
+phppgadmin-C0098,phppgadmin,sequences.php,531,570,long_method_or_region,Long or Complex Region,13,comment;formCacheValue;formCycledValue;formIncrement;formMaxValue;formMinValue;formRestartValue;formStartValue;name;newschema;owner;sequence,,,,,Extract Method,pending
+phppgadmin-C0099,phppgadmin,sequences.php,570,729,long_method_or_region,Long or Complex Region,34,alter;comment;create;drop;formCycledValue;name;newschema;owner;sequence;setval,,,,,Extract Method,pending
+phppgadmin-C0100,phppgadmin,servers.php,1,175,session_dependent_logic,Session-Dependent Logic,18,action;group;logoutServer,sharedPassword;sharedUsername,,,,Extract Guard;Extract Method,pending
+phppgadmin-C0101,phppgadmin,servers.php,111,176,long_method_or_region,Long or Complex Region,10,group,,,,,Extract Method,pending
+phppgadmin-C0102,phppgadmin,sql.php,1,263,form_handling,Request Handling Mixed With Rendering,53,database;nohistory;paginate;query;queryid;return;schema;search_path;server;subject,history;sqlquery,,,,Extract Validation Helper;Extract Method;Extract View Helper,pending
+phppgadmin-C0103,phppgadmin,sql.php,24,264,session_dependent_logic,Session-Dependent Logic,51,database;nohistory;paginate;query;queryid;return;schema;search_path;server;subject,history;sqlquery,,,,Extract Guard;Extract Method,pending
+phppgadmin-C0104,phppgadmin,sqledit.php,1,156,form_handling,Request Handling Mixed With Rendering,40,action;filter;paginate;search_path;term,sqlquery,,,,Extract Validation Helper;Extract Method;Extract View Helper,pending
+phppgadmin-C0105,phppgadmin,sqledit.php,40,94,long_method_or_region,Long or Complex Region,22,filter;term,,,,,Extract Method,pending
+phppgadmin-C0106,phppgadmin,sqledit.php,94,157,session_dependent_logic,Session-Dependent Logic,12,paginate;search_path,sqlquery,,,,Extract Guard;Extract Method,pending
+phppgadmin-C0107,phppgadmin,tables.php,1,1052,mixed_php_html_sql,SQL in Presentation Logic,169,action;array;cancel;cascade;colcomment;database;default;drop;empty;field;fields;format;insert;length;like;ma;name;notnull;nulls;ops;primarykey;protection_counter;query;return;schema;server;show;spcname;stage;table;tablespace;tblcomment;type;types;uniquekey;values;withconstraints;withdefaults;withindexes;withoutoids,counter,an;the,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phppgadmin-C0108,phppgadmin,tables.php,17,242,sql_data_access,SQL/Data Access Region,49,array;colcomment;default;field;fields;length;name;notnull;primarykey;spcname;stage;tblcomment;type;uniquekey;withoutoids,,an;the,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0109,phppgadmin,tables.php,242,346,long_method_or_region,Long or Complex Region,23,like;name;tablespace;withconstraints;withdefaults;withindexes,,,,,Extract Method,pending
+phppgadmin-C0110,phppgadmin,tables.php,362,453,long_method_or_region,Long or Complex Region,20,nulls;ops;query;return;show;table;values,,,,,Extract Method,pending
+phppgadmin-C0111,phppgadmin,tables.php,453,587,session_dependent_logic,Session-Dependent Logic,28,fields;format;insert;nulls;protection_counter;table;types;values,counter,,,,Extract Guard;Extract Method,pending
+phppgadmin-C0112,phppgadmin,tables.php,587,650,long_method_or_region,Long or Complex Region,10,ma;table,,,,,Extract Method,pending
+phppgadmin-C0113,phppgadmin,tables.php,650,728,long_method_or_region,Long or Complex Region,13,cascade;ma;table,,,,,Extract Method,pending
+phppgadmin-C0114,phppgadmin,tables.php,728,935,long_method_or_region,Long or Complex Region,6,database;schema;server,,,,,Extract Method,pending
+phppgadmin-C0115,phppgadmin,tables.php,967,1053,long_method_or_region,Long or Complex Region,22,cancel;drop;empty;table,,,,,Extract Method,pending
+phppgadmin-C0116,phppgadmin,tablespaces.php,1,326,form_handling,Request Handling Mixed With Rendering,41,action;cancel;comment;formComment;formLoc;formOwner;formSpcname;name;owner;server;tablespace,,,,,Extract Validation Helper;Extract Method;Extract View Helper,pending
+phppgadmin-C0117,phppgadmin,tablespaces.php,202,327,long_method_or_region,Long or Complex Region,12,cancel;server,,,,,Extract Method,pending
+phppgadmin-C0118,phppgadmin,tblproperties.php,1,782,mixed_php_html_sql,SQL in Presentation Logic,106,action;alter;array;cancel;cascade;column;comment;database;default;drop;field;length;name;newschema;notnull;owner;schema;server;stage;table;tablespace;type,,the,.comment,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phppgadmin-C0119,phppgadmin,tblproperties.php,51,138,long_method_or_region,Long or Complex Region,19,comment;name;newschema;owner;table;tablespace,,,,,Extract Method,pending
+phppgadmin-C0120,phppgadmin,tblproperties.php,138,196,long_method_or_region,Long or Complex Region,14,table,,,,,Extract Method,pending
+phppgadmin-C0121,phppgadmin,tblproperties.php,241,361,long_method_or_region,Long or Complex Region,26,array;comment;default;field;length;notnull;stage;table;type,,,,,Extract Method,pending
+phppgadmin-C0122,phppgadmin,tblproperties.php,395,438,sql_data_access,SQL/Data Access Region,2,table,,,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0123,phppgadmin,tblproperties.php,442,511,sql_data_access,SQL/Data Access Region,4,table,,,.comment,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0124,phppgadmin,tblproperties.php,511,783,long_method_or_region,Long or Complex Region,30,alter;cancel;database;drop;schema;server;table,,,,,Extract Method,pending
+phppgadmin-C0125,phppgadmin,triggers.php,1,448,form_handling,Request Handling Mixed With Rendering,39,action;alter;cancel;cascade;database;formEvent;formExecTime;formFrequency;formFunction;formTriggerArgs;formTriggerName;name;schema;server;table;trigger;yes,,,,,Extract Validation Helper;Extract Method;Extract View Helper,pending
+phppgadmin-C0126,phppgadmin,triggers.php,264,383,long_method_or_region,Long or Complex Region,4,database;schema;server;table,,,,,Extract Method,pending
+phppgadmin-C0127,phppgadmin,triggers.php,383,449,long_method_or_region,Long or Complex Region,18,alter;cancel;table;yes,,,,,Extract Method,pending
+phppgadmin-C0128,phppgadmin,types.php,1,714,form_handling,Request Handling Mixed With Rendering,92,action;array;cancel;cascade;colcomment;database;field;fields;length;name;schema;server;stage;typalign;typbyval;typcomment;typdef;typdelim;type;typelem;typin;typlen;typname;typout;typstorage;value;values,,,,,Extract Validation Helper;Extract Method;Extract View Helper,pending
+phppgadmin-C0129,phppgadmin,types.php,140,288,long_method_or_region,Long or Complex Region,22,array;colcomment;field;fields;length;name;stage;typcomment;type,,,,,Extract Method,pending
+phppgadmin-C0130,phppgadmin,types.php,288,408,long_method_or_region,Long or Complex Region,16,name;stage;typcomment;value;values,,,,,Extract Method,pending
+phppgadmin-C0131,phppgadmin,types.php,408,501,long_method_or_region,Long or Complex Region,23,typalign;typbyval;typdef;typdelim;typelem;typin;typlen;typname;typout;typstorage,,,,,Extract Method,pending
+phppgadmin-C0132,phppgadmin,types.php,533,652,long_method_or_region,Long or Complex Region,5,database;schema;server,,,,,Extract Method,pending
+phppgadmin-C0133,phppgadmin,types.php,652,715,long_method_or_region,Long or Complex Region,14,cancel,,,,,Extract Method,pending
+phppgadmin-C0134,phppgadmin,users.php,1,415,form_handling,Request Handling Mixed With Rendering,55,action;cancel;confirm;formConfirm;formCreateDB;formExpires;formPassword;formSuper;formUsername;newname;ok;password;server;user;username,,,,,Extract Validation Helper;Extract Method;Extract View Helper,pending
+phppgadmin-C0135,phppgadmin,users.php,117,171,long_method_or_region,Long or Complex Region,12,formCreateDB;formExpires;formPassword;formSuper;newname;username,,,,,Extract Method,pending
+phppgadmin-C0136,phppgadmin,users.php,288,416,long_method_or_region,Long or Complex Region,16,cancel;ok;server,,,,,Extract Method,pending
+phppgadmin-C0137,phppgadmin,viewproperties.php,1,564,mixed_php_html_sql,SQL in Presentation Logic,61,action;alter;cancel;column;comment;database;default;drop;field;formComment;formDefinition;name;newschema;olddefault;owner;schema;server;stage;view,,,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phppgadmin-C0138,phppgadmin,viewproperties.php,250,346,long_method_or_region,Long or Complex Region,18,comment;name;newschema;owner;view,,,,,Extract Method,pending
+phppgadmin-C0139,phppgadmin,viewproperties.php,346,389,sql_data_access,SQL/Data Access Region,2,view,,,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0140,phppgadmin,viewproperties.php,393,565,long_method_or_region,Long or Complex Region,19,alter;cancel;database;drop;schema;server;view,,,,,Extract Method,pending
+phppgadmin-C0141,phppgadmin,views.php,1,787,mixed_php_html_sql,SQL in Presentation Logic,124,action;cancel;cascade;database;dblFldMeth;drop;formComment;formCondition;formDefinition;formFields;formLink;formTables;formView;ma;nulls;ops;query;return;schema;server;show;values;view,sqlquery,additional;all;condition;conditions;do;order;view,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phppgadmin-C0142,phppgadmin,views.php,35,126,long_method_or_region,Long or Complex Region,19,nulls;ops;query;return;show;values;view,,,,,Extract Method,pending
+phppgadmin-C0143,phppgadmin,views.php,126,201,long_method_or_region,Long or Complex Region,14,cascade;ma;view,,,,,Extract Method,pending
+phppgadmin-C0144,phppgadmin,views.php,201,340,long_method_or_region,Long or Complex Region,25,formComment;formTables;formView,,,,,Extract Method,pending
+phppgadmin-C0145,phppgadmin,views.php,435,556,sql_data_access,SQL/Data Access Region,32,dblFldMeth;formComment;formCondition;formFields;formLink;formTables;formView,,additional;all;condition;conditions;do;order,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0146,phppgadmin,views.php,556,691,long_method_or_region,Long or Complex Region,6,database;schema;server,,,,,Extract Method,pending
+phppgadmin-C0147,phppgadmin,views.php,716,788,long_method_or_region,Long or Complex Region,18,cancel;drop;view,,,,,Extract Method,pending
+phppgadmin-C0148,phppgadmin,classes/Misc.php,1,2655,mixed_php_html_sql,SQL in Presentation Logic,370,aggrname;aggrtype;column;database;ftscfg;function;function_oid;ma;paginate;plugin;rolename;schema;server;table;view,history;sharedPassword;sharedUsername;webdbLanguage;webdbLastTab;webdbLogin,HTML;plugins;publically;which,#fkbg;#fklist;.comment_cell;.data;.error;.host;.platform;.port;.pre;.username,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phppgadmin-C0149,phppgadmin,classes/Misc.php,52,198,long_method_or_region,Long or Complex Region,18,aggrname;aggrtype;column;database;ftscfg;function;function_oid;plugin;rolename;schema;server;table;view,,,,,Extract Method,pending
+phppgadmin-C0150,phppgadmin,classes/Misc.php,249,415,long_method_or_region,Long or Complex Region,59,,,,.data;.error;.pre,,Extract Method,pending
+phppgadmin-C0151,phppgadmin,classes/Misc.php,458,522,session_dependent_logic,Session-Dependent Logic,8,server,webdbLogin,,,,Extract Guard;Extract Method,pending
+phppgadmin-C0152,phppgadmin,classes/Misc.php,522,575,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+phppgadmin-C0153,phppgadmin,classes/Misc.php,674,723,session_dependent_logic,Session-Dependent Logic,9,,webdbLastTab,,,,Extract Guard;Extract Method,pending
+phppgadmin-C0154,phppgadmin,classes/Misc.php,723,1319,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+phppgadmin-C0155,phppgadmin,classes/Misc.php,1332,1476,session_dependent_logic,Session-Dependent Logic,9,server,sharedUsername;webdbLanguage,,.host;.platform;.port;.username,,Extract Guard;Extract Method,pending
+phppgadmin-C0156,phppgadmin,classes/Misc.php,1525,1676,long_method_or_region,Long or Complex Region,24,aggrname;column;database;ftscfg;rolename;schema;table;view,,,,,Extract Method,pending
+phppgadmin-C0157,phppgadmin,classes/Misc.php,1700,1757,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+phppgadmin-C0158,phppgadmin,classes/Misc.php,1833,1869,long_method_or_region,Long or Complex Region,10,database;schema;server,,,,,Extract Method,pending
+phppgadmin-C0159,phppgadmin,classes/Misc.php,1885,1935,long_method_or_region,Long or Complex Region,10,ma,,,,,Extract Method,pending
+phppgadmin-C0160,phppgadmin,classes/Misc.php,1935,2123,long_method_or_region,Long or Complex Region,50,,,,.comment_cell,,Extract Method,pending
+phppgadmin-C0161,phppgadmin,classes/Misc.php,2123,2159,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phppgadmin-C0162,phppgadmin,classes/Misc.php,2339,2387,session_dependent_logic,Session-Dependent Logic,8,,webdbLogin,,,,Extract Guard;Extract Method,pending
+phppgadmin-C0163,phppgadmin,classes/Misc.php,2406,2448,session_dependent_logic,Session-Dependent Logic,12,server,sharedPassword;sharedUsername;webdbLogin,,,,Extract Guard;Extract Method,pending
+phppgadmin-C0164,phppgadmin,classes/Misc.php,2504,2575,sql_data_access,SQL/Data Access Region,11,database;server,,,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0165,phppgadmin,classes/Misc.php,2575,2656,long_method_or_region,Long or Complex Region,11,database;server,,,#fkbg;#fklist,,Extract Method,pending
+phppgadmin-C0166,phppgadmin,lang/english.php,1,905,sql_data_access,SQL/Data Access Region,99,,,a;failed;history;table;the,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0167,phppgadmin,libraries/errorhandler.inc.php,1,78,form_handling,Request Handling Mixed With Rendering,11,server,sharedPassword;sharedUsername;webdbLogin,,,,Extract Validation Helper;Extract Method;Extract View Helper,pending
+phppgadmin-C0168,phppgadmin,libraries/errorhandler.inc.php,22,79,session_dependent_logic,Session-Dependent Logic,9,server,sharedPassword;sharedUsername;webdbLogin,,,,Extract Guard;Extract Method,pending
+phppgadmin-C0169,phppgadmin,libraries/highlight.php,1,1114,mixed_php_html,Mixed PHP/HTML,72,,,,.comment;.html_entity;.keyword;.literal;.sch_chr;.sch_num;.sch_str;.xml_pi;.xml_tag,,Separate PHP Logic from Markup;Extract View Helper,pending
+phppgadmin-C0170,phppgadmin,libraries/highlight.php,69,520,long_method_or_region,Long or Complex Region,48,,,,,,Extract Method,pending
+phppgadmin-C0171,phppgadmin,libraries/highlight.php,590,1115,long_method_or_region,Long or Complex Region,21,,,,.comment;.html_entity;.literal;.sch_chr;.sch_num;.sch_str;.xml_pi,,Extract Method,pending
+phppgadmin-C0172,phppgadmin,libraries/lib.inc.php,1,268,session_dependent_logic,Session-Dependent Logic,64,database;language;loginServer;loginShared;loginUsername;schema;server;theme,ppaTheme;sharedPassword;sharedUsername;webdbLanguage,a,,,Extract Guard;Extract Method,pending
+phppgadmin-C0173,phppgadmin,tests/selenium/testBuilder.class.php,1,190,mixed_php_html_sql,SQL in Presentation Logic,6,language;server,,the,#loginPassword;.label;.message;.topbar;.trail;.username,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phppgadmin-C0174,phppgadmin,tests/selenium/TestSuite.php,1,52,mixed_php_html,Mixed PHP/HTML,12,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+phppgadmin-C0175,phppgadmin,tests/selenium/TestSuite.php,8,53,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phppgadmin-C0176,phppgadmin,tests/simpletests/testcase/Databases/FindObjectsTest.php,75,220,long_method_or_region,Long or Complex Region,1,,,,,,Extract Method,pending
+phppgadmin-C0177,phppgadmin,tests/simpletests/testcase/Databases/SqlTest.php,1,349,sql_data_access,SQL/Data Access Region,18,,,public;studen;student,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0178,phppgadmin,tests/simpletests/testcase/Schemas/TableTest.php,1,669,sql_data_access,SQL/Data Access Region,12,,,SimpleTest;an;the,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0179,phppgadmin,tests/simpletests/testcase/Schemas/ViewTest.php,1,352,sql_data_access,SQL/Data Access Region,14,,,an;noexisttable;the;viewtest,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0180,phppgadmin,tests/simpletests/testcase/Tables/DeadlockTest.php,1,399,sql_data_access,SQL/Data Access Region,16,,,SimpleTest,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0181,phppgadmin,tests/selenium/src/01-roles.php,1,145,long_method_or_region,Long or Complex Region,20,run,,,.message,,Extract Method,pending
+phppgadmin-C0182,phppgadmin,tests/selenium/src/04-database.php,1,75,long_method_or_region,Long or Complex Region,13,run,,,.message,,Extract Method,pending
+phppgadmin-C0183,phppgadmin,tests/selenium/src/08-domaine.php,1,120,long_method_or_region,Long or Complex Region,13,run,,,.label;.message;.trail,,Extract Method,pending
+phppgadmin-C0184,phppgadmin,tests/selenium/src/10-table.php,1,198,long_method_or_region,Long or Complex Region,14,run,,,.comment;.label;.message;.navlink;.trail,,Extract Method,pending
+phppgadmin-C0185,phppgadmin,tests/selenium/src/12-admin.php,1,248,long_method_or_region,Long or Complex Region,15,run,,,#control;.crumb;.data,,Extract Method,pending
+phppgadmin-C0186,phppgadmin,tests/selenium/src/30-view.php,1,106,sql_data_access,SQL/Data Access Region,6,run,,student;test_schema,.comment;.label;.message;.navlink;.trail,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0187,phppgadmin,plugins/Report/plugin.php,1,807,mixed_php_html_sql,SQL in Presentation Logic,77,action;back;cancel;confirm;database;db_name;descr;fromsql;paginate;plugin;query;report;report_id;report_name;report_sql;schema;server;sortdir;sortkey;subject,sqlquery,a;session;the,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phppgadmin-C0188,phppgadmin,plugins/Report/plugin.php,216,324,session_dependent_logic,Session-Dependent Logic,10,action;database;paginate;plugin;report;report_id;schema;server;sortdir;sortkey;subject,sqlquery,,,,Extract Guard;Extract Method,pending
+phppgadmin-C0189,phppgadmin,plugins/Report/plugin.php,528,601,session_dependent_logic,Session-Dependent Logic,16,database;db_name;descr;fromsql;paginate;report_name;report_sql;sortdir;sortkey;subject,sqlquery,,,,Extract Guard;Extract Method,pending
+phppgadmin-C0190,phppgadmin,plugins/Report/plugin.php,690,808,long_method_or_region,Long or Complex Region,4,,,,,,Extract Method,pending
+phppgadmin-C0191,phppgadmin,libraries/adodb/adodb-csvlib.inc.php,34,94,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+phppgadmin-C0192,phppgadmin,libraries/adodb/adodb-csvlib.inc.php,94,267,long_method_or_region,Long or Complex Region,36,,,,,,Extract Method,pending
+phppgadmin-C0193,phppgadmin,libraries/adodb/adodb-csvlib.inc.php,267,318,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+phppgadmin-C0194,phppgadmin,libraries/adodb/adodb-datadict.inc.php,54,184,long_method_or_region,Long or Complex Region,29,,,,,,Extract Method,pending
+phppgadmin-C0195,phppgadmin,libraries/adodb/adodb-datadict.inc.php,218,332,long_method_or_region,Long or Complex Region,3,,,,,,Extract Method,pending
+phppgadmin-C0196,phppgadmin,libraries/adodb/adodb-datadict.inc.php,595,807,long_method_or_region,Long or Complex Region,68,,,,,,Extract Method,pending
+phppgadmin-C0197,phppgadmin,libraries/adodb/adodb-datadict.inc.php,939,1032,long_method_or_region,Long or Complex Region,26,,,,,,Extract Method,pending
+phppgadmin-C0198,phppgadmin,libraries/adodb/adodb-error.inc.php,58,91,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+phppgadmin-C0199,phppgadmin,libraries/adodb/adodb-lib.inc.php,1,1197,mixed_php_html_sql,SQL in Presentation Logic,280,,,abc;b;browser;field;if;query;the;with;would,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phppgadmin-C0200,phppgadmin,libraries/adodb/adodb-lib.inc.php,22,52,sql_data_access,SQL/Data Access Region,8,,,abc;b,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0201,phppgadmin,libraries/adodb/adodb-lib.inc.php,52,95,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+phppgadmin-C0202,phppgadmin,libraries/adodb/adodb-lib.inc.php,137,217,sql_data_access,SQL/Data Access Region,25,,,field;if;would,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0203,phppgadmin,libraries/adodb/adodb-lib.inc.php,217,303,long_method_or_region,Long or Complex Region,23,,,,,,Extract Method,pending
+phppgadmin-C0204,phppgadmin,libraries/adodb/adodb-lib.inc.php,303,401,long_method_or_region,Long or Complex Region,23,,,,,,Extract Method,pending
+phppgadmin-C0205,phppgadmin,libraries/adodb/adodb-lib.inc.php,401,496,sql_data_access,SQL/Data Access Region,27,,,with,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0206,phppgadmin,libraries/adodb/adodb-lib.inc.php,550,600,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+phppgadmin-C0207,phppgadmin,libraries/adodb/adodb-lib.inc.php,600,739,long_method_or_region,Long or Complex Region,30,,,,,,Extract Method,pending
+phppgadmin-C0208,phppgadmin,libraries/adodb/adodb-lib.inc.php,759,912,sql_data_access,SQL/Data Access Region,24,,,the,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0209,phppgadmin,libraries/adodb/adodb-lib.inc.php,912,979,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+phppgadmin-C0210,phppgadmin,libraries/adodb/adodb-lib.inc.php,979,1034,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+phppgadmin-C0211,phppgadmin,libraries/adodb/adodb-lib.inc.php,1034,1100,long_method_or_region,Long or Complex Region,23,,,,,,Extract Method,pending
+phppgadmin-C0212,phppgadmin,libraries/adodb/adodb-lib.inc.php,1100,1155,long_method_or_region,Long or Complex Region,23,,,,,,Extract Method,pending
+phppgadmin-C0213,phppgadmin,libraries/adodb/adodb-time.inc.php,157,300,long_method_or_region,Long or Complex Region,20,,,,,,Extract Method,pending
+phppgadmin-C0214,phppgadmin,libraries/adodb/adodb-time.inc.php,300,408,long_method_or_region,Long or Complex Region,19,,,,,,Extract Method,pending
+phppgadmin-C0215,phppgadmin,libraries/adodb/adodb-time.inc.php,436,608,long_method_or_region,Long or Complex Region,37,,,,,,Extract Method,pending
+phppgadmin-C0216,phppgadmin,libraries/adodb/adodb-time.inc.php,800,1001,long_method_or_region,Long or Complex Region,30,,,,,,Extract Method,pending
+phppgadmin-C0217,phppgadmin,libraries/adodb/adodb-time.inc.php,1018,1039,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+phppgadmin-C0218,phppgadmin,libraries/adodb/adodb-time.inc.php,1039,1199,long_method_or_region,Long or Complex Region,68,,,,,,Extract Method,pending
+phppgadmin-C0219,phppgadmin,libraries/adodb/adodb-time.inc.php,1210,1318,long_method_or_region,Long or Complex Region,25,,,,,,Extract Method,pending
+phppgadmin-C0220,phppgadmin,libraries/adodb/adodb-time.inc.php,1324,1429,long_method_or_region,Long or Complex Region,75,,,,,,Extract Method,pending
+phppgadmin-C0221,phppgadmin,libraries/adodb/adodb.inc.php,1,4416,sql_data_access,SQL/Data Access Region,736,,,CacheSelectLimit;Query;Ron;TABLE;a;blobtable;clobtable;http;in;memory;now;select;syntax;table;the;with,.ADODB2_$drivername;.Perf_$drivername;.ado,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0222,phppgadmin,libraries/adodb/adodb.inc.php,146,221,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+phppgadmin-C0223,phppgadmin,libraries/adodb/adodb.inc.php,304,430,sql_data_access,SQL/Data Access Region,21,,,TABLE;in;syntax,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0224,phppgadmin,libraries/adodb/adodb.inc.php,513,544,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+phppgadmin-C0225,phppgadmin,libraries/adodb/adodb.inc.php,575,606,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+phppgadmin-C0226,phppgadmin,libraries/adodb/adodb.inc.php,944,1021,long_method_or_region,Long or Complex Region,29,,,,,,Extract Method,pending
+phppgadmin-C0227,phppgadmin,libraries/adodb/adodb.inc.php,1021,1072,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+phppgadmin-C0228,phppgadmin,libraries/adodb/adodb.inc.php,1257,1322,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+phppgadmin-C0229,phppgadmin,libraries/adodb/adodb.inc.php,1764,1869,long_method_or_region,Long or Complex Region,23,,,,,,Extract Method,pending
+phppgadmin-C0230,phppgadmin,libraries/adodb/adodb.inc.php,1869,1915,sql_data_access,SQL/Data Access Region,10,,,Query;with,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0231,phppgadmin,libraries/adodb/adodb.inc.php,2260,2304,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+phppgadmin-C0232,phppgadmin,libraries/adodb/adodb.inc.php,2322,2381,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+phppgadmin-C0233,phppgadmin,libraries/adodb/adodb.inc.php,2527,2557,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phppgadmin-C0234,phppgadmin,libraries/adodb/adodb.inc.php,2632,2673,sql_data_access,SQL/Data Access Region,8,,,a,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0235,phppgadmin,libraries/adodb/adodb.inc.php,2917,2958,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+phppgadmin-C0236,phppgadmin,libraries/adodb/adodb.inc.php,3090,3193,long_method_or_region,Long or Complex Region,21,,,,,,Extract Method,pending
+phppgadmin-C0237,phppgadmin,libraries/adodb/adodb.inc.php,3366,3416,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+phppgadmin-C0238,phppgadmin,libraries/adodb/adodb.inc.php,3639,3675,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+phppgadmin-C0239,phppgadmin,libraries/adodb/adodb.inc.php,3675,3824,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+phppgadmin-C0240,phppgadmin,libraries/adodb/adodb.inc.php,4093,4127,long_method_or_region,Long or Complex Region,13,,,,.ado,,Extract Method,pending
+phppgadmin-C0241,phppgadmin,libraries/adodb/adodb.inc.php,4141,4308,long_method_or_region,Long or Complex Region,64,,,,,,Extract Method,pending
+phppgadmin-C0242,phppgadmin,libraries/adodb/adodb.inc.php,4308,4340,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+phppgadmin-C0243,phppgadmin,libraries/adodb/toexport.inc.php,63,132,long_method_or_region,Long or Complex Region,20,,,,,,Extract Method,pending
+phppgadmin-C0244,phppgadmin,libraries/adodb/tohtml.inc.php,1,201,mixed_php_html_sql,SQL in Presentation Logic,51,,,several;table,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phppgadmin-C0245,phppgadmin,libraries/adodb/tohtml.inc.php,41,122,long_method_or_region,Long or Complex Region,25,,,,,,Extract Method,pending
+phppgadmin-C0246,phppgadmin,libraries/adodb/tohtml.inc.php,122,169,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+phppgadmin-C0247,phppgadmin,libraries/adodb/tohtml.inc.php,169,201,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phppgadmin-C0248,phppgadmin,libraries/adodb/drivers/adodb-postgres64.inc.php,1,1074,sql_data_access,SQL/Data Access Region,230,,,Alberto;Freek;TABLE;a;adoxyz;http;ideas;pg_attrdef;pg_catalog;pg_class;pg_database;pg_indexes;pg_tables;pg_trigger;pg_views;previous;the;would,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0249,phppgadmin,libraries/adodb/drivers/adodb-postgres64.inc.php,48,120,sql_data_access,SQL/Data Access Region,9,,,Freek;TABLE;pg_attrdef;pg_class;pg_database;pg_tables;pg_views,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0250,phppgadmin,libraries/adodb/drivers/adodb-postgres64.inc.php,263,350,long_method_or_region,Long or Complex Region,23,,,,,,Extract Method,pending
+phppgadmin-C0251,phppgadmin,libraries/adodb/drivers/adodb-postgres64.inc.php,473,587,long_method_or_region,Long or Complex Region,28,,,,,,Extract Method,pending
+phppgadmin-C0252,phppgadmin,libraries/adodb/drivers/adodb-postgres64.inc.php,587,655,sql_data_access,SQL/Data Access Region,9,,,pg_catalog,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0253,phppgadmin,libraries/adodb/drivers/adodb-postgres64.inc.php,655,705,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+phppgadmin-C0254,phppgadmin,libraries/adodb/drivers/adodb-postgres64.inc.php,722,800,sql_data_access,SQL/Data Access Region,23,,,adoxyz,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0255,phppgadmin,libraries/adodb/drivers/adodb-postgres64.inc.php,1010,1075,long_method_or_region,Long or Complex Region,37,,,,,,Extract Method,pending
+phppgadmin-C0256,phppgadmin,libraries/adodb/drivers/adodb-postgres7.inc.php,1,313,sql_data_access,SQL/Data Access Region,55,,,Edward;TABLE;pg_class;pg_constraint;pg_description;pg_namespace;pg_trigger;the,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0257,phppgadmin,libraries/adodb/drivers/adodb-postgres7.inc.php,65,110,sql_data_access,SQL/Data Access Region,4,,,Edward;pg_class;pg_constraint;pg_description;pg_namespace,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0258,phppgadmin,libraries/adodb/drivers/adodb-postgres7.inc.php,143,184,sql_data_access,SQL/Data Access Region,14,,,the,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0259,phppgadmin,classes/database/ADODB_base.php,1,351,sql_data_access,SQL/Data Access Region,49,,,a;database;the,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0260,phppgadmin,classes/database/ADODB_base.php,129,167,sql_data_access,SQL/Data Access Region,12,,,the,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0261,phppgadmin,classes/database/ADODB_base.php,167,211,sql_data_access,SQL/Data Access Region,14,,,a,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0262,phppgadmin,classes/database/ADODB_base.php,211,258,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+phppgadmin-C0263,phppgadmin,classes/database/Connection.php,53,116,long_method_or_region,Long or Complex Region,26,,,,,,Extract Method,pending
+phppgadmin-C0264,phppgadmin,classes/database/Postgres.php,1,8087,mixed_php_html_sql,SQL in Presentation Logic,1068,schema,,PUBLIC;_alterTable;a;account;alterAggregate;another;failed;one;operations;or;parent;pg_catalog;pg_class;pg_database;pg_group;pg_namespace;pg_prepared_xacts;pg_relcheck;pg_roles;pg_stat_all_indexes;pg_stat_all_tables;pg_stat_database;pg_statio_all_indexes;pg_statio_all_tables;pg_type;pg_user;repeating;the;unnest;which,#oid,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+phppgadmin-C0265,phppgadmin,classes/database/Postgres.php,243,311,long_method_or_region,Long or Complex Region,27,,,,,,Extract Method,pending
+phppgadmin-C0266,phppgadmin,classes/database/Postgres.php,311,360,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+phppgadmin-C0267,phppgadmin,classes/database/Postgres.php,360,405,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+phppgadmin-C0268,phppgadmin,classes/database/Postgres.php,445,492,sql_data_access,SQL/Data Access Region,5,,,pg_catalog;the,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0269,phppgadmin,classes/database/Postgres.php,680,828,sql_data_access,SQL/Data Access Region,8,,,pg_catalog,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0270,phppgadmin,classes/database/Postgres.php,1118,1188,sql_data_access,SQL/Data Access Region,4,,,pg_catalog,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0271,phppgadmin,classes/database/Postgres.php,1243,1545,long_method_or_region,Long or Complex Region,61,,,,,,Extract Method,pending
+phppgadmin-C0272,phppgadmin,classes/database/Postgres.php,1545,1620,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+phppgadmin-C0273,phppgadmin,classes/database/Postgres.php,1620,1744,long_method_or_region,Long or Complex Region,36,,,,,,Extract Method,pending
+phppgadmin-C0274,phppgadmin,classes/database/Postgres.php,1884,1928,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phppgadmin-C0275,phppgadmin,classes/database/Postgres.php,2042,2121,long_method_or_region,Long or Complex Region,26,,,,,,Extract Method,pending
+phppgadmin-C0276,phppgadmin,classes/database/Postgres.php,2121,2221,long_method_or_region,Long or Complex Region,27,,,,,,Extract Method,pending
+phppgadmin-C0277,phppgadmin,classes/database/Postgres.php,2373,2435,sql_data_access,SQL/Data Access Region,7,,,pg_class;pg_namespace,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0278,phppgadmin,classes/database/Postgres.php,2435,2495,sql_data_access,SQL/Data Access Region,9,,,pg_catalog,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0279,phppgadmin,classes/database/Postgres.php,2495,2543,sql_data_access,SQL/Data Access Region,7,,,,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0280,phppgadmin,classes/database/Postgres.php,2543,2604,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+phppgadmin-C0281,phppgadmin,classes/database/Postgres.php,2653,2709,sql_data_access,SQL/Data Access Region,2,,,pg_catalog,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0282,phppgadmin,classes/database/Postgres.php,2709,2757,sql_data_access,SQL/Data Access Region,2,,,pg_catalog,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0283,phppgadmin,classes/database/Postgres.php,2934,2979,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+phppgadmin-C0284,phppgadmin,classes/database/Postgres.php,2979,3042,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phppgadmin-C0285,phppgadmin,classes/database/Postgres.php,3506,3552,sql_data_access,SQL/Data Access Region,4,,,pg_catalog,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0286,phppgadmin,classes/database/Postgres.php,3552,3613,sql_data_access,SQL/Data Access Region,6,,,pg_catalog,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0287,phppgadmin,classes/database/Postgres.php,3690,3754,sql_data_access,SQL/Data Access Region,7,,,pg_catalog;pg_class;pg_relcheck;the,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0288,phppgadmin,classes/database/Postgres.php,3807,3891,sql_data_access,SQL/Data Access Region,9,,,pg_catalog,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0289,phppgadmin,classes/database/Postgres.php,3891,3930,sql_data_access,SQL/Data Access Region,3,,,pg_catalog,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0290,phppgadmin,classes/database/Postgres.php,4022,4072,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+phppgadmin-C0291,phppgadmin,classes/database/Postgres.php,4219,4271,sql_data_access,SQL/Data Access Region,4,,,pg_catalog,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0292,phppgadmin,classes/database/Postgres.php,4271,4321,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phppgadmin-C0293,phppgadmin,classes/database/Postgres.php,4321,4401,long_method_or_region,Long or Complex Region,20,,,,,,Extract Method,pending
+phppgadmin-C0294,phppgadmin,classes/database/Postgres.php,4401,4481,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+phppgadmin-C0295,phppgadmin,classes/database/Postgres.php,4517,4560,sql_data_access,SQL/Data Access Region,4,,,pg_catalog,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0296,phppgadmin,classes/database/Postgres.php,4676,4761,long_method_or_region,Long or Complex Region,25,,,,,,Extract Method,pending
+phppgadmin-C0297,phppgadmin,classes/database/Postgres.php,4761,4803,sql_data_access,SQL/Data Access Region,2,,,pg_catalog,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0298,phppgadmin,classes/database/Postgres.php,4973,5071,long_method_or_region,Long or Complex Region,20,,,,,,Extract Method,pending
+phppgadmin-C0299,phppgadmin,classes/database/Postgres.php,5605,5671,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+phppgadmin-C0300,phppgadmin,classes/database/Postgres.php,6040,6098,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+phppgadmin-C0301,phppgadmin,classes/database/Postgres.php,6204,6249,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+phppgadmin-C0302,phppgadmin,classes/database/Postgres.php,6249,6336,long_method_or_region,Long or Complex Region,31,,,,,,Extract Method,pending
+phppgadmin-C0303,phppgadmin,classes/database/Postgres.php,6689,6822,long_method_or_region,Long or Complex Region,25,,,,,,Extract Method,pending
+phppgadmin-C0304,phppgadmin,classes/database/Postgres.php,6822,6895,sql_data_access,SQL/Data Access Region,16,,,pg_catalog,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0305,phppgadmin,classes/database/Postgres.php,6895,7011,long_method_or_region,Long or Complex Region,24,,,,,,Extract Method,pending
+phppgadmin-C0306,phppgadmin,classes/database/Postgres.php,7373,7436,long_method_or_region,Long or Complex Region,19,,,,,,Extract Method,pending
+phppgadmin-C0307,phppgadmin,classes/database/Postgres.php,7464,7710,sql_data_access,SQL/Data Access Region,67,,,which,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0308,phppgadmin,classes/database/Postgres.php,7710,7815,sql_data_access,SQL/Data Access Region,27,schema,,,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0309,phppgadmin,classes/database/Postgres.php,7815,7908,sql_data_access,SQL/Data Access Region,19,,,one;repeating,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0310,phppgadmin,classes/database/Postgres10.php,1,277,sql_data_access,SQL/Data Access Region,14,,,pg_catalog,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0311,phppgadmin,classes/database/Postgres10.php,29,181,sql_data_access,SQL/Data Access Region,9,,,pg_catalog,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0312,phppgadmin,classes/database/Postgres10.php,181,228,sql_data_access,SQL/Data Access Region,4,,,pg_catalog,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0313,phppgadmin,classes/database/Postgres74.php,1,635,sql_data_access,SQL/Data Access Region,59,,,pg_catalog;pg_database;pg_description,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0314,phppgadmin,classes/database/Postgres74.php,71,112,sql_data_access,SQL/Data Access Region,4,,,pg_database;pg_description,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0315,phppgadmin,classes/database/Postgres74.php,112,258,sql_data_access,SQL/Data Access Region,8,,,pg_catalog,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0316,phppgadmin,classes/database/Postgres74.php,301,344,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+phppgadmin-C0317,phppgadmin,classes/database/Postgres74.php,344,399,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+phppgadmin-C0318,phppgadmin,classes/database/Postgres74.php,465,523,sql_data_access,SQL/Data Access Region,5,,,pg_catalog,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0319,phppgadmin,classes/database/Postgres74.php,585,625,sql_data_access,SQL/Data Access Region,2,,,pg_catalog,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0320,phppgadmin,classes/database/Postgres80.php,1,354,sql_data_access,SQL/Data Access Region,30,,,pg_catalog;pg_database;pg_description;pg_shadow,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0321,phppgadmin,classes/database/Postgres80.php,70,112,sql_data_access,SQL/Data Access Region,4,,,pg_catalog;pg_database;pg_description,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0322,phppgadmin,classes/database/Postgres81.php,1,296,sql_data_access,SQL/Data Access Region,28,autovacuum_analyze_scale_factor;autovacuum_analyze_threshold;autovacuum_enabled;autovacuum_vacuum_cost_delay;autovacuum_vacuum_cost_limit;autovacuum_vacuum_scale_factor;autovacuum_vacuum_threshold,,pg_catalog;pg_locks,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0323,phppgadmin,classes/database/Postgres81.php,65,113,sql_data_access,SQL/Data Access Region,7,,,pg_catalog,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0324,phppgadmin,classes/database/Postgres81.php,143,234,sql_data_access,SQL/Data Access Region,11,autovacuum_analyze_scale_factor;autovacuum_analyze_threshold;autovacuum_enabled;autovacuum_vacuum_cost_delay;autovacuum_vacuum_cost_limit;autovacuum_vacuum_scale_factor;autovacuum_vacuum_threshold,,pg_catalog,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0325,phppgadmin,classes/database/Postgres82.php,1,359,sql_data_access,SQL/Data Access Region,31,,,pg_catalog,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0326,phppgadmin,classes/database/Postgres82.php,142,189,sql_data_access,SQL/Data Access Region,6,,,pg_catalog,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0327,phppgadmin,classes/database/Postgres82.php,189,261,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+phppgadmin-C0328,phppgadmin,classes/database/Postgres83.php,1,363,sql_data_access,SQL/Data Access Region,31,autovacuum_analyze_scale_factor;autovacuum_analyze_threshold;autovacuum_enabled;autovacuum_freeze_max_age;autovacuum_vacuum_cost_delay;autovacuum_vacuum_cost_limit;autovacuum_vacuum_scale_factor;autovacuum_vacuum_threshold;vacuum_freeze_min_age,,pg_autovacuum;pg_catalog;pg_class;pg_namespace,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0329,phppgadmin,classes/database/Postgres83.php,67,111,sql_data_access,SQL/Data Access Region,4,,,pg_catalog,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0330,phppgadmin,classes/database/Postgres83.php,111,155,sql_data_access,SQL/Data Access Region,2,,,pg_autovacuum;pg_class;pg_namespace,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0331,phppgadmin,classes/database/Postgres83.php,155,254,sql_data_access,SQL/Data Access Region,13,autovacuum_analyze_scale_factor;autovacuum_analyze_threshold;autovacuum_enabled;autovacuum_freeze_max_age;autovacuum_vacuum_cost_delay;autovacuum_vacuum_cost_limit;autovacuum_vacuum_scale_factor;autovacuum_vacuum_threshold;vacuum_freeze_min_age,,pg_catalog,,,Light Data-Access Isolation;Extract Method,pending
+phppgadmin-C0332,phppgadmin,classes/database/Postgres83.php,284,311,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+phppgadmin-C0333,phppgadmin,classes/database/Postgres84.php,80,227,sql_data_access,SQL/Data Access Region,8,,,pg_catalog,,,Light Data-Access Isolation;Extract Method,pending

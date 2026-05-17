@@ -1,0 +1,89 @@
+{
+  "candidate_id": "phpmyadmin-C0935",
+  "subject_id": "phpmyadmin",
+  "file": "libraries/classes/Controllers/Database/DatabaseStructureController.php",
+  "lines": [
+    1,
+    1115
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 126
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "add_favorite",
+      "error",
+      "favorite_table",
+      "favorite_tables",
+      "message",
+      "mult_btn",
+      "real_row_count",
+      "real_row_count_all",
+      "remove_favorite",
+      "selected_tbl",
+      "sort",
+      "sort_order",
+      "submit_mult",
+      "sync_favorite_tables",
+      "table"
+    ],
+    "session_keys": [
+      "tmpval"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#tableslistcontainer",
+      ".unit"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "add_favorite",
+      "error",
+      "favorite_table",
+      "favorite_tables",
+      "message",
+      "mult_btn",
+      "real_row_count",
+      "real_row_count_all",
+      "remove_favorite",
+      "selected_tbl",
+      "sort",
+      "sort_order",
+      "submit_mult",
+      "sync_favorite_tables",
+      "table"
+    ],
+    "must_preserve_session_keys": [
+      "tmpval"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#tableslistcontainer",
+      ".unit"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

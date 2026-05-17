@@ -1,0 +1,386 @@
+candidate_id,project,file,candidate_type,oracle_status,oracle_ids,coverage_reason
+dokuwiki-C0001,dokuwiki,doku.php,long_method_or_region,stable,dokuwiki_home_http,Candidate file is covered by a passing route-level characterization.
+dokuwiki-C0002,dokuwiki,feed.php,mixed_php_html,stable,dokuwiki_feed_http,Candidate file is covered by a passing route-level characterization.
+dokuwiki-C0003,dokuwiki,feed.php,long_method_or_region,stable,dokuwiki_feed_http,Candidate file is covered by a passing route-level characterization.
+dokuwiki-C0004,dokuwiki,install.php,form_handling,stable,dokuwiki_install_http,Candidate file is covered by a passing route-level characterization.
+dokuwiki-C0005,dokuwiki,install.php,form_handling,stable,dokuwiki_install_http,Candidate file is covered by a passing route-level characterization.
+dokuwiki-C0006,dokuwiki,install.php,mixed_php_html,stable,dokuwiki_install_http,Candidate file is covered by a passing route-level characterization.
+dokuwiki-C0007,dokuwiki,install.php,mixed_php_html,stable,dokuwiki_install_http,Candidate file is covered by a passing route-level characterization.
+dokuwiki-C0008,dokuwiki,install.php,long_method_or_region,stable,dokuwiki_install_http,Candidate file is covered by a passing route-level characterization.
+dokuwiki-C0009,dokuwiki,install.php,long_method_or_region,stable,dokuwiki_install_http,Candidate file is covered by a passing route-level characterization.
+dokuwiki-C0010,dokuwiki,install.php,session_dependent_logic,stable,dokuwiki_install_http,Candidate file is covered by a passing route-level characterization.
+dokuwiki-C0011,dokuwiki,bin/dwpage.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0012,dokuwiki,inc/Ajax.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+dokuwiki-C0013,dokuwiki,inc/Ajax.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0014,dokuwiki,inc/Ajax.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0015,dokuwiki,inc/auth.php,session_dependent_logic,pending,,No passing route-level oracle mapped.
+dokuwiki-C0016,dokuwiki,inc/auth.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0017,dokuwiki,inc/auth.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0018,dokuwiki,inc/auth.php,session_dependent_logic,pending,,No passing route-level oracle mapped.
+dokuwiki-C0019,dokuwiki,inc/auth.php,session_dependent_logic,pending,,No passing route-level oracle mapped.
+dokuwiki-C0020,dokuwiki,inc/auth.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0021,dokuwiki,inc/auth.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0022,dokuwiki,inc/auth.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0023,dokuwiki,inc/auth.php,session_dependent_logic,pending,,No passing route-level oracle mapped.
+dokuwiki-C0024,dokuwiki,inc/auth.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0025,dokuwiki,inc/cache.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0026,dokuwiki,inc/cache.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0027,dokuwiki,inc/cache.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0028,dokuwiki,inc/changelog.php,sql_data_access,pending,,No passing route-level oracle mapped.
+dokuwiki-C0029,dokuwiki,inc/changelog.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0030,dokuwiki,inc/changelog.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0031,dokuwiki,inc/changelog.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0032,dokuwiki,inc/changelog.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0033,dokuwiki,inc/changelog.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0034,dokuwiki,inc/changelog.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0035,dokuwiki,inc/changelog.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0036,dokuwiki,inc/changelog.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0037,dokuwiki,inc/changelog.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0038,dokuwiki,inc/cli.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0039,dokuwiki,inc/cli.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0040,dokuwiki,inc/common.php,mixed_php_html_sql,needs_review,,Rendered-output candidate requires manual route mapping.
+dokuwiki-C0041,dokuwiki,inc/common.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0042,dokuwiki,inc/common.php,session_dependent_logic,pending,,No passing route-level oracle mapped.
+dokuwiki-C0043,dokuwiki,inc/common.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0044,dokuwiki,inc/common.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0045,dokuwiki,inc/common.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0046,dokuwiki,inc/common.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0047,dokuwiki,inc/common.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0048,dokuwiki,inc/common.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0049,dokuwiki,inc/common.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0050,dokuwiki,inc/common.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0051,dokuwiki,inc/common.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0052,dokuwiki,inc/common.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0053,dokuwiki,inc/common.php,session_dependent_logic,pending,,No passing route-level oracle mapped.
+dokuwiki-C0054,dokuwiki,inc/common.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0055,dokuwiki,inc/common.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0056,dokuwiki,inc/confutils.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0057,dokuwiki,inc/DifferenceEngine.php,mixed_php_html,pending,,No passing route-level oracle mapped.
+dokuwiki-C0058,dokuwiki,inc/DifferenceEngine.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0059,dokuwiki,inc/DifferenceEngine.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0060,dokuwiki,inc/DifferenceEngine.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0061,dokuwiki,inc/DifferenceEngine.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0062,dokuwiki,inc/DifferenceEngine.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0063,dokuwiki,inc/farm.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0064,dokuwiki,inc/farm.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0065,dokuwiki,inc/fetch.functions.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0066,dokuwiki,inc/fetch.functions.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0067,dokuwiki,inc/form.php,form_handling,needs_review,,Rendered-output candidate requires manual route mapping.
+dokuwiki-C0068,dokuwiki,inc/form.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0069,dokuwiki,inc/form.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0070,dokuwiki,inc/fulltext.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0071,dokuwiki,inc/fulltext.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0072,dokuwiki,inc/fulltext.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0073,dokuwiki,inc/fulltext.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0074,dokuwiki,inc/html.php,mixed_php_html,stable,dokuwiki_home_http,Candidate file is covered by a passing route-level characterization.
+dokuwiki-C0075,dokuwiki,inc/html.php,long_method_or_region,stable,dokuwiki_home_http,Candidate file is covered by a passing route-level characterization.
+dokuwiki-C0076,dokuwiki,inc/html.php,long_method_or_region,stable,dokuwiki_home_http,Candidate file is covered by a passing route-level characterization.
+dokuwiki-C0077,dokuwiki,inc/html.php,long_method_or_region,stable,dokuwiki_home_http,Candidate file is covered by a passing route-level characterization.
+dokuwiki-C0078,dokuwiki,inc/html.php,long_method_or_region,stable,dokuwiki_home_http,Candidate file is covered by a passing route-level characterization.
+dokuwiki-C0079,dokuwiki,inc/html.php,long_method_or_region,stable,dokuwiki_home_http,Candidate file is covered by a passing route-level characterization.
+dokuwiki-C0080,dokuwiki,inc/html.php,mixed_php_html,stable,dokuwiki_home_http,Candidate file is covered by a passing route-level characterization.
+dokuwiki-C0081,dokuwiki,inc/html.php,long_method_or_region,stable,dokuwiki_home_http,Candidate file is covered by a passing route-level characterization.
+dokuwiki-C0082,dokuwiki,inc/html.php,long_method_or_region,stable,dokuwiki_home_http,Candidate file is covered by a passing route-level characterization.
+dokuwiki-C0083,dokuwiki,inc/html.php,mixed_php_html,stable,dokuwiki_home_http,Candidate file is covered by a passing route-level characterization.
+dokuwiki-C0084,dokuwiki,inc/html.php,session_dependent_logic,stable,dokuwiki_home_http,Candidate file is covered by a passing route-level characterization.
+dokuwiki-C0085,dokuwiki,inc/html.php,long_method_or_region,stable,dokuwiki_home_http,Candidate file is covered by a passing route-level characterization.
+dokuwiki-C0086,dokuwiki,inc/HTTPClient.php,sql_data_access,pending,,No passing route-level oracle mapped.
+dokuwiki-C0087,dokuwiki,inc/HTTPClient.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0088,dokuwiki,inc/HTTPClient.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0089,dokuwiki,inc/HTTPClient.php,sql_data_access,pending,,No passing route-level oracle mapped.
+dokuwiki-C0090,dokuwiki,inc/HTTPClient.php,sql_data_access,pending,,No passing route-level oracle mapped.
+dokuwiki-C0091,dokuwiki,inc/httputils.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0092,dokuwiki,inc/indexer.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0093,dokuwiki,inc/indexer.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0094,dokuwiki,inc/indexer.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0095,dokuwiki,inc/indexer.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0096,dokuwiki,inc/indexer.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0097,dokuwiki,inc/indexer.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0098,dokuwiki,inc/indexer.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0099,dokuwiki,inc/indexer.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0100,dokuwiki,inc/indexer.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0101,dokuwiki,inc/indexer.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0102,dokuwiki,inc/indexer.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0103,dokuwiki,inc/indexer.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0104,dokuwiki,inc/infoutils.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+dokuwiki-C0105,dokuwiki,inc/infoutils.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0106,dokuwiki,inc/init.php,form_handling,pending,,No passing route-level oracle mapped.
+dokuwiki-C0107,dokuwiki,inc/init.php,session_dependent_logic,pending,,No passing route-level oracle mapped.
+dokuwiki-C0108,dokuwiki,inc/init.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0109,dokuwiki,inc/init.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0110,dokuwiki,inc/Input.class.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0111,dokuwiki,inc/io.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0112,dokuwiki,inc/io.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0113,dokuwiki,inc/io.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0114,dokuwiki,inc/io.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0115,dokuwiki,inc/io.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0116,dokuwiki,inc/io.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0117,dokuwiki,inc/io.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0118,dokuwiki,inc/IXR_Library.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0119,dokuwiki,inc/IXR_Library.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0120,dokuwiki,inc/IXR_Library.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0121,dokuwiki,inc/IXR_Library.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0122,dokuwiki,inc/IXR_Library.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0123,dokuwiki,inc/IXR_Library.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0124,dokuwiki,inc/IXR_Library.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0125,dokuwiki,inc/JpegMeta.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0126,dokuwiki,inc/JpegMeta.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0127,dokuwiki,inc/JpegMeta.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0128,dokuwiki,inc/JpegMeta.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0129,dokuwiki,inc/JpegMeta.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0130,dokuwiki,inc/JpegMeta.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0131,dokuwiki,inc/JpegMeta.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0132,dokuwiki,inc/JpegMeta.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0133,dokuwiki,inc/JpegMeta.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0134,dokuwiki,inc/JpegMeta.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0135,dokuwiki,inc/JpegMeta.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0136,dokuwiki,inc/JpegMeta.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0137,dokuwiki,inc/JpegMeta.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0138,dokuwiki,inc/JpegMeta.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0139,dokuwiki,inc/JpegMeta.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0140,dokuwiki,inc/JpegMeta.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0141,dokuwiki,inc/JpegMeta.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0142,dokuwiki,inc/JpegMeta.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0143,dokuwiki,inc/JpegMeta.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0144,dokuwiki,inc/JpegMeta.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0145,dokuwiki,inc/JSON.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0146,dokuwiki,inc/JSON.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0147,dokuwiki,inc/load.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0148,dokuwiki,inc/mail.php,sql_data_access,pending,,No passing route-level oracle mapped.
+dokuwiki-C0149,dokuwiki,inc/mail.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0150,dokuwiki,inc/mail.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0151,dokuwiki,inc/mail.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0152,dokuwiki,inc/Mailer.class.php,mixed_php_html,pending,,No passing route-level oracle mapped.
+dokuwiki-C0153,dokuwiki,inc/Mailer.class.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0154,dokuwiki,inc/Mailer.class.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0155,dokuwiki,inc/Mailer.class.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0156,dokuwiki,inc/Mailer.class.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0157,dokuwiki,inc/Manifest.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0158,dokuwiki,inc/media.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+dokuwiki-C0159,dokuwiki,inc/media.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0160,dokuwiki,inc/media.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0161,dokuwiki,inc/media.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0162,dokuwiki,inc/media.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0163,dokuwiki,inc/media.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0164,dokuwiki,inc/media.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0165,dokuwiki,inc/media.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+dokuwiki-C0166,dokuwiki,inc/media.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0167,dokuwiki,inc/media.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0168,dokuwiki,inc/media.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0169,dokuwiki,inc/media.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0170,dokuwiki,inc/media.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0171,dokuwiki,inc/media.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0172,dokuwiki,inc/pageutils.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0173,dokuwiki,inc/pageutils.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0174,dokuwiki,inc/pageutils.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0175,dokuwiki,inc/pageutils.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0176,dokuwiki,inc/pageutils.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0177,dokuwiki,inc/pageutils.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0178,dokuwiki,inc/parserutils.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0179,dokuwiki,inc/parserutils.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0180,dokuwiki,inc/parserutils.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0181,dokuwiki,inc/parserutils.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0182,dokuwiki,inc/PassHash.class.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0183,dokuwiki,inc/PassHash.class.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0184,dokuwiki,inc/PassHash.class.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0185,dokuwiki,inc/plugincontroller.class.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0186,dokuwiki,inc/plugincontroller.class.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0187,dokuwiki,inc/plugincontroller.class.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0188,dokuwiki,inc/PluginTrait.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+dokuwiki-C0189,dokuwiki,inc/RemoteAPICore.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0190,dokuwiki,inc/RemoteAPICore.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0191,dokuwiki,inc/RemoteAPICore.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0192,dokuwiki,inc/search.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0193,dokuwiki,inc/search.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0194,dokuwiki,inc/search.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0195,dokuwiki,inc/search.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0196,dokuwiki,inc/Sitemapper.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0197,dokuwiki,inc/StyleUtils.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0198,dokuwiki,inc/subscription.php,mixed_php_html,pending,,No passing route-level oracle mapped.
+dokuwiki-C0199,dokuwiki,inc/subscription.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0200,dokuwiki,inc/subscription.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0201,dokuwiki,inc/subscription.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0202,dokuwiki,inc/template.php,mixed_php_html_sql,stable,dokuwiki_home_http,Candidate file is covered by a passing route-level characterization.
+dokuwiki-C0203,dokuwiki,inc/template.php,long_method_or_region,stable,dokuwiki_home_http,Candidate file is covered by a passing route-level characterization.
+dokuwiki-C0204,dokuwiki,inc/template.php,long_method_or_region,stable,dokuwiki_home_http,Candidate file is covered by a passing route-level characterization.
+dokuwiki-C0205,dokuwiki,inc/template.php,long_method_or_region,stable,dokuwiki_home_http,Candidate file is covered by a passing route-level characterization.
+dokuwiki-C0206,dokuwiki,inc/template.php,long_method_or_region,stable,dokuwiki_home_http,Candidate file is covered by a passing route-level characterization.
+dokuwiki-C0207,dokuwiki,inc/template.php,long_method_or_region,stable,dokuwiki_home_http,Candidate file is covered by a passing route-level characterization.
+dokuwiki-C0208,dokuwiki,inc/template.php,long_method_or_region,stable,dokuwiki_home_http,Candidate file is covered by a passing route-level characterization.
+dokuwiki-C0209,dokuwiki,inc/template.php,long_method_or_region,stable,dokuwiki_home_http,Candidate file is covered by a passing route-level characterization.
+dokuwiki-C0210,dokuwiki,inc/template.php,long_method_or_region,stable,dokuwiki_home_http,Candidate file is covered by a passing route-level characterization.
+dokuwiki-C0211,dokuwiki,inc/template.php,long_method_or_region,stable,dokuwiki_home_http,Candidate file is covered by a passing route-level characterization.
+dokuwiki-C0212,dokuwiki,inc/template.php,long_method_or_region,stable,dokuwiki_home_http,Candidate file is covered by a passing route-level characterization.
+dokuwiki-C0213,dokuwiki,inc/template.php,long_method_or_region,stable,dokuwiki_home_http,Candidate file is covered by a passing route-level characterization.
+dokuwiki-C0214,dokuwiki,inc/template.php,long_method_or_region,stable,dokuwiki_home_http,Candidate file is covered by a passing route-level characterization.
+dokuwiki-C0215,dokuwiki,inc/template.php,long_method_or_region,stable,dokuwiki_home_http,Candidate file is covered by a passing route-level characterization.
+dokuwiki-C0216,dokuwiki,inc/template.php,long_method_or_region,stable,dokuwiki_home_http,Candidate file is covered by a passing route-level characterization.
+dokuwiki-C0217,dokuwiki,inc/toolbar.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0218,dokuwiki,inc/utf8.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0219,dokuwiki,inc/utf8.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0220,dokuwiki,inc/utf8.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0221,dokuwiki,inc/utf8.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0222,dokuwiki,inc/utf8.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0223,dokuwiki,lib/exe/css.php,long_method_or_region,stable,dokuwiki_css_http,Candidate file is covered by a passing route-level characterization.
+dokuwiki-C0224,dokuwiki,lib/exe/css.php,long_method_or_region,stable,dokuwiki_css_http,Candidate file is covered by a passing route-level characterization.
+dokuwiki-C0225,dokuwiki,lib/exe/indexer.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0226,dokuwiki,lib/exe/js.php,long_method_or_region,stable,dokuwiki_js_http,Candidate file is covered by a passing route-level characterization.
+dokuwiki-C0227,dokuwiki,lib/exe/js.php,long_method_or_region,stable,dokuwiki_js_http,Candidate file is covered by a passing route-level characterization.
+dokuwiki-C0228,dokuwiki,lib/exe/js.php,long_method_or_region,stable,dokuwiki_js_http,Candidate file is covered by a passing route-level characterization.
+dokuwiki-C0229,dokuwiki,lib/exe/js.php,long_method_or_region,stable,dokuwiki_js_http,Candidate file is covered by a passing route-level characterization.
+dokuwiki-C0230,dokuwiki,lib/plugins/auth.php,session_dependent_logic,pending,,No passing route-level oracle mapped.
+dokuwiki-C0231,dokuwiki,lib/plugins/auth.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0232,dokuwiki,lib/tpl/dokuwiki/detail.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+dokuwiki-C0233,dokuwiki,lib/tpl/dokuwiki/main.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+dokuwiki-C0234,dokuwiki,lib/tpl/dokuwiki/mediamanager.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+dokuwiki-C0235,dokuwiki,lib/tpl/dokuwiki/tpl_footer.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+dokuwiki-C0236,dokuwiki,lib/tpl/dokuwiki/tpl_header.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+dokuwiki-C0237,dokuwiki,lib/plugins/acl/admin.php,mixed_php_html_sql,needs_review,,Rendered-output candidate requires manual route mapping.
+dokuwiki-C0238,dokuwiki,lib/plugins/acl/admin.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0239,dokuwiki,lib/plugins/acl/admin.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0240,dokuwiki,lib/plugins/acl/admin.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0241,dokuwiki,lib/plugins/acl/admin.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0242,dokuwiki,lib/plugins/authad/auth.php,mixed_php_html,pending,,No passing route-level oracle mapped.
+dokuwiki-C0243,dokuwiki,lib/plugins/authad/auth.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0244,dokuwiki,lib/plugins/authad/auth.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0245,dokuwiki,lib/plugins/authad/auth.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0246,dokuwiki,lib/plugins/authad/auth.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0247,dokuwiki,lib/plugins/authldap/auth.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0248,dokuwiki,lib/plugins/authldap/auth.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0249,dokuwiki,lib/plugins/authldap/auth.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0250,dokuwiki,lib/plugins/authldap/auth.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0251,dokuwiki,lib/plugins/authldap/auth.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0252,dokuwiki,lib/plugins/authmysql/auth.php,sql_data_access,pending,,No passing route-level oracle mapped.
+dokuwiki-C0253,dokuwiki,lib/plugins/authmysql/auth.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0254,dokuwiki,lib/plugins/authmysql/auth.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0255,dokuwiki,lib/plugins/authmysql/auth.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0256,dokuwiki,lib/plugins/authmysql/auth.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0257,dokuwiki,lib/plugins/authpdo/auth.php,sql_data_access,pending,,No passing route-level oracle mapped.
+dokuwiki-C0258,dokuwiki,lib/plugins/authpdo/auth.php,sql_data_access,pending,,No passing route-level oracle mapped.
+dokuwiki-C0259,dokuwiki,lib/plugins/authpdo/auth.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0260,dokuwiki,lib/plugins/authpdo/auth.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0261,dokuwiki,lib/plugins/authpdo/auth.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0262,dokuwiki,lib/plugins/authpdo/auth.php,sql_data_access,pending,,No passing route-level oracle mapped.
+dokuwiki-C0263,dokuwiki,lib/plugins/authpgsql/auth.php,sql_data_access,pending,,No passing route-level oracle mapped.
+dokuwiki-C0264,dokuwiki,lib/plugins/authpgsql/auth.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0265,dokuwiki,lib/plugins/config/admin.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+dokuwiki-C0266,dokuwiki,lib/plugins/config/admin.php,session_dependent_logic,pending,,No passing route-level oracle mapped.
+dokuwiki-C0267,dokuwiki,lib/plugins/config/admin.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0268,dokuwiki,lib/plugins/config/admin.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0269,dokuwiki,lib/plugins/config/admin.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0270,dokuwiki,lib/plugins/extension/admin.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+dokuwiki-C0271,dokuwiki,lib/plugins/extension/admin.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0272,dokuwiki,lib/plugins/info/syntax.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+dokuwiki-C0273,dokuwiki,lib/plugins/info/syntax.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0274,dokuwiki,lib/plugins/popularity/admin.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+dokuwiki-C0275,dokuwiki,lib/plugins/popularity/helper.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0276,dokuwiki,lib/plugins/revert/admin.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+dokuwiki-C0277,dokuwiki,lib/plugins/styling/admin.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+dokuwiki-C0278,dokuwiki,lib/plugins/styling/popup.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+dokuwiki-C0279,dokuwiki,lib/plugins/usermanager/admin.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+dokuwiki-C0280,dokuwiki,lib/plugins/usermanager/admin.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0281,dokuwiki,lib/plugins/usermanager/admin.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0282,dokuwiki,lib/plugins/usermanager/admin.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0283,dokuwiki,lib/plugins/usermanager/admin.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0284,dokuwiki,lib/plugins/usermanager/admin.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0285,dokuwiki,lib/plugins/usermanager/admin.php,session_dependent_logic,pending,,No passing route-level oracle mapped.
+dokuwiki-C0286,dokuwiki,lib/plugins/extension/helper/extension.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0287,dokuwiki,lib/plugins/extension/helper/extension.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0288,dokuwiki,lib/plugins/extension/helper/extension.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0289,dokuwiki,lib/plugins/extension/helper/extension.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0290,dokuwiki,lib/plugins/extension/helper/gui.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+dokuwiki-C0291,dokuwiki,lib/plugins/extension/helper/list.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+dokuwiki-C0292,dokuwiki,lib/plugins/extension/helper/list.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0293,dokuwiki,lib/plugins/extension/helper/list.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0294,dokuwiki,lib/plugins/config/settings/config.class.php,mixed_php_html_sql,needs_review,,Rendered-output candidate requires manual route mapping.
+dokuwiki-C0295,dokuwiki,lib/plugins/config/settings/config.class.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0296,dokuwiki,lib/plugins/config/settings/config.class.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0297,dokuwiki,lib/plugins/config/settings/config.class.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0298,dokuwiki,lib/plugins/config/settings/config.class.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0299,dokuwiki,lib/plugins/config/settings/config.class.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0300,dokuwiki,lib/plugins/config/settings/config.class.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0301,dokuwiki,lib/plugins/config/settings/config.class.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0302,dokuwiki,lib/plugins/config/settings/config.metadata.php,sql_data_access,pending,,No passing route-level oracle mapped.
+dokuwiki-C0303,dokuwiki,lib/plugins/config/settings/extra.class.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0304,dokuwiki,lib/plugins/config/lang/cy/lang.php,mixed_php_html,pending,,No passing route-level oracle mapped.
+dokuwiki-C0305,dokuwiki,lib/plugins/config/lang/da/lang.php,mixed_php_html,pending,,No passing route-level oracle mapped.
+dokuwiki-C0306,dokuwiki,lib/plugins/config/lang/de/lang.php,mixed_php_html,pending,,No passing route-level oracle mapped.
+dokuwiki-C0307,dokuwiki,lib/plugins/config/lang/de-informal/lang.php,mixed_php_html,pending,,No passing route-level oracle mapped.
+dokuwiki-C0308,dokuwiki,lib/plugins/config/lang/en/lang.php,mixed_php_html,pending,,No passing route-level oracle mapped.
+dokuwiki-C0309,dokuwiki,lib/plugins/config/lang/es/lang.php,mixed_php_html,pending,,No passing route-level oracle mapped.
+dokuwiki-C0310,dokuwiki,lib/plugins/config/lang/hr/lang.php,mixed_php_html,pending,,No passing route-level oracle mapped.
+dokuwiki-C0311,dokuwiki,lib/plugins/config/lang/hu/lang.php,mixed_php_html,pending,,No passing route-level oracle mapped.
+dokuwiki-C0312,dokuwiki,lib/plugins/config/lang/it/lang.php,mixed_php_html,pending,,No passing route-level oracle mapped.
+dokuwiki-C0313,dokuwiki,lib/plugins/config/lang/ko/lang.php,mixed_php_html,pending,,No passing route-level oracle mapped.
+dokuwiki-C0314,dokuwiki,lib/plugins/config/lang/no/lang.php,mixed_php_html,pending,,No passing route-level oracle mapped.
+dokuwiki-C0315,dokuwiki,lib/plugins/config/lang/pt/lang.php,mixed_php_html,pending,,No passing route-level oracle mapped.
+dokuwiki-C0316,dokuwiki,lib/plugins/config/lang/pt-br/lang.php,mixed_php_html,pending,,No passing route-level oracle mapped.
+dokuwiki-C0317,dokuwiki,lib/plugins/config/lang/sk/lang.php,mixed_php_html,pending,,No passing route-level oracle mapped.
+dokuwiki-C0318,dokuwiki,lib/plugins/authpgsql/lang/en/settings.php,sql_data_access,pending,,No passing route-level oracle mapped.
+dokuwiki-C0319,dokuwiki,lib/plugins/authmysql/lang/en/settings.php,sql_data_access,pending,,No passing route-level oracle mapped.
+dokuwiki-C0320,dokuwiki,lib/plugins/authad/adLDAP/adLDAP.php,sql_data_access,pending,,No passing route-level oracle mapped.
+dokuwiki-C0321,dokuwiki,lib/plugins/authad/adLDAP/adLDAP.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0322,dokuwiki,lib/plugins/authad/adLDAP/adLDAP.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0323,dokuwiki,lib/plugins/authad/adLDAP/adLDAP.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0324,dokuwiki,lib/plugins/authad/adLDAP/adLDAP.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0325,dokuwiki,lib/plugins/authad/adLDAP/classes/adLDAPExchange.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0326,dokuwiki,lib/plugins/authad/adLDAP/classes/adLDAPExchange.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0327,dokuwiki,lib/plugins/authad/adLDAP/classes/adLDAPFolders.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0328,dokuwiki,lib/plugins/authad/adLDAP/classes/adLDAPGroups.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0329,dokuwiki,lib/plugins/authad/adLDAP/classes/adLDAPGroups.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0330,dokuwiki,lib/plugins/authad/adLDAP/classes/adLDAPUsers.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0331,dokuwiki,lib/plugins/authad/adLDAP/classes/adLDAPUsers.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0332,dokuwiki,lib/plugins/authad/adLDAP/classes/adLDAPUsers.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0333,dokuwiki,lib/plugins/authad/adLDAP/classes/adLDAPUsers.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0334,dokuwiki,lib/plugins/authad/adLDAP/classes/adLDAPUsers.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0335,dokuwiki,lib/plugins/authad/adLDAP/classes/adLDAPUsers.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0336,dokuwiki,lib/images/fileicons/index.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+dokuwiki-C0337,dokuwiki,inc/Action/Edit.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0338,dokuwiki,inc/Action/Resendpwd.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0339,dokuwiki,inc/Action/Search.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0340,dokuwiki,inc/Action/Subscribe.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0341,dokuwiki,inc/Action/Subscribe.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0342,dokuwiki,inc/Form/Form.php,form_handling,pending,,No passing route-level oracle mapped.
+dokuwiki-C0343,dokuwiki,inc/Form/Form.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0344,dokuwiki,inc/Form/InputElement.php,mixed_php_html,pending,,No passing route-level oracle mapped.
+dokuwiki-C0345,dokuwiki,inc/Form/LegacyForm.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0346,dokuwiki,inc/parser/handler.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0347,dokuwiki,inc/parser/handler.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0348,dokuwiki,inc/parser/handler.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0349,dokuwiki,inc/parser/handler.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0350,dokuwiki,inc/parser/handler.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0351,dokuwiki,inc/parser/handler.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0352,dokuwiki,inc/parser/handler.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0353,dokuwiki,inc/parser/handler.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0354,dokuwiki,inc/parser/lexer.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0355,dokuwiki,inc/parser/parser.php,mixed_php_html,pending,,No passing route-level oracle mapped.
+dokuwiki-C0356,dokuwiki,inc/parser/parser.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0357,dokuwiki,inc/parser/parser.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0358,dokuwiki,inc/parser/parser.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0359,dokuwiki,inc/parser/renderer.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0360,dokuwiki,inc/parser/xhtml.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+dokuwiki-C0361,dokuwiki,inc/parser/xhtml.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0362,dokuwiki,inc/parser/xhtml.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0363,dokuwiki,inc/parser/xhtml.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0364,dokuwiki,inc/parser/xhtml.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0365,dokuwiki,inc/parser/xhtml.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0366,dokuwiki,inc/parser/xhtml.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0367,dokuwiki,inc/parser/xhtml.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0368,dokuwiki,inc/parser/xhtml.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0369,dokuwiki,inc/parser/xhtml.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0370,dokuwiki,inc/parser/xhtmlsummary.php,mixed_php_html,pending,,No passing route-level oracle mapped.
+dokuwiki-C0371,dokuwiki,inc/Ui/Admin.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+dokuwiki-C0372,dokuwiki,inc/Ui/Search.php,mixed_php_html,needs_review,,Rendered-output candidate requires manual route mapping.
+dokuwiki-C0373,dokuwiki,inc/Ui/Search.php,long_method_or_region,pending,,No passing route-level oracle mapped.
+dokuwiki-C0374,dokuwiki,inc/Ui/SearchState.php,mixed_php_html,pending,,No passing route-level oracle mapped.
+dokuwiki-C0375,dokuwiki,inc/Menu/Item/AbstractItem.php,mixed_php_html,pending,,No passing route-level oracle mapped.
+dokuwiki-C0376,dokuwiki,inc/lang/da/lang.php,mixed_php_html,pending,,No passing route-level oracle mapped.
+dokuwiki-C0377,dokuwiki,inc/lang/en/lang.php,mixed_php_html_sql,pending,,No passing route-level oracle mapped.
+dokuwiki-C0378,dokuwiki,inc/lang/et/lang.php,mixed_php_html,pending,,No passing route-level oracle mapped.
+dokuwiki-C0379,dokuwiki,inc/lang/fr/lang.php,mixed_php_html,pending,,No passing route-level oracle mapped.
+dokuwiki-C0380,dokuwiki,inc/lang/hu/lang.php,mixed_php_html,pending,,No passing route-level oracle mapped.
+dokuwiki-C0381,dokuwiki,inc/lang/mk/lang.php,mixed_php_html,pending,,No passing route-level oracle mapped.
+dokuwiki-C0382,dokuwiki,inc/lang/mr/lang.php,mixed_php_html,pending,,No passing route-level oracle mapped.
+dokuwiki-C0383,dokuwiki,inc/lang/no/lang.php,mixed_php_html,pending,,No passing route-level oracle mapped.
+dokuwiki-C0384,dokuwiki,inc/lang/pt-br/lang.php,mixed_php_html,pending,,No passing route-level oracle mapped.
+dokuwiki-C0385,dokuwiki,inc/lang/sq/lang.php,mixed_php_html,pending,,No passing route-level oracle mapped.

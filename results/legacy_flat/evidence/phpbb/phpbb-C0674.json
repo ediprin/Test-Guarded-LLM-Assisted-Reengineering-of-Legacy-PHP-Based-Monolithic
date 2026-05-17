@@ -1,0 +1,62 @@
+{
+  "candidate_id": "phpbb-C0674",
+  "subject_id": "phpbb",
+  "file": "phpBB/phpbb/db/extractor/oracle_extractor.php",
+  "lines": [
+    1,
+    263
+  ],
+  "candidate_type": "sql_data_access",
+  "issues": [
+    {
+      "type": "SQL/Data Access Region",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 27
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [],
+    "database_tables": [
+      "ALL_TAB_COLS",
+      "USER_CONS_COLUMNS",
+      "USER_DEPENDENCIES",
+      "USER_INDEXES",
+      "USER_TRIGGERS",
+      "a",
+      "current"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [
+      "ALL_TAB_COLS",
+      "USER_CONS_COLUMNS",
+      "USER_DEPENDENCIES",
+      "USER_INDEXES",
+      "USER_TRIGGERS",
+      "a",
+      "current"
+    ],
+    "must_preserve_dom_selectors": [],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

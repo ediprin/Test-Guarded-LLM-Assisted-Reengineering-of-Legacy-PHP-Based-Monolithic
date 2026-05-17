@@ -1,0 +1,2 @@
+project,url,status,content_sha256,assertions_passed,assertions_failed,message
+dokuwiki,http://localhost:8102/install.php,PASS,6aa7160caaab19d5e0cd19c04dd578d24712a188dc1c976451e047221da96325,4,0,

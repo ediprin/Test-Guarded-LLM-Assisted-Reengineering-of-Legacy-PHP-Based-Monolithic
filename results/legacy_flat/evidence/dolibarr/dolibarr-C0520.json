@@ -1,0 +1,111 @@
+{
+  "candidate_id": "dolibarr-C0520",
+  "subject_id": "dolibarr",
+  "file": "htdocs/user/card.php",
+  "lines": [
+    1,
+    2780
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 401
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "lastname",
+      "login",
+      "superadmin",
+      "users"
+    ],
+    "session_keys": [
+      "dol_login",
+      "newtoken"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "# . $object->id;\n\t\t\t$genallowed = $user->rights->user->user->lire;\n\t\t\t$delallowed = $user->rights->user->user->creer;\n\n\t\t\tprint $formfile->showdocuments(",
+      "#.$group->id.",
+      "#.$id);\n\t\t\t\texit;\n\t\t\t}\n\t\t\telse\n\t\t\t{\n\t\t\t\t$langs->load(",
+      "#.$id);\n\t\t\t\texit;\n\t\t\t}\n\t\t\telse\n\t\t\t{\n\t\t\t\tsetEventMessages($object->error, $object->errors, ",
+      "#.$id);\n\t\t\t\texit;\n\t\t\t}\n\t\t}\n\t}\n\n\tif ($action == ",
+      "#.$id);\n\t\t\texit;\n\t\t}\n\t}\n\tif ($action == ",
+      "#.$id.",
+      "#.$object->contactid.",
+      "#.$object->id.",
+      "#address",
+      "#api_key",
+      "#generate_api_key",
+      "#lastname",
+      ".border",
+      ".butAction",
+      ".butActionDelete",
+      ".butActionRefused",
+      ".button",
+      ".center",
+      ".centpercent"
+    ],
+    "forms": [
+      "add_user_ldap",
+      "createuser"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "lastname",
+      "login",
+      "superadmin",
+      "users"
+    ],
+    "must_preserve_session_keys": [
+      "dol_login",
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "# . $object->id;\n\t\t\t$genallowed = $user->rights->user->user->lire;\n\t\t\t$delallowed = $user->rights->user->user->creer;\n\n\t\t\tprint $formfile->showdocuments(",
+      "#.$group->id.",
+      "#.$id);\n\t\t\t\texit;\n\t\t\t}\n\t\t\telse\n\t\t\t{\n\t\t\t\t$langs->load(",
+      "#.$id);\n\t\t\t\texit;\n\t\t\t}\n\t\t\telse\n\t\t\t{\n\t\t\t\tsetEventMessages($object->error, $object->errors, ",
+      "#.$id);\n\t\t\t\texit;\n\t\t\t}\n\t\t}\n\t}\n\n\tif ($action == ",
+      "#.$id);\n\t\t\texit;\n\t\t}\n\t}\n\tif ($action == ",
+      "#.$id.",
+      "#.$object->contactid.",
+      "#.$object->id.",
+      "#address",
+      "#api_key",
+      "#generate_api_key",
+      "#lastname",
+      ".border",
+      ".butAction",
+      ".butActionDelete",
+      ".butActionRefused",
+      ".button",
+      ".center",
+      ".centpercent"
+    ],
+    "must_preserve_forms": [
+      "add_user_ldap",
+      "createuser"
+    ]
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

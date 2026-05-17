@@ -1,0 +1,4 @@
+treatment,eligible_candidates,treated_subjects,model_executed,patch_generated,skipped_prompt_too_large,pending_model_execution,not_applicable,scope_note
+T1-llm-only,51,dokuwiki;kanboard,21,21,1,29,0,Executed-subset pilot; remaining prompts pending because of API rate limits and prompt-size screening
+T2-rule-static-only,51,dokuwiki;kanboard,0,0,0,0,51,No safe rule-only transformation was available for the locked candidates
+T3-evidence-llm,51,dokuwiki;kanboard,19,19,1,31,0,Executed-subset pilot; remaining prompts pending because of API rate limits and prompt-size screening

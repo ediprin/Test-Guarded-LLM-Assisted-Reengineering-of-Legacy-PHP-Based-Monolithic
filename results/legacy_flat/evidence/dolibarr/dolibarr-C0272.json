@@ -1,0 +1,87 @@
+{
+  "candidate_id": "dolibarr-C0272",
+  "subject_id": "dolibarr",
+  "file": "htdocs/core/get_info.php",
+  "lines": [
+    1,
+    208
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 43
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [
+      "dol_authmode"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      ".atoplogin",
+      ".fa",
+      ".fa-bug",
+      ".fa-print",
+      ".fa-question-circle",
+      ".fa-sign-out",
+      ".help",
+      ".inline-block",
+      ".login",
+      ".login_block",
+      ".login_block_elem",
+      ".login_block_elem_name",
+      ".login_block_getinfo",
+      ".login_block_other",
+      ".login_block_user",
+      ".nowrap",
+      ".printer"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [
+      "dol_authmode"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      ".atoplogin",
+      ".fa",
+      ".fa-bug",
+      ".fa-print",
+      ".fa-question-circle",
+      ".fa-sign-out",
+      ".help",
+      ".inline-block",
+      ".login",
+      ".login_block",
+      ".login_block_elem",
+      ".login_block_elem_name",
+      ".login_block_getinfo",
+      ".login_block_other",
+      ".login_block_user",
+      ".nowrap",
+      ".printer"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

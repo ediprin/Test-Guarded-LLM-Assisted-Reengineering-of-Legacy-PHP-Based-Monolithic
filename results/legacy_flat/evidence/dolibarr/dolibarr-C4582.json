@@ -1,0 +1,94 @@
+{
+  "candidate_id": "dolibarr-C4582",
+  "subject_id": "dolibarr",
+  "file": "htdocs/comm/action/card.php",
+  "lines": [
+    1170,
+    1731
+  ],
+  "candidate_type": "session_dependent_logic",
+  "issues": [
+    {
+      "type": "Session-Dependent Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 98
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [
+      "assignedtouser",
+      "newtoken"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "# . $object->fk_project . ",
+      "# . $object->id . ",
+      "# . $object->id, $object->socid, $object->fk_project, ",
+      "# . GETPOST(",
+      "#.$object->id.",
+      "#.$object->id;\n\n            $genallowed=$user->rights->agenda->myactions->read;\n\t        $delallowed=$user->rights->agenda->myactions->create;\n\n\n            print $formfile->showdocuments(",
+      "#project-task-input-container",
+      "#transparency",
+      ".assignedtouser",
+      ".border",
+      ".butAction",
+      ".butActionDelete",
+      ".butActionRefused",
+      ".button",
+      ".center",
+      ".centpercent",
+      ".classfortooltip",
+      ".clearboth",
+      ".divButAction",
+      ".fa"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [
+      "assignedtouser",
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "# . $object->fk_project . ",
+      "# . $object->id . ",
+      "# . $object->id, $object->socid, $object->fk_project, ",
+      "# . GETPOST(",
+      "#.$object->id.",
+      "#.$object->id;\n\n            $genallowed=$user->rights->agenda->myactions->read;\n\t        $delallowed=$user->rights->agenda->myactions->create;\n\n\n            print $formfile->showdocuments(",
+      "#project-task-input-container",
+      "#transparency",
+      ".assignedtouser",
+      ".border",
+      ".butAction",
+      ".butActionDelete",
+      ".butActionRefused",
+      ".button",
+      ".center",
+      ".centpercent",
+      ".classfortooltip",
+      ".clearboth",
+      ".divButAction",
+      ".fa"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Guard",
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

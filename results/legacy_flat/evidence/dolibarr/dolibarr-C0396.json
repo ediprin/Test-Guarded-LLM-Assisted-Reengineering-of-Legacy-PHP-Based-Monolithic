@@ -1,0 +1,92 @@
+{
+  "candidate_id": "dolibarr-C0396",
+  "subject_id": "dolibarr",
+  "file": "htdocs/loan/card.php",
+  "lines": [
+    429,
+    832
+  ],
+  "candidate_type": "session_dependent_logic",
+  "issues": [
+    {
+      "type": "Session-Dependent Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 46
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "# . $object->fk_project . ",
+      "# . $object->id . ",
+      "# . $object->id, $object->socid, $object->fk_project, ",
+      "#.$object->id.",
+      "#.$objp->rowid.",
+      "#popCalendar",
+      ".border",
+      ".butAction",
+      ".butActionDelete",
+      ".button",
+      ".center",
+      ".clearboth",
+      ".div-table-responsive-no-min",
+      ".divButAction",
+      ".ficheaddleft",
+      ".fichecenter",
+      ".fichehalfleft",
+      ".fichehalfright",
+      ".fieldrequired",
+      ".inline-block"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "# . $object->fk_project . ",
+      "# . $object->id . ",
+      "# . $object->id, $object->socid, $object->fk_project, ",
+      "#.$object->id.",
+      "#.$objp->rowid.",
+      "#popCalendar",
+      ".border",
+      ".butAction",
+      ".butActionDelete",
+      ".button",
+      ".center",
+      ".clearboth",
+      ".div-table-responsive-no-min",
+      ".divButAction",
+      ".ficheaddleft",
+      ".fichecenter",
+      ".fichehalfleft",
+      ".fichehalfright",
+      ".fieldrequired",
+      ".inline-block"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Guard",
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

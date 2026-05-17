@@ -1,0 +1,95 @@
+{
+  "candidate_id": "dolibarr-C3798",
+  "subject_id": "dolibarr",
+  "file": "htdocs/core/tpl/objectline_edit.tpl.php",
+  "lines": [
+    1,
+    402
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 198
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "np_marginRate",
+      "np_markRate"
+    ],
+    "session_keys": [],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$line->fk_product; ?>",
+      "#buying_price",
+      "#cancellinebutton",
+      "#fk_parent_line",
+      "#fourn_ref",
+      "#fournprice_predef",
+      "#line_<?php echo $line->id; ?>",
+      "#multicurrency_subprice",
+      "#price_ht",
+      "#price_ttc",
+      "#product_desc",
+      "#product_id",
+      "#product_type",
+      "#qty",
+      "#remise_percent",
+      "#savelinebutton",
+      "#service_duration_area",
+      "#special_code",
+      ".button",
+      ".center"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "np_marginRate",
+      "np_markRate"
+    ],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#.$line->fk_product; ?>",
+      "#buying_price",
+      "#cancellinebutton",
+      "#fk_parent_line",
+      "#fourn_ref",
+      "#fournprice_predef",
+      "#line_<?php echo $line->id; ?>",
+      "#multicurrency_subprice",
+      "#price_ht",
+      "#price_ttc",
+      "#product_desc",
+      "#product_id",
+      "#product_type",
+      "#qty",
+      "#remise_percent",
+      "#savelinebutton",
+      "#service_duration_area",
+      "#special_code",
+      ".button",
+      ".center"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

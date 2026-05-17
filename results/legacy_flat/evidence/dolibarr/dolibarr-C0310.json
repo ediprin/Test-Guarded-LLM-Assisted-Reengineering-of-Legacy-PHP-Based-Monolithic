@@ -1,0 +1,121 @@
+{
+  "candidate_id": "dolibarr-C0310",
+  "subject_id": "dolibarr",
+  "file": "htdocs/fichinter/card.php",
+  "lines": [
+    1,
+    1761
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 301
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "origin",
+      "other_linked_objects",
+      "projectid"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": [
+      "a",
+      "add",
+      "another",
+      "card",
+      "form",
+      "mode",
+      "update"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "# . $object->fk_project . ",
+      "# . $object->id . ",
+      "# . $object->id, $langs->trans(",
+      "# . $object->id, $object->socid, $object->fk_project, ",
+      "#.$object->id);\n\t\t\t\texit;\n\t\t\t}\n\t\t\telse\n\t\t\t{\n\t\t\t\t$mesg=$object->error;\n\t\t\t\t$db->rollback();\n\t\t\t}\n\t\t}\n\t}\n\n\t// Classify Billed\n\telseif ($action == ",
+      "#.$object->id);\n\t\t\t\texit;\n\t\t\t}\n\t\t\telse\n\t\t\t{\n\t\t\t\tif ($object->error == ",
+      "#.$object->id);\n\t\t\t\texit;\n\t\t\t}\n\t\t\telse {\n\t\t\t\tdol_print_error($db);\n\t\t\t}\n\t\t}\n\t}\n}\n\n\n/*\n * View\n */\n\n$form = new Form($db);\n$formfile = new FormFile($db);\nif ($conf->contrat->enabled) $formcontract = new FormContract($db);\nif (! empty($conf->projet->enabled)) { $formproject = new FormProjets($db); }\n\nllxHeader(",
+      "#.$object->id);\n\t\t\texit;\n\t\t}\n\t\telse\n\t\t{\n\t\t\t$mesg=",
+      "#.$object->id);\n\t\t\texit;\n\t\t}\n\t\telse\n\t\t{\n\t\t\tsetEventMessages($object->error, $object->errors, ",
+      "#.$object->id);\n\t\texit;\n\t}\n\n\t/*\n\t *  Supprime une ligne d",
+      "#.$object->id);\n\t        exit;\n\t    }\n\t    else\n\t    {\n\t        setEventMessages($object->error, $object->errors, ",
+      "#.$object->id, $langs->trans(",
+      "#.$object->id, $object->socid, $object->fk_contrat, ",
+      "#.$object->id.",
+      "#.$object->id;\n\t\t$genallowed=$user->rights->ficheinter->lire;\n\t\t$delallowed=$user->rights->ficheinter->creer;\n\t\tprint $formfile->showdocuments(",
+      "#.$result);\n\t\t\t\t\texit;\n\t\t\t\t}\n\t\t\t\telse\n\t\t\t\t{\n\t\t\t\t\tsetEventMessages($object->error, $object->errors, ",
+      "#.$selected.",
+      ".border",
+      ".butAction",
+      ".butActionDelete"
+    ],
+    "forms": [
+      "fichinter"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "origin",
+      "other_linked_objects",
+      "projectid"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [
+      "a",
+      "add",
+      "another",
+      "card",
+      "form",
+      "mode",
+      "update"
+    ],
+    "must_preserve_dom_selectors": [
+      "# . $object->fk_project . ",
+      "# . $object->id . ",
+      "# . $object->id, $langs->trans(",
+      "# . $object->id, $object->socid, $object->fk_project, ",
+      "#.$object->id);\n\t\t\t\texit;\n\t\t\t}\n\t\t\telse\n\t\t\t{\n\t\t\t\t$mesg=$object->error;\n\t\t\t\t$db->rollback();\n\t\t\t}\n\t\t}\n\t}\n\n\t// Classify Billed\n\telseif ($action == ",
+      "#.$object->id);\n\t\t\t\texit;\n\t\t\t}\n\t\t\telse\n\t\t\t{\n\t\t\t\tif ($object->error == ",
+      "#.$object->id);\n\t\t\t\texit;\n\t\t\t}\n\t\t\telse {\n\t\t\t\tdol_print_error($db);\n\t\t\t}\n\t\t}\n\t}\n}\n\n\n/*\n * View\n */\n\n$form = new Form($db);\n$formfile = new FormFile($db);\nif ($conf->contrat->enabled) $formcontract = new FormContract($db);\nif (! empty($conf->projet->enabled)) { $formproject = new FormProjets($db); }\n\nllxHeader(",
+      "#.$object->id);\n\t\t\texit;\n\t\t}\n\t\telse\n\t\t{\n\t\t\t$mesg=",
+      "#.$object->id);\n\t\t\texit;\n\t\t}\n\t\telse\n\t\t{\n\t\t\tsetEventMessages($object->error, $object->errors, ",
+      "#.$object->id);\n\t\texit;\n\t}\n\n\t/*\n\t *  Supprime une ligne d",
+      "#.$object->id);\n\t        exit;\n\t    }\n\t    else\n\t    {\n\t        setEventMessages($object->error, $object->errors, ",
+      "#.$object->id, $langs->trans(",
+      "#.$object->id, $object->socid, $object->fk_contrat, ",
+      "#.$object->id.",
+      "#.$object->id;\n\t\t$genallowed=$user->rights->ficheinter->lire;\n\t\t$delallowed=$user->rights->ficheinter->creer;\n\t\tprint $formfile->showdocuments(",
+      "#.$result);\n\t\t\t\t\texit;\n\t\t\t\t}\n\t\t\t\telse\n\t\t\t\t{\n\t\t\t\t\tsetEventMessages($object->error, $object->errors, ",
+      "#.$selected.",
+      ".border",
+      ".butAction",
+      ".butActionDelete"
+    ],
+    "must_preserve_forms": [
+      "fichinter"
+    ]
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

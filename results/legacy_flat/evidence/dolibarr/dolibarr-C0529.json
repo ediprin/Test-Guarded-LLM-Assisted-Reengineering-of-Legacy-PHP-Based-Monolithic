@@ -1,0 +1,99 @@
+{
+  "candidate_id": "dolibarr-C0529",
+  "subject_id": "dolibarr",
+  "file": "htdocs/user/param_ihm.php",
+  "lines": [
+    1,
+    416
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 96
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "AGENDA_DEFAULT_VIEW",
+      "MAIN_LANDING_PAGE",
+      "cancel",
+      "main_lang_default",
+      "main_size_liste_limit",
+      "main_theme"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "# . $id);\n\t\t\texit;\n\t\t}\n\t}\n}\n\n/*\n * View\n */\n\nllxHeader();\n\n// List of possible landing pages\n$tmparray=array(",
+      "#.$object->id.",
+      "#check_AGENDA_DEFAULT_VIEW",
+      "#check_MAIN_LANDING_PAGE",
+      "#check_MAIN_LANG_DEFAULT",
+      "#check_SIZE_LISTE_LIMIT",
+      "#main_size_liste_limit",
+      ".butAction",
+      ".button",
+      ".center",
+      ".flat",
+      ".liste_titre",
+      ".noborder",
+      ".nowrap",
+      ".oddeven",
+      ".tabsAction"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "AGENDA_DEFAULT_VIEW",
+      "MAIN_LANDING_PAGE",
+      "cancel",
+      "main_lang_default",
+      "main_size_liste_limit",
+      "main_theme"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "# . $id);\n\t\t\texit;\n\t\t}\n\t}\n}\n\n/*\n * View\n */\n\nllxHeader();\n\n// List of possible landing pages\n$tmparray=array(",
+      "#.$object->id.",
+      "#check_AGENDA_DEFAULT_VIEW",
+      "#check_MAIN_LANDING_PAGE",
+      "#check_MAIN_LANG_DEFAULT",
+      "#check_SIZE_LISTE_LIMIT",
+      "#main_size_liste_limit",
+      ".butAction",
+      ".button",
+      ".center",
+      ".flat",
+      ".liste_titre",
+      ".noborder",
+      ".nowrap",
+      ".oddeven",
+      ".tabsAction"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

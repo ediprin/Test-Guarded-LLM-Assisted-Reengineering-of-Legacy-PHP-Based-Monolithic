@@ -1,0 +1,73 @@
+{
+  "candidate_id": "roundcubemail-C0126",
+  "subject_id": "roundcubemail",
+  "file": "program/steps/mail/get.inc",
+  "lines": [
+    1,
+    723
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 103
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "_download",
+      "_embed",
+      "_frame",
+      "_mimeclass",
+      "_mimewarning",
+      "_nocheck",
+      "_preload",
+      "_redirected",
+      "_safe",
+      "_thumb"
+    ],
+    "session_keys": [
+      "browser_caps"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "_download",
+      "_embed",
+      "_frame",
+      "_mimeclass",
+      "_mimewarning",
+      "_nocheck",
+      "_preload",
+      "_redirected",
+      "_safe",
+      "_thumb"
+    ],
+    "must_preserve_session_keys": [
+      "browser_caps"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

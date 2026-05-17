@@ -1,0 +1,59 @@
+{
+  "candidate_id": "dolibarr-C3627",
+  "subject_id": "dolibarr",
+  "file": "htdocs/core/lib/tax.lib.php",
+  "lines": [
+    1,
+    1010
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 153
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [],
+    "database_tables": [
+      "modules"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$object->id;\n\t$head[$h][1] = $langs->trans(",
+      "#.$object->id;\n    $head[$h][1] = $langs->trans(",
+      ".badge"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [
+      "modules"
+    ],
+    "must_preserve_dom_selectors": [
+      "#.$object->id;\n\t$head[$h][1] = $langs->trans(",
+      "#.$object->id;\n    $head[$h][1] = $langs->trans(",
+      ".badge"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

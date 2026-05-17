@@ -1,0 +1,69 @@
+{
+  "candidate_id": "phpbb-C0858",
+  "subject_id": "phpbb",
+  "file": "phpBB/includes/acp/acp_forums.php",
+  "lines": [
+    1,
+    2165
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 270
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "update"
+    ],
+    "session_keys": [],
+    "database_tables": [
+      "Do",
+      "a",
+      "extension",
+      "forum",
+      "forum_data_sql",
+      "one",
+      "the",
+      "which"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "update"
+    ],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [
+      "Do",
+      "a",
+      "extension",
+      "forum",
+      "forum_data_sql",
+      "one",
+      "the",
+      "which"
+    ],
+    "must_preserve_dom_selectors": [],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

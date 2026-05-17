@@ -1,0 +1,194 @@
+project,file,php_version,status,message
+dokuwiki,bin/dwpage.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\bin\dwpage.php
+dokuwiki,doku.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\doku.php
+dokuwiki,feed.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\feed.php
+dokuwiki,inc/Action/Edit.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\inc\Action\Edit.php
+dokuwiki,inc/Action/Resendpwd.php,8.4.14,FAIL,"PHP Parse error:  syntax error, unexpected token ""{"" in subjects\dokuwiki\inc\Action\Resendpwd.php on line 76
+
+Parse error: syntax error, unexpected token ""{"" in subjects\dokuwiki\inc\Action\Resendpwd.php on line 76
+Errors parsing subjects\dokuwiki\inc\Action\Resendpwd.php"
+dokuwiki,inc/Action/Search.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\inc\Action\Search.php
+dokuwiki,inc/Action/Subscribe.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\inc\Action\Subscribe.php
+dokuwiki,inc/Ajax.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\inc\Ajax.php
+dokuwiki,inc/DifferenceEngine.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\inc\DifferenceEngine.php
+dokuwiki,inc/Form/Form.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\inc\Form\Form.php
+dokuwiki,inc/Form/InputElement.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\inc\Form\InputElement.php
+dokuwiki,inc/Form/LegacyForm.php,8.4.14,FAIL,"PHP Parse error:  syntax error, unexpected token ""{"" in subjects\dokuwiki\inc\Form\LegacyForm.php on line 119
+
+Parse error: syntax error, unexpected token ""{"" in subjects\dokuwiki\inc\Form\LegacyForm.php on line 119
+Errors parsing subjects\dokuwiki\inc\Form\LegacyForm.php"
+dokuwiki,inc/HTTPClient.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\inc\HTTPClient.php
+dokuwiki,inc/IXR_Library.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\inc\IXR_Library.php
+dokuwiki,inc/Input.class.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\inc\Input.class.php
+dokuwiki,inc/JSON.php,8.4.14,FAIL,"PHP Parse error:  syntax error, unexpected token ""{"", expecting "")"" in subjects\dokuwiki\inc\JSON.php on line 167
+
+Parse error: syntax error, unexpected token ""{"", expecting "")"" in subjects\dokuwiki\inc\JSON.php on line 167
+Errors parsing subjects\dokuwiki\inc\JSON.php"
+dokuwiki,inc/JpegMeta.php,8.4.14,FAIL,"PHP Parse error:  syntax error, unexpected token ""{"" in subjects\dokuwiki\inc\JpegMeta.php on line 417
+
+Parse error: syntax error, unexpected token ""{"" in subjects\dokuwiki\inc\JpegMeta.php on line 417
+Errors parsing subjects\dokuwiki\inc\JpegMeta.php"
+dokuwiki,inc/Mailer.class.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\inc\Mailer.class.php
+dokuwiki,inc/Manifest.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\inc\Manifest.php
+dokuwiki,inc/Menu/Item/AbstractItem.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\inc\Menu\Item\AbstractItem.php
+dokuwiki,inc/PassHash.class.php,8.4.14,FAIL,"PHP Parse error:  syntax error, unexpected token ""{"" in subjects\dokuwiki\inc\PassHash.class.php on line 204
+
+Parse error: syntax error, unexpected token ""{"" in subjects\dokuwiki\inc\PassHash.class.php on line 204
+Errors parsing subjects\dokuwiki\inc\PassHash.class.php"
+dokuwiki,inc/PluginTrait.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\inc\PluginTrait.php
+dokuwiki,inc/RemoteAPICore.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\inc\RemoteAPICore.php
+dokuwiki,inc/Sitemapper.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\inc\Sitemapper.php
+dokuwiki,inc/StyleUtils.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\inc\StyleUtils.php
+dokuwiki,inc/Ui/Admin.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\inc\Ui\Admin.php
+dokuwiki,inc/Ui/Search.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\inc\Ui\Search.php
+dokuwiki,inc/Ui/SearchState.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\inc\Ui\SearchState.php
+dokuwiki,inc/auth.php,8.4.14,FAIL,"PHP Parse error:  syntax error, unexpected token ""{"" in subjects\dokuwiki\inc\auth.php on line 138
+
+Parse error: syntax error, unexpected token ""{"" in subjects\dokuwiki\inc\auth.php on line 138
+Errors parsing subjects\dokuwiki\inc\auth.php"
+dokuwiki,inc/cache.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\inc\cache.php
+dokuwiki,inc/changelog.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\inc\changelog.php
+dokuwiki,inc/cli.php,8.4.14,FAIL,"PHP Parse error:  syntax error, unexpected token ""{"" in subjects\dokuwiki\inc\cli.php on line 404
+
+Parse error: syntax error, unexpected token ""{"" in subjects\dokuwiki\inc\cli.php on line 404
+Errors parsing subjects\dokuwiki\inc\cli.php"
+dokuwiki,inc/common.php,8.4.14,FAIL,"PHP Parse error:  syntax error, unexpected token ""{"" in subjects\dokuwiki\inc\common.php on line 372
+
+Parse error: syntax error, unexpected token ""{"" in subjects\dokuwiki\inc\common.php on line 372
+Errors parsing subjects\dokuwiki\inc\common.php"
+dokuwiki,inc/confutils.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\inc\confutils.php
+dokuwiki,inc/farm.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\inc\farm.php
+dokuwiki,inc/fetch.functions.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\inc\fetch.functions.php
+dokuwiki,inc/form.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\inc\form.php
+dokuwiki,inc/fulltext.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\inc\fulltext.php
+dokuwiki,inc/html.php,8.4.14,FAIL,"PHP Parse error:  syntax error, unexpected token ""{"" in subjects\dokuwiki\inc\html.php on line 1559
+
+Parse error: syntax error, unexpected token ""{"" in subjects\dokuwiki\inc\html.php on line 1559
+Errors parsing subjects\dokuwiki\inc\html.php"
+dokuwiki,inc/httputils.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\inc\httputils.php
+dokuwiki,inc/indexer.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\inc\indexer.php
+dokuwiki,inc/infoutils.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\inc\infoutils.php
+dokuwiki,inc/init.php,8.4.14,FAIL,"PHP Parse error:  syntax error, unexpected token ""{"" in subjects\dokuwiki\inc\init.php on line 557
+
+Parse error: syntax error, unexpected token ""{"" in subjects\dokuwiki\inc\init.php on line 557
+Errors parsing subjects\dokuwiki\inc\init.php"
+dokuwiki,inc/io.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\inc\io.php
+dokuwiki,inc/lang/da/lang.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\inc\lang\da\lang.php
+dokuwiki,inc/lang/en/lang.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\inc\lang\en\lang.php
+dokuwiki,inc/lang/et/lang.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\inc\lang\et\lang.php
+dokuwiki,inc/lang/fr/lang.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\inc\lang\fr\lang.php
+dokuwiki,inc/lang/hu/lang.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\inc\lang\hu\lang.php
+dokuwiki,inc/lang/mk/lang.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\inc\lang\mk\lang.php
+dokuwiki,inc/lang/mr/lang.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\inc\lang\mr\lang.php
+dokuwiki,inc/lang/no/lang.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\inc\lang\no\lang.php
+dokuwiki,inc/lang/pt-br/lang.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\inc\lang\pt-br\lang.php
+dokuwiki,inc/lang/sq/lang.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\inc\lang\sq\lang.php
+dokuwiki,inc/load.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\inc\load.php
+dokuwiki,inc/mail.php,8.4.14,FAIL,"PHP Parse error:  syntax error, unexpected token ""{"", expecting "")"" in subjects\dokuwiki\inc\mail.php on line 308
+
+Parse error: syntax error, unexpected token ""{"", expecting "")"" in subjects\dokuwiki\inc\mail.php on line 308
+Errors parsing subjects\dokuwiki\inc\mail.php"
+dokuwiki,inc/media.php,8.4.14,PASS,"PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in subjects\dokuwiki\inc\media.php on line 779
+
+Deprecated: Using ${var} in strings is deprecated, use {$var} instead in subjects\dokuwiki\inc\media.php on line 779
+No syntax errors detected in subjects\dokuwiki\inc\media.php"
+dokuwiki,inc/pageutils.php,8.4.14,FAIL,"PHP Parse error:  syntax error, unexpected token ""{"" in subjects\dokuwiki\inc\pageutils.php on line 464
+
+Parse error: syntax error, unexpected token ""{"" in subjects\dokuwiki\inc\pageutils.php on line 464
+Errors parsing subjects\dokuwiki\inc\pageutils.php"
+dokuwiki,inc/parser/handler.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\inc\parser\handler.php
+dokuwiki,inc/parser/lexer.php,8.4.14,PASS,"PHP Deprecated:  Doku_Lexer::_dispatchTokens(): Optional parameter $mode declared before required parameter $matchPos is implicitly treated as a required parameter in subjects\dokuwiki\inc\parser\lexer.php on line 442
+
+Deprecated: Doku_Lexer::_dispatchTokens(): Optional parameter $mode declared before required parameter $matchPos is implicitly treated as a required parameter in subjects\dokuwiki\inc\parser\lexer.php on line 442
+No syntax errors detected in subjects\dokuwiki\inc\parser\lexer.php"
+dokuwiki,inc/parser/parser.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\inc\parser\parser.php
+dokuwiki,inc/parser/renderer.php,8.4.14,FAIL,"PHP Parse error:  syntax error, unexpected token ""{"" in subjects\dokuwiki\inc\parser\renderer.php on line 843
+
+Parse error: syntax error, unexpected token ""{"" in subjects\dokuwiki\inc\parser\renderer.php on line 843
+Errors parsing subjects\dokuwiki\inc\parser\renderer.php"
+dokuwiki,inc/parser/xhtml.php,8.4.14,FAIL,"PHP Parse error:  syntax error, unexpected token ""{"" in subjects\dokuwiki\inc\parser\xhtml.php on line 689
+
+Parse error: syntax error, unexpected token ""{"" in subjects\dokuwiki\inc\parser\xhtml.php on line 689
+Errors parsing subjects\dokuwiki\inc\parser\xhtml.php"
+dokuwiki,inc/parser/xhtmlsummary.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\inc\parser\xhtmlsummary.php
+dokuwiki,inc/parserutils.php,8.4.14,PASS,"PHP Deprecated:  p_xhtml_cached_geshi(): Implicitly marking parameter $options as nullable is deprecated, the explicit nullable type must be used instead in subjects\dokuwiki\inc\parserutils.php on line 748
+
+Deprecated: p_xhtml_cached_geshi(): Implicitly marking parameter $options as nullable is deprecated, the explicit nullable type must be used instead in subjects\dokuwiki\inc\parserutils.php on line 748
+No syntax errors detected in subjects\dokuwiki\inc\parserutils.php"
+dokuwiki,inc/plugincontroller.class.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\inc\plugincontroller.class.php
+dokuwiki,inc/search.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\inc\search.php
+dokuwiki,inc/subscription.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\inc\subscription.php
+dokuwiki,inc/template.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\inc\template.php
+dokuwiki,inc/toolbar.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\inc\toolbar.php
+dokuwiki,inc/utf8.php,8.4.14,FAIL,"PHP Parse error:  syntax error, unexpected token ""{"", expecting "")"" in subjects\dokuwiki\inc\utf8.php on line 70
+
+Parse error: syntax error, unexpected token ""{"", expecting "")"" in subjects\dokuwiki\inc\utf8.php on line 70
+Errors parsing subjects\dokuwiki\inc\utf8.php"
+dokuwiki,install.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\install.php
+dokuwiki,lib/exe/css.php,8.4.14,FAIL,"PHP Parse error:  syntax error, unexpected token ""{"" in subjects\dokuwiki\lib\exe\css.php on line 463
+
+Parse error: syntax error, unexpected token ""{"" in subjects\dokuwiki\lib\exe\css.php on line 463
+Errors parsing subjects\dokuwiki\lib\exe\css.php"
+dokuwiki,lib/exe/indexer.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\lib\exe\indexer.php
+dokuwiki,lib/exe/js.php,8.4.14,FAIL,"PHP Parse error:  syntax error, unexpected token ""{"" in subjects\dokuwiki\lib\exe\js.php on line 181
+
+Parse error: syntax error, unexpected token ""{"" in subjects\dokuwiki\lib\exe\js.php on line 181
+Errors parsing subjects\dokuwiki\lib\exe\js.php"
+dokuwiki,lib/images/fileicons/index.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\lib\images\fileicons\index.php
+dokuwiki,lib/plugins/acl/admin.php,8.4.14,FAIL,"PHP Parse error:  syntax error, unexpected token ""{"" in subjects\dokuwiki\lib\plugins\acl\admin.php on line 133
+
+Parse error: syntax error, unexpected token ""{"" in subjects\dokuwiki\lib\plugins\acl\admin.php on line 133
+Errors parsing subjects\dokuwiki\lib\plugins\acl\admin.php"
+dokuwiki,lib/plugins/auth.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\lib\plugins\auth.php
+dokuwiki,lib/plugins/authad/adLDAP/adLDAP.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\lib\plugins\authad\adLDAP\adLDAP.php
+dokuwiki,lib/plugins/authad/adLDAP/classes/adLDAPExchange.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\lib\plugins\authad\adLDAP\classes\adLDAPExchange.php
+dokuwiki,lib/plugins/authad/adLDAP/classes/adLDAPFolders.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\lib\plugins\authad\adLDAP\classes\adLDAPFolders.php
+dokuwiki,lib/plugins/authad/adLDAP/classes/adLDAPGroups.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\lib\plugins\authad\adLDAP\classes\adLDAPGroups.php
+dokuwiki,lib/plugins/authad/adLDAP/classes/adLDAPUsers.php,8.4.14,FAIL,"PHP Parse error:  syntax error, unexpected token ""{"", expecting ""->"" or ""?->"" or ""["" in subjects\dokuwiki\lib\plugins\authad\adLDAP\classes\adLDAPUsers.php on line 520
+
+Parse error: syntax error, unexpected token ""{"", expecting ""->"" or ""?->"" or ""["" in subjects\dokuwiki\lib\plugins\authad\adLDAP\classes\adLDAPUsers.php on line 520
+Errors parsing subjects\dokuwiki\lib\plugins\authad\adLDAP\classes\adLDAPUsers.php"
+dokuwiki,lib/plugins/authad/auth.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\lib\plugins\authad\auth.php
+dokuwiki,lib/plugins/authldap/auth.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\lib\plugins\authldap\auth.php
+dokuwiki,lib/plugins/authmysql/auth.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\lib\plugins\authmysql\auth.php
+dokuwiki,lib/plugins/authmysql/lang/en/settings.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\lib\plugins\authmysql\lang\en\settings.php
+dokuwiki,lib/plugins/authpdo/auth.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\lib\plugins\authpdo\auth.php
+dokuwiki,lib/plugins/authpgsql/auth.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\lib\plugins\authpgsql\auth.php
+dokuwiki,lib/plugins/authpgsql/lang/en/settings.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\lib\plugins\authpgsql\lang\en\settings.php
+dokuwiki,lib/plugins/config/admin.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\lib\plugins\config\admin.php
+dokuwiki,lib/plugins/config/lang/cy/lang.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\lib\plugins\config\lang\cy\lang.php
+dokuwiki,lib/plugins/config/lang/da/lang.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\lib\plugins\config\lang\da\lang.php
+dokuwiki,lib/plugins/config/lang/de-informal/lang.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\lib\plugins\config\lang\de-informal\lang.php
+dokuwiki,lib/plugins/config/lang/de/lang.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\lib\plugins\config\lang\de\lang.php
+dokuwiki,lib/plugins/config/lang/en/lang.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\lib\plugins\config\lang\en\lang.php
+dokuwiki,lib/plugins/config/lang/es/lang.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\lib\plugins\config\lang\es\lang.php
+dokuwiki,lib/plugins/config/lang/hr/lang.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\lib\plugins\config\lang\hr\lang.php
+dokuwiki,lib/plugins/config/lang/hu/lang.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\lib\plugins\config\lang\hu\lang.php
+dokuwiki,lib/plugins/config/lang/it/lang.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\lib\plugins\config\lang\it\lang.php
+dokuwiki,lib/plugins/config/lang/ko/lang.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\lib\plugins\config\lang\ko\lang.php
+dokuwiki,lib/plugins/config/lang/no/lang.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\lib\plugins\config\lang\no\lang.php
+dokuwiki,lib/plugins/config/lang/pt-br/lang.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\lib\plugins\config\lang\pt-br\lang.php
+dokuwiki,lib/plugins/config/lang/pt/lang.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\lib\plugins\config\lang\pt\lang.php
+dokuwiki,lib/plugins/config/lang/sk/lang.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\lib\plugins\config\lang\sk\lang.php
+dokuwiki,lib/plugins/config/settings/config.class.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\lib\plugins\config\settings\config.class.php
+dokuwiki,lib/plugins/config/settings/config.metadata.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\lib\plugins\config\settings\config.metadata.php
+dokuwiki,lib/plugins/config/settings/extra.class.php,8.4.14,FAIL,"PHP Parse error:  syntax error, unexpected token ""{"" in subjects\dokuwiki\lib\plugins\config\settings\extra.class.php on line 20
+
+Parse error: syntax error, unexpected token ""{"" in subjects\dokuwiki\lib\plugins\config\settings\extra.class.php on line 20
+Errors parsing subjects\dokuwiki\lib\plugins\config\settings\extra.class.php"
+dokuwiki,lib/plugins/extension/admin.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\lib\plugins\extension\admin.php
+dokuwiki,lib/plugins/extension/helper/extension.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\lib\plugins\extension\helper\extension.php
+dokuwiki,lib/plugins/extension/helper/gui.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\lib\plugins\extension\helper\gui.php
+dokuwiki,lib/plugins/extension/helper/list.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\lib\plugins\extension\helper\list.php
+dokuwiki,lib/plugins/info/syntax.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\lib\plugins\info\syntax.php
+dokuwiki,lib/plugins/popularity/admin.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\lib\plugins\popularity\admin.php
+dokuwiki,lib/plugins/popularity/helper.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\lib\plugins\popularity\helper.php
+dokuwiki,lib/plugins/revert/admin.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\lib\plugins\revert\admin.php
+dokuwiki,lib/plugins/styling/admin.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\lib\plugins\styling\admin.php
+dokuwiki,lib/plugins/styling/popup.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\lib\plugins\styling\popup.php
+dokuwiki,lib/plugins/usermanager/admin.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\lib\plugins\usermanager\admin.php
+dokuwiki,lib/tpl/dokuwiki/detail.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\lib\tpl\dokuwiki\detail.php
+dokuwiki,lib/tpl/dokuwiki/main.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\lib\tpl\dokuwiki\main.php
+dokuwiki,lib/tpl/dokuwiki/mediamanager.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\lib\tpl\dokuwiki\mediamanager.php
+dokuwiki,lib/tpl/dokuwiki/tpl_footer.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\lib\tpl\dokuwiki\tpl_footer.php
+dokuwiki,lib/tpl/dokuwiki/tpl_header.php,8.4.14,PASS,No syntax errors detected in subjects\dokuwiki\lib\tpl\dokuwiki\tpl_header.php

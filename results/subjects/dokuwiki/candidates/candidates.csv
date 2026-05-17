@@ -1,0 +1,417 @@
+candidate_id,project,file,start_line,end_line,candidate_type,dominant_issue,complexity_proxy,request_parameters,session_keys,database_tables,dom_selectors,forms,allowed_transformations,oracle_status
+dokuwiki-C0001,dokuwiki,doku.php,1,125,long_method_or_region,Long or Complex Region,22,do;idx,,,,,Extract Method,pending
+dokuwiki-C0002,dokuwiki,feed.php,1,510,mixed_php_html,Mixed PHP/HTML,74,,,,.medialeft;.mediaright,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0003,dokuwiki,feed.php,189,461,long_method_or_region,Long or Complex Region,51,,,,.medialeft;.mediaright,,Extract Method,pending
+dokuwiki-C0004,dokuwiki,install.php,1,612,form_handling,Request Handling Mixed With Rendering,172,d;l;submit,,,#acl;#acldep;#allowreg;#confirm;#email;#fullname;#lic_;#password;#policy;#pop;#process;#superuser;#title;.cl;.text,,Extract Validation Helper;Extract Method;Extract View Helper,pending
+dokuwiki-C0005,dokuwiki,install.php,60,146,form_handling,Request Handling Mixed With Rendering,21,d,,,.cl,,Extract Validation Helper;Extract Method;Extract View Helper,pending
+dokuwiki-C0006,dokuwiki,install.php,146,233,mixed_php_html,Mixed PHP/HTML,85,,,,#acl;#acldep;#allowreg;#confirm;#email;#fullname;#lic_;#password;#policy;#pop;#process;#superuser;#title;.text,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0007,dokuwiki,install.php,233,254,mixed_php_html,Mixed PHP/HTML,8,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0008,dokuwiki,install.php,254,326,long_method_or_region,Long or Complex Region,13,submit,,,,,Extract Method,pending
+dokuwiki-C0009,dokuwiki,install.php,326,434,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+dokuwiki-C0010,dokuwiki,install.php,526,568,session_dependent_logic,Session-Dependent Logic,6,,,,,,Extract Guard;Extract Method,pending
+dokuwiki-C0011,dokuwiki,bin/dwpage.php,25,131,long_method_or_region,Long or Complex Region,6,,,,,,Extract Method,pending
+dokuwiki-C0012,dokuwiki,inc/Ajax.php,1,446,mixed_php_html,Mixed PHP/HTML,61,,,,.wikilink1,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0013,dokuwiki,inc/Ajax.php,264,319,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+dokuwiki-C0014,dokuwiki,inc/Ajax.php,342,447,long_method_or_region,Long or Complex Region,15,,,,.wikilink1,,Extract Method,pending
+dokuwiki-C0015,dokuwiki,inc/auth.php,1,1267,session_dependent_logic,Session-Dependent Logic,176,,,,,,Extract Guard;Extract Method,pending
+dokuwiki-C0016,dokuwiki,inc/auth.php,35,125,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+dokuwiki-C0017,dokuwiki,inc/auth.php,125,172,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+dokuwiki-C0018,dokuwiki,inc/auth.php,210,283,session_dependent_logic,Session-Dependent Logic,9,,,,,,Extract Guard;Extract Method,pending
+dokuwiki-C0019,dokuwiki,inc/auth.php,407,451,session_dependent_logic,Session-Dependent Logic,9,,,,,,Extract Guard;Extract Method,pending
+dokuwiki-C0020,dokuwiki,inc/auth.php,510,556,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+dokuwiki-C0021,dokuwiki,inc/auth.php,597,726,long_method_or_region,Long or Complex Region,29,,,,,,Extract Method,pending
+dokuwiki-C0022,dokuwiki,inc/auth.php,845,914,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+dokuwiki-C0023,dokuwiki,inc/auth.php,914,1003,session_dependent_logic,Session-Dependent Logic,17,,,,,,Extract Guard;Extract Method,pending
+dokuwiki-C0024,dokuwiki,inc/auth.php,1057,1189,long_method_or_region,Long or Complex Region,19,,,,,,Extract Method,pending
+dokuwiki-C0025,dokuwiki,inc/cache.php,73,98,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+dokuwiki-C0026,dokuwiki,inc/cache.php,235,268,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+dokuwiki-C0027,dokuwiki,inc/cache.php,268,311,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+dokuwiki-C0028,dokuwiki,inc/changelog.php,1,1059,sql_data_access,SQL/Data Access Region,160,,,changelog;chunck;date;file;it;metadata;parts,,,Light Data-Access Isolation;Extract Method,pending
+dokuwiki-C0029,dokuwiki,inc/changelog.php,65,150,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+dokuwiki-C0030,dokuwiki,inc/changelog.php,206,288,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+dokuwiki-C0031,dokuwiki,inc/changelog.php,340,401,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+dokuwiki-C0032,dokuwiki,inc/changelog.php,460,511,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+dokuwiki-C0033,dokuwiki,inc/changelog.php,511,625,long_method_or_region,Long or Complex Region,22,,,,,,Extract Method,pending
+dokuwiki-C0034,dokuwiki,inc/changelog.php,625,695,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+dokuwiki-C0035,dokuwiki,inc/changelog.php,695,757,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+dokuwiki-C0036,dokuwiki,inc/changelog.php,757,830,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+dokuwiki-C0037,dokuwiki,inc/changelog.php,949,1023,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+dokuwiki-C0038,dokuwiki,inc/cli.php,383,479,long_method_or_region,Long or Complex Region,23,,,,,,Extract Method,pending
+dokuwiki-C0039,dokuwiki,inc/cli.php,498,579,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+dokuwiki-C0040,dokuwiki,inc/common.php,1,2087,mixed_php_html_sql,SQL in Presentation Logic,384,,,COMMON_PAGETPL_LOAD;Feyd;a;array;blocks;changelog;datetime_h;given;outside;page;request;the,"#.$id;
+        if($urlParameters) $xlink .= $sep.$urlParameters;
+    }
+
+    return $xlink;
+}
+
+/**
+ * Build a link to a media file
+ *
+ * Will return a link to the detail page if $direct is false
+ *
+ * The $more parameter should always be given as array, the function then
+ * will strip default parameters to produce even cleaner URLs
+ *
+ * @param string  $id     the media file id or URL
+ * @param mixed   $more   string or array with additional parameters
+ * @param bool    $direct link to detail page if false
+ * @param string  $sep    URL parameter separator
+ * @param bool    $abs    Create an absolute URL
+ * @return string
+ */
+function ml($id = ;#.$id;
+        if($urlParameters) $xlink .= $separator.$urlParameters;
+    } else {
+        $xlink .= DOKU_SCRIPT;
+        if($urlParameters) $xlink .= ;.no",,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+dokuwiki-C0041,dokuwiki,inc/common.php,199,306,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+dokuwiki-C0042,dokuwiki,inc/common.php,391,454,session_dependent_logic,Session-Dependent Logic,12,,,,,,Extract Guard;Extract Method,pending
+dokuwiki-C0043,dokuwiki,inc/common.php,489,538,long_method_or_region,Long or Complex Region,18,,,,"#.$id;
+        if($urlParameters) $xlink .= $separator.$urlParameters;
+    } else {
+        $xlink .= DOKU_SCRIPT;
+        if($urlParameters) $xlink .= ",,Extract Method,pending
+dokuwiki-C0044,dokuwiki,inc/common.php,538,583,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+dokuwiki-C0045,dokuwiki,inc/common.php,583,673,long_method_or_region,Long or Complex Region,26,,,,,,Extract Method,pending
+dokuwiki-C0046,dokuwiki,inc/common.php,702,774,long_method_or_region,Long or Complex Region,21,,,,,,Extract Method,pending
+dokuwiki-C0047,dokuwiki,inc/common.php,774,845,long_method_or_region,Long or Complex Region,49,,,,,,Extract Method,pending
+dokuwiki-C0048,dokuwiki,inc/common.php,1055,1109,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+dokuwiki-C0049,dokuwiki,inc/common.php,1291,1409,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+dokuwiki-C0050,dokuwiki,inc/common.php,1431,1469,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+dokuwiki-C0051,dokuwiki,inc/common.php,1469,1514,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+dokuwiki-C0052,dokuwiki,inc/common.php,1738,1857,long_method_or_region,Long or Complex Region,26,,,,,,Extract Method,pending
+dokuwiki-C0053,dokuwiki,inc/common.php,1918,1977,session_dependent_logic,Session-Dependent Logic,9,,,,,,Extract Guard;Extract Method,pending
+dokuwiki-C0054,dokuwiki,inc/common.php,2017,2054,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+dokuwiki-C0055,dokuwiki,inc/common.php,2071,2088,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+dokuwiki-C0056,dokuwiki,inc/confutils.php,340,386,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+dokuwiki-C0057,dokuwiki,inc/DifferenceEngine.php,1,1544,mixed_php_html,Mixed PHP/HTML,201,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0058,dokuwiki,inc/DifferenceEngine.php,125,238,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+dokuwiki-C0059,dokuwiki,inc/DifferenceEngine.php,238,305,long_method_or_region,Long or Complex Region,19,,,,,,Extract Method,pending
+dokuwiki-C0060,dokuwiki,inc/DifferenceEngine.php,407,531,long_method_or_region,Long or Complex Region,19,,,,,,Extract Method,pending
+dokuwiki-C0061,dokuwiki,inc/DifferenceEngine.php,736,796,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+dokuwiki-C0062,dokuwiki,inc/DifferenceEngine.php,1366,1442,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+dokuwiki-C0063,dokuwiki,inc/farm.php,1,150,long_method_or_region,Long or Complex Region,20,animal,,,,,Extract Method,pending
+dokuwiki-C0064,dokuwiki,inc/farm.php,46,151,long_method_or_region,Long or Complex Region,14,animal,,,,,Extract Method,pending
+dokuwiki-C0065,dokuwiki,inc/fetch.functions.php,27,106,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+dokuwiki-C0066,dokuwiki,inc/fetch.functions.php,130,180,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+dokuwiki-C0067,dokuwiki,inc/form.php,1,1098,form_handling,Request Handling Mixed With Rendering,161,,,,#wiki__text;.no,,Extract Validation Helper;Extract Method;Extract View Helper,pending
+dokuwiki-C0068,dokuwiki,inc/form.php,1027,1075,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+dokuwiki-C0069,dokuwiki,inc/form.php,1075,1099,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+dokuwiki-C0070,dokuwiki,inc/fulltext.php,56,169,long_method_or_region,Long or Complex Region,26,,,,,,Extract Method,pending
+dokuwiki-C0071,dokuwiki,inc/fulltext.php,258,323,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+dokuwiki-C0072,dokuwiki,inc/fulltext.php,400,497,long_method_or_region,Long or Complex Region,25,,,,.search_hit,,Extract Method,pending
+dokuwiki-C0073,dokuwiki,inc/fulltext.php,623,859,long_method_or_region,Long or Complex Region,53,,,,,,Extract Method,pending
+dokuwiki-C0074,dokuwiki,inc/html.php,1,2255,mixed_php_html,Mixed PHP/HTML,327,,,,# id=;#draft__status;#dw__toc;#index__tree;#scroll__here;#tool__bar;.bounce;.btn_;.button;.centeralign;.changeType;.clearer;.closed;.diff;.diff-lineheader;.diff_<?php;.diffnav;.diffoptions;.draft__status;.dw__toc,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0075,dokuwiki,inc/html.php,194,253,long_method_or_region,Long or Complex Region,10,,,,.btn_;.button;.no,,Extract Method,pending
+dokuwiki-C0076,dokuwiki,inc/html.php,399,661,long_method_or_region,Long or Complex Region,41,,,,.minor;.pagenav;.pagenav-next;.pagenav-prev,,Extract Method,pending
+dokuwiki-C0077,dokuwiki,inc/html.php,661,866,long_method_or_region,Long or Complex Region,24,,,,.changeType;.icon;.level1;.minor,,Extract Method,pending
+dokuwiki-C0078,dokuwiki,inc/html.php,985,1050,long_method_or_region,Long or Complex Region,12,,,,.li,,Extract Method,pending
+dokuwiki-C0079,dokuwiki,inc/html.php,1081,1167,long_method_or_region,Long or Complex Region,24,,,,.minor;.sum;.user;.wikilink1,,Extract Method,pending
+dokuwiki-C0080,dokuwiki,inc/html.php,1167,1382,mixed_php_html,Mixed PHP/HTML,59,,,,.diff;.diff-lineheader;.diff_<?php;.diffnav;.diffoptions;.echo;.group;.table;.wikilink1,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0081,dokuwiki,inc/html.php,1382,1517,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+dokuwiki-C0082,dokuwiki,inc/html.php,1557,1584,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+dokuwiki-C0083,dokuwiki,inc/html.php,1731,1853,mixed_php_html,Mixed PHP/HTML,36,,,,#draft__status;#tool__bar;.draft__status;.editBox;.group;.tool__bar;.toolbar;.urlextern,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0084,dokuwiki,inc/html.php,1893,1992,session_dependent_logic,Session-Dependent Logic,6,,,,,,Extract Guard;Extract Method,pending
+dokuwiki-C0085,dokuwiki,inc/html.php,2137,2197,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+dokuwiki-C0086,dokuwiki,inc/HTTPClient.php,1,943,sql_data_access,SQL/Data Access Region,167,httpdebug,,a;bits;proxy;socket;the,,,Light Data-Access Isolation;Extract Method,pending
+dokuwiki-C0087,dokuwiki,inc/HTTPClient.php,173,509,long_method_or_region,Long or Complex Region,85,,,,,,Extract Method,pending
+dokuwiki-C0088,dokuwiki,inc/HTTPClient.php,509,569,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+dokuwiki-C0089,dokuwiki,inc/HTTPClient.php,569,614,sql_data_access,SQL/Data Access Region,12,,,a,,,Light Data-Access Isolation;Extract Method,pending
+dokuwiki-C0090,dokuwiki,inc/HTTPClient.php,614,664,sql_data_access,SQL/Data Access Region,13,,,a;socket,,,Light Data-Access Isolation;Extract Method,pending
+dokuwiki-C0091,dokuwiki,inc/httputils.php,104,199,long_method_or_region,Long or Complex Region,20,,,,,,Extract Method,pending
+dokuwiki-C0092,dokuwiki,inc/indexer.php,128,204,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+dokuwiki-C0093,dokuwiki,inc/indexer.php,204,260,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+dokuwiki-C0094,dokuwiki,inc/indexer.php,260,364,long_method_or_region,Long or Complex Region,24,,,,,,Extract Method,pending
+dokuwiki-C0095,dokuwiki,inc/indexer.php,489,542,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+dokuwiki-C0096,dokuwiki,inc/indexer.php,585,632,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+dokuwiki-C0097,dokuwiki,inc/indexer.php,694,749,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+dokuwiki-C0098,dokuwiki,inc/indexer.php,749,848,long_method_or_region,Long or Complex Region,23,,,,,,Extract Method,pending
+dokuwiki-C0099,dokuwiki,inc/indexer.php,848,929,long_method_or_region,Long or Complex Region,21,,,,,,Extract Method,pending
+dokuwiki-C0100,dokuwiki,inc/indexer.php,963,1024,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+dokuwiki-C0101,dokuwiki,inc/indexer.php,1143,1185,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+dokuwiki-C0102,dokuwiki,inc/indexer.php,1363,1469,long_method_or_region,Long or Complex Region,34,,,,,,Extract Method,pending
+dokuwiki-C0103,dokuwiki,inc/indexer.php,1515,1572,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+dokuwiki-C0104,dokuwiki,inc/infoutils.php,1,530,mixed_php_html,Mixed PHP/HTML,88,,,,.dbg,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0105,dokuwiki,inc/infoutils.php,116,329,long_method_or_region,Long or Complex Region,43,,,,,,Extract Method,pending
+dokuwiki-C0106,dokuwiki,inc/init.php,1,601,form_handling,Request Handling Mixed With Rendering,122,purge,,,,,Extract Validation Helper;Extract Method;Extract View Helper,pending
+dokuwiki-C0107,dokuwiki,inc/init.php,14,229,session_dependent_logic,Session-Dependent Logic,44,purge,,,,,Extract Guard;Extract Method,pending
+dokuwiki-C0108,dokuwiki,inc/init.php,409,486,long_method_or_region,Long or Complex Region,24,,,,,,Extract Method,pending
+dokuwiki-C0109,dokuwiki,inc/init.php,551,602,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+dokuwiki-C0110,dokuwiki,inc/Input.class.php,1,335,long_method_or_region,Long or Complex Region,51,do,,,,,Extract Method,pending
+dokuwiki-C0111,dokuwiki,inc/io.php,137,189,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+dokuwiki-C0112,dokuwiki,inc/io.php,226,275,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+dokuwiki-C0113,dokuwiki,inc/io.php,313,384,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+dokuwiki-C0114,dokuwiki,inc/io.php,531,583,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+dokuwiki-C0115,dokuwiki,inc/io.php,619,654,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+dokuwiki-C0116,dokuwiki,inc/io.php,654,705,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+dokuwiki-C0117,dokuwiki,inc/io.php,795,828,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+dokuwiki-C0118,dokuwiki,inc/IXR_Library.php,77,116,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+dokuwiki-C0119,dokuwiki,inc/IXR_Library.php,116,162,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+dokuwiki-C0120,dokuwiki,inc/IXR_Library.php,211,264,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+dokuwiki-C0121,dokuwiki,inc/IXR_Library.php,299,392,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+dokuwiki-C0122,dokuwiki,inc/IXR_Library.php,457,514,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+dokuwiki-C0123,dokuwiki,inc/IXR_Library.php,973,1042,long_method_or_region,Long or Complex Region,21,,,,,,Extract Method,pending
+dokuwiki-C0124,dokuwiki,inc/IXR_Library.php,1042,1085,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+dokuwiki-C0125,dokuwiki,inc/JpegMeta.php,59,142,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+dokuwiki-C0126,dokuwiki,inc/JpegMeta.php,142,191,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+dokuwiki-C0127,dokuwiki,inc/JpegMeta.php,621,759,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+dokuwiki-C0128,dokuwiki,inc/JpegMeta.php,840,884,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+dokuwiki-C0129,dokuwiki,inc/JpegMeta.php,884,937,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+dokuwiki-C0130,dokuwiki,inc/JpegMeta.php,966,1081,long_method_or_region,Long or Complex Region,26,,,,,,Extract Method,pending
+dokuwiki-C0131,dokuwiki,inc/JpegMeta.php,1117,1258,long_method_or_region,Long or Complex Region,24,,,,,,Extract Method,pending
+dokuwiki-C0132,dokuwiki,inc/JpegMeta.php,1302,1404,long_method_or_region,Long or Complex Region,21,,,,,,Extract Method,pending
+dokuwiki-C0133,dokuwiki,inc/JpegMeta.php,1404,1469,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+dokuwiki-C0134,dokuwiki,inc/JpegMeta.php,1469,1531,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+dokuwiki-C0135,dokuwiki,inc/JpegMeta.php,1531,1591,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+dokuwiki-C0136,dokuwiki,inc/JpegMeta.php,1591,1631,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+dokuwiki-C0137,dokuwiki,inc/JpegMeta.php,1631,1703,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+dokuwiki-C0138,dokuwiki,inc/JpegMeta.php,1703,1969,long_method_or_region,Long or Complex Region,54,,,,,,Extract Method,pending
+dokuwiki-C0139,dokuwiki,inc/JpegMeta.php,1969,2359,long_method_or_region,Long or Complex Region,78,,,,,,Extract Method,pending
+dokuwiki-C0140,dokuwiki,inc/JpegMeta.php,2359,2460,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+dokuwiki-C0141,dokuwiki,inc/JpegMeta.php,2460,2550,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+dokuwiki-C0142,dokuwiki,inc/JpegMeta.php,2628,2778,long_method_or_region,Long or Complex Region,6,,,,,,Extract Method,pending
+dokuwiki-C0143,dokuwiki,inc/JpegMeta.php,2778,2928,long_method_or_region,Long or Complex Region,6,,,,,,Extract Method,pending
+dokuwiki-C0144,dokuwiki,inc/JpegMeta.php,3124,3189,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+dokuwiki-C0145,dokuwiki,inc/JSON.php,138,313,long_method_or_region,Long or Complex Region,31,,,,,,Extract Method,pending
+dokuwiki-C0146,dokuwiki,inc/JSON.php,369,652,long_method_or_region,Long or Complex Region,54,,,,,,Extract Method,pending
+dokuwiki-C0147,dokuwiki,inc/load.php,51,160,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+dokuwiki-C0148,dokuwiki,inc/mail.php,1,348,sql_data_access,SQL/Data Access Region,99,,,Sender;event;here;lines;softlines;text,,,Light Data-Access Isolation;Extract Method,pending
+dokuwiki-C0149,dokuwiki,inc/mail.php,114,191,long_method_or_region,Long or Complex Region,26,,,,,,Extract Method,pending
+dokuwiki-C0150,dokuwiki,inc/mail.php,191,270,long_method_or_region,Long or Complex Region,36,,,,,,Extract Method,pending
+dokuwiki-C0151,dokuwiki,inc/mail.php,286,346,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+dokuwiki-C0152,dokuwiki,inc/Mailer.class.php,1,730,mixed_php_html,Mixed PHP/HTML,92,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0153,dokuwiki,inc/Mailer.class.php,193,257,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+dokuwiki-C0154,dokuwiki,inc/Mailer.class.php,336,407,long_method_or_region,Long or Complex Region,21,,,,,,Extract Method,pending
+dokuwiki-C0155,dokuwiki,inc/Mailer.class.php,510,557,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+dokuwiki-C0156,dokuwiki,inc/Mailer.class.php,660,731,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+dokuwiki-C0157,dokuwiki,inc/Manifest.php,7,81,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+dokuwiki-C0158,dokuwiki,inc/media.php,1,2498,mixed_php_html,Mixed PHP/HTML,373,,,,#d_:;#ex_;#h_:;#l_:;#media__ns;#mediamanager__diff;#mediamanager__uploader;#scroll__here;.actions;.btn;.btn_media_delete;.buttons;.clearer;.date;.detail;.example;.filesize;.icon;.idx_dir;.image,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0159,dokuwiki,inc/media.php,134,199,long_method_or_region,Long or Complex Region,12,,,,.buttons;.nothing;.row,,Extract Method,pending
+dokuwiki-C0160,dokuwiki,inc/media.php,407,480,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+dokuwiki-C0161,dokuwiki,inc/media.php,554,605,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+dokuwiki-C0162,dokuwiki,inc/media.php,605,648,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+dokuwiki-C0163,dokuwiki,inc/media.php,665,716,long_method_or_region,Long or Complex Region,14,,,,#media__ns;.nothing,,Extract Method,pending
+dokuwiki-C0164,dokuwiki,inc/media.php,1195,1261,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+dokuwiki-C0165,dokuwiki,inc/media.php,1281,1408,mixed_php_html,Mixed PHP/HTML,22,,,,#mediamanager__diff;.actions;.image;.img_tags;.table,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0166,dokuwiki,inc/media.php,1479,1540,long_method_or_region,Long or Complex Region,12,,,,#media__ns;.nothing,,Extract Method,pending
+dokuwiki-C0167,dokuwiki,inc/media.php,1691,1763,long_method_or_region,Long or Complex Region,14,,,,#d_:;#l_:;.detail;.image;.select;.thumb,,Extract Method,pending
+dokuwiki-C0168,dokuwiki,inc/media.php,2020,2065,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+dokuwiki-C0169,dokuwiki,inc/media.php,2065,2130,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+dokuwiki-C0170,dokuwiki,inc/media.php,2157,2194,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+dokuwiki-C0171,dokuwiki,inc/media.php,2309,2416,long_method_or_region,Long or Complex Region,30,,,,,,Extract Method,pending
+dokuwiki-C0172,dokuwiki,inc/pageutils.php,1,775,long_method_or_region,Long or Complex Region,115,,,,,,Extract Method,pending
+dokuwiki-C0173,dokuwiki,inc/pageutils.php,25,111,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+dokuwiki-C0174,dokuwiki,inc/pageutils.php,111,164,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+dokuwiki-C0175,dokuwiki,inc/pageutils.php,288,333,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+dokuwiki-C0176,dokuwiki,inc/pageutils.php,456,507,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+dokuwiki-C0177,dokuwiki,inc/pageutils.php,532,616,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+dokuwiki-C0178,dokuwiki,inc/parserutils.php,226,313,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+dokuwiki-C0179,dokuwiki,inc/parserutils.php,313,394,long_method_or_region,Long or Complex Region,22,,,,,,Extract Method,pending
+dokuwiki-C0180,dokuwiki,inc/parserutils.php,517,613,long_method_or_region,Long or Complex Region,10,,,,.Doku_Parser_Mode_$m,,Extract Method,pending
+dokuwiki-C0181,dokuwiki,inc/parserutils.php,676,733,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+dokuwiki-C0182,dokuwiki,inc/PassHash.class.php,24,106,long_method_or_region,Long or Complex Region,22,,,,,,Extract Method,pending
+dokuwiki-C0183,dokuwiki,inc/PassHash.class.php,194,238,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+dokuwiki-C0184,dokuwiki,inc/PassHash.class.php,359,415,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+dokuwiki-C0185,dokuwiki,inc/plugincontroller.class.php,71,119,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+dokuwiki-C0186,dokuwiki,inc/plugincontroller.class.php,216,249,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+dokuwiki-C0187,dokuwiki,inc/plugincontroller.class.php,292,330,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+dokuwiki-C0188,dokuwiki,inc/PluginTrait.php,1,238,mixed_php_html,Mixed PHP/HTML,30,,,,.class=,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0189,dokuwiki,inc/RemoteAPICore.php,28,176,long_method_or_region,Long or Complex Region,2,,,,,,Extract Method,pending
+dokuwiki-C0190,dokuwiki,inc/RemoteAPICore.php,483,544,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+dokuwiki-C0191,dokuwiki,inc/RemoteAPICore.php,780,837,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+dokuwiki-C0192,dokuwiki,inc/search.php,26,107,long_method_or_region,Long or Complex Region,20,,,,,,Extract Method,pending
+dokuwiki-C0193,dokuwiki,inc/search.php,186,248,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+dokuwiki-C0194,dokuwiki,inc/search.php,387,433,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+dokuwiki-C0195,dokuwiki,inc/search.php,433,519,long_method_or_region,Long or Complex Region,31,,,,,,Extract Method,pending
+dokuwiki-C0196,dokuwiki,inc/Sitemapper.php,30,83,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+dokuwiki-C0197,dokuwiki,inc/StyleUtils.php,19,112,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+dokuwiki-C0198,dokuwiki,inc/subscription.php,1,693,mixed_php_html,Mixed PHP/HTML,107,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0199,dokuwiki,inc/subscription.php,94,154,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+dokuwiki-C0200,dokuwiki,inc/subscription.php,154,201,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+dokuwiki-C0201,dokuwiki,inc/subscription.php,290,391,long_method_or_region,Long or Complex Region,22,,,,,,Extract Method,pending
+dokuwiki-C0202,dokuwiki,inc/template.php,1,1873,mixed_php_html_sql,SQL in Presentation Logic,296,,,html;local;metadata;the;this;web,"#.rawurlencode($ID).
+        ;#media__content;#media__tree;#mediamanager__page;.\\dokuwiki\\Menu\\Item\\;.a11y;.action;.bchead;.bcsep;.breadcrumbs;.curid;.file;.filelist;.home;.level2;.li;.license;.mediafile;.mf_;.namespaces",,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+dokuwiki-C0203,dokuwiki,inc/template.php,118,166,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+dokuwiki-C0204,dokuwiki,inc/template.php,205,379,long_method_or_region,Long or Complex Region,27,,,,,,Extract Method,pending
+dokuwiki-C0205,dokuwiki,inc/template.php,379,418,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+dokuwiki-C0206,dokuwiki,inc/template.php,520,576,long_method_or_region,Long or Complex Region,10,,,,.action,,Extract Method,pending
+dokuwiki-C0207,dokuwiki,inc/template.php,576,634,long_method_or_region,Long or Complex Region,12,,,,.\\dokuwiki\\Menu\\Item\\,,Extract Method,pending
+dokuwiki-C0208,dokuwiki,inc/template.php,721,769,long_method_or_region,Long or Complex Region,10,,,,.bchead;.bcsep;.breadcrumbs;.curid,,Extract Method,pending
+dokuwiki-C0209,dokuwiki,inc/template.php,769,831,long_method_or_region,Long or Complex Region,16,,,,.bchead;.home,,Extract Method,pending
+dokuwiki-C0210,dokuwiki,inc/template.php,851,916,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+dokuwiki-C0211,dokuwiki,inc/template.php,916,1003,long_method_or_region,Long or Complex Region,21,,,,,,Extract Method,pending
+dokuwiki-C0212,dokuwiki,inc/template.php,1090,1150,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+dokuwiki-C0213,dokuwiki,inc/template.php,1321,1372,long_method_or_region,Long or Complex Region,11,,,,#media__content,,Extract Method,pending
+dokuwiki-C0214,dokuwiki,inc/template.php,1420,1484,long_method_or_region,Long or Complex Region,13,,,,.mediafile;.mf_;.panelContent;.panelHeader;.select,,Extract Method,pending
+dokuwiki-C0215,dokuwiki,inc/template.php,1518,1561,long_method_or_region,Long or Complex Region,14,,,,.license;.urlextern,,Extract Method,pending
+dokuwiki-C0216,dokuwiki,inc/template.php,1678,1729,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+dokuwiki-C0217,dokuwiki,inc/toolbar.php,18,241,long_method_or_region,Long or Complex Region,3,,,,,,Extract Method,pending
+dokuwiki-C0218,dokuwiki,inc/utf8.php,88,122,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+dokuwiki-C0219,dokuwiki,inc/utf8.php,178,284,long_method_or_region,Long or Complex Region,32,,,,,,Extract Method,pending
+dokuwiki-C0220,dokuwiki,inc/utf8.php,710,886,long_method_or_region,Long or Complex Region,24,,,,,,Extract Method,pending
+dokuwiki-C0221,dokuwiki,inc/utf8.php,886,965,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+dokuwiki-C0222,dokuwiki,inc/utf8.php,1049,1772,long_method_or_region,Long or Complex Region,31,,,,,,Extract Method,pending
+dokuwiki-C0223,dokuwiki,lib/exe/css.php,29,183,long_method_or_region,Long or Complex Region,25,,,,,,Extract Method,pending
+dokuwiki-C0224,dokuwiki,lib/exe/css.php,537,576,long_method_or_region,Long or Complex Region,27,,,,,,Extract Method,pending
+dokuwiki-C0225,dokuwiki,lib/exe/indexer.php,60,140,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+dokuwiki-C0226,dokuwiki,lib/exe/js.php,29,163,long_method_or_region,Long or Complex Region,19,,,,,,Extract Method,pending
+dokuwiki-C0227,dokuwiki,lib/exe/js.php,219,262,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+dokuwiki-C0228,dokuwiki,lib/exe/js.php,262,305,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+dokuwiki-C0229,dokuwiki,lib/exe/js.php,333,485,long_method_or_region,Long or Complex Region,33,,,,,,Extract Method,pending
+dokuwiki-C0230,dokuwiki,lib/plugins/auth.php,1,438,session_dependent_logic,Session-Dependent Logic,46,,,,,,Extract Guard;Extract Method,pending
+dokuwiki-C0231,dokuwiki,lib/plugins/auth.php,83,121,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+dokuwiki-C0232,dokuwiki,lib/tpl/dokuwiki/detail.php,1,105,mixed_php_html,Mixed PHP/HTML,78,,,,#dokuwiki__content;#dokuwiki__detail;#dokuwiki__pagetools;#dokuwiki__site;#dokuwiki__top;.<?php;.a11y;.docInfo;.echo;.group;.img_detail;.no-js;.pad;.page;.pageId;.site;.tools;.wrapper,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0233,dokuwiki,lib/tpl/dokuwiki/main.php,1,88,mixed_php_html,Mixed PHP/HTML,69,,,,#dokuwiki__aside;#dokuwiki__content;#dokuwiki__pagetools;#dokuwiki__site;#dokuwiki__top;#screen__mode;.<?php;.a11y;.aside;.content;.docInfo;.echo;.group;.include;.no;.no-js;.pad;.page;.pageId;.site,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0234,dokuwiki,lib/tpl/dokuwiki/mediamanager.php,1,44,mixed_php_html,Mixed PHP/HTML,28,,,,#media__manager;#media__opts;#mediamgr__aside;#mediamgr__content;.dokuwiki;.no-js;.pad;.popup,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0235,dokuwiki,lib/tpl/dokuwiki/tpl_footer.php,1,33,mixed_php_html,Mixed PHP/HTML,31,,,,#dokuwiki__footer;.buttons;.pad,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0236,dokuwiki,lib/tpl/dokuwiki/tpl_header.php,1,84,mixed_php_html,Mixed PHP/HTML,54,,,,#dokuwiki__header;#dokuwiki__sitetools;#dokuwiki__usertools;.a11y;.breadcrumbs;.claim;.group;.headings;.mobileTools;.pad;.skip;.tools;.trace;.user;.youarehere,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0237,dokuwiki,lib/plugins/acl/admin.php,1,815,mixed_php_html_sql,SQL in Presentation Logic,123,current_id;current_ns,,conf;of;pages;parts;this;upper,#acl__detail;#acl__info;#acl__tree;#acl__user;#acl_manager;#fn__1;#fnt__1;.aclgroup;.aclns;.aclpage;.acluser;.action;.check;.class=;.clearer;.edit;.fn;.fn_bot;.fn_top;.footnotes,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+dokuwiki-C0238,dokuwiki,lib/plugins/acl/admin.php,54,174,long_method_or_region,Long or Complex Region,30,,,,,,Extract Method,pending
+dokuwiki-C0239,dokuwiki,lib/plugins/acl/admin.php,284,326,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+dokuwiki-C0240,dokuwiki,lib/plugins/acl/admin.php,408,491,long_method_or_region,Long or Complex Region,20,,,,,,Extract Method,pending
+dokuwiki-C0241,dokuwiki,lib/plugins/acl/admin.php,755,816,long_method_or_region,Long or Complex Region,11,,,,.aclgroup;.acluser;.edit,,Extract Method,pending
+dokuwiki-C0242,dokuwiki,lib/plugins/authad/auth.php,1,730,mixed_php_html,Mixed PHP/HTML,119,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0243,dokuwiki,lib/plugins/authad/auth.php,189,284,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+dokuwiki-C0244,dokuwiki,lib/plugins/authad/auth.php,467,522,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+dokuwiki-C0245,dokuwiki,lib/plugins/authad/auth.php,522,576,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+dokuwiki-C0246,dokuwiki,lib/plugins/authad/auth.php,626,675,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+dokuwiki-C0247,dokuwiki,lib/plugins/authldap/auth.php,55,152,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+dokuwiki-C0248,dokuwiki,lib/plugins/authldap/auth.php,161,307,long_method_or_region,Long or Complex Region,33,,,,,,Extract Method,pending
+dokuwiki-C0249,dokuwiki,lib/plugins/authldap/auth.php,307,364,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+dokuwiki-C0250,dokuwiki,lib/plugins/authldap/auth.php,377,430,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+dokuwiki-C0251,dokuwiki,lib/plugins/authldap/auth.php,509,613,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+dokuwiki-C0252,dokuwiki,lib/plugins/authmysql/auth.php,1,1110,sql_data_access,SQL/Data Access Region,182,,,a;procedure;the;will,,,Light Data-Access Isolation;Extract Method,pending
+dokuwiki-C0253,dokuwiki,lib/plugins/authmysql/auth.php,220,277,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+dokuwiki-C0254,dokuwiki,lib/plugins/authmysql/auth.php,277,330,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+dokuwiki-C0255,dokuwiki,lib/plugins/authmysql/auth.php,799,857,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+dokuwiki-C0256,dokuwiki,lib/plugins/authmysql/auth.php,1041,1085,long_method_or_region,Long or Complex Region,20,,,,,,Extract Method,pending
+dokuwiki-C0257,dokuwiki,lib/plugins/authpdo/auth.php,1,781,sql_data_access,SQL/Data Access Region,138,,,select;the,,,Light Data-Access Isolation;Extract Method,pending
+dokuwiki-C0258,dokuwiki,lib/plugins/authpdo/auth.php,26,161,sql_data_access,SQL/Data Access Region,16,,,,,,Light Data-Access Isolation;Extract Method,pending
+dokuwiki-C0259,dokuwiki,lib/plugins/authpdo/auth.php,233,291,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+dokuwiki-C0260,dokuwiki,lib/plugins/authpdo/auth.php,291,382,long_method_or_region,Long or Complex Region,27,,,,,,Extract Method,pending
+dokuwiki-C0261,dokuwiki,lib/plugins/authpdo/auth.php,400,435,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+dokuwiki-C0262,dokuwiki,lib/plugins/authpdo/auth.php,659,713,sql_data_access,SQL/Data Access Region,13,,,,,,Light Data-Access Isolation;Extract Method,pending
+dokuwiki-C0263,dokuwiki,lib/plugins/authpgsql/auth.php,1,431,sql_data_access,SQL/Data Access Region,49,,,or;the,,,Light Data-Access Isolation;Extract Method,pending
+dokuwiki-C0264,dokuwiki,lib/plugins/authpgsql/auth.php,253,300,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+dokuwiki-C0265,dokuwiki,lib/plugins/config/admin.php,1,404,mixed_php_html,Mixed PHP/HTML,78,,PLUGIN_CONFIG,,#config__manager;.default;.error;.info;.inline;.label;.no;.outkey;.protected;.success;.table;.value,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0266,dokuwiki,lib/plugins/config/admin.php,43,89,session_dependent_logic,Session-Dependent Logic,11,,PLUGIN_CONFIG,,,,Extract Guard;Extract Method,pending
+dokuwiki-C0267,dokuwiki,lib/plugins/config/admin.php,89,182,long_method_or_region,Long or Complex Region,21,,,,#config__manager;.default;.error;.info;.inline;.label;.no;.outkey;.protected;.success;.table;.value,,Extract Method,pending
+dokuwiki-C0268,dokuwiki,lib/plugins/config/admin.php,274,331,long_method_or_region,Long or Complex Region,19,,,,,,Extract Method,pending
+dokuwiki-C0269,dokuwiki,lib/plugins/config/admin.php,331,390,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+dokuwiki-C0270,dokuwiki,lib/plugins/extension/admin.php,1,159,mixed_php_html,Mixed PHP/HTML,30,,,,#extension__manager,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0271,dokuwiki,lib/plugins/extension/admin.php,46,134,long_method_or_region,Long or Complex Region,21,,,,,,Extract Method,pending
+dokuwiki-C0272,dokuwiki,lib/plugins/info/syntax.php,1,294,mixed_php_html,Mixed PHP/HTML,36,,,,.code;.inline;.leftalign;.level2;.level3;.li;.rightalign;.table,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0273,dokuwiki,lib/plugins/info/syntax.php,69,120,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+dokuwiki-C0274,dokuwiki,lib/plugins/popularity/admin.php,1,152,mixed_php_html,Mixed PHP/HTML,21,,,,#autosubmit;.edit,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0275,dokuwiki,lib/plugins/popularity/helper.php,135,262,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+dokuwiki-C0276,dokuwiki,lib/plugins/revert/admin.php,1,184,mixed_php_html,Mixed PHP/HTML,19,,,,#revert__;.edit;.li;.minor;.no;.user,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0277,dokuwiki,lib/plugins/styling/admin.php,1,211,mixed_php_html,Mixed PHP/HTML,21,,,,#plugin__styling;#tpl__;.btn_preview;.color;.error;.ispopup;.nopopup;.page;.primary;.styling,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0278,dokuwiki,lib/plugins/styling/popup.php,1,30,mixed_php_html,Mixed PHP/HTML,17,,,,.dokuwiki,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0279,dokuwiki,lib/plugins/usermanager/admin.php,1,1083,mixed_php_html,Mixed PHP/HTML,169,,import_failures,,.disabled;.error;.field;.import_failures;.import_users;.level2;.level3;.line;.lineno;.usergroups;.userid;.usermail;.username,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0280,dokuwiki,lib/plugins/usermanager/admin.php,111,163,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+dokuwiki-C0281,dokuwiki,lib/plugins/usermanager/admin.php,163,308,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+dokuwiki-C0282,dokuwiki,lib/plugins/usermanager/admin.php,308,391,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+dokuwiki-C0283,dokuwiki,lib/plugins/usermanager/admin.php,510,590,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+dokuwiki-C0284,dokuwiki,lib/plugins/usermanager/admin.php,650,735,long_method_or_region,Long or Complex Region,20,,,,,,Extract Method,pending
+dokuwiki-C0285,dokuwiki,lib/plugins/usermanager/admin.php,924,995,session_dependent_logic,Session-Dependent Logic,15,,import_failures,,,,Extract Guard;Extract Method,pending
+dokuwiki-C0286,dokuwiki,lib/plugins/extension/helper/extension.php,699,744,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+dokuwiki-C0287,dokuwiki,lib/plugins/extension/helper/extension.php,857,965,long_method_or_region,Long or Complex Region,23,,,,#template:,,Extract Method,pending
+dokuwiki-C0288,dokuwiki,lib/plugins/extension/helper/extension.php,965,1038,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+dokuwiki-C0289,dokuwiki,lib/plugins/extension/helper/extension.php,1038,1081,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+dokuwiki-C0290,dokuwiki,lib/plugins/extension/helper/gui.php,1,193,mixed_php_html,Mixed PHP/HTML,17,,,,.active;.panelHeader;.tabs,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0291,dokuwiki,lib/plugins/extension/helper/list.php,1,567,mixed_php_html,Mixed PHP/HTML,80,,,,#extension__list;#extensionplugin__;.a11y;.author;.bugs;.close;.details;.donate;.error;.extensionList;.extension_screenshot;.info;.linkbar;.msg;.no;.notfound;.notify;.permerror;.popularity;.screenshot,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0292,dokuwiki,lib/plugins/extension/helper/list.php,358,449,long_method_or_region,Long or Complex Region,18,,,,.details;.donate,,Extract Method,pending
+dokuwiki-C0293,dokuwiki,lib/plugins/extension/helper/list.php,463,525,long_method_or_region,Long or Complex Region,16,,,,.permerror;.version,,Extract Method,pending
+dokuwiki-C0294,dokuwiki,lib/plugins/config/settings/config.class.php,1,1430,mixed_php_html_sql,SQL in Presentation Logic,267,,,a;an;array;changed;comma;last;quoted;setting;the;value,#config___;./conf/settings.class.php;.checkbox;.edit;.input;.other;.selection;.setting;.setting_;.setting_undefined,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+dokuwiki-C0295,dokuwiki,lib/plugins/config/settings/config.class.php,66,124,long_method_or_region,Long or Complex Region,12,,,,.setting;.setting_;.setting_undefined,,Extract Method,pending
+dokuwiki-C0296,dokuwiki,lib/plugins/config/settings/config.class.php,191,244,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+dokuwiki-C0297,dokuwiki,lib/plugins/config/settings/config.class.php,369,413,long_method_or_region,Long or Complex Region,12,,,,./conf/settings.class.php,,Extract Method,pending
+dokuwiki-C0298,dokuwiki,lib/plugins/config/settings/config.class.php,870,938,long_method_or_region,Long or Complex Region,21,,,,,,Extract Method,pending
+dokuwiki-C0299,dokuwiki,lib/plugins/config/settings/config.class.php,1070,1121,long_method_or_region,Long or Complex Region,14,,,,#config___;.edit,,Extract Method,pending
+dokuwiki-C0300,dokuwiki,lib/plugins/config/settings/config.class.php,1152,1243,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+dokuwiki-C0301,dokuwiki,lib/plugins/config/settings/config.class.php,1270,1340,long_method_or_region,Long or Complex Region,15,,,,#config___;.checkbox;.edit;.other;.selection,,Extract Method,pending
+dokuwiki-C0302,dokuwiki,lib/plugins/config/settings/config.metadata.php,1,240,sql_data_access,SQL/Data Access Region,23,,,a;changing;enabled;licence;string;the,,,Light Data-Access Isolation;Extract Method,pending
+dokuwiki-C0303,dokuwiki,lib/plugins/config/settings/extra.class.php,93,146,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+dokuwiki-C0304,dokuwiki,lib/plugins/config/lang/cy/lang.php,1,262,mixed_php_html,Mixed PHP/HTML,14,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0305,dokuwiki,lib/plugins/config/lang/da/lang.php,1,200,mixed_php_html,Mixed PHP/HTML,42,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0306,dokuwiki,lib/plugins/config/lang/de/lang.php,1,225,mixed_php_html,Mixed PHP/HTML,12,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0307,dokuwiki,lib/plugins/config/lang/de-informal/lang.php,1,208,mixed_php_html,Mixed PHP/HTML,12,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0308,dokuwiki,lib/plugins/config/lang/en/lang.php,1,279,mixed_php_html,Mixed PHP/HTML,58,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0309,dokuwiki,lib/plugins/config/lang/es/lang.php,1,228,mixed_php_html,Mixed PHP/HTML,12,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0310,dokuwiki,lib/plugins/config/lang/hr/lang.php,1,210,mixed_php_html,Mixed PHP/HTML,12,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0311,dokuwiki,lib/plugins/config/lang/hu/lang.php,1,202,mixed_php_html,Mixed PHP/HTML,13,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0312,dokuwiki,lib/plugins/config/lang/it/lang.php,1,214,mixed_php_html,Mixed PHP/HTML,12,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0313,dokuwiki,lib/plugins/config/lang/ko/lang.php,1,211,mixed_php_html,Mixed PHP/HTML,12,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0314,dokuwiki,lib/plugins/config/lang/no/lang.php,1,214,mixed_php_html,Mixed PHP/HTML,64,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0315,dokuwiki,lib/plugins/config/lang/pt/lang.php,1,193,mixed_php_html,Mixed PHP/HTML,14,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0316,dokuwiki,lib/plugins/config/lang/pt-br/lang.php,1,217,mixed_php_html,Mixed PHP/HTML,16,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0317,dokuwiki,lib/plugins/config/lang/sk/lang.php,1,198,mixed_php_html,Mixed PHP/HTML,12,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0318,dokuwiki,lib/plugins/authpgsql/lang/en/settings.php,1,33,sql_data_access,SQL/Data Access Region,14,,,a;all;clause,,,Light Data-Access Isolation;Extract Method,pending
+dokuwiki-C0319,dokuwiki,lib/plugins/authmysql/lang/en/settings.php,1,39,sql_data_access,SQL/Data Access Region,14,,,a;all;clause,,,Light Data-Access Isolation;Extract Method,pending
+dokuwiki-C0320,dokuwiki,lib/plugins/authad/adLDAP/adLDAP.php,1,949,sql_data_access,SQL/Data Access Region,131,,,Active;a;admin;the;your,,,Light Data-Access Isolation;Extract Method,pending
+dokuwiki-C0321,dokuwiki,lib/plugins/authad/adLDAP/adLDAP.php,574,614,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+dokuwiki-C0322,dokuwiki,lib/plugins/authad/adLDAP/adLDAP.php,623,678,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+dokuwiki-C0323,dokuwiki,lib/plugins/authad/adLDAP/adLDAP.php,692,733,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+dokuwiki-C0324,dokuwiki,lib/plugins/authad/adLDAP/adLDAP.php,798,879,long_method_or_region,Long or Complex Region,55,,,,,,Extract Method,pending
+dokuwiki-C0325,dokuwiki,lib/plugins/authad/adLDAP/classes/adLDAPExchange.php,152,220,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+dokuwiki-C0326,dokuwiki,lib/plugins/authad/adLDAP/classes/adLDAPExchange.php,260,303,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+dokuwiki-C0327,dokuwiki,lib/plugins/authad/adLDAP/classes/adLDAPFolders.php,81,151,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+dokuwiki-C0328,dokuwiki,lib/plugins/authad/adLDAP/classes/adLDAPGroups.php,308,357,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+dokuwiki-C0329,dokuwiki,lib/plugins/authad/adLDAP/classes/adLDAPGroups.php,357,414,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+dokuwiki-C0330,dokuwiki,lib/plugins/authad/adLDAP/classes/adLDAPUsers.php,75,131,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+dokuwiki-C0331,dokuwiki,lib/plugins/authad/adLDAP/classes/adLDAPUsers.php,131,169,long_method_or_region,Long or Complex Region,22,,,,,,Extract Method,pending
+dokuwiki-C0332,dokuwiki,lib/plugins/authad/adLDAP/classes/adLDAPUsers.php,216,271,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+dokuwiki-C0333,dokuwiki,lib/plugins/authad/adLDAP/classes/adLDAPUsers.php,320,392,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+dokuwiki-C0334,dokuwiki,lib/plugins/authad/adLDAP/classes/adLDAPUsers.php,392,440,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+dokuwiki-C0335,dokuwiki,lib/plugins/authad/adLDAP/classes/adLDAPUsers.php,475,516,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+dokuwiki-C0336,dokuwiki,lib/images/fileicons/index.php,1,67,mixed_php_html,Mixed PHP/HTML,13,,,,.black;.box;.white,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0337,dokuwiki,inc/Action/Edit.php,40,87,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+dokuwiki-C0338,dokuwiki,inc/Action/Resendpwd.php,59,178,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+dokuwiki-C0339,dokuwiki,inc/Action/Search.php,79,136,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+dokuwiki-C0340,dokuwiki,inc/Action/Subscribe.php,53,114,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+dokuwiki-C0341,dokuwiki,inc/Action/Subscribe.php,114,167,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+dokuwiki-C0342,dokuwiki,inc/Form/Form.php,1,456,form_handling,Request Handling Mixed With Rendering,54,,,,,,Extract Validation Helper;Extract Method;Extract View Helper,pending
+dokuwiki-C0343,dokuwiki,inc/Form/Form.php,310,332,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+dokuwiki-C0344,dokuwiki,inc/Form/InputElement.php,1,159,mixed_php_html,Mixed PHP/HTML,18,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0345,dokuwiki,inc/Form/LegacyForm.php,21,114,long_method_or_region,Long or Complex Region,19,,,,,,Extract Method,pending
+dokuwiki-C0346,dokuwiki,inc/parser/handler.php,378,437,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+dokuwiki-C0347,dokuwiki,inc/parser/handler.php,527,591,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+dokuwiki-C0348,dokuwiki,inc/parser/handler.php,666,722,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+dokuwiki-C0349,dokuwiki,inc/parser/handler.php,722,813,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+dokuwiki-C0350,dokuwiki,inc/parser/handler.php,995,1103,long_method_or_region,Long or Complex Region,8,,,,,,Extract Method,pending
+dokuwiki-C0351,dokuwiki,inc/parser/handler.php,1211,1265,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+dokuwiki-C0352,dokuwiki,inc/parser/handler.php,1424,1658,long_method_or_region,Long or Complex Region,37,,,,,,Extract Method,pending
+dokuwiki-C0353,dokuwiki,inc/parser/handler.php,1745,1812,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+dokuwiki-C0354,dokuwiki,inc/parser/lexer.php,158,217,long_method_or_region,Long or Complex Region,20,,,,,,Extract Method,pending
+dokuwiki-C0355,dokuwiki,inc/parser/parser.php,1,1034,mixed_php_html,Mixed PHP/HTML,121,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0356,dokuwiki,inc/parser/parser.php,362,422,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+dokuwiki-C0357,dokuwiki,inc/parser/parser.php,855,882,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+dokuwiki-C0358,dokuwiki,inc/parser/parser.php,944,962,long_method_or_region,Long or Complex Region,25,,,,,,Extract Method,pending
+dokuwiki-C0359,dokuwiki,inc/parser/renderer.php,821,884,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+dokuwiki-C0360,dokuwiki,inc/parser/xhtml.php,1,1970,mixed_php_html,Mixed PHP/HTML,239,,,,#fn__;#fnt__;.class=;.class=\;.code;.content;.curid;.detail;.fn;.fn_bot;.fn_top;.footnotes;.icon;.inline;.level;.li;.media;.mediafile;.mf_;.no,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0361,dokuwiki,inc/parser/xhtml.php,141,202,long_method_or_region,Long or Complex Region,10,,,,#fn__;.content;.fn;.fn_bot;.footnotes,,Extract Method,pending
+dokuwiki-C0362,dokuwiki,inc/parser/xhtml.php,875,966,long_method_or_region,Long or Complex Region,18,,,,.curid;.media;.wikilink1;.wikilink2,,Extract Method,pending
+dokuwiki-C0363,dokuwiki,inc/parser/xhtml.php,966,1030,long_method_or_region,Long or Complex Region,14,,,,.media;.urlextern,,Extract Method,pending
+dokuwiki-C0364,dokuwiki,inc/parser/xhtml.php,1030,1085,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+dokuwiki-C0365,dokuwiki,inc/parser/xhtml.php,1177,1233,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+dokuwiki-C0366,dokuwiki,inc/parser/xhtml.php,1233,1280,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+dokuwiki-C0367,dokuwiki,inc/parser/xhtml.php,1280,1372,long_method_or_region,Long or Complex Region,19,,,,.detail;.li;.rss,,Extract Method,pending
+dokuwiki-C0368,dokuwiki,inc/parser/xhtml.php,1606,1716,long_method_or_region,Long or Complex Region,29,,,,.media,,Extract Method,pending
+dokuwiki-C0369,dokuwiki,inc/parser/xhtml.php,1837,1911,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+dokuwiki-C0370,dokuwiki,inc/parser/xhtmlsummary.php,1,89,mixed_php_html,Mixed PHP/HTML,12,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0371,dokuwiki,inc/Ui/Admin.php,1,173,mixed_php_html,Mixed PHP/HTML,22,,,,#admin__version;.admin_plugins;.admin_tasks;.icon;.li;.prompt;.ui-admin,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0372,dokuwiki,inc/Ui/Search.php,1,644,mixed_php_html,Mixed PHP/HTML,62,,,,.clearer;.hits;.lastmod;.nothing;.search_fullpage_result;.search_fulltextresult;.search_quickhits;.search_quickresult;.search_results,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0373,dokuwiki,inc/Ui/Search.php,306,367,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+dokuwiki-C0374,dokuwiki,inc/Ui/SearchState.php,1,141,mixed_php_html,Mixed PHP/HTML,13,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0375,dokuwiki,inc/Menu/Item/AbstractItem.php,1,253,mixed_php_html,Mixed PHP/HTML,22,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0376,dokuwiki,inc/lang/da/lang.php,1,356,mixed_php_html,Mixed PHP/HTML,27,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0377,dokuwiki,inc/lang/en/lang.php,1,389,mixed_php_html_sql,SQL in Presentation Logic,30,,,Profile;subscription;the;this,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+dokuwiki-C0378,dokuwiki,inc/lang/et/lang.php,1,336,mixed_php_html,Mixed PHP/HTML,12,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0379,dokuwiki,inc/lang/fr/lang.php,1,389,mixed_php_html,Mixed PHP/HTML,12,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0380,dokuwiki,inc/lang/hu/lang.php,1,350,mixed_php_html,Mixed PHP/HTML,12,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0381,dokuwiki,inc/lang/mk/lang.php,1,226,mixed_php_html,Mixed PHP/HTML,12,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0382,dokuwiki,inc/lang/mr/lang.php,1,265,mixed_php_html,Mixed PHP/HTML,12,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0383,dokuwiki,inc/lang/no/lang.php,1,366,mixed_php_html,Mixed PHP/HTML,30,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0384,dokuwiki,inc/lang/pt-br/lang.php,1,361,mixed_php_html,Mixed PHP/HTML,12,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+dokuwiki-C0385,dokuwiki,inc/lang/sq/lang.php,1,236,mixed_php_html,Mixed PHP/HTML,12,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending

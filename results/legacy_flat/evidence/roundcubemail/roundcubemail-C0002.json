@@ -1,0 +1,82 @@
+{
+  "candidate_id": "roundcubemail-C0002",
+  "subject_id": "roundcubemail",
+  "file": "config/defaults.inc.php",
+  "lines": [
+    1,
+    1287
+  ],
+  "candidate_type": "sql_data_access",
+  "issues": [
+    {
+      "type": "SQL/Data Access Region",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 182
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [],
+    "database_tables": [
+      "CAPABILITY",
+      "Clickjacking",
+      "above",
+      "caching",
+      "date_format",
+      "e",
+      "http",
+      "image",
+      "message",
+      "of",
+      "renames",
+      "skins",
+      "supported",
+      "the",
+      "these",
+      "user",
+      "users"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [
+      "CAPABILITY",
+      "Clickjacking",
+      "above",
+      "caching",
+      "date_format",
+      "e",
+      "http",
+      "image",
+      "message",
+      "of",
+      "renames",
+      "skins",
+      "supported",
+      "the",
+      "these",
+      "user",
+      "users"
+    ],
+    "must_preserve_dom_selectors": [],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

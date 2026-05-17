@@ -1,0 +1,54 @@
+{
+  "candidate_id": "dolibarr-C2725",
+  "subject_id": "dolibarr",
+  "file": "htdocs/expensereport/class/expensereport.class.php",
+  "lines": [
+    1964,
+    2079
+  ],
+  "candidate_type": "sql_data_access",
+  "issues": [
+    {
+      "type": "SQL/Data Access Region",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 11
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [],
+    "database_tables": [
+      "vatrate"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$type_fees_id;\n            $resql = $this->db->query($sql);\n            if ($resql)\n            {\n                $objp_fees = $this->db->fetch_object($resql);\n                $this->line->type_fees_code      = $objp_fees->code_type_fees;\n                $this->line->type_fees_libelle   = $objp_fees->libelle_type_fees;\n                $this->db->free($resql);\n            }\n\n            // Select des informations du projet\n            $sql = "
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [
+      "vatrate"
+    ],
+    "must_preserve_dom_selectors": [
+      "#.$type_fees_id;\n            $resql = $this->db->query($sql);\n            if ($resql)\n            {\n                $objp_fees = $this->db->fetch_object($resql);\n                $this->line->type_fees_code      = $objp_fees->code_type_fees;\n                $this->line->type_fees_libelle   = $objp_fees->libelle_type_fees;\n                $this->db->free($resql);\n            }\n\n            // Select des informations du projet\n            $sql = "
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

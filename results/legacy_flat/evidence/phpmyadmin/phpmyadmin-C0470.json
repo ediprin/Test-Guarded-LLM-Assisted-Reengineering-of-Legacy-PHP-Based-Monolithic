@@ -1,0 +1,167 @@
+{
+  "candidate_id": "phpmyadmin-C0470",
+  "subject_id": "phpmyadmin",
+  "file": "libraries/classes/Operations.php",
+  "lines": [
+    1,
+    2158
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 204
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "add_constraints",
+      "adjust_privileges",
+      "comment",
+      "db_collation",
+      "drop_if_exists",
+      "new_auto_increment",
+      "new_checksum",
+      "new_delay_key_write",
+      "new_name",
+      "new_pack_keys",
+      "new_page_checksum",
+      "new_row_format",
+      "new_tbl_storage_engine",
+      "new_transactional",
+      "newname",
+      "order_field",
+      "order_order",
+      "partition_name",
+      "partition_operation",
+      "prev_comment",
+      "submit_move",
+      "switch_to_new",
+      "target_db",
+      "tbl_collation",
+      "what"
+    ],
+    "session_keys": [
+      "pma_switch_to_new"
+    ],
+    "database_tables": [
+      "Maria",
+      "a",
+      "an",
+      "creating",
+      "information_schema",
+      "the"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#alterTableOrderby",
+      "#auto_increment_opt",
+      "#change_db_charset_form",
+      "#checkbox_adjust_privileges",
+      "#checkbox_auto_increment",
+      "#checkbox_auto_increment_cp",
+      "#checkbox_auto_increment_mv",
+      "#checkbox_change_all_collations",
+      "#checkbox_change_all_tables_collations",
+      "#checkbox_change_all_tables_columns_collations",
+      "#checkbox_constraints",
+      "#checkbox_create_database_before_copying",
+      "#checkbox_drop",
+      "#checkbox_privileges",
+      "#checkbox_privileges_table_options",
+      "#checkbox_privileges_tables_move",
+      "#checkbox_switch",
+      "#copyTable",
+      "#copy_db_form",
+      "#fieldset_table_order"
+    ],
+    "forms": [
+      "copyTable",
+      "db_operations.php",
+      "tbl_operations.php"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "add_constraints",
+      "adjust_privileges",
+      "comment",
+      "db_collation",
+      "drop_if_exists",
+      "new_auto_increment",
+      "new_checksum",
+      "new_delay_key_write",
+      "new_name",
+      "new_pack_keys",
+      "new_page_checksum",
+      "new_row_format",
+      "new_tbl_storage_engine",
+      "new_transactional",
+      "newname",
+      "order_field",
+      "order_order",
+      "partition_name",
+      "partition_operation",
+      "prev_comment",
+      "submit_move",
+      "switch_to_new",
+      "target_db",
+      "tbl_collation",
+      "what"
+    ],
+    "must_preserve_session_keys": [
+      "pma_switch_to_new"
+    ],
+    "must_preserve_database_tables": [
+      "Maria",
+      "a",
+      "an",
+      "creating",
+      "information_schema",
+      "the"
+    ],
+    "must_preserve_dom_selectors": [
+      "#alterTableOrderby",
+      "#auto_increment_opt",
+      "#change_db_charset_form",
+      "#checkbox_adjust_privileges",
+      "#checkbox_auto_increment",
+      "#checkbox_auto_increment_cp",
+      "#checkbox_auto_increment_mv",
+      "#checkbox_change_all_collations",
+      "#checkbox_change_all_tables_collations",
+      "#checkbox_change_all_tables_columns_collations",
+      "#checkbox_constraints",
+      "#checkbox_create_database_before_copying",
+      "#checkbox_drop",
+      "#checkbox_privileges",
+      "#checkbox_privileges_table_options",
+      "#checkbox_privileges_tables_move",
+      "#checkbox_switch",
+      "#copyTable",
+      "#copy_db_form",
+      "#fieldset_table_order"
+    ],
+    "must_preserve_forms": [
+      "copyTable",
+      "db_operations.php",
+      "tbl_operations.php"
+    ]
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

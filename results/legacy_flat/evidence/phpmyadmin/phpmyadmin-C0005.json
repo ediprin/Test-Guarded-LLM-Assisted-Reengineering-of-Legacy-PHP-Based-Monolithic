@@ -1,0 +1,81 @@
+{
+  "candidate_id": "phpmyadmin-C0005",
+  "subject_id": "phpmyadmin",
+  "file": "db_export.php",
+  "lines": [
+    1,
+    150
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 20
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "selected_tbl",
+      "structure_or_data_forced",
+      "table_data",
+      "table_select",
+      "table_structure"
+    ],
+    "session_keys": [],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#table_data_all",
+      "#table_structure_all",
+      ".all",
+      ".checkall",
+      ".export_data",
+      ".export_structure",
+      ".export_table_list_container",
+      ".export_table_name",
+      ".export_table_select",
+      ".marked"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "selected_tbl",
+      "structure_or_data_forced",
+      "table_data",
+      "table_select",
+      "table_structure"
+    ],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#table_data_all",
+      "#table_structure_all",
+      ".all",
+      ".checkall",
+      ".export_data",
+      ".export_structure",
+      ".export_table_list_container",
+      ".export_table_name",
+      ".export_table_select",
+      ".marked"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

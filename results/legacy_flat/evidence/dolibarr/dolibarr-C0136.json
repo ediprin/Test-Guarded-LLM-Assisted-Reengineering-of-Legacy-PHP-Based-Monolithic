@@ -1,0 +1,114 @@
+{
+  "candidate_id": "dolibarr-C0136",
+  "subject_id": "dolibarr",
+  "file": "htdocs/admin/mails.php",
+  "lines": [
+    148,
+    866
+  ],
+  "candidate_type": "session_dependent_logic",
+  "issues": [
+    {
+      "type": "Session-Dependent Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 116
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "frommail",
+      "fromname",
+      "message",
+      "sendto",
+      "sendtocc",
+      "sendtoccc",
+      "subject"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": [
+      "print",
+      "type"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#MAIN_MAIL_EMAIL_DKIM_DOMAIN",
+      "#MAIN_MAIL_EMAIL_DKIM_PRIVATE_KEY",
+      "#MAIN_MAIL_EMAIL_DKIM_SELECTOR",
+      "#MAIN_MAIL_SMTP_PORT",
+      "#MAIN_MAIL_SMTP_PORT_sav",
+      "#MAIN_MAIL_SMTP_SERVER",
+      "#MAIN_MAIL_SMTP_SERVER_sav",
+      "#formmailbeforetitle",
+      "#smtp_port_mess",
+      "#smtp_server_mess",
+      ".butAction",
+      ".butActionRefused",
+      ".button",
+      ".center",
+      ".classfortooltip",
+      ".dkim",
+      ".drag",
+      ".drop",
+      ".flat",
+      ".liste_titre"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "frommail",
+      "fromname",
+      "message",
+      "sendto",
+      "sendtocc",
+      "sendtoccc",
+      "subject"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [
+      "print",
+      "type"
+    ],
+    "must_preserve_dom_selectors": [
+      "#MAIN_MAIL_EMAIL_DKIM_DOMAIN",
+      "#MAIN_MAIL_EMAIL_DKIM_PRIVATE_KEY",
+      "#MAIN_MAIL_EMAIL_DKIM_SELECTOR",
+      "#MAIN_MAIL_SMTP_PORT",
+      "#MAIN_MAIL_SMTP_PORT_sav",
+      "#MAIN_MAIL_SMTP_SERVER",
+      "#MAIN_MAIL_SMTP_SERVER_sav",
+      "#formmailbeforetitle",
+      "#smtp_port_mess",
+      "#smtp_server_mess",
+      ".butAction",
+      ".butActionRefused",
+      ".button",
+      ".center",
+      ".classfortooltip",
+      ".dkim",
+      ".drag",
+      ".drop",
+      ".flat",
+      ".liste_titre"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Guard",
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

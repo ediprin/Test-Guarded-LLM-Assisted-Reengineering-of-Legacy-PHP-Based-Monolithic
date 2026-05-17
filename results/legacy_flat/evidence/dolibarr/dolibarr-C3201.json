@@ -1,0 +1,92 @@
+{
+  "candidate_id": "dolibarr-C3201",
+  "subject_id": "dolibarr",
+  "file": "htdocs/core/class/html.formfile.class.php",
+  "lines": [
+    334,
+    950
+  ],
+  "candidate_type": "session_dependent_logic",
+  "issues": [
+    {
+      "type": "Session-Dependent Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 141
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#show_files",
+      "#togglemassfilesarea",
+      ".ModelePDF",
+      ".button",
+      ".buttongen",
+      ".centpercent",
+      ".div-table-responsive-no-min",
+      ".documentdownload",
+      ".float",
+      ".formdoc",
+      ".hideonsmartphone",
+      ".inline-block",
+      ".liste",
+      ".liste_titre",
+      ".maxwidhtonsmartphone",
+      ".maxwidthonsmartphone",
+      ".minwidth200",
+      ".noborder",
+      ".nowrap",
+      ".nowraponall"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#show_files",
+      "#togglemassfilesarea",
+      ".ModelePDF",
+      ".button",
+      ".buttongen",
+      ".centpercent",
+      ".div-table-responsive-no-min",
+      ".documentdownload",
+      ".float",
+      ".formdoc",
+      ".hideonsmartphone",
+      ".inline-block",
+      ".liste",
+      ".liste_titre",
+      ".maxwidhtonsmartphone",
+      ".maxwidthonsmartphone",
+      ".minwidth200",
+      ".noborder",
+      ".nowrap",
+      ".nowraponall"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Guard",
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "candidate_id": "phpmyadmin-C0962",
+  "subject_id": "phpmyadmin",
+  "file": "libraries/classes/Controllers/Table/TableStructureController.php",
+  "lines": [
+    1,
+    1505
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 161
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "add_key",
+      "change_column",
+      "do_save_data",
+      "edit_partitioning",
+      "field",
+      "field_adjust_privileges",
+      "field_attribute",
+      "field_attribute_orig",
+      "field_collation",
+      "field_collation_orig",
+      "field_default_type",
+      "field_default_type_orig",
+      "field_default_value",
+      "field_default_value_orig",
+      "field_expression",
+      "field_extra",
+      "field_input_transformation",
+      "field_input_transformation_options",
+      "field_length",
+      "field_length_orig",
+      "field_mimetype",
+      "field_move_to",
+      "field_name",
+      "field_null",
+      "field_orig",
+      "field_transformation",
+      "field_transformation_options",
+      "field_type",
+      "field_type_orig",
+      "field_virtuality",
+      "move_columns",
+      "mult_btn",
+      "partition_by",
+      "partition_maintenance",
+      "preview_sql",
+      "reserved_word_check",
+      "save_partitioning",
+      "selected",
+      "selected_fld",
+      "submit_mult"
+    ],
+    "session_keys": [],
+    "database_tables": [
+      "CREATE",
+      "CURRENT_TIMESTAMP",
+      "IE",
+      "a",
+      "current",
+      "field",
+      "first",
+      "mime",
+      "mult_submits",
+      "the"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#structure_content"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "add_key",
+      "change_column",
+      "do_save_data",
+      "edit_partitioning",
+      "field",
+      "field_adjust_privileges",
+      "field_attribute",
+      "field_attribute_orig",
+      "field_collation",
+      "field_collation_orig",
+      "field_default_type",
+      "field_default_type_orig",
+      "field_default_value",
+      "field_default_value_orig",
+      "field_expression",
+      "field_extra",
+      "field_input_transformation",
+      "field_input_transformation_options",
+      "field_length",
+      "field_length_orig",
+      "field_mimetype",
+      "field_move_to",
+      "field_name",
+      "field_null",
+      "field_orig",
+      "field_transformation",
+      "field_transformation_options",
+      "field_type",
+      "field_type_orig",
+      "field_virtuality",
+      "move_columns",
+      "mult_btn",
+      "partition_by",
+      "partition_maintenance",
+      "preview_sql",
+      "reserved_word_check",
+      "save_partitioning",
+      "selected",
+      "selected_fld",
+      "submit_mult"
+    ],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [
+      "CREATE",
+      "CURRENT_TIMESTAMP",
+      "IE",
+      "a",
+      "current",
+      "field",
+      "first",
+      "mime",
+      "mult_submits",
+      "the"
+    ],
+    "must_preserve_dom_selectors": [
+      "#structure_content"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

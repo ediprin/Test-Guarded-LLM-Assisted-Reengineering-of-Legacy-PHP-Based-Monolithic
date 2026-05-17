@@ -1,0 +1,75 @@
+{
+  "candidate_id": "phppgadmin-C0102",
+  "subject_id": "phppgadmin",
+  "file": "sql.php",
+  "lines": [
+    1,
+    263
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 53
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "database",
+      "nohistory",
+      "paginate",
+      "query",
+      "queryid",
+      "return",
+      "schema",
+      "search_path",
+      "server",
+      "subject"
+    ],
+    "session_keys": [
+      "history",
+      "sqlquery"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "database",
+      "nohistory",
+      "paginate",
+      "query",
+      "queryid",
+      "return",
+      "schema",
+      "search_path",
+      "server",
+      "subject"
+    ],
+    "must_preserve_session_keys": [
+      "history",
+      "sqlquery"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

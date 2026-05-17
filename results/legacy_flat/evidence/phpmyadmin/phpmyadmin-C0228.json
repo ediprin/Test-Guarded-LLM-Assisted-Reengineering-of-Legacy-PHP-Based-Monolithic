@@ -1,0 +1,81 @@
+{
+  "candidate_id": "phpmyadmin-C0228",
+  "subject_id": "phpmyadmin",
+  "file": "test/classes/Server/Status/MonitorTest.php",
+  "lines": [
+    1,
+    416
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 12
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "database",
+      "limitTypes",
+      "query",
+      "varName"
+    ],
+    "session_keys": [
+      "cache"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#addChartDialog",
+      "#chartVariableSettings",
+      "#explain_docu",
+      "#js_data",
+      ".hide",
+      ".popupContent",
+      ".popupLink",
+      ".settingsPopup",
+      ".tabLinks"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "database",
+      "limitTypes",
+      "query",
+      "varName"
+    ],
+    "must_preserve_session_keys": [
+      "cache"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#addChartDialog",
+      "#chartVariableSettings",
+      "#explain_docu",
+      "#js_data",
+      ".hide",
+      ".popupContent",
+      ".popupLink",
+      ".settingsPopup",
+      ".tabLinks"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

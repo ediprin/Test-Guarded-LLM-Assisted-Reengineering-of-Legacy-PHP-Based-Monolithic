@@ -1,0 +1,161 @@
+{
+  "candidate_id": "dolibarr-C4593",
+  "subject_id": "dolibarr",
+  "file": "htdocs/comm/mailing/card.php",
+  "lines": [
+    1,
+    1362
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 211
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "action",
+      "addfile",
+      "bgcolor",
+      "bgimage",
+      "bodyemail",
+      "cancel",
+      "clone_content",
+      "clone_receivers",
+      "errorsto",
+      "from",
+      "removedfile",
+      "replyto",
+      "sendto",
+      "sujet",
+      "titre"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": [
+      "GUI",
+      "command",
+      "description",
+      "email",
+      "emailing",
+      "for",
+      "global",
+      "its",
+      "print",
+      "prospect",
+      "status",
+      "the",
+      "user"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$objMod->numero.",
+      "#.$object->id);\n\t\t\t\t\texit;\n\t\t\t\t}\n\t\t\t\t$mesgs[] =$object->error;\n\t\t\t}\n\n\t\t\tsetEventMessages($mesg, $mesgs, ",
+      "#.$object->id);\n\t\t\t\texit;\n\t\t\t}\n\t\t\t$mesg = $object->error;\n\t\t}\n\n\t\tsetEventMessages($mesg, $mesgs, ",
+      "#.$object->id);\n\t\t\t\texit;\n\t\t\t}\n\t\t\t$mesgs[] = $object->error;\n\t\t}\n\n\t\tsetEventMessages($mesg, $mesgs, ",
+      "#.$object->id);\n\t\t\t\texit;\n\t\t\t}\n\t\t\telse\n\t\t\t{\n\t\t\t\tsetEventMessages($object->error, $object->errors, ",
+      "#.$object->id);\n\t\t\texit;\n\t\t}\n\t\telse\n\t\t{\n\t\t\tdol_print_error($db);\n\t\t}\n\t}\n\n\t// Action confirmation validation\n\tif ($action == ",
+      "#.$object->id);\n    \t\t\texit;\n            }\n            else\n            {\n                setEventMessages($object->error, $object->errors, ",
+      "#.$object->id, $langs->trans(",
+      "#.$object->id.",
+      "#.$object->id.(! empty($urlfrom) ? ",
+      "#.$object->id;\n\n\t\t\t\tprint $formmail->get_form();\n\n\t\t\t\tprint ",
+      "#.$result);\n\t\t\t\texit;\n\t\t\t}\n\t\t\telse\n\t\t\t{\n\t\t\t\tsetEventMessages($object->error, $object->errors, ",
+      "#addedfile",
+      "#attachfile_",
+      "#formmailbeforetitle",
+      "#removedfile_",
+      ".border",
+      ".bordernooddeven",
+      ".butAction",
+      ".butActionDelete"
+    ],
+    "forms": [
+      "card.php",
+      "edit_mailing",
+      "new_mailing"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "action",
+      "addfile",
+      "bgcolor",
+      "bgimage",
+      "bodyemail",
+      "cancel",
+      "clone_content",
+      "clone_receivers",
+      "errorsto",
+      "from",
+      "removedfile",
+      "replyto",
+      "sendto",
+      "sujet",
+      "titre"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [
+      "GUI",
+      "command",
+      "description",
+      "email",
+      "emailing",
+      "for",
+      "global",
+      "its",
+      "print",
+      "prospect",
+      "status",
+      "the",
+      "user"
+    ],
+    "must_preserve_dom_selectors": [
+      "#.$objMod->numero.",
+      "#.$object->id);\n\t\t\t\t\texit;\n\t\t\t\t}\n\t\t\t\t$mesgs[] =$object->error;\n\t\t\t}\n\n\t\t\tsetEventMessages($mesg, $mesgs, ",
+      "#.$object->id);\n\t\t\t\texit;\n\t\t\t}\n\t\t\t$mesg = $object->error;\n\t\t}\n\n\t\tsetEventMessages($mesg, $mesgs, ",
+      "#.$object->id);\n\t\t\t\texit;\n\t\t\t}\n\t\t\t$mesgs[] = $object->error;\n\t\t}\n\n\t\tsetEventMessages($mesg, $mesgs, ",
+      "#.$object->id);\n\t\t\t\texit;\n\t\t\t}\n\t\t\telse\n\t\t\t{\n\t\t\t\tsetEventMessages($object->error, $object->errors, ",
+      "#.$object->id);\n\t\t\texit;\n\t\t}\n\t\telse\n\t\t{\n\t\t\tdol_print_error($db);\n\t\t}\n\t}\n\n\t// Action confirmation validation\n\tif ($action == ",
+      "#.$object->id);\n    \t\t\texit;\n            }\n            else\n            {\n                setEventMessages($object->error, $object->errors, ",
+      "#.$object->id, $langs->trans(",
+      "#.$object->id.",
+      "#.$object->id.(! empty($urlfrom) ? ",
+      "#.$object->id;\n\n\t\t\t\tprint $formmail->get_form();\n\n\t\t\t\tprint ",
+      "#.$result);\n\t\t\t\texit;\n\t\t\t}\n\t\t\telse\n\t\t\t{\n\t\t\t\tsetEventMessages($object->error, $object->errors, ",
+      "#addedfile",
+      "#attachfile_",
+      "#formmailbeforetitle",
+      "#removedfile_",
+      ".border",
+      ".bordernooddeven",
+      ".butAction",
+      ".butActionDelete"
+    ],
+    "must_preserve_forms": [
+      "card.php",
+      "edit_mailing",
+      "new_mailing"
+    ]
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

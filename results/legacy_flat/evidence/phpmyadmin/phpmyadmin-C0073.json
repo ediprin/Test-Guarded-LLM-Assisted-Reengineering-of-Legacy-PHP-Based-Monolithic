@@ -1,0 +1,65 @@
+{
+  "candidate_id": "phpmyadmin-C0073",
+  "subject_id": "phpmyadmin",
+  "file": "test/classes/ConfigTest.php",
+  "lines": [
+    1,
+    1438
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 72
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "server"
+    ],
+    "session_keys": [
+      "git_location",
+      "is_git_revision"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#form_fontsize_selection"
+    ],
+    "forms": [
+      "form_fontsize_selection"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "server"
+    ],
+    "must_preserve_session_keys": [
+      "git_location",
+      "is_git_revision"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#form_fontsize_selection"
+    ],
+    "must_preserve_forms": [
+      "form_fontsize_selection"
+    ]
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

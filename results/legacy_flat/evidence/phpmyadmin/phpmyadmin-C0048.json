@@ -1,0 +1,83 @@
+{
+  "candidate_id": "phpmyadmin-C0048",
+  "subject_id": "phpmyadmin",
+  "file": "libraries/common.inc.php",
+  "lines": [
+    1,
+    458
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 51
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "back",
+      "goto",
+      "lang",
+      "pma_password",
+      "profiling",
+      "profiling_form",
+      "selected_recent_table",
+      "server",
+      "set_session",
+      "set_theme",
+      "sql_delimiter",
+      "sql_query",
+      "token"
+    ],
+    "session_keys": [
+      " PMA_token ",
+      "cache",
+      "profiling"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "back",
+      "goto",
+      "lang",
+      "pma_password",
+      "profiling",
+      "profiling_form",
+      "selected_recent_table",
+      "server",
+      "set_session",
+      "set_theme",
+      "sql_delimiter",
+      "sql_query",
+      "token"
+    ],
+    "must_preserve_session_keys": [
+      " PMA_token ",
+      "cache",
+      "profiling"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "candidate_id": "phpmyadmin-C0756",
+  "subject_id": "phpmyadmin",
+  "file": "libraries/classes/Rte/Routines.php",
+  "lines": [
+    814,
+    1098
+  ],
+  "candidate_type": "sql_data_access",
+  "issues": [
+    {
+      "type": "SQL/Data Access Region",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 20
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "edit_item"
+    ],
+    "session_keys": [],
+    "database_tables": [
+      "an"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      ".center",
+      ".floatleft",
+      ".hide",
+      ".no_len",
+      ".no_opts",
+      ".routine_direction_cell$isprocedure_class",
+      ".routine_param_remove",
+      ".routine_params_table",
+      ".routine_return_row",
+      ".rte_form",
+      ".rte_table",
+      ".tblFooters"
+    ],
+    "forms": [
+      "db_routines.php"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "edit_item"
+    ],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [
+      "an"
+    ],
+    "must_preserve_dom_selectors": [
+      ".center",
+      ".floatleft",
+      ".hide",
+      ".no_len",
+      ".no_opts",
+      ".routine_direction_cell$isprocedure_class",
+      ".routine_param_remove",
+      ".routine_params_table",
+      ".routine_return_row",
+      ".rte_form",
+      ".rte_table",
+      ".tblFooters"
+    ],
+    "must_preserve_forms": [
+      "db_routines.php"
+    ]
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

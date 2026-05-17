@@ -1,0 +1,73 @@
+{
+  "candidate_id": "dolibarr-C4327",
+  "subject_id": "dolibarr",
+  "file": "htdocs/compta/sociales/class/cchargesociales.class.php",
+  "lines": [
+    1,
+    525
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 82
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [],
+    "database_tables": [
+      "database",
+      "its",
+      "link",
+      "object",
+      "request",
+      "the"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "# . $id;\n\t\t}\n\n\t\t$resql = $this->db->query($sql);\n\t\tif ($resql) {\n\t\t\t$numrows = $this->db->num_rows($resql);\n\t\t\tif ($numrows) {\n\t\t\t\t$obj = $this->db->fetch_object($resql);\n\n\t\t\t\t$this->id = $obj->id;\n\n\t\t\t\t$this->libelle = $obj->libelle;\n\t\t\t\t$this->deductible = $obj->deductible;\n\t\t\t\t$this->active = $obj->active;\n\t\t\t\t$this->code = $obj->code;\n\t\t\t\t$this->fk_pays = $obj->fk_pays;\n\t\t\t\t$this->module = $obj->module;\n\t\t\t\t$this->accountancy_code = $obj->accountancy_code;\n\t\t\t}\n\t\t\t$this->db->free($resql);\n\n\t\t\tif ($numrows) {\n\t\t\t\treturn 1;\n\t\t\t} else {\n\t\t\t\treturn 0;\n\t\t\t}\n\t\t} else {\n\t\t\t$this->errors[] = ",
+      "# . $this->id;\n\n\t\t\t$resql = $this->db->query($sql);\n\t\t\tif (!$resql) {\n\t\t\t\t$error ++;\n\t\t\t\t$this->errors[] = ",
+      "# . $this->id;\n\n\t\t$this->db->begin();\n\n\t\t$resql = $this->db->query($sql);\n\t\tif (!$resql) {\n\t\t\t$error ++;\n\t\t\t$this->errors[] = ",
+      "#.$this->id.",
+      ".classfortooltip"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [
+      "database",
+      "its",
+      "link",
+      "object",
+      "request",
+      "the"
+    ],
+    "must_preserve_dom_selectors": [
+      "# . $id;\n\t\t}\n\n\t\t$resql = $this->db->query($sql);\n\t\tif ($resql) {\n\t\t\t$numrows = $this->db->num_rows($resql);\n\t\t\tif ($numrows) {\n\t\t\t\t$obj = $this->db->fetch_object($resql);\n\n\t\t\t\t$this->id = $obj->id;\n\n\t\t\t\t$this->libelle = $obj->libelle;\n\t\t\t\t$this->deductible = $obj->deductible;\n\t\t\t\t$this->active = $obj->active;\n\t\t\t\t$this->code = $obj->code;\n\t\t\t\t$this->fk_pays = $obj->fk_pays;\n\t\t\t\t$this->module = $obj->module;\n\t\t\t\t$this->accountancy_code = $obj->accountancy_code;\n\t\t\t}\n\t\t\t$this->db->free($resql);\n\n\t\t\tif ($numrows) {\n\t\t\t\treturn 1;\n\t\t\t} else {\n\t\t\t\treturn 0;\n\t\t\t}\n\t\t} else {\n\t\t\t$this->errors[] = ",
+      "# . $this->id;\n\n\t\t\t$resql = $this->db->query($sql);\n\t\t\tif (!$resql) {\n\t\t\t\t$error ++;\n\t\t\t\t$this->errors[] = ",
+      "# . $this->id;\n\n\t\t$this->db->begin();\n\n\t\t$resql = $this->db->query($sql);\n\t\tif (!$resql) {\n\t\t\t$error ++;\n\t\t\t$this->errors[] = ",
+      "#.$this->id.",
+      ".classfortooltip"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

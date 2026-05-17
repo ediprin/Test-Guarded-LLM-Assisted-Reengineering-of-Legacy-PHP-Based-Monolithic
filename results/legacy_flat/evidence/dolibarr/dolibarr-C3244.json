@@ -1,0 +1,90 @@
+{
+  "candidate_id": "dolibarr-C3244",
+  "subject_id": "dolibarr",
+  "file": "htdocs/core/class/html.formsms.class.php",
+  "lines": [
+    123,
+    369
+  ],
+  "candidate_type": "session_dependent_logic",
+  "issues": [
+    {
+      "type": "Session-Dependent Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 33
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "message",
+      "sendto"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#charlimitinfo",
+      "#charlimitinfospan",
+      "#class",
+      "#deferred",
+      "#disablestop",
+      "#fromsms",
+      "#message",
+      "#priority",
+      ".button",
+      ".center",
+      ".error",
+      ".flat",
+      ".quatrevingtpercent",
+      ".tdtop",
+      ".titlefield",
+      ".warning"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "message",
+      "sendto"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#charlimitinfo",
+      "#charlimitinfospan",
+      "#class",
+      "#deferred",
+      "#disablestop",
+      "#fromsms",
+      "#message",
+      "#priority",
+      ".button",
+      ".center",
+      ".error",
+      ".flat",
+      ".quatrevingtpercent",
+      ".tdtop",
+      ".titlefield",
+      ".warning"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Guard",
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

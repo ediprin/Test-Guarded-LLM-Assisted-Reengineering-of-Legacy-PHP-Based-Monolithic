@@ -1,0 +1,119 @@
+{
+  "candidate_id": "dolibarr-C0135",
+  "subject_id": "dolibarr",
+  "file": "htdocs/admin/mails.php",
+  "lines": [
+    1,
+    865
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 139
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "cancel",
+      "frommail",
+      "fromname",
+      "message",
+      "sendto",
+      "sendtocc",
+      "sendtoccc",
+      "subject"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": [
+      "actions_sendmails",
+      "print",
+      "type"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#MAIN_MAIL_EMAIL_DKIM_DOMAIN",
+      "#MAIN_MAIL_EMAIL_DKIM_PRIVATE_KEY",
+      "#MAIN_MAIL_EMAIL_DKIM_SELECTOR",
+      "#MAIN_MAIL_SMTP_PORT",
+      "#MAIN_MAIL_SMTP_PORT_sav",
+      "#MAIN_MAIL_SMTP_SERVER",
+      "#MAIN_MAIL_SMTP_SERVER_sav",
+      "#formmailbeforetitle",
+      "#smtp_port_mess",
+      "#smtp_server_mess",
+      ".butAction",
+      ".butActionRefused",
+      ".button",
+      ".center",
+      ".classfortooltip",
+      ".dkim",
+      ".drag",
+      ".drop",
+      ".flat",
+      ".liste_titre"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "cancel",
+      "frommail",
+      "fromname",
+      "message",
+      "sendto",
+      "sendtocc",
+      "sendtoccc",
+      "subject"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [
+      "actions_sendmails",
+      "print",
+      "type"
+    ],
+    "must_preserve_dom_selectors": [
+      "#MAIN_MAIL_EMAIL_DKIM_DOMAIN",
+      "#MAIN_MAIL_EMAIL_DKIM_PRIVATE_KEY",
+      "#MAIN_MAIL_EMAIL_DKIM_SELECTOR",
+      "#MAIN_MAIL_SMTP_PORT",
+      "#MAIN_MAIL_SMTP_PORT_sav",
+      "#MAIN_MAIL_SMTP_SERVER",
+      "#MAIN_MAIL_SMTP_SERVER_sav",
+      "#formmailbeforetitle",
+      "#smtp_port_mess",
+      "#smtp_server_mess",
+      ".butAction",
+      ".butActionRefused",
+      ".button",
+      ".center",
+      ".classfortooltip",
+      ".dkim",
+      ".drag",
+      ".drop",
+      ".flat",
+      ".liste_titre"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

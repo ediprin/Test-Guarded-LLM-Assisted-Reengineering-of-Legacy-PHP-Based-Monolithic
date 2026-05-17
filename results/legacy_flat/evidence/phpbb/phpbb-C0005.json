@@ -1,0 +1,95 @@
+{
+  "candidate_id": "phpbb-C0005",
+  "subject_id": "phpbb",
+  "file": "phpBB/posting.php",
+  "lines": [
+    1,
+    1984
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 385
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "add_file",
+      "attach_sig",
+      "cancel",
+      "cancel_unglobalise",
+      "delete_file",
+      "disable_bbcode",
+      "disable_magic_url",
+      "disable_smilies",
+      "draft_loaded",
+      "load",
+      "lock_post",
+      "lock_topic",
+      "notify",
+      "poll_delete",
+      "poll_vote_change",
+      "preview",
+      "save",
+      "soft_delete"
+    ],
+    "session_keys": [],
+    "database_tables": [
+      "database",
+      "event",
+      "post",
+      "the"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "add_file",
+      "attach_sig",
+      "cancel",
+      "cancel_unglobalise",
+      "delete_file",
+      "disable_bbcode",
+      "disable_magic_url",
+      "disable_smilies",
+      "draft_loaded",
+      "load",
+      "lock_post",
+      "lock_topic",
+      "notify",
+      "poll_delete",
+      "poll_vote_change",
+      "preview",
+      "save",
+      "soft_delete"
+    ],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [
+      "database",
+      "event",
+      "post",
+      "the"
+    ],
+    "must_preserve_dom_selectors": [],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

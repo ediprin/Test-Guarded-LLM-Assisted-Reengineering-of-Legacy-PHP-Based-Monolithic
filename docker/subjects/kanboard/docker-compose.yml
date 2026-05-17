@@ -1,0 +1,12 @@
+services:
+  kanboard:
+    build:
+      context: ../../..
+      dockerfile: docker/subjects/kanboard/Dockerfile
+    ports:
+      - "8107:80"
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost/"]
+      interval: 10s
+      timeout: 5s
+      retries: 12

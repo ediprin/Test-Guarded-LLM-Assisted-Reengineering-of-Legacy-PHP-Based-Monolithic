@@ -1,0 +1,109 @@
+{
+  "candidate_id": "dolibarr-C0255",
+  "subject_id": "dolibarr",
+  "file": "htdocs/contact/perso.php",
+  "lines": [
+    1,
+    338
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 38
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "birthday_alert",
+      "birthdayday",
+      "birthdaymonth",
+      "birthdayyear",
+      "cancel"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$object->id.",
+      "#photodelete",
+      "#photoinput",
+      ".border",
+      ".butAction",
+      ".button",
+      ".center",
+      ".centpercent",
+      ".clearboth",
+      ".fichecenter",
+      ".flat",
+      ".hideonsmartphone",
+      ".nobordernopadding",
+      ".photodelete",
+      ".refidno",
+      ".tabsAction",
+      ".titlefield",
+      ".titlefieldcreate",
+      ".underbanner",
+      ".valignmiddle"
+    ],
+    "forms": [
+      "perso"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "birthday_alert",
+      "birthdayday",
+      "birthdaymonth",
+      "birthdayyear",
+      "cancel"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#.$object->id.",
+      "#photodelete",
+      "#photoinput",
+      ".border",
+      ".butAction",
+      ".button",
+      ".center",
+      ".centpercent",
+      ".clearboth",
+      ".fichecenter",
+      ".flat",
+      ".hideonsmartphone",
+      ".nobordernopadding",
+      ".photodelete",
+      ".refidno",
+      ".tabsAction",
+      ".titlefield",
+      ".titlefieldcreate",
+      ".underbanner",
+      ".valignmiddle"
+    ],
+    "must_preserve_forms": [
+      "perso"
+    ]
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

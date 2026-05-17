@@ -1,0 +1,71 @@
+{
+  "candidate_id": "dolibarr-C3149",
+  "subject_id": "dolibarr",
+  "file": "htdocs/core/class/html.form.class.php",
+  "lines": [
+    5253,
+    5616
+  ],
+  "candidate_type": "long_method_or_region",
+  "issues": [
+    {
+      "type": "Long or Complex Region",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 105
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#dateofinvoice",
+      ".datecallink",
+      ".datenowlink",
+      ".dpInvisibleButtons",
+      ".flat",
+      ".inline-block",
+      ".maxwidth50",
+      ".maxwidth50imp",
+      ".maxwidth75",
+      ".maxwidth75imp",
+      ".nowrap",
+      ".valignmiddle"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#dateofinvoice",
+      ".datecallink",
+      ".datenowlink",
+      ".dpInvisibleButtons",
+      ".flat",
+      ".inline-block",
+      ".maxwidth50",
+      ".maxwidth50imp",
+      ".maxwidth75",
+      ".maxwidth75imp",
+      ".nowrap",
+      ".valignmiddle"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

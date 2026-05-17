@@ -1,0 +1,60 @@
+{
+  "candidate_id": "dolibarr-C0542",
+  "subject_id": "dolibarr",
+  "file": "htdocs/webservices/server_actioncomm.php",
+  "lines": [
+    1,
+    589
+  ],
+  "candidate_type": "sql_data_access",
+  "issues": [
+    {
+      "type": "SQL/Data Access Region",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 47
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [],
+    "database_tables": [
+      "SOAP",
+      "a"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$actioncomm[",
+      "#.$id);\n\n    if ($authentication[",
+      "#.$id."
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [
+      "SOAP",
+      "a"
+    ],
+    "must_preserve_dom_selectors": [
+      "#.$actioncomm[",
+      "#.$id);\n\n    if ($authentication[",
+      "#.$id."
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

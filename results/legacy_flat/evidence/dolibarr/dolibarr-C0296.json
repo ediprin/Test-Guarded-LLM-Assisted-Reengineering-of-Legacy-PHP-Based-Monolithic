@@ -1,0 +1,93 @@
+{
+  "candidate_id": "dolibarr-C0296",
+  "subject_id": "dolibarr",
+  "file": "htdocs/expedition/contact.php",
+  "lines": [
+    1,
+    272
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 38
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "fk_address",
+      "source",
+      "type"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "# . $object->id . ",
+      "# . $object->id, $object->socid, $object->fk_project, ",
+      "# . $objectsrc->fk_project . ",
+      "#.$object->id);\n\t\texit;\n\t}\n\telse\n\t{\n\t\tif ($objectsrc->error == ",
+      "#.$object->id);\n\t\texit;\n\t}\n\telse {\n\t\tdol_print_error($db);\n\t}\n}\n/*\nelseif ($action == ",
+      ".border",
+      ".button",
+      ".centpercent",
+      ".clearboth",
+      ".ficheaddleft",
+      ".fichecenter",
+      ".fichehalfleft",
+      ".fichehalfright",
+      ".refidno",
+      ".titlefield",
+      ".underbanner"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "fk_address",
+      "source",
+      "type"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "# . $object->id . ",
+      "# . $object->id, $object->socid, $object->fk_project, ",
+      "# . $objectsrc->fk_project . ",
+      "#.$object->id);\n\t\texit;\n\t}\n\telse\n\t{\n\t\tif ($objectsrc->error == ",
+      "#.$object->id);\n\t\texit;\n\t}\n\telse {\n\t\tdol_print_error($db);\n\t}\n}\n/*\nelseif ($action == ",
+      ".border",
+      ".button",
+      ".centpercent",
+      ".clearboth",
+      ".ficheaddleft",
+      ".fichecenter",
+      ".fichehalfleft",
+      ".fichehalfright",
+      ".refidno",
+      ".titlefield",
+      ".underbanner"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

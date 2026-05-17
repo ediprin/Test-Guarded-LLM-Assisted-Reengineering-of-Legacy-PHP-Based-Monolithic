@@ -1,0 +1,65 @@
+{
+  "candidate_id": "dolibarr-C1209",
+  "subject_id": "dolibarr",
+  "file": "htdocs/loan/class/loan.class.php",
+  "lines": [
+    1,
+    602
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 91
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [],
+    "database_tables": [
+      "database",
+      "link",
+      "loan"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$this->id);\n\t\t\t$this->db->commit();\n\t\t\treturn $this->id;\n\t\t}\n\t\telse\n\t\t{\n\t\t\t$this->error=$this->db->error();\n\t\t\t$this->db->rollback();\n\t\t\treturn -1;\n\t\t}\n\t}\n\n\n\t/**\n\t *  Delete a loan\n\t *\n\t *  @param\tUser\t$user\tObject user making delete\n\t *  @return int \t\t\t<0 if KO, >0 if OK\n\t */\n\tpublic function delete($user)\n\t{\n\t\t$error=0;\n\n\t\t$this->db->begin();\n\n\t\t// Get bank transaction lines for this loan\n\t\tinclude_once DOL_DOCUMENT_ROOT.",
+      "#.$this->id.",
+      ".classfortooltip",
+      ".paddingright"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [
+      "database",
+      "link",
+      "loan"
+    ],
+    "must_preserve_dom_selectors": [
+      "#.$this->id);\n\t\t\t$this->db->commit();\n\t\t\treturn $this->id;\n\t\t}\n\t\telse\n\t\t{\n\t\t\t$this->error=$this->db->error();\n\t\t\t$this->db->rollback();\n\t\t\treturn -1;\n\t\t}\n\t}\n\n\n\t/**\n\t *  Delete a loan\n\t *\n\t *  @param\tUser\t$user\tObject user making delete\n\t *  @return int \t\t\t<0 if KO, >0 if OK\n\t */\n\tpublic function delete($user)\n\t{\n\t\t$error=0;\n\n\t\t$this->db->begin();\n\n\t\t// Get bank transaction lines for this loan\n\t\tinclude_once DOL_DOCUMENT_ROOT.",
+      "#.$this->id.",
+      ".classfortooltip",
+      ".paddingright"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

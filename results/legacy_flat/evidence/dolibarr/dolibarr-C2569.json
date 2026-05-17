@@ -1,0 +1,79 @@
+{
+  "candidate_id": "dolibarr-C2569",
+  "subject_id": "dolibarr",
+  "file": "htdocs/ftp/admin/ftpclient.php",
+  "lines": [
+    1,
+    313
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 42
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "numero_entry"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      ".button",
+      ".center",
+      ".fieldtitle",
+      ".impair",
+      ".liste_titre",
+      ".noborder",
+      ".oddeven",
+      ".pair"
+    ],
+    "forms": [
+      "ftpclient.php",
+      "ftpconfig"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "numero_entry"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      ".button",
+      ".center",
+      ".fieldtitle",
+      ".impair",
+      ".liste_titre",
+      ".noborder",
+      ".oddeven",
+      ".pair"
+    ],
+    "must_preserve_forms": [
+      "ftpclient.php",
+      "ftpconfig"
+    ]
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

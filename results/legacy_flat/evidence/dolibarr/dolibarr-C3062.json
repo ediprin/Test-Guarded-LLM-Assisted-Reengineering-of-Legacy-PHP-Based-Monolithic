@@ -1,0 +1,68 @@
+{
+  "candidate_id": "dolibarr-C3062",
+  "subject_id": "dolibarr",
+  "file": "htdocs/core/class/dolgraph.class.php",
+  "lines": [
+    1,
+    1175
+  ],
+  "candidate_type": "mixed_php_html",
+  "issues": [
+    {
+      "type": "Mixed PHP/HTML",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 133
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [
+      "dol_screen_width"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#placeholder_",
+      "#tooltip_",
+      ".center",
+      ".dolgraph",
+      ".dolgraphtitle",
+      ".graph-tooltip-inner",
+      ".nographyet",
+      ".nographyettext"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [
+      "dol_screen_width"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#placeholder_",
+      "#tooltip_",
+      ".center",
+      ".dolgraph",
+      ".dolgraphtitle",
+      ".graph-tooltip-inner",
+      ".nographyet",
+      ".nographyettext"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Separate PHP Logic from Markup",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

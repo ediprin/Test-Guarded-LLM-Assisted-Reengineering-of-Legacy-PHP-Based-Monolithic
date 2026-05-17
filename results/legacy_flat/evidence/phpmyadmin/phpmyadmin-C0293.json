@@ -1,0 +1,80 @@
+{
+  "candidate_id": "phpmyadmin-C0293",
+  "subject_id": "phpmyadmin",
+  "file": "test/classes/Plugins/Schema/PdfRelationSchemaTest.php",
+  "lines": [
+    1,
+    230
+  ],
+  "candidate_type": "session_dependent_logic",
+  "issues": [
+    {
+      "type": "Session-Dependent Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 8
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "page_number",
+      "pdf_all_tables_same_width",
+      "pdf_orientation",
+      "pdf_paper",
+      "pdf_show_color",
+      "pdf_show_grid",
+      "pdf_show_keys",
+      "pdf_show_table_dimension",
+      "pdf_table_order",
+      "t_db",
+      "t_h",
+      "t_tbl",
+      "t_x",
+      "t_y"
+    ],
+    "session_keys": [
+      "relation"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "page_number",
+      "pdf_all_tables_same_width",
+      "pdf_orientation",
+      "pdf_paper",
+      "pdf_show_color",
+      "pdf_show_grid",
+      "pdf_show_keys",
+      "pdf_show_table_dimension",
+      "pdf_table_order",
+      "t_db",
+      "t_h",
+      "t_tbl",
+      "t_x",
+      "t_y"
+    ],
+    "must_preserve_session_keys": [
+      "relation"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Guard",
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

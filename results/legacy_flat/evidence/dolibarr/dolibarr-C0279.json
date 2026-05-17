@@ -1,0 +1,96 @@
+{
+  "candidate_id": "dolibarr-C0279",
+  "subject_id": "dolibarr",
+  "file": "htdocs/cron/list.php",
+  "lines": [
+    1,
+    599
+  ],
+  "candidate_type": "mixed_php_html",
+  "issues": [
+    {
+      "type": "Mixed PHP/HTML",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 118
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$id.",
+      "#.$id.$param, $langs->trans(",
+      "#.$obj->rowid.",
+      "#cb",
+      "#formfilteraction",
+      "#searchFormList",
+      ".center",
+      ".checkforselect",
+      ".cursordefault",
+      ".cursornotallowed",
+      ".div-table-responsive",
+      ".error",
+      ".fa",
+      ".fa-trash",
+      ".flat",
+      ".liste_titre",
+      ".liste_titre_filter",
+      ".noborder",
+      ".nowraponall",
+      ".oddeven"
+    ],
+    "forms": [
+      "search_form"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#.$id.",
+      "#.$id.$param, $langs->trans(",
+      "#.$obj->rowid.",
+      "#cb",
+      "#formfilteraction",
+      "#searchFormList",
+      ".center",
+      ".checkforselect",
+      ".cursordefault",
+      ".cursornotallowed",
+      ".div-table-responsive",
+      ".error",
+      ".fa",
+      ".fa-trash",
+      ".flat",
+      ".liste_titre",
+      ".liste_titre_filter",
+      ".noborder",
+      ".nowraponall",
+      ".oddeven"
+    ],
+    "must_preserve_forms": [
+      "search_form"
+    ]
+  },
+  "allowed_transformations": [
+    "Separate PHP Logic from Markup",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

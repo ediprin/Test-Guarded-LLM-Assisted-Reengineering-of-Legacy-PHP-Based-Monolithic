@@ -1,0 +1,81 @@
+{
+  "candidate_id": "dolibarr-C3597",
+  "subject_id": "dolibarr",
+  "file": "htdocs/core/lib/project.lib.php",
+  "lines": [
+    1308,
+    1667
+  ],
+  "candidate_type": "long_method_or_region",
+  "issues": [
+    {
+      "type": "Long or Complex Region",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 76
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$lines[$i]->fk_project);\n\n\t\t\t\tif ($restricteditformytask == 2 && empty($tasksrole[$lines[$i]->id]))\t// we have no role on task and we request to hide such cases\n\t\t\t\t{\n\t\t\t\t\tcontinue;\n\t\t\t\t}\n\n\t\t\t\t// Break on a new project\n\t\t\t\tif ($parent == 0 && $lines[$i]->fk_project != $lastprojectid)\n\t\t\t\t{\n\t\t\t\t\t$lastprojectid=$lines[$i]->fk_project;\n\t\t\t\t\t$projectstatic->id = $lines[$i]->fk_project;\n\t\t\t\t}\n\n\t\t\t\t//var_dump(",
+      "#.$lines[$i]->id.",
+      "#.$parent.",
+      "#timeadded[",
+      "#timespent[",
+      ".center",
+      ".hide",
+      ".leftborder",
+      ".liste_titre",
+      ".nowrap",
+      ".oddeven",
+      ".plannedworkload",
+      ".right",
+      ".smallpadd",
+      ".tdoverflowmax100",
+      ".timesheetalreadyrecorded",
+      ".trforbreak"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#.$lines[$i]->fk_project);\n\n\t\t\t\tif ($restricteditformytask == 2 && empty($tasksrole[$lines[$i]->id]))\t// we have no role on task and we request to hide such cases\n\t\t\t\t{\n\t\t\t\t\tcontinue;\n\t\t\t\t}\n\n\t\t\t\t// Break on a new project\n\t\t\t\tif ($parent == 0 && $lines[$i]->fk_project != $lastprojectid)\n\t\t\t\t{\n\t\t\t\t\t$lastprojectid=$lines[$i]->fk_project;\n\t\t\t\t\t$projectstatic->id = $lines[$i]->fk_project;\n\t\t\t\t}\n\n\t\t\t\t//var_dump(",
+      "#.$lines[$i]->id.",
+      "#.$parent.",
+      "#timeadded[",
+      "#timespent[",
+      ".center",
+      ".hide",
+      ".leftborder",
+      ".liste_titre",
+      ".nowrap",
+      ".oddeven",
+      ".plannedworkload",
+      ".right",
+      ".smallpadd",
+      ".tdoverflowmax100",
+      ".timesheetalreadyrecorded",
+      ".trforbreak"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

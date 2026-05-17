@@ -1,0 +1,107 @@
+{
+  "candidate_id": "dolibarr-C0881",
+  "subject_id": "dolibarr",
+  "file": "htdocs/public/test/test_arrays.php",
+  "lines": [
+    1,
+    352
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 128
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "actioncode",
+      "dol_use_jmobile",
+      "status"
+    ],
+    "session_keys": [],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#tablelines",
+      "#tablelines3",
+      ".button",
+      ".centpercent",
+      ".centpercentonsmartphone",
+      ".divsearchfield",
+      ".impair",
+      ".left",
+      ".liste_titre",
+      ".liste_titre_bydiv",
+      ".maxwidthonsmartphone",
+      ".noshadow",
+      ".nowrap",
+      ".order-column",
+      ".pair",
+      ".right",
+      ".row-border",
+      ".stripe",
+      ".tagtable",
+      ".tagtd"
+    ],
+    "forms": [
+      "1.php",
+      "2.php",
+      "dateselect",
+      "xxx"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "actioncode",
+      "dol_use_jmobile",
+      "status"
+    ],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#tablelines",
+      "#tablelines3",
+      ".button",
+      ".centpercent",
+      ".centpercentonsmartphone",
+      ".divsearchfield",
+      ".impair",
+      ".left",
+      ".liste_titre",
+      ".liste_titre_bydiv",
+      ".maxwidthonsmartphone",
+      ".noshadow",
+      ".nowrap",
+      ".order-column",
+      ".pair",
+      ".right",
+      ".row-border",
+      ".stripe",
+      ".tagtable",
+      ".tagtd"
+    ],
+    "must_preserve_forms": [
+      "1.php",
+      "2.php",
+      "dateselect",
+      "xxx"
+    ]
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

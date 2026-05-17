@@ -1,0 +1,64 @@
+{
+  "candidate_id": "roundcubemail-C0459",
+  "subject_id": "roundcubemail",
+  "file": "plugins/managesieve/lib/Roundcube/rcube_sieve_engine.php",
+  "lines": [
+    1410,
+    1498
+  ],
+  "candidate_type": "session_dependent_logic",
+  "issues": [
+    {
+      "type": "Session-Dependent Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 10
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "_framed"
+    ],
+    "session_keys": [
+      "managesieve_current"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      ".proplist"
+    ],
+    "forms": [
+      "./",
+      "filtersetform"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "_framed"
+    ],
+    "must_preserve_session_keys": [
+      "managesieve_current"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      ".proplist"
+    ],
+    "must_preserve_forms": [
+      "./",
+      "filtersetform"
+    ]
+  },
+  "allowed_transformations": [
+    "Extract Guard",
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "candidate_id": "dolibarr-C0861",
+  "subject_id": "dolibarr",
+  "file": "htdocs/public/members/new.php",
+  "lines": [
+    129,
+    524
+  ],
+  "candidate_type": "session_dependent_logic",
+  "issues": [
+    {
+      "type": "Session-Dependent Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 66
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "address",
+      "birthday",
+      "birthhour",
+      "birthmin",
+      "birthmonth",
+      "birthsec",
+      "birthyear",
+      "civility_id",
+      "country_id",
+      "email",
+      "firstname",
+      "gender",
+      "lastname",
+      "login",
+      "morphy",
+      "note_private",
+      "pass1",
+      "pass2",
+      "photo",
+      "societe",
+      "state_id",
+      "town",
+      "type",
+      "zipcode"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": [
+      "add",
+      "template"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#divsubscribe",
+      ".center",
+      ".justify",
+      ".opacitymedium",
+      ".subscriptionformhelptext"
+    ],
+    "forms": [
+      "newmember"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "address",
+      "birthday",
+      "birthhour",
+      "birthmin",
+      "birthmonth",
+      "birthsec",
+      "birthyear",
+      "civility_id",
+      "country_id",
+      "email",
+      "firstname",
+      "gender",
+      "lastname",
+      "login",
+      "morphy",
+      "note_private",
+      "pass1",
+      "pass2",
+      "photo",
+      "societe",
+      "state_id",
+      "town",
+      "type",
+      "zipcode"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [
+      "add",
+      "template"
+    ],
+    "must_preserve_dom_selectors": [
+      "#divsubscribe",
+      ".center",
+      ".justify",
+      ".opacitymedium",
+      ".subscriptionformhelptext"
+    ],
+    "must_preserve_forms": [
+      "newmember"
+    ]
+  },
+  "allowed_transformations": [
+    "Extract Guard",
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

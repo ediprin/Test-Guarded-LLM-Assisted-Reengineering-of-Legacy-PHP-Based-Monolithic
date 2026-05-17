@@ -1,0 +1,92 @@
+{
+  "candidate_id": "phpmyadmin-C0170",
+  "subject_id": "phpmyadmin",
+  "file": "test/classes/Config/FormDisplayTemplateTest.php",
+  "lines": [
+    1,
+    535
+  ],
+  "candidate_type": "mixed_php_html",
+  "issues": [
+    {
+      "type": "Mixed PHP/HTML",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 21
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#test/path",
+      ".all85",
+      ".config-form",
+      ".custom",
+      ".disableAjax",
+      ".disabled-field",
+      ".disabled-notice",
+      ".errors",
+      ".field-comment-mark",
+      ".field-comment-warning",
+      ".field-error",
+      ".group-field",
+      ".group-field-1",
+      ".group-header",
+      ".group-header-1",
+      ".group-header-4",
+      ".group-header-field",
+      ".hide",
+      ".ic_b_help",
+      ".icon"
+    ],
+    "forms": [
+      "https://www.phpmyadmin.net"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#test/path",
+      ".all85",
+      ".config-form",
+      ".custom",
+      ".disableAjax",
+      ".disabled-field",
+      ".disabled-notice",
+      ".errors",
+      ".field-comment-mark",
+      ".field-comment-warning",
+      ".field-error",
+      ".group-field",
+      ".group-field-1",
+      ".group-header",
+      ".group-header-1",
+      ".group-header-4",
+      ".group-header-field",
+      ".hide",
+      ".ic_b_help",
+      ".icon"
+    ],
+    "must_preserve_forms": [
+      "https://www.phpmyadmin.net"
+    ]
+  },
+  "allowed_transformations": [
+    "Separate PHP Logic from Markup",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

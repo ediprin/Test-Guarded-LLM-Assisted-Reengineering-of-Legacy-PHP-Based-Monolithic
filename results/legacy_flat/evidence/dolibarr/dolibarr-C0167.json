@@ -1,0 +1,99 @@
+{
+  "candidate_id": "dolibarr-C0167",
+  "subject_id": "dolibarr",
+  "file": "htdocs/admin/sms.php",
+  "lines": [
+    1,
+    336
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 46
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "MAIN_DISABLE_ALL_SMS",
+      "MAIN_MAIL_AUTOCOPY_TO",
+      "MAIN_MAIL_SMS_FROM",
+      "MAIN_SMS_SENDMODE",
+      "action",
+      "cancel",
+      "fromsms",
+      "message",
+      "sendto"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      ".butAction",
+      ".butActionRefused",
+      ".button",
+      ".center",
+      ".classfortooltip",
+      ".error",
+      ".flat",
+      ".liste_titre",
+      ".noborder",
+      ".oddeven",
+      ".ok",
+      ".tabsAction",
+      ".warning"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "MAIN_DISABLE_ALL_SMS",
+      "MAIN_MAIL_AUTOCOPY_TO",
+      "MAIN_MAIL_SMS_FROM",
+      "MAIN_SMS_SENDMODE",
+      "action",
+      "cancel",
+      "fromsms",
+      "message",
+      "sendto"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      ".butAction",
+      ".butActionRefused",
+      ".button",
+      ".center",
+      ".classfortooltip",
+      ".error",
+      ".flat",
+      ".liste_titre",
+      ".noborder",
+      ".oddeven",
+      ".ok",
+      ".tabsAction",
+      ".warning"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

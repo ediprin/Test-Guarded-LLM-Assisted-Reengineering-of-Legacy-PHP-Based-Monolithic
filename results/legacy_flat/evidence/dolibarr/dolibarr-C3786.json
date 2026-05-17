@@ -1,0 +1,59 @@
+{
+  "candidate_id": "dolibarr-C3786",
+  "subject_id": "dolibarr",
+  "file": "htdocs/core/tpl/card_presend.tpl.php",
+  "lines": [
+    1,
+    288
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 58
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "lang_id"
+    ],
+    "session_keys": [],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "# . $object->id;\n\t$formmail->param[",
+      "#formmailbeforetitle",
+      ".clearboth"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "lang_id"
+    ],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "# . $object->id;\n\t$formmail->param[",
+      "#formmailbeforetitle",
+      ".clearboth"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

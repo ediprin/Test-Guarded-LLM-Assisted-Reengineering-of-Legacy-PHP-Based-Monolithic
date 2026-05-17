@@ -1,0 +1,205 @@
+{
+  "candidate_id": "dolibarr-C0231",
+  "subject_id": "dolibarr",
+  "file": "htdocs/commande/card.php",
+  "lines": [
+    1,
+    2719
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 545
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "buying_price",
+      "date_endday",
+      "date_endhour",
+      "date_endmin",
+      "date_endmonth",
+      "date_endsec",
+      "date_endyear",
+      "date_startday",
+      "date_starthour",
+      "date_startmin",
+      "date_startmonth",
+      "date_startsec",
+      "date_startyear",
+      "dp_desc",
+      "fournprice",
+      "idprod",
+      "liv_day",
+      "liv_month",
+      "liv_year",
+      "multicurrency_price_ht",
+      "np_marginRate",
+      "np_markRate",
+      "price_ht",
+      "price_ttc",
+      "prod_entry_mode",
+      "product_desc",
+      "product_label",
+      "product_ref",
+      "productid",
+      "qty",
+      "remise_percent",
+      "tva_tx",
+      "type",
+      "units"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": [
+      "POST",
+      "a",
+      "add",
+      "another",
+      "card",
+      "description",
+      "form",
+      "if",
+      "linked",
+      "loaded",
+      "objectlinked",
+      "product_price_by_qty",
+      "shipment",
+      "the",
+      "update"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "# . $id);\n\t\texit();\n\t}\n\n\t// add lines from objectlinked\n\tif($action == ",
+      "# . $object->fk_project . ",
+      "# . $object->id . ",
+      "# . $object->id . (($action != ",
+      "# . $object->id);\n\t\t\t\texit();\n\t\t\t} else {\n\t\t\t\tdol_print_error($db);\n\t\t\t}\n\t\t}\n\t}\n}\n\n\n/*\n *\tView\n */\n\nllxHeader(",
+      "# . $object->id);\n\t\t\t\texit();\n\t\t\t} else {\n\t\t\t\tif ($object->error == ",
+      "# . $object->id);\n\t\tinclude DOL_DOCUMENT_ROOT.",
+      "# . $object->id); // Pour reaffichage de la fiche en cours d",
+      "# . $object->id, $langs->trans(",
+      "# . $object->id, $object->availability_id, ",
+      "# . $object->id, $object->cond_reglement_id, ",
+      "# . $object->id, $object->demand_reason_id, ",
+      "# . $object->id, $object->mode_reglement_id, ",
+      "# . $object->id, $object->multicurrency_code, ",
+      "# . $object->id, $object->multicurrency_tx, ",
+      "# . $object->id, $object->socid, $object->fk_project, ",
+      "# . $object->id, $object->source, ",
+      "# . $object->id;\n\t\t\t$genallowed = $user->rights->commande->lire;\n\t\t\t$delallowed = $user->rights->commande->creer;\n\t\t\tprint $formfile->showdocuments(",
+      "# . $object_id);\n\t\t\t\texit();\n\t\t\t} else {\n\t\t\t\t$db->rollback();\n\t\t\t\t$action = ",
+      "# . $soc->id . "
+    ],
+    "forms": [
+      "addproduct",
+      "crea_commande",
+      "setdate",
+      "setdate_livraison"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "buying_price",
+      "date_endday",
+      "date_endhour",
+      "date_endmin",
+      "date_endmonth",
+      "date_endsec",
+      "date_endyear",
+      "date_startday",
+      "date_starthour",
+      "date_startmin",
+      "date_startmonth",
+      "date_startsec",
+      "date_startyear",
+      "dp_desc",
+      "fournprice",
+      "idprod",
+      "liv_day",
+      "liv_month",
+      "liv_year",
+      "multicurrency_price_ht",
+      "np_marginRate",
+      "np_markRate",
+      "price_ht",
+      "price_ttc",
+      "prod_entry_mode",
+      "product_desc",
+      "product_label",
+      "product_ref",
+      "productid",
+      "qty",
+      "remise_percent",
+      "tva_tx",
+      "type",
+      "units"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [
+      "POST",
+      "a",
+      "add",
+      "another",
+      "card",
+      "description",
+      "form",
+      "if",
+      "linked",
+      "loaded",
+      "objectlinked",
+      "product_price_by_qty",
+      "shipment",
+      "the",
+      "update"
+    ],
+    "must_preserve_dom_selectors": [
+      "# . $id);\n\t\texit();\n\t}\n\n\t// add lines from objectlinked\n\tif($action == ",
+      "# . $object->fk_project . ",
+      "# . $object->id . ",
+      "# . $object->id . (($action != ",
+      "# . $object->id);\n\t\t\t\texit();\n\t\t\t} else {\n\t\t\t\tdol_print_error($db);\n\t\t\t}\n\t\t}\n\t}\n}\n\n\n/*\n *\tView\n */\n\nllxHeader(",
+      "# . $object->id);\n\t\t\t\texit();\n\t\t\t} else {\n\t\t\t\tif ($object->error == ",
+      "# . $object->id);\n\t\tinclude DOL_DOCUMENT_ROOT.",
+      "# . $object->id); // Pour reaffichage de la fiche en cours d",
+      "# . $object->id, $langs->trans(",
+      "# . $object->id, $object->availability_id, ",
+      "# . $object->id, $object->cond_reglement_id, ",
+      "# . $object->id, $object->demand_reason_id, ",
+      "# . $object->id, $object->mode_reglement_id, ",
+      "# . $object->id, $object->multicurrency_code, ",
+      "# . $object->id, $object->multicurrency_tx, ",
+      "# . $object->id, $object->socid, $object->fk_project, ",
+      "# . $object->id, $object->source, ",
+      "# . $object->id;\n\t\t\t$genallowed = $user->rights->commande->lire;\n\t\t\t$delallowed = $user->rights->commande->creer;\n\t\t\tprint $formfile->showdocuments(",
+      "# . $object_id);\n\t\t\t\texit();\n\t\t\t} else {\n\t\t\t\t$db->rollback();\n\t\t\t\t$action = ",
+      "# . $soc->id . "
+    ],
+    "must_preserve_forms": [
+      "addproduct",
+      "crea_commande",
+      "setdate",
+      "setdate_livraison"
+    ]
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

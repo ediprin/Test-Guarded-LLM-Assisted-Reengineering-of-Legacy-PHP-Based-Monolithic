@@ -1,0 +1,103 @@
+{
+  "candidate_id": "roundcubemail-C0112",
+  "subject_id": "roundcubemail",
+  "file": "program/steps/mail/func.inc",
+  "lines": [
+    1,
+    1903
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 316
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "_mbox",
+      "_page",
+      "_search",
+      "_threads",
+      "_uid"
+    ],
+    "session_keys": [
+      "browser_caps",
+      "last_text_search",
+      "list_attrib",
+      "mbox",
+      "modcssurls",
+      "page",
+      "search",
+      "search_filter",
+      "search_interval",
+      "search_request",
+      "search_scope",
+      "sort_col",
+      "sort_order",
+      "unseen_count",
+      "writeable_abook"
+    ],
+    "database_tables": [
+      "_uid",
+      "memory",
+      "plugins",
+      "specified",
+      "the"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "_mbox",
+      "_page",
+      "_search",
+      "_threads",
+      "_uid"
+    ],
+    "must_preserve_session_keys": [
+      "browser_caps",
+      "last_text_search",
+      "list_attrib",
+      "mbox",
+      "modcssurls",
+      "page",
+      "search",
+      "search_filter",
+      "search_interval",
+      "search_request",
+      "search_scope",
+      "sort_col",
+      "sort_order",
+      "unseen_count",
+      "writeable_abook"
+    ],
+    "must_preserve_database_tables": [
+      "_uid",
+      "memory",
+      "plugins",
+      "specified",
+      "the"
+    ],
+    "must_preserve_dom_selectors": [],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

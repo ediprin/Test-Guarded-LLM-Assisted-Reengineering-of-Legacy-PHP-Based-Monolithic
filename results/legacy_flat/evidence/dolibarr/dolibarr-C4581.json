@@ -1,0 +1,76 @@
+{
+  "candidate_id": "dolibarr-C4581",
+  "subject_id": "dolibarr",
+  "file": "htdocs/comm/action/card.php",
+  "lines": [
+    1061,
+    1170
+  ],
+  "candidate_type": "session_dependent_logic",
+  "issues": [
+    {
+      "type": "Session-Dependent Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 24
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#fullday",
+      ".border",
+      ".fieldrequired",
+      ".hidden",
+      ".inline-block",
+      ".marginrightonly",
+      ".nowrap",
+      ".soixantepercent",
+      ".tableforfield",
+      ".titlefieldcreate"
+    ],
+    "forms": [
+      "formaction"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#fullday",
+      ".border",
+      ".fieldrequired",
+      ".hidden",
+      ".inline-block",
+      ".marginrightonly",
+      ".nowrap",
+      ".soixantepercent",
+      ".tableforfield",
+      ".titlefieldcreate"
+    ],
+    "must_preserve_forms": [
+      "formaction"
+    ]
+  },
+  "allowed_transformations": [
+    "Extract Guard",
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

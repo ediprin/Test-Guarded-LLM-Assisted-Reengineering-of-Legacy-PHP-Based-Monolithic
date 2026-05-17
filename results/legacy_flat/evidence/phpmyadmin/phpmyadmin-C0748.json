@@ -1,0 +1,167 @@
+{
+  "candidate_id": "phpmyadmin-C0748",
+  "subject_id": "phpmyadmin",
+  "file": "libraries/classes/Rte/Routines.php",
+  "lines": [
+    1,
+    1721
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 199
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "add_item",
+      "edit_item",
+      "editor_process_add",
+      "editor_process_edit",
+      "execute_dialog",
+      "execute_routine",
+      "funcs",
+      "item_adjust_privileges",
+      "item_comment",
+      "item_definer",
+      "item_definition",
+      "item_isdeterministic",
+      "item_name",
+      "item_original_name",
+      "item_original_type",
+      "item_param_dir",
+      "item_param_length",
+      "item_param_name",
+      "item_param_opts_num",
+      "item_param_opts_text",
+      "item_param_type",
+      "item_returnlength",
+      "item_returnopts_num",
+      "item_returnopts_text",
+      "item_returntype",
+      "item_securitytype",
+      "item_sqldataaccess",
+      "item_type",
+      "params",
+      "routine_addparameter",
+      "routine_changetype",
+      "routine_removeparameter"
+    ],
+    "session_keys": [],
+    "database_tables": [
+      "INFORMATION_SCHEMA",
+      "an",
+      "the"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#item_param_length_$index",
+      ".$class",
+      ".ajax",
+      ".center",
+      ".datefield",
+      ".datetimefield",
+      ".dragHandle",
+      ".enum_hint",
+      ".floatleft",
+      ".hide",
+      ".no_len",
+      ".no_opts",
+      ".nowrap",
+      ".open_enum_editor",
+      ".routine_direction_cell$class",
+      ".routine_direction_cell$isprocedure_class",
+      ".routine_param_opts_num",
+      ".routine_param_opts_text",
+      ".routine_param_remove",
+      ".routine_param_remove$drop_class"
+    ],
+    "forms": [
+      "db_routines.php"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "add_item",
+      "edit_item",
+      "editor_process_add",
+      "editor_process_edit",
+      "execute_dialog",
+      "execute_routine",
+      "funcs",
+      "item_adjust_privileges",
+      "item_comment",
+      "item_definer",
+      "item_definition",
+      "item_isdeterministic",
+      "item_name",
+      "item_original_name",
+      "item_original_type",
+      "item_param_dir",
+      "item_param_length",
+      "item_param_name",
+      "item_param_opts_num",
+      "item_param_opts_text",
+      "item_param_type",
+      "item_returnlength",
+      "item_returnopts_num",
+      "item_returnopts_text",
+      "item_returntype",
+      "item_securitytype",
+      "item_sqldataaccess",
+      "item_type",
+      "params",
+      "routine_addparameter",
+      "routine_changetype",
+      "routine_removeparameter"
+    ],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [
+      "INFORMATION_SCHEMA",
+      "an",
+      "the"
+    ],
+    "must_preserve_dom_selectors": [
+      "#item_param_length_$index",
+      ".$class",
+      ".ajax",
+      ".center",
+      ".datefield",
+      ".datetimefield",
+      ".dragHandle",
+      ".enum_hint",
+      ".floatleft",
+      ".hide",
+      ".no_len",
+      ".no_opts",
+      ".nowrap",
+      ".open_enum_editor",
+      ".routine_direction_cell$class",
+      ".routine_direction_cell$isprocedure_class",
+      ".routine_param_opts_num",
+      ".routine_param_opts_text",
+      ".routine_param_remove",
+      ".routine_param_remove$drop_class"
+    ],
+    "must_preserve_forms": [
+      "db_routines.php"
+    ]
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

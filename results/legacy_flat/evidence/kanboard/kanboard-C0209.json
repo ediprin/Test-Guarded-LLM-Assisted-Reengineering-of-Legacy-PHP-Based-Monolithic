@@ -1,0 +1,72 @@
+{
+  "candidate_id": "kanboard-C0209",
+  "subject_id": "kanboard",
+  "file": "app/Template/task_internal_link/table.php",
+  "lines": [
+    1,
+    78
+  ],
+  "candidate_type": "mixed_php_html",
+  "issues": [
+    {
+      "type": "Mixed PHP/HTML",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 103
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      ".column-10",
+      ".column-30",
+      ".dropdown",
+      ".dropdown-menu",
+      ".dropdown-menu-link-icon",
+      ".fa",
+      ".fa-caret-down",
+      ".fa-cog",
+      ".table-scrolling",
+      ".table-striped",
+      ".task-links-table",
+      ".task-links-task-count"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      ".column-10",
+      ".column-30",
+      ".dropdown",
+      ".dropdown-menu",
+      ".dropdown-menu-link-icon",
+      ".fa",
+      ".fa-caret-down",
+      ".fa-cog",
+      ".table-scrolling",
+      ".table-striped",
+      ".task-links-table",
+      ".task-links-task-count"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Separate PHP Logic from Markup",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

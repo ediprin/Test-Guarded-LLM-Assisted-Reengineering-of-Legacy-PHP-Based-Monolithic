@@ -1,0 +1,113 @@
+{
+  "candidate_id": "dolibarr-C0301",
+  "subject_id": "dolibarr",
+  "file": "htdocs/expedition/shipment.php",
+  "lines": [
+    1,
+    938
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 164
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "lang_id",
+      "liv_day",
+      "liv_month",
+      "liv_year"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": [
+      "form",
+      "update"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "# . $id);\n        exit();\n    }\n\n    include DOL_DOCUMENT_ROOT.",
+      "# . $object->fk_project . ",
+      "# . $object->id . ",
+      "# . $object->id);\n\t\t$cannotApplyDiscount = 1;\n\t\tinclude DOL_DOCUMENT_ROOT.",
+      "# . $object->id, $object->availability_id, ",
+      "# . $object->id, $object->demand_reason_id, ",
+      "# . $object->id, $object->socid, $object->fk_project, ",
+      "#.$id, $langs->trans(",
+      "#.$object->id);\n\t\t    }\n\t\t    print ",
+      "#.$object->id, $object->shipping_method_id, ",
+      "#.$object->id, $object->warehouse_id, ",
+      "#.$object->id,$object->cond_reglement_id,",
+      "#.$object->id,$object->mode_reglement_id,",
+      "#.$object->id.",
+      "#.$value[",
+      ".border",
+      ".butAction",
+      ".butActionRefused",
+      ".button",
+      ".center"
+    ],
+    "forms": [
+      "setdate_livraison"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "lang_id",
+      "liv_day",
+      "liv_month",
+      "liv_year"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [
+      "form",
+      "update"
+    ],
+    "must_preserve_dom_selectors": [
+      "# . $id);\n        exit();\n    }\n\n    include DOL_DOCUMENT_ROOT.",
+      "# . $object->fk_project . ",
+      "# . $object->id . ",
+      "# . $object->id);\n\t\t$cannotApplyDiscount = 1;\n\t\tinclude DOL_DOCUMENT_ROOT.",
+      "# . $object->id, $object->availability_id, ",
+      "# . $object->id, $object->demand_reason_id, ",
+      "# . $object->id, $object->socid, $object->fk_project, ",
+      "#.$id, $langs->trans(",
+      "#.$object->id);\n\t\t    }\n\t\t    print ",
+      "#.$object->id, $object->shipping_method_id, ",
+      "#.$object->id, $object->warehouse_id, ",
+      "#.$object->id,$object->cond_reglement_id,",
+      "#.$object->id,$object->mode_reglement_id,",
+      "#.$object->id.",
+      "#.$value[",
+      ".border",
+      ".butAction",
+      ".butActionRefused",
+      ".button",
+      ".center"
+    ],
+    "must_preserve_forms": [
+      "setdate_livraison"
+    ]
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

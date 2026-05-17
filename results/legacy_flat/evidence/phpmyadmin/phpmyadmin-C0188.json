@@ -1,0 +1,92 @@
+{
+  "candidate_id": "phpmyadmin-C0188",
+  "subject_id": "phpmyadmin",
+  "file": "test/classes/Display/ResultsTest.php",
+  "lines": [
+    619,
+    834
+  ],
+  "candidate_type": "sql_data_access",
+  "issues": [
+    {
+      "type": "SQL/Data Access Region",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 17
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [],
+    "database_tables": [
+      "data"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#id_rows_to_",
+      "#id_rows_to_delete0_",
+      "#id_rows_to_delete0_right",
+      "..",
+      ".center",
+      ".checkall",
+      ".condition_array",
+      ".delete",
+      ".delete_row",
+      ".edit_row_anchor",
+      ".hide",
+      ".ic_b_drop",
+      ".ic_b_edit",
+      ".ic_b_insrow",
+      ".icon",
+      ".multi_checkbox",
+      ".nowrap",
+      ".print_ignore",
+      ".requireConfirm",
+      ".where_clause"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [
+      "data"
+    ],
+    "must_preserve_dom_selectors": [
+      "#id_rows_to_",
+      "#id_rows_to_delete0_",
+      "#id_rows_to_delete0_right",
+      "..",
+      ".center",
+      ".checkall",
+      ".condition_array",
+      ".delete",
+      ".delete_row",
+      ".edit_row_anchor",
+      ".hide",
+      ".ic_b_drop",
+      ".ic_b_edit",
+      ".ic_b_insrow",
+      ".icon",
+      ".multi_checkbox",
+      ".nowrap",
+      ".print_ignore",
+      ".requireConfirm",
+      ".where_clause"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

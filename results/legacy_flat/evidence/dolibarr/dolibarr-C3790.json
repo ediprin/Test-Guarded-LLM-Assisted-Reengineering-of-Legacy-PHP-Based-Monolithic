@@ -1,0 +1,67 @@
+{
+  "candidate_id": "dolibarr-C3790",
+  "subject_id": "dolibarr",
+  "file": "htdocs/core/tpl/extrafields_view.tpl.php",
+  "lines": [
+    1,
+    210
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 49
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      ".button",
+      ".nobordernopadding",
+      ".reposition",
+      ".right",
+      ".titlefield"
+    ],
+    "forms": [
+      "formextra"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      ".button",
+      ".nobordernopadding",
+      ".reposition",
+      ".right",
+      ".titlefield"
+    ],
+    "must_preserve_forms": [
+      "formextra"
+    ]
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

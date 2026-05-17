@@ -1,0 +1,2 @@
+project,url,status,content_sha256,assertions_passed,assertions_failed,message
+dokuwiki,http://localhost:8102/lib/exe/js.php,PASS,66bad746d08b2f5edd49eb52cf1f4fdb5fb410e5b2a3e73d7328f7fe721353b9,3,0,

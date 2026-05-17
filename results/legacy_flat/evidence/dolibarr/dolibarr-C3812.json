@@ -1,0 +1,55 @@
+{
+  "candidate_id": "dolibarr-C3812",
+  "subject_id": "dolibarr",
+  "file": "htdocs/core/triggers/interface_50_modMailmanspip_Mailmanspipsynchro.class.php",
+  "lines": [
+    57,
+    179
+  ],
+  "candidate_type": "long_method_or_region",
+  "issues": [
+    {
+      "type": "Long or Complex Region",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 29
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$object->id);\n\n        \t// We add subscription if we change category (new category may means more mailing-list to subscribe)\n        \tif (is_object($object->context[",
+      "#.$object->id);\n\n        \t// We remove subscription if we change category (lessw category may means less mailing-list to subscribe)\n        \tif (is_object($object->context[",
+      "#.$object->id);\n\n            $return=0;\n            // Add user into some linked tools (mailman, spip, etc...)\n            if (($object->oldcopy->email != $object->email) || ($object->oldcopy->typeid != $object->typeid))\n            {\n                if (is_object($object->oldcopy) && (($object->oldcopy->email != $object->email) || ($object->oldcopy->typeid != $object->typeid)))    // If email has changed or if list has changed we delete mailman subscription for old email\n                {\n                    if ($object->oldcopy->del_to_abo() < 0)\n                    {\n                        $this->errors=$object->oldcopy->errors;\n                        if (! empty($object->oldcopy->error)) $this->errors[]=$object->oldcopy->error;\n                        $return=-1;\n                    }\n                    else\n                    {\n                        $return=1;\n                    }\n                }\n                // We add subscription if new email or new type (new type may means more mailing-list to subscribe)\n                if ($object->add_to_abo() < 0)\n                {\n                    $this->errors=$object->errors;\n                    if (! empty($object->error)) $this->errors[]=$object->error;\n                    $return=-1;\n                }\n                else\n                {\n                    $return=1;\n                }\n            }\n\n\t\t\treturn $return;\n        }\n        elseif ($action == ",
+      "#.$object->id);\n\n            $return=0;\n            if ($object->add_to_abo() < 0)\n            {\n                $this->errors=$object->errors;\n                if (! empty($object->error)) $this->errors[]=$object->error;\n                $return=-1;\n            }\n            else\n            {\n                $return=1;\n            }\n\n            return $return;\n        }\n        elseif ($action == "
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#.$object->id);\n\n        \t// We add subscription if we change category (new category may means more mailing-list to subscribe)\n        \tif (is_object($object->context[",
+      "#.$object->id);\n\n        \t// We remove subscription if we change category (lessw category may means less mailing-list to subscribe)\n        \tif (is_object($object->context[",
+      "#.$object->id);\n\n            $return=0;\n            // Add user into some linked tools (mailman, spip, etc...)\n            if (($object->oldcopy->email != $object->email) || ($object->oldcopy->typeid != $object->typeid))\n            {\n                if (is_object($object->oldcopy) && (($object->oldcopy->email != $object->email) || ($object->oldcopy->typeid != $object->typeid)))    // If email has changed or if list has changed we delete mailman subscription for old email\n                {\n                    if ($object->oldcopy->del_to_abo() < 0)\n                    {\n                        $this->errors=$object->oldcopy->errors;\n                        if (! empty($object->oldcopy->error)) $this->errors[]=$object->oldcopy->error;\n                        $return=-1;\n                    }\n                    else\n                    {\n                        $return=1;\n                    }\n                }\n                // We add subscription if new email or new type (new type may means more mailing-list to subscribe)\n                if ($object->add_to_abo() < 0)\n                {\n                    $this->errors=$object->errors;\n                    if (! empty($object->error)) $this->errors[]=$object->error;\n                    $return=-1;\n                }\n                else\n                {\n                    $return=1;\n                }\n            }\n\n\t\t\treturn $return;\n        }\n        elseif ($action == ",
+      "#.$object->id);\n\n            $return=0;\n            if ($object->add_to_abo() < 0)\n            {\n                $this->errors=$object->errors;\n                if (! empty($object->error)) $this->errors[]=$object->error;\n                $return=-1;\n            }\n            else\n            {\n                $return=1;\n            }\n\n            return $return;\n        }\n        elseif ($action == "
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "candidate_id": "phpmyadmin-C0369",
+  "subject_id": "phpmyadmin",
+  "file": "libraries/classes/DatabaseInterface.php",
+  "lines": [
+    1,
+    3095
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 358
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [
+      "debug",
+      "mysqlwarning"
+    ],
+    "database_tables": [
+      "CHARACTER_MAXIMUM_LENGTH",
+      "COLUMN_TYPE",
+      "INFORMATION_SCHEMA",
+      "ListDatabase",
+      "Table",
+      "a",
+      "another",
+      "cache",
+      "information_schema",
+      "multi",
+      "multi_query",
+      "mysql",
+      "result",
+      "session",
+      "show",
+      "table",
+      "the",
+      "user"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      ".disableAjax"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [
+      "debug",
+      "mysqlwarning"
+    ],
+    "must_preserve_database_tables": [
+      "CHARACTER_MAXIMUM_LENGTH",
+      "COLUMN_TYPE",
+      "INFORMATION_SCHEMA",
+      "ListDatabase",
+      "Table",
+      "a",
+      "another",
+      "cache",
+      "information_schema",
+      "multi",
+      "multi_query",
+      "mysql",
+      "result",
+      "session",
+      "show",
+      "table",
+      "the",
+      "user"
+    ],
+    "must_preserve_dom_selectors": [
+      ".disableAjax"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

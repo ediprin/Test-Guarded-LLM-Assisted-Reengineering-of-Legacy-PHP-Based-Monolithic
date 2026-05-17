@@ -1,0 +1,77 @@
+{
+  "candidate_id": "dolibarr-C0421",
+  "subject_id": "dolibarr",
+  "file": "htdocs/product/fournisseurs.php",
+  "lines": [
+    611,
+    967
+  ],
+  "candidate_type": "long_method_or_region",
+  "issues": [
+    {
+      "type": "Long or Complex Region",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 57
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$object->id.",
+      "#.$object->id;\n\t\t\t\tprint ",
+      ".butAction",
+      ".button",
+      ".center",
+      ".div-table-responsive",
+      ".fieldrequired",
+      ".flat",
+      ".left",
+      ".liste_titre",
+      ".noborder",
+      ".nowraponall",
+      ".oddeven",
+      ".right",
+      ".warning"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#.$object->id.",
+      "#.$object->id;\n\t\t\t\tprint ",
+      ".butAction",
+      ".button",
+      ".center",
+      ".div-table-responsive",
+      ".fieldrequired",
+      ".flat",
+      ".left",
+      ".liste_titre",
+      ".noborder",
+      ".nowraponall",
+      ".oddeven",
+      ".right",
+      ".warning"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

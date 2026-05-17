@@ -1,0 +1,97 @@
+{
+  "candidate_id": "dolibarr-C0501",
+  "subject_id": "dolibarr",
+  "file": "htdocs/takepos/invoice.php",
+  "lines": [
+    496,
+    629
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 29
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [
+      "takeposterminal"
+    ],
+    "database_tables": [
+      "takepos"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#search",
+      "#tablelines",
+      ".div-table-responsive-no-min",
+      ".drag",
+      ".drop",
+      ".invoice",
+      ".left",
+      ".linecoldescription",
+      ".linecolht",
+      ".linecolqty",
+      ".liste_titre",
+      ".noborder",
+      ".nodrag",
+      ".nodrop",
+      ".noshadow",
+      ".nowraponall",
+      ".oddeven",
+      ".opacitymedium",
+      ".postablelines",
+      ".right"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [
+      "takeposterminal"
+    ],
+    "must_preserve_database_tables": [
+      "takepos"
+    ],
+    "must_preserve_dom_selectors": [
+      "#search",
+      "#tablelines",
+      ".div-table-responsive-no-min",
+      ".drag",
+      ".drop",
+      ".invoice",
+      ".left",
+      ".linecoldescription",
+      ".linecolht",
+      ".linecolqty",
+      ".liste_titre",
+      ".noborder",
+      ".nodrag",
+      ".nodrop",
+      ".noshadow",
+      ".nowraponall",
+      ".oddeven",
+      ".opacitymedium",
+      ".postablelines",
+      ".right"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

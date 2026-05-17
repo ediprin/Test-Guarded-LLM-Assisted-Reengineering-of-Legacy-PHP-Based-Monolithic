@@ -1,0 +1,104 @@
+{
+  "candidate_id": "dolibarr-C0245",
+  "subject_id": "dolibarr",
+  "file": "htdocs/compta/paiement.php",
+  "lines": [
+    405,
+    916
+  ],
+  "candidate_type": "session_dependent_logic",
+  "issues": [
+    {
+      "type": "Session-Dependent Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 68
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "reday",
+      "remonth",
+      "reyear"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#fieldchqemetteur",
+      "#invoice_type",
+      "#multicurrency_result",
+      "#payment_form",
+      "#result",
+      "#thirdpartylabel",
+      ".AutoFillAmout",
+      ".amount",
+      ".border",
+      ".button",
+      ".center",
+      ".fieldrequired",
+      ".left",
+      ".liste_titre",
+      ".liste_total",
+      ".maxwidth75",
+      ".multicurrency_amount",
+      ".multicurrency_remain",
+      ".noborder",
+      ".nowraponall"
+    ],
+    "forms": [
+      "add_paiement"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "reday",
+      "remonth",
+      "reyear"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#fieldchqemetteur",
+      "#invoice_type",
+      "#multicurrency_result",
+      "#payment_form",
+      "#result",
+      "#thirdpartylabel",
+      ".AutoFillAmout",
+      ".amount",
+      ".border",
+      ".button",
+      ".center",
+      ".fieldrequired",
+      ".left",
+      ".liste_titre",
+      ".liste_total",
+      ".maxwidth75",
+      ".multicurrency_amount",
+      ".multicurrency_remain",
+      ".noborder",
+      ".nowraponall"
+    ],
+    "must_preserve_forms": [
+      "add_paiement"
+    ]
+  },
+  "allowed_transformations": [
+    "Extract Guard",
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

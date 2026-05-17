@@ -1,0 +1,79 @@
+{
+  "candidate_id": "dolibarr-C4823",
+  "subject_id": "dolibarr",
+  "file": "htdocs/admin/tools/dolibarr_import.php",
+  "lines": [
+    1,
+    217
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 75
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "showpass"
+    ],
+    "session_keys": [],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#div_container_exportoptions",
+      "#div_container_sub_exportoptions",
+      "#exportoptions",
+      "#mysql_options",
+      "#postgresql_options",
+      "#radio_dump_mysql",
+      "#radio_dump_postgresql",
+      "#restorecommand",
+      ".center",
+      ".centpercent",
+      ".formelementrow",
+      ".opacitymedium",
+      ".tdtop"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "showpass"
+    ],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#div_container_exportoptions",
+      "#div_container_sub_exportoptions",
+      "#exportoptions",
+      "#mysql_options",
+      "#postgresql_options",
+      "#radio_dump_mysql",
+      "#radio_dump_postgresql",
+      "#restorecommand",
+      ".center",
+      ".centpercent",
+      ".formelementrow",
+      ".opacitymedium",
+      ".tdtop"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

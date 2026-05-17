@@ -1,0 +1,123 @@
+{
+  "candidate_id": "dolibarr-C0871",
+  "subject_id": "dolibarr",
+  "file": "htdocs/public/payment/newpayment.php",
+  "lines": [
+    1,
+    2282
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 478
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "e",
+      "entity",
+      "newamount"
+    ],
+    "session_keys": [
+      "FinalPaymentAmt",
+      "TRANSACTIONID",
+      "currencyCodeType",
+      "errormessage",
+      "ipaddress",
+      "newtoken",
+      "onlinetoken",
+      "payerID",
+      "paymentType",
+      "paymentintent_id"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$thirdparty_id.",
+      "#buttontopay",
+      "#card-element",
+      "#card-errors",
+      "#cardholder-name",
+      "#div_dopayment_paybox",
+      "#div_dopayment_paypal",
+      "#div_dopayment_stripe",
+      "#dolpaymentform",
+      "#dolpaymentlogo",
+      "#dolpaymentspan",
+      "#dolpaymenttable",
+      "#dopayment_paybox",
+      "#dopayment_paypal",
+      "#dopayment_stripe",
+      "#hourglasstopay",
+      "#payment-form",
+      "#payment-request-button",
+      "#tablepublicpayment",
+      ".CTableRow"
+    ],
+    "forms": [
+      "paymentform"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "e",
+      "entity",
+      "newamount"
+    ],
+    "must_preserve_session_keys": [
+      "FinalPaymentAmt",
+      "TRANSACTIONID",
+      "currencyCodeType",
+      "errormessage",
+      "ipaddress",
+      "newtoken",
+      "onlinetoken",
+      "payerID",
+      "paymentType",
+      "paymentintent_id"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#.$thirdparty_id.",
+      "#buttontopay",
+      "#card-element",
+      "#card-errors",
+      "#cardholder-name",
+      "#div_dopayment_paybox",
+      "#div_dopayment_paypal",
+      "#div_dopayment_stripe",
+      "#dolpaymentform",
+      "#dolpaymentlogo",
+      "#dolpaymentspan",
+      "#dolpaymenttable",
+      "#dopayment_paybox",
+      "#dopayment_paypal",
+      "#dopayment_stripe",
+      "#hourglasstopay",
+      "#payment-form",
+      "#payment-request-button",
+      "#tablepublicpayment",
+      ".CTableRow"
+    ],
+    "must_preserve_forms": [
+      "paymentform"
+    ]
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

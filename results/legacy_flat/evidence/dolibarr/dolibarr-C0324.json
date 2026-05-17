@@ -1,0 +1,102 @@
+{
+  "candidate_id": "dolibarr-C0324",
+  "subject_id": "dolibarr",
+  "file": "htdocs/holiday/card.php",
+  "lines": [
+    894,
+    1467
+  ],
+  "candidate_type": "session_dependent_logic",
+  "issues": [
+    {
+      "type": "Session-Dependent Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 104
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "error_content",
+      "msg"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$object->id, $langs->trans(",
+      "#.$object->id.",
+      ".border",
+      ".butAction",
+      ".butActionDelete",
+      ".butActionRefused",
+      ".button",
+      ".center",
+      ".centpercent",
+      ".classfortooltip",
+      ".clearboth",
+      ".ficheaddleft",
+      ".fichecenter",
+      ".fichehalfleft",
+      ".fichehalfright",
+      ".fieldrequired",
+      ".nowrap",
+      ".opacitymedium",
+      ".tabBar",
+      ".tableforfield"
+    ],
+    "forms": [
+      "demandeCP"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "error_content",
+      "msg"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#.$object->id, $langs->trans(",
+      "#.$object->id.",
+      ".border",
+      ".butAction",
+      ".butActionDelete",
+      ".butActionRefused",
+      ".button",
+      ".center",
+      ".centpercent",
+      ".classfortooltip",
+      ".clearboth",
+      ".ficheaddleft",
+      ".fichecenter",
+      ".fichehalfleft",
+      ".fichehalfright",
+      ".fieldrequired",
+      ".nowrap",
+      ".opacitymedium",
+      ".tabBar",
+      ".tableforfield"
+    ],
+    "must_preserve_forms": [
+      "demandeCP"
+    ]
+  },
+  "allowed_transformations": [
+    "Extract Guard",
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

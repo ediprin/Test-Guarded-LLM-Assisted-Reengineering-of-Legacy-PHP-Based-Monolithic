@@ -1,0 +1,98 @@
+{
+  "candidate_id": "dolibarr-C4257",
+  "subject_id": "dolibarr",
+  "file": "htdocs/compta/deplacement/card.php",
+  "lines": [
+    1,
+    582
+  ],
+  "candidate_type": "mixed_php_html",
+  "issues": [
+    {
+      "type": "Mixed PHP/HTML",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 70
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "# . $id);\n                exit;\n            }\n            else\n            {\n\t            setEventMessages($object->error, $object->errors, ",
+      "# . $id);\n            exit;\n        }\n        else\n        {\n\t        setEventMessages($object->error, $object->errors, ",
+      "# . $id);\n        exit;\n    }\n}\n\n// Set into a project\nelseif ($action == ",
+      "#.$id, $langs->trans(",
+      "#.$id.",
+      "#.$object->id, $object->socid, $object->fk_project, ",
+      "#.$object->id.",
+      ".border",
+      ".butAction",
+      ".butActionDelete",
+      ".butActionRefused",
+      ".button",
+      ".center",
+      ".classfortooltip",
+      ".fieldrequired",
+      ".flat",
+      ".nobordernopadding",
+      ".right",
+      ".tabsAction",
+      ".tdtop"
+    ],
+    "forms": [
+      "add",
+      "update"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "# . $id);\n                exit;\n            }\n            else\n            {\n\t            setEventMessages($object->error, $object->errors, ",
+      "# . $id);\n            exit;\n        }\n        else\n        {\n\t        setEventMessages($object->error, $object->errors, ",
+      "# . $id);\n        exit;\n    }\n}\n\n// Set into a project\nelseif ($action == ",
+      "#.$id, $langs->trans(",
+      "#.$id.",
+      "#.$object->id, $object->socid, $object->fk_project, ",
+      "#.$object->id.",
+      ".border",
+      ".butAction",
+      ".butActionDelete",
+      ".butActionRefused",
+      ".button",
+      ".center",
+      ".classfortooltip",
+      ".fieldrequired",
+      ".flat",
+      ".nobordernopadding",
+      ".right",
+      ".tabsAction",
+      ".tdtop"
+    ],
+    "must_preserve_forms": [
+      "add",
+      "update"
+    ]
+  },
+  "allowed_transformations": [
+    "Separate PHP Logic from Markup",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

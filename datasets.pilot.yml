@@ -1,0 +1,27 @@
+# Pilot dataset actually used for treatment execution.
+
+source_basis:
+  paper_pdf: s10664-024-10478-0.pdf
+  note: >
+    This pilot subset is derived from the Rio et al. PHP web-app subject pool.
+    Unused subjects from the broader audit have been archived under archive_unused/.
+
+subjects:
+  - id: dokuwiki
+    domain: wiki
+    repo_url: https://github.com/dokuwiki/dokuwiki.git
+    selected_tag: release-2018-04-22b
+    commit: 4e34491f07933bfb7e59e6cab0c029799dd381ab
+    runtime: docker/subjects/dokuwiki/docker-compose.yml
+    base_url: http://localhost:8102/doku.php
+    status: used_in_pilot
+
+  - id: kanboard
+    domain: project_management
+    repo_url: https://github.com/kanboard/kanboard.git
+    selected_tag: v1.2.13
+    commit: d983c113da13aad4c022a8832365d04d77adf3a7
+    runtime: docker/subjects/kanboard/docker-compose.yml
+    base_url: http://localhost:8107/
+    status: used_in_pilot
+

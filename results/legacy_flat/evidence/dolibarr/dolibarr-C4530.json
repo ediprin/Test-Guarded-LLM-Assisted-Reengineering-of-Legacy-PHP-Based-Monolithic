@@ -1,0 +1,89 @@
+{
+  "candidate_id": "dolibarr-C4530",
+  "subject_id": "dolibarr",
+  "file": "htdocs/compta/bank/various_payment/list.php",
+  "lines": [
+    1,
+    350
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 51
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#formfilteraction",
+      ".butActionNew",
+      ".center",
+      ".div-table-responsive",
+      ".fa",
+      ".fa-plus-circle",
+      ".flat",
+      ".left",
+      ".liste",
+      ".liste_titre",
+      ".liste_total",
+      ".maxwidthsearch",
+      ".nowrap",
+      ".oddeven",
+      ".right",
+      ".tagtable",
+      ".text-plus-circle",
+      ".valignmiddle"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#formfilteraction",
+      ".butActionNew",
+      ".center",
+      ".div-table-responsive",
+      ".fa",
+      ".fa-plus-circle",
+      ".flat",
+      ".left",
+      ".liste",
+      ".liste_titre",
+      ".liste_total",
+      ".maxwidthsearch",
+      ".nowrap",
+      ".oddeven",
+      ".right",
+      ".tagtable",
+      ".text-plus-circle",
+      ".valignmiddle"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

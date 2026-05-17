@@ -1,0 +1,109 @@
+{
+  "candidate_id": "dolibarr-C3247",
+  "subject_id": "dolibarr",
+  "file": "htdocs/core/class/html.formticket.class.php",
+  "lines": [
+    1,
+    1091
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 190
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "message",
+      "modelselected"
+    ],
+    "session_keys": [
+      "listofmimes",
+      "listofnames",
+      "listofpaths",
+      "newtoken"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#addedfile",
+      "#addfile",
+      "#attachfile_",
+      "#email",
+      "#form_create_ticket",
+      "#modelselected",
+      "#notify_tiers_at_create",
+      "#private_message",
+      "#removedfile_",
+      "#select",
+      "#send_msg_email",
+      "#subject",
+      ".border",
+      ".button",
+      ".center",
+      ".centpercent",
+      ".email_line",
+      ".fieldrequired",
+      ".flat",
+      ".minwidth100"
+    ],
+    "forms": [
+      "ticket"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "message",
+      "modelselected"
+    ],
+    "must_preserve_session_keys": [
+      "listofmimes",
+      "listofnames",
+      "listofpaths",
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#addedfile",
+      "#addfile",
+      "#attachfile_",
+      "#email",
+      "#form_create_ticket",
+      "#modelselected",
+      "#notify_tiers_at_create",
+      "#private_message",
+      "#removedfile_",
+      "#select",
+      "#send_msg_email",
+      "#subject",
+      ".border",
+      ".button",
+      ".center",
+      ".centpercent",
+      ".email_line",
+      ".fieldrequired",
+      ".flat",
+      ".minwidth100"
+    ],
+    "must_preserve_forms": [
+      "ticket"
+    ]
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

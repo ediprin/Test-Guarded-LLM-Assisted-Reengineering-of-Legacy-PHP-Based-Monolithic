@@ -1,0 +1,102 @@
+{
+  "candidate_id": "dolibarr-C3792",
+  "subject_id": "dolibarr",
+  "file": "htdocs/core/tpl/login.tpl.php",
+  "lines": [
+    1,
+    387
+  ],
+  "candidate_type": "mixed_php_html",
+  "issues": [
+    {
+      "type": "Mixed PHP/HTML",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 207
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [
+      "dol_loginmesg",
+      "newtoken",
+      "urlfrom"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#dol_hide_leftmenu",
+      "#dol_hide_topmenu",
+      "#dol_no_mouse_hover",
+      "#dol_optimize_smallscreen",
+      "#dol_use_jmobile",
+      "#dst_first",
+      "#dst_observed",
+      "#dst_second",
+      "#img_logo",
+      "#img_securitycode",
+      "#login",
+      "#login_left",
+      "#login_line1",
+      "#login_line2",
+      "#login_right",
+      "#password",
+      "#screenheight",
+      "#screenwidth",
+      "#securitycode",
+      "#tz"
+    ],
+    "forms": [
+      "<?php echo $php_self; ?>",
+      "login"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [
+      "dol_loginmesg",
+      "newtoken",
+      "urlfrom"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#dol_hide_leftmenu",
+      "#dol_hide_topmenu",
+      "#dol_no_mouse_hover",
+      "#dol_optimize_smallscreen",
+      "#dol_use_jmobile",
+      "#dst_first",
+      "#dst_observed",
+      "#dst_second",
+      "#img_logo",
+      "#img_securitycode",
+      "#login",
+      "#login_left",
+      "#login_line1",
+      "#login_line2",
+      "#login_right",
+      "#password",
+      "#screenheight",
+      "#screenwidth",
+      "#securitycode",
+      "#tz"
+    ],
+    "must_preserve_forms": [
+      "<?php echo $php_self; ?>",
+      "login"
+    ]
+  },
+  "allowed_transformations": [
+    "Separate PHP Logic from Markup",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

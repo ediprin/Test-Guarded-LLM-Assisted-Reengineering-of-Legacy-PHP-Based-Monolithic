@@ -1,0 +1,84 @@
+{
+  "candidate_id": "dolibarr-C4726",
+  "subject_id": "dolibarr",
+  "file": "htdocs/cashdesk/tpl/validation1.tpl.php",
+  "lines": [
+    1,
+    124
+  ],
+  "candidate_type": "mixed_php_html",
+  "issues": [
+    {
+      "type": "Mixed PHP/HTML",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 49
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [
+      "CASHDESK_ID_BANKACCOUNT_CASH",
+      "CASHDESK_ID_BANKACCOUNT_CB",
+      "CASHDESK_ID_BANKACCOUNT_CHEQUE",
+      "newtoken"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#frmValidation",
+      ".button",
+      ".cadre_facturation",
+      ".center",
+      ".formulaire2",
+      ".lien1",
+      ".note_label",
+      ".resume_label",
+      ".table_resume",
+      ".textarea_note",
+      ".titre1"
+    ],
+    "forms": [
+      "validation_verif.php?action=valide_facture"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [
+      "CASHDESK_ID_BANKACCOUNT_CASH",
+      "CASHDESK_ID_BANKACCOUNT_CB",
+      "CASHDESK_ID_BANKACCOUNT_CHEQUE",
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#frmValidation",
+      ".button",
+      ".cadre_facturation",
+      ".center",
+      ".formulaire2",
+      ".lien1",
+      ".note_label",
+      ".resume_label",
+      ".table_resume",
+      ".textarea_note",
+      ".titre1"
+    ],
+    "must_preserve_forms": [
+      "validation_verif.php?action=valide_facture"
+    ]
+  },
+  "allowed_transformations": [
+    "Separate PHP Logic from Markup",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

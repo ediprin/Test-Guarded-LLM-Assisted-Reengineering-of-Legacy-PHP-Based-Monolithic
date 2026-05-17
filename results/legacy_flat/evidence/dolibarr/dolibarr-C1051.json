@@ -1,0 +1,97 @@
+{
+  "candidate_id": "dolibarr-C1051",
+  "subject_id": "dolibarr",
+  "file": "htdocs/product/stock/massstockmove.php",
+  "lines": [
+    1,
+    465
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 51
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "codemove"
+    ],
+    "session_keys": [
+      "massstockmove",
+      "newtoken"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      ".button",
+      ".center",
+      ".centpercent",
+      ".div-table-responsive-no-min",
+      ".fieldrequired",
+      ".flat",
+      ".liste",
+      ".liste_titre",
+      ".maxwidth50",
+      ".noborder",
+      ".oddeven",
+      ".opacitymedium",
+      ".quatrevingtpercent",
+      ".right",
+      ".tagtable",
+      ".titlefield"
+    ],
+    "forms": [
+      "formulaire",
+      "formulaire2"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "codemove"
+    ],
+    "must_preserve_session_keys": [
+      "massstockmove",
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      ".button",
+      ".center",
+      ".centpercent",
+      ".div-table-responsive-no-min",
+      ".fieldrequired",
+      ".flat",
+      ".liste",
+      ".liste_titre",
+      ".maxwidth50",
+      ".noborder",
+      ".oddeven",
+      ".opacitymedium",
+      ".quatrevingtpercent",
+      ".right",
+      ".tagtable",
+      ".titlefield"
+    ],
+    "must_preserve_forms": [
+      "formulaire",
+      "formulaire2"
+    ]
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

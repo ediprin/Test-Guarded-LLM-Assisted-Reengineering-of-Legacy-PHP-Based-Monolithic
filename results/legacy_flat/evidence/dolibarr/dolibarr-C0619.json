@@ -1,0 +1,151 @@
+{
+  "candidate_id": "dolibarr-C0619",
+  "subject_id": "dolibarr",
+  "file": "htdocs/user/class/user.class.php",
+  "lines": [
+    1,
+    3339
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 491
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [
+      "disablemodules",
+      "dol_authmode",
+      "dol_screenheight",
+      "dol_screenwidth"
+    ],
+    "database_tables": [
+      "Dolibarr",
+      "a",
+      "cache",
+      "clicktodial",
+      "config",
+      "contact",
+      "database",
+      "datas",
+      "email",
+      "error",
+      "existing",
+      "hooks",
+      "its",
+      "link",
+      "llx_user_employment",
+      "member",
+      "members",
+      "met",
+      "minor",
+      "notrigger",
+      "object",
+      "password",
+      "remove",
+      "set",
+      "the",
+      "to",
+      "tree",
+      "user"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$idtoscan);\n\t\t\tforeach($this->users as $id => $val)\n\t\t\t{\n\t\t\t\t//var_dump($val[",
+      "#.$rid.",
+      "#.$this->db->escape($rid);\n\t\t\t// Ajout des droits induits\n\t\t\tif (! empty($subperms))   $whereforadd.=",
+      "#.$this->db->escape($rid);\n\t\t\t// Suppression des droits induits\n\t\t\tif ($subperms==",
+      "#.$this->id.",
+      "#.$this->id;\n\t\tif ($option == ",
+      "#.$this->id;\n\n\t\tif ($option != ",
+      ".centpercent",
+      ".classfortooltip",
+      ".inline-block",
+      ".nopadding",
+      ".nowrap",
+      ".paddingright",
+      ".photointooltip",
+      ".pictostatus",
+      ".userimg",
+      ".valignmiddle"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [
+      "disablemodules",
+      "dol_authmode",
+      "dol_screenheight",
+      "dol_screenwidth"
+    ],
+    "must_preserve_database_tables": [
+      "Dolibarr",
+      "a",
+      "cache",
+      "clicktodial",
+      "config",
+      "contact",
+      "database",
+      "datas",
+      "email",
+      "error",
+      "existing",
+      "hooks",
+      "its",
+      "link",
+      "llx_user_employment",
+      "member",
+      "members",
+      "met",
+      "minor",
+      "notrigger",
+      "object",
+      "password",
+      "remove",
+      "set",
+      "the",
+      "to",
+      "tree",
+      "user"
+    ],
+    "must_preserve_dom_selectors": [
+      "#.$idtoscan);\n\t\t\tforeach($this->users as $id => $val)\n\t\t\t{\n\t\t\t\t//var_dump($val[",
+      "#.$rid.",
+      "#.$this->db->escape($rid);\n\t\t\t// Ajout des droits induits\n\t\t\tif (! empty($subperms))   $whereforadd.=",
+      "#.$this->db->escape($rid);\n\t\t\t// Suppression des droits induits\n\t\t\tif ($subperms==",
+      "#.$this->id.",
+      "#.$this->id;\n\t\tif ($option == ",
+      "#.$this->id;\n\n\t\tif ($option != ",
+      ".centpercent",
+      ".classfortooltip",
+      ".inline-block",
+      ".nopadding",
+      ".nowrap",
+      ".paddingright",
+      ".photointooltip",
+      ".pictostatus",
+      ".userimg",
+      ".valignmiddle"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

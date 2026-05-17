@@ -1,0 +1,77 @@
+{
+  "candidate_id": "dolibarr-C0530",
+  "subject_id": "dolibarr",
+  "file": "htdocs/user/param_ihm.php",
+  "lines": [
+    223,
+    417
+  ],
+  "candidate_type": "long_method_or_region",
+  "issues": [
+    {
+      "type": "Long or Complex Region",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 50
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$object->id.",
+      "#check_AGENDA_DEFAULT_VIEW",
+      "#check_MAIN_LANDING_PAGE",
+      "#check_MAIN_LANG_DEFAULT",
+      "#check_SIZE_LISTE_LIMIT",
+      "#main_size_liste_limit",
+      ".butAction",
+      ".button",
+      ".center",
+      ".flat",
+      ".liste_titre",
+      ".noborder",
+      ".nowrap",
+      ".oddeven",
+      ".tabsAction"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#.$object->id.",
+      "#check_AGENDA_DEFAULT_VIEW",
+      "#check_MAIN_LANDING_PAGE",
+      "#check_MAIN_LANG_DEFAULT",
+      "#check_SIZE_LISTE_LIMIT",
+      "#main_size_liste_limit",
+      ".butAction",
+      ".button",
+      ".center",
+      ".flat",
+      ".liste_titre",
+      ".noborder",
+      ".nowrap",
+      ".oddeven",
+      ".tabsAction"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

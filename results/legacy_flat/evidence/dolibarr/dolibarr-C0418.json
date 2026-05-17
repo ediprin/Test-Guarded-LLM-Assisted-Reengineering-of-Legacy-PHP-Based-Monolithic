@@ -1,0 +1,84 @@
+{
+  "candidate_id": "dolibarr-C0418",
+  "subject_id": "dolibarr",
+  "file": "htdocs/product/document.php",
+  "lines": [
+    1,
+    349
+  ],
+  "candidate_type": "mixed_php_html",
+  "issues": [
+    {
+      "type": "Mixed PHP/HTML",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 58
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "# . $object->id . ",
+      "# . $object->id;\n    include_once DOL_DOCUMENT_ROOT . ",
+      "#filetoadd",
+      ".border",
+      ".button",
+      ".centpercent",
+      ".clearboth",
+      ".fichecenter",
+      ".liste_titre",
+      ".noborder",
+      ".oddeven",
+      ".tableforfield",
+      ".titlefield",
+      ".underbanner"
+    ],
+    "forms": [
+      "filemerge"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "# . $object->id . ",
+      "# . $object->id;\n    include_once DOL_DOCUMENT_ROOT . ",
+      "#filetoadd",
+      ".border",
+      ".button",
+      ".centpercent",
+      ".clearboth",
+      ".fichecenter",
+      ".liste_titre",
+      ".noborder",
+      ".oddeven",
+      ".tableforfield",
+      ".titlefield",
+      ".underbanner"
+    ],
+    "must_preserve_forms": [
+      "filemerge"
+    ]
+  },
+  "allowed_transformations": [
+    "Separate PHP Logic from Markup",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

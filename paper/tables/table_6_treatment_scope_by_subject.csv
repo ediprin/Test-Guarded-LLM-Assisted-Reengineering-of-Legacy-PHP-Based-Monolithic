@@ -1,0 +1,3 @@
+project,eligible_candidates,t1_model_executed,t3_model_executed,patches_gate_evaluated,treatment_status,paper_reporting_role
+DokuWiki,43,14,13,27,partial executed-subset treatment,main treatment result
+Kanboard,8,7,6,13,partial executed-subset treatment,main treatment result with pending prompts disclosed

@@ -1,0 +1,28 @@
+# Local workspace files
+.local/
+
+# Secrets / local env
+.env
+*.env
+.env.*
+secrets/
+*.key
+
+# OS/editor/cache
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+__pycache__/
+*.pyc
+.pytest_cache/
+.cache/
+
+# Logs/temp
+*.log
+tmp/
+temp/
+*.tmp
+~$*.docx
+

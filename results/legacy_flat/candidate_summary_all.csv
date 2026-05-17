@@ -1,0 +1,9 @@
+project,total,long_method_or_region,mixed_php_html,sql_data_access,session_dependent_logic,form_handling,mixed_php_html_sql
+phpmyadmin,972,427,52,229,151,55,58
+dokuwiki,385,287,62,14,12,5,5
+opencart,926,566,10,339,2,1,8
+phpbb,1057,414,21,527,3,5,87
+phppgadmin,333,198,4,72,17,24,18
+roundcubemail,513,293,16,60,117,15,12
+kanboard,269,39,141,81,7,0,1
+dolibarr,4998,2329,414,1430,181,156,488

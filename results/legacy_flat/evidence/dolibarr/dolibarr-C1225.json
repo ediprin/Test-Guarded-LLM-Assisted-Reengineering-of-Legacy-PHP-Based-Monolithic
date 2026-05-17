@@ -1,0 +1,95 @@
+{
+  "candidate_id": "dolibarr-C1225",
+  "subject_id": "dolibarr",
+  "file": "htdocs/loan/payment/card.php",
+  "lines": [
+    1,
+    300
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 33
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "action",
+      "facid",
+      "id",
+      "lang_id"
+    ],
+    "session_keys": [],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$_GET[",
+      "#.$id.",
+      "#.$id;\n$head[$h][1] = $langs->trans(",
+      "#.$payment->id);\n\t\texit;\n\t}\n\telse\n\t{\n\t\tsetEventMessages($payment->error, $payment->errors, ",
+      "#.$payment->id, $langs->trans(",
+      "#.$payment->id.",
+      ".border",
+      ".butAction",
+      ".butActionDelete",
+      ".butActionRefused",
+      ".center",
+      ".classfortooltip",
+      ".liste_titre",
+      ".noborder",
+      ".oddeven",
+      ".right",
+      ".tabsAction",
+      ".titlefield"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "action",
+      "facid",
+      "id",
+      "lang_id"
+    ],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#.$_GET[",
+      "#.$id.",
+      "#.$id;\n$head[$h][1] = $langs->trans(",
+      "#.$payment->id);\n\t\texit;\n\t}\n\telse\n\t{\n\t\tsetEventMessages($payment->error, $payment->errors, ",
+      "#.$payment->id, $langs->trans(",
+      "#.$payment->id.",
+      ".border",
+      ".butAction",
+      ".butActionDelete",
+      ".butActionRefused",
+      ".center",
+      ".classfortooltip",
+      ".liste_titre",
+      ".noborder",
+      ".oddeven",
+      ".right",
+      ".tabsAction",
+      ".titlefield"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

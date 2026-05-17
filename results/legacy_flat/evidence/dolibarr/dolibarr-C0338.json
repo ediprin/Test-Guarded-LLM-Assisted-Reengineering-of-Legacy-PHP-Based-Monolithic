@@ -1,0 +1,109 @@
+{
+  "candidate_id": "dolibarr-C0338",
+  "subject_id": "dolibarr",
+  "file": "htdocs/install/fileconf.php",
+  "lines": [
+    1,
+    649
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 294
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "lang"
+    ],
+    "session_keys": [
+      "dol_save_pass"
+    ],
+    "database_tables": [
+      "directory",
+      "install",
+      "list",
+      "session",
+      "the"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#db_create_database",
+      "#db_create_user",
+      "#db_host",
+      "#db_name",
+      "#db_pass",
+      "#db_pass_root",
+      "#db_port",
+      "#db_prefix",
+      "#db_type",
+      "#db_user",
+      "#db_user_root",
+      "#linktoshowtechnicalparam",
+      "#main_data_dir",
+      "#main_dir",
+      "#main_force_https",
+      "#main_url",
+      ".($force_install_noedit)",
+      ".DoliDB",
+      ".comment",
+      ".hideroot"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "lang"
+    ],
+    "must_preserve_session_keys": [
+      "dol_save_pass"
+    ],
+    "must_preserve_database_tables": [
+      "directory",
+      "install",
+      "list",
+      "session",
+      "the"
+    ],
+    "must_preserve_dom_selectors": [
+      "#db_create_database",
+      "#db_create_user",
+      "#db_host",
+      "#db_name",
+      "#db_pass",
+      "#db_pass_root",
+      "#db_port",
+      "#db_prefix",
+      "#db_type",
+      "#db_user",
+      "#db_user_root",
+      "#linktoshowtechnicalparam",
+      "#main_data_dir",
+      "#main_dir",
+      "#main_force_https",
+      "#main_url",
+      ".($force_install_noedit)",
+      ".DoliDB",
+      ".comment",
+      ".hideroot"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

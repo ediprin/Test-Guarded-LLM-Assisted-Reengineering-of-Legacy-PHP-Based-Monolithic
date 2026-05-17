@@ -1,0 +1,131 @@
+{
+  "candidate_id": "dolibarr-C1318",
+  "subject_id": "dolibarr",
+  "file": "htdocs/includes/tecnickcom/tcpdf/tcpdf.php",
+  "lines": [
+    1,
+    24512
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 4468
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [],
+    "database_tables": [
+      "CIDs",
+      "CSS",
+      "SS",
+      "a",
+      "absolute",
+      "alpha",
+      "another",
+      "array",
+      "center",
+      "checkPageBreak",
+      "code",
+      "color",
+      "endy",
+      "font",
+      "fontkeys",
+      "footer",
+      "format",
+      "getting",
+      "http",
+      "last",
+      "left",
+      "n",
+      "name",
+      "nested",
+      "normal",
+      "page",
+      "parent",
+      "previous",
+      "remaining",
+      "row",
+      "specified",
+      "string",
+      "style",
+      "the",
+      "transformation",
+      "two",
+      "value",
+      "which",
+      "y"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#W5M0MpCehiHzreSzNTczkc9d"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [
+      "CIDs",
+      "CSS",
+      "SS",
+      "a",
+      "absolute",
+      "alpha",
+      "another",
+      "array",
+      "center",
+      "checkPageBreak",
+      "code",
+      "color",
+      "endy",
+      "font",
+      "fontkeys",
+      "footer",
+      "format",
+      "getting",
+      "http",
+      "last",
+      "left",
+      "n",
+      "name",
+      "nested",
+      "normal",
+      "page",
+      "parent",
+      "previous",
+      "remaining",
+      "row",
+      "specified",
+      "string",
+      "style",
+      "the",
+      "transformation",
+      "two",
+      "value",
+      "which",
+      "y"
+    ],
+    "must_preserve_dom_selectors": [
+      "#W5M0MpCehiHzreSzNTczkc9d"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

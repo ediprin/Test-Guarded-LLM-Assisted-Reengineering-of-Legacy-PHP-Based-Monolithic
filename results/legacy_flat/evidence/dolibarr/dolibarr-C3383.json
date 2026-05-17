@@ -1,0 +1,89 @@
+{
+  "candidate_id": "dolibarr-C3383",
+  "subject_id": "dolibarr",
+  "file": "htdocs/core/lib/ajax.lib.php",
+  "lines": [
+    1,
+    625
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 114
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [],
+    "database_tables": [
+      "a",
+      "ajax_combobox",
+      "an",
+      "combo",
+      "input",
+      "javascript",
+      "on",
+      "select"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#+id+",
+      "#+ui.item.id+",
+      "#.$htmlname.",
+      "#confirm_",
+      "#del_",
+      "#dialog-info",
+      "#set_",
+      ".*/",
+      ".linkobject",
+      ".select2-selection...>",
+      ".tag"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [
+      "a",
+      "ajax_combobox",
+      "an",
+      "combo",
+      "input",
+      "javascript",
+      "on",
+      "select"
+    ],
+    "must_preserve_dom_selectors": [
+      "#+id+",
+      "#+ui.item.id+",
+      "#.$htmlname.",
+      "#confirm_",
+      "#del_",
+      "#dialog-info",
+      "#set_",
+      ".*/",
+      ".linkobject",
+      ".select2-selection...>",
+      ".tag"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "candidate_id": "dolibarr-C0476",
+  "subject_id": "dolibarr",
+  "file": "htdocs/societe/price.php",
+  "lines": [
+    1,
+    617
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 64
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "cancel"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": [
+      "all",
+      "code",
+      "database",
+      "price"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "# . $object->id . ",
+      "# . $object->id;\n\n\t    print ",
+      ".border",
+      ".butAction",
+      ".button",
+      ".center",
+      ".centpercent",
+      ".clearboth",
+      ".divButAction",
+      ".error",
+      ".fichecenter",
+      ".flat",
+      ".inline-block",
+      ".liste_titre",
+      ".maxwidthsearch",
+      ".noborder",
+      ".oddeven",
+      ".right",
+      ".tabsAction",
+      ".titlefield"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "cancel"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [
+      "all",
+      "code",
+      "database",
+      "price"
+    ],
+    "must_preserve_dom_selectors": [
+      "# . $object->id . ",
+      "# . $object->id;\n\n\t    print ",
+      ".border",
+      ".butAction",
+      ".button",
+      ".center",
+      ".centpercent",
+      ".clearboth",
+      ".divButAction",
+      ".error",
+      ".fichecenter",
+      ".flat",
+      ".inline-block",
+      ".liste_titre",
+      ".maxwidthsearch",
+      ".noborder",
+      ".oddeven",
+      ".right",
+      ".tabsAction",
+      ".titlefield"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

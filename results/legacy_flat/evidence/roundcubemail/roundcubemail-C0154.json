@@ -1,0 +1,61 @@
+{
+  "candidate_id": "roundcubemail-C0154",
+  "subject_id": "roundcubemail",
+  "file": "program/steps/settings/save_identity.inc",
+  "lines": [
+    1,
+    264
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 45
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "_email",
+      "_framed",
+      "_iid",
+      "_signature"
+    ],
+    "session_keys": [
+      "identity"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "_email",
+      "_framed",
+      "_iid",
+      "_signature"
+    ],
+    "must_preserve_session_keys": [
+      "identity"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

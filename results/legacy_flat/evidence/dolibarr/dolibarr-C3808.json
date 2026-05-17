@@ -1,0 +1,54 @@
+{
+  "candidate_id": "dolibarr-C3808",
+  "subject_id": "dolibarr",
+  "file": "htdocs/core/triggers/interface_50_modAgenda_ActionsAuto.class.php",
+  "lines": [
+    1,
+    967
+  ],
+  "candidate_type": "session_dependent_logic",
+  "issues": [
+    {
+      "type": "Session-Dependent Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 211
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [
+      "LAST_ACTION_CREATED"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$object->id);\n\n        // Add entry in event table\n\t\t$now=dol_now();\n\n\t\tif (isset($_SESSION["
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [
+      "LAST_ACTION_CREATED"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#.$object->id);\n\n        // Add entry in event table\n\t\t$now=dol_now();\n\n\t\tif (isset($_SESSION["
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Guard",
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

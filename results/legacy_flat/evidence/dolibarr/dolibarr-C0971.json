@@ -1,0 +1,125 @@
+{
+  "candidate_id": "dolibarr-C0971",
+  "subject_id": "dolibarr",
+  "file": "htdocs/product/class/product.class.php",
+  "lines": [
+    1,
+    5156
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 763
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [],
+    "database_tables": [
+      "a",
+      "an",
+      "called",
+      "closed",
+      "database",
+      "each",
+      "existing",
+      "fails",
+      "hooks",
+      "if",
+      "images",
+      "instead",
+      "link",
+      "llx_c_tva",
+      "llx_product_batch",
+      "or",
+      "product_association",
+      "product_batch",
+      "product_price_by_qty",
+      "product_stock",
+      "qty",
+      "stock",
+      "table",
+      "target",
+      "the",
+      "this",
+      "units"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$id.",
+      "#.$rec[",
+      "#.$this->id.",
+      "#.$this->id;\n        }\n\n        if ($option !== ",
+      "#.$this->id;\n        } else {\n            $url = DOL_URL_ROOT.",
+      "#.$this->id;\n        } elseif ($option == ",
+      ".classfortooltip",
+      ".nowraponall",
+      ".paddingright",
+      ".paddinright"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [
+      "a",
+      "an",
+      "called",
+      "closed",
+      "database",
+      "each",
+      "existing",
+      "fails",
+      "hooks",
+      "if",
+      "images",
+      "instead",
+      "link",
+      "llx_c_tva",
+      "llx_product_batch",
+      "or",
+      "product_association",
+      "product_batch",
+      "product_price_by_qty",
+      "product_stock",
+      "qty",
+      "stock",
+      "table",
+      "target",
+      "the",
+      "this",
+      "units"
+    ],
+    "must_preserve_dom_selectors": [
+      "#.$id.",
+      "#.$rec[",
+      "#.$this->id.",
+      "#.$this->id;\n        }\n\n        if ($option !== ",
+      "#.$this->id;\n        } else {\n            $url = DOL_URL_ROOT.",
+      "#.$this->id;\n        } elseif ($option == ",
+      ".classfortooltip",
+      ".nowraponall",
+      ".paddingright",
+      ".paddinright"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

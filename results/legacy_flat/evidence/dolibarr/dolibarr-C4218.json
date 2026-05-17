@@ -1,0 +1,101 @@
+{
+  "candidate_id": "dolibarr-C4218",
+  "subject_id": "dolibarr",
+  "file": "htdocs/contact/canvas/actions_contactcard_common.class.php",
+  "lines": [
+    1,
+    322
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 43
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "address",
+      "canvas",
+      "civility_id",
+      "country_id",
+      "email",
+      "fax",
+      "firstname",
+      "jabberid",
+      "name",
+      "note",
+      "old_firstname",
+      "old_name",
+      "phone_mobile",
+      "phone_perso",
+      "phone_pro",
+      "poste",
+      "priv",
+      "socid",
+      "state_id",
+      "town",
+      "zipcode"
+    ],
+    "session_keys": [],
+    "database_tables": [
+      "object",
+      "template"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$this->object->id, $langs->trans("
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "address",
+      "canvas",
+      "civility_id",
+      "country_id",
+      "email",
+      "fax",
+      "firstname",
+      "jabberid",
+      "name",
+      "note",
+      "old_firstname",
+      "old_name",
+      "phone_mobile",
+      "phone_perso",
+      "phone_pro",
+      "poste",
+      "priv",
+      "socid",
+      "state_id",
+      "town",
+      "zipcode"
+    ],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [
+      "object",
+      "template"
+    ],
+    "must_preserve_dom_selectors": [
+      "#.$this->object->id, $langs->trans("
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

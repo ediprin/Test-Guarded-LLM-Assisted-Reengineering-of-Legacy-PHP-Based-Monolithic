@@ -1,0 +1,93 @@
+{
+  "candidate_id": "phpmyadmin-C0138",
+  "subject_id": "phpmyadmin",
+  "file": "test/classes/TrackingTest.php",
+  "lines": [
+    1,
+    954
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 25
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "alter_table",
+      "create_index",
+      "create_table",
+      "date_from",
+      "date_to",
+      "delete",
+      "drop_index",
+      "drop_table",
+      "insert",
+      "logtype",
+      "rename_table",
+      "truncate",
+      "update",
+      "users",
+      "version"
+    ],
+    "session_keys": [
+      "relation"
+    ],
+    "database_tables": [
+      "PMA",
+      "nested"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#div_create_version"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "alter_table",
+      "create_index",
+      "create_table",
+      "date_from",
+      "date_to",
+      "delete",
+      "drop_index",
+      "drop_table",
+      "insert",
+      "logtype",
+      "rename_table",
+      "truncate",
+      "update",
+      "users",
+      "version"
+    ],
+    "must_preserve_session_keys": [
+      "relation"
+    ],
+    "must_preserve_database_tables": [
+      "PMA",
+      "nested"
+    ],
+    "must_preserve_dom_selectors": [
+      "#div_create_version"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

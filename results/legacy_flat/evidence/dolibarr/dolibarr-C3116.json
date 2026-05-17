@@ -1,0 +1,64 @@
+{
+  "candidate_id": "dolibarr-C3116",
+  "subject_id": "dolibarr",
+  "file": "htdocs/core/class/html.form.class.php",
+  "lines": [
+    1595,
+    1803
+  ],
+  "candidate_type": "session_dependent_logic",
+  "issues": [
+    {
+      "type": "Session-Dependent Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 52
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [
+      "assignedtouser"
+    ],
+    "database_tables": [
+      "label",
+      "list",
+      "session",
+      "sql"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      ".flat"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [
+      "assignedtouser"
+    ],
+    "must_preserve_database_tables": [
+      "label",
+      "list",
+      "session",
+      "sql"
+    ],
+    "must_preserve_dom_selectors": [
+      ".flat"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Guard",
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

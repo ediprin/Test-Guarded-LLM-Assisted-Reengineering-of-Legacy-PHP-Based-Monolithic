@@ -1,0 +1,113 @@
+{
+  "candidate_id": "dolibarr-C4722",
+  "subject_id": "dolibarr",
+  "file": "htdocs/cashdesk/tpl/facturation1.tpl.php",
+  "lines": [
+    1,
+    220
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 80
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "selTva"
+    ],
+    "session_keys": [
+      "CASHDESK_ID_BANKACCOUNT_CASH",
+      "CASHDESK_ID_BANKACCOUNT_CB",
+      "CASHDESK_ID_BANKACCOUNT_CHEQUE",
+      "CASHDESK_ID_THIRDPARTY",
+      "newtoken"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#frmDifference",
+      "#frmFacturation",
+      "#frmQte",
+      "#sbmtEnvoyer",
+      "#selProduit",
+      "#txtEncaisse",
+      "#txtQte",
+      "#txtRef",
+      "#txtRemise",
+      ".bouton_ajout_article",
+      ".bouton_mode_reglement",
+      ".bouton_mode_reglement_disabled",
+      ".button",
+      ".cadre_facturation",
+      ".center",
+      ".centpercent",
+      ".clearboth",
+      ".formulaire1",
+      ".inline-block",
+      ".label1"
+    ],
+    "forms": [
+      "facturation_verif.php",
+      "facturation_verif.php?action=ajout_article",
+      "validation_verif.php?action=valide_achat"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "selTva"
+    ],
+    "must_preserve_session_keys": [
+      "CASHDESK_ID_BANKACCOUNT_CASH",
+      "CASHDESK_ID_BANKACCOUNT_CB",
+      "CASHDESK_ID_BANKACCOUNT_CHEQUE",
+      "CASHDESK_ID_THIRDPARTY",
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#frmDifference",
+      "#frmFacturation",
+      "#frmQte",
+      "#sbmtEnvoyer",
+      "#selProduit",
+      "#txtEncaisse",
+      "#txtQte",
+      "#txtRef",
+      "#txtRemise",
+      ".bouton_ajout_article",
+      ".bouton_mode_reglement",
+      ".bouton_mode_reglement_disabled",
+      ".button",
+      ".cadre_facturation",
+      ".center",
+      ".centpercent",
+      ".clearboth",
+      ".formulaire1",
+      ".inline-block",
+      ".label1"
+    ],
+    "must_preserve_forms": [
+      "facturation_verif.php",
+      "facturation_verif.php?action=ajout_article",
+      "validation_verif.php?action=valide_achat"
+    ]
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

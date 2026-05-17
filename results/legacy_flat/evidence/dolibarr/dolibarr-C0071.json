@@ -1,0 +1,138 @@
+{
+  "candidate_id": "dolibarr-C0071",
+  "subject_id": "dolibarr",
+  "file": "htdocs/adherents/card.php",
+  "lines": [
+    1134,
+    1983
+  ],
+  "candidate_type": "session_dependent_logic",
+  "issues": [
+    {
+      "type": "Session-Dependent Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 159
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "address",
+      "civility_id",
+      "country_id",
+      "facebook",
+      "firstname",
+      "lastname",
+      "linkedin",
+      "login",
+      "member_email",
+      "pass",
+      "phone",
+      "phone_mobile",
+      "phone_perso",
+      "public",
+      "skype",
+      "societe",
+      "town",
+      "twitter",
+      "zipcode"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "# . $object->id . ",
+      "# . $object->id;\n\t\t\t$genallowed = $user->rights->adherent->lire;\n\t\t\t$delallowed = $user->rights->adherent->creer;\n\n\t\t\tprint $formfile->showdocuments(",
+      "#.$object->id.",
+      "#photodelete",
+      "#photoinput",
+      "#tdcompany",
+      "#tdfirstname",
+      "#tdlastname",
+      ".border",
+      ".butAction",
+      ".butActionDelete",
+      ".butActionRefused",
+      ".button",
+      ".center",
+      ".centpercent",
+      ".classfortooltip",
+      ".clearboth",
+      ".divButAction",
+      ".error",
+      ".ficheaddleft"
+    ],
+    "forms": [
+      "form",
+      "formsoc"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "address",
+      "civility_id",
+      "country_id",
+      "facebook",
+      "firstname",
+      "lastname",
+      "linkedin",
+      "login",
+      "member_email",
+      "pass",
+      "phone",
+      "phone_mobile",
+      "phone_perso",
+      "public",
+      "skype",
+      "societe",
+      "town",
+      "twitter",
+      "zipcode"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "# . $object->id . ",
+      "# . $object->id;\n\t\t\t$genallowed = $user->rights->adherent->lire;\n\t\t\t$delallowed = $user->rights->adherent->creer;\n\n\t\t\tprint $formfile->showdocuments(",
+      "#.$object->id.",
+      "#photodelete",
+      "#photoinput",
+      "#tdcompany",
+      "#tdfirstname",
+      "#tdlastname",
+      ".border",
+      ".butAction",
+      ".butActionDelete",
+      ".butActionRefused",
+      ".button",
+      ".center",
+      ".centpercent",
+      ".classfortooltip",
+      ".clearboth",
+      ".divButAction",
+      ".error",
+      ".ficheaddleft"
+    ],
+    "must_preserve_forms": [
+      "form",
+      "formsoc"
+    ]
+  },
+  "allowed_transformations": [
+    "Extract Guard",
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

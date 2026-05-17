@@ -1,0 +1,104 @@
+{
+  "candidate_id": "dolibarr-C4158",
+  "subject_id": "dolibarr",
+  "file": "htdocs/core/menus/standard/auguria.lib.php",
+  "lines": [
+    259,
+    619
+  ],
+  "candidate_type": "session_dependent_logic",
+  "issues": [
+    {
+      "type": "Session-Dependent Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 103
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [
+      "idmenu",
+      "leftmenu",
+      "mainmenu"
+    ],
+    "database_tables": [
+      "database",
+      "journals_list",
+      "newmenu"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$objp->rowid, $langs->trans(",
+      "#.$objp->rowid, $objp->label, 1, $user->rights->banque->lire);\n\t\t\t\tif ($objp->rappro && $objp->courant != Account::TYPE_CASH && empty($objp->clos))  // If not cash account and not closed and can be reconciliate\n\t\t\t\t{\n\t\t\t\t\t$newmenu->add(",
+      "#blockvmenubookmarks",
+      "#blockvmenusearch",
+      "#menu_contenu_logo",
+      "#menu_end_logo",
+      "#menu_titre_logo",
+      "#menu_top_logo",
+      ".blockvmenu",
+      ".blockvmenubookmarks",
+      ".blockvmenuend",
+      ".blockvmenuimpair",
+      ".blockvmenulogo",
+      ".blockvmenupair",
+      ".blockvmenusearch",
+      ".center",
+      ".menu_contenu",
+      ".menu_end",
+      ".menu_titre",
+      ".menu_top"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [
+      "idmenu",
+      "leftmenu",
+      "mainmenu"
+    ],
+    "must_preserve_database_tables": [
+      "database",
+      "journals_list",
+      "newmenu"
+    ],
+    "must_preserve_dom_selectors": [
+      "#.$objp->rowid, $langs->trans(",
+      "#.$objp->rowid, $objp->label, 1, $user->rights->banque->lire);\n\t\t\t\tif ($objp->rappro && $objp->courant != Account::TYPE_CASH && empty($objp->clos))  // If not cash account and not closed and can be reconciliate\n\t\t\t\t{\n\t\t\t\t\t$newmenu->add(",
+      "#blockvmenubookmarks",
+      "#blockvmenusearch",
+      "#menu_contenu_logo",
+      "#menu_end_logo",
+      "#menu_titre_logo",
+      "#menu_top_logo",
+      ".blockvmenu",
+      ".blockvmenubookmarks",
+      ".blockvmenuend",
+      ".blockvmenuimpair",
+      ".blockvmenulogo",
+      ".blockvmenupair",
+      ".blockvmenusearch",
+      ".center",
+      ".menu_contenu",
+      ".menu_end",
+      ".menu_titre",
+      ".menu_top"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Guard",
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

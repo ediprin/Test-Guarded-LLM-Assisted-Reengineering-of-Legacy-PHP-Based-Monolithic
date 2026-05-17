@@ -1,0 +1,113 @@
+{
+  "candidate_id": "dolibarr-C4807",
+  "subject_id": "dolibarr",
+  "file": "htdocs/admin/menus/edit.php",
+  "lines": [
+    1,
+    542
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 73
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "action",
+      "cancel",
+      "confirm",
+      "menuId",
+      "menuIdParent",
+      "menu_handler",
+      "position",
+      "titre",
+      "type",
+      "url"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#menuId",
+      "#propertymainmenu",
+      "#topleft",
+      ".border",
+      ".button",
+      ".center",
+      ".fieldrequired",
+      ".flat",
+      ".minwidth100",
+      ".minwidth300",
+      ".minwidth500",
+      ".nowrap",
+      ".quatrevingtpercent",
+      ".width100"
+    ],
+    "forms": [
+      "./edit.php?action=add&menuId=",
+      "./edit.php?action=update",
+      "formmenucreate",
+      "formmenuedit"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "action",
+      "cancel",
+      "confirm",
+      "menuId",
+      "menuIdParent",
+      "menu_handler",
+      "position",
+      "titre",
+      "type",
+      "url"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#menuId",
+      "#propertymainmenu",
+      "#topleft",
+      ".border",
+      ".button",
+      ".center",
+      ".fieldrequired",
+      ".flat",
+      ".minwidth100",
+      ".minwidth300",
+      ".minwidth500",
+      ".nowrap",
+      ".quatrevingtpercent",
+      ".width100"
+    ],
+    "must_preserve_forms": [
+      "./edit.php?action=add&menuId=",
+      "./edit.php?action=update",
+      "formmenucreate",
+      "formmenuedit"
+    ]
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

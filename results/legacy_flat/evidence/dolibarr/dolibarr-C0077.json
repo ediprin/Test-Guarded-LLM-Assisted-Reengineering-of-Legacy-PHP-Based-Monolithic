@@ -1,0 +1,155 @@
+{
+  "candidate_id": "dolibarr-C0077",
+  "subject_id": "dolibarr",
+  "file": "htdocs/adherents/subscription.php",
+  "lines": [
+    1,
+    1155
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 176
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "accountid",
+      "action",
+      "cancel",
+      "chqbank",
+      "chqemetteur",
+      "endday",
+      "endmonth",
+      "endyear",
+      "label",
+      "num_chq",
+      "operation",
+      "paymentday",
+      "paymentmonth",
+      "paymentsave",
+      "paymentyear",
+      "reday",
+      "remonth",
+      "reyear",
+      "subscription",
+      "userid"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": [
+      "a",
+      "bank",
+      "currently",
+      "extra",
+      "getNomUrl",
+      "template"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$rowid;\nif ($optioncss != ",
+      "#bankdirect",
+      "#bankviainvoice",
+      "#chqbank",
+      "#fieldchqemetteur",
+      "#fieldnum_chq",
+      "#invoiceonly",
+      "#memberlabel",
+      "#none",
+      "#thirdpartylabel",
+      ".bankswitchclass",
+      ".bankswitchclass2",
+      ".border",
+      ".butAction",
+      ".butActionRefused",
+      ".button",
+      ".center",
+      ".centpercent",
+      ".classfortooltip",
+      ".clearboth"
+    ],
+    "forms": [
+      "form",
+      "subscription"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "accountid",
+      "action",
+      "cancel",
+      "chqbank",
+      "chqemetteur",
+      "endday",
+      "endmonth",
+      "endyear",
+      "label",
+      "num_chq",
+      "operation",
+      "paymentday",
+      "paymentmonth",
+      "paymentsave",
+      "paymentyear",
+      "reday",
+      "remonth",
+      "reyear",
+      "subscription",
+      "userid"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [
+      "a",
+      "bank",
+      "currently",
+      "extra",
+      "getNomUrl",
+      "template"
+    ],
+    "must_preserve_dom_selectors": [
+      "#.$rowid;\nif ($optioncss != ",
+      "#bankdirect",
+      "#bankviainvoice",
+      "#chqbank",
+      "#fieldchqemetteur",
+      "#fieldnum_chq",
+      "#invoiceonly",
+      "#memberlabel",
+      "#none",
+      "#thirdpartylabel",
+      ".bankswitchclass",
+      ".bankswitchclass2",
+      ".border",
+      ".butAction",
+      ".butActionRefused",
+      ".button",
+      ".center",
+      ".centpercent",
+      ".classfortooltip",
+      ".clearboth"
+    ],
+    "must_preserve_forms": [
+      "form",
+      "subscription"
+    ]
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

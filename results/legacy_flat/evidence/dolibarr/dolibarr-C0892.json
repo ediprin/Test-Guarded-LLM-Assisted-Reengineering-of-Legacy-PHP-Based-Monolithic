@@ -1,0 +1,111 @@
+{
+  "candidate_id": "dolibarr-C0892",
+  "subject_id": "dolibarr",
+  "file": "htdocs/projet/activity/perday.php",
+  "lines": [
+    1,
+    827
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 168
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "id",
+      "projectid"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": [
+      "contact",
+      "table",
+      "this"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$project->id : ",
+      "#.$projectid:",
+      "#formfilteraction",
+      "#numberOfLines",
+      "#tablelines3",
+      "#timespent[-1][0]",
+      ".button",
+      ".center",
+      ".centpercent",
+      ".clearboth",
+      ".colorback",
+      ".div-table-responsive",
+      ".divsearchfield",
+      ".float",
+      ".floatright",
+      ".hideonsmartphone",
+      ".inline-block",
+      ".leftborder",
+      ".liste",
+      ".liste_titre"
+    ],
+    "forms": [
+      "addtime"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "id",
+      "projectid"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [
+      "contact",
+      "table",
+      "this"
+    ],
+    "must_preserve_dom_selectors": [
+      "#.$project->id : ",
+      "#.$projectid:",
+      "#formfilteraction",
+      "#numberOfLines",
+      "#tablelines3",
+      "#timespent[-1][0]",
+      ".button",
+      ".center",
+      ".centpercent",
+      ".clearboth",
+      ".colorback",
+      ".div-table-responsive",
+      ".divsearchfield",
+      ".float",
+      ".floatright",
+      ".hideonsmartphone",
+      ".inline-block",
+      ".leftborder",
+      ".liste",
+      ".liste_titre"
+    ],
+    "must_preserve_forms": [
+      "addtime"
+    ]
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

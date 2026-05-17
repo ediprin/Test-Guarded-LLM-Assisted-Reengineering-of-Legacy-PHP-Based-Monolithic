@@ -1,0 +1,117 @@
+{
+  "candidate_id": "dolibarr-C4312",
+  "subject_id": "dolibarr",
+  "file": "htdocs/compta/tva/card.php",
+  "lines": [
+    1,
+    403
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 43
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "accountid",
+      "cancel",
+      "datepday",
+      "datepmonth",
+      "datepyear",
+      "datevday",
+      "datevmonth",
+      "datevyear",
+      "label"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$object->id.",
+      "#label",
+      "#radiopayment",
+      "#radiorefund",
+      "#selectmethod",
+      ".border",
+      ".butActionDelete",
+      ".butActionRefused",
+      ".button",
+      ".center",
+      ".classfortooltip",
+      ".clearboth",
+      ".divButAction",
+      ".fichecenter",
+      ".fieldrequired",
+      ".flat",
+      ".float",
+      ".hideonsmartphone",
+      ".inline-block",
+      ".minwidth300"
+    ],
+    "forms": [
+      "formvat"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "accountid",
+      "cancel",
+      "datepday",
+      "datepmonth",
+      "datepyear",
+      "datevday",
+      "datevmonth",
+      "datevyear",
+      "label"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#.$object->id.",
+      "#label",
+      "#radiopayment",
+      "#radiorefund",
+      "#selectmethod",
+      ".border",
+      ".butActionDelete",
+      ".butActionRefused",
+      ".button",
+      ".center",
+      ".classfortooltip",
+      ".clearboth",
+      ".divButAction",
+      ".fichecenter",
+      ".fieldrequired",
+      ".flat",
+      ".float",
+      ".hideonsmartphone",
+      ".inline-block",
+      ".minwidth300"
+    ],
+    "must_preserve_forms": [
+      "formvat"
+    ]
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

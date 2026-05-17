@@ -1,0 +1,111 @@
+{
+  "candidate_id": "dolibarr-C0475",
+  "subject_id": "dolibarr",
+  "file": "htdocs/societe/paymentmodes.php",
+  "lines": [
+    1,
+    1760
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 296
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "frstrecur",
+      "lang_id",
+      "model"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": [
+      "Stripe",
+      "hook",
+      "llx_societe_account",
+      "of"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$companypaymentmodetemp->id.",
+      "#.$object->id);\n\t\t\t}\n\t\t}\n\n\t\tprint ",
+      "#.$rib->id.",
+      "#label",
+      ".border",
+      ".button",
+      ".buttongen",
+      ".center",
+      ".centpercent",
+      ".clearboth",
+      ".div-table-responsive-no-min",
+      ".error",
+      ".fa",
+      ".fa-2x",
+      ".fa-university",
+      ".ficheaddleft",
+      ".fichecenter",
+      ".fichehalfleft",
+      ".fichehalfright",
+      ".fieldrequired"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "frstrecur",
+      "lang_id",
+      "model"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [
+      "Stripe",
+      "hook",
+      "llx_societe_account",
+      "of"
+    ],
+    "must_preserve_dom_selectors": [
+      "#.$companypaymentmodetemp->id.",
+      "#.$object->id);\n\t\t\t}\n\t\t}\n\n\t\tprint ",
+      "#.$rib->id.",
+      "#label",
+      ".border",
+      ".button",
+      ".buttongen",
+      ".center",
+      ".centpercent",
+      ".clearboth",
+      ".div-table-responsive-no-min",
+      ".error",
+      ".fa",
+      ".fa-2x",
+      ".fa-university",
+      ".ficheaddleft",
+      ".fichecenter",
+      ".fichehalfleft",
+      ".fichehalfright",
+      ".fieldrequired"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "candidate_id": "dolibarr-C0528",
+  "subject_id": "dolibarr",
+  "file": "htdocs/user/note.php",
+  "lines": [
+    1,
+    163
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 18
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "cancel"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$object->id.",
+      ".border",
+      ".button",
+      ".center",
+      ".clearboth",
+      ".error",
+      ".fichecenter",
+      ".tabsAction",
+      ".tdtop",
+      ".titlefield",
+      ".underbanner",
+      ".valeur"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "cancel"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#.$object->id.",
+      ".border",
+      ".button",
+      ".center",
+      ".clearboth",
+      ".error",
+      ".fichecenter",
+      ".tabsAction",
+      ".tdtop",
+      ".titlefield",
+      ".underbanner",
+      ".valeur"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

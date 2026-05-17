@@ -1,0 +1,89 @@
+{
+  "candidate_id": "dolibarr-C4166",
+  "subject_id": "dolibarr",
+  "file": "htdocs/core/menus/standard/eldy_menu.php",
+  "lines": [
+    1,
+    339
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 55
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "idmenu",
+      "leftmenu",
+      "mainmenu"
+    ],
+    "session_keys": [
+      "idmenu",
+      "leftmenu",
+      "leftmenuopened",
+      "mainmenu"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      ".alilevel0",
+      ".fa",
+      ".fa-fw",
+      ".fa-home",
+      ".lilevel",
+      ".lilevel0",
+      ".lilevel1",
+      ".ui-btn",
+      ".ui-btn-icon-right",
+      ".ulmenu",
+      ".vsmenudisabled"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "idmenu",
+      "leftmenu",
+      "mainmenu"
+    ],
+    "must_preserve_session_keys": [
+      "idmenu",
+      "leftmenu",
+      "leftmenuopened",
+      "mainmenu"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      ".alilevel0",
+      ".fa",
+      ".fa-fw",
+      ".fa-home",
+      ".lilevel",
+      ".lilevel0",
+      ".lilevel1",
+      ".ui-btn",
+      ".ui-btn-icon-right",
+      ".ulmenu",
+      ".vsmenudisabled"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

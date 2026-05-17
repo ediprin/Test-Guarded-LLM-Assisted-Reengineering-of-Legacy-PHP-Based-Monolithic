@@ -1,0 +1,75 @@
+{
+  "candidate_id": "phpmyadmin-C0755",
+  "subject_id": "phpmyadmin",
+  "file": "libraries/classes/Rte/Routines.php",
+  "lines": [
+    700,
+    814
+  ],
+  "candidate_type": "long_method_or_region",
+  "issues": [
+    {
+      "type": "Long or Complex Region",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 11
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#item_param_length_$index",
+      ".dragHandle",
+      ".enum_hint",
+      ".hide",
+      ".no_len",
+      ".no_opts",
+      ".open_enum_editor",
+      ".routine_direction_cell$class",
+      ".routine_param_opts_num",
+      ".routine_param_opts_text",
+      ".routine_param_remove$drop_class",
+      ".routine_param_remove_anchor",
+      ".ui-icon",
+      ".ui-icon-arrowthick-2-n-s"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#item_param_length_$index",
+      ".dragHandle",
+      ".enum_hint",
+      ".hide",
+      ".no_len",
+      ".no_opts",
+      ".open_enum_editor",
+      ".routine_direction_cell$class",
+      ".routine_param_opts_num",
+      ".routine_param_opts_text",
+      ".routine_param_remove$drop_class",
+      ".routine_param_remove_anchor",
+      ".ui-icon",
+      ".ui-icon-arrowthick-2-n-s"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

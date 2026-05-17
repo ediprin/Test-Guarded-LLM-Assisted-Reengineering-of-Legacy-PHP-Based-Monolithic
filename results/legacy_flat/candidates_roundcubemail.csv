@@ -1,0 +1,514 @@
+candidate_id,project,file,start_line,end_line,candidate_type,dominant_issue,complexity_proxy,request_parameters,session_keys,database_tables,dom_selectors,forms,allowed_transformations,oracle_status
+roundcubemail-C0001,roundcubemail,index.php,1,323,form_handling,Request Handling Mixed With Rendering,55,_code;_err,storage_host;temp;user_id;username,,,,Extract Validation Helper;Extract Method;Extract View Helper,pending
+roundcubemail-C0002,roundcubemail,config/defaults.inc.php,1,1287,sql_data_access,SQL/Data Access Region,182,,,CAPABILITY;Clickjacking;above;caching;date_format;e;http;image;message;of;renames;skins;supported;the;these;user;users,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0003,roundcubemail,installer/check.php,1,283,mixed_php_html_sql,SQL in Presentation Logic,61,,,,.fail;.hint;.warning,index.php,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+roundcubemail-C0004,roundcubemail,installer/config.php,1,693,form_handling,Request Handling Mixed With Rendering,161,_dbhost;_dbname;_dbpass;_dbtype;_dbuser;_smtp_user_u;_spellcheck_engine;submit,allowinstaller;config,,#cgfblockdb;#cgfblockdisplay;#cgfblockimap;#cgfblocksmtp;#defaulthostentry;#defaulthostlist;#getconfig_form;.addlink;.configblock;.hint;.loggingblock;.notice;.propname;.removelink;.userconf,index.php,Extract Validation Helper;Extract Method;Extract View Helper,pending
+roundcubemail-C0005,roundcubemail,installer/index.php,1,169,form_handling,Request Handling Mixed With Rendering,30,_getconfig;_mergeconfig;_step,allowinstaller;config,,#banner;#content;#footer;#progress;#topnav;.banner-bg;.banner-logo;.error;.step%d%s,,Extract Validation Helper;Extract Method;Extract View Helper,pending
+roundcubemail-C0006,roundcubemail,installer/test.php,1,466,mixed_php_html_sql,SQL in Presentation Logic,107,_from;_host;_pass;_smtp_pass;_smtp_user;_to;_user;imaptest;initdb;sendmail;updatedb;version,,PHP;Roundcube;failed;from;queries;the;them;these;your,.configwarings;.hint;.suggestion;.warning,index.php?_step=3,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+roundcubemail-C0007,roundcubemail,tests/Framework/DB.php,1,184,sql_data_access,SQL/Data Access Region,59,,,CASCADE;prefix_xxx;xxx,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0008,roundcubemail,tests/Framework/DB.php,25,77,sql_data_access,SQL/Data Access Region,2,,,CASCADE;prefix_xxx;xxx,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0009,roundcubemail,tests/Framework/DB.php,77,136,long_method_or_region,Long or Complex Region,57,,,,,,Extract Method,pending
+roundcubemail-C0010,roundcubemail,tests/Framework/Mime.php,1,280,mixed_php_html,Mixed PHP/HTML,76,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+roundcubemail-C0011,roundcubemail,tests/Framework/Mime.php,15,94,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+roundcubemail-C0012,roundcubemail,tests/Framework/Mime.php,94,139,long_method_or_region,Long or Complex Region,58,,,,,,Extract Method,pending
+roundcubemail-C0013,roundcubemail,tests/Framework/StringReplacer.php,1,80,mixed_php_html,Mixed PHP/HTML,21,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+roundcubemail-C0014,roundcubemail,tests/Framework/StringReplacer.php,24,56,long_method_or_region,Long or Complex Region,19,,,,,,Extract Method,pending
+roundcubemail-C0015,roundcubemail,tests/Framework/Text2Html.php,14,115,long_method_or_region,Long or Complex Region,2,,,,,,Extract Method,pending
+roundcubemail-C0016,roundcubemail,tests/Framework/Utils.php,1,675,mixed_php_html,Mixed PHP/HTML,41,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+roundcubemail-C0017,roundcubemail,tests/Framework/Washtml.php,1,489,mixed_php_html,Mixed PHP/HTML,12,,,,#my-id;#testmy-id;#triangle;.my-class1;.my-class2;.testmy-class1;.testmy-class2,,Separate PHP Logic from Markup;Extract View Helper,pending
+roundcubemail-C0018,roundcubemail,tests/Rcmail/OutputHtml.php,12,148,long_method_or_region,Long or Complex Region,1,,,,,,Extract Method,pending
+roundcubemail-C0019,roundcubemail,program/include/rcmail.php,1,2577,session_dependent_logic,Session-Dependent Logic,416,_framed;_remote;_thumbnail,language;login_time;password;preferences;quota_display;search;storage_host;storage_port;storage_ssl;task;temp;timezone;user_id;username,GET;config;everywhere;last;list;plain;the;unintentional;user;virtuser,#0,,Extract Guard;Extract Method,pending
+roundcubemail-C0020,roundcubemail,program/include/rcmail.php,88,145,session_dependent_logic,Session-Dependent Logic,8,_framed;_remote,task;user_id,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0021,roundcubemail,program/include/rcmail.php,201,290,session_dependent_logic,Session-Dependent Logic,21,,storage_host,,#0,,Extract Guard;Extract Method,pending
+roundcubemail-C0022,roundcubemail,program/include/rcmail.php,380,432,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+roundcubemail-C0023,roundcubemail,program/include/rcmail.php,506,708,session_dependent_logic,Session-Dependent Logic,39,,login_time;password;storage_host;storage_port;storage_ssl;timezone;user_id;username,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0024,roundcubemail,program/include/rcmail.php,758,806,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+roundcubemail-C0025,roundcubemail,program/include/rcmail.php,854,919,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+roundcubemail-C0026,roundcubemail,program/include/rcmail.php,1004,1100,long_method_or_region,Long or Complex Region,20,,,,,,Extract Method,pending
+roundcubemail-C0027,roundcubemail,program/include/rcmail.php,1142,1188,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+roundcubemail-C0028,roundcubemail,program/include/rcmail.php,1223,1275,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+roundcubemail-C0029,roundcubemail,program/include/rcmail.php,1275,1401,long_method_or_region,Long or Complex Region,25,,,,,,Extract Method,pending
+roundcubemail-C0030,roundcubemail,program/include/rcmail.php,1401,1491,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+roundcubemail-C0031,roundcubemail,program/include/rcmail.php,1491,1560,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+roundcubemail-C0032,roundcubemail,program/include/rcmail.php,1560,1618,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+roundcubemail-C0033,roundcubemail,program/include/rcmail.php,1618,1713,long_method_or_region,Long or Complex Region,21,,,,,,Extract Method,pending
+roundcubemail-C0034,roundcubemail,program/include/rcmail.php,1713,1757,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+roundcubemail-C0035,roundcubemail,program/include/rcmail.php,1879,1963,session_dependent_logic,Session-Dependent Logic,14,,quota_display,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0036,roundcubemail,program/include/rcmail.php,1963,2020,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+roundcubemail-C0037,roundcubemail,program/include/rcmail.php,2038,2119,session_dependent_logic,Session-Dependent Logic,12,,language,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0038,roundcubemail,program/include/rcmail.php,2234,2301,long_method_or_region,Long or Complex Region,16,_thumbnail,,,,,Extract Method,pending
+roundcubemail-C0039,roundcubemail,program/include/rcmail.php,2440,2498,session_dependent_logic,Session-Dependent Logic,14,,search,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0040,roundcubemail,program/include/rcmail_install.php,1,878,mixed_php_html_sql,SQL in Presentation Logic,138,_$name;_$prop;_dbhost;_dbname;_dbpass;_dbtype;_dbuser;_smtp_user_u;_step;submit,,an;config;database;default;existing;from;mysql,.fail;.indent;.na;.success,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+roundcubemail-C0041,roundcubemail,program/include/rcmail_install.php,194,293,long_method_or_region,Long or Complex Region,28,_$prop;_dbhost;_dbname;_dbpass;_dbtype;_dbuser;_smtp_user_u;submit,,,,,Extract Method,pending
+roundcubemail-C0042,roundcubemail,program/include/rcmail_install.php,310,408,long_method_or_region,Long or Complex Region,22,,,,,,Extract Method,pending
+roundcubemail-C0043,roundcubemail,program/include/rcmail_install.php,408,458,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+roundcubemail-C0044,roundcubemail,program/include/rcmail_install.php,458,508,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+roundcubemail-C0045,roundcubemail,program/include/rcmail_install.php,508,548,sql_data_access,SQL/Data Access Region,7,,,,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0046,roundcubemail,program/include/rcmail_install.php,779,835,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+roundcubemail-C0047,roundcubemail,program/include/rcmail_output_html.php,1,2501,mixed_php_html_sql,SQL in Presentation Logic,402,_extwin;_task;_unlock;skin,\\1;language;skin_config;storage_host;temp;username,POST;config;current;default;endless;header;hidden;page;path;real;template;the,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+roundcubemail-C0048,roundcubemail,program/include/rcmail_output_html.php,77,169,session_dependent_logic,Session-Dependent Logic,11,_extwin;skin,language,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0049,roundcubemail,program/include/rcmail_output_html.php,184,235,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+roundcubemail-C0050,roundcubemail,program/include/rcmail_output_html.php,323,382,session_dependent_logic,Session-Dependent Logic,14,,language;skin_config,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0051,roundcubemail,program/include/rcmail_output_html.php,687,797,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+roundcubemail-C0052,roundcubemail,program/include/rcmail_output_html.php,797,864,long_method_or_region,Long or Complex Region,13,_unlock,,,,,Extract Method,pending
+roundcubemail-C0053,roundcubemail,program/include/rcmail_output_html.php,1043,1090,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+roundcubemail-C0054,roundcubemail,program/include/rcmail_output_html.php,1155,1196,session_dependent_logic,Session-Dependent Logic,9,,storage_host,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0055,roundcubemail,program/include/rcmail_output_html.php,1209,1340,long_method_or_region,Long or Complex Region,32,,,,,,Extract Method,pending
+roundcubemail-C0056,roundcubemail,program/include/rcmail_output_html.php,1340,1511,long_method_or_region,Long or Complex Region,48,,,,,,Extract Method,pending
+roundcubemail-C0057,roundcubemail,program/include/rcmail_output_html.php,1566,1769,long_method_or_region,Long or Complex Region,54,,,,,,Extract Method,pending
+roundcubemail-C0058,roundcubemail,program/include/rcmail_output_html.php,1836,1990,session_dependent_logic,Session-Dependent Logic,23,,language,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0059,roundcubemail,program/include/rcmail_output_html.php,2116,2221,session_dependent_logic,Session-Dependent Logic,19,,temp,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0060,roundcubemail,program/include/rcmail_output_html.php,2246,2337,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+roundcubemail-C0061,roundcubemail,program/include/rcmail_output_html.php,2355,2426,sql_data_access,SQL/Data Access Region,7,,,config,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0062,roundcubemail,program/include/rcmail_output_json.php,1,276,session_dependent_logic,Session-Dependent Logic,23,,skin_config;username,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0063,roundcubemail,program/include/rcmail_sendmail.php,1,1534,mixed_php_html_sql,SQL in Presentation Logic,257,_dsn;_from;_mdn;_priority;_store_target;_subject,mailto,Drafts;HTML;Sender;a;an;else;field;header;host;identity;message;post;specified;the,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+roundcubemail-C0064,roundcubemail,program/include/rcmail_sendmail.php,76,238,long_method_or_region,Long or Complex Region,28,_dsn;_mdn;_priority,,,,,Extract Method,pending
+roundcubemail-C0065,roundcubemail,program/include/rcmail_sendmail.php,278,369,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+roundcubemail-C0066,roundcubemail,program/include/rcmail_sendmail.php,369,436,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+roundcubemail-C0067,roundcubemail,program/include/rcmail_sendmail.php,436,527,long_method_or_region,Long or Complex Region,18,_store_target,,,,,Extract Method,pending
+roundcubemail-C0068,roundcubemail,program/include/rcmail_sendmail.php,810,877,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+roundcubemail-C0069,roundcubemail,program/include/rcmail_sendmail.php,877,957,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+roundcubemail-C0070,roundcubemail,program/include/rcmail_sendmail.php,957,1116,session_dependent_logic,Session-Dependent Logic,37,,mailto,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0071,roundcubemail,program/include/rcmail_sendmail.php,1136,1182,long_method_or_region,Long or Complex Region,10,_subject,,,,,Extract Method,pending
+roundcubemail-C0072,roundcubemail,program/include/rcmail_sendmail.php,1423,1535,sql_data_access,SQL/Data Access Region,26,,,,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0073,roundcubemail,program/include/rcmail_utils.php,1,389,sql_data_access,SQL/Data Access Region,55,,,a;database;from,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0074,roundcubemail,program/include/rcmail_utils.php,101,218,long_method_or_region,Long or Complex Region,20,,,,,,Extract Method,pending
+roundcubemail-C0075,roundcubemail,program/include/rcmail_utils.php,218,257,sql_data_access,SQL/Data Access Region,11,,,,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0076,roundcubemail,program/include/rcmail_utils.php,277,319,sql_data_access,SQL/Data Access Region,7,,,,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0077,roundcubemail,program/include/rcmail_utils.php,349,390,sql_data_access,SQL/Data Access Region,7,,,,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0078,roundcubemail,program/steps/addressbook/delete.inc,1,152,session_dependent_logic,Session-Dependent Logic,27,,contact_undo;page,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0079,roundcubemail,program/steps/addressbook/edit.inc,1,276,mixed_php_html,Mixed PHP/HTML,33,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+roundcubemail-C0080,roundcubemail,program/steps/addressbook/export.inc,1,179,session_dependent_logic,Session-Dependent Logic,24,_cid;_search,search,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0081,roundcubemail,program/steps/addressbook/export.inc,135,180,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+roundcubemail-C0082,roundcubemail,program/steps/addressbook/func.inc,1,1078,session_dependent_logic,Session-Dependent Logic,183,_page;_search,addressbooks_count;addressbooks_count_writeable;contact_undo;contactcountdisplay;contacts;page;search,GET;contact;name;the,,,Extract Guard;Extract Method,pending
+roundcubemail-C0083,roundcubemail,program/steps/addressbook/func.inc,143,196,session_dependent_logic,Session-Dependent Logic,13,_page,page,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0084,roundcubemail,program/steps/addressbook/func.inc,380,445,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+roundcubemail-C0085,roundcubemail,program/steps/addressbook/func.inc,515,910,long_method_or_region,Long or Complex Region,92,,,,,,Extract Method,pending
+roundcubemail-C0086,roundcubemail,program/steps/addressbook/func.inc,910,975,session_dependent_logic,Session-Dependent Logic,14,,contacts,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0087,roundcubemail,program/steps/addressbook/func.inc,984,1035,session_dependent_logic,Session-Dependent Logic,7,_search,search,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0088,roundcubemail,program/steps/addressbook/func.inc,1035,1079,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+roundcubemail-C0089,roundcubemail,program/steps/addressbook/import.inc,1,331,session_dependent_logic,Session-Dependent Logic,51,,language,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0090,roundcubemail,program/steps/addressbook/list.inc,1,73,session_dependent_logic,Session-Dependent Logic,12,_page,page,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0091,roundcubemail,program/steps/addressbook/mailto.inc,1,74,session_dependent_logic,Session-Dependent Logic,13,_gid;_source,mailto,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0092,roundcubemail,program/steps/addressbook/move.inc,1,213,session_dependent_logic,Session-Dependent Logic,44,,page,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0093,roundcubemail,program/steps/addressbook/photo.inc,1,97,session_dependent_logic,Session-Dependent Logic,26,_error,contacts,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0094,roundcubemail,program/steps/addressbook/save.inc,1,263,session_dependent_logic,Session-Dependent Logic,59,_cid;_reload;_search,contacts,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0095,roundcubemail,program/steps/addressbook/search.inc,1,348,form_handling,Request Handling Mixed With Rendering,57,_adv;_form,page;search;search_params,,,,Extract Validation Helper;Extract Method;Extract View Helper,pending
+roundcubemail-C0096,roundcubemail,program/steps/addressbook/search.inc,87,253,session_dependent_logic,Session-Dependent Logic,24,_adv,page;search;search_params,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0097,roundcubemail,program/steps/addressbook/search.inc,253,349,long_method_or_region,Long or Complex Region,20,,,,,,Extract Method,pending
+roundcubemail-C0098,roundcubemail,program/steps/addressbook/show.inc,1,208,mixed_php_html,Mixed PHP/HTML,23,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+roundcubemail-C0099,roundcubemail,program/steps/addressbook/upload_photo.inc,1,89,session_dependent_logic,Session-Dependent Logic,13,,contacts,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0100,roundcubemail,program/steps/mail/addcontact.inc,1,95,long_method_or_region,Long or Complex Region,20,_address;_reload,,,,,Extract Method,pending
+roundcubemail-C0101,roundcubemail,program/steps/mail/attachments.inc,1,284,mixed_php_html,Mixed PHP/HTML,44,,,,.attachment-name;.attachment-size,,Separate PHP Logic from Markup;Extract View Helper,pending
+roundcubemail-C0102,roundcubemail,program/steps/mail/check_recent.inc,1,160,session_dependent_logic,Session-Dependent Logic,34,_folderlist;_list;_quota,list_mod_seq;page;search;search_request,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0103,roundcubemail,program/steps/mail/compose.inc,1,1412,mixed_php_html_sql,SQL in Presentation Logic,233,_is_html;_message;_search,language;last_compose_session;msg_formats;search,a;data;the,#reply-intro;.attachment-name;.attachment-size,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+roundcubemail-C0104,roundcubemail,program/steps/mail/compose.inc,290,384,session_dependent_logic,Session-Dependent Logic,21,,search,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0105,roundcubemail,program/steps/mail/compose.inc,426,496,session_dependent_logic,Session-Dependent Logic,11,,language,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0106,roundcubemail,program/steps/mail/compose.inc,496,628,long_method_or_region,Long or Complex Region,25,_message,,,,,Extract Method,pending
+roundcubemail-C0107,roundcubemail,program/steps/mail/compose.inc,628,702,long_method_or_region,Long or Complex Region,20,,,,,,Extract Method,pending
+roundcubemail-C0108,roundcubemail,program/steps/mail/compose.inc,939,1008,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+roundcubemail-C0109,roundcubemail,program/steps/mail/compose.inc,1047,1138,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+roundcubemail-C0110,roundcubemail,program/steps/mail/compose.inc,1192,1281,long_method_or_region,Long or Complex Region,18,,,,.attachment-name;.attachment-size,,Extract Method,pending
+roundcubemail-C0111,roundcubemail,program/steps/mail/folders.inc,1,85,long_method_or_region,Long or Complex Region,14,_reload,,,,,Extract Method,pending
+roundcubemail-C0112,roundcubemail,program/steps/mail/func.inc,1,1903,mixed_php_html_sql,SQL in Presentation Logic,316,_mbox;_page;_search;_threads;_uid,browser_caps;last_text_search;list_attrib;mbox;modcssurls;page;search;search_filter;search_interval;search_request;search_scope;sort_col;sort_order;unseen_count;writeable_abook,_uid;memory;plugins;specified;the,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+roundcubemail-C0113,roundcubemail,program/steps/mail/func.inc,153,218,session_dependent_logic,Session-Dependent Logic,15,_page;_threads,mbox;page;sort_col;sort_order,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0114,roundcubemail,program/steps/mail/func.inc,326,391,session_dependent_logic,Session-Dependent Logic,11,,list_attrib;sort_col;sort_order,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0115,roundcubemail,program/steps/mail/func.inc,391,572,session_dependent_logic,Session-Dependent Logic,48,,list_attrib;search_scope;sort_col,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0116,roundcubemail,program/steps/mail/func.inc,572,659,session_dependent_logic,Session-Dependent Logic,18,,sort_col;sort_order,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0117,roundcubemail,program/steps/mail/func.inc,831,924,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+roundcubemail-C0118,roundcubemail,program/steps/mail/func.inc,1034,1086,session_dependent_logic,Session-Dependent Logic,7,,browser_caps,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0119,roundcubemail,program/steps/mail/func.inc,1086,1187,long_method_or_region,Long or Complex Region,27,,,,,,Extract Method,pending
+roundcubemail-C0120,roundcubemail,program/steps/mail/func.inc,1187,1265,session_dependent_logic,Session-Dependent Logic,16,,modcssurls,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0121,roundcubemail,program/steps/mail/func.inc,1265,1412,session_dependent_logic,Session-Dependent Logic,26,,writeable_abook,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0122,roundcubemail,program/steps/mail/func.inc,1412,1462,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+roundcubemail-C0123,roundcubemail,program/steps/mail/func.inc,1606,1655,session_dependent_logic,Session-Dependent Logic,7,_search,search_filter,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0124,roundcubemail,program/steps/mail/func.inc,1772,1871,long_method_or_region,Long or Complex Region,19,,,,,,Extract Method,pending
+roundcubemail-C0125,roundcubemail,program/steps/mail/func.inc,1871,1904,session_dependent_logic,Session-Dependent Logic,9,,browser_caps,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0126,roundcubemail,program/steps/mail/get.inc,1,723,form_handling,Request Handling Mixed With Rendering,103,_download;_embed;_frame;_mimeclass;_mimewarning;_nocheck;_preload;_redirected;_safe;_thumb,browser_caps,,,,Extract Validation Helper;Extract Method;Extract View Helper,pending
+roundcubemail-C0127,roundcubemail,program/steps/mail/get.inc,379,455,session_dependent_logic,Session-Dependent Logic,11,_download;_frame;_safe,,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0128,roundcubemail,program/steps/mail/get.inc,512,588,long_method_or_region,Long or Complex Region,24,,,,,,Extract Method,pending
+roundcubemail-C0129,roundcubemail,program/steps/mail/list.inc,1,146,session_dependent_logic,Session-Dependent Logic,36,_clear;_refresh;_search,list_attrib;list_mod_seq;search;search_request;sort_col;sort_order,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0130,roundcubemail,program/steps/mail/list_contacts.inc,1,125,session_dependent_logic,Session-Dependent Logic,25,_page;_search,search;search_params,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0131,roundcubemail,program/steps/mail/mark.inc,1,168,session_dependent_logic,Session-Dependent Logic,34,_from;_quiet;_ruid,page;search,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0132,roundcubemail,program/steps/mail/move_del.inc,1,178,session_dependent_logic,Session-Dependent Logic,38,_from;_refresh;_target_mbox;_uid,page;search,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0133,roundcubemail,program/steps/mail/search.inc,1,246,session_dependent_logic,Session-Dependent Logic,50,,last_text_search;list_mod_seq;page;search;search_filter;search_interval;search_request;search_scope,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0134,roundcubemail,program/steps/mail/search_contacts.inc,1,119,session_dependent_logic,Session-Dependent Logic,18,,search;search_params,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0135,roundcubemail,program/steps/mail/sendmail.inc,1,359,form_handling,Request Handling Mixed With Rendering,57,_draft;_pgpmime;_saveonly,last_compose_session,,#_rc_sig;#signature;.pre,,Extract Validation Helper;Extract Method;Extract View Helper,pending
+roundcubemail-C0136,roundcubemail,program/steps/mail/show.inc,1,799,session_dependent_logic,Session-Dependent Logic,121,_format;_safe,browser_caps;msg_formats;writeable_abook,,#attach,,Extract Guard;Extract Method,pending
+roundcubemail-C0137,roundcubemail,program/steps/mail/show.inc,361,516,long_method_or_region,Long or Complex Region,30,,,,,,Extract Method,pending
+roundcubemail-C0138,roundcubemail,program/steps/mail/show.inc,597,783,session_dependent_logic,Session-Dependent Logic,35,_safe,browser_caps,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0139,roundcubemail,program/steps/settings/about.inc,1,109,mixed_php_html,Mixed PHP/HTML,21,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+roundcubemail-C0140,roundcubemail,program/steps/settings/about.inc,51,110,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+roundcubemail-C0141,roundcubemail,program/steps/settings/edit_folder.inc,1,344,form_handling,Request Handling Mixed With Rendering,41,_name;_parent;_sortcol;_sortord;_viewmode,,,.input-group;.input-group-append;.input-group-text,,Extract Validation Helper;Extract Method;Extract View Helper,pending
+roundcubemail-C0142,roundcubemail,program/steps/settings/edit_folder.inc,32,322,long_method_or_region,Long or Complex Region,35,_name;_parent;_sortcol;_sortord;_viewmode,,,.input-group;.input-group-append;.input-group-text,,Extract Method,pending
+roundcubemail-C0143,roundcubemail,program/steps/settings/edit_identity.inc,1,197,form_handling,Request Handling Mixed With Rendering,26,_iid,,,,,Extract Validation Helper;Extract Method;Extract View Helper,pending
+roundcubemail-C0144,roundcubemail,program/steps/settings/edit_identity.inc,66,198,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+roundcubemail-C0145,roundcubemail,program/steps/settings/edit_response.inc,1,105,long_method_or_region,Long or Complex Region,17,_name,,,,,Extract Method,pending
+roundcubemail-C0146,roundcubemail,program/steps/settings/folders.inc,1,509,mixed_php_html,Mixed PHP/HTML,83,,mbox;unseen_count,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+roundcubemail-C0147,roundcubemail,program/steps/settings/folders.inc,199,392,long_method_or_region,Long or Complex Region,35,,,,,,Extract Method,pending
+roundcubemail-C0148,roundcubemail,program/steps/settings/folders.inc,465,510,session_dependent_logic,Session-Dependent Logic,8,,mbox,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0149,roundcubemail,program/steps/settings/func.inc,1,1486,mixed_php_html_sql,SQL in Presentation Logic,239,,language,DB,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+roundcubemail-C0150,roundcubemail,program/steps/settings/func.inc,137,1280,long_method_or_region,Long or Complex Region,195,,,,,,Extract Method,pending
+roundcubemail-C0151,roundcubemail,program/steps/settings/func.inc,1352,1429,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+roundcubemail-C0152,roundcubemail,program/steps/settings/responses.inc,1,114,long_method_or_region,Long or Complex Region,18,_insert,,,,,Extract Method,pending
+roundcubemail-C0153,roundcubemail,program/steps/settings/save_folder.inc,1,205,session_dependent_logic,Session-Dependent Logic,36,_viewmode,mbox,a;folder;names;session,,,Extract Guard;Extract Method,pending
+roundcubemail-C0154,roundcubemail,program/steps/settings/save_identity.inc,1,264,form_handling,Request Handling Mixed With Rendering,45,_email;_framed;_iid;_signature,identity,,,,Extract Validation Helper;Extract Method;Extract View Helper,pending
+roundcubemail-C0155,roundcubemail,program/steps/settings/save_prefs.inc,1,246,session_dependent_logic,Session-Dependent Logic,35,_addressbook_name_listing;_addressbook_pagesize;_autocomplete_single;_autoexpand_threads;_check_all_folders;_compose_extwin;_compose_save_localstorage;_date_format;_delete_junk;_display_next;_draft_autosave;_dsn_default;_flag_for_deletion;_force_7bit;_forward_attachment;_htmleditor;_inline_images;_language;_logout_expunge;_logout_purge;_mail_pagesize;_mail_read_time;_mdn_default;_mdn_requests;_message_extwin;_message_show_email;_mime_param_folding;_prefer_html;_pretty_date;_read_when_deleted;_refresh_interval;_reply_all_mode;_reply_mode;_reply_same_folder;_show_images;_show_real_foldernames;_show_sig;_sig_below;_sig_separator;_skip_deleted;_spellcheck_before_send;_spellcheck_ignore_caps;_spellcheck_ignore_nums;_spellcheck_ignore_syms;_standard_windows;_strip_existing_sig;_time_format,language,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0156,roundcubemail,program/steps/settings/upload.inc,1,142,session_dependent_logic,Session-Dependent Logic,22,_file,,,#undefined,,Extract Guard;Extract Method,pending
+roundcubemail-C0157,roundcubemail,program/steps/utils/error.inc,1,156,form_handling,Request Handling Mixed With Rendering,21,,,,.boxerror;.error-text;.error-title,,Extract Validation Helper;Extract Method;Extract View Helper,pending
+roundcubemail-C0158,roundcubemail,program/steps/utils/killcache.inc,1,53,sql_data_access,SQL/Data Access Region,12,,,cache,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0159,roundcubemail,program/steps/utils/modcss.inc,1,83,session_dependent_logic,Session-Dependent Logic,11,_c;_p;_u,modcssurls,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0160,roundcubemail,program/localization/en_CA/messages.inc,1,167,sql_data_access,SQL/Data Access Region,18,,,selected;server;the;this,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0161,roundcubemail,program/localization/en_GB/labels.inc,1,683,mixed_php_html_sql,SQL in Presentation Logic,21,,,an;file;group;known;message;on;selection;the;to;zip,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+roundcubemail-C0162,roundcubemail,program/localization/en_GB/messages.inc,1,224,sql_data_access,SQL/Data Access Region,29,,,folder;keyserver;selected;server;the;this;your,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0163,roundcubemail,program/localization/en_US/labels.inc,1,751,mixed_php_html_sql,SQL in Presentation Logic,20,,,an;file;group;known;message;on;selection;the;to;zip,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+roundcubemail-C0164,roundcubemail,program/localization/en_US/messages.inc,1,225,sql_data_access,SQL/Data Access Region,29,,,keyserver;selected;server;the;this;your,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0165,roundcubemail,program/localization/nb_NO/labels.inc,1,627,mixed_php_html,Mixed PHP/HTML,25,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+roundcubemail-C0166,roundcubemail,program/lib/Roundcube/html.php,1,992,mixed_php_html_sql,SQL in Presentation Logic,108,,,a;rows,,,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+roundcubemail-C0167,roundcubemail,program/lib/Roundcube/html.php,291,351,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+roundcubemail-C0168,roundcubemail,program/lib/Roundcube/html.php,897,952,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+roundcubemail-C0169,roundcubemail,program/lib/Roundcube/rcube.php,1,1754,session_dependent_logic,Session-Dependent Logic,257,,language;password;request_token;secure_token;storage_host;storage_port;storage_ssl;user_id;username,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0170,roundcubemail,program/lib/Roundcube/rcube.php,293,358,session_dependent_logic,Session-Dependent Logic,8,,language;password;storage_host;storage_port;storage_ssl;username,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0171,roundcubemail,program/lib/Roundcube/rcube.php,548,612,session_dependent_logic,Session-Dependent Logic,20,,language,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0172,roundcubemail,program/lib/Roundcube/rcube.php,649,704,session_dependent_logic,Session-Dependent Logic,10,,language,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0173,roundcubemail,program/lib/Roundcube/rcube.php,704,762,session_dependent_logic,Session-Dependent Logic,8,,language,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0174,roundcubemail,program/lib/Roundcube/rcube.php,762,810,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+roundcubemail-C0175,roundcubemail,program/lib/Roundcube/rcube.php,1065,1108,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+roundcubemail-C0176,roundcubemail,program/lib/Roundcube/rcube.php,1135,1183,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+roundcubemail-C0177,roundcubemail,program/lib/Roundcube/rcube.php,1214,1310,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+roundcubemail-C0178,roundcubemail,program/lib/Roundcube/rcube.php,1310,1379,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+roundcubemail-C0179,roundcubemail,program/lib/Roundcube/rcube.php,1379,1417,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+roundcubemail-C0180,roundcubemail,program/lib/Roundcube/rcube.php,1618,1750,long_method_or_region,Long or Complex Region,19,,,,,,Extract Method,pending
+roundcubemail-C0181,roundcubemail,program/lib/Roundcube/rcube_addressbook.php,1,724,sql_data_access,SQL/Data Access Region,98,,,a;returning;the,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0182,roundcubemail,program/lib/Roundcube/rcube_addressbook.php,543,601,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+roundcubemail-C0183,roundcubemail,program/lib/Roundcube/rcube_addressbook.php,601,662,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+roundcubemail-C0184,roundcubemail,program/lib/Roundcube/rcube_base_replacer.php,79,124,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+roundcubemail-C0185,roundcubemail,program/lib/Roundcube/rcube_charset.php,194,276,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+roundcubemail-C0186,roundcubemail,program/lib/Roundcube/rcube_charset.php,276,403,long_method_or_region,Long or Complex Region,33,,,,,,Extract Method,pending
+roundcubemail-C0187,roundcubemail,program/lib/Roundcube/rcube_charset.php,500,605,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+roundcubemail-C0188,roundcubemail,program/lib/Roundcube/rcube_charset.php,605,733,long_method_or_region,Long or Complex Region,23,,,,,,Extract Method,pending
+roundcubemail-C0189,roundcubemail,program/lib/Roundcube/rcube_charset.php,733,830,long_method_or_region,Long or Complex Region,26,,,,,,Extract Method,pending
+roundcubemail-C0190,roundcubemail,program/lib/Roundcube/rcube_charset.php,830,911,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+roundcubemail-C0191,roundcubemail,program/lib/Roundcube/rcube_config.php,1,904,session_dependent_logic,Session-Dependent Logic,125,,timezone,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0192,roundcubemail,program/lib/Roundcube/rcube_config.php,110,139,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+roundcubemail-C0193,roundcubemail,program/lib/Roundcube/rcube_config.php,139,182,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+roundcubemail-C0194,roundcubemail,program/lib/Roundcube/rcube_config.php,199,268,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+roundcubemail-C0195,roundcubemail,program/lib/Roundcube/rcube_config.php,338,375,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+roundcubemail-C0196,roundcubemail,program/lib/Roundcube/rcube_config.php,671,715,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+roundcubemail-C0197,roundcubemail,program/lib/Roundcube/rcube_config.php,774,905,long_method_or_region,Long or Complex Region,3,,,,,,Extract Method,pending
+roundcubemail-C0198,roundcubemail,program/lib/Roundcube/rcube_contacts.php,1,1044,sql_data_access,SQL/Data Access Region,165,,,a;counter;get_record;output;the;vcard;words,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0199,roundcubemail,program/lib/Roundcube/rcube_contacts.php,138,181,sql_data_access,SQL/Data Access Region,7,,,,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0200,roundcubemail,program/lib/Roundcube/rcube_contacts.php,205,291,sql_data_access,SQL/Data Access Region,23,,,counter,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0201,roundcubemail,program/lib/Roundcube/rcube_contacts.php,291,438,long_method_or_region,Long or Complex Region,41,,,,,,Extract Method,pending
+roundcubemail-C0202,roundcubemail,program/lib/Roundcube/rcube_contacts.php,481,512,sql_data_access,SQL/Data Access Region,8,,,,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0203,roundcubemail,program/lib/Roundcube/rcube_contacts.php,617,667,sql_data_access,SQL/Data Access Region,9,,,a,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0204,roundcubemail,program/lib/Roundcube/rcube_contacts.php,721,782,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+roundcubemail-C0205,roundcubemail,program/lib/Roundcube/rcube_contacts.php,944,996,sql_data_access,SQL/Data Access Region,8,,,a;the,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0206,roundcubemail,program/lib/Roundcube/rcube_csv2vcard.php,521,585,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+roundcubemail-C0207,roundcubemail,program/lib/Roundcube/rcube_csv2vcard.php,585,694,long_method_or_region,Long or Complex Region,24,,,,,,Extract Method,pending
+roundcubemail-C0208,roundcubemail,program/lib/Roundcube/rcube_db.php,1,1392,sql_data_access,SQL/Data Access Region,208,,,DSN;INFORMATION_SCHEMA;a,.rcube_db_$driver,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0209,roundcubemail,program/lib/Roundcube/rcube_db.php,148,189,sql_data_access,SQL/Data Access Region,4,,,,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0210,roundcubemail,program/lib/Roundcube/rcube_db.php,243,289,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+roundcubemail-C0211,roundcubemail,program/lib/Roundcube/rcube_db.php,412,467,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+roundcubemail-C0212,roundcubemail,program/lib/Roundcube/rcube_db.php,579,604,sql_data_access,SQL/Data Access Region,8,,,,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0213,roundcubemail,program/lib/Roundcube/rcube_db.php,814,862,sql_data_access,SQL/Data Access Region,15,,,,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0214,roundcubemail,program/lib/Roundcube/rcube_db.php,1141,1273,sql_data_access,SQL/Data Access Region,32,,,DSN,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0215,roundcubemail,program/lib/Roundcube/rcube_db.php,1368,1388,sql_data_access,SQL/Data Access Region,9,,,,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0216,roundcubemail,program/lib/Roundcube/rcube_enriched.php,1,151,mixed_php_html,Mixed PHP/HTML,18,,,,.quotes,,Separate PHP Logic from Markup;Extract View Helper,pending
+roundcubemail-C0217,roundcubemail,program/lib/Roundcube/rcube_html2text.php,1,735,mixed_php_html,Mixed PHP/HTML,82,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+roundcubemail-C0218,roundcubemail,program/lib/Roundcube/rcube_html2text.php,517,570,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+roundcubemail-C0219,roundcubemail,program/lib/Roundcube/rcube_image.php,98,306,long_method_or_region,Long or Complex Region,41,,,,,,Extract Method,pending
+roundcubemail-C0220,roundcubemail,program/lib/Roundcube/rcube_image.php,306,404,long_method_or_region,Long or Complex Region,23,,,,,,Extract Method,pending
+roundcubemail-C0221,roundcubemail,program/lib/Roundcube/rcube_imap.php,1,4555,session_dependent_logic,Session-Dependent Logic,740,,folders;imap_delimiter;imap_list_conf;imap_namespace;imap_vendor,HTML;IMAP;LIST;Thunderbird;a;cache;caches;count;flags;instead;local;message;one;other;rcube_imap;result;search;search_set;searching;server;session;set;the;there,,,Extract Guard;Extract Method,pending
+roundcubemail-C0222,roundcubemail,program/lib/Roundcube/rcube_imap.php,122,212,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+roundcubemail-C0223,roundcubemail,program/lib/Roundcube/rcube_imap.php,278,307,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+roundcubemail-C0224,roundcubemail,program/lib/Roundcube/rcube_imap.php,484,617,session_dependent_logic,Session-Dependent Logic,35,,imap_delimiter;imap_list_conf;imap_namespace,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0225,roundcubemail,program/lib/Roundcube/rcube_imap.php,617,668,session_dependent_logic,Session-Dependent Logic,11,,imap_vendor,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0226,roundcubemail,program/lib/Roundcube/rcube_imap.php,690,803,long_method_or_region,Long or Complex Region,24,,,,,,Extract Method,pending
+roundcubemail-C0227,roundcubemail,program/lib/Roundcube/rcube_imap.php,1051,1250,long_method_or_region,Long or Complex Region,37,,,,,,Extract Method,pending
+roundcubemail-C0228,roundcubemail,program/lib/Roundcube/rcube_imap.php,1321,1365,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+roundcubemail-C0229,roundcubemail,program/lib/Roundcube/rcube_imap.php,1397,1473,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+roundcubemail-C0230,roundcubemail,program/lib/Roundcube/rcube_imap.php,1473,1538,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+roundcubemail-C0231,roundcubemail,program/lib/Roundcube/rcube_imap.php,1599,1671,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+roundcubemail-C0232,roundcubemail,program/lib/Roundcube/rcube_imap.php,1708,1782,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+roundcubemail-C0233,roundcubemail,program/lib/Roundcube/rcube_imap.php,1891,2014,long_method_or_region,Long or Complex Region,24,,,,,,Extract Method,pending
+roundcubemail-C0234,roundcubemail,program/lib/Roundcube/rcube_imap.php,2014,2240,long_method_or_region,Long or Complex Region,50,,,,,,Extract Method,pending
+roundcubemail-C0235,roundcubemail,program/lib/Roundcube/rcube_imap.php,2240,2375,long_method_or_region,Long or Complex Region,32,,,,,,Extract Method,pending
+roundcubemail-C0236,roundcubemail,program/lib/Roundcube/rcube_imap.php,2400,2464,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+roundcubemail-C0237,roundcubemail,program/lib/Roundcube/rcube_imap.php,2516,2578,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+roundcubemail-C0238,roundcubemail,program/lib/Roundcube/rcube_imap.php,2630,2708,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+roundcubemail-C0239,roundcubemail,program/lib/Roundcube/rcube_imap.php,2743,2800,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+roundcubemail-C0240,roundcubemail,program/lib/Roundcube/rcube_imap.php,2800,2862,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+roundcubemail-C0241,roundcubemail,program/lib/Roundcube/rcube_imap.php,2919,2994,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+roundcubemail-C0242,roundcubemail,program/lib/Roundcube/rcube_imap.php,3115,3169,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+roundcubemail-C0243,roundcubemail,program/lib/Roundcube/rcube_imap.php,3412,3462,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+roundcubemail-C0244,roundcubemail,program/lib/Roundcube/rcube_imap.php,3654,3702,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+roundcubemail-C0245,roundcubemail,program/lib/Roundcube/rcube_imap.php,3702,3797,long_method_or_region,Long or Complex Region,20,,,,,,Extract Method,pending
+roundcubemail-C0246,roundcubemail,program/lib/Roundcube/rcube_imap.php,4051,4118,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+roundcubemail-C0247,roundcubemail,program/lib/Roundcube/rcube_imap_cache.php,1,1318,sql_data_access,SQL/Data Access Region,237,,,DB;IMAP;If;cache;database;if;index;internal;message,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0248,roundcubemail,program/lib/Roundcube/rcube_imap_cache.php,165,270,long_method_or_region,Long or Complex Region,21,,,,,,Extract Method,pending
+roundcubemail-C0249,roundcubemail,program/lib/Roundcube/rcube_imap_cache.php,270,325,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+roundcubemail-C0250,roundcubemail,program/lib/Roundcube/rcube_imap_cache.php,325,392,sql_data_access,SQL/Data Access Region,12,,,IMAP;If;cache,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0251,roundcubemail,program/lib/Roundcube/rcube_imap_cache.php,392,455,sql_data_access,SQL/Data Access Region,10,,,IMAP;if;internal,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0252,roundcubemail,program/lib/Roundcube/rcube_imap_cache.php,455,529,sql_data_access,SQL/Data Access Region,30,,,cache,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0253,roundcubemail,program/lib/Roundcube/rcube_imap_cache.php,529,578,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+roundcubemail-C0254,roundcubemail,program/lib/Roundcube/rcube_imap_cache.php,578,614,sql_data_access,SQL/Data Access Region,8,,,internal,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0255,roundcubemail,program/lib/Roundcube/rcube_imap_cache.php,614,656,sql_data_access,SQL/Data Access Region,8,,,database,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0256,roundcubemail,program/lib/Roundcube/rcube_imap_cache.php,787,844,sql_data_access,SQL/Data Access Region,16,,,database,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0257,roundcubemail,program/lib/Roundcube/rcube_imap_cache.php,844,898,sql_data_access,SQL/Data Access Region,15,,,,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0258,roundcubemail,program/lib/Roundcube/rcube_imap_cache.php,898,1025,long_method_or_region,Long or Complex Region,25,,,,,,Extract Method,pending
+roundcubemail-C0259,roundcubemail,program/lib/Roundcube/rcube_imap_cache.php,1025,1203,sql_data_access,SQL/Data Access Region,44,,,database;index;internal;message,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0260,roundcubemail,program/lib/Roundcube/rcube_imap_generic.php,1,4102,sql_data_access,SQL/Data Access Region,645,,,Mailbox;all;array;one;response;sending;sequence;server;string;the,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0261,roundcubemail,program/lib/Roundcube/rcube_imap_generic.php,89,134,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+roundcubemail-C0262,roundcubemail,program/lib/Roundcube/rcube_imap_generic.php,134,192,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+roundcubemail-C0263,roundcubemail,program/lib/Roundcube/rcube_imap_generic.php,316,373,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+roundcubemail-C0264,roundcubemail,program/lib/Roundcube/rcube_imap_generic.php,524,761,long_method_or_region,Long or Complex Region,34,,,,,,Extract Method,pending
+roundcubemail-C0265,roundcubemail,program/lib/Roundcube/rcube_imap_generic.php,853,963,long_method_or_region,Long or Complex Region,24,,,,,,Extract Method,pending
+roundcubemail-C0266,roundcubemail,program/lib/Roundcube/rcube_imap_generic.php,963,1071,long_method_or_region,Long or Complex Region,21,,,,,,Extract Method,pending
+roundcubemail-C0267,roundcubemail,program/lib/Roundcube/rcube_imap_generic.php,1128,1246,long_method_or_region,Long or Complex Region,23,,,,,,Extract Method,pending
+roundcubemail-C0268,roundcubemail,program/lib/Roundcube/rcube_imap_generic.php,1501,1629,long_method_or_region,Long or Complex Region,24,,,,,,Extract Method,pending
+roundcubemail-C0269,roundcubemail,program/lib/Roundcube/rcube_imap_generic.php,1805,1857,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+roundcubemail-C0270,roundcubemail,program/lib/Roundcube/rcube_imap_generic.php,1894,1951,sql_data_access,SQL/Data Access Region,10,,,,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0271,roundcubemail,program/lib/Roundcube/rcube_imap_generic.php,1981,2151,long_method_or_region,Long or Complex Region,39,,,,,,Extract Method,pending
+roundcubemail-C0272,roundcubemail,program/lib/Roundcube/rcube_imap_generic.php,2376,2604,long_method_or_region,Long or Complex Region,58,,,,,,Extract Method,pending
+roundcubemail-C0273,roundcubemail,program/lib/Roundcube/rcube_imap_generic.php,2654,2716,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+roundcubemail-C0274,roundcubemail,program/lib/Roundcube/rcube_imap_generic.php,2771,2969,long_method_or_region,Long or Complex Region,45,,,,,,Extract Method,pending
+roundcubemail-C0275,roundcubemail,program/lib/Roundcube/rcube_imap_generic.php,2969,3088,long_method_or_region,Long or Complex Region,25,,,,,,Extract Method,pending
+roundcubemail-C0276,roundcubemail,program/lib/Roundcube/rcube_imap_generic.php,3116,3190,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+roundcubemail-C0277,roundcubemail,program/lib/Roundcube/rcube_imap_generic.php,3378,3448,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+roundcubemail-C0278,roundcubemail,program/lib/Roundcube/rcube_imap_generic.php,3500,3591,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+roundcubemail-C0279,roundcubemail,program/lib/Roundcube/rcube_imap_generic.php,3700,3778,long_method_or_region,Long or Complex Region,22,,,,,,Extract Method,pending
+roundcubemail-C0280,roundcubemail,program/lib/Roundcube/rcube_imap_generic.php,3778,3854,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+roundcubemail-C0281,roundcubemail,program/lib/Roundcube/rcube_imap_generic.php,3879,3938,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+roundcubemail-C0282,roundcubemail,program/lib/Roundcube/rcube_imap_search.php,54,92,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+roundcubemail-C0283,roundcubemail,program/lib/Roundcube/rcube_imap_search.php,148,213,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+roundcubemail-C0284,roundcubemail,program/lib/Roundcube/rcube_ldap.php,1,2182,sql_data_access,SQL/Data Access Region,408,,,LDAP;a;all;an;displayname;global;it;ldap;object;previous;server;subtype;the;url;vCard,#__groups__,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0285,roundcubemail,program/lib/Roundcube/rcube_ldap.php,81,262,long_method_or_region,Long or Complex Region,44,,,,,,Extract Method,pending
+roundcubemail-C0286,roundcubemail,program/lib/Roundcube/rcube_ldap.php,262,470,long_method_or_region,Long or Complex Region,47,,,,,,Extract Method,pending
+roundcubemail-C0287,roundcubemail,program/lib/Roundcube/rcube_ldap.php,559,616,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+roundcubemail-C0288,roundcubemail,program/lib/Roundcube/rcube_ldap.php,665,709,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+roundcubemail-C0289,roundcubemail,program/lib/Roundcube/rcube_ldap.php,709,742,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+roundcubemail-C0290,roundcubemail,program/lib/Roundcube/rcube_ldap.php,759,903,long_method_or_region,Long or Complex Region,39,,,,,,Extract Method,pending
+roundcubemail-C0291,roundcubemail,program/lib/Roundcube/rcube_ldap.php,928,1005,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+roundcubemail-C0292,roundcubemail,program/lib/Roundcube/rcube_ldap.php,1077,1151,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+roundcubemail-C0293,roundcubemail,program/lib/Roundcube/rcube_ldap.php,1151,1222,sql_data_access,SQL/Data Access Region,11,,,a,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0294,roundcubemail,program/lib/Roundcube/rcube_ldap.php,1222,1401,long_method_or_region,Long or Complex Region,38,,,,,,Extract Method,pending
+roundcubemail-C0295,roundcubemail,program/lib/Roundcube/rcube_ldap.php,1401,1448,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+roundcubemail-C0296,roundcubemail,program/lib/Roundcube/rcube_ldap.php,1521,1586,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+roundcubemail-C0297,roundcubemail,program/lib/Roundcube/rcube_ldap.php,1594,1665,long_method_or_region,Long or Complex Region,22,,,,,,Extract Method,pending
+roundcubemail-C0298,roundcubemail,program/lib/Roundcube/rcube_ldap.php,1756,1889,long_method_or_region,Long or Complex Region,26,,,,#__groups__,,Extract Method,pending
+roundcubemail-C0299,roundcubemail,program/lib/Roundcube/rcube_ldap_generic.php,59,91,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+roundcubemail-C0300,roundcubemail,program/lib/Roundcube/rcube_message.php,1,1148,session_dependent_logic,Session-Dependent Logic,197,,safe_messages,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0301,roundcubemail,program/lib/Roundcube/rcube_message.php,79,143,session_dependent_logic,Session-Dependent Logic,7,,safe_messages,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0302,roundcubemail,program/lib/Roundcube/rcube_message.php,220,301,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+roundcubemail-C0303,roundcubemail,program/lib/Roundcube/rcube_message.php,301,341,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+roundcubemail-C0304,roundcubemail,program/lib/Roundcube/rcube_message.php,341,403,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+roundcubemail-C0305,roundcubemail,program/lib/Roundcube/rcube_message.php,403,457,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+roundcubemail-C0306,roundcubemail,program/lib/Roundcube/rcube_message.php,572,937,long_method_or_region,Long or Complex Region,75,,,,,,Extract Method,pending
+roundcubemail-C0307,roundcubemail,program/lib/Roundcube/rcube_message.php,1082,1139,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+roundcubemail-C0308,roundcubemail,program/lib/Roundcube/rcube_mime.php,94,146,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+roundcubemail-C0309,roundcubemail,program/lib/Roundcube/rcube_mime.php,161,269,long_method_or_region,Long or Complex Region,23,,,,,,Extract Method,pending
+roundcubemail-C0310,roundcubemail,program/lib/Roundcube/rcube_mime.php,313,390,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+roundcubemail-C0311,roundcubemail,program/lib/Roundcube/rcube_mime.php,390,462,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+roundcubemail-C0312,roundcubemail,program/lib/Roundcube/rcube_mime.php,462,547,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+roundcubemail-C0313,roundcubemail,program/lib/Roundcube/rcube_mime.php,589,709,long_method_or_region,Long or Complex Region,19,,,,,,Extract Method,pending
+roundcubemail-C0314,roundcubemail,program/lib/Roundcube/rcube_mime.php,709,769,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+roundcubemail-C0315,roundcubemail,program/lib/Roundcube/rcube_mime.php,769,870,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+roundcubemail-C0316,roundcubemail,program/lib/Roundcube/rcube_mime_decode.php,99,232,long_method_or_region,Long or Complex Region,35,,,,,,Extract Method,pending
+roundcubemail-C0317,roundcubemail,program/lib/Roundcube/rcube_output.php,1,368,form_handling,Request Handling Mixed With Rendering,47,,,,,,Extract Validation Helper;Extract Method;Extract View Helper,pending
+roundcubemail-C0318,roundcubemail,program/lib/Roundcube/rcube_output.php,226,274,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+roundcubemail-C0319,roundcubemail,program/lib/Roundcube/rcube_output.php,291,342,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+roundcubemail-C0320,roundcubemail,program/lib/Roundcube/rcube_plugin.php,1,419,session_dependent_logic,Session-Dependent Logic,40,,language,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0321,roundcubemail,program/lib/Roundcube/rcube_plugin_api.php,1,698,long_method_or_region,Long or Complex Region,104,_framed,,,,,Extract Method,pending
+roundcubemail-C0322,roundcubemail,program/lib/Roundcube/rcube_plugin_api.php,118,158,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+roundcubemail-C0323,roundcubemail,program/lib/Roundcube/rcube_plugin_api.php,158,231,long_method_or_region,Long or Complex Region,19,,,,,,Extract Method,pending
+roundcubemail-C0324,roundcubemail,program/lib/Roundcube/rcube_plugin_api.php,245,383,long_method_or_region,Long or Complex Region,20,,,,,,Extract Method,pending
+roundcubemail-C0325,roundcubemail,program/lib/Roundcube/rcube_plugin_api.php,609,648,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+roundcubemail-C0326,roundcubemail,program/lib/Roundcube/rcube_result_index.php,56,136,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+roundcubemail-C0327,roundcubemail,program/lib/Roundcube/rcube_result_index.php,335,395,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+roundcubemail-C0328,roundcubemail,program/lib/Roundcube/rcube_result_thread.php,335,404,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+roundcubemail-C0329,roundcubemail,program/lib/Roundcube/rcube_result_thread.php,566,651,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+roundcubemail-C0330,roundcubemail,program/lib/Roundcube/rcube_session.php,1,728,session_dependent_logic,Session-Dependent Logic,95,,auth_secret;compose,,.rcube_session_,,Extract Guard;Extract Method,pending
+roundcubemail-C0331,roundcubemail,program/lib/Roundcube/rcube_session.php,415,472,session_dependent_logic,Session-Dependent Logic,9,,compose,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0332,roundcubemail,program/lib/Roundcube/rcube_session.php,494,593,long_method_or_region,Long or Complex Region,25,,,,,,Extract Method,pending
+roundcubemail-C0333,roundcubemail,program/lib/Roundcube/rcube_session.php,659,694,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+roundcubemail-C0334,roundcubemail,program/lib/Roundcube/rcube_smtp.php,50,203,long_method_or_region,Long or Complex Region,28,,,,,,Extract Method,pending
+roundcubemail-C0335,roundcubemail,program/lib/Roundcube/rcube_smtp.php,203,359,long_method_or_region,Long or Complex Region,25,,,,,,Extract Method,pending
+roundcubemail-C0336,roundcubemail,program/lib/Roundcube/rcube_spellchecker.php,1,419,sql_data_access,SQL/Data Access Region,69,,,DB;dictionary,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0337,roundcubemail,program/lib/Roundcube/rcube_spellchecker.php,266,301,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+roundcubemail-C0338,roundcubemail,program/lib/Roundcube/rcube_spellchecker.php,337,379,sql_data_access,SQL/Data Access Region,14,,,DB,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0339,roundcubemail,program/lib/Roundcube/rcube_spellchecker.php,379,420,sql_data_access,SQL/Data Access Region,9,,,,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0340,roundcubemail,program/lib/Roundcube/rcube_string_replacer.php,46,75,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+roundcubemail-C0341,roundcubemail,program/lib/Roundcube/rcube_string_replacer.php,229,285,long_method_or_region,Long or Complex Region,19,,,,,,Extract Method,pending
+roundcubemail-C0342,roundcubemail,program/lib/Roundcube/rcube_text2html.php,1,316,mixed_php_html,Mixed PHP/HTML,37,,,,.pre;.sig,,Separate PHP Logic from Markup;Extract View Helper,pending
+roundcubemail-C0343,roundcubemail,program/lib/Roundcube/rcube_text2html.php,138,265,long_method_or_region,Long or Complex Region,21,,,,.sig,,Extract Method,pending
+roundcubemail-C0344,roundcubemail,program/lib/Roundcube/rcube_tnef_decoder.php,239,381,long_method_or_region,Long or Complex Region,39,,,,,,Extract Method,pending
+roundcubemail-C0345,roundcubemail,program/lib/Roundcube/rcube_tnef_decoder.php,545,745,long_method_or_region,Long or Complex Region,51,,,,,,Extract Method,pending
+roundcubemail-C0346,roundcubemail,program/lib/Roundcube/rcube_user.php,1,862,session_dependent_logic,Session-Dependent Logic,124,,language;preferences;preferences_time,a;error;identities;session;success;user;virtuser,,,Extract Guard;Extract Method,pending
+roundcubemail-C0347,roundcubemail,program/lib/Roundcube/rcube_user.php,128,170,session_dependent_logic,Session-Dependent Logic,7,,preferences;preferences_time,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0348,roundcubemail,program/lib/Roundcube/rcube_user.php,170,256,session_dependent_logic,Session-Dependent Logic,15,,language;preferences;preferences_time,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0349,roundcubemail,program/lib/Roundcube/rcube_user.php,396,435,sql_data_access,SQL/Data Access Region,7,,,,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0350,roundcubemail,program/lib/Roundcube/rcube_user.php,605,718,session_dependent_logic,Session-Dependent Logic,20,,language,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0351,roundcubemail,program/lib/Roundcube/rcube_utils.php,1,1457,form_handling,Request Handling Mixed With Rendering,253,,storage_host,,,,Extract Validation Helper;Extract Method;Extract View Helper,pending
+roundcubemail-C0352,roundcubemail,program/lib/Roundcube/rcube_utils.php,66,150,long_method_or_region,Long or Complex Region,19,,,,,,Extract Method,pending
+roundcubemail-C0353,roundcubemail,program/lib/Roundcube/rcube_utils.php,165,256,long_method_or_region,Long or Complex Region,26,,,,,,Extract Method,pending
+roundcubemail-C0354,roundcubemail,program/lib/Roundcube/rcube_utils.php,374,483,long_method_or_region,Long or Complex Region,24,,,,,,Extract Method,pending
+roundcubemail-C0355,roundcubemail,program/lib/Roundcube/rcube_utils.php,582,623,session_dependent_logic,Session-Dependent Logic,9,,storage_host,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0356,roundcubemail,program/lib/Roundcube/rcube_utils.php,682,716,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+roundcubemail-C0357,roundcubemail,program/lib/Roundcube/rcube_utils.php,806,849,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+roundcubemail-C0358,roundcubemail,program/lib/Roundcube/rcube_utils.php,849,901,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+roundcubemail-C0359,roundcubemail,program/lib/Roundcube/rcube_utils.php,957,1003,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+roundcubemail-C0360,roundcubemail,program/lib/Roundcube/rcube_utils.php,1027,1080,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+roundcubemail-C0361,roundcubemail,program/lib/Roundcube/rcube_utils.php,1108,1164,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+roundcubemail-C0362,roundcubemail,program/lib/Roundcube/rcube_vcard.php,167,275,long_method_or_region,Long or Complex Region,25,,,,,,Extract Method,pending
+roundcubemail-C0363,roundcubemail,program/lib/Roundcube/rcube_vcard.php,315,425,long_method_or_region,Long or Complex Region,30,,,,,,Extract Method,pending
+roundcubemail-C0364,roundcubemail,program/lib/Roundcube/rcube_vcard.php,493,545,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+roundcubemail-C0365,roundcubemail,program/lib/Roundcube/rcube_vcard.php,545,586,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+roundcubemail-C0366,roundcubemail,program/lib/Roundcube/rcube_vcard.php,637,739,long_method_or_region,Long or Complex Region,25,,,,,,Extract Method,pending
+roundcubemail-C0367,roundcubemail,program/lib/Roundcube/rcube_vcard.php,763,830,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+roundcubemail-C0368,roundcubemail,program/lib/Roundcube/rcube_washtml.php,1,910,mixed_php_html,Mixed PHP/HTML,122,,,,,,Separate PHP Logic from Markup;Extract View Helper,pending
+roundcubemail-C0369,roundcubemail,program/lib/Roundcube/rcube_washtml.php,236,294,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+roundcubemail-C0370,roundcubemail,program/lib/Roundcube/rcube_washtml.php,294,382,long_method_or_region,Long or Complex Region,21,,,,,,Extract Method,pending
+roundcubemail-C0371,roundcubemail,program/lib/Roundcube/rcube_washtml.php,463,566,long_method_or_region,Long or Complex Region,20,,,,,,Extract Method,pending
+roundcubemail-C0372,roundcubemail,program/lib/Roundcube/rcube_washtml.php,566,614,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+roundcubemail-C0373,roundcubemail,program/lib/Roundcube/rcube_washtml.php,755,832,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+roundcubemail-C0374,roundcubemail,program/lib/Roundcube/db/mssql.php,1,191,sql_data_access,SQL/Data Access Region,25,,,DSN;a;paging,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0375,roundcubemail,program/lib/Roundcube/db/mysql.php,1,259,sql_data_access,SQL/Data Access Region,38,,,DSN;INFORMATION_SCHEMA;InnoDB,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0376,roundcubemail,program/lib/Roundcube/db/mysql.php,120,162,sql_data_access,SQL/Data Access Region,7,,,,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0377,roundcubemail,program/lib/Roundcube/db/oracle.php,1,623,sql_data_access,SQL/Data Access Region,81,,,DSN;a;dual,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0378,roundcubemail,program/lib/Roundcube/db/oracle.php,35,80,sql_data_access,SQL/Data Access Region,5,,,,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0379,roundcubemail,program/lib/Roundcube/db/oracle.php,113,200,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+roundcubemail-C0380,roundcubemail,program/lib/Roundcube/db/oracle.php,320,359,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+roundcubemail-C0381,roundcubemail,program/lib/Roundcube/db/pgsql.php,1,301,sql_data_access,SQL/Data Access Region,45,,,DSN;INFORMATION_SCHEMA;a,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0382,roundcubemail,program/lib/Roundcube/db/sqlite.php,1,162,sql_data_access,SQL/Data Access Region,25,,,a;sqlite_master,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0383,roundcubemail,program/lib/Roundcube/session/db.php,1,189,sql_data_access,SQL/Data Access Region,19,,,data;database;db;expire;session,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0384,roundcubemail,program/lib/Roundcube/spellchecker/atd.php,58,168,long_method_or_region,Long or Complex Region,25,,,,,,Extract Method,pending
+roundcubemail-C0385,roundcubemail,program/lib/Roundcube/spellchecker/googie.php,1,177,session_dependent_logic,Session-Dependent Logic,30,,user_id,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0386,roundcubemail,program/lib/Roundcube/spellchecker/googie.php,55,138,session_dependent_logic,Session-Dependent Logic,22,,user_id,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0387,roundcubemail,plugins/acl/acl.php,1,852,mixed_php_html,Mixed PHP/HTML,116,,acl_username_realm;imap_host;username,,#acl$key;#acl$val;.disabled;.enabled;.partial,,Separate PHP Logic from Markup;Extract View Helper,pending
+roundcubemail-C0388,roundcubemail,plugins/acl/acl.php,80,150,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+roundcubemail-C0389,roundcubemail,plugins/acl/acl.php,362,479,long_method_or_region,Long or Complex Region,19,,,,.disabled;.enabled;.partial,,Extract Method,pending
+roundcubemail-C0390,roundcubemail,plugins/acl/acl.php,479,548,session_dependent_logic,Session-Dependent Logic,16,,username,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0391,roundcubemail,plugins/acl/acl.php,690,724,session_dependent_logic,Session-Dependent Logic,8,,acl_username_realm;username,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0392,roundcubemail,plugins/acl/acl.php,724,790,session_dependent_logic,Session-Dependent Logic,8,,imap_host,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0393,roundcubemail,plugins/archive/archive.php,1,505,session_dependent_logic,Session-Dependent Logic,80,_from;_refresh,page;search,message;next;one;the;unread,,,Extract Guard;Extract Method,pending
+roundcubemail-C0394,roundcubemail,plugins/archive/archive.php,119,318,session_dependent_logic,Session-Dependent Logic,38,_from;_refresh,page;search,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0395,roundcubemail,plugins/autologon/autologon.php,1,48,session_dependent_logic,Session-Dependent Logic,5,_autologin,user_id,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0396,roundcubemail,plugins/database_attachments/database_attachments.php,1,190,session_dependent_logic,Session-Dependent Logic,18,,user_id,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0397,roundcubemail,plugins/debug_logger/debug_logger.php,1,149,sql_data_access,SQL/Data Access Region,15,,,a;example,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0398,roundcubemail,plugins/emoticons/emoticons_engine.php,57,102,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+roundcubemail-C0399,roundcubemail,plugins/enigma/enigma.php,1,584,long_method_or_region,Long or Complex Region,63,_framed,,,,,Extract Method,pending
+roundcubemail-C0400,roundcubemail,plugins/enigma/enigma.php,34,101,long_method_or_region,Long or Complex Region,10,_framed,,,,,Extract Method,pending
+roundcubemail-C0401,roundcubemail,plugins/enigma/enigma.php,243,399,long_method_or_region,Long or Complex Region,21,,,,,,Extract Method,pending
+roundcubemail-C0402,roundcubemail,plugins/filesystem_attachments/filesystem_attachments.php,1,249,session_dependent_logic,Session-Dependent Logic,35,,compose;plugins,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0403,roundcubemail,plugins/help/help.php,1,179,session_dependent_logic,Session-Dependent Logic,20,_content;_extwin;_rel,language,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0404,roundcubemail,plugins/http_authentication/http_authentication.php,1,111,session_dependent_logic,Session-Dependent Logic,16,,password;user_id,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0405,roundcubemail,plugins/identicon/identicon.php,33,79,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+roundcubemail-C0406,roundcubemail,plugins/jqueryui/jqueryui.php,1,156,session_dependent_logic,Session-Dependent Logic,19,,language,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0407,roundcubemail,plugins/jqueryui/jqueryui.php,26,96,session_dependent_logic,Session-Dependent Logic,12,,language,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0408,roundcubemail,plugins/krb_authentication/krb_authentication.php,1,155,session_dependent_logic,Session-Dependent Logic,14,,password;user_id,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0409,roundcubemail,plugins/managesieve/managesieve.php,1,312,session_dependent_logic,Session-Dependent Logic,36,_framed,storage_host,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0410,roundcubemail,plugins/managesieve/managesieve.php,37,78,session_dependent_logic,Session-Dependent Logic,6,,storage_host,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0411,roundcubemail,plugins/markasjunk/markasjunk.php,1,321,session_dependent_logic,Session-Dependent Logic,42,,storage_host,,.markasjunk_$driver_name,,Extract Guard;Extract Method,pending
+roundcubemail-C0412,roundcubemail,plugins/markasjunk/markasjunk.php,47,132,session_dependent_logic,Session-Dependent Logic,6,,storage_host,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0413,roundcubemail,plugins/newmail_notifier/newmail_notifier.php,1,215,long_method_or_region,Long or Complex Region,32,_framed,,,,,Extract Method,pending
+roundcubemail-C0414,roundcubemail,plugins/newmail_notifier/newmail_notifier.php,42,86,long_method_or_region,Long or Complex Region,10,_framed,,,,,Extract Method,pending
+roundcubemail-C0415,roundcubemail,plugins/new_user_identity/new_user_identity.php,27,61,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+roundcubemail-C0416,roundcubemail,plugins/password/password.php,1,813,session_dependent_logic,Session-Dependent Logic,127,_curpasswd;_newpasswd,password;password_expires;storage_host;username,,.rcube_{$driver}_password,,Extract Guard;Extract Method,pending
+roundcubemail-C0417,roundcubemail,plugins/password/password.php,129,215,session_dependent_logic,Session-Dependent Logic,14,_curpasswd;_newpasswd,password,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0418,roundcubemail,plugins/password/password.php,215,319,long_method_or_region,Long or Complex Region,9,,,,,,Extract Method,pending
+roundcubemail-C0419,roundcubemail,plugins/password/password.php,381,422,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+roundcubemail-C0420,roundcubemail,plugins/password/password.php,516,795,long_method_or_region,Long or Complex Region,56,,,,,,Extract Method,pending
+roundcubemail-C0421,roundcubemail,plugins/redundant_attachments/redundant_attachments.php,1,238,session_dependent_logic,Session-Dependent Logic,28,,user_id,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0422,roundcubemail,plugins/squirrelmail_usercopy/squirrelmail_usercopy.php,1,270,sql_data_access,SQL/Data Access Region,51,,,a;groups;result,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0423,roundcubemail,plugins/squirrelmail_usercopy/squirrelmail_usercopy.php,42,140,long_method_or_region,Long or Complex Region,23,,,,,,Extract Method,pending
+roundcubemail-C0424,roundcubemail,plugins/squirrelmail_usercopy/squirrelmail_usercopy.php,156,262,sql_data_access,SQL/Data Access Region,24,,,result,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0425,roundcubemail,plugins/subscriptions_option/subscriptions_option.php,1,106,form_handling,Request Handling Mixed With Rendering,11,_use_subscriptions,,,,,Extract Validation Helper;Extract Method;Extract View Helper,pending
+roundcubemail-C0426,roundcubemail,plugins/vcard_attachments/vcard_attachments.php,185,256,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+roundcubemail-C0427,roundcubemail,plugins/zipdownload/zipdownload.php,231,363,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+roundcubemail-C0428,roundcubemail,plugins/password/drivers/cpanel.php,37,79,session_dependent_logic,Session-Dependent Logic,3,,username,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0429,roundcubemail,plugins/password/drivers/directadmin.php,1,452,session_dependent_logic,Session-Dependent Logic,52,,imap_host;username,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0430,roundcubemail,plugins/password/drivers/directadmin.php,29,121,session_dependent_logic,Session-Dependent Logic,6,,imap_host;username,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0431,roundcubemail,plugins/password/drivers/directadmin.php,174,328,long_method_or_region,Long or Complex Region,35,,,,,,Extract Method,pending
+roundcubemail-C0432,roundcubemail,plugins/password/drivers/domainfactory.php,1,94,mixed_php_html,Mixed PHP/HTML,16,,,,.d-msg-text,,Separate PHP Logic from Markup;Extract View Helper,pending
+roundcubemail-C0433,roundcubemail,plugins/password/drivers/domainfactory.php,31,95,long_method_or_region,Long or Complex Region,14,,,,.d-msg-text,,Extract Method,pending
+roundcubemail-C0434,roundcubemail,plugins/password/drivers/ldap.php,33,158,long_method_or_region,Long or Complex Region,22,,,,,,Extract Method,pending
+roundcubemail-C0435,roundcubemail,plugins/password/drivers/ldap_simple.php,1,291,session_dependent_logic,Session-Dependent Logic,36,,username,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0436,roundcubemail,plugins/password/drivers/ldap_simple.php,37,115,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+roundcubemail-C0437,roundcubemail,plugins/password/drivers/ldap_simple.php,115,210,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+roundcubemail-C0438,roundcubemail,plugins/password/drivers/modoboa.php,1,119,session_dependent_logic,Session-Dependent Logic,8,,imap_host;username,Modoboa;modoboa,,,Extract Guard;Extract Method,pending
+roundcubemail-C0439,roundcubemail,plugins/password/drivers/modoboa.php,38,120,session_dependent_logic,Session-Dependent Logic,5,,imap_host;username,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0440,roundcubemail,plugins/password/drivers/sql.php,1,202,session_dependent_logic,Session-Dependent Logic,31,,imap_host;username,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0441,roundcubemail,plugins/password/drivers/sql.php,36,187,session_dependent_logic,Session-Dependent Logic,26,,imap_host;username,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0442,roundcubemail,plugins/password/drivers/ximss.php,35,90,long_method_or_region,Long or Complex Region,10,,,,#A001;#A002;#A003,,Extract Method,pending
+roundcubemail-C0443,roundcubemail,plugins/password/drivers/xmail.php,36,83,session_dependent_logic,Session-Dependent Logic,3,,username,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0444,roundcubemail,plugins/markasjunk/drivers/amavis_blacklist.php,1,148,sql_data_access,SQL/Data Access Region,32,,,mailaddr;users;wblist,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0445,roundcubemail,plugins/markasjunk/drivers/amavis_blacklist.php,49,149,sql_data_access,SQL/Data Access Region,28,,,mailaddr;users;wblist,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0446,roundcubemail,plugins/markasjunk/drivers/cmd_learn.php,1,114,session_dependent_logic,Session-Dependent Logic,20,,username,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0447,roundcubemail,plugins/markasjunk/drivers/cmd_learn.php,41,115,session_dependent_logic,Session-Dependent Logic,16,,username,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0448,roundcubemail,plugins/markasjunk/drivers/email_learn.php,1,173,session_dependent_logic,Session-Dependent Logic,21,,username,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0449,roundcubemail,plugins/markasjunk/drivers/email_learn.php,41,163,long_method_or_region,Long or Complex Region,17,,,,,,Extract Method,pending
+roundcubemail-C0450,roundcubemail,plugins/markasjunk/drivers/sa_blacklist.php,1,145,session_dependent_logic,Session-Dependent Logic,32,,username,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0451,roundcubemail,plugins/markasjunk/drivers/sa_blacklist.php,46,146,session_dependent_logic,Session-Dependent Logic,29,,username,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0452,roundcubemail,plugins/managesieve/lib/Roundcube/rcube_sieve.php,63,116,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+roundcubemail-C0453,roundcubemail,plugins/managesieve/lib/Roundcube/rcube_sieve.php,400,434,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+roundcubemail-C0454,roundcubemail,plugins/managesieve/lib/Roundcube/rcube_sieve_engine.php,1,3085,mixed_php_html_sql,SQL in Presentation Logic,533,_disabled;_framed;_header;_name;_newset;_set;_seteditraw;rawsetcontent,imap_delimiter;managesieve-compact-form;managesieve_current;managesieve_user_script;password;username,config;file;internal;the,#action_addheader;#action_deleteheader;#action_notify;#action_notifyoption_div;#action_set;#action_vacation;#actionadd%s;#actiondel%s;#actionrow;#actions;#disabled;#redirect_target;#rule_advanced;#rule_comp;#rule_date_header_div;#rule_duplicate_div;#rule_index_div;#rule_mime;#rule_mime_part;#rule_mod,./;filtersetform,Light Data-Access Isolation;Extract Method;Extract View Helper,pending
+roundcubemail-C0455,roundcubemail,plugins/managesieve/lib/Roundcube/rcube_sieve_engine.php,81,164,session_dependent_logic,Session-Dependent Logic,12,_set,managesieve_current;password;username,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0456,roundcubemail,plugins/managesieve/lib/Roundcube/rcube_sieve_engine.php,283,504,session_dependent_logic,Session-Dependent Logic,39,,managesieve-compact-form,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0457,roundcubemail,plugins/managesieve/lib/Roundcube/rcube_sieve_engine.php,528,1264,long_method_or_region,Long or Complex Region,164,_disabled;_header;_name;_newset,,,,,Extract Method,pending
+roundcubemail-C0458,roundcubemail,plugins/managesieve/lib/Roundcube/rcube_sieve_engine.php,1310,1365,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+roundcubemail-C0459,roundcubemail,plugins/managesieve/lib/Roundcube/rcube_sieve_engine.php,1410,1498,session_dependent_logic,Session-Dependent Logic,10,_framed,managesieve_current,,.proplist,./;filtersetform,Extract Guard;Extract Method,pending
+roundcubemail-C0460,roundcubemail,plugins/managesieve/lib/Roundcube/rcube_sieve_engine.php,1498,1667,session_dependent_logic,Session-Dependent Logic,35,_framed,managesieve-compact-form,,#actions;#disabled;#rules;.col-form-label;.col-sm-4;.col-sm-8;.form-check;.form-group;.row,,Extract Guard;Extract Method,pending
+roundcubemail-C0461,roundcubemail,plugins/managesieve/lib/Roundcube/rcube_sieve_engine.php,1667,2046,long_method_or_region,Long or Complex Region,68,,,,#rule_advanced;#rule_comp;#rule_date_header_div;#rule_duplicate_div;#rule_index_div;#rule_mime;#rule_mime_part;#rule_mod;#rule_mod_type;#rule_size;#rule_trans;#ruleadd%s;#ruleadv%s;#ruledel%s;#rulerow;.add;.adv;.advanced;.advbutton;.button,,Extract Method,pending
+roundcubemail-C0462,roundcubemail,plugins/managesieve/lib/Roundcube/rcube_sieve_engine.php,2046,2083,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+roundcubemail-C0463,roundcubemail,plugins/managesieve/lib/Roundcube/rcube_sieve_engine.php,2083,2523,long_method_or_region,Long or Complex Region,65,,,,#action_addheader;#action_deleteheader;#action_notify;#action_notifyoption_div;#action_set;#action_vacation;#actionadd%s;#actiondel%s;#actionrow;#redirect_target;.actionrow;.add;.adv;.button;.compact-table;.composite;.create;.del%s;.delete;.inner,,Extract Method,pending
+roundcubemail-C0464,roundcubemail,plugins/managesieve/lib/Roundcube/rcube_sieve_engine.php,2602,2647,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+roundcubemail-C0465,roundcubemail,plugins/managesieve/lib/Roundcube/rcube_sieve_engine.php,2672,2772,session_dependent_logic,Session-Dependent Logic,21,,managesieve_user_script,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0466,roundcubemail,plugins/managesieve/lib/Roundcube/rcube_sieve_engine.php,2791,2870,session_dependent_logic,Session-Dependent Logic,15,,managesieve_user_script,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0467,roundcubemail,plugins/managesieve/lib/Roundcube/rcube_sieve_engine.php,2870,2917,session_dependent_logic,Session-Dependent Logic,11,,managesieve_user_script,,,,Extract Guard;Extract Method,pending
+roundcubemail-C0468,roundcubemail,plugins/managesieve/lib/Roundcube/rcube_sieve_forward.php,1,511,form_handling,Request Handling Mixed With Rendering,96,,,,#action_target;#action_target_span;.input-group;.input-group-append;.input-group-prepend;.input-group-text,,Extract Validation Helper;Extract Method;Extract View Helper,pending
+roundcubemail-C0469,roundcubemail,plugins/managesieve/lib/Roundcube/rcube_sieve_forward.php,56,127,long_method_or_region,Long or Complex Region,20,,,,,,Extract Method,pending
+roundcubemail-C0470,roundcubemail,plugins/managesieve/lib/Roundcube/rcube_sieve_forward.php,127,197,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+roundcubemail-C0471,roundcubemail,plugins/managesieve/lib/Roundcube/rcube_sieve_forward.php,197,251,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+roundcubemail-C0472,roundcubemail,plugins/managesieve/lib/Roundcube/rcube_sieve_forward.php,251,326,long_method_or_region,Long or Complex Region,10,,,,#action_target;#action_target_span;.input-group;.input-group-append;.input-group-prepend;.input-group-text,,Extract Method,pending
+roundcubemail-C0473,roundcubemail,plugins/managesieve/lib/Roundcube/rcube_sieve_forward.php,326,421,long_method_or_region,Long or Complex Region,23,,,,,,Extract Method,pending
+roundcubemail-C0474,roundcubemail,plugins/managesieve/lib/Roundcube/rcube_sieve_forward.php,444,491,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+roundcubemail-C0475,roundcubemail,plugins/managesieve/lib/Roundcube/rcube_sieve_script.php,185,586,long_method_or_region,Long or Complex Region,107,,,,,,Extract Method,pending
+roundcubemail-C0476,roundcubemail,plugins/managesieve/lib/Roundcube/rcube_sieve_script.php,605,693,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+roundcubemail-C0477,roundcubemail,plugins/managesieve/lib/Roundcube/rcube_sieve_script.php,693,892,long_method_or_region,Long or Complex Region,41,,,,,,Extract Method,pending
+roundcubemail-C0478,roundcubemail,plugins/managesieve/lib/Roundcube/rcube_sieve_script.php,892,1028,long_method_or_region,Long or Complex Region,32,,,,,,Extract Method,pending
+roundcubemail-C0479,roundcubemail,plugins/managesieve/lib/Roundcube/rcube_sieve_script.php,1113,1154,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+roundcubemail-C0480,roundcubemail,plugins/managesieve/lib/Roundcube/rcube_sieve_script.php,1246,1416,long_method_or_region,Long or Complex Region,37,,,,,,Extract Method,pending
+roundcubemail-C0481,roundcubemail,plugins/managesieve/lib/Roundcube/rcube_sieve_vacation.php,1,937,form_handling,Request Handling Mixed With Rendering,183,,,,#action_target;#action_target_span;#vacation_addresses;.input-group;.input-group-append;.input-group-prepend;.input-group-text,,Extract Validation Helper;Extract Method;Extract View Helper,pending
+roundcubemail-C0482,roundcubemail,plugins/managesieve/lib/Roundcube/rcube_sieve_vacation.php,56,128,long_method_or_region,Long or Complex Region,20,,,,,,Extract Method,pending
+roundcubemail-C0483,roundcubemail,plugins/managesieve/lib/Roundcube/rcube_sieve_vacation.php,128,167,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+roundcubemail-C0484,roundcubemail,plugins/managesieve/lib/Roundcube/rcube_sieve_vacation.php,167,325,long_method_or_region,Long or Complex Region,35,,,,,,Extract Method,pending
+roundcubemail-C0485,roundcubemail,plugins/managesieve/lib/Roundcube/rcube_sieve_vacation.php,325,524,long_method_or_region,Long or Complex Region,35,,,,#action_target;#action_target_span;#vacation_addresses;.input-group;.input-group-append;.input-group-prepend;.input-group-text,,Extract Method,pending
+roundcubemail-C0486,roundcubemail,plugins/managesieve/lib/Roundcube/rcube_sieve_vacation.php,622,717,long_method_or_region,Long or Complex Region,23,,,,,,Extract Method,pending
+roundcubemail-C0487,roundcubemail,plugins/managesieve/lib/Roundcube/rcube_sieve_vacation.php,717,793,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+roundcubemail-C0488,roundcubemail,plugins/managesieve/lib/Roundcube/rcube_sieve_vacation.php,793,917,long_method_or_region,Long or Complex Region,31,,,,,,Extract Method,pending
+roundcubemail-C0489,roundcubemail,plugins/enigma/lib/enigma_driver_gnupg.php,1,754,sql_data_access,SQL/Data Access Region,111,,,Crypt_GPG;Enigma;database,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0490,roundcubemail,plugins/enigma/lib/enigma_driver_gnupg.php,42,122,long_method_or_region,Long or Complex Region,16,,,,,,Extract Method,pending
+roundcubemail-C0491,roundcubemail,plugins/enigma/lib/enigma_driver_gnupg.php,554,633,sql_data_access,SQL/Data Access Region,18,,,,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0492,roundcubemail,plugins/enigma/lib/enigma_driver_gnupg.php,633,730,sql_data_access,SQL/Data Access Region,26,,,database,,,Light Data-Access Isolation;Extract Method,pending
+roundcubemail-C0493,roundcubemail,plugins/enigma/lib/enigma_driver_phpssl.php,36,69,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+roundcubemail-C0494,roundcubemail,plugins/enigma/lib/enigma_engine.php,1,1422,session_dependent_logic,Session-Dependent Logic,192,,enigma_pass,IMAP;an;command;session;structure,,,Extract Guard;Extract Method,pending
+roundcubemail-C0495,roundcubemail,plugins/enigma/lib/enigma_engine.php,134,233,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+roundcubemail-C0496,roundcubemail,plugins/enigma/lib/enigma_engine.php,233,340,long_method_or_region,Long or Complex Region,22,,,,,,Extract Method,pending
+roundcubemail-C0497,roundcubemail,plugins/enigma/lib/enigma_engine.php,440,526,long_method_or_region,Long or Complex Region,18,,,,,,Extract Method,pending
+roundcubemail-C0498,roundcubemail,plugins/enigma/lib/enigma_engine.php,582,644,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+roundcubemail-C0499,roundcubemail,plugins/enigma/lib/enigma_engine.php,644,697,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+roundcubemail-C0500,roundcubemail,plugins/enigma/lib/enigma_engine.php,713,799,long_method_or_region,Long or Complex Region,15,,,,,,Extract Method,pending
+roundcubemail-C0501,roundcubemail,plugins/enigma/lib/enigma_mime_message.php,160,266,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending
+roundcubemail-C0502,roundcubemail,plugins/enigma/lib/enigma_signature.php,41,89,long_method_or_region,Long or Complex Region,12,,,,,,Extract Method,pending
+roundcubemail-C0503,roundcubemail,plugins/enigma/lib/enigma_subkey.php,57,79,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+roundcubemail-C0504,roundcubemail,plugins/enigma/lib/enigma_ui.php,1,1314,long_method_or_region,Long or Complex Region,175,_draft;_refresh;_saveonly,,,,,Extract Method,pending
+roundcubemail-C0505,roundcubemail,plugins/enigma/lib/enigma_ui.php,41,119,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+roundcubemail-C0506,roundcubemail,plugins/enigma/lib/enigma_ui.php,357,460,long_method_or_region,Long or Complex Region,14,,,,,,Extract Method,pending
+roundcubemail-C0507,roundcubemail,plugins/enigma/lib/enigma_ui.php,460,516,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+roundcubemail-C0508,roundcubemail,plugins/enigma/lib/enigma_ui.php,516,589,long_method_or_region,Long or Complex Region,12,_refresh,,,,,Extract Method,pending
+roundcubemail-C0509,roundcubemail,plugins/enigma/lib/enigma_ui.php,853,908,long_method_or_region,Long or Complex Region,10,,,,,,Extract Method,pending
+roundcubemail-C0510,roundcubemail,plugins/enigma/lib/enigma_ui.php,908,1052,long_method_or_region,Long or Complex Region,24,,,,,,Extract Method,pending
+roundcubemail-C0511,roundcubemail,plugins/enigma/lib/enigma_ui.php,1118,1202,long_method_or_region,Long or Complex Region,17,_draft;_saveonly,,,,,Extract Method,pending
+roundcubemail-C0512,roundcubemail,plugins/enigma/lib/enigma_ui.php,1202,1251,long_method_or_region,Long or Complex Region,11,,,,,,Extract Method,pending
+roundcubemail-C0513,roundcubemail,plugins/enigma/lib/enigma_ui.php,1251,1302,long_method_or_region,Long or Complex Region,13,,,,,,Extract Method,pending

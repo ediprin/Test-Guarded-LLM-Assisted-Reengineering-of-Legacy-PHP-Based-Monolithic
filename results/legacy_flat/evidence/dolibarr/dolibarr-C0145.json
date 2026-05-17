@@ -1,0 +1,109 @@
+{
+  "candidate_id": "dolibarr-C0145",
+  "subject_id": "dolibarr",
+  "file": "htdocs/admin/modules.php",
+  "lines": [
+    1,
+    1166
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 251
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": [
+      "arrayofwarnings",
+      "dir",
+      "file",
+      "target"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$objMod->numero.",
+      "#category-tree-left",
+      "#fileinstall",
+      "#listOfModules",
+      "#list_of_modules",
+      "#listing-content",
+      "#searchFormList",
+      "#search_keyword",
+      ".butAction",
+      ".button",
+      ".center",
+      ".centpercent",
+      ".clearboth",
+      ".div-table-responsive",
+      ".divsearchfield",
+      ".fa",
+      ".fa-bug",
+      ".flat",
+      ".hideonsmartphone",
+      ".imgautosize"
+    ],
+    "forms": [
+      "<?php echo $dolistore->url ?>",
+      "forminstall"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [
+      "arrayofwarnings",
+      "dir",
+      "file",
+      "target"
+    ],
+    "must_preserve_dom_selectors": [
+      "#.$objMod->numero.",
+      "#category-tree-left",
+      "#fileinstall",
+      "#listOfModules",
+      "#list_of_modules",
+      "#listing-content",
+      "#searchFormList",
+      "#search_keyword",
+      ".butAction",
+      ".button",
+      ".center",
+      ".centpercent",
+      ".clearboth",
+      ".div-table-responsive",
+      ".divsearchfield",
+      ".fa",
+      ".fa-bug",
+      ".flat",
+      ".hideonsmartphone",
+      ".imgautosize"
+    ],
+    "must_preserve_forms": [
+      "<?php echo $dolistore->url ?>",
+      "forminstall"
+    ]
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "candidate_id": "dolibarr-C0409",
+  "subject_id": "dolibarr",
+  "file": "htdocs/opensurvey/card.php",
+  "lines": [
+    1,
+    437
+  ],
+  "candidate_type": "mixed_php_html",
+  "issues": [
+    {
+      "type": "Mixed PHP/HTML",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 74
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "# . $numsondage . ",
+      "#.$numsondage, $langs->trans(",
+      "#.$numsondage.",
+      "#opensurveyurl",
+      ".border",
+      ".butAction",
+      ".butActionDelete",
+      ".button",
+      ".center",
+      ".centpercent",
+      ".clearboth",
+      ".fichecenter",
+      ".quatrevingtpercent",
+      ".tableforfield",
+      ".tabsAction",
+      ".tdtop",
+      ".titlefield",
+      ".underbanner"
+    ],
+    "forms": [
+      "#",
+      "formulaire5",
+      "updatesurvey"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "# . $numsondage . ",
+      "#.$numsondage, $langs->trans(",
+      "#.$numsondage.",
+      "#opensurveyurl",
+      ".border",
+      ".butAction",
+      ".butActionDelete",
+      ".button",
+      ".center",
+      ".centpercent",
+      ".clearboth",
+      ".fichecenter",
+      ".quatrevingtpercent",
+      ".tableforfield",
+      ".tabsAction",
+      ".tdtop",
+      ".titlefield",
+      ".underbanner"
+    ],
+    "must_preserve_forms": [
+      "#",
+      "formulaire5",
+      "updatesurvey"
+    ]
+  },
+  "allowed_transformations": [
+    "Separate PHP Logic from Markup",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

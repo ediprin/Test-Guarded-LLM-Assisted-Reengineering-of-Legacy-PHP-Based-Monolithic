@@ -1,0 +1,103 @@
+{
+  "candidate_id": "dolibarr-C2576",
+  "subject_id": "dolibarr",
+  "file": "htdocs/fourn/class/fournisseur.commande.class.php",
+  "lines": [
+    1,
+    3645
+  ],
+  "candidate_type": "mixed_php_html_sql",
+  "issues": [
+    {
+      "type": "SQL in Presentation Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 500
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [],
+    "database_tables": [
+      "a",
+      "account",
+      "caller",
+      "customer",
+      "database",
+      "db",
+      "draft",
+      "field",
+      "index",
+      "its",
+      "line",
+      "link",
+      "llx_commande_fournisseurdet",
+      "llx_product_fournisseur_price",
+      "pu_ht",
+      "stock",
+      "table",
+      "the",
+      "tooltip",
+      "user",
+      "vatrate"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$rowid.",
+      "#.$this->id;\n\n        if ($option !== ",
+      ".classfortooltip",
+      ".hideonsmartphone",
+      ".paddingright"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [
+      "a",
+      "account",
+      "caller",
+      "customer",
+      "database",
+      "db",
+      "draft",
+      "field",
+      "index",
+      "its",
+      "line",
+      "link",
+      "llx_commande_fournisseurdet",
+      "llx_product_fournisseur_price",
+      "pu_ht",
+      "stock",
+      "table",
+      "the",
+      "tooltip",
+      "user",
+      "vatrate"
+    ],
+    "must_preserve_dom_selectors": [
+      "#.$rowid.",
+      "#.$this->id;\n\n        if ($option !== ",
+      ".classfortooltip",
+      ".hideonsmartphone",
+      ".paddingright"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "candidate_id": "dolibarr-C0438",
+  "subject_id": "dolibarr",
+  "file": "htdocs/projet/element.php",
+  "lines": [
+    1,
+    1280
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 258
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "datesday",
+      "datesrfc",
+      "mode"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "# . $projectid . ",
+      "#.$id,\n    ",
+      "#.$idofelement.",
+      "#.$projectid.",
+      ".border",
+      ".button",
+      ".buttonRefused",
+      ".buttonxxx",
+      ".center",
+      ".centpercent",
+      ".clearboth",
+      ".fa",
+      ".fa-plus-circle",
+      ".ficheaddleft",
+      ".fichecenter",
+      ".fichehalfleft",
+      ".fichehalfright",
+      ".inline-block",
+      ".left",
+      ".liste_sub_total"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "datesday",
+      "datesrfc",
+      "mode"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "# . $projectid . ",
+      "#.$id,\n    ",
+      "#.$idofelement.",
+      "#.$projectid.",
+      ".border",
+      ".button",
+      ".buttonRefused",
+      ".buttonxxx",
+      ".center",
+      ".centpercent",
+      ".clearboth",
+      ".fa",
+      ".fa-plus-circle",
+      ".ficheaddleft",
+      ".fichecenter",
+      ".fichehalfleft",
+      ".fichehalfright",
+      ".inline-block",
+      ".left",
+      ".liste_sub_total"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

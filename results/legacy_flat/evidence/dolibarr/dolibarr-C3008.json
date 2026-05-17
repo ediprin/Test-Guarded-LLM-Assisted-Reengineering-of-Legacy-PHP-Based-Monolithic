@@ -1,0 +1,78 @@
+{
+  "candidate_id": "dolibarr-C3008",
+  "subject_id": "dolibarr",
+  "file": "htdocs/core/class/commonobject.class.php",
+  "lines": [
+    5394,
+    6008
+  ],
+  "candidate_type": "sql_data_access",
+  "issues": [
+    {
+      "type": "SQL/Data Access Region",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 137
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [],
+    "database_tables": [
+      "a",
+      "filter",
+      "label",
+      "name",
+      "on",
+      "parameters",
+      "user"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      ".butActionNew",
+      ".fa",
+      ".fa-minus-circle",
+      ".fa-plus-circle",
+      ".flat",
+      ".opacitymedium",
+      ".valignmiddle"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [
+      "a",
+      "filter",
+      "label",
+      "name",
+      "on",
+      "parameters",
+      "user"
+    ],
+    "must_preserve_dom_selectors": [
+      ".butActionNew",
+      ".fa",
+      ".fa-minus-circle",
+      ".fa-plus-circle",
+      ".flat",
+      ".opacitymedium",
+      ".valignmiddle"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

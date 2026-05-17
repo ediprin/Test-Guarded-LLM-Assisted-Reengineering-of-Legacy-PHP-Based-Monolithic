@@ -1,0 +1,92 @@
+{
+  "candidate_id": "dolibarr-C0587",
+  "subject_id": "dolibarr",
+  "file": "htdocs/website/websiteaccount_card.php",
+  "lines": [
+    1,
+    391
+  ],
+  "candidate_type": "mixed_php_html",
+  "issues": [
+    {
+      "type": "Mixed PHP/HTML",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 56
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "# . $object->fk_project . ",
+      "# . $object->id . ",
+      "# . $object->id, $langs->trans(",
+      "# . $object->id, $object->socid, $object->fk_project, ",
+      "# . $object->id;\n\t    $genallowed = $user->rights->website->read;\t// If you can read, you can build the PDF to read content\n\t    $delallowed = $user->rights->website->create;\t// If you can create/edit, you can remove a file on card\n\t    print $formfile->showdocuments(",
+      "#.$object->id.",
+      ".border",
+      ".butAction",
+      ".butActionDelete",
+      ".button",
+      ".center",
+      ".centpercent",
+      ".clearboth",
+      ".divButAction",
+      ".ficheaddleft",
+      ".fichecenter",
+      ".fichehalfleft",
+      ".fichehalfright",
+      ".inline-block",
+      ".refidno"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "# . $object->fk_project . ",
+      "# . $object->id . ",
+      "# . $object->id, $langs->trans(",
+      "# . $object->id, $object->socid, $object->fk_project, ",
+      "# . $object->id;\n\t    $genallowed = $user->rights->website->read;\t// If you can read, you can build the PDF to read content\n\t    $delallowed = $user->rights->website->create;\t// If you can create/edit, you can remove a file on card\n\t    print $formfile->showdocuments(",
+      "#.$object->id.",
+      ".border",
+      ".butAction",
+      ".butActionDelete",
+      ".button",
+      ".center",
+      ".centpercent",
+      ".clearboth",
+      ".divButAction",
+      ".ficheaddleft",
+      ".fichecenter",
+      ".fichehalfleft",
+      ".fichehalfright",
+      ".inline-block",
+      ".refidno"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Separate PHP Logic from Markup",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

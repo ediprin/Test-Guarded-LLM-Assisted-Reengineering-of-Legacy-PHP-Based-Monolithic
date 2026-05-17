@@ -1,0 +1,83 @@
+{
+  "candidate_id": "phpmyadmin-C0036",
+  "subject_id": "phpmyadmin",
+  "file": "tbl_tracking.php",
+  "lines": [
+    1,
+    207
+  ],
+  "candidate_type": "long_method_or_region",
+  "issues": [
+    {
+      "type": "Long or Complex Region",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 30
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "date_from",
+      "date_to",
+      "delete_ddlog",
+      "delete_dmlog",
+      "export_type",
+      "logtype",
+      "report",
+      "report_export",
+      "selected_versions",
+      "snapshot",
+      "submit_create_version",
+      "submit_delete_version",
+      "submit_mult",
+      "toggle_activation",
+      "users",
+      "version"
+    ],
+    "session_keys": [],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      ".clearfloat"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "date_from",
+      "date_to",
+      "delete_ddlog",
+      "delete_dmlog",
+      "export_type",
+      "logtype",
+      "report",
+      "report_export",
+      "selected_versions",
+      "snapshot",
+      "submit_create_version",
+      "submit_delete_version",
+      "submit_mult",
+      "toggle_activation",
+      "users",
+      "version"
+    ],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      ".clearfloat"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

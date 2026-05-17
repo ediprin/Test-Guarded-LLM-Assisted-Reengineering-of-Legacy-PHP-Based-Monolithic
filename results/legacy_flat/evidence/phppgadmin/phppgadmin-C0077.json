@@ -1,0 +1,75 @@
+{
+  "candidate_id": "phppgadmin-C0077",
+  "subject_id": "phppgadmin",
+  "file": "login.php",
+  "lines": [
+    1,
+    70
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 44
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "loginShared",
+      "loginUsername",
+      "server"
+    ],
+    "session_keys": [
+      "webdbLanguage"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#loginPassword",
+      "#loginShared",
+      "#login_form",
+      ".navbar"
+    ],
+    "forms": [
+      "login_form",
+      "redirect.php"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "loginShared",
+      "loginUsername",
+      "server"
+    ],
+    "must_preserve_session_keys": [
+      "webdbLanguage"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#loginPassword",
+      "#loginShared",
+      "#login_form",
+      ".navbar"
+    ],
+    "must_preserve_forms": [
+      "login_form",
+      "redirect.php"
+    ]
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

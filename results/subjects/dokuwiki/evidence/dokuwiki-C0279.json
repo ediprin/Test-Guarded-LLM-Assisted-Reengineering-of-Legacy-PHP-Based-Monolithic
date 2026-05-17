@@ -1,0 +1,78 @@
+{
+  "candidate_id": "dokuwiki-C0279",
+  "subject_id": "dokuwiki",
+  "file": "lib/plugins/usermanager/admin.php",
+  "lines": [
+    1,
+    1083
+  ],
+  "candidate_type": "mixed_php_html",
+  "issues": [
+    {
+      "type": "Mixed PHP/HTML",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 169
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [
+      "import_failures"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      ".disabled",
+      ".error",
+      ".field",
+      ".import_failures",
+      ".import_users",
+      ".level2",
+      ".level3",
+      ".line",
+      ".lineno",
+      ".usergroups",
+      ".userid",
+      ".usermail",
+      ".username"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [
+      "import_failures"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      ".disabled",
+      ".error",
+      ".field",
+      ".import_failures",
+      ".import_users",
+      ".level2",
+      ".level3",
+      ".line",
+      ".lineno",
+      ".usergroups",
+      ".userid",
+      ".usermail",
+      ".username"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Separate PHP Logic from Markup",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

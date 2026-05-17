@@ -1,0 +1,67 @@
+{
+  "candidate_id": "dolibarr-C0346",
+  "subject_id": "dolibarr",
+  "file": "htdocs/install/step1.php",
+  "lines": [
+    1,
+    1041
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 180
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "db_host",
+      "db_port",
+      "db_type"
+    ],
+    "session_keys": [
+      "dol_save_pass",
+      "dol_save_passroot"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      ".error",
+      ".valigntextbottom"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "db_host",
+      "db_port",
+      "db_type"
+    ],
+    "must_preserve_session_keys": [
+      "dol_save_pass",
+      "dol_save_passroot"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      ".error",
+      ".valigntextbottom"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

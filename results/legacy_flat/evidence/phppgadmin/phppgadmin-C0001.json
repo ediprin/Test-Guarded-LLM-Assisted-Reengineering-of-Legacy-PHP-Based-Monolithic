@@ -1,0 +1,91 @@
+{
+  "candidate_id": "phppgadmin-C0001",
+  "subject_id": "phppgadmin",
+  "file": "admin.php",
+  "lines": [
+    1,
+    753
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 119
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "analyze",
+      "autovacuum_analyze_scale_factor",
+      "autovacuum_analyze_threshold",
+      "autovacuum_enabled",
+      "autovacuum_vacuum_cost_delay",
+      "autovacuum_vacuum_cost_limit",
+      "autovacuum_vacuum_scale_factor",
+      "autovacuum_vacuum_threshold",
+      "cluster",
+      "database",
+      "ma",
+      "object",
+      "reindex",
+      "reindex_force",
+      "save",
+      "schema",
+      "table",
+      "vacuum",
+      "vacuum_analyze",
+      "vacuum_freeze",
+      "vacuum_full"
+    ],
+    "session_keys": [],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "analyze",
+      "autovacuum_analyze_scale_factor",
+      "autovacuum_analyze_threshold",
+      "autovacuum_enabled",
+      "autovacuum_vacuum_cost_delay",
+      "autovacuum_vacuum_cost_limit",
+      "autovacuum_vacuum_scale_factor",
+      "autovacuum_vacuum_threshold",
+      "cluster",
+      "database",
+      "ma",
+      "object",
+      "reindex",
+      "reindex_force",
+      "save",
+      "schema",
+      "table",
+      "vacuum",
+      "vacuum_analyze",
+      "vacuum_freeze",
+      "vacuum_full"
+    ],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

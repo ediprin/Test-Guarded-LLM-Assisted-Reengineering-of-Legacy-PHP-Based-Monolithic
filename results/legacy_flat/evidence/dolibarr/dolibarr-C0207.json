@@ -1,0 +1,101 @@
+{
+  "candidate_id": "dolibarr-C0207",
+  "subject_id": "dolibarr",
+  "file": "htdocs/bookmarks/card.php",
+  "lines": [
+    1,
+    340
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 55
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "position",
+      "target",
+      "title",
+      "url",
+      "userid"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$object->id.",
+      "#.$object->id:",
+      "#titlebookmark",
+      ".border",
+      ".button",
+      ".clearboth",
+      ".fichecenter",
+      ".fieldrequired",
+      ".flat",
+      ".hideonsmartphone",
+      ".minwidth100",
+      ".minwidth200",
+      ".quatrevingtpercent",
+      ".titlefield",
+      ".titlefieldcreate",
+      ".underbanner"
+    ],
+    "forms": [
+      "edit"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "position",
+      "target",
+      "title",
+      "url",
+      "userid"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#.$object->id.",
+      "#.$object->id:",
+      "#titlebookmark",
+      ".border",
+      ".button",
+      ".clearboth",
+      ".fichecenter",
+      ".fieldrequired",
+      ".flat",
+      ".hideonsmartphone",
+      ".minwidth100",
+      ".minwidth200",
+      ".quatrevingtpercent",
+      ".titlefield",
+      ".titlefieldcreate",
+      ".underbanner"
+    ],
+    "must_preserve_forms": [
+      "edit"
+    ]
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "candidate_id": "dolibarr-C0213",
+  "subject_id": "dolibarr",
+  "file": "htdocs/cashdesk/facturation_verif.php",
+  "lines": [
+    1,
+    235
+  ],
+  "candidate_type": "session_dependent_logic",
+  "issues": [
+    {
+      "type": "Session-Dependent Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 44
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "hdnSource",
+      "selTva",
+      "suppr_id",
+      "txtQte",
+      "txtRef",
+      "txtRemise"
+    ],
+    "session_keys": [
+      "CASHDESK_ID_THIRDPARTY",
+      "poscart",
+      "serObjFacturation"
+    ],
+    "database_tables": [
+      "if",
+      "prixTotalTtc",
+      "table"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "hdnSource",
+      "selTva",
+      "suppr_id",
+      "txtQte",
+      "txtRef",
+      "txtRemise"
+    ],
+    "must_preserve_session_keys": [
+      "CASHDESK_ID_THIRDPARTY",
+      "poscart",
+      "serObjFacturation"
+    ],
+    "must_preserve_database_tables": [
+      "if",
+      "prixTotalTtc",
+      "table"
+    ],
+    "must_preserve_dom_selectors": [],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Guard",
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

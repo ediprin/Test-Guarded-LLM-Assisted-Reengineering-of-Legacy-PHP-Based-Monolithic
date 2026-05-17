@@ -1,0 +1,76 @@
+{
+  "candidate_id": "phpbb-C0096",
+  "subject_id": "phpbb",
+  "file": "tests/test_framework/phpbb_database_test_connection_manager.php",
+  "lines": [
+    1,
+    652
+  ],
+  "candidate_type": "sql_data_access",
+  "issues": [
+    {
+      "type": "SQL/Data Access Region",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 79
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [],
+    "database_tables": [
+      "USER_DEPENDENCIES",
+      "USER_SEQUENCES",
+      "USER_TABLES",
+      "USER_TRIGGERS",
+      "USER_TRIGGER_COLS",
+      "a",
+      "effect",
+      "information_schema",
+      "one",
+      "pg_stat_user_tables",
+      "sqlite_master",
+      "sqlite_sequence",
+      "sysobjects",
+      "the"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [],
+    "must_preserve_database_tables": [
+      "USER_DEPENDENCIES",
+      "USER_SEQUENCES",
+      "USER_TABLES",
+      "USER_TRIGGERS",
+      "USER_TRIGGER_COLS",
+      "a",
+      "effect",
+      "information_schema",
+      "one",
+      "pg_stat_user_tables",
+      "sqlite_master",
+      "sqlite_sequence",
+      "sysobjects",
+      "the"
+    ],
+    "must_preserve_dom_selectors": [],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Light Data-Access Isolation",
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

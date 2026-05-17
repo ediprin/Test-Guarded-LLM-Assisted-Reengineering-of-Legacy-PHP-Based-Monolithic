@@ -1,0 +1,108 @@
+{
+  "candidate_id": "dolibarr-C2667",
+  "subject_id": "dolibarr",
+  "file": "htdocs/fourn/facture/paiement.php",
+  "lines": [
+    399,
+    1071
+  ],
+  "candidate_type": "session_dependent_logic",
+  "issues": [
+    {
+      "type": "Session-Dependent Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 130
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "comment",
+      "num_paiement",
+      "paiementid"
+    ],
+    "session_keys": [
+      "newtoken"
+    ],
+    "database_tables": [
+      "extra"
+    ]
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#.$objp->pid.",
+      "#formfilteraction",
+      "#invoice_type",
+      "#multicurrency_result",
+      "#payment_form",
+      "#result",
+      ".AutoFillAmout",
+      ".amount",
+      ".border",
+      ".button",
+      ".center",
+      ".centpercent",
+      ".div-table-responsive",
+      ".div-table-responsive-no-min",
+      ".fieldrequired",
+      ".flat",
+      ".left",
+      ".liste",
+      ".liste_titre",
+      ".liste_titre_bydiv"
+    ],
+    "forms": [
+      "addpaiement"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "comment",
+      "num_paiement",
+      "paiementid"
+    ],
+    "must_preserve_session_keys": [
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [
+      "extra"
+    ],
+    "must_preserve_dom_selectors": [
+      "#.$objp->pid.",
+      "#formfilteraction",
+      "#invoice_type",
+      "#multicurrency_result",
+      "#payment_form",
+      "#result",
+      ".AutoFillAmout",
+      ".amount",
+      ".border",
+      ".button",
+      ".center",
+      ".centpercent",
+      ".div-table-responsive",
+      ".div-table-responsive-no-min",
+      ".fieldrequired",
+      ".flat",
+      ".left",
+      ".liste",
+      ".liste_titre",
+      ".liste_titre_bydiv"
+    ],
+    "must_preserve_forms": [
+      "addpaiement"
+    ]
+  },
+  "allowed_transformations": [
+    "Extract Guard",
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "candidate_id": "phpmyadmin-C0014",
+  "subject_id": "phpmyadmin",
+  "file": "import.php",
+  "lines": [
+    1,
+    784
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 137
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "action_bookmark",
+      "action_bookmark_all",
+      "allow_interrupt",
+      "bkm_label",
+      "bkm_replace",
+      "bookmark_query",
+      "bookmark_variable",
+      "console_bookmark_add",
+      "console_bookmark_refresh",
+      "console_message_id",
+      "db",
+      "format",
+      "id_bookmark",
+      "label",
+      "parameterized",
+      "parameters",
+      "rollback_query",
+      "shared",
+      "show_as_php",
+      "simulate_dml",
+      "skip",
+      "sql_query"
+    ],
+    "session_keys": [
+      "Import_message",
+      "is_multi_query",
+      "sql_from_query_box"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "action_bookmark",
+      "action_bookmark_all",
+      "allow_interrupt",
+      "bkm_label",
+      "bkm_replace",
+      "bookmark_query",
+      "bookmark_variable",
+      "console_bookmark_add",
+      "console_bookmark_refresh",
+      "console_message_id",
+      "db",
+      "format",
+      "id_bookmark",
+      "label",
+      "parameterized",
+      "parameters",
+      "rollback_query",
+      "shared",
+      "show_as_php",
+      "simulate_dml",
+      "skip",
+      "sql_query"
+    ],
+    "must_preserve_session_keys": [
+      "Import_message",
+      "is_multi_query",
+      "sql_from_query_box"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

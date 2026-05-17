@@ -1,0 +1,92 @@
+{
+  "candidate_id": "dolibarr-C0012",
+  "subject_id": "dolibarr",
+  "file": "htdocs/main.inc.php",
+  "lines": [
+    1542,
+    1738
+  ],
+  "candidate_type": "session_dependent_logic",
+  "issues": [
+    {
+      "type": "Session-Dependent Logic",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 31
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [],
+    "session_keys": [
+      "dol_authmode"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#id-container",
+      "#id-top",
+      "#mainbody",
+      "#tmenu_tooltip",
+      ".atoplogin",
+      ".fa",
+      ".fa-bug",
+      ".fa-print",
+      ".fa-question-circle",
+      ".help",
+      ".id-container",
+      ".inline-block",
+      ".login",
+      ".login_block",
+      ".login_block_elem",
+      ".login_block_elem_name",
+      ".login_block_other",
+      ".login_block_user",
+      ".nowrap",
+      ".printer"
+    ],
+    "forms": []
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [],
+    "must_preserve_session_keys": [
+      "dol_authmode"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#id-container",
+      "#id-top",
+      "#mainbody",
+      "#tmenu_tooltip",
+      ".atoplogin",
+      ".fa",
+      ".fa-bug",
+      ".fa-print",
+      ".fa-question-circle",
+      ".help",
+      ".id-container",
+      ".inline-block",
+      ".login",
+      ".login_block",
+      ".login_block_elem",
+      ".login_block_elem_name",
+      ".login_block_other",
+      ".login_block_user",
+      ".nowrap",
+      ".printer"
+    ],
+    "must_preserve_forms": []
+  },
+  "allowed_transformations": [
+    "Extract Guard",
+    "Extract Method"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "candidate_id": "dolibarr-C4821",
+  "subject_id": "dolibarr",
+  "file": "htdocs/admin/tools/dolibarr_export.php",
+  "lines": [
+    1,
+    624
+  ],
+  "candidate_type": "form_handling",
+  "issues": [
+    {
+      "type": "Request Handling Mixed With Rendering",
+      "evidence": "Detected by pre-treatment heuristic extractor; join with PHPMD/PHPStan logs for final static evidence."
+    },
+    {
+      "type": "Complexity Proxy",
+      "metric": "branch_keyword_count_plus_one",
+      "value": 232
+    }
+  ],
+  "dependencies": {
+    "request_parameters": [
+      "drop",
+      "nobin_drop"
+    ],
+    "session_keys": [
+      "commandbackuplastdone",
+      "commandbackupresult",
+      "commandbackuptorun",
+      "newtoken"
+    ],
+    "database_tables": []
+  },
+  "web_contracts": {
+    "dom_selectors": [
+      "#backupdatabaseleft",
+      "#backupdatabaseright",
+      "#backupfilesleft",
+      "#buttonGo",
+      "#checkbox_charset_utf8",
+      "#checkbox_disable_fk",
+      "#checkbox_drop_database",
+      "#checkbox_dump_delayed",
+      "#checkbox_dump_disable-add-locks",
+      "#checkbox_dump_drop",
+      "#checkbox_dump_extended_ins",
+      "#checkbox_dump_ignore",
+      "#checkbox_dump_showcolumns",
+      "#checkbox_hexforbinary",
+      "#checkbox_sql_data",
+      "#checkbox_sql_structure",
+      "#checkbox_use_quick",
+      "#checkbox_use_transaction",
+      "#commandbackuptoruntext",
+      "#div_container_exportoptions"
+    ],
+    "forms": [
+      "dump",
+      "export.php",
+      "export_files.php"
+    ]
+  },
+  "protected_constraints": {
+    "must_preserve_request_parameters": [
+      "drop",
+      "nobin_drop"
+    ],
+    "must_preserve_session_keys": [
+      "commandbackuplastdone",
+      "commandbackupresult",
+      "commandbackuptorun",
+      "newtoken"
+    ],
+    "must_preserve_database_tables": [],
+    "must_preserve_dom_selectors": [
+      "#backupdatabaseleft",
+      "#backupdatabaseright",
+      "#backupfilesleft",
+      "#buttonGo",
+      "#checkbox_charset_utf8",
+      "#checkbox_disable_fk",
+      "#checkbox_drop_database",
+      "#checkbox_dump_delayed",
+      "#checkbox_dump_disable-add-locks",
+      "#checkbox_dump_drop",
+      "#checkbox_dump_extended_ins",
+      "#checkbox_dump_ignore",
+      "#checkbox_dump_showcolumns",
+      "#checkbox_hexforbinary",
+      "#checkbox_sql_data",
+      "#checkbox_sql_structure",
+      "#checkbox_use_quick",
+      "#checkbox_use_transaction",
+      "#commandbackuptoruntext",
+      "#div_container_exportoptions"
+    ],
+    "must_preserve_forms": [
+      "dump",
+      "export.php",
+      "export_files.php"
+    ]
+  },
+  "allowed_transformations": [
+    "Extract Validation Helper",
+    "Extract Method",
+    "Extract View Helper"
+  ],
+  "test_support": {
+    "existing_tests": null,
+    "characterization_tests": null,
+    "oracle_status": "pending"
+  }
+}

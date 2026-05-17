@@ -1,0 +1,8 @@
+metric,value
+subject_systems,2
+initial_candidates,633
+evidence_json_files,633
+candidate_bearing_files_syntax_checked,343
+target_runtime_syntax_failures,0
+currently_mapped_stable_oracles,51
+locked_eligible_candidates_current,51
